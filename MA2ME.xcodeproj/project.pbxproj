@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64E15A624E9B34700E8AD3D /* Models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64E15A424E9B34700E8AD3D /* Models.plist */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B64E15A524E9B34700E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Models.plist; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* MA2ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MA2ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6BA257F24E99BE9005FB8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
+				B64E15A424E9B34700E8AD3D /* Models.plist */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
+				B64E15A624E9B34700E8AD3D /* Models.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +146,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B64E15A424E9B34700E8AD3D /* Models.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64E15A524E9B34700E8AD3D /* Base */,
+			);
+			name = Models.plist;
+			sourceTree = "<group>";
+		};
 		B6BA258324E99BEB005FB8FF /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,8 +12,8 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application" customClass="NSApplication"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -677,16 +679,88 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="132" y="154"/>
         </menu>
         <window title="MA2ME" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="contentRect" x="335" y="390" width="718" height="547"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="718" height="547"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jf6-4d-ms1">
+                        <rect key="frame" x="0.0" y="347" width="718" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ymx-Ml-AsE">
+                        <rect key="frame" x="18" y="323" width="71" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Window" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="McP-bf-5Zu">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.mameWindow" id="0bg-kj-1JX"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-BK-7TC">
+                        <rect key="frame" x="18" y="303" width="62" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WPk-zw-UFD">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.mameDebug" id="mGk-ML-ncm"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-iX-zTe">
+                        <rect key="frame" x="0.0" y="0.0" width="718" height="52"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="vbg-gA-6dg">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.commandLine" id="gkK-GV-onk"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-kz-ZSS">
+                        <rect key="frame" x="621" y="53" width="85" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="evD-kp-H2u">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-Gw-xV3">
+                        <rect key="frame" x="18" y="283" width="91" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="No Throttle" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Kgs-UM-HeU">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.mameNoThrottle" id="v1f-ka-XkT"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUB-So-kAo">
+                        <rect key="frame" x="131" y="323" width="104" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Square Pixels" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Bj2-i5-4h1">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.mameSquarePixels" id="rNk-1d-QZl"/>
+                        </connections>
+                    </button>
+                </subviews>
             </view>
+            <point key="canvasLocation" x="754" y="211.5"/>
         </window>
     </objects>
 </document>
