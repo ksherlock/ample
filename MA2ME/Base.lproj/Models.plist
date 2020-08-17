@@ -8,7 +8,26 @@
 		<key>Mame</key>
 		<string>apple2gs</string>
 		<key>Children</key>
-		<array/>
+        <array>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIgs ROM 0</string>
+                <key>Mame</key>
+                <string>applegsr0</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIgs ROM 1</string>
+                <key>Mame</key>
+                <string>applegsr1</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIgs ROM 3</string>
+                <key>Mame</key>
+                <string>applegs</string>
+            </dict>
+        </array>
 	</dict>
 	<dict>
 		<key>Name</key>
@@ -25,11 +44,123 @@
 			</dict>
 			<dict>
 				<key>Name</key>
-				<string>Apple IIe (enhanced)</string>
+				<string>Apple IIe (Enhanced)</string>
 				<key>Mame</key>
 				<string>apple2ee</string>
 			</dict>
-		</array>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIe (Platinum)</string>
+                <key>Mame</key>
+                <string>apple2ep</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIe (Spain)</string>
+                <key>Mame</key>
+                <string>apple2ees</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple IIe (UK)</string>
+                <key>Mame</key>
+                <string>apple2euk</string>
+            </dict>
+        </array>
 	</dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Apple //c</string>
+        <key>Mame</key>
+        <string>apple2c</string>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <string>Apple //c</string>
+                <key>Mame</key>
+                <string>apple2c</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple //c+</string>
+                <key>Mame</key>
+                <string>apple2cp</string>
+            </dict>
+
+        </array>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Apple ][</string>
+        <key>Mame</key>
+        <string>apple2</string>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <string>Apple ][</string>
+                <key>Mame</key>
+                <string>apple2</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple ][+</string>
+                <key>Mame</key>
+                <string>apple2p</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Apple ][ J-Plus</string>
+                <key>Mame</key>
+                <string>apple2jp</string>
+            </dict>
+        </array>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Apple I</string>
+        <key>Mame</key>
+        <string>apple1</string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Apple ///</string>
+        <key>Mame</key>
+        <string>apple3</string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Laser 128</string>
+        <key>Mame</key>
+        <string>laser128</string>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <string>Laser 128</string>
+                <key>Mame</key>
+                <string>laser128</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Laser 128 EX</string>
+                <key>Mame</key>
+                <string>laser128ex</string>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <string>Laser 128 EX2</string>
+                <key>Mame</key>
+                <string>laser128e2</string>
+            </dict>
+        </array>
+    </dict>
+
 </array>
 </plist>

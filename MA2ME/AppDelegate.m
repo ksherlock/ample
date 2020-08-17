@@ -73,6 +73,10 @@ static NSString *kMyContext = @"kMyContext";
     // Insert code here to tear down your application
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return YES;
+}
+
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
 
@@ -96,17 +100,28 @@ static NSString *kMyContext = @"kMyContext";
     [argv addObject: @"mame"];
     [argv addObject: _mameROM];
     
-    if (_mameDebug) { [argv addObject: @"-debug"]; }
-    if (_mameWindow) { [argv addObject: @"-window"]; }
+    if (_mameDebug) [argv addObject: @"-debug"];
+    if (_mameWindow) [argv addObject: @"-window"];
+    
+    // -nounevenstretch -video soft
     if (_mameWindow && _mameSquarePixels) {
-        [argv addObject: @"-resolution"];
-        [argv addObject: @"704x462"];
-        [argv addObject: @"-video"];
-        [argv addObject: @"-soft"];
-        [argv addObject: @"-aspect"];
-        [argv addObject: @"704:462"];
+
+        if ([_mameROM hasPrefix: @"apple2gs"]) {
+            [argv addObject: @"-resolution"];
+            [argv addObject: @"704x462"];
+            [argv addObject: @"-video"];
+            [argv addObject: @"soft"];
+            [argv addObject: @"-aspect"];
+            [argv addObject: @"704:462"];
+        } else {
+            [argv addObject: @"-resolution"];
+            [argv addObject: @"560x384"];
+            
+        }
     }
 
+    if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
+    
     [self setCommandLine: [argv componentsJoinedByString:@" "]];
 }
 
