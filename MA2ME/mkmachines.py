@@ -28,13 +28,19 @@ for m in MACHINES:
 
 	d["value"] = m
 	d["description"] = machine.find("description").text
-	d["RAM"] = [
+	tmp = [
 		{
 			"value": int(x.text),
-			"description": x.get("name")
+			"description": x.get("name"),
+			"default": x.get("default") == "yes"
 		}
 		for x in machine.findall('ramoption')
 	]
+	# sort and add empty starting entry.
+	tmp.sort(key=lambda x: x["value"])
+	tmp.insert(0, {"value": 0, "default": False, "description": "" })
+	d["RAM"] = tmp
+
 
 	node = machine.find('display[@tag="screen"]')
 	d["Resolution"] = [int(node.get("width")), int(node.get("height")) * 2]
@@ -57,7 +63,10 @@ for m in MACHINES:
 			name = x.get("name")
 			devname = x.get("devname")
 			desc = mm[devname]
-			tmp.append({ "value": name, "description": desc })
+			tmp.append({ "value": name, "description": desc, "default": x.get("default") == "yes" })
+
+		tmp.sort(key=lambda x: x["description"])
+		tmp.insert(0, {"value": "", "description": "", "default": False})
 		d[s] = tmp
 		# d[s] = [(x.get("name"), x.get("devname")) for x in nodes]
 

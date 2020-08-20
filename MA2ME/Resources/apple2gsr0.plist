@@ -10,75 +10,107 @@
     <array>
       <dict>
         <key>value</key>
+        <integer>0</integer>
+        <key>default</key>
+        <false/>
+        <key>description</key>
+        <string></string>
+      </dict>
+      <dict>
+        <key>value</key>
         <integer>262144</integer>
         <key>description</key>
         <string>256K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>524288</integer>
         <key>description</key>
         <string>512K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>786432</integer>
         <key>description</key>
         <string>768K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>1048576</integer>
         <key>description</key>
         <string>1M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>2097152</integer>
-        <key>description</key>
-        <string>2M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>3145728</integer>
-        <key>description</key>
-        <string>3M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>4194304</integer>
-        <key>description</key>
-        <string>4M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>5242880</integer>
-        <key>description</key>
-        <string>5M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>6291456</integer>
-        <key>description</key>
-        <string>6M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>7340032</integer>
-        <key>description</key>
-        <string>7M</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>8388608</integer>
-        <key>description</key>
-        <string>8M</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>1310720</integer>
         <key>description</key>
         <string>1280K</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>2097152</integer>
+        <key>description</key>
+        <string>2M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>3145728</integer>
+        <key>description</key>
+        <string>3M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>4194304</integer>
+        <key>description</key>
+        <string>4M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>5242880</integer>
+        <key>description</key>
+        <string>5M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>6291456</integer>
+        <key>description</key>
+        <string>6M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>7340032</integer>
+        <key>description</key>
+        <string>7M</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>8388608</integer>
+        <key>description</key>
+        <string>8M</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>Resolution</key>
@@ -90,2058 +122,2814 @@
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl2</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl3</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl4</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl5</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl6</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>sl7</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ezcgi9958</string>
+        <string></string>
         <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9958)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi9938</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface (TMS9938)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>tm2ho</string>
-        <key>description</key>
-        <string>Applied Engineering TimeMaster H.O.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dx1</string>
-        <key>description</key>
-        <string>Decillonix DX-1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcan</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mcms1</string>
-        <key>description</key>
-        <string>Mountain Computer Music System (card 1)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>byte8251</string>
-        <key>description</key>
-        <string>BYTE Serial Interface (8251 based)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>corvus</string>
-        <key>description</key>
-        <string>Corvus Flat Cable interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aevm80</string>
-        <key>description</key>
-        <string>Applied Engineering Viewmaster 80</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>hsscsi</string>
-        <key>description</key>
-        <string>Apple II High-Speed SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ezcgi</string>
-        <key>description</key>
-        <string>E-Z Color Graphics Interface</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>scsi</string>
-        <key>description</key>
-        <string>Apple II SCSI Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultratermenh</string>
-        <key>description</key>
-        <string>Videx UltraTerm (enhanced //e)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoiiplus</string>
-        <key>description</key>
-        <string>Street Electronics Echo Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>zipdrive</string>
-        <key>description</key>
-        <string>Zip Technologies ZipDrive</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16alt</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card (alt. version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>midi</string>
-        <key>description</key>
-        <string>6850 MIDI card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa202</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>themill</string>
-        <key>description</key>
-        <string>Stellation Two The Mill</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>arcbd</string>
-        <key>description</key>
-        <string>Third Millenium Engineering Arcade Board</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>echoii</string>
-        <key>description</key>
-        <string>Street Electronics Echo II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ap16</string>
-        <key>description</key>
-        <string>IBS AP-16 80 column card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>alfam2</string>
-        <key>description</key>
-        <string>ALF MC1 / Apple Music II</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ssc</string>
-        <key>description</key>
-        <string>Apple Super Serial Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>softcard</string>
-        <key>description</key>
-        <string>Microsoft SoftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>memexp</string>
-        <key>description</key>
-        <string>Apple II Memory Expansion Card</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mockingboard</string>
-        <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ultraterm</string>
-        <key>description</key>
-        <string>Videx UltraTerm (original)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>aesms</string>
-        <key>description</key>
-        <string>Applied Engineering Super Music Synthesizer</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swyft</string>
-        <key>description</key>
-        <string>IAI SwyftCard</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ramfactor</string>
-        <key>description</key>
-        <string>Applied Engineering RamFactor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sam</string>
-        <key>description</key>
-        <string>Don't Ask Software S.A.M.</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>phasor</string>
-        <key>description</key>
-        <string>Applied Engineering Phasor</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>4play</string>
         <key>description</key>
         <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>videoterm</string>
+        <string>midi</string>
         <key>description</key>
-        <string>Videx Videoterm 80 Column Display</string>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mcms2</string>
+        <string>alfam2</string>
         <key>description</key>
-        <string>Mountain Computer Music System (card 2)</string>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcangold</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>gameio</key>
     <array>
       <dict>
         <key>value</key>
-        <string>compeyes</string>
+        <string></string>
         <key>description</key>
-        <string>Digital Vision ComputerEyes</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>paddles</string>
-        <key>description</key>
-        <string>Apple II paddles</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>joy</string>
         <key>description</key>
         <string>Apple II analog joysticks</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>paddles</string>
+        <key>description</key>
+        <string>Apple II paddles</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>compeyes</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>printer</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ie15</string>
+        <string></string>
         <key>description</key>
-        <string>IE15 Terminal</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>terminal</string>
+        <string>ie15</string>
         <key>description</key>
-        <string>Serial Terminal</string>
+        <string>IE15 Terminal</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>pty</string>
         <key>description</key>
         <string>Pseudo terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>swtpc8212</string>
         <key>description</key>
         <string>SWTPC8212 Terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>modem</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ie15</string>
+        <string></string>
         <key>description</key>
-        <string>IE15 Terminal</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>terminal</string>
+        <string>ie15</string>
         <key>description</key>
-        <string>Serial Terminal</string>
+        <string>IE15 Terminal</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>pty</string>
         <key>description</key>
         <string>Pseudo terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>swtpc8212</string>
         <key>description</key>
         <string>SWTPC8212 Terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
   </dict>

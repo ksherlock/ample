@@ -10,33 +10,51 @@
     <array>
       <dict>
         <key>value</key>
+        <integer>0</integer>
+        <key>default</key>
+        <false/>
+        <key>description</key>
+        <string></string>
+      </dict>
+      <dict>
+        <key>value</key>
         <integer>131072</integer>
         <key>description</key>
         <string>128K</string>
+        <key>default</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
         <integer>393216</integer>
         <key>description</key>
         <string>384K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>655360</integer>
         <key>description</key>
         <string>640K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>917504</integer>
         <key>description</key>
         <string>896K</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <integer>1179648</integer>
         <key>description</key>
         <string>1152K</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>Resolution</key>
@@ -48,147 +66,217 @@
     <array>
       <dict>
         <key>value</key>
-        <string>compeyes</string>
+        <string></string>
         <key>description</key>
-        <string>Digital Vision ComputerEyes</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>paddles</string>
-        <key>description</key>
-        <string>Apple II paddles</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>joy</string>
         <key>description</key>
         <string>Apple II analog joysticks</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>paddles</string>
+        <key>description</key>
+        <string>Apple II paddles</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>compeyes</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>printer</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ie15</string>
+        <string></string>
         <key>description</key>
-        <string>IE15 Terminal</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>terminal</string>
+        <string>ie15</string>
         <key>description</key>
-        <string>Serial Terminal</string>
+        <string>IE15 Terminal</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>pty</string>
         <key>description</key>
         <string>Pseudo terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>swtpc8212</string>
         <key>description</key>
         <string>SWTPC8212 Terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
     <key>modem</key>
     <array>
       <dict>
         <key>value</key>
-        <string>ie15</string>
+        <string></string>
         <key>description</key>
-        <string>IE15 Terminal</string>
+        <string></string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>terminal</string>
+        <string>ie15</string>
         <key>description</key>
-        <string>Serial Terminal</string>
+        <string>IE15 Terminal</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>pty</string>
         <key>description</key>
         <string>Pseudo terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>swtpc8212</string>
         <key>description</key>
         <string>SWTPC8212 Terminal</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
       </dict>
     </array>
   </dict>
