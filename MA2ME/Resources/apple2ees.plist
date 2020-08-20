@@ -1,0 +1,2313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>apple2ees</string>
+    <key>description</key>
+    <string>Apple //e (Spain)</string>
+    <key>RAM</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <integer>65536</integer>
+        <key>description</key>
+        <string>64K</string>
+      </dict>
+    </array>
+    <key>Resolution</key>
+    <array>
+      <integer>560</integer>
+      <integer>384</integer>
+    </array>
+    <key>sl1</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl2</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl3</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl4</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl5</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl6</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>sl7</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+      </dict>
+    </array>
+    <key>aux</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>rw3</string>
+        <key>description</key>
+        <string>Applied Engineering RamWorks III</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ext80</string>
+        <key>description</key>
+        <string>Apple IIe Extended 80-Column Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>std80</string>
+        <key>description</key>
+        <string>Apple IIe Standard 80-Column Card</string>
+      </dict>
+    </array>
+    <key>gameio</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>compeyes</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>paddles</string>
+        <key>description</key>
+        <string>Apple II paddles</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>joy</string>
+        <key>description</key>
+        <string>Apple II analog joysticks</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>apple3</string>
+    <key>description</key>
+    <string>Apple ///</string>
+    <key>RAM</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <integer>131072</integer>
+        <key>description</key>
+        <string>128K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>524288</integer>
+        <key>description</key>
+        <string>512K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>262144</integer>
+        <key>description</key>
+        <string>256K</string>
+      </dict>
+    </array>
+    <key>Resolution</key>
+    <array>
+      <integer>560</integer>
+      <integer>384</integer>
+    </array>
+    <key>sl1</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+    </array>
+    <key>sl2</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+    </array>
+    <key>sl3</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+    </array>
+    <key>sl4</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+      </dict>
+    </array>
+    <key>rs232</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>ie15</string>
+        <key>description</key>
+        <string>IE15 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pty</string>
+        <key>description</key>
+        <string>Pseudo terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>keyboard</string>
+        <key>description</key>
+        <string>Serial Keyboard</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

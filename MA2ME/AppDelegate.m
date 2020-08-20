@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SlotBrowserDelegate.h"
+#import "SlotViewController.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (strong) IBOutlet SlotBrowserDelegate *slotDelegate;
+@property (strong) IBOutlet SlotViewController *slotController;
 
+
+@property (weak) IBOutlet NSView *modelView;
+@property (weak) IBOutlet NSView *slotView;
 
 /* kvo */
 @property NSString *commandLine;
@@ -42,24 +48,40 @@ static NSString *kMyContext = @"kMyContext";
     
     NSView *view = [_window contentView];
     
-    NSRect frame = [view frame];
-    frame.origin.y += frame.size.height - 200;
-    frame.size.height = 200;
-    
-    NSBrowser *browser = [[NSBrowser alloc] initWithFrame: frame];
+    NSRect frame;
+    NSBrowser *browser = nil;
+
+    frame = [_modelView frame];
+    browser = [[NSBrowser alloc] initWithFrame: frame];
     
     [browser setMaxVisibleColumns: 2];
     [browser setTakesTitleFromPreviousColumn: YES];
     [browser setTitled: NO];
+    [browser setAllowsEmptySelection: NO];
     [browser setDelegate: self];
     [browser setAction: @selector(modelClick:)];
         
-
-    
     [view addSubview: browser];
     [browser setTitled: YES]; // NSBrowser title bug.
     
-
+#if 0
+    frame = [_slotView frame];
+    browser = [[NSBrowser alloc] initWithFrame: frame];
+    
+    [browser setMaxVisibleColumns: 2];
+    [browser setTakesTitleFromPreviousColumn: YES];
+    [browser setTitled: NO];
+    [browser setDelegate: _slotDelegate];
+    //[browser setAction: @selector(modelClick:)];
+        
+    [view addSubview: browser];
+    [browser setTitled: YES]; // NSBrowser title bug.
+    [_slotDelegate setBrowser: browser];
+#endif
+    
+    [_slotView addSubview: [_slotController view]];
+    
+    
     [self addObserver: self forKeyPath: @"mameROM" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     [self addObserver: self forKeyPath: @"mameWindow" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     [self addObserver: self forKeyPath: @"mameSquarePixels" options:0  context: (__bridge void * _Nullable)(kMyContext)];
@@ -106,6 +128,7 @@ static NSString *kMyContext = @"kMyContext";
     // -nounevenstretch -video soft
     if (_mameWindow && _mameSquarePixels) {
 
+        [argv addObject: @"-nomax"];
         if ([_mameROM hasPrefix: @"apple2gs"]) {
             [argv addObject: @"-resolution"];
             [argv addObject: @"704x462"];
@@ -128,8 +151,12 @@ static NSString *kMyContext = @"kMyContext";
 -(IBAction)modelClick:(id)sender {
     
     NSDictionary *item = [self itemForBrowser: sender];
-    [self setMameROM: [item objectForKey: @"Mame"]];
+    NSString *model = [item objectForKey: @"Mame"];
+
+    [self setMameROM: model];
 //    [self buildCommandLine];
+    
+    [_slotDelegate setModel: model];
 }
 
 #pragma mark NSBrowser
@@ -184,15 +211,21 @@ static NSString *kMyContext = @"kMyContext";
     return column == 0 ? @"Model" : @"Submodel";
 }
 
+#if 0
 - (id)browser:(NSBrowser *)browser child:(NSInteger)index ofItem:(id)item {
     return nil;
 }
+-(id)rootItemForBrowser:(NSBrowser *)browser {
+    return _browserItems;
+}
+#endif
 
 - (NSInteger)browser:(NSBrowser *)sender numberOfRowsInColumn:(NSInteger)column {
     
     NSArray *a = [self itemsForBrowser: sender column: column];
     return [a count];
 }
+
 
 
 @end

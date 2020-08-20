@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>apple2cp</string>
+    <key>description</key>
+    <string>Apple //c Plus</string>
+    <key>RAM</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <integer>131072</integer>
+        <key>description</key>
+        <string>128K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>393216</integer>
+        <key>description</key>
+        <string>384K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>655360</integer>
+        <key>description</key>
+        <string>640K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>917504</integer>
+        <key>description</key>
+        <string>896K</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <integer>1179648</integer>
+        <key>description</key>
+        <string>1152K</string>
+      </dict>
+    </array>
+    <key>Resolution</key>
+    <array>
+      <integer>560</integer>
+      <integer>384</integer>
+    </array>
+    <key>gameio</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>compeyes</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>paddles</string>
+        <key>description</key>
+        <string>Apple II paddles</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>joy</string>
+        <key>description</key>
+        <string>Apple II analog joysticks</string>
+      </dict>
+    </array>
+    <key>printer</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>ie15</string>
+        <key>description</key>
+        <string>IE15 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pty</string>
+        <key>description</key>
+        <string>Pseudo terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>keyboard</string>
+        <key>description</key>
+        <string>Serial Keyboard</string>
+      </dict>
+    </array>
+    <key>modem</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>ie15</string>
+        <key>description</key>
+        <string>IE15 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>terminal</string>
+        <key>description</key>
+        <string>Serial Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pty</string>
+        <key>description</key>
+        <string>Pseudo terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dec_loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback (DEC 12-15336-00)</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>null_modem</string>
+        <key>description</key>
+        <string>RS232 Null Modem</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>loopback</string>
+        <key>description</key>
+        <string>RS232 Loopback</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sunkbd</string>
+        <key>description</key>
+        <string>Sun Keyboard Adaptor</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>printer</string>
+        <key>description</key>
+        <string>Serial Printer</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>keyboard</string>
+        <key>description</key>
+        <string>Serial Keyboard</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

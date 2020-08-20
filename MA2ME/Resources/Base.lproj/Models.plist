@@ -136,6 +136,12 @@
 
     <dict>
         <key>Name</key>
+        <string>Laser //c</string>
+        <key>Mame</key>
+        <string>laser2c</string>
+    </dict>
+    <dict>
+        <key>Name</key>
         <string>Laser 128</string>
         <key>Mame</key>
         <string>laser128</string>
@@ -151,16 +157,21 @@
                 <key>Name</key>
                 <string>Laser 128 EX</string>
                 <key>Mame</key>
-                <string>laser128ex</string>
+                <string>las128ex</string>
             </dict>
             <dict>
                 <key>Name</key>
                 <string>Laser 128 EX2</string>
                 <key>Mame</key>
-                <string>laser128e2</string>
+                <string>las128e2</string>
             </dict>
         </array>
     </dict>
-
+    <dict>
+        <key>Name</key>
+        <string>Franklin Ace 100</string>
+        <key>Mame</key>
+        <string>ace100</string>
+    </dict>
 </array>
 </plist>
