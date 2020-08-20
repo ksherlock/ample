@@ -9,7 +9,7 @@
 #import "SlotViewController.h"
 
 @interface SlotViewController () {
-//NSDictionary *_machine;
+
 }
 
 @property (weak) IBOutlet NSPopUpButton *ram_menu;
@@ -29,11 +29,6 @@
 @property (weak) IBOutlet NSPopUpButton *printer_menu;
 @property (weak) IBOutlet NSPopUpButton *modem_menu;
 
-@property (strong) IBOutlet NSArrayController *ram_array;
-
-@property NSArray *ram_menu_values;
-
-@property NSDictionary *machine;
 
 @end
 
@@ -43,65 +38,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
-    [self setRam_menu_values: @[]];
-    
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSURL *url= [bundle URLForResource: @"apple2gs" withExtension: @"plist"];
-    
-    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
-    [self setMachine: d];
 
-    //[self update_ram_menu];
-    
-    
-    
+    [self setModel: @"apple2gs"];
 }
 
 -(void)reset {
     
 }
-- (IBAction)ram_menu_action:(id)sender {
-    NSLog(@"%@", sender);
-}
 
-static NSMenuItem *MemoryMenuItem(unsigned size) {
-
-    NSMenuItem *m;
-    NSString *s;
-    
-    if (size >= 1024 * 1024)
-        s = [NSString stringWithFormat: @"%fM", (double)size / (1024 * 1024)];
-    else
-        s = [NSString stringWithFormat: @"%uK", size / 1024];
-
-    m = [[NSMenuItem alloc] initWithTitle: s action: nil keyEquivalent: @""];
-
-    [m setTag: size];
-    return m;
-}
-
--(void)update_ram_menu {
-#if 0
-    NSMenu *menu = [_ram_menu menu];
-    
-    [menu removeAllItems];
-    
-    [menu addItem: MemoryMenuItem(4096)];
-    [menu addItem: MemoryMenuItem(1310720)];
-    [menu addItem: MemoryMenuItem(5242880)];
-
-    [_ram_array setContent: @[
-     @{ @"description" : @"4K" },
-     @{ @"description" : @"8K" },
-     @{ @"description" : @"16K" }
-     ]
-     ];
-    
-#endif
-    [self setRam_menu_values: [_machine objectForKey: @"RAM"]];
-    //[_ram_array setContent: [_machine objectForKey: @"RAM"]];
-}
 
 -(void)setModel:(NSString *)model {
     
@@ -109,21 +53,115 @@ static NSMenuItem *MemoryMenuItem(unsigned size) {
     if ([model isEqualToString: _model]) return;
     
     _model = model;
-    _machine = nil;
+
+    [self loadMachine: model];
+}
+
+-(void)resetMachine {
+
+    [self setMachine: @{}];
+
+    [self setSl0: @""];
+    [self setSl1: @""];
+    [self setSl2: @""];
+    [self setSl3: @""];
+    [self setSl4: @""];
+    [self setSl5: @""];
+    [self setSl6: @""];
+    [self setSl7: @""];
+
+    [self setRs232: @""];
+    [self setAux: @""];
+    [self setExp: @""];
+    [self setGameio: @""];
+    [self setPrinter: @""];
+    [self setModem: @""];
+
+    [self setMemory: @""];
+    [self setMemoryBytes: 0];
+    [self setResolution: NSMakeSize(0, 0)];
+
     
-    NSGridView *view = (NSGridView *)[self view];
-    if (!_model) {
-        [view setHidden: YES];
-        [self setMemory: 0];
+    [self setArgs: @[]];
+}
+
+-(void)loadMachine: (NSString *)model {
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSURL *url= [bundle URLForResource: model withExtension: @"plist"];
+    
+    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
+
+    if (!d) {
+        [self resetMachine];
         return;
     }
+
+
+    // n.b. - does content binding propogate immediately?
+    [self setMachine: d];
+}
+
+
+- (IBAction)menuChanged:(NSPopUpButton *)sender {
+
+    static NSString *Names[] = {
+
+        @"sl0", @"sl1", @"sl2", @"sl3",
+        @"sl4", @"sl5", @"sl6", @"sl7",
+        @"exp", @"aux",
+        @"gameio", @"printer", @"modem", @"rs232"
+    };
     
-    /* load ... */
+    NSInteger tag = [sender tag];
+
+//    NSInteger ix = [sender indexOfSelectedItem];
     
-    /* ram menu */
-    [_ram_menu removeAllItems];
-    [self update_ram_menu];
+    NSString *key = Names[tag];
+
+    NSDictionary *o = [[sender selectedItem] representedObject];
     
+    [self setValue: [o objectForKey: @"value"] forKey: key];
+
+    [self rebuildArgs];
+}
+
+- (IBAction)memoryMenuChanged:(NSPopUpButton *)sender {
+
+    //
+    NSDictionary *o = [[sender selectedItem] representedObject];
+    [self setMemory: [o objectForKey: @"description"]];
+    [self setMemoryBytes: [(NSNumber *)[o objectForKey: @"value"] unsignedIntValue]];
+    
+    [self rebuildArgs];
+}
+
+-(void)rebuildArgs {
+    
+    NSMutableArray *args = [NSMutableArray new];
+    
+#define _(a, b) if ([a length]) { [args addObject: b]; [args addObject: a]; }
+
+    _(_memory, @"-ramsize")
+
+    _(_sl0, @"-sl0")
+    _(_sl1, @"-sl1")
+    _(_sl2, @"-sl2")
+    _(_sl3, @"-sl3")
+    _(_sl4, @"-sl4")
+    _(_sl5, @"-sl5")
+    _(_sl6, @"-sl6")
+    _(_sl7, @"-sl7")
+
+    _(_rs232, @"-rs232")
+    _(_aux, @"-aux")
+    _(_exp, @"-exp")
+    _(_gameio, @"-gameio")
+    _(_printer, @"-printer")
+    _(_modem, @"-modem")
+
+
+    [self setArgs: args];
 }
 
 @end

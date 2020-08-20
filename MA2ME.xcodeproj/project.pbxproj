@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */; };
+		B60A6E0F24EDFB88004B7EEF /* SlotView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */; };
+		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
 		B64E15A624E9B34700E8AD3D /* Models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64E15A424E9B34700E8AD3D /* Models.plist */; };
 		B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */; };
 		B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */; };
@@ -22,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
+		B60A6E0E24EDFB88004B7EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MA2ME/MA2ME/Base.lproj/SlotView2.xib; sourceTree = "<group>"; };
+		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
+		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
 		B64E15A524E9B34700E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Models.plist; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* ROMBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROMBrowserDelegate.h; sourceTree = "<group>"; };
 		B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROMBrowserDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		B6BA257224E99BE9005FB8FF = {
 			isa = PBXGroup;
 			children = (
+				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
+				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
+				B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */,
 				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B6BA257D24E99BE9005FB8FF /* MA2ME */,
@@ -159,6 +167,7 @@
 			files = (
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
+				B60A6E0F24EDFB88004B7EEF /* SlotView2.xib in Resources */,
 				B64E15B824EC912200E8AD3D /* SlotView.xib in Resources */,
 				B64E15B524EA383F00E8AD3D /* apple2gs in Resources */,
 				B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */,
@@ -176,6 +185,7 @@
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */,
+				B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */,
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B65593B124ECB61800722E0C /* SlotViewController.m in Sources */,
 			);
@@ -184,6 +194,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B60A6E0E24EDFB88004B7EEF /* Base */,
+			);
+			name = SlotView2.xib;
+			sourceTree = "<group>";
+		};
 		B64E15A424E9B34700E8AD3D /* Models.plist */ = {
 			isa = PBXVariantGroup;
 			children = (

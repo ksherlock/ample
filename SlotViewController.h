@@ -13,9 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SlotViewController : NSViewController
 
 @property (nonatomic) NSString *model;
-//@property (nonatomic) NSDictionary *machine;
+@property (nonatomic) NSDictionary *machine;
 
-@property unsigned memory;
+@property NSString *memory;
+@property NSUInteger memoryBytes;
 
 @property NSString *sl0;
 @property NSString *sl1;
@@ -33,8 +34,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *printer;
 @property NSString *modem;
 
+@property NSSize resolution;
+
+@property NSArray *args;
 
 //-(void)setMachine: (NSDictionary *)machine;
+
+- (IBAction)menuChanged:(id)sender;
+- (IBAction)memoryMenuChanged:(id)sender;
 
 @end
 

@@ -769,7 +769,7 @@
                             <font key="font" metaFont="system"/>
                         </pathCell>
                     </pathControl>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFJ-CO-Dzm">
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFJ-CO-Dzm" customClass="FlippedView">
                         <rect key="frame" x="20" y="169" width="306" height="570"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
