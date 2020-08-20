@@ -84,10 +84,48 @@
     [self setArgs: @[]];
 }
 
+static NSFont *ItalicMenuFont(void) {
+    NSFont *font = [NSFont menuFontOfSize: 0];
+    NSFontDescriptor *fd = [font fontDescriptor];
+    NSFontDescriptor *fd2 = [fd fontDescriptorWithSymbolicTraits: NSFontDescriptorTraitItalic];
+    return [NSFont fontWithDescriptor: fd2 size: [font pointSize]];
+}
+
+static void SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
+
+    static NSDictionary *attr = nil;
+    if (!attr) {
+        attr = @{
+            NSFontAttributeName: ItalicMenuFont()
+        };
+    }
+
+    unsigned ix = 0;
+
+    
+    for (NSDictionary *d in items) {
+        BOOL def = [(NSNumber *)[d objectForKey: @"default"] boolValue];
+        if (!def) {
+            ++ix;
+            continue;
+        }
+
+        NSMenuItem *item = [button itemAtIndex: ix];
+        NSString *title = [d objectForKey: @"description"];
+        NSAttributedString *t = [[NSAttributedString alloc] initWithString: title attributes: attr];
+        [item setAttributedTitle: t];
+        return;
+    }
+        
+}
+
 -(void)syncMemory {
     
     int ix = 0;
     NSArray *items = [_machine objectForKey: @"RAM"];
+
+    SetDefaultMenu(items, _ram_menu);
+    
     for (NSDictionary *d in items) {
         unsigned size = [(NSNumber *)[d objectForKey: @"value"] unsignedIntValue];
         if (size == _memoryBytes) {
@@ -108,10 +146,12 @@
 -(void)syncSlot: (NSString *)slot button: (NSPopUpButton *)button {
     
     NSString *value = [self valueForKey: slot];
+    NSArray *items = [_machine objectForKey: slot];
+
+    SetDefaultMenu(items, button);
 
     if (![value length]) return;
 
-    NSArray *items = [_machine objectForKey: slot];
     
     if (![items count]) {
         [self setValue: @"" forKey: slot];
