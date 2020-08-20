@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
+		B64979A624EEC2D9008ABD20 /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649798F24EEC2D8008ABD20 /* apple2gsr1.plist */; };
+		B64979A724EEC2D9008ABD20 /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799024EEC2D8008ABD20 /* apple2ees.plist */; };
+		B64979A824EEC2D9008ABD20 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799124EEC2D8008ABD20 /* apple2p.plist */; };
+		B64979A924EEC2D9008ABD20 /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799224EEC2D8008ABD20 /* apple2gsr0.plist */; };
+		B64979AA24EEC2DA008ABD20 /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799324EEC2D8008ABD20 /* laser2c.plist */; };
+		B64979AB24EEC2DA008ABD20 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799424EEC2D8008ABD20 /* ace100.plist */; };
+		B64979AC24EEC2DA008ABD20 /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799524EEC2D8008ABD20 /* apple2eeuk.plist */; };
+		B64979AD24EEC2DA008ABD20 /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799624EEC2D8008ABD20 /* las128e2.plist */; };
+		B64979AE24EEC2DA008ABD20 /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799724EEC2D8008ABD20 /* apple2ep.plist */; };
+		B64979AF24EEC2DA008ABD20 /* devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799824EEC2D8008ABD20 /* devices.plist */; };
+		B64979B024EEC2DA008ABD20 /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799924EEC2D9008ABD20 /* apple2gs.plist */; };
+		B64979B124EEC2DA008ABD20 /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799A24EEC2D9008ABD20 /* apple2e.plist */; };
+		B64979B224EEC2DA008ABD20 /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799B24EEC2D9008ABD20 /* apple2c.plist */; };
+		B64979B324EEC2DA008ABD20 /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799C24EEC2D9008ABD20 /* laser128.plist */; };
+		B64979B424EEC2DA008ABD20 /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799D24EEC2D9008ABD20 /* apple2euk.plist */; };
+		B64979B524EEC2DA008ABD20 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799E24EEC2D9008ABD20 /* apple2.plist */; };
+		B64979B624EEC2DA008ABD20 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649799F24EEC2D9008ABD20 /* apple3.plist */; };
+		B64979B724EEC2DA008ABD20 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A024EEC2D9008ABD20 /* apple2cp.plist */; };
+		B64979B824EEC2DA008ABD20 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A124EEC2D9008ABD20 /* apple1.plist */; };
+		B64979B924EEC2DA008ABD20 /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A224EEC2D9008ABD20 /* apple2eefr.plist */; };
+		B64979BA24EEC2DA008ABD20 /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A324EEC2D9008ABD20 /* las128ex.plist */; };
+		B64979BB24EEC2DA008ABD20 /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A424EEC2D9008ABD20 /* apple2jp.plist */; };
+		B64979BC24EEC2DA008ABD20 /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64979A524EEC2D9008ABD20 /* apple2ee.plist */; };
 		B64E15A624E9B34700E8AD3D /* Models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64E15A424E9B34700E8AD3D /* Models.plist */; };
 		B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */; };
 		B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */; };
-		B64E15B524EA383F00E8AD3D /* apple2gs in Resources */ = {isa = PBXBuildFile; fileRef = B64E15B424EA383F00E8AD3D /* apple2gs */; };
 		B64E15B824EC912200E8AD3D /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64E15B624EC912200E8AD3D /* SlotView.xib */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
-		B67BD48324EE248C0073E334 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48224EE248C0073E334 /* ace100.plist */; };
-		B67BD48624EE249D0073E334 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48424EE249D0073E334 /* apple1.plist */; };
-		B67BD48724EE249D0073E334 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48524EE249D0073E334 /* apple2.plist */; };
-		B67BD48924EE24A40073E334 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48824EE24A40073E334 /* apple3.plist */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -29,19 +46,38 @@
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
 		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
+		B649798F24EEC2D8008ABD20 /* apple2gsr1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gsr1.plist; sourceTree = "<group>"; };
+		B649799024EEC2D8008ABD20 /* apple2ees.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ees.plist; sourceTree = "<group>"; };
+		B649799124EEC2D8008ABD20 /* apple2p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2p.plist; sourceTree = "<group>"; };
+		B649799224EEC2D8008ABD20 /* apple2gsr0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gsr0.plist; sourceTree = "<group>"; };
+		B649799324EEC2D8008ABD20 /* laser2c.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laser2c.plist; sourceTree = "<group>"; };
+		B649799424EEC2D8008ABD20 /* ace100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace100.plist; sourceTree = "<group>"; };
+		B649799524EEC2D8008ABD20 /* apple2eeuk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2eeuk.plist; sourceTree = "<group>"; };
+		B649799624EEC2D8008ABD20 /* las128e2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las128e2.plist; sourceTree = "<group>"; };
+		B649799724EEC2D8008ABD20 /* apple2ep.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ep.plist; sourceTree = "<group>"; };
+		B649799824EEC2D8008ABD20 /* devices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = devices.plist; sourceTree = "<group>"; };
+		B649799924EEC2D9008ABD20 /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
+		B649799A24EEC2D9008ABD20 /* apple2e.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2e.plist; sourceTree = "<group>"; };
+		B649799B24EEC2D9008ABD20 /* apple2c.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2c.plist; sourceTree = "<group>"; };
+		B649799C24EEC2D9008ABD20 /* laser128.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laser128.plist; sourceTree = "<group>"; };
+		B649799D24EEC2D9008ABD20 /* apple2euk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2euk.plist; sourceTree = "<group>"; };
+		B649799E24EEC2D9008ABD20 /* apple2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2.plist; sourceTree = "<group>"; };
+		B649799F24EEC2D9008ABD20 /* apple3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple3.plist; sourceTree = "<group>"; };
+		B64979A024EEC2D9008ABD20 /* apple2cp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2cp.plist; sourceTree = "<group>"; };
+		B64979A124EEC2D9008ABD20 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
+		B64979A224EEC2D9008ABD20 /* apple2eefr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2eefr.plist; sourceTree = "<group>"; };
+		B64979A324EEC2D9008ABD20 /* las128ex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las128ex.plist; sourceTree = "<group>"; };
+		B64979A424EEC2D9008ABD20 /* apple2jp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2jp.plist; sourceTree = "<group>"; };
+		B64979A524EEC2D9008ABD20 /* apple2ee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ee.plist; sourceTree = "<group>"; };
 		B64E15A524E9B34700E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Models.plist; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* ROMBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROMBrowserDelegate.h; sourceTree = "<group>"; };
 		B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROMBrowserDelegate.m; sourceTree = "<group>"; };
 		B64E15AA24EA1FD400E8AD3D /* SlotBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotBrowserDelegate.h; sourceTree = "<group>"; };
 		B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotBrowserDelegate.m; sourceTree = "<group>"; };
-		B64E15B424EA383F00E8AD3D /* apple2gs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = apple2gs; sourceTree = "<group>"; };
 		B64E15B724EC912200E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MA2ME/Base.lproj/SlotView.xib; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
-		B67BD48224EE248C0073E334 /* ace100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace100.plist; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
-		B67BD48524EE249D0073E334 /* apple2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2.plist; sourceTree = "<group>"; };
-		B67BD48824EE24A40073E334 /* apple3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple3.plist; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* MA2ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MA2ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6BA257F24E99BE9005FB8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,15 +99,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B64E15AF24EA365E00E8AD3D /* Resources */ = {
+		B649798C24EEC165008ABD20 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				B67BD48424EE249D0073E334 /* apple1.plist */,
-				B67BD48524EE249D0073E334 /* apple2.plist */,
-				B67BD48824EE24A40073E334 /* apple3.plist */,
-				B67BD48224EE248C0073E334 /* ace100.plist */,
 				B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */,
-				B64E15B424EA383F00E8AD3D /* apple2gs */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B64E15AF24EA365E00E8AD3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B649799424EEC2D8008ABD20 /* ace100.plist */,
+				B64979A124EEC2D9008ABD20 /* apple1.plist */,
+				B649799E24EEC2D9008ABD20 /* apple2.plist */,
+				B649799B24EEC2D9008ABD20 /* apple2c.plist */,
+				B64979A024EEC2D9008ABD20 /* apple2cp.plist */,
+				B649799A24EEC2D9008ABD20 /* apple2e.plist */,
+				B64979A524EEC2D9008ABD20 /* apple2ee.plist */,
+				B64979A224EEC2D9008ABD20 /* apple2eefr.plist */,
+				B649799024EEC2D8008ABD20 /* apple2ees.plist */,
+				B649799524EEC2D8008ABD20 /* apple2eeuk.plist */,
+				B649799724EEC2D8008ABD20 /* apple2ep.plist */,
+				B649799D24EEC2D9008ABD20 /* apple2euk.plist */,
+				B649799924EEC2D9008ABD20 /* apple2gs.plist */,
+				B649799224EEC2D8008ABD20 /* apple2gsr0.plist */,
+				B649798F24EEC2D8008ABD20 /* apple2gsr1.plist */,
+				B64979A424EEC2D9008ABD20 /* apple2jp.plist */,
+				B649799124EEC2D8008ABD20 /* apple2p.plist */,
+				B649799F24EEC2D9008ABD20 /* apple3.plist */,
+				B649799824EEC2D8008ABD20 /* devices.plist */,
+				B649799624EEC2D8008ABD20 /* las128e2.plist */,
+				B64979A324EEC2D9008ABD20 /* las128ex.plist */,
+				B649799324EEC2D8008ABD20 /* laser2c.plist */,
+				B649799C24EEC2D9008ABD20 /* laser128.plist */,
 				B64E15A424E9B34700E8AD3D /* Models.plist */,
 			);
 			path = Resources;
@@ -86,6 +148,7 @@
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B6BA257D24E99BE9005FB8FF /* MA2ME */,
 				B6BA257C24E99BE9005FB8FF /* Products */,
+				B649798C24EEC165008ABD20 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,16 +237,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67BD48324EE248C0073E334 /* ace100.plist in Resources */,
-				B67BD48624EE249D0073E334 /* apple1.plist in Resources */,
+				B64979B124EEC2DA008ABD20 /* apple2e.plist in Resources */,
+				B64979B624EEC2DA008ABD20 /* apple3.plist in Resources */,
+				B64979B424EEC2DA008ABD20 /* apple2euk.plist in Resources */,
+				B64979B824EEC2DA008ABD20 /* apple1.plist in Resources */,
+				B64979AC24EEC2DA008ABD20 /* apple2eeuk.plist in Resources */,
+				B64979AA24EEC2DA008ABD20 /* laser2c.plist in Resources */,
+				B64979A724EEC2D9008ABD20 /* apple2ees.plist in Resources */,
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
+				B64979A924EEC2D9008ABD20 /* apple2gsr0.plist in Resources */,
+				B64979AB24EEC2DA008ABD20 /* ace100.plist in Resources */,
+				B64979AD24EEC2DA008ABD20 /* las128e2.plist in Resources */,
+				B64979AE24EEC2DA008ABD20 /* apple2ep.plist in Resources */,
+				B64979BB24EEC2DA008ABD20 /* apple2jp.plist in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
-				B67BD48924EE24A40073E334 /* apple3.plist in Resources */,
+				B64979B324EEC2DA008ABD20 /* laser128.plist in Resources */,
+				B64979BC24EEC2DA008ABD20 /* apple2ee.plist in Resources */,
+				B64979B724EEC2DA008ABD20 /* apple2cp.plist in Resources */,
 				B64E15B824EC912200E8AD3D /* SlotView.xib in Resources */,
-				B64E15B524EA383F00E8AD3D /* apple2gs in Resources */,
-				B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */,
-				B67BD48724EE249D0073E334 /* apple2.plist in Resources */,
+				B64979B924EEC2DA008ABD20 /* apple2eefr.plist in Resources */,
+				B64979B024EEC2DA008ABD20 /* apple2gs.plist in Resources */,
+				B64979AF24EEC2DA008ABD20 /* devices.plist in Resources */,
+				B64979B224EEC2DA008ABD20 /* apple2c.plist in Resources */,
 				B64E15A624E9B34700E8AD3D /* Models.plist in Resources */,
+				B64979A824EEC2D9008ABD20 /* apple2p.plist in Resources */,
+				B64979BA24EEC2DA008ABD20 /* las128ex.plist in Resources */,
+				B64979B524EEC2DA008ABD20 /* apple2.plist in Resources */,
+				B64979A624EEC2D9008ABD20 /* apple2gsr1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
