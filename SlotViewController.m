@@ -21,7 +21,6 @@
 @property (weak) IBOutlet NSPopUpButton *sl5_menu;
 @property (weak) IBOutlet NSPopUpButton *sl6_menu;
 @property (weak) IBOutlet NSPopUpButton *sl7_menu;
-@property (weak) IBOutlet NSPopUpButton *sl8_menu;
 @property (weak) IBOutlet NSPopUpButton *exp_menu;
 @property (weak) IBOutlet NSPopUpButton *aux_menu;
 @property (weak) IBOutlet NSPopUpButton *rs232_menu;
@@ -85,6 +84,72 @@
     [self setArgs: @[]];
 }
 
+-(void)syncMemory {
+    
+    int ix = 0;
+    NSArray *items = [_machine objectForKey: @"RAM"];
+    for (NSDictionary *d in items) {
+        unsigned size = [(NSNumber *)[d objectForKey: @"value"] unsignedIntValue];
+        if (size == _memoryBytes) {
+            [_ram_menu selectItemAtIndex: ix];
+            [self setMemory: [d objectForKey: @"description"]];
+            return;
+        }
+        ++ix;
+    }
+
+    [self setMemoryBytes: 0];
+    [self setMemory: @""];
+    [_ram_menu selectItemAtIndex: 0];
+    /* set to default */
+    
+}
+
+-(void)syncSlot: (NSString *)slot button: (NSPopUpButton *)button {
+    
+    NSString *value = [self valueForKey: slot];
+
+    if (![value length]) return;
+
+    NSArray *items = [_machine objectForKey: slot];
+    
+    if (![items count]) {
+        [self setValue: @"" forKey: slot];
+        return;
+    }
+
+    int ix = 0;
+    for (NSDictionary *d in items) {
+        if ([value isEqualToString: [d objectForKey: @"value"]]) {
+
+            [button selectItemAtIndex: ix];
+            return;
+        }
+        ++ix;
+    }
+    [self setValue: @"" forKey: slot];
+    [button selectItemAtIndex: 0];
+}
+
+-(void)syncSlots {
+    
+    [self syncMemory];
+    [self syncSlot: @"sl0" button: _sl0_menu];
+    [self syncSlot: @"sl1" button: _sl1_menu];
+    [self syncSlot: @"sl2" button: _sl2_menu];
+    [self syncSlot: @"sl3" button: _sl3_menu];
+    [self syncSlot: @"sl4" button: _sl4_menu];
+    [self syncSlot: @"sl5" button: _sl5_menu];
+    [self syncSlot: @"sl6" button: _sl6_menu];
+    [self syncSlot: @"sl7" button: _sl7_menu];
+    [self syncSlot: @"rs232" button: _rs232_menu];
+    [self syncSlot: @"aux" button: _aux_menu];
+    [self syncSlot: @"exp" button: _exp_menu];
+    [self syncSlot: @"gameio" button: _game_menu];
+    [self syncSlot: @"modem" button: _modem_menu];
+    [self syncSlot: @"printer" button: _printer_menu];
+}
+
 -(void)loadMachine: (NSString *)model {
     
     NSBundle *bundle = [NSBundle mainBundle];
@@ -97,9 +162,18 @@
         return;
     }
 
+    NSDictionary *r = [d objectForKey: @"resolution"];
+    NSSize res = NSMakeSize(0, 0);
+    if (r) {
+        res.height = [(NSNumber *)[r objectForKey: @"height"] doubleValue];
+        res.width = [(NSNumber *)[r objectForKey: @"width"] doubleValue];
+    }
+    [self setResolution: res];
 
     // n.b. - does content binding propogate immediately?
     [self setMachine: d];
+    [self syncSlots];
+    [self rebuildArgs];
 }
 
 
@@ -109,8 +183,8 @@
 
         @"sl0", @"sl1", @"sl2", @"sl3",
         @"sl4", @"sl5", @"sl6", @"sl7",
-        @"exp", @"aux",
-        @"gameio", @"printer", @"modem", @"rs232"
+        @"exp", @"aux", @"rs232",
+        @"gameio", @"printer", @"modem",
     };
     
     NSInteger tag = [sender tag];

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */; };
-		B60A6E0F24EDFB88004B7EEF /* SlotView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
 		B64E15A624E9B34700E8AD3D /* Models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64E15A424E9B34700E8AD3D /* Models.plist */; };
 		B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */; };
@@ -16,6 +15,10 @@
 		B64E15B524EA383F00E8AD3D /* apple2gs in Resources */ = {isa = PBXBuildFile; fileRef = B64E15B424EA383F00E8AD3D /* apple2gs */; };
 		B64E15B824EC912200E8AD3D /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64E15B624EC912200E8AD3D /* SlotView.xib */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
+		B67BD48324EE248C0073E334 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48224EE248C0073E334 /* ace100.plist */; };
+		B67BD48624EE249D0073E334 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48424EE249D0073E334 /* apple1.plist */; };
+		B67BD48724EE249D0073E334 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48524EE249D0073E334 /* apple2.plist */; };
+		B67BD48924EE24A40073E334 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67BD48824EE24A40073E334 /* apple3.plist */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -24,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
-		B60A6E0E24EDFB88004B7EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MA2ME/MA2ME/Base.lproj/SlotView2.xib; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
 		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
 		B64E15A524E9B34700E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Models.plist; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		B64E15B724EC912200E8AD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MA2ME/Base.lproj/SlotView.xib; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
+		B67BD48224EE248C0073E334 /* ace100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace100.plist; sourceTree = "<group>"; };
+		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
+		B67BD48524EE249D0073E334 /* apple2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2.plist; sourceTree = "<group>"; };
+		B67BD48824EE24A40073E334 /* apple3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple3.plist; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* MA2ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MA2ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6BA257F24E99BE9005FB8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B67BD48424EE249D0073E334 /* apple1.plist */,
+				B67BD48524EE249D0073E334 /* apple2.plist */,
+				B67BD48824EE24A40073E334 /* apple3.plist */,
+				B67BD48224EE248C0073E334 /* ace100.plist */,
 				B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */,
 				B64E15B424EA383F00E8AD3D /* apple2gs */,
 				B64E15A424E9B34700E8AD3D /* Models.plist */,
@@ -72,7 +82,6 @@
 			children = (
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
-				B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */,
 				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B6BA257D24E99BE9005FB8FF /* MA2ME */,
@@ -165,12 +174,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67BD48324EE248C0073E334 /* ace100.plist in Resources */,
+				B67BD48624EE249D0073E334 /* apple1.plist in Resources */,
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
-				B60A6E0F24EDFB88004B7EEF /* SlotView2.xib in Resources */,
+				B67BD48924EE24A40073E334 /* apple3.plist in Resources */,
 				B64E15B824EC912200E8AD3D /* SlotView.xib in Resources */,
 				B64E15B524EA383F00E8AD3D /* apple2gs in Resources */,
 				B60A6E0C24ECE23F004B7EEF /* apple2gs.plist in Resources */,
+				B67BD48724EE249D0073E334 /* apple2.plist in Resources */,
 				B64E15A624E9B34700E8AD3D /* Models.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,14 +206,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B60A6E0D24EDFB88004B7EEF /* SlotView2.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B60A6E0E24EDFB88004B7EEF /* Base */,
-			);
-			name = SlotView2.xib;
-			sourceTree = "<group>";
-		};
 		B64E15A424E9B34700E8AD3D /* Models.plist */ = {
 			isa = PBXVariantGroup;
 			children = (

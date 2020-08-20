@@ -41,7 +41,15 @@
                         </binding>
                     </connections>
                 </gridRow>
-                <gridRow yPlacement="center" height="30" id="JGU-aq-3uw"/>
+                <gridRow yPlacement="center" height="30" id="JGU-aq-3uw">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl1" id="1io-aZ-v2G">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
                 <gridRow yPlacement="center" height="30" id="gVW-Ya-phU">
                     <connections>
                         <binding destination="-2" name="hidden" keyPath="machine.sl2" id="AgS-hm-ePr">
@@ -51,11 +59,51 @@
                         </binding>
                     </connections>
                 </gridRow>
-                <gridRow yPlacement="center" height="30" id="3fP-qp-zmi"/>
-                <gridRow yPlacement="center" height="30" id="86u-5p-UT6"/>
-                <gridRow yPlacement="center" height="30" id="Wdg-xb-xQx"/>
-                <gridRow yPlacement="center" height="30" id="ein-Fe-vBw"/>
-                <gridRow yPlacement="center" height="30" id="qjB-2w-AWE"/>
+                <gridRow yPlacement="center" height="30" id="3fP-qp-zmi">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl3" id="98U-4P-iRh">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="86u-5p-UT6">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl4" id="hsy-pm-Qjk">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="Wdg-xb-xQx">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl5" id="0QC-RB-278">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="ein-Fe-vBw">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl6" id="731-3P-DUy">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="qjB-2w-AWE">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.sl7" id="sew-Ds-4I9">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
                 <gridRow yPlacement="center" height="30" id="EEX-dh-jwn">
                     <connections>
                         <binding destination="-2" name="hidden" keyPath="machine.exp" id="EOZ-lS-QHF">
@@ -74,10 +122,42 @@
                         </binding>
                     </connections>
                 </gridRow>
-                <gridRow yPlacement="center" height="30" id="wQi-Oz-7Ye"/>
-                <gridRow yPlacement="center" height="30" id="gr2-eY-995"/>
-                <gridRow yPlacement="center" height="30" id="1xN-lm-s4l"/>
-                <gridRow yPlacement="center" height="30" id="M2s-qn-SIT"/>
+                <gridRow yPlacement="center" height="30" id="wQi-Oz-7Ye">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.rs232" id="AeP-bn-blv">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="gr2-eY-995">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.gameio" id="x3I-Bd-9di">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="1xN-lm-s4l">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.printer" id="T9a-lH-z5K">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
+                <gridRow yPlacement="center" height="30" id="M2s-qn-SIT">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.modem" id="PSe-R3-S3e">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
             </rows>
             <columns>
                 <gridColumn xPlacement="fill" width="100" id="zpB-Rf-dWg"/>

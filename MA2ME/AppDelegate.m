@@ -154,9 +154,11 @@ static NSString *kMyContext = @"kMyContext";
     NSString *model = [item objectForKey: @"Mame"];
 
     [self setMameROM: model];
+
 //    [self buildCommandLine];
     
     [_slotDelegate setModel: model];
+    [_slotController setModel: model];
 }
 
 #pragma mark NSBrowser
