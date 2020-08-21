@@ -7,18 +7,19 @@
 //
 
 #import "AppDelegate.h"
-#import "SlotBrowserDelegate.h"
 #import "SlotViewController.h"
+#import "MediaViewController.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
-@property (strong) IBOutlet SlotBrowserDelegate *slotDelegate;
 @property (strong) IBOutlet SlotViewController *slotController;
+@property (strong) IBOutlet MediaViewController *mediaController;
 
 
 @property (weak) IBOutlet NSView *modelView;
 @property (weak) IBOutlet NSView *slotView;
+@property (weak) IBOutlet NSView *mediaView;
 
 /* kvo */
 @property NSString *commandLine;
@@ -80,6 +81,7 @@ static NSString *kMyContext = @"kMyContext";
 #endif
     
     [_slotView addSubview: [_slotController view]];
+    [_mediaView addSubview: [_mediaController view]];
     
     
     [self addObserver: self forKeyPath: @"mameROM" options:0  context: (__bridge void * _Nullable)(kMyContext)];
@@ -87,6 +89,8 @@ static NSString *kMyContext = @"kMyContext";
     [self addObserver: self forKeyPath: @"mameSquarePixels" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     [self addObserver: self forKeyPath: @"mameDebug" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     [self addObserver: self forKeyPath: @"mameNoThrottle" options:0  context: (__bridge void * _Nullable)(kMyContext)];
+    
+    [_slotController addObserver: self forKeyPath: @"args" options: 0 context:  (__bridge void * _Nullable)(kMyContext)];
     [self buildCommandLine];
 }
 
@@ -102,7 +106,7 @@ static NSString *kMyContext = @"kMyContext";
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
 
-    if (context == (__bridge void *)kMyContext && object == self) {
+    if (context == (__bridge void *)kMyContext) {
         [self buildCommandLine];
     } else {
         [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
@@ -126,23 +130,35 @@ static NSString *kMyContext = @"kMyContext";
     if (_mameWindow) [argv addObject: @"-window"];
     
     // -nounevenstretch -video soft
-    if (_mameWindow && _mameSquarePixels) {
+    [argv addObject: @"-skip_gameinfo"];
 
+    if (_mameWindow && _mameSquarePixels) {
+        NSSize screen = [_slotController resolution];
+        
+        NSString *res = [NSString stringWithFormat: @"%ux%u", (unsigned)screen.width, (unsigned)screen.height];
+        
         [argv addObject: @"-nomax"];
+        [argv addObject: @"-nounevenstretch"];
+
         if ([_mameROM hasPrefix: @"apple2gs"]) {
             [argv addObject: @"-resolution"];
-            [argv addObject: @"704x462"];
+            [argv addObject: res]; // @"704x462"];
             [argv addObject: @"-video"];
             [argv addObject: @"soft"];
             [argv addObject: @"-aspect"];
             [argv addObject: @"704:462"];
         } else {
             [argv addObject: @"-resolution"];
-            [argv addObject: @"560x384"];
+            [argv addObject: res]; // @"560x384"];
             
         }
     }
 
+    NSArray *args = [_slotController args];
+    if ([args count]) {
+        [argv addObjectsFromArray: args];
+    }
+    
     if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     
     [self setCommandLine: [argv componentsJoinedByString:@" "]];
@@ -157,7 +173,6 @@ static NSString *kMyContext = @"kMyContext";
 
 //    [self buildCommandLine];
     
-    [_slotDelegate setModel: model];
     [_slotController setModel: model];
 }
 

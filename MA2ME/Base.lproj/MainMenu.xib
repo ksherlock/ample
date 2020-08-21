@@ -15,9 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="mediaController" destination="kiU-IX-LTW" id="HXj-YL-bBX"/>
+                <outlet property="mediaView" destination="Jcd-jI-Pje" id="d1b-R8-L4a"/>
                 <outlet property="modelView" destination="jf6-4d-ms1" id="HUy-kg-cCk"/>
                 <outlet property="slotController" destination="CYF-Xd-EdF" id="14d-v7-98c"/>
-                <outlet property="slotDelegate" destination="xmI-g8-lsK" id="hrE-aS-P30"/>
                 <outlet property="slotView" destination="cFJ-CO-Dzm" id="u9o-0O-D5i"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -773,11 +774,15 @@
                         <rect key="frame" x="20" y="169" width="306" height="570"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-jI-Pje" customClass="FlippedView">
+                        <rect key="frame" x="392" y="169" width="306" height="570"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    </customView>
                 </subviews>
             </view>
             <point key="canvasLocation" x="769" y="196.5"/>
         </window>
-        <customObject id="xmI-g8-lsK" customClass="SlotBrowserDelegate"/>
         <viewController title="Slot View" nibName="SlotView" id="CYF-Xd-EdF" customClass="SlotViewController"/>
+        <viewController title="Media View" nibName="MediaView" id="kiU-IX-LTW" customClass="MediaViewController"/>
     </objects>
 </document>

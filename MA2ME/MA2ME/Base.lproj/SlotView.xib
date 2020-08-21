@@ -182,7 +182,9 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="k8O-sG-Qld">
                                 <items>
-                                    <menuItem title="Item 1" state="on" id="92u-m2-3yN"/>
+                                    <menuItem title="Item 1" state="on" id="92u-m2-3yN">
+                                        <attributedString key="attributedTitle"/>
+                                    </menuItem>
                                     <menuItem title="Item 2" id="dPG-tR-M4A"/>
                                     <menuItem title="Item 3" id="q2n-oZ-46s"/>
                                 </items>

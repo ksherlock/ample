@@ -202,11 +202,11 @@ static void SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
         return;
     }
 
-    NSDictionary *r = [d objectForKey: @"resolution"];
+    NSArray *r = [d objectForKey: @"Resolution"];
     NSSize res = NSMakeSize(0, 0);
     if (r) {
-        res.height = [(NSNumber *)[r objectForKey: @"height"] doubleValue];
-        res.width = [(NSNumber *)[r objectForKey: @"width"] doubleValue];
+        res.width = [(NSNumber *)[r objectAtIndex: 0 /*@"width"*/] doubleValue];
+        res.height = [(NSNumber *)[r objectAtIndex: 1 /*@"height"*/] doubleValue];
     }
     [self setResolution: res];
 
@@ -244,8 +244,13 @@ static void SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
 
     //
     NSDictionary *o = [[sender selectedItem] representedObject];
-    [self setMemory: [o objectForKey: @"description"]];
+    NSString *title = [o objectForKey: @"description"];
+    [self setMemory: title];
     [self setMemoryBytes: [(NSNumber *)[o objectForKey: @"value"] unsignedIntValue]];
+    
+    // if pull-down menu
+    if ([sender pullsDown])
+        [sender setTitle: title];
     
     [self rebuildArgs];
 }
