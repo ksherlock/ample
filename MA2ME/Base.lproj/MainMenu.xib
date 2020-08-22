@@ -763,13 +763,6 @@
                             <binding destination="Voe-Tx-rLC" name="value" keyPath="self.mameSquarePixels" id="rNk-1d-QZl"/>
                         </connections>
                     </button>
-                    <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bN-As-LRL">
-                        <rect key="frame" x="398" y="96" width="204" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <pathCell key="cell" selectable="YES" editable="YES" alignment="left" placeholderString="Floppy 1" pathStyle="popUp" id="3aA-ge-m45">
-                            <font key="font" metaFont="system"/>
-                        </pathCell>
-                    </pathControl>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFJ-CO-Dzm" customClass="FlippedView">
                         <rect key="frame" x="20" y="169" width="306" height="570"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>

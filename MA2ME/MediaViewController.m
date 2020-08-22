@@ -58,15 +58,6 @@
     return YES;
 }
 
-
--(void)prepareCell: (id)cell {
-    [(NSTextFieldCell *)cell setTitle: _title];
-}
-
--(Class)cellClass {
-    return [NSTextFieldCell class];
-}
-
 -(NSString *)viewIdentifier {
     return @"CategoryView";
 }
@@ -114,15 +105,7 @@
     return NO;
 }
 
--(void)prepareCell: (id)cell {
-    [(NSPathCell *)cell setURL: _url];
-    [(NSPathCell *)cell setPathStyle: NSPathStylePopUp];
-//    [(NSTextFieldCell *)cell setTitle: @"xxx"];
-}
 
--(Class)cellClass {
-    return [NSPathCell class];
-}
 
 -(NSString *)viewIdentifier {
     return @"ItemView";
@@ -131,19 +114,6 @@
 -(void)prepareView: (TablePathView *)view {
     NSPathControl *pc = [view pathControl];
 
-#if 0
-    Class pcClass = [NSPathControl class];
-    if (!pc) {
-        for (NSView *v in [view subviews]) {
-            if ([v isKindOfClass: pcClass]) {
-                pc = v;
-                [view setPathControl: pc];
-                break;
-            }
-        }
-    }
-    if (!pc) return;
-#endif
     [pc setURL: _url]; //??? will binding take care of it?
     [pc unbind: @"value"];
     [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
@@ -244,14 +214,11 @@
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isGroupItem:(id)item {
-    return [item isGroupItem];
+    return NO; //[item isGroupItem];
 }
 
 
 
-- (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    [item prepareCell: cell];
-}
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView shouldShowOutlineCellForItem:(id)item {
     return NO;

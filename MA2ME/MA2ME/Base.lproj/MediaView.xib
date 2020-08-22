@@ -21,7 +21,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="pBj-py-R6a" id="sIz-DD-PZQ">
+                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" outlineTableColumn="pBj-py-R6a" id="sIz-DD-PZQ">
                         <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <size key="intercellSpacing" width="2" height="3"/>
@@ -78,11 +78,18 @@
                                         </connections>
                                     </tableCellView>
                                     <tableCellView identifier="ItemView" id="yGq-lc-RCM" customClass="TablePathView">
-                                        <rect key="frame" x="1" y="41" width="304" height="40"/>
+                                        <rect key="frame" x="1" y="41" width="304" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
+                                            <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
+                                                <rect key="frame" x="0.0" y="1" width="251" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                </pathCell>
+                                            </pathControl>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl">
-                                                <rect key="frame" x="273" y="5" width="33" height="27"/>
+                                                <rect key="frame" x="278" y="4" width="23" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSStopProgressFreestandingTemplate" imagePosition="overlaps" alignment="center" controlSize="small" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -92,15 +99,14 @@
                                                     <action selector="buttonDelete:" target="-2" id="f30-YS-1UK"/>
                                                 </connections>
                                             </button>
-                                            <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
-                                                <rect key="frame" x="0.0" y="8" width="207" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
-                                                    <font key="font" metaFont="smallSystem"/>
-                                                </pathCell>
-                                            </pathControl>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jeU-0Q-Eps">
+                                                <rect key="frame" x="256" y="6" width="14" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" image="NSStatusUnavailable" id="dtr-VF-lvn"/>
+                                            </imageView>
                                         </subviews>
                                         <connections>
+                                            <outlet property="imageView" destination="jeU-0Q-Eps" id="Cjz-C6-w1l"/>
                                             <outlet property="pathControl" destination="f7R-TO-fmF" id="oH7-N3-JC7"/>
                                         </connections>
                                     </tableCellView>
@@ -127,6 +133,7 @@
         </scrollView>
     </objects>
     <resources>
+        <image name="NSStatusUnavailable" width="16" height="16"/>
         <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
     </resources>
 </document>

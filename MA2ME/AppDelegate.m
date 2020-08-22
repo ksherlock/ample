@@ -115,6 +115,7 @@ static NSString *kMyContext = @"kMyContext";
 
 -(void)buildCommandLine {
 
+    static NSString *EmptyArg = @"\"\"";
 
     if (!_mameROM) {
         [self setCommandLine: @""];
@@ -154,10 +155,14 @@ static NSString *kMyContext = @"kMyContext";
         }
     }
 
+    
     NSArray *args = [_slotController args];
-    if ([args count]) {
-        [argv addObjectsFromArray: args];
+    for (NSString *x in args) {
+        [argv addObject: [x length] ? x : EmptyArg];
     }
+//    if ([args count]) {
+//        [argv addObjectsFromArray: args];
+//    }
     
     if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     
