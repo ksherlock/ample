@@ -12,6 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MediaViewController : NSViewController <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
+@property (weak) IBOutlet NSOutlineView *outlineView;
+
+- (IBAction)buttonDelete:(id)sender;
+
+@end
+
+
+
+@interface TablePathView : NSTableCellView
+@property (weak) IBOutlet NSPathControl *pathControl;
+@property (weak) IBOutlet NSButton *deleteButton;
+
 @end
 
 NS_ASSUME_NONNULL_END

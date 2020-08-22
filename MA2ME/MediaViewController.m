@@ -8,7 +8,23 @@
 
 #import "MediaViewController.h"
 
-@interface MediaCategory : NSObject {
+
+@implementation TablePathView
+
+@end
+
+
+@protocol MediaNode
+-(BOOL)isGroupItem;
+-(BOOL)isExpandable;
+-(NSInteger) count;
+
+-(NSString *)viewIdentifier;
+-(void)prepareView: (NSTableCellView *)view;
+-(CGFloat)height;
+@end
+
+@interface MediaCategory : NSObject <MediaNode> {
         
 }
 @property NSInteger validCount;
@@ -46,10 +62,26 @@
 -(void)prepareCell: (id)cell {
     [(NSTextFieldCell *)cell setTitle: _title];
 }
+
+-(Class)cellClass {
+    return [NSTextFieldCell class];
+}
+
+-(NSString *)viewIdentifier {
+    return @"CategoryView";
+}
+
+-(void)prepareView: (NSTableCellView *)view {
+    [[view textField] setStringValue: _title];
+}
+
+-(CGFloat)height {
+    return 17;
+}
 @end
 
 
-@interface MediaItem : NSObject {
+@interface MediaItem : NSObject <MediaNode> {
     
 }
 @property NSURL *url;
@@ -83,9 +115,43 @@
 }
 
 -(void)prepareCell: (id)cell {
-    [(NSTextFieldCell *)cell setTitle: @"xxx"];
+    [(NSPathCell *)cell setURL: _url];
+    [(NSPathCell *)cell setPathStyle: NSPathStylePopUp];
+//    [(NSTextFieldCell *)cell setTitle: @"xxx"];
 }
 
+-(Class)cellClass {
+    return [NSPathCell class];
+}
+
+-(NSString *)viewIdentifier {
+    return @"ItemView";
+}
+
+-(void)prepareView: (TablePathView *)view {
+    NSPathControl *pc = [view pathControl];
+
+#if 0
+    Class pcClass = [NSPathControl class];
+    if (!pc) {
+        for (NSView *v in [view subviews]) {
+            if ([v isKindOfClass: pcClass]) {
+                pc = v;
+                [view setPathControl: pc];
+                break;
+            }
+        }
+    }
+    if (!pc) return;
+#endif
+    [pc setURL: _url]; //??? will binding take care of it?
+    [pc unbind: @"value"];
+    [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
+}
+
+-(CGFloat)height {
+    return 27;
+}
 
 
 @end
@@ -95,6 +161,7 @@
     MediaCategory *_data[4];
     NSArray *_root;
 }
+@property (weak) IBOutlet NSPathControl *_hacky_hack;
 
 @end
 
@@ -102,6 +169,11 @@
 
 -(void)awakeFromNib {
     
+    static unsigned first = 0;
+    
+    if (first) return;
+    first++;
+
     MediaCategory *a, *b, *c, *d;
     
     a = [[MediaCategory alloc] initWithTitle: @"5.25\" Floppies"];
@@ -141,11 +213,12 @@
     //NSOutlineView *view = [self view];
     //[view expandItem: nil expandChildren: YES];
     // Do view setup here.
+    [_outlineView expandItem: nil expandChildren: YES];
 }
 
 #pragma mark - NSOutlineViewDelegate
 
-#if 0
+
 - (void)outlineView:(NSOutlineView *)outlineView didAddRowView:(NSTableRowView *)rowView forRow:(NSInteger)row {
     
 }
@@ -156,17 +229,17 @@
 
 //- (NSTableRowView *)outlineView:(NSOutlineView *)outlineView rowViewForItem:(id)item;
 
-- (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
+- (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id<MediaNode>)item {
     
-    //NSView *v = [outlineView makeViewWithIdentifier:<#(nonnull NSUserInterfaceItemIdentifier)#> owner: self];
-    
-    NSView *v = [[NSView alloc]initWithFrame: NSZeroRect];
-    
+    NSString *ident = [item viewIdentifier];
+    if (!ident) return nil;
+    NSTableCellView *v = [outlineView makeViewWithIdentifier: ident owner: self];
+    [(id<MediaNode>)item prepareView: v];
     return v;
 }
-#endif
 
-- (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id<MediaNode>)item {
     return [item isExpandable];
 }
 
@@ -181,17 +254,24 @@
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView shouldShowOutlineCellForItem:(id)item {
-    return YES;
+    return NO;
 }
 
+/*
 - (BOOL)outlineView:(NSOutlineView *)outlineView shouldShowCellExpansionForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    return YES;
+    return NO;
 }
+*/
 
+
+-(BOOL)outlineView:(NSOutlineView *)outlineView shouldCollapseItem:(id)item {
+    return NO;
+}
 
 
 - (NSCell *)outlineView:(NSOutlineView *)outlineView dataCellForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    return nil;
+    //return nil;
+    return [[item cellClass] new];
 }
 
 
@@ -216,6 +296,20 @@
     return [item objectAtIndex: index];
 }
 
+-(CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id<MediaNode>)item {
+    return [item height];
+}
 
 
+#pragma mark - IBActions
+- (IBAction)buttonDelete:(id)sender {
+    
+    NSInteger row = [_outlineView rowForView: sender];
+    if (row < 0) return;
+
+    //TablePathView *pv = [_outlineView viewAtColumn: 0 row: row makeIfNecessary: NO];
+    MediaItem *item = [_outlineView itemAtRow: row];
+    [item setUrl: nil];
+    //[[pv pathControl] setURL: nil];
+}
 @end
