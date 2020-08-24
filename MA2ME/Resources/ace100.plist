@@ -6,16 +6,8 @@
     <string>ace100</string>
     <key>description</key>
     <string>Franklin Ace 100</string>
-    <key>RAM</key>
+    <key>ram</key>
     <array>
-      <dict>
-        <key>value</key>
-        <integer>0</integer>
-        <key>default</key>
-        <false/>
-        <key>description</key>
-        <string></string>
-      </dict>
       <dict>
         <key>value</key>
         <integer>4096</integer>
@@ -89,7 +81,12 @@
         <true/>
       </dict>
     </array>
-    <key>Resolution</key>
+    <key>media</key>
+    <dict>
+      <key>cass</key>
+      <integer>1</integer>
+    </dict>
+    <key>resolution</key>
     <array>
       <integer>560</integer>
       <integer>384</integer>
@@ -100,7 +97,7 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
         <false/>
       </dict>
@@ -127,9 +124,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -157,11 +154,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -170,6 +185,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -178,14 +198,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -210,6 +227,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -234,6 +258,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -298,6 +327,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -306,6 +340,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -314,6 +353,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -485,6 +526,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -514,14 +563,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl2</key>
@@ -530,9 +573,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -560,11 +603,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -573,6 +634,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -581,14 +647,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -613,6 +676,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -637,6 +707,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -701,6 +776,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -709,6 +789,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -717,6 +802,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -888,6 +975,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -917,14 +1012,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl3</key>
@@ -933,9 +1022,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -963,11 +1052,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -976,6 +1083,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -984,14 +1096,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1016,6 +1125,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1040,6 +1156,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1104,6 +1225,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1112,6 +1238,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1120,6 +1251,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1291,6 +1424,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -1320,14 +1461,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl4</key>
@@ -1336,7 +1471,7 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1366,11 +1501,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1379,6 +1532,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1387,14 +1545,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1419,6 +1574,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1443,6 +1605,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1507,6 +1674,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1515,6 +1687,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1523,6 +1700,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1694,6 +1873,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -1723,14 +1910,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl5</key>
@@ -1739,9 +1920,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1769,11 +1950,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1782,6 +1981,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1790,14 +1994,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1822,6 +2023,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1846,6 +2054,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1910,6 +2123,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1918,6 +2136,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1926,6 +2149,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2097,6 +2322,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -2126,14 +2359,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl6</key>
@@ -2142,7 +2369,7 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2172,11 +2399,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2185,6 +2430,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2193,14 +2443,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2225,6 +2472,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2249,6 +2503,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2313,6 +2572,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2321,6 +2585,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2329,6 +2598,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2500,6 +2771,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -2529,14 +2808,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl7</key>
@@ -2545,9 +2818,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2575,11 +2848,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2588,6 +2879,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2596,14 +2892,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2628,6 +2921,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2652,6 +2952,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2716,6 +3021,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2724,6 +3034,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -2732,6 +3047,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2903,6 +3220,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -2932,14 +3257,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>gameio</key>
@@ -2948,9 +3267,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>

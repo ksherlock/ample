@@ -6,16 +6,8 @@
     <string>las128e2</string>
     <key>description</key>
     <string>Laser 128ex2 (version 6.1)</string>
-    <key>RAM</key>
+    <key>ram</key>
     <array>
-      <dict>
-        <key>value</key>
-        <integer>0</integer>
-        <key>default</key>
-        <false/>
-        <key>description</key>
-        <string></string>
-      </dict>
       <dict>
         <key>value</key>
         <integer>131072</integer>
@@ -57,7 +49,12 @@
         <false/>
       </dict>
     </array>
-    <key>Resolution</key>
+    <key>media</key>
+    <dict>
+      <key>flop_5_25</key>
+      <integer>2</integer>
+    </dict>
+    <key>resolution</key>
     <array>
       <integer>560</integer>
       <integer>384</integer>
@@ -68,9 +65,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -103,9 +100,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -149,14 +146,6 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
@@ -184,6 +173,14 @@
         <string>sunkbd</string>
         <key>description</key>
         <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
         <key>default</key>
         <false/>
       </dict>
@@ -194,9 +191,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -240,14 +237,6 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
@@ -275,6 +264,14 @@
         <string>sunkbd</string>
         <key>description</key>
         <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
         <key>default</key>
         <false/>
       </dict>

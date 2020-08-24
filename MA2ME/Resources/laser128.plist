@@ -6,16 +6,8 @@
     <string>laser128</string>
     <key>description</key>
     <string>Laser 128 (version 4.2)</string>
-    <key>RAM</key>
+    <key>ram</key>
     <array>
-      <dict>
-        <key>value</key>
-        <integer>0</integer>
-        <key>default</key>
-        <false/>
-        <key>description</key>
-        <string></string>
-      </dict>
       <dict>
         <key>value</key>
         <integer>131072</integer>
@@ -57,7 +49,12 @@
         <false/>
       </dict>
     </array>
-    <key>Resolution</key>
+    <key>media</key>
+    <dict>
+      <key>flop_5_25</key>
+      <integer>2</integer>
+    </dict>
+    <key>resolution</key>
     <array>
       <integer>560</integer>
       <integer>384</integer>
@@ -68,9 +65,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -98,11 +95,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -111,6 +126,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -119,14 +139,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -135,6 +152,8 @@
         <string>Apple II High-Speed SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -159,6 +178,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -183,6 +209,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -191,6 +222,8 @@
         <string>Applied Engineering PC Transporter</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -247,6 +280,8 @@
         <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -263,6 +298,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -271,6 +311,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -279,6 +324,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -386,17 +433,19 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
         <key>default</key>
         <false/>
       </dict>
@@ -458,6 +507,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -487,14 +544,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>sl7</key>
@@ -503,9 +554,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -533,11 +584,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiiiwm</string>
         <key>description</key>
         <string>Apple Disk II IWM controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -546,6 +615,11 @@
         <string>Apple Disk II NG controller (13-sector)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -554,14 +628,11 @@
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diskii</string>
-        <key>description</key>
-        <string>Apple Disk II controller</string>
-        <key>default</key>
-        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -570,6 +641,8 @@
         <string>Apple II High-Speed SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -594,6 +667,13 @@
         <string>Apple II SCSI Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -618,6 +698,11 @@
         <string>Applesurance Diagnostic Controller</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -626,6 +711,8 @@
         <string>Applied Engineering PC Transporter</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -682,6 +769,8 @@
         <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -698,6 +787,11 @@
         <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -706,6 +800,11 @@
         <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -714,6 +813,8 @@
         <string>Corvus Flat Cable interface</string>
         <key>default</key>
         <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -821,17 +922,19 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
         <key>default</key>
         <false/>
       </dict>
@@ -893,6 +996,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>ultratermenh</string>
         <key>description</key>
         <string>Videx UltraTerm (enhanced //e)</string>
@@ -922,14 +1033,8 @@
         <string>Zip Technologies ZipDrive</string>
         <key>default</key>
         <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vtc1</string>
-        <key>description</key>
-        <string>unknown Videoterm clone</string>
-        <key>default</key>
-        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
     </array>
     <key>gameio</key>
@@ -938,9 +1043,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -973,9 +1078,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1019,14 +1124,6 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
@@ -1054,6 +1151,14 @@
         <string>sunkbd</string>
         <key>description</key>
         <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1064,9 +1169,9 @@
         <key>value</key>
         <string></string>
         <key>description</key>
-        <string></string>
+        <string>—None—</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1110,14 +1215,6 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>keyboard</string>
         <key>description</key>
         <string>Serial Keyboard</string>
@@ -1145,6 +1242,14 @@
         <string>sunkbd</string>
         <key>description</key>
         <string>Sun Keyboard Adaptor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swtpc8212</string>
+        <key>description</key>
+        <string>SWTPC8212 Terminal</string>
         <key>default</key>
         <false/>
       </dict>

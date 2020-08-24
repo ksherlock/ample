@@ -99,7 +99,7 @@ static NSFont *ItalicMenuFont(void) {
     return [NSFont fontWithDescriptor: fd2 size: [font pointSize]];
 }
 
-// entry 0 will always be empty.
+// entry 0 is None/Empty for slots, but populated for RAM.
 static int SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
 
     static NSDictionary *attr = nil;
@@ -128,10 +128,26 @@ static int SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
     return 0;
 }
 
+static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
+    
+    [button setAutoenablesItems: NO];
+    unsigned ix = 0;
+    for (NSDictionary *d in items) {
+        BOOL value = [(NSNumber *)[d objectForKey: @"disabled"] boolValue];
+        if (value) {
+            
+            NSMenuItem *item = [button itemAtIndex: ix];
+            [item setEnabled: NO];
+        }
+        ++ix;
+    }
+    
+}
+
 -(void)syncMemory {
     
     int ix = 0;
-    NSArray *items = [_machine objectForKey: @"RAM"];
+    NSArray *items = [_machine objectForKey: @"ram"];
 
     unsigned default_index = SetDefaultMenu(items, _ram_menu);
     _slots_valid |= kMemoryMask;
@@ -183,6 +199,7 @@ static int SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
     }
     _slots_valid |= mask;
 
+    DeactivateMenus(items, button);
     unsigned default_index = SetDefaultMenu(items, button);
 
     if (default_index) _slots_default |= mask;
@@ -226,8 +243,8 @@ static int SetDefaultMenu(NSArray *items, NSPopUpButton *button) {
     [self syncSlot: @"aux" button: _aux_menu index: 9];
     [self syncSlot: @"exp" button: _exp_menu index: 10];
     [self syncSlot: @"gameio" button: _game_menu index: 11];
-    [self syncSlot: @"modem" button: _modem_menu index: 12];
-    [self syncSlot: @"printer" button: _printer_menu index: 13];
+    [self syncSlot: @"printer" button: _printer_menu index: 12];
+    [self syncSlot: @"modem" button: _modem_menu index: 13];
 }
 
 -(void)loadMachine: (NSString *)model {

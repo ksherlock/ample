@@ -15,7 +15,7 @@ _trailer = '</plist>\n'
 
 INDENT = "  "
 
-def _bad(x, indent=0):
+def _bad(x, akku, indent=""):
 	raise ValueError("plist: bad type: {} ({})".format(type(x), x))
 
 

@@ -3,101 +3,31 @@
 <plist version="1.0">
   <dict>
     <key>value</key>
-    <string>apple3</string>
+    <string>agat7</string>
     <key>description</key>
-    <string>Apple ///</string>
+    <string>Agat-7</string>
     <key>ram</key>
     <array>
       <dict>
         <key>value</key>
-        <integer>131072</integer>
+        <integer>32768</integer>
         <key>description</key>
-        <string>128K</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>262144</integer>
-        <key>description</key>
-        <string>256K</string>
+        <string>32K</string>
         <key>default</key>
         <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>524288</integer>
-        <key>description</key>
-        <string>512K</string>
-        <key>default</key>
-        <false/>
       </dict>
     </array>
     <key>media</key>
     <dict>
+      <key>flop_5_25</key>
+      <integer>2</integer>
+      <key>cass</key>
+      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
-      <integer>560</integer>
-      <integer>384</integer>
-    </array>
-    <key>sl1</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>focusdrive</string>
-        <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-        <key>default</key>
-        <false/>
-      </dict>
+      <integer>512</integer>
+      <integer>512</integer>
     </array>
     <key>sl2</key>
     <array>
@@ -107,52 +37,58 @@
         <key>description</key>
         <string>—None—</string>
         <key>default</key>
-        <true/>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mouse</string>
+        <string>a9fdchle</string>
         <key>description</key>
-        <string>Apple II Mouse Card</string>
+        <string>Agat 840K floppy card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>cffa2</string>
+        <string>a9fdc</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>Agat 840K floppy controller card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7fdc</string>
+        <key>description</key>
+        <string>Agat-7 140K floppy card</string>
         <key>default</key>
         <false/>
         <key>media</key>
         <dict>
-          <key>hard</key>
+          <key>flop_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
       <dict>
         <key>value</key>
-        <string>focusdrive</string>
+        <string>a7lang</string>
         <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
+        <string>Agat-7 32K Language Card</string>
         <key>default</key>
-        <false/>
-        <key>disabled</key>
         <true/>
       </dict>
       <dict>
         <key>value</key>
-        <string>applicard</string>
+        <string>a7ram</string>
         <key>description</key>
-        <string>PCPI Applicard</string>
+        <string>Agat-7 32K RAM Card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>thclock</string>
+        <string>a7ports</string>
         <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
+        <string>Agat-7 Ports Card</string>
         <key>default</key>
         <false/>
       </dict>
@@ -165,52 +101,58 @@
         <key>description</key>
         <string>—None—</string>
         <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a9fdchle</string>
+        <key>description</key>
+        <string>Agat 840K floppy card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a9fdc</string>
+        <key>description</key>
+        <string>Agat 840K floppy controller card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7fdc</string>
+        <key>description</key>
+        <string>Agat-7 140K floppy card</string>
+        <key>default</key>
         <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>mouse</string>
-        <key>description</key>
-        <string>Apple II Mouse Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cffa2</string>
-        <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
-        <key>default</key>
-        <false/>
         <key>media</key>
         <dict>
-          <key>hard</key>
+          <key>flop_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
       <dict>
         <key>value</key>
-        <string>focusdrive</string>
+        <string>a7lang</string>
         <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
+        <string>Agat-7 32K Language Card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>thclock</string>
+        <string>a7ram</string>
         <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
+        <string>Agat-7 32K RAM Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
         <key>default</key>
         <false/>
       </dict>
@@ -223,57 +165,63 @@
         <key>description</key>
         <string>—None—</string>
         <key>default</key>
-        <true/>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>mouse</string>
+        <string>a9fdchle</string>
         <key>description</key>
-        <string>Apple II Mouse Card</string>
+        <string>Agat 840K floppy card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>cffa2</string>
+        <string>a9fdc</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>Agat 840K floppy controller card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7fdc</string>
+        <key>description</key>
+        <string>Agat-7 140K floppy card</string>
         <key>default</key>
         <false/>
         <key>media</key>
         <dict>
-          <key>hard</key>
+          <key>flop_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
       <dict>
         <key>value</key>
-        <string>focusdrive</string>
+        <string>a7lang</string>
         <key>description</key>
-        <string>Parsons Engineering Focus Drive</string>
+        <string>Agat-7 32K Language Card</string>
         <key>default</key>
         <false/>
-        <key>disabled</key>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7ram</string>
+        <key>description</key>
+        <string>Agat-7 32K RAM Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
         <true/>
       </dict>
-      <dict>
-        <key>value</key>
-        <string>applicard</string>
-        <key>description</key>
-        <string>PCPI Applicard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>thclock</string>
-        <key>description</key>
-        <string>ThunderWare ThunderClock Plus</string>
-        <key>default</key>
-        <false/>
-      </dict>
     </array>
-    <key>rs232</key>
+    <key>sl5</key>
     <array>
       <dict>
         <key>value</key>
@@ -285,81 +233,118 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>ie15</string>
+        <string>a9fdchle</string>
         <key>description</key>
-        <string>IE15 Terminal</string>
+        <string>Agat 840K floppy card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>pty</string>
+        <string>a9fdc</string>
         <key>description</key>
-        <string>Pseudo terminal</string>
+        <string>Agat 840K floppy controller card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>loopback</string>
+        <string>a7fdc</string>
         <key>description</key>
-        <string>RS232 Loopback</string>
+        <string>Agat-7 140K floppy card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7lang</string>
+        <key>description</key>
+        <string>Agat-7 32K Language Card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>dec_loopback</string>
+        <string>a7ram</string>
         <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
+        <string>Agat-7 32K RAM Card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>null_modem</string>
+        <string>a7ports</string>
         <key>description</key>
-        <string>RS232 Null Modem</string>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+    </array>
+    <key>sl6</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>keyboard</string>
+        <string>a9fdchle</string>
         <key>description</key>
-        <string>Serial Keyboard</string>
+        <string>Agat 840K floppy card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>printer</string>
+        <string>a9fdc</string>
         <key>description</key>
-        <string>Serial Printer</string>
+        <string>Agat 840K floppy controller card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>terminal</string>
+        <string>a7fdc</string>
         <key>description</key>
-        <string>Serial Terminal</string>
+        <string>Agat-7 140K floppy card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>a7lang</string>
+        <key>description</key>
+        <string>Agat-7 32K Language Card</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
         <key>value</key>
-        <string>sunkbd</string>
+        <string>a7ram</string>
         <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
+        <string>Agat-7 32K RAM Card</string>
         <key>default</key>
-        <false/>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
-        <string>swtpc8212</string>
+        <string>a7ports</string>
         <key>description</key>
-        <string>SWTPC8212 Terminal</string>
+        <string>Agat-7 Ports Card</string>
         <key>default</key>
         <false/>
       </dict>

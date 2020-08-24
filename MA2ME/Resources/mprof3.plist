@@ -3,87 +3,29 @@
 <plist version="1.0">
   <dict>
     <key>value</key>
-    <string>apple2gs</string>
+    <string>mprof3</string>
     <key>description</key>
-    <string>Apple IIgs (ROM03)</string>
+    <string>Microprofessor III</string>
     <key>ram</key>
     <array>
       <dict>
         <key>value</key>
-        <integer>1048576</integer>
+        <integer>131072</integer>
         <key>description</key>
-        <string>1M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>2097152</integer>
-        <key>description</key>
-        <string>2M</string>
+        <string>128K</string>
         <key>default</key>
         <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>3145728</integer>
-        <key>description</key>
-        <string>3M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>4194304</integer>
-        <key>description</key>
-        <string>4M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>5242880</integer>
-        <key>description</key>
-        <string>5M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>6291456</integer>
-        <key>description</key>
-        <string>6M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>7340032</integer>
-        <key>description</key>
-        <string>7M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <integer>8388608</integer>
-        <key>description</key>
-        <string>8M</string>
-        <key>default</key>
-        <false/>
       </dict>
     </array>
     <key>media</key>
     <dict>
-      <key>flop_5_25</key>
-      <integer>2</integer>
-      <key>flop_3_5</key>
-      <integer>2</integer>
+      <key>cass</key>
+      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
-      <integer>704</integer>
-      <integer>462</integer>
+      <integer>560</integer>
+      <integer>384</integer>
     </array>
     <key>sl1</key>
     <array>
@@ -118,6 +60,45 @@
         <string>ALF MC1 / Apple Music II</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -191,6 +172,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -223,6 +227,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -231,19 +243,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -298,6 +300,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -383,6 +393,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -428,6 +446,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -526,6 +552,45 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
@@ -596,6 +661,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -628,6 +716,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -636,19 +732,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -703,6 +789,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -788,6 +882,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -833,6 +935,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -931,6 +1041,45 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
@@ -1001,6 +1150,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -1033,6 +1205,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -1041,19 +1221,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -1108,6 +1278,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1193,6 +1371,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -1238,6 +1424,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1308,7 +1502,7 @@
         <key>description</key>
         <string>—None—</string>
         <key>default</key>
-        <true/>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -1333,6 +1527,45 @@
         <string>ALF MC1 / Apple Music II</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -1406,6 +1639,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -1438,6 +1694,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -1446,19 +1710,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -1513,6 +1767,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1598,6 +1860,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -1643,6 +1913,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1741,6 +2019,45 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
@@ -1811,6 +2128,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -1843,6 +2183,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -1851,19 +2199,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -1918,6 +2256,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2003,6 +2349,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -2048,6 +2402,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2118,7 +2480,7 @@
         <key>description</key>
         <string>—None—</string>
         <key>default</key>
-        <true/>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -2146,11 +2508,50 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
         <key>default</key>
-        <false/>
+        <true/>
         <key>media</key>
         <dict>
           <key>flop_5_25</key>
@@ -2216,6 +2617,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -2248,6 +2672,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -2256,19 +2688,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -2323,6 +2745,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2408,6 +2838,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -2453,6 +2891,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2551,6 +2997,45 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>diskiing</string>
         <key>description</key>
         <string>Apple Disk II NG controller (16-sector)</string>
@@ -2621,6 +3106,29 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>phasor</string>
         <key>description</key>
         <string>Applied Engineering Phasor</string>
@@ -2653,6 +3161,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>aevm80</string>
         <key>description</key>
         <string>Applied Engineering Viewmaster 80</string>
@@ -2661,19 +3177,9 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>vulcangold</string>
-        <key>description</key>
-        <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
-        <key>default</key>
-        <false/>
-        <key>disabled</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
         <string>vulcan</string>
         <key>description</key>
-        <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
         <key>default</key>
         <false/>
         <key>disabled</key>
@@ -2728,6 +3234,14 @@
         <string>dx1</string>
         <key>description</key>
         <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2813,6 +3327,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -2858,6 +3380,14 @@
         <string>mockingboard</string>
         <key>description</key>
         <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2920,6 +3450,41 @@
         <true/>
       </dict>
     </array>
+    <key>aux</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ext80</string>
+        <key>description</key>
+        <string>Apple IIe Extended 80-Column Card</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>std80</string>
+        <key>description</key>
+        <string>Apple IIe Standard 80-Column Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>rw3</string>
+        <key>description</key>
+        <string>Applied Engineering RamWorks III</string>
+        <key>default</key>
+        <false/>
+      </dict>
+    </array>
     <key>gameio</key>
     <array>
       <dict>
@@ -2951,188 +3516,6 @@
         <string>compeyes</string>
         <key>description</key>
         <string>Digital Vision ComputerEyes</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>printer</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ie15</string>
-        <key>description</key>
-        <string>IE15 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>pty</string>
-        <key>description</key>
-        <string>Pseudo terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>keyboard</string>
-        <key>description</key>
-        <string>Serial Keyboard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>terminal</string>
-        <key>description</key>
-        <string>Serial Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>modem</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ie15</string>
-        <key>description</key>
-        <string>IE15 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>pty</string>
-        <key>description</key>
-        <string>Pseudo terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>keyboard</string>
-        <key>description</key>
-        <string>Serial Keyboard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>terminal</string>
-        <key>description</key>
-        <string>Serial Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
         <key>default</key>
         <false/>
       </dict>
