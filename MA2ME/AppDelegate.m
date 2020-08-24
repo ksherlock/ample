@@ -113,9 +113,75 @@ static NSString *kMyContext = @"kMyContext";
     }
 }
 
+static NSString * JoinArguments(NSArray *argv) {
+
+    static NSCharacterSet *safe = nil;
+    static NSCharacterSet *unsafe = nil;
+
+    if (!safe) {
+        NSString *str =
+            @"%+-./:=_"
+            @"0123456789"
+            @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        ;
+        safe = [NSCharacterSet characterSetWithCharactersInString: str];
+        unsafe = [safe invertedSet];
+    }
+    
+    NSMutableString *rv = [NSMutableString new];
+
+    
+    unsigned ix = 0;
+    for (NSString *s in argv) {
+        if (ix++) [rv appendString: @" "];
+        NSUInteger l = [s length];
+        
+        if (!l) {
+            [rv appendString: @"''"];
+            continue;
+        }
+        
+        if (!CFStringFindCharacterFromSet((CFStringRef)s, (CFCharacterSetRef)unsafe, CFRangeMake(0, l), 0, NULL)) {
+            [rv appendString: s];
+            continue;
+        }
+        
+        unichar *buffer = malloc(sizeof(unichar) * l);
+        [s getCharacters: buffer range: NSMakeRange(0, l)];
+
+        [rv appendString: @"'"];
+        for (NSUInteger i = 0; i < l; ++i) {
+            unichar c = buffer[i];
+            switch (c) {
+                case '\'':
+                    [rv appendString: @"\\'"];
+                    break;
+                case '\\':
+                    [rv appendString: @"\\\\"];
+                    break;
+                case 0x7f:
+                    [rv appendString: @"\\177"];
+                    break;
+                default: {
+                    NSString *cc;
+                    if (c < 0x20) {
+                        cc = [NSString stringWithFormat: @"\\%o", c];
+                    } else {
+                        cc = [NSString stringWithCharacters: &c length: 1];
+                    }
+                    [rv appendString: cc];
+                    break;
+                }
+            }
+        }
+        [rv appendString: @"'"];
+        free(buffer);
+    }
+    return rv;
+}
+
 -(void)buildCommandLine {
 
-    static NSString *EmptyArg = @"\"\"";
 
     if (!_mameROM) {
         [self setCommandLine: @""];
@@ -157,16 +223,14 @@ static NSString *kMyContext = @"kMyContext";
 
     
     NSArray *args = [_slotController args];
-    for (NSString *x in args) {
-        [argv addObject: [x length] ? x : EmptyArg];
+    if ([args count]) {
+        [argv addObjectsFromArray: args];
     }
-//    if ([args count]) {
-//        [argv addObjectsFromArray: args];
-//    }
     
     if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     
-    [self setCommandLine: [argv componentsJoinedByString:@" "]];
+    
+    [self setCommandLine: JoinArguments(argv)]; //[argv componentsJoinedByString:@" "]];
 }
 
 -(IBAction)modelClick:(id)sender {
