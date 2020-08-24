@@ -190,11 +190,12 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     unsigned mask = 1 << index;
 
     _slots_default &= ~mask;
-    
+    _slots_valid &= ~mask;
+
     if (![items count]) {
-        [self setValue: @"" forKey: slot];
-        _slots_explicit &= ~mask;
-        _slots_valid &= ~mask;
+        //[self setValue: @"" forKey: slot]; // retain for later.
+        //_slots_explicit &= ~mask;
+        
         return;
     }
     _slots_valid |= mask;
@@ -239,9 +240,9 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     [self syncSlot: @"sl5" button: _sl5_menu index: 5];
     [self syncSlot: @"sl6" button: _sl6_menu index: 6];
     [self syncSlot: @"sl7" button: _sl7_menu index: 7];
-    [self syncSlot: @"rs232" button: _rs232_menu index: 8];
+    [self syncSlot: @"exp" button: _exp_menu index: 8];
     [self syncSlot: @"aux" button: _aux_menu index: 9];
-    [self syncSlot: @"exp" button: _exp_menu index: 10];
+    [self syncSlot: @"rs232" button: _rs232_menu index: 10];
     [self syncSlot: @"gameio" button: _game_menu index: 11];
     [self syncSlot: @"printer" button: _printer_menu index: 12];
     [self syncSlot: @"modem" button: _modem_menu index: 13];
@@ -352,14 +353,12 @@ static BOOL should_add_arg(unsigned slot, unsigned valid_slots, unsigned explici
     _(5, _sl5, @"-sl5")
     _(6, _sl6, @"-sl6")
     _(7, _sl7, @"-sl7")
-
-    _(8, _rs232, @"-rs232")
+    _(8, _exp, @"-exp")
     _(9, _aux, @"-aux")
-    _(10, _exp, @"-exp")
+    _(10, _rs232, @"-rs232")
     _(11, _gameio, @"-gameio")
     _(12, _printer, @"-printer")
     _(13, _modem, @"-modem")
-
 
     [self setArgs: args];
 }
