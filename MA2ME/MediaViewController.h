@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)buttonDelete:(id)sender;
 
+
+-(void)setMedia: (NSDictionary *)media;
+
 @end
 
 

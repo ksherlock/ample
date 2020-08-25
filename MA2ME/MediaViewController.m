@@ -36,6 +36,20 @@
 -(BOOL)isGroupItem;
 @end
 
+@interface MediaItem : NSObject <MediaNode>
+
+@property NSURL *url;
+@property BOOL valid;
+
+-(NSInteger)count;
+-(id)objectAtIndex:(NSInteger)index;
+-(BOOL)isGroupItem;
+
+-(void)invalidate;
+@end
+
+
+
 @implementation MediaCategory
 
 -(instancetype)initWithTitle: (NSString *)title {
@@ -69,18 +83,41 @@
 -(CGFloat)height {
     return 17;
 }
-@end
 
 
-@interface MediaItem : NSObject <MediaNode> {
+-(BOOL)setItemCount: (unsigned)newCount {
+    unsigned count = (unsigned)[_children count];
+    if (count == newCount) return NO;
+
+    NSMutableArray *tmp = [NSMutableArray arrayWithArray: _children];
+
+    _validCount = newCount;
+
+    while (newCount > count) {
+        [tmp addObject: [MediaItem new]];
+        ++count;
+    }
+    // delete excess items, if blank.  otherwise, mark invalid.
+    unsigned ix = 0;
+    for(MediaItem *item in tmp) {
+        [item setValid: ix < newCount];
+    }
+
+    while (newCount > count) {
+        --newCount;
+        MediaItem *item = [tmp lastObject];
+        if ([item url]) break;
+        
+        [tmp removeLastObject];
+    }
     
+    [self setChildren: tmp];
+    return YES;
 }
-@property NSURL *url;
 
--(NSInteger)count;
--(id)objectAtIndex:(NSInteger)index;
--(BOOL)isGroupItem;
 @end
+
+
 
 @implementation MediaItem
 
@@ -105,8 +142,6 @@
     return NO;
 }
 
-
-
 -(NSString *)viewIdentifier {
     return @"ItemView";
 }
@@ -123,12 +158,14 @@
     return 27;
 }
 
-
+-(void)invalidate {
+    _valid = NO;
+}
 @end
 
 @interface MediaViewController () {
 
-    MediaCategory *_data[4];
+    MediaCategory *_data[5];
     NSArray *_root;
 }
 @property (weak) IBOutlet NSPathControl *_hacky_hack;
@@ -144,19 +181,22 @@
     if (first) return;
     first++;
 
-    MediaCategory *a, *b, *c, *d;
+    MediaCategory *a, *b, *c, *d, *e;
     
     a = [[MediaCategory alloc] initWithTitle: @"5.25\" Floppies"];
     b = [[MediaCategory alloc] initWithTitle: @"3.5\" Floppies"];
     c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
-    d = [[MediaCategory alloc] initWithTitle: @"Casettes"];
+    d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
+    e = [[MediaCategory alloc] initWithTitle: @"Casettes"];
 
     
     _data[0] = a;
     _data[1] = b;
     _data[2] = c;
     _data[3] = d;
-    _root = @[a,b,c,d];
+    _data[4] = e;
+
+    _root = @[a,b,c,d,e];
     
     
     [a setChildren: @[
@@ -174,6 +214,52 @@
         [MediaItem new],
     ]];
 
+    [d setChildren: @[
+        [MediaItem new],
+        [MediaItem new],
+    ]];
+}
+
+
+enum {
+    kIndexFloppy_5_25 = 0,
+    kIndexFloppy_3_5,
+    kIndex_HardDrive,
+    kIndexCDROM,
+    kIndexCassette
+};
+-(void)setMedia: (NSDictionary *)media {
+    
+    static NSString *Keys[] = {
+        @"flop_5_25",
+        @"flop_3_5",
+        @"hard",
+        @"cdrm",
+        @"cass"
+    };
+    NSNumber *o;
+    MediaCategory *cat;
+    unsigned i;
+    BOOL delta = NO;
+    
+    for (unsigned j = 0; j < 5; ++j) {
+    
+        o = [media objectForKey: Keys[j]];
+        i = [o unsignedIntValue];
+        cat = _data[j];
+        delta |= [cat setItemCount: i];
+    }
+
+    
+    if (delta) {
+        NSMutableArray *tmp = [NSMutableArray new];
+        for (unsigned j = 0 ; j < 5; ++j) {
+            MediaCategory *cat = _data[j];
+            if ([cat count]) [tmp addObject: cat];
+        }
+        _root = tmp;
+        [_outlineView reloadData];
+    }
 }
 
 - (void)viewDidLoad {
