@@ -14,7 +14,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="nVT-kT-bWl">
+        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="nVT-kT-bWl">
             <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="IBD-wb-pch">
@@ -81,17 +81,17 @@
                                         <rect key="frame" x="1" y="41" width="304" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
+                                            <pathControl focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
                                                 <rect key="frame" x="0.0" y="1" width="251" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
+                                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </pathCell>
                                             </pathControl>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl">
-                                                <rect key="frame" x="278" y="4" width="23" height="18"/>
+                                                <rect key="frame" x="256" y="5" width="23" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSStopProgressFreestandingTemplate" imagePosition="overlaps" alignment="center" controlSize="small" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
+                                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSNavEjectButton.normalSelected" imagePosition="overlaps" alignment="center" controlSize="small" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </buttonCell>
@@ -99,14 +99,9 @@
                                                     <action selector="buttonDelete:" target="-2" id="f30-YS-1UK"/>
                                                 </connections>
                                             </button>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jeU-0Q-Eps">
-                                                <rect key="frame" x="256" y="6" width="14" height="14"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" image="NSStatusUnavailable" id="dtr-VF-lvn"/>
-                                            </imageView>
                                         </subviews>
                                         <connections>
-                                            <outlet property="imageView" destination="jeU-0Q-Eps" id="Cjz-C6-w1l"/>
+                                            <outlet property="deleteButton" destination="zNo-ij-mUl" id="9br-3c-ddI"/>
                                             <outlet property="pathControl" destination="f7R-TO-fmF" id="oH7-N3-JC7"/>
                                         </connections>
                                     </tableCellView>
@@ -122,7 +117,7 @@
                 <nil key="backgroundColor"/>
             </clipView>
             <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9Vz-lW-4GG">
-                <rect key="frame" x="0.0" y="485" width="306" height="15"/>
+                <rect key="frame" x="-100" y="-100" width="306" height="15"/>
                 <autoresizingMask key="autoresizingMask"/>
             </scroller>
             <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="f8l-nC-KhG">
@@ -133,7 +128,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="NSStatusUnavailable" width="16" height="16"/>
-        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
+        <image name="NSNavEjectButton.normalSelected" width="128" height="128"/>
     </resources>
 </document>

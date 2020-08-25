@@ -86,25 +86,26 @@
 
 
 -(BOOL)setItemCount: (unsigned)newCount {
-    unsigned count = (unsigned)[_children count];
-    if (count == newCount) return NO;
 
+    if (newCount == _validCount) {
+        return NO;
+    }
+
+    unsigned count = (unsigned)[_children count];
     NSMutableArray *tmp = [NSMutableArray arrayWithArray: _children];
 
     _validCount = newCount;
 
-    while (newCount > count) {
+    for (unsigned i = count; i < newCount; ++i) {
         [tmp addObject: [MediaItem new]];
-        ++count;
     }
     // delete excess items, if blank.  otherwise, mark invalid.
     unsigned ix = 0;
     for(MediaItem *item in tmp) {
-        [item setValid: ix < newCount];
+        [item setValid: ix++ < newCount];
     }
 
-    while (newCount > count) {
-        --newCount;
+    for (unsigned i = newCount; i < count; ++i) {
         MediaItem *item = [tmp lastObject];
         if ([item url]) break;
         
@@ -115,6 +116,25 @@
     return YES;
 }
 
+-(BOOL)pruneChildren {
+    NSUInteger count = [_children count];
+    BOOL delta = NO;
+    if (_validCount == count) return NO;
+
+    NSMutableArray *tmp = [NSMutableArray arrayWithArray: _children];
+    for (NSInteger i = _validCount; i < count; ++i) {
+        MediaItem *item = [tmp lastObject];
+        if ([item url]) break;
+    
+        [tmp removeLastObject];
+        delta = YES;
+    }
+    if (delta) {
+        [self setChildren: tmp];
+        return YES;
+    }
+    return NO;
+}
 @end
 
 
@@ -152,6 +172,10 @@
     [pc setURL: _url]; //??? will binding take care of it?
     [pc unbind: @"value"];
     [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
+    
+    NSColor *tintColor = nil;
+    if (!_valid) tintColor = [NSColor redColor];
+    [[view deleteButton] setContentTintColor: tintColor];
 }
 
 -(CGFloat)height {
@@ -167,8 +191,8 @@
 
     MediaCategory *_data[5];
     NSArray *_root;
+    NSDictionary *_media;
 }
-@property (weak) IBOutlet NSPathControl *_hacky_hack;
 
 @end
 
@@ -196,28 +220,8 @@
     _data[3] = d;
     _data[4] = e;
 
-    _root = @[a,b,c,d,e];
-    
-    
-    [a setChildren: @[
-        [MediaItem new],
-        [MediaItem new],
-    ]];
+    _root = @[];
 
-    [b setChildren: @[
-        [MediaItem new],
-        [MediaItem new],
-    ]];
-
-    [c setChildren: @[
-        [MediaItem new],
-        [MediaItem new],
-    ]];
-
-    [d setChildren: @[
-        [MediaItem new],
-        [MediaItem new],
-    ]];
 }
 
 
@@ -228,6 +232,20 @@ enum {
     kIndexCDROM,
     kIndexCassette
 };
+
+-(void)rebuildRoot {
+    NSMutableArray *tmp = [NSMutableArray new];
+    for (unsigned j = 0 ; j < 5; ++j) {
+        MediaCategory *cat = _data[j];
+        if ([cat count]) [tmp addObject: cat];
+    }
+    _root = tmp;
+    //[_outlineView reloadItem: nil reloadChildren: YES];
+
+    [_outlineView reloadData];
+    [_outlineView expandItem: nil expandChildren: YES];
+}
+
 -(void)setMedia: (NSDictionary *)media {
     
     static NSString *Keys[] = {
@@ -237,10 +255,15 @@ enum {
         @"cdrm",
         @"cass"
     };
+
     NSNumber *o;
     MediaCategory *cat;
     unsigned i;
     BOOL delta = NO;
+    
+    
+    if (_media == media) return;
+    _media = media;
     
     for (unsigned j = 0; j < 5; ++j) {
     
@@ -251,15 +274,7 @@ enum {
     }
 
     
-    if (delta) {
-        NSMutableArray *tmp = [NSMutableArray new];
-        for (unsigned j = 0 ; j < 5; ++j) {
-            MediaCategory *cat = _data[j];
-            if ([cat count]) [tmp addObject: cat];
-        }
-        _root = tmp;
-        [_outlineView reloadData];
-    }
+    if (delta) [self rebuildRoot];
 }
 
 - (void)viewDidLoad {
@@ -269,6 +284,7 @@ enum {
     //NSOutlineView *view = [self view];
     //[view expandItem: nil expandChildren: YES];
     // Do view setup here.
+    [_outlineView reloadData];
     [_outlineView expandItem: nil expandChildren: YES];
 }
 
@@ -364,5 +380,11 @@ enum {
     MediaItem *item = [_outlineView itemAtRow: row];
     [item setUrl: nil];
     //[[pv pathControl] setURL: nil];
+    
+    // if item is invalid, should attempt to remove...
+    if (![item valid]) {
+        MediaCategory *cat = [_outlineView parentForItem: item];
+        if ([cat pruneChildren]) [self rebuildRoot];
+    }
 }
 @end

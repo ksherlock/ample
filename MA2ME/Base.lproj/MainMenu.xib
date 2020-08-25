@@ -736,7 +736,7 @@
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-kz-ZSS">
                         <rect key="frame" x="621" y="53" width="85" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="evD-kp-H2u">
+                        <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" image="NSAppleMenuImage" imagePosition="leading" alignment="center" borderStyle="border" inset="2" id="evD-kp-H2u">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -778,4 +778,7 @@
         <viewController title="Slot View" nibName="SlotView" id="CYF-Xd-EdF" customClass="SlotViewController"/>
         <viewController title="Media View" nibName="MediaView" id="kiU-IX-LTW" customClass="MediaViewController"/>
     </objects>
+    <resources>
+        <image name="NSAppleMenuImage" width="128" height="128"/>
+    </resources>
 </document>

@@ -91,6 +91,9 @@ static NSString *kMyContext = @"kMyContext";
     [self addObserver: self forKeyPath: @"mameNoThrottle" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     
     [_slotController addObserver: self forKeyPath: @"args" options: 0 context:  (__bridge void * _Nullable)(kMyContext)];
+    
+    [_mediaController bind: @"media" toObject: _slotController withKeyPath: @"media" options: 0];
+    
     [self buildCommandLine];
 }
 

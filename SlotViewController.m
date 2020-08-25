@@ -15,6 +15,10 @@ const unsigned kMemoryMask = 1 << 16;
     unsigned _slots_explicit;
     unsigned _slots_valid;
     unsigned _slots_default;
+    
+    NSDictionary *_slot_object[14];
+    NSDictionary *_slot_media[14];
+    NSDictionary *_machine_media;
 }
 
 @property (weak) IBOutlet NSPopUpButton *ram_menu;
@@ -89,7 +93,19 @@ const unsigned kMemoryMask = 1 << 16;
     _slots_explicit = 0;
     _slots_valid = 0;
 
+    _machine_media = nil;
+    
     [self setArgs: @[]];
+    [self setMedia: @{}];
+    
+
+#if 0
+    // retain for later?
+    for (unsigned i = 0; i < 14; ++i) {
+        _slot_media[i] = nil;
+        _slot_object[i] = nil;
+    }
+#endif
 }
 
 static NSFont *ItalicMenuFont(void) {
@@ -212,20 +228,26 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
             if ([value isEqualToString: [d objectForKey: @"value"]]) {
 
                 [button selectItemAtIndex: ix];
+                _slot_object[index] = d;
+                _slot_media[index] = [d objectForKey: @"media"];
                 return;
             }
             ++ix;
         }
     }
     _slots_explicit &= ~mask;
+    
     if (default_index) {
         NSDictionary *d = [items objectAtIndex: default_index];
         [button selectItemAtIndex: default_index];
         [self setValue: [d objectForKey: @"value"] forKey: slot];
+        _slot_object[index] = d;
+        _slot_media[index] = [d objectForKey: @"media"];
     } else {
-        
-        [self setValue: @"" forKey: slot];
         [button selectItemAtIndex: 0];
+        [self setValue: @"" forKey: slot];
+        _slot_object[index] = nil;
+        _slot_media[index] = nil;
     }
 }
 
@@ -267,11 +289,14 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
         res.height = [(NSNumber *)[r objectAtIndex: 1 /*@"height"*/] doubleValue];
     }
     [self setResolution: res];
+    
+    _machine_media = [d objectForKey: @"media"];
 
     // n.b. - does content binding propogate immediately?
     [self setMachine: d];
     [self syncSlots];
     [self rebuildArgs];
+    [self rebuildMedia];
 }
 
 
@@ -297,6 +322,16 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     
     [self setValue: [o objectForKey: @"value"] forKey: key];
 
+    _slot_object[tag] = o;
+    NSDictionary *newMedia = [o objectForKey: @"media"];
+    NSDictionary *oldMedia = _slot_media[tag];
+
+    if (newMedia != oldMedia) {
+        _slot_media[tag] = newMedia;
+        [self rebuildMedia];
+    }
+    
+    
     [self rebuildArgs];
 }
 
@@ -359,8 +394,53 @@ static BOOL should_add_arg(unsigned slot, unsigned valid_slots, unsigned explici
     _(11, _gameio, @"-gameio")
     _(12, _printer, @"-printer")
     _(13, _modem, @"-modem")
-
+#undef _
     [self setArgs: args];
 }
+
+
+-(void)rebuildMedia {
+    
+
+#define _(var, o) var += [[o objectForKey: @ # var ] unsignedIntValue]
+    
+    unsigned cass = 0;
+    unsigned cdrm = 0;
+    unsigned hard = 0;
+    unsigned flop_5_25 = 0;
+    unsigned flop_3_5 = 0;
+
+    unsigned mask = 1;
+    for (unsigned i = 0; i < 14; ++i, mask <<= 1) {
+        
+        if (_slots_valid & mask) {
+            NSDictionary *tmp = _slot_media[i];
+            if (tmp) {
+                _(cass, tmp);
+                _(cdrm, tmp);
+                _(hard, tmp);
+                _(flop_5_25, tmp);
+                _(flop_3_5, tmp);
+            }
+        }
+    }
+    NSDictionary *tmp = _machine_media;
+    if (tmp) {
+        _(cass, tmp);
+        _(cdrm, tmp);
+        _(hard, tmp);
+        _(flop_5_25, tmp);
+        _(flop_3_5, tmp);
+    }
+    
+    [self setMedia: @{
+        @"cass": @(cass),
+        @"cdrm": @(cdrm),
+        @"hard": @(hard),
+        @"flop_5_25": @(flop_5_25),
+        @"flop_3_5": @(flop_3_5),
+    }];
+}
+
 
 @end

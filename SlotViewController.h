@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSSize resolution;
 
 @property NSArray *args;
+@property NSDictionary *media;
 
 //-(void)setMachine: (NSDictionary *)machine;
 

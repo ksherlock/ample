@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MediaViewController : NSViewController <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
 @property (weak) IBOutlet NSOutlineView *outlineView;
-
+@property (nonatomic) NSDictionary *media;
 - (IBAction)buttonDelete:(id)sender;
 
 
--(void)setMedia: (NSDictionary *)media;
+//-(void)setMedia: (NSDictionary *)media;
 
 @end
 
