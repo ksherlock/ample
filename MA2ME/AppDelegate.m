@@ -44,7 +44,7 @@ static NSString *kMyContext = @"kMyContext";
     /* My Copy of XCode/Interface Builder barfs on NSBrowser. */
     
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString *path = [bundle pathForResource: @"Models" ofType: @"plist"];
+    NSString *path = [bundle pathForResource: @"models" ofType: @"plist"];
     _browserItems = [NSArray arrayWithContentsOfFile: path];
     
     NSView *view = [_window contentView];
@@ -56,14 +56,14 @@ static NSString *kMyContext = @"kMyContext";
     browser = [[NSBrowser alloc] initWithFrame: frame];
     
     [browser setMaxVisibleColumns: 2];
-    [browser setTakesTitleFromPreviousColumn: YES];
-    [browser setTitled: NO];
+    //[browser setTakesTitleFromPreviousColumn: YES];
+    //[browser setTitled: NO];
     [browser setAllowsEmptySelection: NO];
     [browser setDelegate: self];
     [browser setAction: @selector(modelClick:)];
         
     [view addSubview: browser];
-    [browser setTitled: YES]; // NSBrowser title bug.
+    //[browser setTitled: YES]; // NSBrowser title bug.
     
 #if 0
     frame = [_slotView frame];
@@ -207,6 +207,7 @@ static NSString * JoinArguments(NSArray *argv) {
         NSSize screen = [_slotController resolution];
         
         NSString *res = [NSString stringWithFormat: @"%ux%u", (unsigned)screen.width, (unsigned)screen.height];
+        NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
         
         [argv addObject: @"-nomax"];
         [argv addObject: @"-nounevenstretch"];
@@ -217,7 +218,7 @@ static NSString * JoinArguments(NSArray *argv) {
             [argv addObject: @"-video"];
             [argv addObject: @"soft"];
             [argv addObject: @"-aspect"];
-            [argv addObject: @"704:462"];
+            [argv addObject: aspect];
         } else {
             [argv addObject: @"-resolution"];
             [argv addObject: res]; // @"560x384"];
@@ -246,7 +247,7 @@ static NSString * JoinArguments(NSArray *argv) {
 -(IBAction)modelClick:(id)sender {
     
     NSDictionary *item = [self itemForBrowser: sender];
-    NSString *model = [item objectForKey: @"Mame"];
+    NSString *model = [item objectForKey: @"value"];
 
     [self setMameROM: model];
 
@@ -269,7 +270,7 @@ static NSString * JoinArguments(NSArray *argv) {
         NSUInteger ix = [path indexAtPosition: i];
         if (ix > [a count]) return nil;
         item = [a objectAtIndex: ix];
-        a = [item objectForKey: @"Children"];
+        a = [item objectForKey: @"children"];
     }
     
     return item;
@@ -282,7 +283,7 @@ static NSString * JoinArguments(NSArray *argv) {
         if (ix < 0) return 0;
 
         NSDictionary *item = [a objectAtIndex: ix];
-        a = [item objectForKey: @"Children"];
+        a = [item objectForKey: @"children"];
         if (!a) return 0;
     }
     return a;
@@ -297,8 +298,8 @@ static NSString * JoinArguments(NSArray *argv) {
     
     NSBrowserCell *bc = (NSBrowserCell *)cell;
     
-    [bc setStringValue: [item objectForKey: @"Name"]];
-    [bc setLeaf: ![item objectForKey: @"Children"]];
+    [bc setStringValue: [item objectForKey: @"description"]];
+    [bc setLeaf: ![item objectForKey: @"children"]];
     
 }
 

@@ -20,7 +20,7 @@
 -(void)awakeFromNib {
 
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString *path = [bundle pathForResource: @"Models" ofType: @"plist"];
+    NSString *path = [bundle pathForResource: @"models" ofType: @"plist"];
     _data = [NSArray arrayWithContentsOfFile: path];
     
 }
@@ -28,7 +28,7 @@
 -(IBAction)click:(id)sender {
     
     NSDictionary *item = [self itemForBrowser: sender];
-    [self setModel: [item objectForKey: @"Mame"]];
+    [self setModel: [item objectForKey: @"value"]];
 }
 
 #pragma mark NSBrowser
@@ -45,7 +45,7 @@
         NSUInteger ix = [path indexAtPosition: i];
         if (ix > [data count]) return nil;
         item = [data objectAtIndex: ix];
-        data = [item objectForKey: @"Children"];
+        data = [item objectForKey: @"children"];
     }
     
     return item;
@@ -58,7 +58,7 @@
         if (ix < 0) return 0;
 
         NSDictionary *item = [data objectAtIndex: ix];
-        data = [item objectForKey: @"Children"];
+        data = [item objectForKey: @"children"];
         if (!data) return 0;
     }
     return data;
@@ -73,8 +73,8 @@
     
     NSBrowserCell *bc = (NSBrowserCell *)cell;
     
-    [bc setStringValue: [item objectForKey: @"Name"]];
-    [bc setLeaf: ![item objectForKey: @"Children"]];
+    [bc setStringValue: [item objectForKey: @"description"]];
+    [bc setLeaf: ![item objectForKey: @"children"]];
 }
 
 

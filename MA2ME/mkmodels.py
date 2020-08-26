@@ -60,11 +60,11 @@ for x in lines:
 def make_children(clist):
 	global names
 	return [
-		{ "name": names[x], "value": x}
+		{ "description": names[x], "value": x}
 		for x in clist
 	]
 
-plist = []
+data = []
 
 for x in tree:
 	desc, value, children = x
@@ -72,6 +72,9 @@ for x in tree:
 	if value: tmp["value"] = value
 	if children: tmp["children"] = make_children(children)
 
-	plist.append(tmp)
+	data.append(tmp)
 
-print(to_plist(plist))
+path = "Resources/models.plist"
+with open(path, "w") as f:
+	f.write(to_plist(data))
+

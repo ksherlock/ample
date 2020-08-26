@@ -282,7 +282,7 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
         return;
     }
 
-    NSArray *r = [d objectForKey: @"Resolution"];
+    NSArray *r = [d objectForKey: @"resolution"];
     NSSize res = NSMakeSize(0, 0);
     if (r) {
         res.width = [(NSNumber *)[r objectAtIndex: 0 /*@"width"*/] doubleValue];

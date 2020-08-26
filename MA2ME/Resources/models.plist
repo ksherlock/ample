@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>description</key>
+      <string>Apple I</string>
+      <key>value</key>
+      <string>apple1</string>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple ][</string>
+      <key>value</key>
+      <string>apple2</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple ][</string>
+          <key>value</key>
+          <string>apple2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple ][+</string>
+          <key>value</key>
+          <string>apple2p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple ][ J-Plus</string>
+          <key>value</key>
+          <string>apple2jp</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIe</string>
+      <key>value</key>
+      <string>apple2e</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple //e</string>
+          <key>value</key>
+          <string>apple2e</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Spain)</string>
+          <key>value</key>
+          <string>apple2ees</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (UK)</string>
+          <key>value</key>
+          <string>apple2euk</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum)</string>
+          <key>value</key>
+          <string>apple2ep</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced)</string>
+          <key>value</key>
+          <string>apple2ee</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced, UK)</string>
+          <key>value</key>
+          <string>apple2eeuk</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced, France)</string>
+          <key>value</key>
+          <string>apple2eefr</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple //c</string>
+      <key>value</key>
+      <string>apple2c</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple //c</string>
+          <key>value</key>
+          <string>apple2c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c Plus</string>
+          <key>value</key>
+          <string>apple2cp</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIgs</string>
+      <key>value</key>
+      <string>apple2gs</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM00)</string>
+          <key>value</key>
+          <string>apple2gsr0</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM01)</string>
+          <key>value</key>
+          <string>apple2gsr1</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM03)</string>
+          <key>value</key>
+          <string>apple2gs</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple ///</string>
+      <key>value</key>
+      <string>apple3</string>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Laser</string>
+      <key>value</key>
+      <string>laser128</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Laser 128 (version 4.2)</string>
+          <key>value</key>
+          <string>laser128</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser //c</string>
+          <key>value</key>
+          <string>laser2c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128ex (version 4.5)</string>
+          <key>value</key>
+          <string>las128ex</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128ex2 (version 6.1)</string>
+          <key>value</key>
+          <string>las128e2</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>II Clones</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Franklin Ace 100</string>
+          <key>value</key>
+          <string>ace100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Agat-7</string>
+          <key>value</key>
+          <string>agat7</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Agat-9</string>
+          <key>value</key>
+          <string>agat9</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Albert</string>
+          <key>value</key>
+          <string>albert</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>AM100</string>
+          <key>value</key>
+          <string>am100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>AM 64</string>
+          <key>value</key>
+          <string>am64</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Basis 108</string>
+          <key>value</key>
+          <string>basis108</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Craft II+</string>
+          <key>value</key>
+          <string>craft2p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Do-Do</string>
+          <key>value</key>
+          <string>dodo</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Elppa II+</string>
+          <key>value</key>
+          <string>elppa</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HKC 8800A</string>
+          <key>value</key>
+          <string>hkc8800a</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Ivel Ultra</string>
+          <key>value</key>
+          <string>ivelultr</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Maxxi</string>
+          <key>value</key>
+          <string>maxxi</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Micro Engenho</string>
+          <key>value</key>
+          <string>microeng</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 82</string>
+          <key>value</key>
+          <string>prav82</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8M</string>
+          <key>value</key>
+          <string>prav8m</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Space 84</string>
+          <key>value</key>
+          <string>space84</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II (in English)</string>
+          <key>value</key>
+          <string>uniap2en</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II (in Brazilian Portuguese)</string>
+          <key>value</key>
+          <string>uniap2pt</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II+ (Teclado Inteligente)</string>
+          <key>value</key>
+          <string>uniap2ti</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>IIe Clones</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Microprofessor III</string>
+          <key>value</key>
+          <string>mprof3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8C</string>
+          <key>value</key>
+          <string>prav8c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Spectrum ED</string>
+          <key>value</key>
+          <string>spectred</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</plist>
