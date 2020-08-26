@@ -47,7 +47,7 @@ const unsigned kMemoryMask = 1 << 16;
     [super viewDidLoad];
     // Do view setup here.
 
-    [self setModel: @"apple2gs"];
+    //[self setModel: @"apple2gs"];
 }
 
 -(void)reset {
@@ -271,6 +271,11 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
 }
 
 -(void)loadMachine: (NSString *)model {
+    
+    if (!model) {
+        [self resetMachine];
+        return;
+    }
     
     NSBundle *bundle = [NSBundle mainBundle];
     NSURL *url= [bundle URLForResource: model withExtension: @"plist"];

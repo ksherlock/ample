@@ -23,6 +23,7 @@
 
 /* kvo */
 @property NSString *commandLine;
+@property NSArray *args;
 
 @property NSString *mameROM;
 @property BOOL mameWindow;
@@ -135,9 +136,10 @@ static NSString * JoinArguments(NSArray *argv) {
     NSMutableString *rv = [NSMutableString new];
 
     
-    unsigned ix = 0;
+    //unsigned ix = 0;
+    [rv appendString: @"mame"];
     for (NSString *s in argv) {
-        if (ix++) [rv appendString: @" "];
+        [rv appendString: @" "];
         NSUInteger l = [s length];
         
         if (!l) {
@@ -194,7 +196,7 @@ static NSString * JoinArguments(NSArray *argv) {
 
     NSMutableArray *argv = [NSMutableArray new];
 
-    [argv addObject: @"mame"];
+    //[argv addObject: @"mame"];
     [argv addObject: _mameROM];
     
     if (_mameDebug) [argv addObject: @"-debug"];
@@ -225,23 +227,25 @@ static NSString * JoinArguments(NSArray *argv) {
             
         }
     }
-
+    // -speed n
+    // -scale n
     
-    NSArray *args;
-    args = [_slotController args];
-    if ([args count]) {
-        [argv addObjectsFromArray: args];
+    NSArray *tmp;
+    tmp = [_slotController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
     }
-    
-    args = [_mediaController args];
-    if ([args count]) {
-        [argv addObjectsFromArray: args];
+
+    tmp = [_mediaController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
     }
 
     if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     
     
     [self setCommandLine: JoinArguments(argv)]; //[argv componentsJoinedByString:@" "]];
+    [self setArgs: argv];
 }
 
 -(IBAction)modelClick:(id)sender {
@@ -321,6 +325,26 @@ static NSString * JoinArguments(NSArray *argv) {
     
     NSArray *a = [self itemsForBrowser: sender column: column];
     return [a count];
+}
+
+#pragma mark - IBActions
+
+- (IBAction)launchAction:(id)sender {
+    if (![_args count]) return;
+    
+    NSError *error = nil;
+    NSURL *url = [NSURL fileURLWithPath: @"/usr/local/bin/mame"];
+    
+    NSTask *task = [NSTask launchedTaskWithExecutableURL: url
+                                               arguments: _args
+                                                   error: &error
+                                      terminationHandler: ^(NSTask *t){
+        
+        
+        
+        
+    }];
+    if (error) NSLog(@"launchAction: %@", error);
 }
 
 

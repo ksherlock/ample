@@ -740,6 +740,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="launchAction:" target="Voe-Tx-rLC" id="469-Yy-fyx"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-Gw-xV3">
                         <rect key="frame" x="18" y="62" width="91" height="18"/>
