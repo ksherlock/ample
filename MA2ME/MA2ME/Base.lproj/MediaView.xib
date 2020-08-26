@@ -63,10 +63,10 @@
                                         <rect key="frame" x="1" y="21" width="304" height="17"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <textField identifier="CategoryView" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-mX-LHY">
+                                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-mX-LHY">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="CategoryView" title="Table View Cell" id="Rrg-wr-8eL">
+                                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Rrg-wr-8eL">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -87,6 +87,9 @@
                                                 <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </pathCell>
+                                                <connections>
+                                                    <action selector="pathAction:" target="-2" id="4oX-bW-ANp"/>
+                                                </connections>
                                             </pathControl>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl">
                                                 <rect key="frame" x="256" y="5" width="23" height="18"/>
@@ -96,7 +99,7 @@
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="buttonDelete:" target="-2" id="f30-YS-1UK"/>
+                                                    <action selector="deleteAction:" target="-2" id="XAl-eQ-nUj"/>
                                                 </connections>
                                             </button>
                                         </subviews>

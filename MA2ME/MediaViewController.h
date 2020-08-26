@@ -14,7 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak) IBOutlet NSOutlineView *outlineView;
 @property (nonatomic) NSDictionary *media;
-- (IBAction)buttonDelete:(id)sender;
+@property NSArray *args;
+
+- (IBAction)deleteAction:(id)sender;
+- (IBAction)pathAction:(id)sender;
 
 
 //-(void)setMedia: (NSDictionary *)media;

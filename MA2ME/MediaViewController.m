@@ -233,6 +233,36 @@ enum {
     kIndexCassette
 };
 
+-(void)rebuildArgs {
+    
+    static char* prefix[] = {
+        "flop", "flop", "hard", "cdrm", "cass"
+    };
+    NSMutableArray *args = [NSMutableArray new];
+    
+    unsigned counts[5] = { 0, 0, 0, 0, 0 };
+    
+    for (unsigned j = 0; j < 5; ++j) {
+    
+        MediaCategory *cat = _data[j];
+        NSInteger valid = [cat validCount];
+        for (NSInteger i = 0; i < valid; ++i) {
+            counts[j]++;
+
+            MediaItem *item = [cat objectAtIndex: i];
+            NSURL *url = [item url];
+            if (!url) continue;
+            [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], counts[j]]];
+            NSString *s = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+            
+            [args addObject: s];
+        }
+        if (j == 0) counts[1] = counts[0]; // 3.5/5.25
+    }
+    
+    [self setArgs: args];
+}
+
 -(void)rebuildRoot {
     NSMutableArray *tmp = [NSMutableArray new];
     for (unsigned j = 0 ; j < 5; ++j) {
@@ -274,7 +304,10 @@ enum {
     }
 
     
-    if (delta) [self rebuildRoot];
+    if (delta) {
+        [self rebuildRoot];
+        [self rebuildArgs];
+    }
 }
 
 - (void)viewDidLoad {
@@ -371,7 +404,7 @@ enum {
 
 
 #pragma mark - IBActions
-- (IBAction)buttonDelete:(id)sender {
+- (IBAction)deleteAction:(id)sender {
     
     NSInteger row = [_outlineView rowForView: sender];
     if (row < 0) return;
@@ -386,5 +419,10 @@ enum {
         MediaCategory *cat = [_outlineView parentForItem: item];
         if ([cat pruneChildren]) [self rebuildRoot];
     }
+    [self rebuildArgs];
+}
+
+- (IBAction)pathAction:(id)sender {
+    [self rebuildArgs];
 }
 @end
