@@ -65,6 +65,8 @@
 		B6BA258824E99BEB005FB8FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
 		B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3724FAC8B500661A5F /* Preferences.xib */; };
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
+		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
+		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +139,9 @@
 		B6BA258924E99BEB005FB8FF /* MA2ME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MA2ME.entitlements; sourceTree = "<group>"; };
 		B6D6DE3824FAC8B500661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		B6D6DE3A24FACF4F00661A5F /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
+		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
+		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,9 +255,12 @@
 				B6BA258724E99BEB005FB8FF /* main.m */,
 				B6BA258924E99BEB005FB8FF /* MA2ME.entitlements */,
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
+				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E524F5F230005CB652 /* MediaView.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
+				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
+				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
 			);
 			path = MA2ME;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				B6109A2424F5F377005CB652 /* las128ex.plist in Resources */,
 				B6109A1D24F5F377005CB652 /* space84.plist in Resources */,
 				B6109A3F24F5F377005CB652 /* agat9.plist in Resources */,
+				B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */,
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
 				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
@@ -377,6 +386,7 @@
 			files = (
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */,
+				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
 				B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */,
@@ -418,6 +428,14 @@
 				B6D6DE3824FAC8B500661A5F /* Base */,
 			);
 			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D6DE3D24FADF8B00661A5F /* Base */,
+			);
+			name = LaunchWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

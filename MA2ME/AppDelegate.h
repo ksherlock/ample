@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSBrowserDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 - (IBAction)displayPreferences:(id)sender;
 
