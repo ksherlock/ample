@@ -1,5 +1,5 @@
 //
-//  ROMBrowserDelegate.h
+//  MachineViewController.h
 //  MA2ME
 //
 //  Created by Kelvin Sherlock on 8/16/2020.
@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ROMBrowserDelegate : NSObject <NSBrowserDelegate>
+@interface MachineViewController : NSViewController <NSBrowserDelegate>
 
-@property NSString *model;
+@property NSString *machine;
 
 @end
 

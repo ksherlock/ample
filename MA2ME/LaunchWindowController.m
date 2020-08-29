@@ -9,15 +9,18 @@
 #import "LaunchWindowController.h"
 #import "MediaViewController.h"
 #import "SlotViewController.h"
+#import "MachineViewController.h"
 
 static NSString *kMyContext = @"kMyContext";
+static NSString *kContextMachine = @"kContextMachine";
 
 
 @interface LaunchWindowController ()
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
+@property (strong) IBOutlet MachineViewController *machineViewController;
 
-@property (weak) IBOutlet NSView *modelView;
+@property (weak) IBOutlet NSView *machineView;
 @property (weak) IBOutlet NSView *slotView;
 @property (weak) IBOutlet NSView *mediaView;
 
@@ -33,7 +36,6 @@ static NSString *kMyContext = @"kMyContext";
 @property BOOL mameNoBlur;
 
 
-@property NSArray *browserItems;
 
 @end
 
@@ -49,38 +51,10 @@ static NSString *kMyContext = @"kMyContext";
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSString *path;
-    NSWindow *window = [self window];
-        
-        
-        /* My Copy of XCode/Interface Builder barfs on NSBrowser. */
-        
-
-    path = [bundle pathForResource: @"models" ofType: @"plist"];
-    _browserItems = [NSArray arrayWithContentsOfFile: path];
-    
-    NSView *view = [window contentView];
-    
-    NSRect frame;
-    NSBrowser *browser = nil;
-
-    frame = [_modelView frame];
-    browser = [[NSBrowser alloc] initWithFrame: frame];
-    
-    [browser setMaxVisibleColumns: 2];
-    //[browser setTakesTitleFromPreviousColumn: YES];
-    //[browser setTitled: NO];
-    [browser setAllowsEmptySelection: NO];
-    [browser setDelegate: self];
-    [browser setAction: @selector(modelClick:)];
-        
-    [view addSubview: browser];
-    //[browser setTitled: YES]; // NSBrowser title bug.
-    
 
     [_slotView addSubview: [_slotController view]];
     [_mediaView addSubview: [_mediaController view]];
+    [_machineView addSubview: [_machineViewController view]];
     
     
     [self addObserver: self forKeyPath: @"mameMachine" options:0  context: (__bridge void * _Nullable)(kMyContext)];
@@ -91,20 +65,25 @@ static NSString *kMyContext = @"kMyContext";
 
         [self addObserver: self forKeyPath: @"mameNoBlur" options:0  context: (__bridge void * _Nullable)(kMyContext)];
     
-    [_slotController addObserver: self forKeyPath: @"args" options: 0 context:  (__bridge void * _Nullable)(kMyContext)];
-    [_mediaController addObserver: self forKeyPath: @"args" options: 0 context:  (__bridge void * _Nullable)(kMyContext)];
+    [_slotController addObserver: self forKeyPath: @"args" options: 0 context: (__bridge void * _Nullable)(kMyContext)];
+    [_mediaController addObserver: self forKeyPath: @"args" options: 0 context: (__bridge void * _Nullable)(kMyContext)];
 
     [_mediaController bind: @"media" toObject: _slotController withKeyPath: @"media" options: 0];
     
     [self buildCommandLine];
 
-
+    [_machineViewController addObserver: self forKeyPath: @"machine" options: 0 context: (__bridge void * _Nullable)kContextMachine];
 }
 
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
 
     if (context == (__bridge void *)kMyContext) {
+        [self buildCommandLine];
+    } else if (context == (__bridge void *)kContextMachine) {
+        NSString *machine = [_machineViewController machine];
+        [self setMameMachine: machine];
+        [_slotController setModel: machine];
         [self buildCommandLine];
     } else {
         [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
@@ -241,17 +220,6 @@ static NSString * JoinArguments(NSArray *argv) {
 
 # pragma mark - IBActions
 
--(IBAction)modelClick:(id)sender {
-    
-    NSDictionary *item = [self itemForBrowser: sender];
-    NSString *model = [item objectForKey: @"value"];
-
-    [self setMameMachine: model];
-
-//    [self buildCommandLine];
-    
-    [_slotController setModel: model];
-}
 
 
 - (IBAction)launchAction:(id)sender {
@@ -278,73 +246,6 @@ static NSString * JoinArguments(NSArray *argv) {
 
     if (error) NSLog(@"launchAction: %@", error);
 
-}
-
-#pragma mark - NSBrowser
-
--(NSDictionary *)itemForBrowser: (NSBrowser *)browser {
-    
-    NSIndexPath *path = [browser selectionIndexPath];
-    
-    NSArray *a = _browserItems;
-    NSDictionary *item = nil;
-    
-    NSUInteger l = [path length];
-    for (NSUInteger i = 0; i < l; ++i) {
-        NSUInteger ix = [path indexAtPosition: i];
-        if (ix > [a count]) return nil;
-        item = [a objectAtIndex: ix];
-        a = [item objectForKey: @"children"];
-    }
-    
-    return item;
-}
--(NSArray *)itemsForBrowser: (NSBrowser *)browser column: (NSInteger) column {
-
-    NSArray *a = _browserItems;
-    for (unsigned i = 0; i < column; ++i) {
-        NSInteger ix = [browser selectedRowInColumn: i];
-        if (ix < 0) return 0;
-
-        NSDictionary *item = [a objectAtIndex: ix];
-        a = [item objectForKey: @"children"];
-        if (!a) return 0;
-    }
-    return a;
-    
-}
-
-- (void)browser:(NSBrowser *)sender willDisplayCell:(id)cell atRow:(NSInteger)row column:(NSInteger)column {
-    NSArray *a = [self itemsForBrowser: sender column: column];
-    if (!a || row >= [a count]) return;
-
-    NSDictionary *item = [a objectAtIndex: row];
-    
-    NSBrowserCell *bc = (NSBrowserCell *)cell;
-    
-    [bc setStringValue: [item objectForKey: @"description"]];
-    [bc setLeaf: ![item objectForKey: @"children"]];
-    
-}
-
-
-- (NSString *)browser:(NSBrowser *)sender titleOfColumn:(NSInteger)column {
-    return column == 0 ? @"Model" : @"Submodel";
-}
-
-#if 0
-- (id)browser:(NSBrowser *)browser child:(NSInteger)index ofItem:(id)item {
-    return nil;
-}
--(id)rootItemForBrowser:(NSBrowser *)browser {
-    return _browserItems;
-}
-#endif
-
-- (NSInteger)browser:(NSBrowser *)sender numberOfRowsInColumn:(NSInteger)column {
-    
-    NSArray *a = [self itemsForBrowser: sender column: column];
-    return [a count];
 }
 
 

@@ -56,7 +56,7 @@
 		B6109A4224F5F377005CB652 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
 		B6109A4324F5F377005CB652 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
-		B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */; };
+		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -67,6 +67,7 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6D6DE4524FAF00300661A5F /* ModelsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE4324FAF00300661A5F /* ModelsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,8 +123,8 @@
 		B6109A1624F5F376005CB652 /* agat7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = agat7.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
-		B64E15A724EA1D5300E8AD3D /* ROMBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROMBrowserDelegate.h; sourceTree = "<group>"; };
-		B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROMBrowserDelegate.m; sourceTree = "<group>"; };
+		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
+		B64E15A824EA1D5300E8AD3D /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
 		B64E15AA24EA1FD400E8AD3D /* SlotBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotBrowserDelegate.h; sourceTree = "<group>"; };
 		B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotBrowserDelegate.m; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
+		B6D6DE4424FAF00300661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ModelsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,17 +238,20 @@
 		B6BA257D24E99BE9005FB8FF /* MA2ME */ = {
 			isa = PBXGroup;
 			children = (
-				B65593B024ECB61800722E0C /* SlotViewController.m */,
-				B65593AF24ECB61800722E0C /* SlotViewController.h */,
-				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
-				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
+				B6D6DE4324FAF00300661A5F /* ModelsView.xib */,
+				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
+				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
+				B65593B024ECB61800722E0C /* SlotViewController.m */,
+				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
 				B64979C124EF6703008ABD20 /* MediaViewController.m */,
+				B64E15A724EA1D5300E8AD3D /* MachineViewController.h */,
+				B64E15A824EA1D5300E8AD3D /* MachineViewController.m */,
+				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
+				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
-				B64E15A724EA1D5300E8AD3D /* ROMBrowserDelegate.h */,
-				B64E15A824EA1D5300E8AD3D /* ROMBrowserDelegate.m */,
 				B64E15AA24EA1FD400E8AD3D /* SlotBrowserDelegate.h */,
 				B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
@@ -254,15 +259,21 @@
 				B6D6DE3A24FACF4F00661A5F /* Defaults.plist */,
 				B6BA258724E99BEB005FB8FF /* main.m */,
 				B6BA258924E99BEB005FB8FF /* MA2ME.entitlements */,
+				B6D6DE4224FAEE8900661A5F /* Nibs */,
+			);
+			path = MA2ME;
+			sourceTree = "<group>";
+		};
+		B6D6DE4224FAEE8900661A5F /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E524F5F230005CB652 /* MediaView.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
-				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
-				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
 			);
-			path = MA2ME;
+			name = Nibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +371,7 @@
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
 				B6109A2224F5F377005CB652 /* models.plist in Resources */,
+				B6D6DE4524FAF00300661A5F /* ModelsView.xib in Resources */,
 				B6109A4024F5F377005CB652 /* craft2p.plist in Resources */,
 				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
 				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
@@ -387,7 +399,7 @@
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
-				B64E15A924EA1D5300E8AD3D /* ROMBrowserDelegate.m in Sources */,
+				B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
 				B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */,
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
@@ -436,6 +448,14 @@
 				B6D6DE3D24FADF8B00661A5F /* Base */,
 			);
 			name = LaunchWindow.xib;
+			sourceTree = "<group>";
+		};
+		B6D6DE4324FAF00300661A5F /* ModelsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D6DE4424FAF00300661A5F /* Base */,
+			);
+			name = ModelsView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

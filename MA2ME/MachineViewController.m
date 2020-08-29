@@ -1,20 +1,20 @@
 //
-//  ROMBrowserDelegate.m
+//  MachineViewController.m
 //  MA2ME
 //
 //  Created by Kelvin Sherlock on 8/16/2020.
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
 //
 
-#import "ROMBrowserDelegate.h"
+#import "MachineViewController.h"
 
-@interface ROMBrowserDelegate()
+@interface MachineViewController()
 
 @property NSArray *data;
 
 @end
 
-@implementation ROMBrowserDelegate
+@implementation MachineViewController
 
 
 -(void)awakeFromNib {
@@ -22,13 +22,29 @@
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource: @"models" ofType: @"plist"];
     _data = [NSArray arrayWithContentsOfFile: path];
+
     
+    /* My Copy of XCode/Interface Builder barfs on NSBrowser. */
+    
+    NSBrowser *browser;
+    NSRect frame = NSMakeRect(0, 0, 718, 200);
+
+    browser = [[NSBrowser alloc] initWithFrame: frame];
+    
+    [browser setMaxVisibleColumns: 2];
+    //[browser setTakesTitleFromPreviousColumn: YES];
+    //[browser setTitled: NO];
+    [browser setAllowsEmptySelection: NO];
+    [browser setDelegate: self];
+    [browser setAction: @selector(clickAction:)];
+    
+    [self setView: browser];
 }
 
--(IBAction)click:(id)sender {
+-(IBAction)clickAction:(id)sender {
     
     NSDictionary *item = [self itemForBrowser: sender];
-    [self setModel: [item objectForKey: @"value"]];
+    [self setMachine: [item objectForKey: @"value"]];
 }
 
 #pragma mark NSBrowser

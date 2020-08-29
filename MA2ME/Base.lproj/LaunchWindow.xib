@@ -8,9 +8,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LaunchWindowController">
             <connections>
+                <outlet property="machineView" destination="oVt-eD-aaj" id="Q9V-Kr-6GN"/>
+                <outlet property="machineViewController" destination="RgH-d9-xl8" id="DIa-h0-6y2"/>
                 <outlet property="mediaController" destination="t7c-zy-czN" id="a7d-HC-TWx"/>
                 <outlet property="mediaView" destination="J9O-xI-P5J" id="PmZ-VC-4SN"/>
-                <outlet property="modelView" destination="oVt-eD-aaj" id="nam-De-IQe"/>
                 <outlet property="slotController" destination="lyS-mc-3Tf" id="LXo-Ii-fDX"/>
                 <outlet property="slotView" destination="P9d-sS-qEb" id="T2q-ON-owm"/>
                 <outlet property="window" destination="Vze-YF-m6e" id="JUs-Eb-MW8"/>
@@ -123,6 +124,7 @@
         </window>
         <viewController title="Media View" nibName="MediaView" id="t7c-zy-czN" customClass="MediaViewController"/>
         <viewController title="Slot View" nibName="SlotView" id="lyS-mc-3Tf" customClass="SlotViewController"/>
+        <customObject id="RgH-d9-xl8" customClass="MachineViewController"/>
     </objects>
     <resources>
         <image name="NSAppleMenuImage" width="11" height="14"/>
