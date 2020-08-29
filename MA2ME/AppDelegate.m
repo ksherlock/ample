@@ -34,18 +34,34 @@
 @property NSArray *browserItems;
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    NSWindowController *_prefs;
+}
 
 static NSString *kMyContext = @"kMyContext";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path;
+    NSDictionary *dict;
+    
+    
+    path = [bundle pathForResource: @"Defaults" ofType: @"plist"];
+    dict = [NSDictionary dictionaryWithContentsOfFile: path];
+    
+    if (dict)
+    {
+        [[NSUserDefaults standardUserDefaults] registerDefaults: dict];
+    }
+    
+    
     
     /* My Copy of XCode/Interface Builder barfs on NSBrowser. */
     
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSString *path = [bundle pathForResource: @"models" ofType: @"plist"];
+
+    path = [bundle pathForResource: @"models" ofType: @"plist"];
     _browserItems = [NSArray arrayWithContentsOfFile: path];
     
     NSView *view = [_window contentView];
@@ -332,8 +348,13 @@ static NSString * JoinArguments(NSArray *argv) {
 - (IBAction)launchAction:(id)sender {
     if (![_args count]) return;
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *path = [defaults stringForKey: @"MamePath"];
+    if (![path length]) path = @"/usr/local/bin/mame";
+    
     NSError *error = nil;
-    NSURL *url = [NSURL fileURLWithPath: @"/usr/local/bin/mame"];
+    NSURL *url = [NSURL fileURLWithPath: path];
     
     NSTask *task = [NSTask launchedTaskWithExecutableURL: url
                                                arguments: _args
@@ -347,6 +368,12 @@ static NSString * JoinArguments(NSArray *argv) {
     if (error) NSLog(@"launchAction: %@", error);
 }
 
+- (IBAction)displayPreferences:(id)sender {
+    if (!_prefs) {
+        _prefs = [[NSWindowController alloc] initWithWindowNibName: @"Preferences"];
+    }
+    [_prefs showWindow: sender];
+}
 
 
 @end

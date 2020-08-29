@@ -37,7 +37,11 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                <connections>
+                                    <action selector="displayPreferences:" target="Voe-Tx-rLC" id="Hsm-pX-sUc"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -774,6 +778,14 @@
                         <rect key="frame" x="392" y="169" width="306" height="570"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMQ-jr-w2i">
+                        <rect key="frame" x="261" y="102" width="67" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="No Blur" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Xxl-Eu-ziO">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="769" y="196.5"/>
@@ -782,6 +794,6 @@
         <viewController title="Media View" nibName="MediaView" id="kiU-IX-LTW" customClass="MediaViewController"/>
     </objects>
     <resources>
-        <image name="NSAppleMenuImage" width="128" height="128"/>
+        <image name="NSAppleMenuImage" width="11" height="14"/>
     </resources>
 </document>

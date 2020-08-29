@@ -10,6 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSBrowserDelegate>
 
+- (IBAction)displayPreferences:(id)sender;
 
 @end
 
