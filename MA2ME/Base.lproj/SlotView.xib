@@ -31,7 +31,15 @@
         <gridView autoresizesSubviews="NO" xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="OM3-7F-wiN">
             <rect key="frame" x="0.0" y="0.0" width="306" height="534"/>
             <rows>
-                <gridRow yPlacement="center" height="30" id="tHD-ui-hIL"/>
+                <gridRow yPlacement="center" height="30" id="tHD-ui-hIL">
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="machine.ram" id="ze9-jx-lv0">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </gridRow>
                 <gridRow yPlacement="center" height="30" id="Ccd-U2-Gx5">
                     <connections>
                         <binding destination="-2" name="hidden" keyPath="machine.sl0" id="YsR-kI-yrh">

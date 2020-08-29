@@ -68,7 +68,7 @@ const unsigned kMemoryMask = 1 << 16;
 -(void)resetMachine {
 
     [self setMachine: @{}];
-
+#if 0
     [self setSl0: @""];
     [self setSl1: @""];
     [self setSl2: @""];
@@ -87,10 +87,11 @@ const unsigned kMemoryMask = 1 << 16;
 
     [self setMemory: @""];
     [self setMemoryBytes: 0];
+#endif
     [self setResolution: NSMakeSize(0, 0)];
 
     _slots_default = 0;
-    _slots_explicit = 0;
+    //_slots_explicit = 0;
     _slots_valid = 0;
 
     _machine_media = nil;
