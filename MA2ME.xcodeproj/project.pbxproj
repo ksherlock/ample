@@ -57,7 +57,6 @@
 		B6109A4324F5F377005CB652 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
-		B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
@@ -125,8 +124,6 @@
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
 		B64E15A824EA1D5300E8AD3D /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
-		B64E15AA24EA1FD400E8AD3D /* SlotBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotBrowserDelegate.h; sourceTree = "<group>"; };
-		B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotBrowserDelegate.m; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
@@ -252,8 +249,6 @@
 				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
-				B64E15AA24EA1FD400E8AD3D /* SlotBrowserDelegate.h */,
-				B64E15AB24EA1FD400E8AD3D /* SlotBrowserDelegate.m */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
 				B6D6DE3A24FACF4F00661A5F /* Defaults.plist */,
@@ -397,7 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
-				B64E15AC24EA1FD400E8AD3D /* SlotBrowserDelegate.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
