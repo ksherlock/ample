@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6004DEE24FB05D600D38596 /* LogWindowController.m */; };
+		B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6004DEF24FB05D600D38596 /* LogWindow.xib */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
 		B61099E724F5F231005CB652 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E324F5F230005CB652 /* SlotView.xib */; };
 		B61099E824F5F231005CB652 /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
@@ -66,10 +68,12 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
-		B6D6DE4524FAF00300661A5F /* ModelsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE4324FAF00300661A5F /* ModelsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6004DED24FB05D600D38596 /* LogWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogWindowController.h; sourceTree = "<group>"; };
+		B6004DEE24FB05D600D38596 /* LogWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogWindowController.m; sourceTree = "<group>"; };
+		B6004DEF24FB05D600D38596 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogWindow.xib; sourceTree = "<group>"; };
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
 		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
@@ -140,7 +144,6 @@
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
-		B6D6DE4424FAF00300661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ModelsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +240,6 @@
 			children = (
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
-				B6D6DE4324FAF00300661A5F /* ModelsView.xib */,
 				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
 				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
@@ -248,6 +250,8 @@
 				B64E15A824EA1D5300E8AD3D /* MachineViewController.m */,
 				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
+				B6004DED24FB05D600D38596 /* LogWindowController.h */,
+				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -264,6 +268,7 @@
 			children = (
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
+				B6004DEF24FB05D600D38596 /* LogWindow.xib */,
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E524F5F230005CB652 /* MediaView.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
@@ -336,6 +341,7 @@
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
 				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
+				B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */,
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
 				B6109A1724F5F377005CB652 /* apple2e.plist in Resources */,
 				B6109A3C24F5F377005CB652 /* am100.plist in Resources */,
@@ -366,7 +372,6 @@
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
 				B6109A2224F5F377005CB652 /* models.plist in Resources */,
-				B6D6DE4524FAF00300661A5F /* ModelsView.xib in Resources */,
 				B6109A4024F5F377005CB652 /* craft2p.plist in Resources */,
 				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
 				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
@@ -397,6 +402,7 @@
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
 				B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */,
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
+				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B65593B124ECB61800722E0C /* SlotViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,14 +448,6 @@
 				B6D6DE3D24FADF8B00661A5F /* Base */,
 			);
 			name = LaunchWindow.xib;
-			sourceTree = "<group>";
-		};
-		B6D6DE4324FAF00300661A5F /* ModelsView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6D6DE4424FAF00300661A5F /* Base */,
-			);
-			name = ModelsView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

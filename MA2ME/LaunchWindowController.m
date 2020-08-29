@@ -10,6 +10,7 @@
 #import "MediaViewController.h"
 #import "SlotViewController.h"
 #import "MachineViewController.h"
+#import "LogWindowController.h"
 
 static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
@@ -228,6 +229,7 @@ static NSString * JoinArguments(NSArray *argv) {
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
+    
     NSString *path = [defaults stringForKey: @"MamePath"];
     if (![path length]) path = @"/usr/local/bin/mame";
     
@@ -237,15 +239,12 @@ static NSString * JoinArguments(NSArray *argv) {
     NSTask *task = [NSTask new];
     [task setExecutableURL: url];
     [task setArguments: _args];
+#if 0
     [task setTerminationHandler: ^(NSTask *t){
         
     }];
-    // set stderr/stdout...
-    [task launchAndReturnError: &error];
-    
-
-    if (error) NSLog(@"launchAction: %@", error);
-
+#endif
+    [LogWindowController controllerForTask: task];
 }
 
 
