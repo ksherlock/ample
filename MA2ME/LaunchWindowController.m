@@ -173,9 +173,11 @@ static NSString * JoinArguments(NSArray *argv) {
     [argv addObject: _mameMachine];
     
     if (_mameDebug) [argv addObject: @"-debug"];
-    if (_mameWindow) [argv addObject: @"-window"];
-    
-    // -nounevenstretch -video soft
+    if (_mameWindow) {
+        [argv addObject: @"-window"];
+        [argv addObject: @"-nomax"];
+    }
+
     [argv addObject: @"-skip_gameinfo"];
 
     if (_mameWindow && _mameSquarePixels) {
@@ -184,7 +186,6 @@ static NSString * JoinArguments(NSArray *argv) {
         NSString *res = [NSString stringWithFormat: @"%ux%u", (unsigned)screen.width, (unsigned)screen.height];
         NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
         
-        [argv addObject: @"-nomax"];
         [argv addObject: @"-nounevenstretch"];
 
         [argv addObject: @"-resolution"];
@@ -233,13 +234,13 @@ static NSString * JoinArguments(NSArray *argv) {
     NSString *path = [defaults stringForKey: @"MamePath"];
     if (![path length]) path = @"/usr/local/bin/mame";
     
-    NSError *error = nil;
     NSURL *url = [NSURL fileURLWithPath: path];
     
     NSTask *task = [NSTask new];
     [task setExecutableURL: url];
     [task setArguments: _args];
 #if 0
+    // interferes w/ termination notification.
     [task setTerminationHandler: ^(NSTask *t){
         
     }];
