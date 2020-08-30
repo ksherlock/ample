@@ -15,14 +15,14 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="nVT-kT-bWl">
-            <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
+            <rect key="frame" x="0.0" y="0.0" width="306" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="IBD-wb-pch">
-                <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
+                <rect key="frame" x="0.0" y="0.0" width="306" height="400"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" outlineTableColumn="pBj-py-R6a" id="sIz-DD-PZQ">
-                        <rect key="frame" x="0.0" y="0.0" width="306" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="306" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <size key="intercellSpacing" width="2" height="3"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -131,6 +131,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="NSNavEjectButton.normalSelected" width="128" height="128"/>
+        <image name="NSNavEjectButton.normalSelected" width="16" height="16"/>
     </resources>
 </document>

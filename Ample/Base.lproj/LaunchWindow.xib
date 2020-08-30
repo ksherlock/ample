@@ -13,7 +13,7 @@
                 <outlet property="mediaController" destination="t7c-zy-czN" id="a7d-HC-TWx"/>
                 <outlet property="mediaView" destination="J9O-xI-P5J" id="PmZ-VC-4SN"/>
                 <outlet property="slotController" destination="lyS-mc-3Tf" id="LXo-Ii-fDX"/>
-                <outlet property="slotView" destination="P9d-sS-qEb" id="T2q-ON-owm"/>
+                <outlet property="slotView" destination="P9d-sS-qEb" id="qlH-u0-hzq"/>
                 <outlet property="window" destination="Vze-YF-m6e" id="JUs-Eb-MW8"/>
             </connections>
         </customObject>
@@ -22,19 +22,19 @@
         <window title="Ample" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="Vze-YF-m6e">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="718" height="947"/>
+            <rect key="contentRect" x="335" y="390" width="718" height="763"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="Ssv-Jw-EE0">
-                <rect key="frame" x="0.0" y="0.0" width="718" height="947"/>
+                <rect key="frame" x="0.0" y="0.0" width="718" height="763"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVt-eD-aaj">
-                        <rect key="frame" x="0.0" y="747" width="718" height="200"/>
+                        <rect key="frame" x="0.0" y="563" width="718" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     </customView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-uU-muo">
                         <rect key="frame" x="18" y="102" width="71" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="Window" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vx1-I7-8kN">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -45,7 +45,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-ni-Rr6">
                         <rect key="frame" x="18" y="82" width="62" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6is-QN-JEc">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -67,11 +67,15 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
-                        <rect key="frame" x="595" y="53" width="111" height="32"/>
+                        <rect key="frame" x="587" y="58" width="111" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
+                        <buttonCell key="cell" type="roundTextured" title="Launch" bezelStyle="texturedRounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                         </buttonCell>
                         <connections>
                             <action selector="launchAction:" target="-2" id="a4d-zv-1CU"/>
@@ -79,7 +83,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLP-n2-0eY">
                         <rect key="frame" x="18" y="62" width="91" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="No Throttle" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NyE-jT-WqC">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -90,7 +94,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-dm-fuZ">
                         <rect key="frame" x="131" y="102" width="104" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="Square Pixels" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="yWK-BP-7Z9">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -99,17 +103,9 @@
                             <binding destination="-2" name="value" keyPath="self.mameSquarePixels" id="BiP-wC-Hpn"/>
                         </connections>
                     </button>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9d-sS-qEb" customClass="FlippedView">
-                        <rect key="frame" x="20" y="169" width="306" height="570"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </customView>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
-                        <rect key="frame" x="392" y="169" width="306" height="570"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                    </customView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-mU-ARl">
                         <rect key="frame" x="261" y="102" width="67" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="No Blur" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="r3s-5h-Xv5">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -119,25 +115,35 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
-                        <rect key="frame" x="595" y="77" width="109" height="32"/>
+                        <rect key="frame" x="470" y="58" width="109" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Reset Slots" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
+                        <buttonCell key="cell" type="roundTextured" title="Reset Slots" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">r</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                         </buttonCell>
                         <connections>
                             <action selector="resetSlots:" target="lyS-mc-3Tf" id="1qi-N0-Q8B"/>
                         </connections>
                     </button>
+                    <customView id="P9d-sS-qEb" customClass="FlippedView">
+                        <rect key="frame" x="20" y="155" width="306" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
+                        <rect key="frame" x="392" y="155" width="306" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    </customView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="769" y="196.5"/>
+            <point key="canvasLocation" x="769" y="104.5"/>
         </window>
         <viewController title="Media View" nibName="MediaView" id="t7c-zy-czN" customClass="MediaViewController"/>
         <viewController title="Slot View" nibName="SlotView" id="lyS-mc-3Tf" customClass="SlotViewController"/>
         <customObject id="RgH-d9-xl8" customClass="MachineViewController"/>
     </objects>
     <resources>
-        <image name="NSAppleMenuImage" width="11" height="14"/>
+        <image name="NSAppleMenuImage" width="128" height="128"/>
     </resources>
 </document>
