@@ -1,6 +1,6 @@
 //
 //  MachineViewController.h
-//  MA2ME
+//  Ample
 //
 //  Created by Kelvin Sherlock on 8/16/2020.
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
