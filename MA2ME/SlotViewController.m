@@ -442,6 +442,7 @@ unsigned SlotCount = 14;
     [self resetSlot: @"modem" button: _modem_menu index: 13];
     
     [self rebuildArgs];
+    [self rebuildMedia];
 }
 
 static BOOL should_add_arg(unsigned slot, unsigned valid_slots, unsigned explicit_slots, unsigned default_slots, NSString *value) {

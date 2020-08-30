@@ -67,7 +67,7 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
-                        <rect key="frame" x="621" y="53" width="85" height="32"/>
+                        <rect key="frame" x="595" y="53" width="111" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -116,6 +116,17 @@
                         </buttonCell>
                         <connections>
                             <binding destination="-2" name="value" keyPath="self.mameNoBlur" id="Pvn-zw-OsQ"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
+                        <rect key="frame" x="595" y="77" width="109" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Reset Slots" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resetSlots:" target="lyS-mc-3Tf" id="1qi-N0-Q8B"/>
                         </connections>
                     </button>
                 </subviews>
