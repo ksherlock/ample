@@ -144,6 +144,12 @@ static NSMutableSet *LogWindows;
     _task = nil;
     
     [[self window] setDocumentEdited: NO];
+    
+    if (ok && [[NSUserDefaults standardUserDefaults] boolForKey: @"AutoCloseLogWindow"]) {
+        
+        [[self window] close];
+        //[LogWindows removeObject: self]; // close sends WindowWillClose notification.
+    }
 }
 
 #pragma mark - NSWindowDelegate

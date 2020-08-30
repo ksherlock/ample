@@ -35,7 +35,7 @@
                         </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-Ag-Xyr">
-                        <rect key="frame" x="18" y="234" width="74" height="16"/>
+                        <rect key="frame" x="18" y="232" width="74" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="MAME Path" id="Xcq-4g-Wlw">
                             <font key="font" metaFont="system"/>
@@ -43,6 +43,17 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAN-P2-ydI">
+                        <rect key="frame" x="96" y="205" width="217" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Close log window on normal exit" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QMz-O0-06U">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="yvB-HG-64y" name="value" keyPath="values.AutoCloseLogWindow" id="q0L-GA-wM2"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="140" y="147"/>
