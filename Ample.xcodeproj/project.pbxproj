@@ -131,14 +131,14 @@
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
-		B6BA257B24E99BE9005FB8FF /* MA2ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MA2ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6BA257F24E99BE9005FB8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6BA258124E99BEB005FB8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6BA258424E99BEB005FB8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B6BA258624E99BEB005FB8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BA258724E99BEB005FB8FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6BA258924E99BEB005FB8FF /* MA2ME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MA2ME.entitlements; sourceTree = "<group>"; };
+		B6BA258924E99BEB005FB8FF /* Ample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ample.entitlements; sourceTree = "<group>"; };
 		B6D6DE3824FAC8B500661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		B6D6DE3A24FACF4F00661A5F /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		B6BA257224E99BE9005FB8FF = {
 			isa = PBXGroup;
 			children = (
-				B6BA257D24E99BE9005FB8FF /* MA2ME */,
+				B6BA257D24E99BE9005FB8FF /* Ample */,
 				B6BA257C24E99BE9005FB8FF /* Products */,
 				B649798C24EEC165008ABD20 /* Recovered References */,
 			);
@@ -230,12 +230,12 @@
 		B6BA257C24E99BE9005FB8FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6BA257B24E99BE9005FB8FF /* MA2ME.app */,
+				B6BA257B24E99BE9005FB8FF /* Ample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6BA257D24E99BE9005FB8FF /* MA2ME */ = {
+		B6BA257D24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXGroup;
 			children = (
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
@@ -257,10 +257,10 @@
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
 				B6D6DE3A24FACF4F00661A5F /* Defaults.plist */,
 				B6BA258724E99BEB005FB8FF /* main.m */,
-				B6BA258924E99BEB005FB8FF /* MA2ME.entitlements */,
+				B6BA258924E99BEB005FB8FF /* Ample.entitlements */,
 				B6D6DE4224FAEE8900661A5F /* Nibs */,
 			);
-			path = MA2ME;
+			path = Ample;
 			sourceTree = "<group>";
 		};
 		B6D6DE4224FAEE8900661A5F /* Nibs */ = {
@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6BA257A24E99BE9005FB8FF /* MA2ME */ = {
+		B6BA257A24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6BA258C24E99BEB005FB8FF /* Build configuration list for PBXNativeTarget "MA2ME" */;
+			buildConfigurationList = B6BA258C24E99BEB005FB8FF /* Build configuration list for PBXNativeTarget "Ample" */;
 			buildPhases = (
 				B6BA257724E99BE9005FB8FF /* Sources */,
 				B6BA257824E99BE9005FB8FF /* Frameworks */,
@@ -291,9 +291,9 @@
 			);
 			dependencies = (
 			);
-			name = MA2ME;
+			name = Ample;
 			productName = MA2ME;
-			productReference = B6BA257B24E99BE9005FB8FF /* MA2ME.app */;
+			productReference = B6BA257B24E99BE9005FB8FF /* Ample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6BA257624E99BE9005FB8FF /* Build configuration list for PBXProject "MA2ME" */;
+			buildConfigurationList = B6BA257624E99BE9005FB8FF /* Build configuration list for PBXProject "Ample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -323,7 +323,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6BA257A24E99BE9005FB8FF /* MA2ME */,
+				B6BA257A24E99BE9005FB8FF /* Ample */,
 			);
 		};
 /* End PBXProject section */
@@ -599,7 +599,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6BA257624E99BE9005FB8FF /* Build configuration list for PBXProject "MA2ME" */ = {
+		B6BA257624E99BE9005FB8FF /* Build configuration list for PBXProject "Ample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6BA258A24E99BEB005FB8FF /* Debug */,
@@ -608,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6BA258C24E99BEB005FB8FF /* Build configuration list for PBXNativeTarget "MA2ME" */ = {
+		B6BA258C24E99BEB005FB8FF /* Build configuration list for PBXNativeTarget "Ample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6BA258D24E99BEB005FB8FF /* Debug */,
