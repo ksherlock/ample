@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)menuChanged:(id)sender;
 - (IBAction)memoryMenuChanged:(id)sender;
 
+-(IBAction)resetSlots: (id)sender;
 @end
 
 NS_ASSUME_NONNULL_END

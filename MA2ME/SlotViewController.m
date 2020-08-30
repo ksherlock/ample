@@ -199,6 +199,28 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     }
 }
 
+-(void)resetMemory {
+    
+    NSArray *items = [_machine objectForKey: @"ram"];
+    if (![items count]) return;
+
+    unsigned ix = 0;
+    for (NSDictionary *d in items) {
+         BOOL def = [(NSNumber *)[d objectForKey: @"default"] boolValue];
+        if (!def) {
+            ++ix;
+            continue;
+        }
+        // ram should always have a default.
+        [_ram_menu selectItemAtIndex: ix];
+        [self setMemory: [d objectForKey: @"description"]];
+        _slots_default |= kMemoryMask;
+        return;
+    }
+    // just in case
+    [_ram_menu selectItemAtIndex: 0];
+}
+
 -(void)syncSlot: (NSString *)slot button: (NSPopUpButton *)button index: (unsigned)index {
     
     NSString *value = [self valueForKey: slot];
@@ -250,6 +272,35 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
         _slot_object[index] = nil;
         _slot_media[index] = nil;
     }
+}
+
+-(void)resetSlot: (NSString *)slot button: (NSPopUpButton *)button index: (unsigned)index {
+    
+    NSArray *items = [_machine objectForKey: slot];
+    if (![items count]) return;
+
+    unsigned ix = 0;
+    for (NSDictionary *d in items) {
+         BOOL def = [(NSNumber *)[d objectForKey: @"default"] boolValue];
+        if (!def) {
+            ++ix;
+            continue;
+        }
+        [button selectItemAtIndex: ix];
+        [self setValue: [d objectForKey: @"value"] forKey: slot];
+        _slot_object[index] = d;
+        _slot_media[index] = [d objectForKey: @"media"];
+
+        _slots_default |= (1 << index);
+        return;
+    }
+    // just in case
+    NSDictionary *d = [items firstObject];
+
+    [button selectItemAtIndex: 0];
+    [self setValue: [d objectForKey: @"value"] forKey: slot];
+    _slot_object[index] = d;
+    _slot_media[index] = [d objectForKey: @"media"];
 }
 
 -(void)syncSlots {
@@ -305,22 +356,25 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     [self rebuildMedia];
 }
 
+static NSString *SlotNames[] = {
+
+    @"sl0", @"sl1", @"sl2", @"sl3",
+    @"sl4", @"sl5", @"sl6", @"sl7",
+    @"exp", @"aux", @"rs232",
+    @"gameio", @"printer", @"modem",
+};
+
+unsigned SlotCount = 14;
 
 - (IBAction)menuChanged:(NSPopUpButton *)sender {
 
-    static NSString *Names[] = {
 
-        @"sl0", @"sl1", @"sl2", @"sl3",
-        @"sl4", @"sl5", @"sl6", @"sl7",
-        @"exp", @"aux", @"rs232",
-        @"gameio", @"printer", @"modem",
-    };
     
     NSInteger tag = [sender tag];
 
 //    NSInteger ix = [sender indexOfSelectedItem];
     
-    NSString *key = Names[tag];
+    NSString *key = SlotNames[tag];
         
     _slots_explicit |= (1 << tag);
 
@@ -354,6 +408,38 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
     // if pull-down menu
     if ([sender pullsDown])
         [sender setTitle: title];
+    
+    [self rebuildArgs];
+}
+
+-(IBAction)resetSlots:(id)sender {
+    /* reset slots to default */
+    
+    _slots_explicit = 0;
+    _slots_default = 0;
+    for (unsigned i = 0 ; i < SlotCount; ++i) {
+        [self setValue: @"" forKey: SlotNames[i]];
+        _slot_media[i] = nil;
+        _slot_object[i] = nil;
+    }
+    _memory = @"";
+    _memoryBytes = 0;
+    
+    [self resetMemory];
+    [self resetSlot: @"sl0" button: _sl0_menu index: 0];
+    [self resetSlot: @"sl1" button: _sl1_menu index: 1];
+    [self resetSlot: @"sl2" button: _sl2_menu index: 2];
+    [self resetSlot: @"sl3" button: _sl3_menu index: 3];
+    [self resetSlot: @"sl4" button: _sl4_menu index: 4];
+    [self resetSlot: @"sl5" button: _sl5_menu index: 5];
+    [self resetSlot: @"sl6" button: _sl6_menu index: 6];
+    [self resetSlot: @"sl7" button: _sl7_menu index: 7];
+    [self resetSlot: @"exp" button: _exp_menu index: 8];
+    [self resetSlot: @"aux" button: _aux_menu index: 9];
+    [self resetSlot: @"rs232" button: _rs232_menu index: 10];
+    [self resetSlot: @"gameio" button: _game_menu index: 11];
+    [self resetSlot: @"printer" button: _printer_menu index: 12];
+    [self resetSlot: @"modem" button: _modem_menu index: 13];
     
     [self rebuildArgs];
 }
