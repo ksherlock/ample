@@ -10,6 +10,7 @@
 #import "SlotViewController.h"
 #import "MediaViewController.h"
 #import "LaunchWindowController.h"
+#import "PreferencesWindowController.h"
 
 @interface AppDelegate ()
 
@@ -58,7 +59,7 @@
 
 - (IBAction)displayPreferences:(id)sender {
     if (!_prefs) {
-        _prefs = [[NSWindowController alloc] initWithWindowNibName: @"Preferences"];
+        _prefs = [PreferencesWindowController new];
     }
     [_prefs showWindow: sender];
 }
