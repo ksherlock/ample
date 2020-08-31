@@ -65,6 +65,7 @@
 		B66236B424FDA527006CABD7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -164,6 +165,7 @@
 		B66236B224FDA522006CABD7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = embedded/SDL2.framework; sourceTree = "<group>"; };
 		B66236B724FDA686006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B66236B824FDA698006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
+		B66236C024FDB7A6006CABD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		B6D6DE4224FAEE8900661A5F /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				B66236BF24FDB7A6006CABD7 /* Credits.rtf */,
 				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
 				B6004DEF24FB05D600D38596 /* LogWindow.xib */,
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
@@ -421,6 +424,7 @@
 				B6109A1E24F5F377005CB652 /* apple2c.plist in Resources */,
 				B6109A1A24F5F377005CB652 /* microeng.plist in Resources */,
 				B6109A3E24F5F377005CB652 /* albert.plist in Resources */,
+				B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */,
 				B6109A4224F5F377005CB652 /* apple2p.plist in Resources */,
 				B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */,
 				B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */,
@@ -484,6 +488,14 @@
 				B61099E624F5F230005CB652 /* Base */,
 			);
 			name = MediaView.xib;
+			sourceTree = "<group>";
+		};
+		B66236BF24FDB7A6006CABD7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66236C024FDB7A6006CABD7 /* Base */,
+			);
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		B6BA258324E99BEB005FB8FF /* MainMenu.xib */ = {
