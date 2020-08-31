@@ -62,6 +62,9 @@
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B658DBF324FB58EC0063AB5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258624E99BEB005FB8FF /* Info.plist */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
+		B66236B424FDA527006CABD7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; };
+		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -72,10 +75,33 @@
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B66236B124FDA443006CABD7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66236BB24FDA71D006CABD7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B6004DED24FB05D600D38596 /* LogWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogWindowController.h; sourceTree = "<group>"; };
 		B6004DEE24FB05D600D38596 /* LogWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogWindowController.m; sourceTree = "<group>"; };
-		B6004DEF24FB05D600D38596 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogWindow.xib; sourceTree = "<group>"; };
 		B6004DEF24FB05D600D38596 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LogWindow.xib; path = Base.lproj/LogWindow.xib; sourceTree = "<group>"; };
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
@@ -135,6 +161,9 @@
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		B66236B224FDA522006CABD7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = embedded/SDL2.framework; sourceTree = "<group>"; };
+		B66236B724FDA686006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
+		B66236B824FDA698006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66236B424FDA527006CABD7 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +253,31 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B66236B624FDA686006CABD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66236B724FDA686006CABD7 /* mame64 */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66236BD24FDA7EA006CABD7 /* Embedded Content */ = {
+			isa = PBXGroup;
+			children = (
+				B66236B824FDA698006CABD7 /* mame64 */,
+				B66236B224FDA522006CABD7 /* SDL2.framework */,
+			);
+			name = "Embedded Content";
+			sourceTree = "<group>";
+		};
 		B6BA257224E99BE9005FB8FF = {
 			isa = PBXGroup;
 			children = (
 				B6BA257D24E99BE9005FB8FF /* Ample */,
+				B66236BD24FDA7EA006CABD7 /* Embedded Content */,
 				B6BA257C24E99BE9005FB8FF /* Products */,
 				B649798C24EEC165008ABD20 /* Recovered References */,
+				B66236B624FDA686006CABD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +306,8 @@
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B6004DED24FB05D600D38596 /* LogWindowController.h */,
 				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
+				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
+				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -271,13 +322,11 @@
 		B6D6DE4224FAEE8900661A5F /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
 				B6004DEF24FB05D600D38596 /* LogWindow.xib */,
-				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
-				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
-				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B61099E524F5F230005CB652 /* MediaView.xib */,
+				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
 			);
 			name = Nibs;
@@ -293,6 +342,8 @@
 				B6BA257724E99BE9005FB8FF /* Sources */,
 				B6BA257824E99BE9005FB8FF /* Frameworks */,
 				B6BA257924E99BE9005FB8FF /* Resources */,
+				B66236B124FDA443006CABD7 /* Embed Frameworks */,
+				B66236BB24FDA71D006CABD7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -578,6 +629,11 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ample/Frameworks",
+					"$(PROJECT_DIR)/embedded",
+				);
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,6 +651,11 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ample/Frameworks",
+					"$(PROJECT_DIR)/embedded",
+				);
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
