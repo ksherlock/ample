@@ -65,7 +65,10 @@ static NSMutableSet *LogWindows;
     
 
     if (error) {
-        NSLog(@"launchAction: %@", error);
+        NSURL *url = [task executableURL];
+        NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+        NSLog(@"NSTask error. Path = %@ error = %@", path, error);
+        [self appendString: path];
         [self appendString: [error description]];
         return error;
     }
