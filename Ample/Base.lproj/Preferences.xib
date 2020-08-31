@@ -33,6 +33,7 @@
                         </textFieldCell>
                         <connections>
                             <action selector="pathChanged:" target="-2" id="RRj-dC-q2y"/>
+                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="iex-A9-Db6"/>
                             <binding destination="yvB-HG-64y" name="value" keyPath="values.MamePath" id="H3O-1l-peo"/>
                         </connections>
                     </textField>
@@ -57,14 +58,14 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7D-jC-17Q">
-                        <rect key="frame" x="96" y="208" width="137" height="18"/>
+                        <rect key="frame" x="96" y="208" width="139" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Use System MAME" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="V61-mz-QFo">
+                        <buttonCell key="cell" type="check" title="Use Custom MAME" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="V61-mz-QFo">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <binding destination="yvB-HG-64y" name="value" keyPath="values.UseSystemMame" id="jIh-qD-e5H"/>
+                            <binding destination="yvB-HG-64y" name="value" keyPath="values.UseCustomMame" id="lH4-dm-kQC"/>
                         </connections>
                     </button>
                 </subviews>

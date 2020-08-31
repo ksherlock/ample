@@ -91,6 +91,39 @@ static NSString *kContextMachine = @"kContextMachine";
     }
 }
 
+
+static NSURL *MameURL(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSBundle *bundle = [NSBundle mainBundle];
+        
+    if ([defaults boolForKey: @"UseSystemMame"]) {
+        NSString *path = [defaults stringForKey: @"MamePath"];
+        if (![path length]) return [NSURL fileURLWithPath: path];
+    }
+    
+    return [bundle URLForAuxiliaryExecutable: @"mame64"];
+
+    return nil;
+}
+
+static NSString *MamePath(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSBundle *bundle = [NSBundle mainBundle];
+
+    NSString *path;
+    
+    if ([defaults boolForKey: @"UseCustomMame"]) {
+        path = [defaults stringForKey: @"MamePath"];
+        if ([path length]) return path;
+    }
+    path = [bundle pathForAuxiliaryExecutable: @"mame64"];
+    if ([path length]) return path;
+    return nil;
+}
+
+
 static NSString * JoinArguments(NSArray *argv) {
 
     static NSCharacterSet *safe = nil;
@@ -110,7 +143,10 @@ static NSString * JoinArguments(NSArray *argv) {
 
     
     //unsigned ix = 0;
-    [rv appendString: @"mame"];
+    //[rv appendString: @"mame"];
+    NSString *path = MamePath();
+    path = path ? [path lastPathComponent] : @"mame";
+    [rv appendString: path];
     for (NSString *s in argv) {
         [rv appendString: @" "];
         NSUInteger l = [s length];
@@ -224,17 +260,20 @@ static NSString * JoinArguments(NSArray *argv) {
 
 
 
+
 - (IBAction)launchAction:(id)sender {
 
     if (![_args count]) return;
+        
+    NSURL *url = MameURL();
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    
-    NSString *path = [defaults stringForKey: @"MamePath"];
-    if (![path length]) path = @"/usr/local/bin/mame";
-    
-    NSURL *url = [NSURL fileURLWithPath: path];
+    if (!url) {
+        NSAlert *alert = [NSAlert new];
+
+        [alert setMessageText: @"Unable to find MAME executable path"];
+        [alert runModal];
+        return;
+    }
     
     NSTask *task = [NSTask new];
     [task setExecutableURL: url];
