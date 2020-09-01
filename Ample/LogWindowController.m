@@ -73,7 +73,7 @@ static NSMutableSet *LogWindows;
         return error;
     }
     _task = task;
-    NSString *title = [NSString stringWithFormat: @"Log Window - %u", [task processIdentifier]];
+    NSString *title = [NSString stringWithFormat: @"Ample Log - %u", [task processIdentifier]];
     [[self window] setTitle: title];
     _handle = [pipe fileHandleForReading];
     
