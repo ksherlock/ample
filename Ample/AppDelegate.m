@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SlotViewController.h"
-#import "MediaViewController.h"
 #import "LaunchWindowController.h"
 #import "PreferencesWindowController.h"
 
