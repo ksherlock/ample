@@ -1,0 +1,8 @@
+language: objective-c
+
+osx_image:
+  - xcode12
+  - xcode11.3
+  - xcode10.1
+xcode_project: Ample.xcodeproj
+xcode_scheme: Ample Lite
