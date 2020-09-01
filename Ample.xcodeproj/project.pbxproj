@@ -62,7 +62,6 @@
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B658DBF324FB58EC0063AB5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258624E99BEB005FB8FF /* Info.plist */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
-		B66236B424FDA527006CABD7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
@@ -74,6 +73,70 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6E4B5B024FDE2670094A35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
+		B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
+		B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
+		B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
+		B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
+		B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6004DEE24FB05D600D38596 /* LogWindowController.m */; };
+		B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
+		B6E4B5B824FDE2670094A35C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
+		B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
+		B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
+		B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
+		B6E4B5BF24FDE2670094A35C /* agat9.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1224F5F375005CB652 /* agat9.plist */; };
+		B6E4B5C024FDE2670094A35C /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
+		B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0424F5F372005CB652 /* apple1.plist */; };
+		B6E4B5C224FDE2670094A35C /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0824F5F373005CB652 /* ace100.plist */; };
+		B6E4B5C324FDE2670094A35C /* am64.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0724F5F372005CB652 /* am64.plist */; };
+		B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6004DEF24FB05D600D38596 /* LogWindow.xib */; };
+		B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
+		B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
+		B6E4B5C724FDE2670094A35C /* am100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0F24F5F374005CB652 /* am100.plist */; };
+		B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F824F5F36F005CB652 /* laser2c.plist */; };
+		B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1024F5F375005CB652 /* laser128.plist */; };
+		B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FB24F5F370005CB652 /* apple2ep.plist */; };
+		B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EC24F5F36E005CB652 /* apple2ees.plist */; };
+		B6E4B5CC24FDE2670094A35C /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
+		B6E4B5CD24FDE2670094A35C /* ivelultr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EF24F5F36E005CB652 /* ivelultr.plist */; };
+		B6E4B5CE24FDE2670094A35C /* maxxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0B24F5F373005CB652 /* maxxi.plist */; };
+		B6E4B5CF24FDE2670094A35C /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0124F5F371005CB652 /* apple2eefr.plist */; };
+		B6E4B5D024FDE2670094A35C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258624E99BEB005FB8FF /* Info.plist */; };
+		B6E4B5D124FDE2670094A35C /* spectred.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FF24F5F371005CB652 /* spectred.plist */; };
+		B6E4B5D224FDE2670094A35C /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1424F5F376005CB652 /* apple2cp.plist */; };
+		B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
+		B6E4B5D424FDE2670094A35C /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
+		B6E4B5D524FDE2670094A35C /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F324F5F36F005CB652 /* apple2euk.plist */; };
+		B6E4B5D624FDE2670094A35C /* uniap2ti.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0224F5F371005CB652 /* uniap2ti.plist */; };
+		B6E4B5D724FDE2670094A35C /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F124F5F36F005CB652 /* apple2c.plist */; };
+		B6E4B5D824FDE2670094A35C /* microeng.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099ED24F5F36E005CB652 /* microeng.plist */; };
+		B6E4B5D924FDE2670094A35C /* albert.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1124F5F375005CB652 /* albert.plist */; };
+		B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
+		B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
+		B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EB24F5F36E005CB652 /* hkc8800a.plist */; };
+		B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F624F5F36F005CB652 /* apple2gsr0.plist */; };
+		B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F924F5F370005CB652 /* mprof3.plist */; };
+		B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0524F5F372005CB652 /* basis108.plist */; };
+		B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
+		B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FE24F5F370005CB652 /* elppa.plist */; };
+		B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0E24F5F374005CB652 /* apple2gsr1.plist */; };
+		B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
+		B6E4B5E424FDE2670094A35C /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
+		B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1324F5F375005CB652 /* craft2p.plist */; };
+		B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EE24F5F36E005CB652 /* uniap2pt.plist */; };
+		B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0A24F5F373005CB652 /* las128e2.plist */; };
+		B6E4B5E824FDE2670094A35C /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
+		B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FA24F5F370005CB652 /* uniap2en.plist */; };
+		B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FD24F5F370005CB652 /* apple3.plist */; };
+		B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F424F5F36F005CB652 /* apple2ee.plist */; };
+		B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0924F5F373005CB652 /* dodo.plist */; };
+		B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3724FAC8B500661A5F /* Preferences.xib */; };
+		B6E4B5EE24FDE2670094A35C /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E324F5F230005CB652 /* SlotView.xib */; };
+		B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FC24F5F370005CB652 /* apple2gs.plist */; };
+		B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
+		B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
+		B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0024F5F371005CB652 /* prav8m.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +159,16 @@
 			files = (
 				B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E4B5F324FDE2670094A35C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -180,6 +253,7 @@
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
+		B6E4B5FA24FDE2670094A35C /* Ample Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ample Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +261,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66236B424FDA527006CABD7 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E4B5B924FDE2670094A35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				B6BA257B24E99BE9005FB8FF /* Ample.app */,
+				B6E4B5FA24FDE2670094A35C /* Ample Lite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +438,24 @@
 			productReference = B6BA257B24E99BE9005FB8FF /* Ample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B6E4B5AE24FDE2670094A35C /* Ample Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E4B5F724FDE2670094A35C /* Build configuration list for PBXNativeTarget "Ample Lite" */;
+			buildPhases = (
+				B6E4B5AF24FDE2670094A35C /* Sources */,
+				B6E4B5B924FDE2670094A35C /* Frameworks */,
+				B6E4B5BB24FDE2670094A35C /* Resources */,
+				B6E4B5F324FDE2670094A35C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ample Lite";
+			productName = MA2ME;
+			productReference = B6E4B5FA24FDE2670094A35C /* Ample Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,6 +484,7 @@
 			projectRoot = "";
 			targets = (
 				B6BA257A24E99BE9005FB8FF /* Ample */,
+				B6E4B5AE24FDE2670094A35C /* Ample Lite */,
 			);
 		};
 /* End PBXProject section */
@@ -452,6 +552,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6E4B5BB24FDE2670094A35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */,
+				B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */,
+				B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */,
+				B6E4B5BF24FDE2670094A35C /* agat9.plist in Resources */,
+				B6E4B5C024FDE2670094A35C /* LaunchWindow.xib in Resources */,
+				B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */,
+				B6E4B5C224FDE2670094A35C /* ace100.plist in Resources */,
+				B6E4B5C324FDE2670094A35C /* am64.plist in Resources */,
+				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
+				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
+				B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */,
+				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
+				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
+				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
+				B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */,
+				B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */,
+				B6E4B5CC24FDE2670094A35C /* prav8c.plist in Resources */,
+				B6E4B5CD24FDE2670094A35C /* ivelultr.plist in Resources */,
+				B6E4B5CE24FDE2670094A35C /* maxxi.plist in Resources */,
+				B6E4B5CF24FDE2670094A35C /* apple2eefr.plist in Resources */,
+				B6E4B5D024FDE2670094A35C /* Info.plist in Resources */,
+				B6E4B5D124FDE2670094A35C /* spectred.plist in Resources */,
+				B6E4B5D224FDE2670094A35C /* apple2cp.plist in Resources */,
+				B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */,
+				B6E4B5D424FDE2670094A35C /* prav82.plist in Resources */,
+				B6E4B5D524FDE2670094A35C /* apple2euk.plist in Resources */,
+				B6E4B5D624FDE2670094A35C /* uniap2ti.plist in Resources */,
+				B6E4B5D724FDE2670094A35C /* apple2c.plist in Resources */,
+				B6E4B5D824FDE2670094A35C /* microeng.plist in Resources */,
+				B6E4B5D924FDE2670094A35C /* albert.plist in Resources */,
+				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
+				B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */,
+				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
+				B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */,
+				B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */,
+				B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */,
+				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
+				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
+				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
+				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
+				B6E4B5E424FDE2670094A35C /* models.plist in Resources */,
+				B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */,
+				B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */,
+				B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */,
+				B6E4B5E824FDE2670094A35C /* MediaView.xib in Resources */,
+				B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */,
+				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,
+				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
+				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
+				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
+				B6E4B5EE24FDE2670094A35C /* SlotView.xib in Resources */,
+				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
+				B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */,
+				B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */,
+				B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,6 +630,22 @@
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */,
 				B65593B124ECB61800722E0C /* SlotViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E4B5AF24FDE2670094A35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
+				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
+				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
+				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
+				B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */,
+				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
+				B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */,
+				B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */,
+				B6E4B5B824FDE2670094A35C /* SlotViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +856,50 @@
 			};
 			name = Release;
 		};
+		B6E4B5F824FDE2670094A35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ample/Frameworks",
+					"$(PROJECT_DIR)/embedded",
+				);
+				INFOPLIST_FILE = Ample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6E4B5F924FDE2670094A35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ample/Frameworks",
+					"$(PROJECT_DIR)/embedded",
+				);
+				INFOPLIST_FILE = Ample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,6 +917,15 @@
 			buildConfigurations = (
 				B6BA258D24E99BEB005FB8FF /* Debug */,
 				B6BA258E24E99BEB005FB8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E4B5F724FDE2670094A35C /* Build configuration list for PBXNativeTarget "Ample Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E4B5F824FDE2670094A35C /* Debug */,
+				B6E4B5F924FDE2670094A35C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
