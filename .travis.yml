@@ -6,3 +6,7 @@ osx_image:
   - xcode10.1
 xcode_project: Ample.xcodeproj
 xcode_scheme: Ample Lite
+
+script:
+  - set -o pipefail
+  - xcodebuild -project "${TRAVIS_XCODE_PROJECT}" -target "Ample Lite" | xcpretty
