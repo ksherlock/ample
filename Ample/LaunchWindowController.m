@@ -279,12 +279,12 @@ static NSString * JoinArguments(NSArray *argv) {
     NSTask *task = [NSTask new];
     [task setExecutableURL: url];
     [task setArguments: _args];
-#if 0
-    // interferes w/ termination notification.
-    [task setTerminationHandler: ^(NSTask *t){
-        
-    }];
-#endif
+
+    if (![defaults boolForKey: kUseCustomMame]) {
+        // run in Application Support/Ample.
+        [task setCurrentDirectoryURL: SupportDirectory()];
+    }
+    
     [LogWindowController controllerForTask: task];
 }
 
