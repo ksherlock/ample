@@ -57,6 +57,8 @@
 		B6109A4124F5F377005CB652 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1424F5F376005CB652 /* apple2cp.plist */; };
 		B6109A4224F5F377005CB652 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
 		B6109A4324F5F377005CB652 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
+		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
+		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
@@ -225,6 +227,8 @@
 		B6109A1424F5F376005CB652 /* apple2cp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2cp.plist; sourceTree = "<group>"; };
 		B6109A1524F5F376005CB652 /* apple2p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2p.plist; sourceTree = "<group>"; };
 		B6109A1624F5F376005CB652 /* agat7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = agat7.plist; sourceTree = "<group>"; };
+		B63C1B8924FF4B7100511A71 /* Ample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ample.h; sourceTree = "<group>"; };
+		B63C1B8A24FF4BF700511A71 /* Ample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ample.m; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
@@ -375,6 +379,8 @@
 			children = (
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
+				B63C1B8924FF4B7100511A71 /* Ample.h */,
+				B63C1B8A24FF4BF700511A71 /* Ample.m */,
 				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
 				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
@@ -618,6 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
+				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
@@ -634,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
+				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
 				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,

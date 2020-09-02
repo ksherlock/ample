@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
 //
 
+#import "Ample.h"
 #import "PreferencesWindowController.h"
 
 @interface PreferencesWindowController ()
@@ -25,7 +26,7 @@
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     
-    [self validateMamePath: [defaults stringForKey: @"MamePath"]];
+    [self validateMamePath: [defaults stringForKey: kMamePath]];
     
 }
 

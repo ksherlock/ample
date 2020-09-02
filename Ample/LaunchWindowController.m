@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
 //
 
+#import "Ample.h"
 #import "LaunchWindowController.h"
 #import "MediaViewController.h"
 #import "SlotViewController.h"
@@ -97,8 +98,8 @@ static NSURL *MameURL(void) {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSBundle *bundle = [NSBundle mainBundle];
         
-    if ([defaults boolForKey: @"UseSystemMame"]) {
-        NSString *path = [defaults stringForKey: @"MamePath"];
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMamePath];
         if (![path length]) return [NSURL fileURLWithPath: path];
     }
     
@@ -114,8 +115,8 @@ static NSString *MamePath(void) {
 
     NSString *path;
     
-    if ([defaults boolForKey: @"UseCustomMame"]) {
-        path = [defaults stringForKey: @"MamePath"];
+    if ([defaults boolForKey: kUseCustomMame]) {
+        path = [defaults stringForKey: kMamePath];
         if ([path length]) return path;
     }
     path = [bundle pathForAuxiliaryExecutable: @"mame64"];
@@ -197,7 +198,6 @@ static NSString * JoinArguments(NSArray *argv) {
 
 -(void)buildCommandLine {
 
-
     if (!_mameMachine) {
         [self setCommandLine: @""];
         return;
@@ -252,7 +252,7 @@ static NSString * JoinArguments(NSArray *argv) {
     if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     
     
-    [self setCommandLine: JoinArguments(argv)]; //[argv componentsJoinedByString:@" "]];
+    [self setCommandLine: JoinArguments(argv)];
     [self setArgs: argv];
 }
 
@@ -264,7 +264,8 @@ static NSString * JoinArguments(NSArray *argv) {
 - (IBAction)launchAction:(id)sender {
 
     if (![_args count]) return;
-        
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSURL *url = MameURL();
     
     if (!url) {

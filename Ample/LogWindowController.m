@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
 //
 
+#import "Ample.h"
 #import "LogWindowController.h"
 
 static NSMutableSet *LogWindows;
@@ -148,7 +149,7 @@ static NSMutableSet *LogWindows;
     
     [[self window] setDocumentEdited: NO];
     
-    if (ok && [[NSUserDefaults standardUserDefaults] boolForKey: @"AutoCloseLogWindow"]) {
+    if (ok && [[NSUserDefaults standardUserDefaults] boolForKey: kAutoCloseLogWindow]) {
         
         [[self window] close];
         //[LogWindows removeObject: self]; // close sends WindowWillClose notification.
