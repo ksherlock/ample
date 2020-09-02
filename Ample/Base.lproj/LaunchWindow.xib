@@ -21,7 +21,6 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Ample" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="Vze-YF-m6e">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="718" height="763"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="Ssv-Jw-EE0">
@@ -144,6 +143,6 @@ DQ
         <customObject id="RgH-d9-xl8" customClass="MachineViewController"/>
     </objects>
     <resources>
-        <image name="NSAppleMenuImage" width="128" height="128"/>
+        <image name="NSAppleMenuImage" width="11" height="14"/>
     </resources>
 </document>
