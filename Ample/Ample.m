@@ -27,3 +27,4 @@ NSURL *SupportDirectory(void) {
 NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
 NSString *kAutoCloseLogWindow = @"AutoCloseLogWindow";
+NSString *kMameComponentsDate = @"MameComponentsDate";

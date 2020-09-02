@@ -17,5 +17,6 @@ NSURL *SupportDirectory(void);
 extern NSString *kUseCustomMame;
 extern NSString *kMamePath;
 extern NSString *kAutoCloseLogWindow;
+extern NSString *kMameComponentsDate;
 
 #endif /* Ample_h */
