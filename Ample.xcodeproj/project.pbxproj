@@ -60,6 +60,7 @@
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
+		B63C1B90250088DD00511A71 /* roms.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8F250088DC00511A71 /* roms.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
@@ -231,6 +232,7 @@
 		B63C1B8924FF4B7100511A71 /* Ample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ample.h; sourceTree = "<group>"; };
 		B63C1B8A24FF4BF700511A71 /* Ample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ample.m; sourceTree = "<group>"; };
 		B63C1B8D25004C6D00511A71 /* mame-data.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mame-data.tgz"; path = "embedded/mame-data.tgz"; sourceTree = "<group>"; };
+		B63C1B8F250088DC00511A71 /* roms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = roms.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B63C1B8F250088DC00511A71 /* roms.plist */,
 				B6109A0824F5F373005CB652 /* ace100.plist */,
 				B6109A1624F5F376005CB652 /* agat7.plist */,
 				B6109A1224F5F375005CB652 /* agat9.plist */,
@@ -546,6 +549,7 @@
 				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
 				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
 				B61099E824F5F231005CB652 /* MediaView.xib in Resources */,
+				B63C1B90250088DD00511A71 /* roms.plist in Resources */,
 				B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */,
 				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
 				B6109A2124F5F377005CB652 /* apple2ee.plist in Resources */,
