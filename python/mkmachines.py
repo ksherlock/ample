@@ -14,9 +14,10 @@ DISABLED = set((
 	'hsscsi', # doesn't work
 	'corvus', # these apparently don't use normal disk images.
 	'zipdrive',
-	'vulcan',
 	'focusdrive',
-	'vulcangold'
+	'vulcan',
+	'vulcangold',
+	'vulcaniie',
 ))
 	
 
@@ -165,7 +166,7 @@ for m in MACHINES:
 		data[s] = tmp
 
 
-	path = "Resources/{}.plist".format(m)
+	path = "../Ample/Resources/{}.plist".format(m)
 	with open(path, "w") as f:
 		f.write(to_plist(data))
 

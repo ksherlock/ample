@@ -20,7 +20,8 @@ ii_clones_children = ["ace100", "agat7", "agat9", "albert",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
 	"space84", "uniap2en", "uniap2pt", "uniap2ti"]
-iie_clones_children = ["mprof3", "prav8c", "spectred"]
+iie_clones_children = ["mprof3", "prav8c", "spectred", "zijini"]
+cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 
 tree = [
 	("Apple I", "apple1", apple1_children),
@@ -30,6 +31,7 @@ tree = [
 	("Apple IIgs", "apple2gs", apple2gs_children),
 	("Apple ///", "apple3", apple3_children),
 	("Laser", "laser128", laser_children),
+	("China Education Computer", None, cec_children)
 	("II Clones", None, ii_clones_children),
 	("IIe Clones", None, iie_clones_children),
 ]
@@ -74,7 +76,7 @@ for x in tree:
 
 	data.append(tmp)
 
-path = "Resources/models.plist"
+path = "../Ample/Resources/models.plist"
 with open(path, "w") as f:
 	f.write(to_plist(data))
 

@@ -34,5 +34,5 @@ for m in MACHINES:
 		devices[name] = tmp
 
 
-with open("Resources/devices.plist", "w") as f:
+with open("../Ample/Resources/devices.plist", "w") as f:
 	f.write(to_plist(devices))
