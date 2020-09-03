@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LaunchWindowController.h"
 #import "PreferencesWindowController.h"
+#import "DownloadWindowController.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *installWindow;
@@ -18,6 +19,7 @@
 @implementation AppDelegate {
     NSWindowController *_prefs;
     NSWindowController *_launcher;
+    NSWindowController *_downloader;
 }
 
 
@@ -140,5 +142,13 @@
     [_prefs showWindow: sender];
 }
 
+
+- (IBAction)downloadROMS:(id)sender {
+    
+    if (!_downloader) {
+        _downloader = [DownloadWindowController new];
+    }
+    [_downloader showWindow: sender];
+}
 
 @end
