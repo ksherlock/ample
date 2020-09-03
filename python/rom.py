@@ -62,6 +62,9 @@ zijini
 # prav8c
 #
 
+ROMS.remove("")
+ROMS.sort()
+
 data = {}
 data["source"] = "https://archive.org/download/mame0224_rom"
 data["type"] = "7z"

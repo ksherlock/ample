@@ -3,3 +3,4 @@ embedded/mame64
 embedded/SDL2.framework
 build
 embedded/mame-data.tgz
+__pycache__
