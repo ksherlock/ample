@@ -175,6 +175,43 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>China Education Computer</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer 2000</string>
+          <key>value</key>
+          <string>cec2000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer E</string>
+          <key>value</key>
+          <string>cece</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer G</string>
+          <key>value</key>
+          <string>cecg</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer I</string>
+          <key>value</key>
+          <string>ceci</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer M</string>
+          <key>value</key>
+          <string>cecm</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>II Clones</string>
       <key>children</key>
       <array>
@@ -322,6 +359,12 @@
           <string>Spectrum ED</string>
           <key>value</key>
           <string>spectred</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Zi Jin I</string>
+          <key>value</key>
+          <string>zijini</string>
         </dict>
       </array>
     </dict>

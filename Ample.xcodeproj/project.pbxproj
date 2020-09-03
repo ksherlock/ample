@@ -65,6 +65,18 @@
 		B63C1B9525008A2700511A71 /* DownloadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B9225008A2700511A71 /* DownloadWindowController.m */; };
 		B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9325008A2700511A71 /* DownloadWindow.xib */; };
 		B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9325008A2700511A71 /* DownloadWindow.xib */; };
+		B63C1B9D250192D800511A71 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B98250192D700511A71 /* cece.plist */; };
+		B63C1B9E250192D800511A71 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B98250192D700511A71 /* cece.plist */; };
+		B63C1B9F250192D800511A71 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B99250192D700511A71 /* ceci.plist */; };
+		B63C1BA0250192D800511A71 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B99250192D700511A71 /* ceci.plist */; };
+		B63C1BA1250192D800511A71 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
+		B63C1BA2250192D800511A71 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
+		B63C1BA3250192D800511A71 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
+		B63C1BA4250192D800511A71 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
+		B63C1BA5250192D800511A71 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
+		B63C1BA6250192D800511A71 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
+		B63C1BA8250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
+		B63C1BA9250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
@@ -240,6 +252,12 @@
 		B63C1B9125008A2700511A71 /* DownloadWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadWindowController.h; sourceTree = "<group>"; };
 		B63C1B9225008A2700511A71 /* DownloadWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadWindowController.m; sourceTree = "<group>"; };
 		B63C1B9325008A2700511A71 /* DownloadWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DownloadWindow.xib; path = Base.lproj/DownloadWindow.xib; sourceTree = "<group>"; };
+		B63C1B98250192D700511A71 /* cece.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cece.plist; sourceTree = "<group>"; };
+		B63C1B99250192D700511A71 /* ceci.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ceci.plist; sourceTree = "<group>"; };
+		B63C1B9A250192D700511A71 /* cecg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cecg.plist; sourceTree = "<group>"; };
+		B63C1B9B250192D800511A71 /* cec2000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cec2000.plist; sourceTree = "<group>"; };
+		B63C1B9C250192D800511A71 /* cecm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cecm.plist; sourceTree = "<group>"; };
+		B63C1BA7250192E600511A71 /* zijini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zijini.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
@@ -300,6 +318,12 @@
 			isa = PBXGroup;
 			children = (
 				B63C1B8F250088DC00511A71 /* roms.plist */,
+				B63C1B9B250192D800511A71 /* cec2000.plist */,
+				B63C1B98250192D700511A71 /* cece.plist */,
+				B63C1B9A250192D700511A71 /* cecg.plist */,
+				B63C1B99250192D700511A71 /* ceci.plist */,
+				B63C1B9C250192D800511A71 /* cecm.plist */,
+				B63C1BA7250192E600511A71 /* zijini.plist */,
 				B6109A0824F5F373005CB652 /* ace100.plist */,
 				B6109A1624F5F376005CB652 /* agat7.plist */,
 				B6109A1224F5F375005CB652 /* agat9.plist */,
@@ -516,8 +540,10 @@
 			files = (
 				B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */,
 				B6109A2424F5F377005CB652 /* las128ex.plist in Resources */,
+				B63C1BA8250192E600511A71 /* zijini.plist in Resources */,
 				B6109A1D24F5F377005CB652 /* space84.plist in Resources */,
 				B6109A3F24F5F377005CB652 /* agat9.plist in Resources */,
+				B63C1B9D250192D800511A71 /* cece.plist in Resources */,
 				B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */,
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
@@ -547,7 +573,10 @@
 				B6109A4224F5F377005CB652 /* apple2p.plist in Resources */,
 				B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */,
 				B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */,
+				B63C1BA1250192D800511A71 /* cecg.plist in Resources */,
+				B63C1BA3250192D800511A71 /* cec2000.plist in Resources */,
 				B6109A2624F5F377005CB652 /* mprof3.plist in Resources */,
+				B63C1B9F250192D800511A71 /* ceci.plist in Resources */,
 				B6109A3224F5F377005CB652 /* basis108.plist in Resources */,
 				B6109A4324F5F377005CB652 /* agat7.plist in Resources */,
 				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
@@ -564,6 +593,7 @@
 				B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */,
 				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
 				B6109A2124F5F377005CB652 /* apple2ee.plist in Resources */,
+				B63C1BA5250192D800511A71 /* cecm.plist in Resources */,
 				B6109A3624F5F377005CB652 /* dodo.plist in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B61099E724F5F231005CB652 /* SlotView.xib in Resources */,
@@ -579,8 +609,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */,
+				B63C1BA0250192D800511A71 /* ceci.plist in Resources */,
 				B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */,
 				B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */,
+				B63C1BA6250192D800511A71 /* cecm.plist in Resources */,
 				B6E4B5BF24FDE2670094A35C /* agat9.plist in Resources */,
 				B6E4B5C024FDE2670094A35C /* LaunchWindow.xib in Resources */,
 				B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */,
@@ -589,6 +621,7 @@
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
 				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
 				B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */,
+				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
 				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
@@ -610,6 +643,7 @@
 				B6E4B5D924FDE2670094A35C /* albert.plist in Resources */,
 				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
 				B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */,
+				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
 				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
 				B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */,
 				B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */,
@@ -619,9 +653,11 @@
 				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
 				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
 				B6E4B5E424FDE2670094A35C /* models.plist in Resources */,
+				B63C1BA9250192E600511A71 /* zijini.plist in Resources */,
 				B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */,
 				B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */,
 				B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */,
+				B63C1B9E250192D800511A71 /* cece.plist in Resources */,
 				B6E4B5E824FDE2670094A35C /* MediaView.xib in Resources */,
 				B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */,
 				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,

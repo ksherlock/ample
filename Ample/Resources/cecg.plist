@@ -1,0 +1,2511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>cecg</string>
+    <key>description</key>
+    <string>China Education Computer G</string>
+    <key>ram</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <integer>65536</integer>
+        <key>description</key>
+        <string>64K</string>
+        <key>default</key>
+        <true/>
+      </dict>
+    </array>
+    <key>media</key>
+    <dict>
+      <key>cass</key>
+      <integer>1</integer>
+    </dict>
+    <key>resolution</key>
+    <array>
+      <integer>560</integer>
+      <integer>384</integer>
+    </array>
+    <key>sl1</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+    </array>
+    <key>sl2</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+    </array>
+    <key>sl4</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+    </array>
+    <key>sl5</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+    </array>
+    <key>sl7</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>4play</string>
+        <key>description</key>
+        <string>4play Joystick Card (rev. B)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>midi</string>
+        <key>description</key>
+        <string>6850 MIDI card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>alfam2</string>
+        <key>description</key>
+        <string>ALF MC1 / Apple Music II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskii</string>
+        <key>description</key>
+        <string>Apple Disk II controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiiiwm</string>
+        <key>description</key>
+        <string>Apple Disk II IWM controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing13</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (13-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>diskiing</string>
+        <key>description</key>
+        <string>Apple Disk II NG controller (16-sector)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>hsscsi</string>
+        <key>description</key>
+        <string>Apple II High-Speed SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>memexp</string>
+        <key>description</key>
+        <string>Apple II Memory Expansion Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mouse</string>
+        <key>description</key>
+        <string>Apple II Mouse Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>scsi</string>
+        <key>description</key>
+        <string>Apple II SCSI Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>cdrm</key>
+          <integer>1</integer>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssc</string>
+        <key>description</key>
+        <string>Apple Super Serial Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applesurance</string>
+        <key>description</key>
+        <string>Applesurance Diagnostic Controller</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>flop_5_25</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>pcxport</string>
+        <key>description</key>
+        <string>Applied Engineering PC Transporter</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>phasor</string>
+        <key>description</key>
+        <string>Applied Engineering Phasor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ramfactor</string>
+        <key>description</key>
+        <string>Applied Engineering RamFactor</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aesms</string>
+        <key>description</key>
+        <string>Applied Engineering Super Music Synthesizer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>tm2ho</string>
+        <key>description</key>
+        <string>Applied Engineering TimeMaster H.O.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>twarp</string>
+        <key>description</key>
+        <string>Applied Engineering TransWarp</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>aevm80</string>
+        <key>description</key>
+        <string>Applied Engineering Viewmaster 80</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vulcan</string>
+        <key>description</key>
+        <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>byte8251</string>
+        <key>description</key>
+        <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa202</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cffa2</string>
+        <key>description</key>
+        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>corvus</string>
+        <key>description</key>
+        <string>Corvus Flat Cable interface</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>dx1</string>
+        <key>description</key>
+        <string>Decillonix DX-1</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ceyes2</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes/2</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sam</string>
+        <key>description</key>
+        <string>Don't Ask Software S.A.M.</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9938</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9938)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ezcgi9958</string>
+        <key>description</key>
+        <string>E-Z Color Graphics Interface (TMS9958)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>swyft</string>
+        <key>description</key>
+        <string>IAI SwyftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ap16alt</string>
+        <key>description</key>
+        <string>IBS AP-16 80 column card (alt. version)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>softcard</string>
+        <key>description</key>
+        <string>Microsoft SoftCard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms1</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 1)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mcms2</string>
+        <key>description</key>
+        <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssbapple</string>
+        <key>description</key>
+        <string>Multitech Industrial SSB Apple speech card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>focusdrive</string>
+        <key>description</key>
+        <string>Parsons Engineering Focus Drive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>applicard</string>
+        <key>description</key>
+        <string>PCPI Applicard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>themill</string>
+        <key>description</key>
+        <string>Stellation Two The Mill</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoii</string>
+        <key>description</key>
+        <string>Street Electronics Echo II</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>echoiiplus</string>
+        <key>description</key>
+        <string>Street Electronics Echo Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>mockingboard</string>
+        <key>description</key>
+        <string>Sweet Micro Systems Mockingboard</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssprite</string>
+        <key>description</key>
+        <string>Synetix SuperSprite</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>arcbd</string>
+        <key>description</key>
+        <string>Third Millenium Engineering Arcade Board</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>thclock</string>
+        <key>description</key>
+        <string>ThunderWare ThunderClock Plus</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>vtc1</string>
+        <key>description</key>
+        <string>unknown Videoterm clone</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultratermenh</string>
+        <key>description</key>
+        <string>Videx UltraTerm (enhanced //e)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ultraterm</string>
+        <key>description</key>
+        <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>videoterm</string>
+        <key>description</key>
+        <string>Videx Videoterm 80 Column Display</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>zipdrive</string>
+        <key>description</key>
+        <string>Zip Technologies ZipDrive</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+    </array>
+    <key>gameio</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string></string>
+        <key>description</key>
+        <string>—None—</string>
+        <key>default</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>joy</string>
+        <key>description</key>
+        <string>Apple II analog joysticks</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>paddles</string>
+        <key>description</key>
+        <string>Apple II paddles</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>compeyes</string>
+        <key>description</key>
+        <string>Digital Vision ComputerEyes</string>
+        <key>default</key>
+        <false/>
+      </dict>
+    </array>
+  </dict>
+</plist>

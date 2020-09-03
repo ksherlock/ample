@@ -31,7 +31,7 @@ tree = [
 	("Apple IIgs", "apple2gs", apple2gs_children),
 	("Apple ///", "apple3", apple3_children),
 	("Laser", "laser128", laser_children),
-	("China Education Computer", None, cec_children)
+	("China Education Computer", None, cec_children),
 	("II Clones", None, ii_clones_children),
 	("IIe Clones", None, iie_clones_children),
 ]
