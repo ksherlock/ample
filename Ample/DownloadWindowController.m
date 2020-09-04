@@ -202,6 +202,24 @@ enum {
     //[_tableView setNeedsDisplay: YES]; // doesn't work...
 }
 
+- (IBAction)downloadMissing:(id)sender {
+
+    BOOL delta = NO;
+    for (DownloadItem *item in _items) {
+        NSURL *url = [item localURL];
+        id task = [item task];
+        if (!url && !task) {
+            [self downloadItem: item];
+            delta = YES;
+        }
+    }
+    
+    if (delta) {
+        [self setActive: YES];
+        [_tableView reloadData];
+    }
+}
+
 - (IBAction)showInFinder:(id)sender {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
@@ -217,6 +235,7 @@ enum {
     if (!item) return;
 
     [self downloadItem: item];
+    [self setActive: YES];
     [self redrawRow: [item index]];
 }
 - (IBAction)cancel:(id)sender {
@@ -300,8 +319,6 @@ enum {
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
  
-    if (row == 51) { NSLog(@"viewForRow 51");}
-
     DownloadItem *item = [_items objectAtIndex: row];
     DownloadTableCellView *v = [tableView makeViewWithIdentifier: @"DownloadCell" owner: self];
     
