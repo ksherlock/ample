@@ -317,6 +317,7 @@ enum {
     //NSOutlineView *view = [self view];
     //[view expandItem: nil expandChildren: YES];
     // Do view setup here.
+
     [_outlineView reloadData];
     [_outlineView expandItem: nil expandChildren: YES];
 }

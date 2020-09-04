@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6004DEE24FB05D600D38596 /* LogWindowController.m */; };
 		B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6004DEF24FB05D600D38596 /* LogWindow.xib */; };
+		B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B608E17E2502FE0C00D53465 /* TransparentScroller.m */; };
+		B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B608E17E2502FE0C00D53465 /* TransparentScroller.m */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
 		B61099E724F5F231005CB652 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E324F5F230005CB652 /* SlotView.xib */; };
 		B61099E824F5F231005CB652 /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
@@ -195,6 +197,8 @@
 		B6004DED24FB05D600D38596 /* LogWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogWindowController.h; sourceTree = "<group>"; };
 		B6004DEE24FB05D600D38596 /* LogWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogWindowController.m; sourceTree = "<group>"; };
 		B6004DEF24FB05D600D38596 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LogWindow.xib; path = Base.lproj/LogWindow.xib; sourceTree = "<group>"; };
+		B608E17D2502FE0C00D53465 /* TransparentScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransparentScroller.h; sourceTree = "<group>"; };
+		B608E17E2502FE0C00D53465 /* TransparentScroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentScroller.m; sourceTree = "<group>"; };
 		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
 		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
@@ -430,6 +434,8 @@
 				B64E15A824EA1D5300E8AD3D /* MachineViewController.m */,
 				B60A6E1324EE0AE2004B7EEF /* FlippedView.m */,
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
+				B608E17D2502FE0C00D53465 /* TransparentScroller.h */,
+				B608E17E2502FE0C00D53465 /* TransparentScroller.m */,
 				B6004DED24FB05D600D38596 /* LogWindowController.h */,
 				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
 				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
@@ -679,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
@@ -697,6 +704,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,

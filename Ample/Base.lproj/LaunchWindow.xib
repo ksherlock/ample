@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVt-eD-aaj">
-                        <rect key="frame" x="0.0" y="563" width="718" height="200"/>
+                        <rect key="frame" x="0.0" y="583" width="718" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     </customView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-uU-muo">
@@ -126,13 +126,13 @@ DQ
                             <action selector="resetSlots:" target="lyS-mc-3Tf" id="1qi-N0-Q8B"/>
                         </connections>
                     </button>
-                    <customView id="P9d-sS-qEb" customClass="FlippedView">
-                        <rect key="frame" x="20" y="155" width="306" height="400"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </customView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
-                        <rect key="frame" x="392" y="155" width="306" height="400"/>
+                        <rect key="frame" x="392" y="212" width="306" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView id="P9d-sS-qEb" customClass="FlippedView">
+                        <rect key="frame" x="20" y="212" width="306" height="363"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                 </subviews>
             </view>
