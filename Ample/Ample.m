@@ -21,6 +21,17 @@ NSURL *SupportDirectory(void) {
         [fm createDirectoryAtURL: cached withIntermediateDirectories: YES attributes: nil error: &error];
     }
     return cached;
+    
+}
+
+NSString *SupportDirectoryPath(void) {
+    static NSString *cached = nil;
+    
+    if (!cached) {
+        NSURL *url = SupportDirectory();
+        cached = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+    }
+    return cached;
 }
 
 

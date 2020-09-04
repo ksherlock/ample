@@ -12,6 +12,7 @@
 #import <Cocoa/Cocoa.h>
 
 NSURL *SupportDirectory(void);
+NSString *SupportDirectoryPath(void);
 
 /* NSUserDefaults keys */
 extern NSString *kUseCustomMame;

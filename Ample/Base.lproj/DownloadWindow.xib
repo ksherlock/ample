@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="DownloadWindowController">
             <connections>
+                <outlet property="tableView" destination="FLX-Wt-y53" id="a4O-pk-EAt"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -16,10 +17,10 @@
         <window title="Downloads" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="157"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="458"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="157"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="458"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-Qf-4Mw">
@@ -32,11 +33,11 @@
                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                         </buttonCell>
                         <connections>
-                            <action selector="cancel:" target="-2" id="gJ0-aE-RVh"/>
+                            <action selector="cancelAll:" target="-2" id="ycl-eJ-ByB"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-ih-Sp1">
-                        <rect key="frame" x="18" y="121" width="442" height="16"/>
+                        <rect key="frame" x="20" y="105" width="442" height="16"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Downloading" id="dZt-4d-PYZ">
                             <font key="font" metaFont="system"/>
@@ -51,8 +52,108 @@
                             </binding>
                         </connections>
                     </textField>
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMD-nT-mEa">
+                        <rect key="frame" x="0.0" y="129" width="482" height="330"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="Igp-aH-flp">
+                            <rect key="frame" x="1" y="1" width="480" height="328"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="FLX-Wt-y53">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="328"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <tableViewGridLines key="gridStyleMask" dashed="YES"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn width="477" minWidth="40" maxWidth="1000" id="5jP-bY-fhI">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="VZP-ti-Ti8">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
+                                            <prototypeCellViews>
+                                                <tableCellView identifier="Cell" focusRingType="none" id="aBv-F5-XWo">
+                                                    <rect key="frame" x="1" y="1" width="477" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWm-hb-BXB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="477" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="p71-gJ-vFV">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                    </subviews>
+                                                    <connections>
+                                                        <outlet property="textField" destination="pWm-hb-BXB" id="NNG-rj-AAQ"/>
+                                                    </connections>
+                                                </tableCellView>
+                                                <tableCellView identifier="DownloadCell" focusRingType="none" id="onK-6l-2iV" customClass="DownloadTableCellView">
+                                                    <rect key="frame" x="1" y="20" width="477" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A44-us-TEl">
+                                                            <rect key="frame" x="25" y="28" width="451" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="NSU-6I-nsG">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-UJ-tWi">
+                                                            <rect key="frame" x="3" y="29" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </progressIndicator>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-hP-QAH">
+                                                            <rect key="frame" x="25" y="3" width="451" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="1cQ-Zh-q0o">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                    </subviews>
+                                                    <connections>
+                                                        <outlet property="activity" destination="jBN-UJ-tWi" id="ZwD-yU-Vne"/>
+                                                        <outlet property="statusTextField" destination="hfu-hP-QAH" id="8Hv-BB-kYA"/>
+                                                        <outlet property="textField" destination="A44-us-TEl" id="Ta5-nd-ed1"/>
+                                                    </connections>
+                                                </tableCellView>
+                                            </prototypeCellViews>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-2" id="Ghf-k9-bRK"/>
+                                        <outlet property="delegate" destination="-2" id="rpR-0W-4Nu"/>
+                                        <outlet property="menu" destination="RJM-21-hjO" id="xpL-0n-1jm"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <nil key="backgroundColor"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pcd-MD-gho">
+                            <rect key="frame" x="1" y="314" width="480" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="jGc-PE-vaF">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                     <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-OZ-ggl">
-                        <rect key="frame" x="20" y="94" width="438" height="20"/>
+                        <rect key="frame" x="22" y="78" width="438" height="20"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <connections>
                             <binding destination="-2" name="maxValue" keyPath="self.totalCount" id="hpx-zN-odo"/>
@@ -64,7 +165,33 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="135" y="85.5"/>
+            <point key="canvasLocation" x="142" y="179"/>
         </window>
+        <menu id="RJM-21-hjO">
+            <items>
+                <menuItem title="Show in Finder" tag="1" id="hDp-fh-9nU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showInFinder:" target="-2" id="ltL-yL-7EP"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Download" tag="2" id="ree-Zg-jYB">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="download:" target="-2" id="2ua-nq-Zy1"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Cancel" tag="3" id="7fY-83-Ads">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="cancel:" target="-2" id="cHE-Wq-jwc"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="fC3-h6-xe2"/>
+            </connections>
+            <point key="canvasLocation" x="-348" y="164"/>
+        </menu>
     </objects>
 </document>

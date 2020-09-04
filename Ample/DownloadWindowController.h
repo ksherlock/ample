@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DownloadWindowController : NSWindowController <NSURLSessionTaskDelegate, NSURLSessionDownloadDelegate>
+@interface DownloadWindowController : NSWindowController
 
 @property NSString *currentROM;
 @property NSInteger currentCount;
@@ -18,6 +18,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSInteger errorCount;
 @property BOOL active;
 
+@end
+
+@interface DownloadWindowController (URL) <NSURLSessionTaskDelegate, NSURLSessionDownloadDelegate>
+@end
+
+@interface DownloadWindowController (Table) <NSTableViewDelegate, NSTableViewDataSource>
+@end
+
+@interface DownloadWindowController (Menu) <NSMenuDelegate, NSMenuItemValidation>
+
+@end
+
+
+@interface DownloadTableCellView : NSTableCellView
+@property (weak) IBOutlet NSTextField *statusTextField;
+@property (weak) IBOutlet NSProgressIndicator *activity;
 @end
 
 NS_ASSUME_NONNULL_END
