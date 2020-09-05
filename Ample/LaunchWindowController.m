@@ -37,7 +37,15 @@ static NSString *kContextMachine = @"kContextMachine";
 @property BOOL mameSquarePixels;
 @property BOOL mameNoBlur;
 
+@property BOOL mameAVI;
+@property BOOL mameWAV;
+@property BOOL mameVGM;
 
+@property NSString *mameAVIPath;
+@property NSString *mameWAVPath;
+@property NSString *mameVGMPath;
+
+@property NSInteger mameSpeed;
 
 @end
 
@@ -46,6 +54,10 @@ static NSString *kContextMachine = @"kContextMachine";
 
 -(NSString *)windowNibName {
     return @"LaunchWindow";
+}
+
+-(void)windowWillLoad {
+    [self setMameSpeed: 1];
 }
 
 - (void)windowDidLoad {
@@ -58,23 +70,29 @@ static NSString *kContextMachine = @"kContextMachine";
     [_mediaView addSubview: [_mediaController view]];
     [_machineView addSubview: [_machineViewController view]];
     
-    
-    [self addObserver: self forKeyPath: @"mameMachine" options:0  context: (__bridge void * _Nullable)(kMyContext)];
-    [self addObserver: self forKeyPath: @"mameWindow" options:0  context: (__bridge void * _Nullable)(kMyContext)];
-    [self addObserver: self forKeyPath: @"mameSquarePixels" options:0  context: (__bridge void * _Nullable)(kMyContext)];
-    [self addObserver: self forKeyPath: @"mameDebug" options:0  context: (__bridge void * _Nullable)(kMyContext)];
-    [self addObserver: self forKeyPath: @"mameNoThrottle" options:0  context: (__bridge void * _Nullable)(kMyContext)];
 
-        [self addObserver: self forKeyPath: @"mameNoBlur" options:0  context: (__bridge void * _Nullable)(kMyContext)];
+    NSArray *keys = @[
+        @"mameMachine", @"mameWindow", @"mameSquarePixels", @"mameNoBlur",
+        @"mameDebug",
+        @"mameSpeed", // @"mameNoThrottle",
+        @"mameAVI", @"mameAVIPath",
+        @"mameWAV", @"mameWAVPath",
+        @"mameVGM", @"mameVGMPath",
+    ];
     
+    for (NSString *key in keys) {
+        [self addObserver: self forKeyPath: key options:0  context: (__bridge void * _Nullable)(kMyContext)];
+    }
+    
+
     [_slotController addObserver: self forKeyPath: @"args" options: 0 context: (__bridge void * _Nullable)(kMyContext)];
     [_mediaController addObserver: self forKeyPath: @"args" options: 0 context: (__bridge void * _Nullable)(kMyContext)];
 
     [_mediaController bind: @"media" toObject: _slotController withKeyPath: @"media" options: 0];
     
-    [self buildCommandLine];
-
     [_machineViewController addObserver: self forKeyPath: @"machine" options: 0 context: (__bridge void * _Nullable)kContextMachine];
+
+    [self buildCommandLine];
 }
 
 
@@ -198,6 +216,8 @@ static NSString * JoinArguments(NSArray *argv) {
 
 -(void)buildCommandLine {
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
     if (!_mameMachine) {
         [self setCommandLine: @""];
         return;
@@ -249,8 +269,33 @@ static NSString * JoinArguments(NSArray *argv) {
         [argv addObjectsFromArray: tmp];
     }
 
-    if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
+    //if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
+    if (_mameSpeed < 0) {
+        [argv addObject: @"-nothrottle"];
+    } else if (_mameSpeed > 1) {
+        [argv addObject: @"-speed"];
+        [argv addObject: [NSString stringWithFormat: @"%d", (int)_mameSpeed]];
+    }
     
+    // audio video.
+ 
+    if (_mameAVI && [_mameAVIPath length]) {
+        [argv addObject: @"-aviwrite"];
+        [argv addObject: _mameAVIPath];
+    }
+
+    if (_mameWAV && [_mameWAVPath length]) {
+         [argv addObject: @"-wavwrite"];
+         [argv addObject: _mameWAVPath];
+     }
+
+    // vgm only valid for custom mame.
+    if (![defaults boolForKey: kUseCustomMame]) {
+        if (_mameVGM && [_mameVGMPath length]) {
+            [argv addObject: @"-vgmwrite"];
+            [argv addObject: _mameVGMPath];
+        }
+    }
     
     [self setCommandLine: JoinArguments(argv)];
     [self setArgs: argv];
