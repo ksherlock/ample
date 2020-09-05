@@ -76,6 +76,19 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -130,6 +143,19 @@
         <dict>
           <key>hard</key>
           <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
         </dict>
       </dict>
       <dict>
@@ -192,6 +218,19 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>focusdrive</string>
         <key>description</key>
         <string>Parsons Engineering Focus Drive</string>
@@ -246,6 +285,19 @@
         <dict>
           <key>hard</key>
           <integer>2</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
         </dict>
       </dict>
       <dict>

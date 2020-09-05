@@ -36,7 +36,8 @@ tree = [
 	("IIe Clones", None, iie_clones_children),
 ]
 
-st = subprocess.run(["mame", "-listfull", *MACHINES], check=True, capture_output=True, text=True)
+env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
+st = subprocess.run(["../embedded/mame64", "-listfull", *MACHINES], check=True, capture_output=True, text=True, env=env)
 # Name:             Description:
 # apple2gs          "Apple IIgs (ROM03)"
 # apple2gsr0        "Apple IIgs (ROM00)"

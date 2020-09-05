@@ -55,10 +55,12 @@ def find_machine_media(parent):
 			if len(tt) >= 3: slot = tt[0]
 			# exclude:
 			# apple1 - tag="exp:cassette:cassette"
-			# apple2 - tag="sl6:diskiing:0:525"
+			# apple2 - tag="sl6:diskiing:0:525" - <slot name="sl6">
 			# include:
-			# apple2c - tag="sl6:0:525"
-			# apple3 - tag="0:525"
+			# apple2c - tag="sl6:0:525"  - <slot name="sl:0">.
+			# apple3 - tag="0:525" - <slot name="0">
+
+			# format slot name : slotoption name : machine->device type name
 
 		if mname == "apple2c" and slot == "sl6": slot = None
 
@@ -147,7 +149,8 @@ for m in MACHINES:
 
 	print(m)
 
-	st = subprocess.run(["mame", m, "-listxml"], capture_output=True)
+	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
+	st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
 	if st.returncode != 0:
 		print("mame error: {}".format(m))
 		exit(1)

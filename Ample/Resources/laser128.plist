@@ -87,6 +87,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>uthernet</string>
+        <key>description</key>
+        <string>a2RetroSystems Uthernet</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>alfam2</string>
         <key>description</key>
         <string>ALF MC1 / Apple Music II</string>
@@ -319,6 +327,19 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>corvus</string>
         <key>description</key>
         <string>Corvus Flat Cable interface</string>
@@ -477,7 +498,7 @@
         <key>value</key>
         <string>mockingboard</string>
         <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
+        <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
         <key>default</key>
         <false/>
       </dict>
@@ -576,6 +597,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>uthernet</string>
+        <key>description</key>
+        <string>a2RetroSystems Uthernet</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>alfam2</string>
         <key>description</key>
         <string>ALF MC1 / Apple Music II</string>
@@ -808,6 +837,19 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>cmsscsi</string>
+        <key>description</key>
+        <string>CMS SCSI II Card</string>
+        <key>default</key>
+        <false/>
+        <key>media</key>
+        <dict>
+          <key>hard</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>corvus</string>
         <key>description</key>
         <string>Corvus Flat Cable interface</string>
@@ -966,7 +1008,7 @@
         <key>value</key>
         <string>mockingboard</string>
         <key>description</key>
-        <string>Sweet Micro Systems Mockingboard</string>
+        <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1068,6 +1110,14 @@
         <string>compeyes</string>
         <key>description</key>
         <string>Digital Vision ComputerEyes</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>gizmo</string>
+        <key>description</key>
+        <string>HAL Labs Gizmo</string>
         <key>default</key>
         <false/>
       </dict>

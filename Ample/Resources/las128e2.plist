@@ -93,6 +93,14 @@
         <key>default</key>
         <false/>
       </dict>
+      <dict>
+        <key>value</key>
+        <string>gizmo</string>
+        <key>description</key>
+        <string>HAL Labs Gizmo</string>
+        <key>default</key>
+        <false/>
+      </dict>
     </array>
     <key>printer</key>
     <array>
