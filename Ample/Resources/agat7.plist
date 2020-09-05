@@ -19,8 +19,6 @@
     </array>
     <key>media</key>
     <dict>
-      <key>flop_5_25</key>
-      <integer>2</integer>
       <key>cass</key>
       <integer>1</integer>
     </dict>

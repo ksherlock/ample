@@ -19,7 +19,40 @@ DISABLED = set((
 	'vulcangold',
 	'vulcaniie',
 ))
-	
+
+
+def find_machine_media(parent):
+	# look for relevant device nodes.  If the tag contains a slot, skip since it's
+	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
+	#
+	# apple1 has a "snapshot" device.  not currently supported.
+
+	# no machines have built-in hard drives.
+	remap = {
+		"cassette": "cass",
+		"apple1_cass": "cass",
+		"apple2_cass": "cass",
+		"floppy_5_25": "flop_5_25",
+		"floppy_3_5": "flop_3_5",
+	}
+	media = {}
+	for x in parent.findall("./device"):
+		tag = x.get("tag")
+		typ = x.get("type")
+		intf = x.get("interface")
+		if intf == None: intf = typ # cassette has no interface.
+
+		# print("  ",intf)
+		# skip slot devices -- they'll be handled as part of the device.
+		if ":" in tag and tag[0] not in "0123456789": continue
+
+		if intf in remap:
+			name = remap[intf]
+			media[name] = media.get(name, 0) + 1
+
+	return media
+
+
 
 def find_media(parent, include_slots=False):
 
@@ -123,7 +156,7 @@ for m in MACHINES:
 	data["ram"] = tmp
 
 
-	data["media"] = find_media(machine)
+	data["media"] = find_machine_media(machine)
 
 
 	# node = machine.find('display[@tag="screen"]')
