@@ -19,6 +19,8 @@
     </array>
     <key>media</key>
     <dict>
+      <key>flop_5_25</key>
+      <integer>2</integer>
     </dict>
     <key>resolution</key>
     <array>

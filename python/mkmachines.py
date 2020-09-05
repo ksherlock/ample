@@ -26,8 +26,13 @@ def find_machine_media(parent):
 	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
 	#
 	# apple1 has a "snapshot" device.  not currently supported.
+	#
+	# in the //c (but not //c+) the floppy drives are in slot 6 which doesn't otherwise exist.
+	#
 
 	# no machines have built-in hard drives.
+
+	mname = parent.get("name")
 	remap = {
 		"cassette": "cass",
 		"apple1_cass": "cass",
@@ -43,8 +48,23 @@ def find_machine_media(parent):
 		if intf == None: intf = typ # cassette has no interface.
 
 		# print("  ",intf)
+
+		slot = None
+		if ':' in tag:
+			tt = tag.split(':')
+			if len(tt) >= 3: slot = tt[0]
+			# exclude:
+			# apple1 - tag="exp:cassette:cassette"
+			# apple2 - tag="sl6:diskiing:0:525"
+			# include:
+			# apple2c - tag="sl6:0:525"
+			# apple3 - tag="0:525"
+
+		if mname == "apple2c" and slot == "sl6": slot = None
+
+		if slot: continue
 		# skip slot devices -- they'll be handled as part of the device.
-		if ":" in tag and tag[0] not in "0123456789": continue
+		#if ":" in tag and tag[0] not in "0123456789": continue
 
 		if intf in remap:
 			name = remap[intf]
