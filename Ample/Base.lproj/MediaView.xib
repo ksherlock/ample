@@ -91,19 +91,19 @@
                                                 </connections>
                                             </pathControl>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl">
-                                                <rect key="frame" x="253" y="5" width="23" height="18"/>
+                                                <rect key="frame" x="253" y="3" width="23" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSNavEjectButton.normalSelected" imagePosition="overlaps" alignment="center" controlSize="small" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="deleteAction:" target="-2" id="XAl-eQ-nUj"/>
+                                                    <action selector="ejectAction:" target="-2" id="XAl-eQ-nUj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <connections>
-                                            <outlet property="deleteButton" destination="zNo-ij-mUl" id="9br-3c-ddI"/>
+                                            <outlet property="ejectButton" destination="zNo-ij-mUl" id="uzY-tA-5Wf"/>
                                             <outlet property="pathControl" destination="f7R-TO-fmF" id="oH7-N3-JC7"/>
                                         </connections>
                                     </tableCellView>

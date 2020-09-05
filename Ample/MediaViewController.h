@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSDictionary *media;
 @property NSArray *args;
 
-- (IBAction)deleteAction:(id)sender;
+- (IBAction)ejectAction:(id)sender;
 - (IBAction)pathAction:(id)sender;
 
 
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TablePathView : NSTableCellView
 @property (weak) IBOutlet NSPathControl *pathControl;
-@property (weak) IBOutlet NSButton *deleteButton;
+@property (weak) IBOutlet NSButton *ejectButton;
 
 @end
 

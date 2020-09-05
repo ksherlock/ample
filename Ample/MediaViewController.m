@@ -168,14 +168,19 @@
 
 -(void)prepareView: (TablePathView *)view {
     NSPathControl *pc = [view pathControl];
+    NSButton *button = [view ejectButton];
 
-    [pc setURL: _url]; //??? will binding take care of it?
     [pc unbind: @"value"];
     [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
     
+    [button unbind: @"enabled"];
+    NSValueTransformer *t = [NSValueTransformer valueTransformerForName: NSIsNotNilTransformerName];
+    NSDictionary *options = @{ NSValueTransformerBindingOption: t};
+    [button bind: @"enabled" toObject: self withKeyPath: @"url" options: options];
+    
     NSColor *tintColor = nil;
     if (!_valid) tintColor = [NSColor redColor];
-    [[view deleteButton] setContentTintColor: tintColor];
+    [button setContentTintColor: tintColor];
 }
 
 -(CGFloat)height {
@@ -405,7 +410,7 @@ enum {
 
 
 #pragma mark - IBActions
-- (IBAction)deleteAction:(id)sender {
+- (IBAction)ejectAction:(id)sender {
     
     NSInteger row = [_outlineView rowForView: sender];
     if (row < 0) return;
@@ -424,6 +429,7 @@ enum {
 }
 
 - (IBAction)pathAction:(id)sender {
+    // need to update the eject button...
     [self rebuildArgs];
 }
 @end
