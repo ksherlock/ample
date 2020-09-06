@@ -40,33 +40,15 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <prototypeCellViews>
-                                    <tableCellView id="e4I-r0-vWM">
-                                        <rect key="frame" x="1" y="1" width="280" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mig-Wj-m5e">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="17"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="ZcN-bl-2D8">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
-                                        </subviews>
-                                        <connections>
-                                            <outlet property="textField" destination="Mig-Wj-m5e" id="FYh-hX-PTU"/>
-                                        </connections>
-                                    </tableCellView>
                                     <tableCellView identifier="CategoryView" focusRingType="none" id="33q-UT-ur5">
-                                        <rect key="frame" x="1" y="21" width="280" height="17"/>
+                                        <rect key="frame" x="1" y="1" width="280" height="17"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-mX-LHY">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Rrg-wr-8eL">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="systemBold"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -77,7 +59,7 @@
                                         </connections>
                                     </tableCellView>
                                     <tableCellView identifier="ItemView" id="yGq-lc-RCM" customClass="TablePathView">
-                                        <rect key="frame" x="1" y="41" width="280" height="27"/>
+                                        <rect key="frame" x="1" y="21" width="280" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <pathControl focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
