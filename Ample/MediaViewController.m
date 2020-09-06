@@ -29,7 +29,7 @@
         
 }
 @property NSInteger validCount;
-@property NSArray *children; // URLs?
+@property NSMutableArray *children; // URLs?
 @property NSString *title;
 @property NSInteger index;
 
@@ -95,30 +95,29 @@
     }
 
     unsigned count = (unsigned)[_children count];
-    NSMutableArray *tmp = [NSMutableArray arrayWithArray: _children];
 
     _validCount = newCount;
+    if (!_children) _children = [NSMutableArray new];
 
     for (unsigned i = count; i < newCount; ++i) {
         MediaItem *item = [MediaItem new];
         [item setIndex: i];
-        [tmp addObject: item];
+        [_children addObject: item];
     }
 
     // delete excess items, if blank.  otherwise, mark invalid.
     unsigned ix = 0;
-    for(MediaItem *item in tmp) {
+    for(MediaItem *item in _children) {
         [item setValid: ix++ < newCount];
     }
 
     for (unsigned i = newCount; i < count; ++i) {
-        MediaItem *item = [tmp lastObject];
+        MediaItem *item = [_children lastObject];
         if ([item url]) break;
         
-        [tmp removeLastObject];
+        [_children removeLastObject];
     }
     
-    [self setChildren: tmp];
     return YES;
 }
 
@@ -127,23 +126,44 @@
     BOOL delta = NO;
     if (_validCount == count) return NO;
 
-    NSMutableArray *tmp = [NSMutableArray arrayWithArray: _children];
     for (NSInteger i = _validCount; i < count; ++i) {
-        MediaItem *item = [tmp lastObject];
+        MediaItem *item = [_children lastObject];
         if ([item url]) break;
     
-        [tmp removeLastObject];
+        [_children removeLastObject];
         delta = YES;
     }
     if (delta) {
-        [self setChildren: tmp];
         return YES;
     }
     return NO;
 }
+
+-(BOOL)moveItemFrom: (NSInteger)oldIndex to: (NSInteger)newIndex {
+    if (newIndex == oldIndex) return NO;
+    NSUInteger count = [_children count];
+    if (oldIndex >= count) return NO;
+
+    MediaItem *item = [_children objectAtIndex: oldIndex];
+    [_children removeObjectAtIndex: oldIndex];
+    if (newIndex > oldIndex) newIndex--;
+    if (newIndex >= count) {
+        [_children addObject: item];
+    } else {
+        [_children insertObject: item atIndex: newIndex];
+    }
+    
+    // re-index and re-validate.
+    unsigned ix = 0;
+    for (MediaItem *item in _children) {
+        [item setIndex: ix];
+        [item setValid: ix < _validCount];
+        ++ix;
+    }
+    [self pruneChildren];
+    return YES;
+}
 @end
-
-
 
 @implementation MediaItem
 
@@ -539,25 +559,10 @@ static NSString *kDragType = @"private.ample.media";
     
     NSInteger oldIndex = indexes[1];
 
-    NSMutableArray *array = [[cat children] mutableCopy];
-    MediaItem *it = [array objectAtIndex: oldIndex];
-
-    [array removeObjectAtIndex: oldIndex];
-    if (index > [array count]) {
-        [array addObject: it];
-    } else if (index < oldIndex) {
-        [array insertObject: it atIndex: index];
-    } else {
-        [array insertObject: it atIndex: index-1]; //?
-    }
-    unsigned ix = 0;
-    for (MediaItem *it in array) {
-        [it setIndex: ix++];
-    }
-    [cat setChildren: array];
+    [cat moveItemFrom: oldIndex to: index];
+    [self rebuildArgs];
 
     [_outlineView reloadItem: cat reloadChildren: YES];
-    [self rebuildArgs];
     return YES;
 
 }
