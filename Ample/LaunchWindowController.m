@@ -47,6 +47,11 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @property NSInteger mameSpeed;
 
+@property BOOL mameBGFX;
+@property NSInteger mameBackend;
+@property NSInteger mameEffects;
+
+
 @end
 
 
@@ -58,6 +63,7 @@ static NSString *kContextMachine = @"kContextMachine";
 
 -(void)windowWillLoad {
     [self setMameSpeed: 1];
+    [self setMameBGFX: YES];
 }
 
 - (void)windowDidLoad {
@@ -78,6 +84,7 @@ static NSString *kContextMachine = @"kContextMachine";
         @"mameAVI", @"mameAVIPath",
         @"mameWAV", @"mameWAVPath",
         @"mameVGM", @"mameVGMPath",
+        @"mameBGFX", @"mameBackend", @"mameEffects",
     ];
     
     for (NSString *key in keys) {
@@ -249,12 +256,37 @@ static NSString * JoinArguments(NSArray *argv) {
 
         [argv addObject: @"-aspect"];
         [argv addObject: aspect];
-        
-        if (_mameNoBlur) {
-            [argv addObject: @"-video"];
-            [argv addObject: @"soft"];
-        }
+    
     }
+
+    if (_mameBGFX) {
+        if (_mameBackend) {
+            static NSString *Names[] = {
+                @"-",
+                @"metal",
+                @"opengl",
+            };
+            [argv addObject: @"-bgfx_backend"];
+            [argv addObject: Names[_mameBackend]];
+        }
+        if (_mameEffects) {
+            static NSString *Names[] = {
+                @"-",
+                @"unfiltered",
+                @"hlsl",
+                @"crt-geom",
+                @"crt-geom-deluxe",
+            };
+            [argv addObject: @"-bgfx_screen_chains"];
+            [argv addObject: Names[_mameEffects]];
+        }
+
+    } else {
+        [argv addObject: @"-video"];
+        [argv addObject: @"soft"];
+    }
+
+
     // -speed n
     // -scale n
     
