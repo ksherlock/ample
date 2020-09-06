@@ -21,7 +21,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" outlineTableColumn="pBj-py-R6a" id="sIz-DD-PZQ">
+                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" viewBased="YES" outlineTableColumn="pBj-py-R6a" id="sIz-DD-PZQ">
                         <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <size key="intercellSpacing" width="2" height="3"/>
@@ -81,7 +81,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <pathControl focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
-                                                <rect key="frame" x="0.0" y="1" width="248" height="22"/>
+                                                <rect key="frame" x="41" y="1" width="207" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
                                                     <font key="font" metaFont="smallSystem"/>
@@ -101,6 +101,11 @@
                                                     <action selector="ejectAction:" target="-2" id="XAl-eQ-nUj"/>
                                                 </connections>
                                             </button>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
+                                                <rect key="frame" x="3" y="3" width="33" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSListViewTemplate" id="x7F-qD-5y9"/>
+                                            </imageView>
                                         </subviews>
                                         <connections>
                                             <outlet property="ejectButton" destination="zNo-ij-mUl" id="uzY-tA-5Wf"/>
@@ -135,6 +140,7 @@
         </scrollView>
     </objects>
     <resources>
+        <image name="NSListViewTemplate" width="14" height="10"/>
         <image name="NSNavEjectButton.normalSelected" width="16" height="16"/>
     </resources>
 </document>

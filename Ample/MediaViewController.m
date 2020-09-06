@@ -22,6 +22,7 @@
 -(NSString *)viewIdentifier;
 -(void)prepareView: (NSTableCellView *)view;
 -(CGFloat)height;
+-(NSInteger)index;
 @end
 
 @interface MediaCategory : NSObject <MediaNode> {
@@ -30,6 +31,7 @@
 @property NSInteger validCount;
 @property NSArray *children; // URLs?
 @property NSString *title;
+@property NSInteger index;
 
 -(NSInteger)count;
 -(id)objectAtIndex:(NSInteger)index;
@@ -40,6 +42,7 @@
 
 @property NSURL *url;
 @property BOOL valid;
+@property NSInteger index;
 
 -(NSInteger)count;
 -(id)objectAtIndex:(NSInteger)index;
@@ -97,8 +100,11 @@
     _validCount = newCount;
 
     for (unsigned i = count; i < newCount; ++i) {
-        [tmp addObject: [MediaItem new]];
+        MediaItem *item = [MediaItem new];
+        [item setIndex: i];
+        [tmp addObject: item];
     }
+
     // delete excess items, if blank.  otherwise, mark invalid.
     unsigned ix = 0;
     for(MediaItem *item in tmp) {
@@ -270,12 +276,16 @@ enum {
 
 -(void)rebuildRoot {
     NSMutableArray *tmp = [NSMutableArray new];
+    int ix = 0;
     for (unsigned j = 0 ; j < 5; ++j) {
         MediaCategory *cat = _data[j];
-        if ([cat count]) [tmp addObject: cat];
+        [cat setIndex: -1];
+        if ([cat count]) {
+            [cat setIndex: ix++];
+            [tmp addObject: cat];
+        }
     }
     _root = tmp;
-    //[_outlineView reloadItem: nil reloadChildren: YES];
 
     [_outlineView reloadData];
     [_outlineView expandItem: nil expandChildren: YES];
@@ -315,6 +325,7 @@ enum {
     }
 }
 
+static NSString *kDragType = @"private.ample.media";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -325,6 +336,8 @@ enum {
 
     [_outlineView reloadData];
     [_outlineView expandItem: nil expandChildren: YES];
+    
+    [_outlineView registerForDraggedTypes: @[kDragType]];
 }
 
 #pragma mark - NSOutlineViewDelegate
@@ -407,6 +420,104 @@ enum {
 -(CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id<MediaNode>)item {
     return [item height];
 }
+
+#if 0
+- (id<NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView pasteboardWriterForItem:(id<MediaNode>)item {
+
+    if ([item isGroupItem]) return nil;
+    
+    NSPasteboardItem *pb = [NSPasteboardItem new];
+    
+    return pb;
+}
+#endif
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView writeItems:(NSArray *)items toPasteboard:(NSPasteboard *)pasteboard {
+    if ([items count] > 1) return NO;
+    
+    NSLog(@"%s", sel_getName(_cmd));
+    
+    MediaItem *item = [items firstObject];
+    
+    if (![item isKindOfClass: [MediaItem class]]) return NO;
+    
+    // find the category. only allow if more than 1 item in the category.
+    
+    MediaCategory *cat = nil;
+    
+    
+    for (MediaCategory *c in _root) {
+        NSUInteger ix = [[c children] indexOfObject: item];
+        if (ix != NSNotFound){
+            cat = c;
+            break;
+        }
+    }
+    if (!cat) return NO;
+    if ([cat count] < 2) return NO;
+
+    NSInteger indexes[2] =  { 0, 0 };
+    indexes[0] = [cat index];
+    indexes[1] = [item index];
+    NSData *data =[NSData dataWithBytes: indexes length: sizeof(indexes)];
+
+    [pasteboard setData: data forType: kDragType];
+    return YES;
+}
+
+/*
+ * IF item is present, it's a MediaCategory and index is the index of the MediaItem it would be inserted as.
+ * IF item is nil, index is the MediaCategory index, which should be converted to moving to the end.
+ * IF index < 0,  dragging far beyond the category list, so NOPE it.
+ *
+ */
+- (NSDragOperation)outlineView:(NSOutlineView *)outlineView validateDrop:(id<NSDraggingInfo>)info proposedItem:(id)item proposedChildIndex:(NSInteger)index {
+
+    if (index < 0) return NSDragOperationNone;
+
+    
+    // item is the parent (MediaCategory) or nil
+    // index is the proposed child index.
+    NSLog(@"%s", sel_getName(_cmd));
+    //NSLog(@"%@", info);
+    NSLog(@"%@", item);
+    NSLog(@"%d", (int)index);
+    
+    NSPasteboard *pb = [info draggingPasteboard];
+    NSData *data = [pb dataForType: kDragType];
+    
+    if (!data) return NSDragOperationNone;
+
+    NSInteger indexes[2];
+    if ([data length] != sizeof(indexes)) return NSDragOperationNone;
+    [data getBytes: &indexes length: sizeof(indexes)];
+    
+    NSLog(@"%d - %d", (int)indexes[0], (int)indexes[1]);
+    
+    
+    if (!item) {
+        // move to the END of the previous category.
+        if (index == 0) return NSDragOperationNone;
+        item = [_root objectAtIndex: index - 1];
+        index = [(MediaItem *)item count]; // -1; - interferes w/ -1 logic below.
+    }
+
+    NSLog(@"%d - %d", (int)[(MediaCategory *)item index], (int)index);
+
+
+    if ([(MediaCategory *)item index] != indexes[0]) return NSDragOperationNone;
+    if (indexes[1] == index) return NSDragOperationNone;
+    if (indexes[1] == index-1) return NSDragOperationNone;
+    return NSDragOperationMove;
+        
+}
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView acceptDrop:(id<NSDraggingInfo>)info item:(id)item childIndex:(NSInteger)index {
+ 
+    return NO;
+}
+
+
 
 
 #pragma mark - IBActions
