@@ -17,7 +17,7 @@
         <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" id="nVT-kT-bWl">
             <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <clipView key="contentView" autoresizesSubviews="NO" copiesOnScroll="NO" id="IBD-wb-pch">
+            <clipView key="contentView" autoresizesSubviews="NO" focusRingType="none" copiesOnScroll="NO" id="IBD-wb-pch">
                 <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
@@ -81,7 +81,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <pathControl focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
-                                                <rect key="frame" x="41" y="1" width="207" height="22"/>
+                                                <rect key="frame" x="25" y="1" width="223" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
                                                     <font key="font" metaFont="smallSystem"/>
@@ -101,13 +101,14 @@
                                                     <action selector="ejectAction:" target="-2" id="XAl-eQ-nUj"/>
                                                 </connections>
                                             </button>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
-                                                <rect key="frame" x="3" y="3" width="33" height="20"/>
+                                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
+                                                <rect key="frame" x="0.0" y="3" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSListViewTemplate" id="x7F-qD-5y9"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="NSListViewTemplate" id="x7F-qD-5y9"/>
                                             </imageView>
                                         </subviews>
                                         <connections>
+                                            <outlet property="dragHandle" destination="6g1-NT-J1w" id="odc-Sw-3WS"/>
                                             <outlet property="ejectButton" destination="zNo-ij-mUl" id="uzY-tA-5Wf"/>
                                             <outlet property="pathControl" destination="f7R-TO-fmF" id="oH7-N3-JC7"/>
                                         </connections>

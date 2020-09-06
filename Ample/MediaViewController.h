@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TablePathView : NSTableCellView
 @property (weak) IBOutlet NSPathControl *pathControl;
 @property (weak) IBOutlet NSButton *ejectButton;
-
+@property (weak) IBOutlet NSImageView *dragHandle;
 @end
 
 NS_ASSUME_NONNULL_END

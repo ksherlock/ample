@@ -9,7 +9,25 @@
 #import "MediaViewController.h"
 
 
-@implementation TablePathView
+@implementation TablePathView {
+    NSTrackingRectTag _trackingRect;
+}
+
+-(void)viewDidMoveToSuperview {
+    if (_trackingRect) {
+        [self removeTrackingRect: _trackingRect];
+    }
+    NSRect rect = [_dragHandle frame];
+    _trackingRect = [self addTrackingRect: rect owner: self userData: NULL assumeInside:NO];
+}
+
+-(void)mouseEntered:(NSEvent *)event {
+    [_dragHandle setHidden: NO];
+}
+
+-(void)mouseExited:(NSEvent *)event {
+    [_dragHandle setHidden: YES];
+}
 
 @end
 
