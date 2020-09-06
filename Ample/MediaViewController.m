@@ -435,7 +435,7 @@ static NSString *kDragType = @"private.ample.media";
 - (BOOL)outlineView:(NSOutlineView *)outlineView writeItems:(NSArray *)items toPasteboard:(NSPasteboard *)pasteboard {
     if ([items count] > 1) return NO;
     
-    NSLog(@"%s", sel_getName(_cmd));
+    //NSLog(@"%s", sel_getName(_cmd));
     
     MediaItem *item = [items firstObject];
     
@@ -476,13 +476,6 @@ static NSString *kDragType = @"private.ample.media";
     if (index < 0) return NSDragOperationNone;
 
     
-    // item is the parent (MediaCategory) or nil
-    // index is the proposed child index.
-    NSLog(@"%s", sel_getName(_cmd));
-    //NSLog(@"%@", info);
-    NSLog(@"%@", item);
-    NSLog(@"%d", (int)index);
-    
     NSPasteboard *pb = [info draggingPasteboard];
     NSData *data = [pb dataForType: kDragType];
     
@@ -492,20 +485,20 @@ static NSString *kDragType = @"private.ample.media";
     if ([data length] != sizeof(indexes)) return NSDragOperationNone;
     [data getBytes: &indexes length: sizeof(indexes)];
     
-    NSLog(@"%d - %d", (int)indexes[0], (int)indexes[1]);
+    //NSLog(@"%d - %d", (int)indexes[0], (int)indexes[1]);
     
-    
+    MediaCategory *cat = item;
     if (!item) {
         // move to the END of the previous category.
         if (index == 0) return NSDragOperationNone;
-        item = [_root objectAtIndex: index - 1];
-        index = [(MediaItem *)item count]; // -1; - interferes w/ -1 logic below.
+        cat = [_root objectAtIndex: index - 1];
+        index = [cat count]; // -1; - interferes w/ -1 logic below.
     }
 
-    NSLog(@"%d - %d", (int)[(MediaCategory *)item index], (int)index);
+    //NSLog(@"%d - %d", (int)[(MediaCategory *)item index], (int)index);
 
 
-    if ([(MediaCategory *)item index] != indexes[0]) return NSDragOperationNone;
+    if ([cat index] != indexes[0]) return NSDragOperationNone;
     if (indexes[1] == index) return NSDragOperationNone;
     if (indexes[1] == index-1) return NSDragOperationNone;
     return NSDragOperationMove;
@@ -514,7 +507,59 @@ static NSString *kDragType = @"private.ample.media";
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView acceptDrop:(id<NSDraggingInfo>)info item:(id)item childIndex:(NSInteger)index {
  
-    return NO;
+    if (index < 0) return NO;
+
+    
+    NSPasteboard *pb = [info draggingPasteboard];
+    NSData *data = [pb dataForType: kDragType];
+    
+    if (!data) return NSDragOperationNone;
+
+    NSInteger indexes[2];
+    if ([data length] != sizeof(indexes)) return NO;
+    [data getBytes: &indexes length: sizeof(indexes)];
+    
+    //NSLog(@"%d - %d", (int)indexes[0], (int)indexes[1]);
+    
+    MediaCategory *cat = item;
+    
+    if (!item) {
+        // move to the END of the previous category.
+        if (index == 0) return NO;
+        cat = [_root objectAtIndex: index - 1];
+        index = [cat count]; // -1; - interferes w/ -1 logic below.
+    }
+
+    //NSLog(@"%d - %d", (int)[(MediaCategory *)item index], (int)index);
+
+
+    if ([cat index] != indexes[0]) return NO;
+    if (indexes[1] == index) return NO;
+    if (indexes[1] == index-1) return NO;
+    
+    NSInteger oldIndex = indexes[1];
+
+    NSMutableArray *array = [[cat children] mutableCopy];
+    MediaItem *it = [array objectAtIndex: oldIndex];
+
+    [array removeObjectAtIndex: oldIndex];
+    if (index > [array count]) {
+        [array addObject: it];
+    } else if (index < oldIndex) {
+        [array insertObject: it atIndex: index];
+    } else {
+        [array insertObject: it atIndex: index-1]; //?
+    }
+    unsigned ix = 0;
+    for (MediaItem *it in array) {
+        [it setIndex: ix++];
+    }
+    [cat setChildren: array];
+
+    [_outlineView reloadItem: cat reloadChildren: YES];
+    [self rebuildArgs];
+    return YES;
+
 }
 
 
