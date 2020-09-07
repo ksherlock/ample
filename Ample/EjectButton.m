@@ -13,6 +13,7 @@ static NSImage *ejectHoverImage = nil;
 
 @implementation EjectButton {
     NSTrackingRectTag _tracking;
+    BOOL _mouse;
 }
 
 +(void)initialize {
@@ -32,11 +33,22 @@ static NSImage *ejectHoverImage = nil;
 }
 
 -(void)mouseEntered:(NSEvent *)event {
+    _mouse = YES;
     if ([self isEnabled])
         [self setImage: ejectHoverImage];
 }
 -(void)mouseExited:(NSEvent *)event {
-    [self setImage: ejectImage];
+    _mouse = NO;
+    if ([self isEnabled])
+        [self setImage: ejectImage];
 }
+
+-(void)setEnabled:(BOOL)enabled {
+    [super setEnabled: enabled];
+    if (_mouse) {
+        [self setImage: enabled ? ejectHoverImage : ejectImage];
+    }
+}
+
 
 @end
