@@ -151,6 +151,83 @@ DQ
                                     </subviews>
                                 </view>
                             </tabViewItem>
+                            <tabViewItem label="BGFX" identifier="" id="zUN-Qs-haG">
+                                <view key="view" id="QQT-HS-xjI">
+                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pD8-dV-ijg">
+                                            <rect key="frame" x="79" y="61" width="172" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="g0W-Ka-7bb" id="ceP-aK-me8">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="ajo-1k-sbD">
+                                                    <items>
+                                                        <menuItem title="Default" state="on" id="g0W-Ka-7bb"/>
+                                                        <menuItem title="Metal" tag="1" id="93g-cb-opl"/>
+                                                        <menuItem title="OpenGL" tag="2" id="B1R-9E-dMw"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.mameBGFX" id="ZuQ-OY-TrP"/>
+                                                <binding destination="-2" name="selectedIndex" keyPath="self.mameBackend" id="oE1-Ho-H22"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qGO-Pm-SD1">
+                                            <rect key="frame" x="15" y="67" width="60" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Backend:" id="WDr-Pl-lV1">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-fX-twN">
+                                            <rect key="frame" x="15" y="38" width="51" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Effects:" id="Sqk-7k-PxQ">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="826-p8-in8">
+                                            <rect key="frame" x="15" y="91" width="57" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="BGFX" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ubs-KZ-mpu">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameBGFX" id="9Ua-MZ-qbe"/>
+                                            </connections>
+                                        </button>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-FM-Agh">
+                                            <rect key="frame" x="79" y="32" width="172" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dsm-bi-Txy" id="mBS-h4-BWC">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="WdF-Hw-YI9">
+                                                    <items>
+                                                        <menuItem title="Default" state="on" id="Dsm-bi-Txy"/>
+                                                        <menuItem title="Unfiltered" tag="1" id="xgz-We-TFg"/>
+                                                        <menuItem title="HLSL" tag="2" id="1UE-ea-V9a"/>
+                                                        <menuItem title="CRT Geometry" tag="3" id="Dsx-wI-m3r"/>
+                                                        <menuItem title="CRT Geometry Deluxe" tag="4" id="Ylw-Of-TM5"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.mameBGFX" id="DVB-Ex-VYF"/>
+                                                <binding destination="-2" name="selectedIndex" keyPath="self.mameEffects" id="rCg-d6-OR6"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
                             <tabViewItem label="A/V" identifier="" id="0T5-BN-lxE">
                                 <view key="view" id="knw-WE-UU3">
                                     <rect key="frame" x="10" y="33" width="672" height="114"/>
@@ -248,83 +325,6 @@ DQ
                                                 <binding destination="-2" name="value" keyPath="self.mameVGM" id="Oyp-Pc-Uad"/>
                                             </connections>
                                         </button>
-                                    </subviews>
-                                </view>
-                            </tabViewItem>
-                            <tabViewItem label="BGFX" identifier="" id="zUN-Qs-haG">
-                                <view key="view" id="QQT-HS-xjI">
-                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pD8-dV-ijg">
-                                            <rect key="frame" x="79" y="61" width="172" height="25"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="g0W-Ka-7bb" id="ceP-aK-me8">
-                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                                <menu key="menu" id="ajo-1k-sbD">
-                                                    <items>
-                                                        <menuItem title="Default" state="on" id="g0W-Ka-7bb"/>
-                                                        <menuItem title="Metal" tag="1" id="93g-cb-opl"/>
-                                                        <menuItem title="OpenGL" tag="2" id="B1R-9E-dMw"/>
-                                                    </items>
-                                                </menu>
-                                            </popUpButtonCell>
-                                            <connections>
-                                                <binding destination="-2" name="enabled" keyPath="self.mameBGFX" id="ZuQ-OY-TrP"/>
-                                                <binding destination="-2" name="selectedIndex" keyPath="self.mameBackend" id="oE1-Ho-H22"/>
-                                            </connections>
-                                        </popUpButton>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qGO-Pm-SD1">
-                                            <rect key="frame" x="15" y="67" width="60" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Backend:" id="WDr-Pl-lV1">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-fX-twN">
-                                            <rect key="frame" x="15" y="38" width="51" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Effects:" id="Sqk-7k-PxQ">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="826-p8-in8">
-                                            <rect key="frame" x="15" y="91" width="57" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="BGFX" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ubs-KZ-mpu">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameBGFX" id="9Ua-MZ-qbe"/>
-                                            </connections>
-                                        </button>
-                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-FM-Agh">
-                                            <rect key="frame" x="79" y="32" width="172" height="25"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dsm-bi-Txy" id="mBS-h4-BWC">
-                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                                <menu key="menu" id="WdF-Hw-YI9">
-                                                    <items>
-                                                        <menuItem title="Default" state="on" id="Dsm-bi-Txy"/>
-                                                        <menuItem title="Unfiltered" tag="1" id="xgz-We-TFg"/>
-                                                        <menuItem title="HLSL" tag="2" id="1UE-ea-V9a"/>
-                                                        <menuItem title="CRT Geometry" tag="3" id="Dsx-wI-m3r"/>
-                                                        <menuItem title="CRT Geometry Deluxe" tag="4" id="Ylw-Of-TM5"/>
-                                                    </items>
-                                                </menu>
-                                            </popUpButtonCell>
-                                            <connections>
-                                                <binding destination="-2" name="enabled" keyPath="self.mameBGFX" id="DVB-Ex-VYF"/>
-                                                <binding destination="-2" name="selectedIndex" keyPath="self.mameEffects" id="rCg-d6-OR6"/>
-                                            </connections>
-                                        </popUpButton>
                                     </subviews>
                                 </view>
                             </tabViewItem>
