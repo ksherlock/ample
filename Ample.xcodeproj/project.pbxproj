@@ -94,6 +94,24 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
+		B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
+		B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */; };
+		B6DDECC325057A550093587A /* drag-handle-4x10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */; };
+		B6DDECC425057A550093587A /* drag-handle-4x10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */; };
+		B6DDECC525057A550093587A /* drag-handle-4x10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */; };
+		B6DDECCC2505A86E0093587A /* eject-16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC62505A86E0093587A /* eject-16x16@2x.png */; };
+		B6DDECCD2505A86E0093587A /* eject-16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC62505A86E0093587A /* eject-16x16@2x.png */; };
+		B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC72505A86E0093587A /* eject-16x16@3x.png */; };
+		B6DDECCF2505A86E0093587A /* eject-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC72505A86E0093587A /* eject-16x16@3x.png */; };
+		B6DDECD02505A86E0093587A /* eject-hover-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC82505A86E0093587A /* eject-hover-16x16.png */; };
+		B6DDECD12505A86E0093587A /* eject-hover-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC82505A86E0093587A /* eject-hover-16x16.png */; };
+		B6DDECD22505A86E0093587A /* eject-hover-16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC92505A86E0093587A /* eject-hover-16x16@2x.png */; };
+		B6DDECD32505A86E0093587A /* eject-hover-16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECC92505A86E0093587A /* eject-hover-16x16@2x.png */; };
+		B6DDECD42505A86E0093587A /* eject-hover-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */; };
+		B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */; };
+		B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
+		B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
 		B6E4B5B024FDE2670094A35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
 		B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
 		B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
@@ -288,6 +306,15 @@
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
+		B6DDECBD25057A550093587A /* drag-handle-4x10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10.png"; sourceTree = "<group>"; };
+		B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@2x.png"; sourceTree = "<group>"; };
+		B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@3x.png"; sourceTree = "<group>"; };
+		B6DDECC62505A86E0093587A /* eject-16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-16x16@2x.png"; sourceTree = "<group>"; };
+		B6DDECC72505A86E0093587A /* eject-16x16@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-16x16@3x.png"; sourceTree = "<group>"; };
+		B6DDECC82505A86E0093587A /* eject-hover-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-hover-16x16.png"; sourceTree = "<group>"; };
+		B6DDECC92505A86E0093587A /* eject-hover-16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-hover-16x16@2x.png"; sourceTree = "<group>"; };
+		B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-hover-16x16@3x.png"; sourceTree = "<group>"; };
+		B6DDECCB2505A86E0093587A /* eject-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-16x16.png"; sourceTree = "<group>"; };
 		B6E4B5FA24FDE2670094A35C /* Ample Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ample Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -446,6 +473,7 @@
 				B6D6DE3A24FACF4F00661A5F /* Defaults.plist */,
 				B6BA258724E99BEB005FB8FF /* main.m */,
 				B6BA258924E99BEB005FB8FF /* Ample.entitlements */,
+				B6DDECBC25057A550093587A /* images */,
 				B6D6DE4224FAEE8900661A5F /* Nibs */,
 			);
 			path = Ample;
@@ -464,6 +492,22 @@
 				B61099E324F5F230005CB652 /* SlotView.xib */,
 			);
 			name = Nibs;
+			sourceTree = "<group>";
+		};
+		B6DDECBC25057A550093587A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B6DDECBD25057A550093587A /* drag-handle-4x10.png */,
+				B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */,
+				B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */,
+				B6DDECCB2505A86E0093587A /* eject-16x16.png */,
+				B6DDECC62505A86E0093587A /* eject-16x16@2x.png */,
+				B6DDECC72505A86E0093587A /* eject-16x16@3x.png */,
+				B6DDECC82505A86E0093587A /* eject-hover-16x16.png */,
+				B6DDECC92505A86E0093587A /* eject-hover-16x16@2x.png */,
+				B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,13 +598,16 @@
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
 				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
+				B6DDECCC2505A86E0093587A /* eject-16x16@2x.png in Resources */,
 				B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */,
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
 				B6109A1724F5F377005CB652 /* apple2e.plist in Resources */,
 				B6109A3C24F5F377005CB652 /* am100.plist in Resources */,
+				B6DDECD02505A86E0093587A /* eject-hover-16x16.png in Resources */,
 				B6109A2524F5F377005CB652 /* laser2c.plist in Resources */,
 				B6109A3D24F5F377005CB652 /* laser128.plist in Resources */,
 				B6109A2824F5F377005CB652 /* apple2ep.plist in Resources */,
+				B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */,
 				B6109A1924F5F377005CB652 /* apple2ees.plist in Resources */,
 				B6109A3924F5F377005CB652 /* prav8c.plist in Resources */,
 				B6109A1C24F5F377005CB652 /* ivelultr.plist in Resources */,
@@ -572,6 +619,8 @@
 				B6109A3A24F5F377005CB652 /* prav82.plist in Resources */,
 				B6109A2024F5F377005CB652 /* apple2euk.plist in Resources */,
 				B6109A2F24F5F377005CB652 /* uniap2ti.plist in Resources */,
+				B6DDECD42505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
+				B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */,
 				B6109A1E24F5F377005CB652 /* apple2c.plist in Resources */,
 				B6109A1A24F5F377005CB652 /* microeng.plist in Resources */,
 				B6109A3E24F5F377005CB652 /* albert.plist in Resources */,
@@ -585,8 +634,10 @@
 				B63C1B9F250192D800511A71 /* ceci.plist in Resources */,
 				B6109A3224F5F377005CB652 /* basis108.plist in Resources */,
 				B6109A4324F5F377005CB652 /* agat7.plist in Resources */,
+				B6DDECC425057A550093587A /* drag-handle-4x10@3x.png in Resources */,
 				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
+				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
@@ -600,6 +651,8 @@
 				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
 				B6109A2124F5F377005CB652 /* apple2ee.plist in Resources */,
 				B63C1BA5250192D800511A71 /* cecm.plist in Resources */,
+				B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */,
+				B6DDECD22505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6109A3624F5F377005CB652 /* dodo.plist in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B61099E724F5F231005CB652 /* SlotView.xib in Resources */,
@@ -614,6 +667,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DDECCF2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */,
 				B63C1BA0250192D800511A71 /* ceci.plist in Resources */,
 				B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */,
@@ -630,8 +684,10 @@
 				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
+				B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */,
 				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
 				B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */,
+				B6DDECCD2505A86E0093587A /* eject-16x16@2x.png in Resources */,
 				B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */,
 				B6E4B5CC24FDE2670094A35C /* prav8c.plist in Resources */,
 				B6E4B5CD24FDE2670094A35C /* ivelultr.plist in Resources */,
@@ -649,11 +705,15 @@
 				B6E4B5D924FDE2670094A35C /* albert.plist in Resources */,
 				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
 				B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */,
+				B6DDECD12505A86E0093587A /* eject-hover-16x16.png in Resources */,
 				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
+				B6DDECD32505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
+				B6DDECC525057A550093587A /* drag-handle-4x10@3x.png in Resources */,
 				B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */,
 				B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */,
 				B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */,
+				B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
 				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
 				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
 				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
@@ -671,9 +731,11 @@
 				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
 				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
 				B6E4B5EE24FDE2670094A35C /* SlotView.xib in Resources */,
+				B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */,
 				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
 				B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */,
 				B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */,
+				B6DDECC325057A550093587A /* drag-handle-4x10@2x.png in Resources */,
 				B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

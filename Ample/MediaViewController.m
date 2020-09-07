@@ -13,6 +13,16 @@
     NSTrackingRectTag _trackingRect;
 }
 
+-(void)awakeFromNib {
+    
+    // this is apparently necessary for setTintColor to work.
+    NSImage *img;
+    img = [_ejectButton image];
+    [img setTemplate: YES];
+    img = [_ejectButton alternateImage];
+    [img setTemplate: YES];
+}
+
 -(void)viewDidMoveToSuperview {
     if (_trackingRect) {
         [self removeTrackingRect: _trackingRect];
@@ -222,6 +232,7 @@
     NSDictionary *options = @{ NSValueTransformerBindingOption: t};
     [button bind: @"enabled" toObject: self withKeyPath: @"url" options: options];
     
+        
     NSColor *tintColor = nil;
     if (!_valid) tintColor = [NSColor redColor];
     [button setContentTintColor: tintColor];
