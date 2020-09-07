@@ -13,6 +13,7 @@
     NSTrackingRectTag _trackingRect;
 }
 
+#if 0
 -(void)awakeFromNib {
     
     // this is apparently necessary for setTintColor to work.
@@ -22,6 +23,7 @@
     img = [_ejectButton alternateImage];
     [img setTemplate: YES];
 }
+#endif
 
 -(void)viewDidMoveToSuperview {
     if (_trackingRect) {

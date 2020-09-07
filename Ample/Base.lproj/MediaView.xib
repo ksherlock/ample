@@ -77,11 +77,11 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="drag-handle-4x10" id="x7F-qD-5y9"/>
                                             </imageView>
-                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl">
+                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl" customClass="EjectButton">
                                                 <rect key="frame" x="261" y="5" width="16" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="eject-16x16" imagePosition="only" alignment="center" alternateImage="eject-hover-16x16" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
-                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>

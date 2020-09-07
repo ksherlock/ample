@@ -86,6 +86,8 @@
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
+		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
+		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
 		B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
@@ -293,6 +295,8 @@
 		B66236B824FDA698006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B66236C024FDB7A6006CABD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
+		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
+		B6B9EA652506A5550080E70D /* EjectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectButton.h; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA257E24E99BE9005FB8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6BA257F24E99BE9005FB8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -467,6 +471,8 @@
 				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
 				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
 				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+				B6B9EA652506A5550080E70D /* EjectButton.h */,
+				B6B9EA642506A5550080E70D /* EjectButton.m */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -750,6 +756,7 @@
 				B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
+				B6B9EA662506A5550080E70D /* EjectButton.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
@@ -769,6 +776,7 @@
 				B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
+				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
 				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
