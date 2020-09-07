@@ -29,7 +29,13 @@ static NSImage *ejectHoverImage = nil;
     [self setButtonType: NSButtonTypeMomentaryPushIn];
     [self setImage: ejectImage];
     [self setAlternateImage: ejectHoverImage];
-    _tracking = [self addTrackingRect: [self bounds] owner: self userData: nil assumeInside: NO];
+//    _tracking = [self addTrackingRect: [self bounds] owner: self userData: nil assumeInside: NO];
+}
+
+-(void)viewDidMoveToWindow {
+    if (!_tracking)
+        _tracking = [self addTrackingRect: [self bounds] owner: self userData: nil assumeInside: NO];
+
 }
 
 -(void)mouseEntered:(NSEvent *)event {
