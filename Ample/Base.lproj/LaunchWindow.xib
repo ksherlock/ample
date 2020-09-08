@@ -107,17 +107,6 @@ DQ
                                                 <binding destination="-2" name="value" keyPath="self.mameDebug" id="vkc-sR-KnB"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-dm-fuZ">
-                                            <rect key="frame" x="165" y="60" width="104" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Square Pixels" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="yWK-BP-7Z9">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameSquarePixels" id="BiP-wC-Hpn"/>
-                                            </connections>
-                                        </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-gG-fPb">
                                             <rect key="frame" x="62" y="87" width="107" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -151,13 +140,13 @@ DQ
                                     </subviews>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="BGFX" identifier="" id="zUN-Qs-haG">
+                            <tabViewItem label="Video" identifier="" id="zUN-Qs-haG">
                                 <view key="view" id="QQT-HS-xjI">
                                     <rect key="frame" x="10" y="33" width="672" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pD8-dV-ijg">
-                                            <rect key="frame" x="79" y="61" width="172" height="25"/>
+                                            <rect key="frame" x="143" y="86" width="172" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="g0W-Ka-7bb" id="ceP-aK-me8">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -176,7 +165,7 @@ DQ
                                             </connections>
                                         </popUpButton>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qGO-Pm-SD1">
-                                            <rect key="frame" x="15" y="67" width="60" height="16"/>
+                                            <rect key="frame" x="79" y="92" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Backend:" id="WDr-Pl-lV1">
                                                 <font key="font" metaFont="system"/>
@@ -185,7 +174,7 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-fX-twN">
-                                            <rect key="frame" x="15" y="38" width="51" height="16"/>
+                                            <rect key="frame" x="318" y="92" width="51" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Effects:" id="Sqk-7k-PxQ">
                                                 <font key="font" metaFont="system"/>
@@ -205,7 +194,7 @@ DQ
                                             </connections>
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-FM-Agh">
-                                            <rect key="frame" x="79" y="32" width="172" height="25"/>
+                                            <rect key="frame" x="382" y="86" width="172" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dsm-bi-Txy" id="mBS-h4-BWC">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -223,6 +212,44 @@ DQ
                                             <connections>
                                                 <binding destination="-2" name="enabled" keyPath="self.mameBGFX" id="DVB-Ex-VYF"/>
                                                 <binding destination="-2" name="selectedIndex" keyPath="self.mameEffects" id="rCg-d6-OR6"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-dm-fuZ">
+                                            <rect key="frame" x="318" y="60" width="104" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Square Pixels" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="yWK-BP-7Z9">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameSquarePixels" id="BiP-wC-Hpn"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-45-eLr">
+                                            <rect key="frame" x="15" y="60" width="94" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Window Mode:" id="l8n-CI-o4t">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sei-LG-VM6">
+                                            <rect key="frame" x="143" y="55" width="172" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Full Screen" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="0zZ-Ib-Fne" id="lsw-Vk-WcZ">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <menu key="menu" id="m4N-Qw-mem">
+                                                    <items>
+                                                        <menuItem title="Full Screen" state="on" id="0zZ-Ib-Fne"/>
+                                                        <menuItem title="Window 1x" id="3bZ-rq-fCt"/>
+                                                        <menuItem title="Window 2x" id="KA4-Rs-yyK"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="-2" name="selectedIndex" keyPath="self.mameWindowMode" id="B9e-SK-3RY"/>
                                             </connections>
                                         </popUpButton>
                                     </subviews>

@@ -52,6 +52,8 @@ static NSString *kContextMachine = @"kContextMachine";
 @property NSInteger mameEffects;
 
 
+@property NSInteger mameWindowMode;
+
 @end
 
 
@@ -78,7 +80,7 @@ static NSString *kContextMachine = @"kContextMachine";
     
 
     NSArray *keys = @[
-        @"mameMachine", @"mameWindow", @"mameSquarePixels", @"mameNoBlur",
+        @"mameMachine", @"mameWindow", @"mameSquarePixels", @"mameNoBlur", @"mameWindowMode",
         @"mameDebug",
         @"mameSpeed", // @"mameNoThrottle",
         @"mameAVI", @"mameAVIPath",
@@ -236,28 +238,51 @@ static NSString * JoinArguments(NSArray *argv) {
     [argv addObject: _mameMachine];
     
     if (_mameDebug) [argv addObject: @"-debug"];
-    if (_mameWindow) {
-        [argv addObject: @"-window"];
-        [argv addObject: @"-nomax"];
-    }
 
+    // -confirm_quit
     [argv addObject: @"-skip_gameinfo"];
 
-    if (_mameWindow && _mameSquarePixels) {
-        NSSize screen = [_slotController resolution];
-        
-        NSString *res = [NSString stringWithFormat: @"%ux%u", (unsigned)screen.width, (unsigned)screen.height];
-        NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
-        
-        [argv addObject: @"-nounevenstretch"];
-
-        [argv addObject: @"-resolution"];
-        [argv addObject: res];
-
-        [argv addObject: @"-aspect"];
-        [argv addObject: aspect];
     
+    /*
+     * -window -nomax uses a 4:3 aspect ratio - ie, height = width * 3 / 4 (since height is always the limiting factor)
+     * for square pixels, should pass the true size and true aspect ratio.
+     */
+
+    NSSize screen = [_slotController resolution];
+    if (!_mameSquarePixels)
+        screen.height = round(screen.width * 3 / 4);
+    switch(_mameWindowMode) {
+        case 0: // full screen;
+            break;
+        case 1: // 1x
+#if 0
+            if (!_mameSquarePixels) {
+                [argv addObject: @"-window"];
+                [argv addObject: @"-nomax"];
+                 break;
+            }
+#endif
+            // drop through.
+        case 2: // 2x {
+            
+            [argv addObject: @"-window"];
+            NSString *res = [NSString stringWithFormat: @"%ux%u",
+                   (unsigned)(_mameWindowMode * screen.width),
+                   (unsigned)(_mameWindowMode * screen.height)
+                   ];
+            NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
+
+            [argv addObject: @"-resolution"];
+            [argv addObject: res];
+            if (_mameSquarePixels) {
+                [argv addObject: @"-nounevenstretch"];
+//                [argv addObject: @"-aspect"];
+//                [argv addObject: aspect];
+            }
+            break;
     }
+
+
 
     if (_mameBGFX) {
         if (_mameBackend) {
