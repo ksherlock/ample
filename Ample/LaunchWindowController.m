@@ -249,10 +249,9 @@ static NSString * JoinArguments(NSArray *argv) {
      */
 
     NSSize screen = [_slotController resolution];
-    if (!_mameSquarePixels)
-        screen.height = round(screen.width * 3 / 4);
     switch(_mameWindowMode) {
         case 0: // full screen;
+            // no uneven stretch doesn't do anything in full-screen mode.
             break;
         case 1: // 1x
             // make the command-line a bit shorter and more pleasant.
@@ -263,7 +262,16 @@ static NSString * JoinArguments(NSArray *argv) {
             }
 
             // drop through.
-        case 2: // 2x {
+        case 2: // 2x
+
+            if (_mameSquarePixels) {
+                //              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
+                //              [argv addObject: @"-aspect"];
+                //              [argv addObject: aspect];
+                [argv addObject: @"-nounevenstretch"];
+            } else {
+                screen.height = round(screen.width * 3 / 4);
+            }
             
             [argv addObject: @"-window"];
             NSString *res = [NSString stringWithFormat: @"%ux%u",
@@ -273,12 +281,6 @@ static NSString * JoinArguments(NSArray *argv) {
 
             [argv addObject: @"-resolution"];
             [argv addObject: res];
-            if (_mameSquarePixels) {
-                [argv addObject: @"-nounevenstretch"];
-//              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
-//              [argv addObject: @"-aspect"];
-//              [argv addObject: aspect];
-            }
             break;
     }
 
