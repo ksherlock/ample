@@ -255,13 +255,13 @@ static NSString * JoinArguments(NSArray *argv) {
         case 0: // full screen;
             break;
         case 1: // 1x
-#if 0
+            // make the command-line a bit shorter and more pleasant.
             if (!_mameSquarePixels) {
                 [argv addObject: @"-window"];
                 [argv addObject: @"-nomax"];
                  break;
             }
-#endif
+
             // drop through.
         case 2: // 2x {
             
@@ -270,14 +270,14 @@ static NSString * JoinArguments(NSArray *argv) {
                    (unsigned)(_mameWindowMode * screen.width),
                    (unsigned)(_mameWindowMode * screen.height)
                    ];
-            NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
 
             [argv addObject: @"-resolution"];
             [argv addObject: res];
             if (_mameSquarePixels) {
                 [argv addObject: @"-nounevenstretch"];
-//                [argv addObject: @"-aspect"];
-//                [argv addObject: aspect];
+//              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
+//              [argv addObject: @"-aspect"];
+//              [argv addObject: aspect];
             }
             break;
     }

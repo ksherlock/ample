@@ -80,73 +80,13 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
-                            <tabViewItem label="Options" identifier="" id="nr5-4o-DyG">
-                                <view key="view" id="ElY-YI-LLI">
-                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-uU-muo">
-                                            <rect key="frame" x="15" y="60" width="71" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Window" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vx1-I7-8kN">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameWindow" id="uS7-cg-wqb"/>
-                                            </connections>
-                                        </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-ni-Rr6">
-                                            <rect key="frame" x="15" y="29" width="62" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6is-QN-JEc">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameDebug" id="vkc-sR-KnB"/>
-                                            </connections>
-                                        </button>
-                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-gG-fPb">
-                                            <rect key="frame" x="62" y="87" width="107" height="25"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="yoI-Ra-evu" id="M40-f0-awc">
-                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="menu"/>
-                                                <menu key="menu" id="8Tv-0j-JhQ">
-                                                    <items>
-                                                        <menuItem title="100%" state="on" tag="1" id="yoI-Ra-evu"/>
-                                                        <menuItem title="200%" tag="2" id="UqT-yd-8o3"/>
-                                                        <menuItem title="300%" tag="3" id="awG-S1-uM4"/>
-                                                        <menuItem title="400%" tag="4" id="qJ5-Ed-W5U"/>
-                                                        <menuItem title="500%" tag="5" id="Phc-uW-Qog"/>
-                                                        <menuItem title="No Throttle" tag="-1" id="gAc-ME-eim"/>
-                                                    </items>
-                                                </menu>
-                                            </popUpButtonCell>
-                                            <connections>
-                                                <binding destination="-2" name="selectedTag" keyPath="self.mameSpeed" id="nFG-yA-KC1"/>
-                                            </connections>
-                                        </popUpButton>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-yK-2ZK">
-                                            <rect key="frame" x="15" y="93" width="43" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Speed" id="D9w-Mz-PXs">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                    </subviews>
-                                </view>
-                            </tabViewItem>
                             <tabViewItem label="Video" identifier="" id="zUN-Qs-haG">
                                 <view key="view" id="QQT-HS-xjI">
                                     <rect key="frame" x="10" y="33" width="672" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pD8-dV-ijg">
-                                            <rect key="frame" x="143" y="86" width="172" height="25"/>
+                                            <rect key="frame" x="143" y="87" width="172" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="g0W-Ka-7bb" id="ceP-aK-me8">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -194,7 +134,7 @@ DQ
                                             </connections>
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-FM-Agh">
-                                            <rect key="frame" x="382" y="86" width="172" height="25"/>
+                                            <rect key="frame" x="382" y="87" width="172" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dsm-bi-Txy" id="mBS-h4-BWC">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -250,6 +190,55 @@ DQ
                                             </popUpButtonCell>
                                             <connections>
                                                 <binding destination="-2" name="selectedIndex" keyPath="self.mameWindowMode" id="B9e-SK-3RY"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="CPU" identifier="" id="nr5-4o-DyG">
+                                <view key="view" id="ElY-YI-LLI">
+                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-ni-Rr6">
+                                            <rect key="frame" x="15" y="60" width="62" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6is-QN-JEc">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameDebug" id="vkc-sR-KnB"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-yK-2ZK">
+                                            <rect key="frame" x="15" y="91" width="43" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Speed" id="D9w-Mz-PXs">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-gG-fPb">
+                                            <rect key="frame" x="62" y="86" width="107" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="yoI-Ra-evu" id="M40-f0-awc">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="8Tv-0j-JhQ">
+                                                    <items>
+                                                        <menuItem title="100%" state="on" tag="1" id="yoI-Ra-evu"/>
+                                                        <menuItem title="200%" tag="2" id="UqT-yd-8o3"/>
+                                                        <menuItem title="300%" tag="3" id="awG-S1-uM4"/>
+                                                        <menuItem title="400%" tag="4" id="qJ5-Ed-W5U"/>
+                                                        <menuItem title="500%" tag="5" id="Phc-uW-Qog"/>
+                                                        <menuItem title="No Throttle" tag="-1" id="gAc-ME-eim"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="-2" name="selectedTag" keyPath="self.mameSpeed" id="nFG-yA-KC1"/>
                                             </connections>
                                         </popUpButton>
                                     </subviews>
