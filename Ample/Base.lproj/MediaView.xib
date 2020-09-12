@@ -14,10 +14,9 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="30" horizontalPageScroll="10" verticalLineScroll="30" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" id="nVT-kT-bWl">
+        <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="30" horizontalPageScroll="10" verticalLineScroll="30" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="nVT-kT-bWl">
             <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <clipView key="contentView" autoresizesSubviews="NO" focusRingType="none" copiesOnScroll="NO" id="IBD-wb-pch">
+            <clipView key="contentView" autoresizesSubviews="NO" focusRingType="none" ambiguous="YES" copiesOnScroll="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBD-wb-pch">
                 <rect key="frame" x="0.0" y="0.0" width="306" height="363"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
@@ -58,13 +57,13 @@
                                             <outlet property="textField" destination="Pep-mX-LHY" id="hUe-cf-6vq"/>
                                         </connections>
                                     </tableCellView>
-                                    <tableCellView identifier="ItemView" id="yGq-lc-RCM" customClass="TablePathView">
-                                        <rect key="frame" x="1" y="21" width="280" height="27"/>
+                                    <tableCellView identifier="ItemView" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-lc-RCM" customClass="TablePathView">
+                                        <rect key="frame" x="1" y="21" width="280" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <pathControl focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-TO-fmF">
-                                                <rect key="frame" x="20" y="1" width="228" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="20" y="0.0" width="228" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="dcz-8y-tKb">
                                                     <font key="font" metaFont="smallSystem"/>
                                                 </pathCell>
@@ -73,13 +72,13 @@
                                                 </connections>
                                             </pathControl>
                                             <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
-                                                <rect key="frame" x="0.0" y="2" width="20" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="0.0" y="1" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="drag-handle-4x10" id="x7F-qD-5y9"/>
                                             </imageView>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-ij-mUl" customClass="EjectButton">
-                                                <rect key="frame" x="261" y="5" width="16" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="261" y="3" width="16" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="eject-16x16" imagePosition="only" alignment="center" alternateImage="eject-hover-16x16" imageScaling="proportionallyDown" inset="2" id="IZA-Tu-olu">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
