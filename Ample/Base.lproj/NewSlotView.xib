@@ -46,7 +46,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qIF-d4-kOf">
-                                                <rect key="frame" x="0.0" y="3" width="90" height="17"/>
+                                                <rect key="frame" x="0.0" y="5" width="90" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="RAM:" id="tIz-xZ-ZJH">
                                                     <font key="font" metaFont="system"/>
@@ -55,12 +55,12 @@
                                                 </textFieldCell>
                                             </textField>
                                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ8-o3-yBB">
-                                                <rect key="frame" x="87" y="-2" width="193" height="25"/>
+                                                <rect key="frame" x="87" y="0.0" width="193" height="25"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
-                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="tGi-yg-GFr" id="gt4-HK-pd1">
+                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="tGi-yg-GFr" id="gt4-HK-pd1">
                                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="menu"/>
-                                                    <menu key="menu" id="KWV-nn-eiB">
+                                                    <menu key="menu" autoenablesItems="NO" id="KWV-nn-eiB">
                                                         <items>
                                                             <menuItem title="Item 1" state="on" id="tGi-yg-GFr"/>
                                                             <menuItem title="Item 2" id="XJr-Gb-4D4"/>
