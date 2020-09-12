@@ -53,6 +53,7 @@ keytronic_pc3270
 m68705p3
 votrax
 zijini
+agat_fdc
 """.splitlines()
 #
 # others
