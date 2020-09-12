@@ -71,7 +71,7 @@
                                                     <action selector="pathAction:" target="-2" id="4oX-bW-ANp"/>
                                                 </connections>
                                             </pathControl>
-                                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
                                                 <rect key="frame" x="0.0" y="1" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="drag-handle-4x10" id="x7F-qD-5y9"/>

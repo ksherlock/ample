@@ -26,6 +26,7 @@
 #endif
 
 -(void)viewDidMoveToSuperview {
+    return;
     if (_trackingRect) {
         [self removeTrackingRect: _trackingRect];
     }
@@ -151,25 +152,32 @@
     return YES;
 }
 
--(BOOL)pruneChildren {
+-(BOOL)pruneChildrenWithOutlineView: (NSOutlineView *)view {
     NSUInteger count = [_children count];
     BOOL delta = NO;
     if (_validCount == count) return NO;
+    NSMutableIndexSet *set = [NSMutableIndexSet new];
 
     for (NSInteger i = _validCount; i < count; ++i) {
         MediaItem *item = [_children lastObject];
         if ([item url]) break;
     
         [_children removeLastObject];
+        [set addIndex: [_children count]];
+
         delta = YES;
     }
     if (delta) {
+
+        if (view)
+            [view removeItemsAtIndexes: set inParent: self withAnimation: NSTableViewAnimationEffectFade];
+
         return YES;
     }
     return NO;
 }
 
--(BOOL)moveItemFrom: (NSInteger)oldIndex to: (NSInteger)newIndex {
+-(BOOL)moveItemFrom: (NSInteger)oldIndex to: (NSInteger)newIndex outlineView: (NSOutlineView *)view {
     if (newIndex == oldIndex) return NO;
     NSUInteger count = [_children count];
     if (oldIndex >= count) return NO;
@@ -182,15 +190,20 @@
     } else {
         [_children insertObject: item atIndex: newIndex];
     }
-    
+    if (view) [view moveItemAtIndex: oldIndex inParent: self toIndex: newIndex inParent: self];
+
     // re-index and re-validate.
     unsigned ix = 0;
     for (MediaItem *item in _children) {
         [item setIndex: ix];
         [item setValid: ix < _validCount];
+        
+        [view reloadItem: item];
+        
         ++ix;
     }
-    [self pruneChildren];
+    [self pruneChildrenWithOutlineView: view];
+    //[view reloadItem: self reloadChildren: YES];
     return YES;
 }
 @end
@@ -338,6 +351,9 @@ enum {
     }
     _root = tmp;
 
+    // todo - switch this to use removeItemsAtIndexes:inParent:withAnimation:
+    // and insertItemsAtIndexes:inParent:withAnimation:
+    
     [_outlineView reloadData];
     [_outlineView expandItem: nil expandChildren: YES];
 }
@@ -590,10 +606,12 @@ static NSString *kDragType = @"private.ample.media";
     
     NSInteger oldIndex = indexes[1];
 
-    [cat moveItemFrom: oldIndex to: index];
+    [_outlineView beginUpdates];
+    [cat moveItemFrom: oldIndex to: index outlineView: _outlineView];
+    [_outlineView endUpdates];
     [self rebuildArgs];
 
-    [_outlineView reloadItem: cat reloadChildren: YES];
+    //[_outlineView reloadItem: cat reloadChildren: YES];
     return YES;
 
 }
@@ -615,8 +633,14 @@ static NSString *kDragType = @"private.ample.media";
     // if item is invalid, should attempt to remove...
     if (![item valid]) {
         MediaCategory *cat = [_outlineView parentForItem: item];
-        if ([cat pruneChildren]) [self rebuildRoot];
+        [_outlineView beginUpdates];
+        [cat pruneChildrenWithOutlineView: _outlineView];
+        [_outlineView endUpdates];
     }
+    
+    // todo -- if this eliminates a category completely, it will still be included
+    // since we're now using animaations instead of reloading.
+    
     [self rebuildArgs];
 }
 
