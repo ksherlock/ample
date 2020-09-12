@@ -149,15 +149,15 @@
       <array>
         <dict>
           <key>description</key>
-          <string>Laser 128 (version 4.2)</string>
-          <key>value</key>
-          <string>laser128</string>
-        </dict>
-        <dict>
-          <key>description</key>
           <string>Laser //c</string>
           <key>value</key>
           <string>laser2c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128 (version 4.2)</string>
+          <key>value</key>
+          <string>laser128</string>
         </dict>
         <dict>
           <key>description</key>
