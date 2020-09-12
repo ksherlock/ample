@@ -1,4 +1,4 @@
-
+import argparse
 import subprocess
 
 from plist import to_plist
@@ -145,7 +145,14 @@ def find_media(parent, include_slots=False):
 
 devices = {}
 
-for m in MACHINES:
+p = argparse.ArgumentParser()
+p.add_argument('machine', nargs="*")
+args = p.parse_args()
+
+machines = args.machine
+if not machines: machines = MACHINES
+
+for m in machines:
 
 	print(m)
 
@@ -167,14 +174,15 @@ for m in MACHINES:
 	data["description"] = machine.find("description").text
 	tmp = [
 		{
-			"value": int(x.text),
+			"intValue": int(x.text),
 			"description": x.get("name"),
+			"value": x.get("name"),
 			"default": x.get("default") == "yes"
 		}
 		for x in machine.findall('ramoption')
 	]
 	# sort and add empty starting entry.
-	tmp.sort(key=lambda x: x["value"])
+	tmp.sort(key=lambda x: x["intValue"])
 	# tmp.insert(0, {"value": 0, "default": False, "description": "" })
 	data["ram"] = tmp
 

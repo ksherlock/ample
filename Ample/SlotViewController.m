@@ -175,10 +175,10 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
         // if ram was explicitly set, try to keep it.
 
         for (NSDictionary *d in items) {
-            unsigned size = [(NSNumber *)[d objectForKey: @"value"] unsignedIntValue];
+            unsigned size = [(NSNumber *)[d objectForKey: @"intValue"] unsignedIntValue];
             if (size == _memoryBytes) {
                 [_ram_menu selectItemAtIndex: ix];
-                [self setMemory: [d objectForKey: @"description"]];
+                [self setMemory: [d objectForKey: @"value"]];
                 return;
             }
             ++ix;
@@ -190,8 +190,8 @@ static void DeactivateMenus(NSArray *items, NSPopUpButton *button) {
         NSDictionary *d = [items objectAtIndex: default_index];
 
         [_ram_menu selectItemAtIndex: default_index];
-        [self setMemory: [d objectForKey: @"description"]];
-        [self setMemoryBytes: [(NSNumber *)[d objectForKey: @"value"] unsignedIntValue]];
+        [self setMemory: [d objectForKey: @"value"]];
+        [self setMemoryBytes: [(NSNumber *)[d objectForKey: @"intValue"] unsignedIntValue]];
     } else {
         [self setMemoryBytes: 0];
         [self setMemory: @""];

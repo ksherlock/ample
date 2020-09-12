@@ -9,25 +9,31 @@
     <key>ram</key>
     <array>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>131072</integer>
         <key>description</key>
+        <string>128K</string>
+        <key>value</key>
         <string>128K</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>262144</integer>
         <key>description</key>
+        <string>256K</string>
+        <key>value</key>
         <string>256K</string>
         <key>default</key>
         <true/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>524288</integer>
         <key>description</key>
+        <string>512K</string>
+        <key>value</key>
         <string>512K</string>
         <key>default</key>
         <false/>

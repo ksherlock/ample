@@ -9,9 +9,11 @@
     <key>ram</key>
     <array>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>131072</integer>
         <key>description</key>
+        <string>128K</string>
+        <key>value</key>
         <string>128K</string>
         <key>default</key>
         <true/>

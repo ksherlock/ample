@@ -9,97 +9,121 @@
     <key>ram</key>
     <array>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>262144</integer>
         <key>description</key>
+        <string>256K</string>
+        <key>value</key>
         <string>256K</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>524288</integer>
         <key>description</key>
+        <string>512K</string>
+        <key>value</key>
         <string>512K</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>786432</integer>
         <key>description</key>
+        <string>768K</string>
+        <key>value</key>
         <string>768K</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>1048576</integer>
         <key>description</key>
+        <string>1M</string>
+        <key>value</key>
         <string>1M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>1310720</integer>
         <key>description</key>
+        <string>1280K</string>
+        <key>value</key>
         <string>1280K</string>
         <key>default</key>
         <true/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>2097152</integer>
         <key>description</key>
+        <string>2M</string>
+        <key>value</key>
         <string>2M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>3145728</integer>
         <key>description</key>
+        <string>3M</string>
+        <key>value</key>
         <string>3M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>4194304</integer>
         <key>description</key>
+        <string>4M</string>
+        <key>value</key>
         <string>4M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>5242880</integer>
         <key>description</key>
+        <string>5M</string>
+        <key>value</key>
         <string>5M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>6291456</integer>
         <key>description</key>
+        <string>6M</string>
+        <key>value</key>
         <string>6M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>7340032</integer>
         <key>description</key>
+        <string>7M</string>
+        <key>value</key>
         <string>7M</string>
         <key>default</key>
         <false/>
       </dict>
       <dict>
-        <key>value</key>
+        <key>intValue</key>
         <integer>8388608</integer>
         <key>description</key>
+        <string>8M</string>
+        <key>value</key>
         <string>8M</string>
         <key>default</key>
         <false/>
