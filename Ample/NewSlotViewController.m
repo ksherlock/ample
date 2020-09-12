@@ -25,6 +25,10 @@ static NSAttributedString *ItalicMenuString(NSString *s) {
     return [[NSAttributedString alloc] initWithString: s attributes: attr];
 }
 
+@implementation SlotTableCellView
+
+@end
+
 @implementation SlotItem
 
 -(id)init {
@@ -182,6 +186,8 @@ static NSAttributedString *ItalicMenuString(NSString *s) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    
+    _root = [NSMutableArray new];
 }
 
 -(void)resetMachine {
