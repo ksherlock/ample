@@ -179,7 +179,7 @@ DQ
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Full Screen" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="0zZ-Ib-Fne" id="lsw-Vk-WcZ">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="m4N-Qw-mem">
                                                     <items>
                                                         <menuItem title="Full Screen" state="on" id="0zZ-Ib-Fne"/>
@@ -355,7 +355,7 @@ DQ
             <point key="canvasLocation" x="769" y="120.5"/>
         </window>
         <viewController title="Media View" nibName="MediaView" id="t7c-zy-czN" customClass="MediaViewController"/>
-        <viewController title="Slot View" nibName="SlotView" id="lyS-mc-3Tf" customClass="SlotViewController"/>
+        <viewController title="Slot View" nibName="NewSlotView" id="lyS-mc-3Tf" customClass="NewSlotViewController"/>
         <customObject id="RgH-d9-xl8" customClass="MachineViewController"/>
     </objects>
     <resources>

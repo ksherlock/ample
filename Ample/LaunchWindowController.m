@@ -9,7 +9,7 @@
 #import "Ample.h"
 #import "LaunchWindowController.h"
 #import "MediaViewController.h"
-#import "SlotViewController.h"
+#import "NewSlotViewController.h"
 #import "MachineViewController.h"
 #import "LogWindowController.h"
 
@@ -19,7 +19,7 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @interface LaunchWindowController ()
 @property (strong) IBOutlet MediaViewController *mediaController;
-@property (strong) IBOutlet SlotViewController *slotController;
+@property (strong) IBOutlet NewSlotViewController *slotController;
 @property (strong) IBOutlet MachineViewController *machineViewController;
 
 @property (weak) IBOutlet NSView *machineView;
@@ -112,7 +112,7 @@ static NSString *kContextMachine = @"kContextMachine";
     } else if (context == (__bridge void *)kContextMachine) {
         NSString *machine = [_machineViewController machine];
         [self setMameMachine: machine];
-        [_slotController setModel: machine];
+        [_slotController setMachine: machine];
         [self buildCommandLine];
     } else {
         [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];

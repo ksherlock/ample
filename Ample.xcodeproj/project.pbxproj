@@ -12,7 +12,6 @@
 		B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B608E17E2502FE0C00D53465 /* TransparentScroller.m */; };
 		B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B608E17E2502FE0C00D53465 /* TransparentScroller.m */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
-		B61099E724F5F231005CB652 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E324F5F230005CB652 /* SlotView.xib */; };
 		B61099E824F5F231005CB652 /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
 		B6109A1724F5F377005CB652 /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
 		B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EB24F5F36E005CB652 /* hkc8800a.plist */; };
@@ -81,7 +80,6 @@
 		B63C1BA9250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
-		B65593B124ECB61800722E0C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -122,7 +120,6 @@
 		B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6004DEE24FB05D600D38596 /* LogWindowController.m */; };
 		B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
-		B6E4B5B824FDE2670094A35C /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65593B024ECB61800722E0C /* SlotViewController.m */; };
 		B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
 		B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
 		B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
@@ -172,7 +169,6 @@
 		B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F424F5F36F005CB652 /* apple2ee.plist */; };
 		B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0924F5F373005CB652 /* dodo.plist */; };
 		B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3724FAC8B500661A5F /* Preferences.xib */; };
-		B6E4B5EE24FDE2670094A35C /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E324F5F230005CB652 /* SlotView.xib */; };
 		B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FC24F5F370005CB652 /* apple2gs.plist */; };
 		B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
 		B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
@@ -670,7 +666,6 @@
 				B6DDECD22505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6109A3624F5F377005CB652 /* dodo.plist in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
-				B61099E724F5F231005CB652 /* SlotView.xib in Resources */,
 				B6109A2924F5F377005CB652 /* apple2gs.plist in Resources */,
 				B6109A1F24F5F377005CB652 /* apple2jp.plist in Resources */,
 				B6109A3024F5F377005CB652 /* apple2.plist in Resources */,
@@ -745,7 +740,6 @@
 				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
 				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
 				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
-				B6E4B5EE24FDE2670094A35C /* SlotView.xib in Resources */,
 				B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */,
 				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
 				B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */,
@@ -774,7 +768,6 @@
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */,
-				B65593B124ECB61800722E0C /* SlotViewController.m in Sources */,
 				B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,7 +787,6 @@
 				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
 				B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */,
 				B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */,
-				B6E4B5B824FDE2670094A35C /* SlotViewController.m in Sources */,
 				B63C1B9525008A2700511A71 /* DownloadWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
