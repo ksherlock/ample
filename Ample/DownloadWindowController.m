@@ -322,10 +322,18 @@ enum {
     DownloadItem *item = [_items objectAtIndex: row];
     DownloadTableCellView *v = [tableView makeViewWithIdentifier: @"DownloadCell" owner: self];
     
+    NSTextField *tf;
+    
+    tf = [v textField];
     [[v textField] setObjectValue: [item name]];
     
-    NSTextField *tf = [v statusTextField];
-
+    if ([item localURL]) {
+        [tf setTextColor: [NSColor blackColor]];
+    } else {
+        [tf setTextColor: [NSColor redColor]];
+    }
+    
+    tf = [v statusTextField];
     [tf setObjectValue: [item statusDescription]];
     if ([item error]) {
         [tf setTextColor: [NSColor redColor]];
