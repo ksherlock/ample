@@ -31,11 +31,9 @@ static NSString *kContextMachine = @"kContextMachine";
 @property NSArray *args;
 
 @property NSString *mameMachine;
-@property BOOL mameWindow;
-@property BOOL mameNoThrottle;
 @property BOOL mameDebug;
 @property BOOL mameSquarePixels;
-@property BOOL mameNoBlur;
+@property BOOL mameMouse;
 
 @property BOOL mameAVI;
 @property BOOL mameWAV;
@@ -66,6 +64,7 @@ static NSString *kContextMachine = @"kContextMachine";
 -(void)windowWillLoad {
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
+    [self setMameMouse: NO];
 }
 
 - (void)windowDidLoad {
@@ -80,9 +79,10 @@ static NSString *kContextMachine = @"kContextMachine";
     
 
     NSArray *keys = @[
-        @"mameMachine", @"mameWindow", @"mameSquarePixels", @"mameNoBlur", @"mameWindowMode",
+        @"mameMachine", @"mameSquarePixels", @"mameWindowMode",
+        @"mameMouse",
         @"mameDebug",
-        @"mameSpeed", // @"mameNoThrottle",
+        @"mameSpeed",
         @"mameAVI", @"mameAVIPath",
         @"mameWAV", @"mameWAVPath",
         @"mameVGM", @"mameVGMPath",
@@ -236,11 +236,16 @@ static NSString * JoinArguments(NSArray *argv) {
 
     //[argv addObject: @"mame"];
     [argv addObject: _mameMachine];
+
+    // -confirm_quit?
+    [argv addObject: @"-skip_gameinfo"];
+
+    
+    if (_mameMouse)
+        [argv addObject: @"-mouse"]; // capture the mouse cursor when over the window.
     
     if (_mameDebug) [argv addObject: @"-debug"];
 
-    // -confirm_quit
-    [argv addObject: @"-skip_gameinfo"];
 
     
     /*
@@ -328,7 +333,6 @@ static NSString * JoinArguments(NSArray *argv) {
         [argv addObjectsFromArray: tmp];
     }
 
-    //if (_mameNoThrottle) [argv addObject: @"-nothrottle"];
     if (_mameSpeed < 0) {
         [argv addObject: @"-nothrottle"];
     } else if (_mameSpeed > 1) {

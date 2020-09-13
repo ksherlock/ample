@@ -115,7 +115,7 @@ DQ
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-fX-twN">
                                             <rect key="frame" x="318" y="92" width="51" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Effects:" id="Sqk-7k-PxQ">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -162,6 +162,7 @@ DQ
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.mameWindowMode" id="X80-2K-kTO"/>
                                                 <binding destination="-2" name="value" keyPath="self.mameSquarePixels" id="BiP-wC-Hpn"/>
                                             </connections>
                                         </button>
@@ -192,6 +193,17 @@ DQ
                                                 <binding destination="-2" name="selectedIndex" keyPath="self.mameWindowMode" id="B9e-SK-3RY"/>
                                             </connections>
                                         </popUpButton>
+                                        <button verticalHuggingPriority="750" id="9Db-wA-FP9">
+                                            <rect key="frame" x="15" y="29" width="115" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Capture Mouse" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3xh-Q7-WFl">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameMouse" id="vWu-od-2d6"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
