@@ -33,7 +33,10 @@
             @(12345), @"size",
             nil]
      ]];
+    
     [super windowDidLoad];
+    
+    [_tableView registerForDraggedTypes: @[NSPasteboardTypeURL]];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
@@ -76,5 +79,39 @@
     return YES;
 }
 
+-(NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
+    
+    return NSDragOperationCopy;
+}
+
+-(BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
+
+
+    NSPasteboard * pb = [info draggingPasteboard];
+    NSURL *url = [NSURL URLFromPasteboard: pb];
+    if (!url) return NO;
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+    if (!path) return NO;
+
+    NSError *error = nil;
+    NSDictionary *attr = [fm attributesOfItemAtPath: path error: &error];
+    if (error) {
+        NSLog(@"%@ : %@", path, error);
+        return NO;
+    }
+    
+    NSNumber *size = [attr objectForKey: NSFileSize];
+    
+    NSMutableDictionary *d = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                              path, @"path",
+                              size, @"size"
+                              , nil];
+    
+    [_arrayController addObject: d];
+    return YES;
+}
 
 @end
