@@ -75,7 +75,7 @@ DQ
                         <rect key="frame" x="20" y="92" width="306" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <tabView initialItem="nr5-4o-DyG" id="l8R-bg-6Zm">
+                    <tabView initialItem="zUN-Qs-haG" id="l8R-bg-6Zm">
                         <rect key="frame" x="13" y="453" width="692" height="160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
@@ -162,8 +162,8 @@ DQ
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="-2" name="enabled" keyPath="self.mameWindowMode" id="X80-2K-kTO"/>
                                                 <binding destination="-2" name="value" keyPath="self.mameSquarePixels" id="BiP-wC-Hpn"/>
+                                                <binding destination="-2" name="enabled" keyPath="self.mameWindowMode" id="X80-2K-kTO"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-45-eLr">
@@ -186,6 +186,7 @@ DQ
                                                         <menuItem title="Full Screen" state="on" id="0zZ-Ib-Fne"/>
                                                         <menuItem title="Window 1x" id="3bZ-rq-fCt"/>
                                                         <menuItem title="Window 2x" id="KA4-Rs-yyK"/>
+                                                        <menuItem title="Window 3x" id="Dbh-Js-pMx" userLabel="Window 3x"/>
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>

@@ -268,6 +268,7 @@ static NSString * JoinArguments(NSArray *argv) {
 
             // drop through.
         case 2: // 2x
+        case 3: // 3x
 
             if (_mameSquarePixels) {
                 //              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
