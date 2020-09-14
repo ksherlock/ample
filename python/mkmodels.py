@@ -15,13 +15,14 @@ apple2e_children = ["apple2e", "apple2ees", "apple2euk", "apple2ep", "apple2ee",
 apple2c_children = ["apple2c", "apple2cp"]
 apple2gs_children = ["apple2gsr0", "apple2gsr1", "apple2gs"]
 laser_children = ["laser2c", "laser128", "las128ex", "las128e2"]
-ii_clones_children = ["ace100", "agat7", "agat9", "albert",
+ii_clones_children = ["ace100", "albert",
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
 	"space84", "uniap2en", "uniap2pt", "uniap2ti"]
 iie_clones_children = ["mprof3", "prav8c", "spectred", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
+agat_children = ["agat7", "agat9"]
 
 tree = [
 	("Apple I", "apple1", apple1_children),
@@ -30,10 +31,11 @@ tree = [
 	("Apple //c", "apple2c", apple2c_children),
 	("Apple IIgs", "apple2gs", apple2gs_children),
 	("Apple ///", "apple3", apple3_children),
-	("Laser", "laser128", laser_children),
-	("China Education Computer", None, cec_children),
 	("II Clones", None, ii_clones_children),
 	("IIe Clones", None, iie_clones_children),
+	("Laser", "laser128", laser_children),
+	("Agat", "agat7", agat_children),
+	("China Education Computer", None, cec_children),
 ]
 
 env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
