@@ -251,7 +251,7 @@
     b = [[MediaCategory alloc] initWithTitle: @"3.5\" Floppies"];
     c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
     d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
-    e = [[MediaCategory alloc] initWithTitle: @"Casettes"];
+    e = [[MediaCategory alloc] initWithTitle: @"Cassettes"];
 
     
     _data[0] = a;
