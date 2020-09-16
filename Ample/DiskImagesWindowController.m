@@ -108,6 +108,19 @@
 
     // todo -- check if file is in the list already...
 
+    BOOL found = NO;
+    // should really compare the volume id / ino I suppose.
+    for (NSMutableDictionary *d in _content) {
+        NSString *s = [d objectForKey: @"path"];
+        if ([path compare: s] == NSOrderedSame) {
+            found = YES;
+            [d setObject: [NSDate new] forKey: @"date"];
+            _dirty = YES; // ?
+            break;
+        }
+    }
+    if (found) return NO;
+    
     
     NSFileManager *fm = [NSFileManager defaultManager];
     NSError *error;
