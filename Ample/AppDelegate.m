@@ -50,6 +50,8 @@
         [self displayLaunchWindow];
     }
 
+    _diskImages = [DiskImagesWindowController new];
+
 }
 
 -(void)displayLaunchWindow {

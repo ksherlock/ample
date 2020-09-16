@@ -611,6 +611,14 @@ static NSString *kDragType = @"private.ample.media";
 
 - (IBAction)pathAction:(id)sender {
     // need to update the eject button...
+    
+    NSURL *url = [(NSPathControl *)sender URL];
+    
+    if (url) {
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc postNotificationName: @"DiskImageAdded" object: url];
+    }
+    
     [self rebuildArgs];
 }
 @end
