@@ -156,6 +156,47 @@
     return YES;
 }
 
+
+-(NSMutableDictionary *)clickedItem {
+
+    NSInteger row = [_tableView clickedRow];
+    if (row < 0) return nil;
+
+    NSTableCellView *v = [_tableView viewAtColumn: 0 row: row makeIfNecessary: NO];
+    return [v objectValue];
+}
+#pragma mark - IBActions
+
+- (IBAction)showInFinder:(id)sender {
+    
+    NSMutableDictionary *item = [self clickedItem];
+    if (!item) return;
+    NSString *path = [item objectForKey: @"path"];
+
+    NSURL *url = [NSURL fileURLWithPath: path];
+    if (!url) return;
+
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+    [ws activateFileViewerSelectingURLs: @[url]];
+}
+
+- (IBAction)eject:(id)sender {
+
+    NSMutableDictionary *item = [self clickedItem];
+    if (!item) return;
+    
+    @synchronized (self) {
+        
+        if (_arrayController) {
+            [_arrayController removeObject: item];
+        } else {
+            [_content removeObject: item];
+        }
+        _dirty = YES;
+    }
+
+}
+
 @end
 
 @implementation DiskImagesWindowController (TableView)

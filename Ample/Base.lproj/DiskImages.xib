@@ -24,14 +24,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView focusRingType="none" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" findBarPosition="belowContent" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-XT-BPS">
+                    <scrollView focusRingType="none" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" findBarPosition="belowContent" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-XT-BPS">
                         <rect key="frame" x="-1" y="-1" width="302" height="402"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="1jn-uc-06s">
                             <rect key="frame" x="0.0" y="0.0" width="302" height="402"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="sourceList" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="J5l-1d-030">
+                                <tableView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="sourceList" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" rowSizeStyle="automatic" viewBased="YES" id="J5l-1d-030">
                                     <rect key="frame" x="0.0" y="0.0" width="302" height="402"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -64,19 +64,19 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="AJH-gH-E8G" name="toolTip" keyPath="objectValue.path" id="gXq-2p-MpM"/>
                                                                 <binding destination="AJH-gH-E8G" name="value" keyPath="objectValue.path" id="S0h-hl-OPM">
                                                                     <dictionary key="options">
                                                                         <string key="NSValueTransformerName">FilePathTransformer</string>
                                                                     </dictionary>
                                                                 </binding>
+                                                                <binding destination="AJH-gH-E8G" name="toolTip" keyPath="objectValue.path" id="gXq-2p-MpM"/>
                                                             </connections>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzl-mV-Pmp">
                                                             <rect key="frame" x="206" y="3" width="75" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="right" title="32MB" id="QYB-us-igD">
-                                                                <font key="font" metaFont="system" size="11"/>
+                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
@@ -103,6 +103,7 @@
                                         <binding destination="vmp-9h-Z5R" name="content" keyPath="arrangedObjects" id="GHn-tz-ash"/>
                                         <outlet property="dataSource" destination="-2" id="PRV-Rt-UuC"/>
                                         <outlet property="delegate" destination="-2" id="WuV-c9-o5I"/>
+                                        <outlet property="menu" destination="bCS-1z-UOZ" id="UCb-2v-WrM"/>
                                     </connections>
                                 </tableView>
                             </subviews>
@@ -129,5 +130,25 @@
                 <binding destination="-2" name="contentArray" keyPath="self.content" id="UTv-za-ry7"/>
             </connections>
         </arrayController>
+        <menu id="bCS-1z-UOZ">
+            <items>
+                <menuItem title="Show in Finder" tag="1" id="roc-SG-geJ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showInFinder:" target="-2" id="ViY-7R-MNV"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Eject" tag="2" id="eJ1-Kd-hnR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="eject:" target="-2" id="c6U-xB-EnM"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="22a-3e-eaK"/>
+            </connections>
+            <point key="canvasLocation" x="-667" y="170"/>
+        </menu>
     </objects>
 </document>
