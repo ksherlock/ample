@@ -19,6 +19,7 @@
 
 @implementation DiskImagesWindowController {
     BOOL _dirty;
+    NSSet *_extensions;
     
 }
 
@@ -28,6 +29,10 @@
     if ((self = [super init])) {
         
         [self loadRecentDiskImages];
+        
+        _extensions = [NSSet setWithObjects:
+            @"2img", @"2mg", @"chd", @"dc", @"do", @"dsk", @"hd", @"hdv", @"image", @"nib", @"po", @"wav", @"woz", @"iso", nil
+        ];
     }
     return self;
 }
@@ -190,8 +195,19 @@
 }
 
 -(NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
+
+    // option key will ignore all filetype restrictions.
+    if ([NSEvent modifierFlags] & NSEventModifierFlagOption) return NSDragOperationCopy;
+
+    NSPasteboard * pb = [info draggingPasteboard];
+    NSURL *url = [NSURL URLFromPasteboard: pb];
     
-    return NSDragOperationCopy;
+    NSString *ext = [url pathExtension];
+    ext = [ext lowercaseString];
+    if ([_extensions containsObject: ext])
+        return NSDragOperationCopy;
+    
+    return NSDragOperationNone;
 }
 
 -(BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
