@@ -20,6 +20,7 @@
 @implementation DiskImagesWindowController {
     BOOL _dirty;
     NSSet *_extensions;
+    NSTimer *_timer;
     
 }
 
@@ -48,8 +49,9 @@
     
     [super windowDidLoad];
     
-    [_tableView registerForDraggedTypes: @[NSPasteboardTypeURL]];
-    
+    [_tableView registerForDraggedTypes: @[NSPasteboardTypeFileURL]];
+    [_tableView setDraggingSourceOperationMask: NSDragOperationCopy forLocal: NO]; // enable drag/drop to othr apps.
+
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
@@ -81,11 +83,20 @@
     
     [self addFile: url];
 }
+-(void)markDirty {
+    _dirty = YES;
+    if (_timer) [_timer invalidate];
+    _timer = [NSTimer scheduledTimerWithTimeInterval: 5 * 60 repeats: NO block: ^(NSTimer *t) {
+        
+        self->_timer = nil;
+        [self saveFile];
+    }];
+}
 
--(void)willTerminate: (NSNotification *)notification {
-    // if dirty, write data....
+-(void)saveFile {
 
-    if (!_dirty) return;
+    [_timer invalidate];
+    _timer = nil;
 
     NSURL *sd = SupportDirectory();
     NSURL *url = [sd URLByAppendingPathComponent: @"RecentDiskImages.plist"];
@@ -93,9 +104,20 @@
     if (_content && url) {
         [_content writeToURL: url atomically: YES];
     }
+    _dirty = NO;
 
+}
+
+-(void)willTerminate: (NSNotification *)notification {
+    // if dirty, write data....
+
+    if (!_dirty) return;
+
+    [self saveFile];
     
 }
+
+
 
 
 -(BOOL)addFile: (NSObject *)pathOrURL {
@@ -120,7 +142,7 @@
         if ([path compare: s] == NSOrderedSame) {
             found = YES;
             [d setObject: [NSDate new] forKey: @"date"];
-            _dirty = YES; // ?
+            [self markDirty];
             break;
         }
     }
@@ -151,8 +173,7 @@
         else
             [_content addObject: d];
     }
-    
-    _dirty = YES;
+    [self markDirty];
     return YES;
 }
 
@@ -192,7 +213,7 @@
         } else {
             [_content removeObject: item];
         }
-        _dirty = YES;
+        [self markDirty];
     }
 
 }
@@ -215,31 +236,36 @@
 #endif
 
 
-- (BOOL)tableView:(NSTableView *)tableView writeRowsWithIndexes:(NSIndexSet *)rowIndexes toPasteboard:(NSPasteboard *)pboard {
-
-//    if ([rowIndexes count] > 1) return NO; // ?
-
+-(id<NSPasteboardWriting>)tableView:(NSTableView *)tableView pasteboardWriterForRow:(NSInteger)row {
+    
     id objects = [_arrayController arrangedObjects];
-    [pboard declareTypes: @[NSPasteboardTypeURL] owner: nil];
-    // NSURLPboardType deprecated
-    [rowIndexes enumerateIndexesUsingBlock: ^(NSUInteger index, BOOL *stop) {
-        
-        NSDictionary *d = [objects objectAtIndex: index];
-        NSString *path = [d objectForKey: @"path"];
+    
+    NSDictionary *d = [objects objectAtIndex: row];
+  
+    NSString *path = [d objectForKey: @"path"];
+    
+    NSURL *url = [NSURL fileURLWithPath: path];
+    return url;
+    
+#if 0
+    NSPasteboardItem *item = [NSPasteboardItem new];
+    [item setString: [url absoluteString] forType: NSPasteboardTypeFileURL]; // FileURL
+    [item setString: path forType: NSPasteboardTypeString]; // for Terminal.app
 
-        NSURL *url = [NSURL fileURLWithPath: path];
-        [url writeToPasteboard: pboard];
-    }];
-    // NSFilenamesPboardType -- old way of handling it ...
-
-    return YES;
+    return item;
+#endif
 }
 
+
+
 -(NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
+
+    if ([info draggingSource] == _tableView) return NSDragOperationNone;
 
     // option key will ignore all filetype restrictions.
     if ([NSEvent modifierFlags] & NSEventModifierFlagOption) return NSDragOperationCopy;
 
+    // this only checks the first dragged item...
     NSPasteboard * pb = [info draggingPasteboard];
     NSURL *url = [NSURL URLFromPasteboard: pb];
     
@@ -253,13 +279,22 @@
 
 -(BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
 
+    if ([info draggingSource] == _tableView) return NO;
 
     NSPasteboard * pb = [info draggingPasteboard];
-    NSURL *url = [NSURL URLFromPasteboard: pb];
-    if (!url) return NO;
     
-    return [self addFile: url];
-
+    BOOL ok = NO;
+    for (NSPasteboardItem *item in [pb pasteboardItems]) {
+        
+        // need to convert from a string to a url back to a file in case it's a file id url?
+        NSString *s = [item stringForType: NSPasteboardTypeFileURL];
+        if (!s) continue;
+        NSURL *url = [NSURL URLWithString: s];
+        if (!url) continue;
+        
+        ok |= [self addFile: url];
+    }
+    return ok;
 }
 
 @end
