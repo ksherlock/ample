@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DiskImagesWindowController : NSWindowController
+@interface DiskImagesWindowController : NSWindowController <NSWindowRestoration>
+
++(instancetype)sharedInstance;
 
 @end
 

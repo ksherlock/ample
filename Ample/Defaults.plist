@@ -10,5 +10,7 @@
 	<true/>
 	<key>MamePath</key>
 	<string>/usr/local/bin/mame</string>
+	<key>NSQuitAlwaysKeepsWindows</key>
+	<true/>
 </dict>
 </plist>

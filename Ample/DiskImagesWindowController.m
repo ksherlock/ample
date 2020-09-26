@@ -24,6 +24,21 @@
     
 }
 
++(instancetype)sharedInstance {
+    static DiskImagesWindowController *me;
+    if (!me) {
+        me = [self new];
+    }
+    return me;
+}
+
++ (void)restoreWindowWithIdentifier:(NSUserInterfaceItemIdentifier)identifier state:(NSCoder *)state completionHandler:(void (^)(NSWindow *, NSError *))completionHandler {
+    NSLog(@"restore disk images window");
+    NSWindowController *controller = [self sharedInstance];
+    NSWindow *w = [controller window];
+    [w restoreStateWithCoder: state];
+    completionHandler(w, nil);
+}
 
 -(instancetype)init {
     
@@ -48,6 +63,10 @@
         [self setContent: [NSMutableArray new]];
     
     [super windowDidLoad];
+    NSWindow *window = [self window];
+    [window setRestorable: YES];
+    [window setRestorationClass: [self class]];
+
     
     [_tableView registerForDraggedTypes: @[NSPasteboardTypeFileURL]];
     [_tableView setDraggingSourceOperationMask: NSDragOperationCopy forLocal: NO]; // enable drag/drop to othr apps.

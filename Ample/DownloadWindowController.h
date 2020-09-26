@@ -10,13 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DownloadWindowController : NSWindowController
+@interface DownloadWindowController : NSWindowController <NSWindowRestoration>
 
 @property NSString *currentROM;
 @property NSInteger currentCount;
 @property NSInteger totalCount;
 @property NSInteger errorCount;
 @property BOOL active;
+
++(instancetype)sharedInstance;
+
 
 @end
 

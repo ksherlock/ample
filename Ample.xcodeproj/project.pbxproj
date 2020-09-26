@@ -465,18 +465,14 @@
 		B6BA257D24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXGroup;
 			children = (
-				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
-				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
-				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
-				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
-				B63C1B9125008A2700511A71 /* DownloadWindowController.h */,
-				B63C1B9225008A2700511A71 /* DownloadWindowController.m */,
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
-				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
-				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
+				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
+				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
+				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
+				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
@@ -487,14 +483,9 @@
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B608E17D2502FE0C00D53465 /* TransparentScroller.h */,
 				B608E17E2502FE0C00D53465 /* TransparentScroller.m */,
-				B6004DED24FB05D600D38596 /* LogWindowController.h */,
-				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
-				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
-				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+				B6BA563A251685DA00B0C47D /* Window Controllers */,
 				B6B9EA652506A5550080E70D /* EjectButton.h */,
 				B6B9EA642506A5550080E70D /* EjectButton.m */,
-				B64AF1F0250ECB2E00A09B9B /* DiskImagesWindowController.h */,
-				B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */,
 				B64AF1F8250EF6A500A09B9B /* Transformers.h */,
 				B64AF1F9250EF6A500A09B9B /* Transformers.m */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
@@ -507,6 +498,23 @@
 				B6D6DE4224FAEE8900661A5F /* Nibs */,
 			);
 			path = Ample;
+			sourceTree = "<group>";
+		};
+		B6BA563A251685DA00B0C47D /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B64AF1F0250ECB2E00A09B9B /* DiskImagesWindowController.h */,
+				B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */,
+				B63C1B9125008A2700511A71 /* DownloadWindowController.h */,
+				B63C1B9225008A2700511A71 /* DownloadWindowController.m */,
+				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
+				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
+				B6004DED24FB05D600D38596 /* LogWindowController.h */,
+				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
+				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
+				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+			);
+			name = "Window Controllers";
 			sourceTree = "<group>";
 		};
 		B6D6DE4224FAEE8900661A5F /* Nibs */ = {

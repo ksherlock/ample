@@ -46,11 +46,12 @@
     
 
 
+    _diskImages = [DiskImagesWindowController sharedInstance]; //[DiskImagesWindowController new];
+
     if ([self installMameComponents]) {
+
         [self displayLaunchWindow];
     }
-
-    _diskImages = [DiskImagesWindowController new];
 
 }
 
@@ -119,6 +120,7 @@
             }
             [win close];
             [self displayLaunchWindow];
+            [self displayROMS: nil];
         });
         
     }];
@@ -152,15 +154,16 @@
 
 - (IBAction)displayROMS:(id)sender {
     if (!_downloader) {
-        _downloader = [DownloadWindowController new];
+        _downloader = [DownloadWindowController sharedInstance];
     }
     [_downloader showWindow: sender];
 }
 
 - (IBAction)displayRecentDiskImages:(id)sender {
     if (!_diskImages) {
-        _diskImages = [DiskImagesWindowController new];
+        _diskImages = [DiskImagesWindowController sharedInstance];
     }
     [_diskImages showWindow: sender];
 }
+
 @end
