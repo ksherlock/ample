@@ -54,6 +54,8 @@ m68705p3
 votrax
 zijini
 agat_fdc
+a2sider1
+a2sider2
 """.splitlines()
 #
 # others
