@@ -90,8 +90,11 @@
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B724FDA686006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
+		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
+		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B6841BDC251ECC17006A5C39 /* vmnet_helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6841BD0251EC913006A5C39 /* vmnet_helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -203,9 +206,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				B66236BC24FDA72E006CABD7 /* mame64 in CopyFiles */,
+				B6841BDC251ECC17006A5C39 /* vmnet_helper in CopyFiles */,
+				B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6841BCE251EC913006A5C39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		B6E4B5F324FDE2670094A35C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -304,10 +317,12 @@
 		B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		B66236B224FDA522006CABD7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = embedded/SDL2.framework; sourceTree = "<group>"; };
-		B66236B724FDA686006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B66236B824FDA698006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B66236C024FDB7A6006CABD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
+		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
+		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
 		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
 		B6B9EA652506A5550080E70D /* EjectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectButton.h; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +354,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6841BCD251EC913006A5C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6BA257824E99BE9005FB8FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,7 +450,7 @@
 		B66236B624FDA686006CABD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B66236B724FDA686006CABD7 /* mame64 */,
+				B6841BDD251ECC29006A5C39 /* vmnet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,11 +465,20 @@
 			name = "Embedded Content";
 			sourceTree = "<group>";
 		};
+		B6841BD1251EC913006A5C39 /* vmnet_helper */ = {
+			isa = PBXGroup;
+			children = (
+				B6841BCA251EC88E006A5C39 /* vmnet_helper.c */,
+			);
+			path = vmnet_helper;
+			sourceTree = "<group>";
+		};
 		B6BA257224E99BE9005FB8FF = {
 			isa = PBXGroup;
 			children = (
 				B6BA257D24E99BE9005FB8FF /* Ample */,
 				B66236BD24FDA7EA006CABD7 /* Embedded Content */,
+				B6841BD1251EC913006A5C39 /* vmnet_helper */,
 				B6BA257C24E99BE9005FB8FF /* Products */,
 				B649798C24EEC165008ABD20 /* Recovered References */,
 				B66236B624FDA686006CABD7 /* Frameworks */,
@@ -458,6 +490,7 @@
 			children = (
 				B6BA257B24E99BE9005FB8FF /* Ample.app */,
 				B6E4B5FA24FDE2670094A35C /* Ample Lite.app */,
+				B6841BD0251EC913006A5C39 /* vmnet_helper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -553,6 +586,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6841BCF251EC913006A5C39 /* vmnet_helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6841BD4251EC913006A5C39 /* Build configuration list for PBXNativeTarget "vmnet_helper" */;
+			buildPhases = (
+				B6841BCC251EC913006A5C39 /* Sources */,
+				B6841BCD251EC913006A5C39 /* Frameworks */,
+				B6841BCE251EC913006A5C39 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vmnet_helper;
+			productName = vmnet_helper;
+			productReference = B6841BD0251EC913006A5C39 /* vmnet_helper */;
+			productType = "com.apple.product-type.tool";
+		};
 		B6BA257A24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6BA258C24E99BEB005FB8FF /* Build configuration list for PBXNativeTarget "Ample" */;
@@ -599,6 +649,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Kelvin Sherlock";
 				TargetAttributes = {
+					B6841BCF251EC913006A5C39 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					B6BA257A24E99BE9005FB8FF = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -619,6 +672,7 @@
 			targets = (
 				B6BA257A24E99BE9005FB8FF /* Ample */,
 				B6E4B5AE24FDE2670094A35C /* Ample Lite */,
+				B6841BCF251EC913006A5C39 /* vmnet_helper */,
 			);
 		};
 /* End PBXProject section */
@@ -784,6 +838,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6841BCC251EC913006A5C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6BA257724E99BE9005FB8FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -899,6 +961,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6841BD5251EC913006A5C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6841BD6251EC913006A5C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B6BA258A24E99BEB005FB8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1083,6 +1161,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6841BD4251EC913006A5C39 /* Build configuration list for PBXNativeTarget "vmnet_helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6841BD5251EC913006A5C39 /* Debug */,
+				B6841BD6251EC913006A5C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6BA257624E99BE9005FB8FF /* Build configuration list for PBXProject "Ample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
