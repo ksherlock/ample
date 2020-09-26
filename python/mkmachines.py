@@ -19,7 +19,7 @@ DISABLED = set((
 	'vulcangold',
 	'vulcaniie',
 	'sider',
-	'xebec'
+	'xebec',
 	'sider1',
 	'sider2',
 ))

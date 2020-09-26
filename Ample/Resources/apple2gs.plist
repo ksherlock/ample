@@ -285,7 +285,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -298,7 +298,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -369,6 +369,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -711,7 +731,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -724,7 +744,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -795,6 +815,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1137,7 +1177,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -1150,7 +1190,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -1221,6 +1261,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1563,7 +1623,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -1576,7 +1636,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -1647,6 +1707,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1989,7 +2069,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2002,7 +2082,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2073,6 +2153,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2415,7 +2515,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2428,7 +2528,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2499,6 +2599,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2841,7 +2961,7 @@
         <key>value</key>
         <string>cffa202</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (6502 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2854,7 +2974,7 @@
         <key>value</key>
         <string>cffa2</string>
         <key>description</key>
-        <string>CFFA2000 Compact Flash (65C02 firmware, www.dreher.net)</string>
+        <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
         <key>media</key>
@@ -2925,6 +3045,26 @@
         <string>E-Z Color Graphics Interface (TMS9958)</string>
         <key>default</key>
         <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider1</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 1 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>sider2</string>
+        <key>description</key>
+        <string>First Class Peripherals Sider 2 SASI Card</string>
+        <key>default</key>
+        <false/>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
