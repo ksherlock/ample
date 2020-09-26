@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController">
             <connections>
+                <outlet property="fixButton" destination="kt8-xs-My0" id="GeF-Kj-q2l"/>
                 <outlet property="pathField" destination="Oz5-Xb-btk" id="EnV-kr-0XI"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="xJa-tx-X62"/>
             </connections>
@@ -33,8 +34,8 @@
                         </textFieldCell>
                         <connections>
                             <action selector="pathChanged:" target="-2" id="RRj-dC-q2y"/>
-                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="iex-A9-Db6"/>
                             <binding destination="yvB-HG-64y" name="value" keyPath="values.MamePath" id="H3O-1l-peo"/>
+                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="iex-A9-Db6"/>
                         </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-Ag-Xyr">
@@ -66,6 +67,17 @@
                         </buttonCell>
                         <connections>
                             <binding destination="yvB-HG-64y" name="value" keyPath="values.UseCustomMame" id="lH4-dm-kQC"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt8-xs-My0">
+                        <rect key="frame" x="287" y="13" width="179" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Fix VMNet Permissions" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ifc-ID-wbu">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="fixPerms:" target="-2" id="0e2-yf-UgY"/>
                         </connections>
                     </button>
                 </subviews>
