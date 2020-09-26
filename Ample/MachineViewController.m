@@ -24,7 +24,7 @@
     _data = [NSArray arrayWithContentsOfFile: path];
 
     
-    /* My Copy of XCode/Interface Builder barfs on NSBrowser. */
+    /* XCode/Interface Builder 11.3 barfs on NSBrowser. */
     
     NSBrowser *browser;
     NSRect frame = NSMakeRect(0, 0, 718, 200);
