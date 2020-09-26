@@ -10,6 +10,8 @@
 #import "LaunchWindowController.h"
 #import "PreferencesWindowController.h"
 #import "DownloadWindowController.h"
+#import "DiskImagesWindowController.h"
+#import "Transformers.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *installWindow;
@@ -20,6 +22,7 @@
     NSWindowController *_prefs;
     NSWindowController *_launcher;
     NSWindowController *_downloader;
+    NSWindowController *_diskImages;
 }
 
 
@@ -31,6 +34,8 @@
     NSDictionary *dict;
     
     
+    RegisterTransformers();
+    
     path = [bundle pathForResource: @"Defaults" ofType: @"plist"];
     dict = [NSDictionary dictionaryWithContentsOfFile: path];
     
@@ -41,7 +46,10 @@
     
 
 
+    _diskImages = [DiskImagesWindowController sharedInstance]; //[DiskImagesWindowController new];
+
     if ([self installMameComponents]) {
+
         [self displayLaunchWindow];
     }
 
@@ -112,6 +120,7 @@
             }
             [win close];
             [self displayLaunchWindow];
+            [self displayROMS: nil];
         });
         
     }];
@@ -143,12 +152,18 @@
 }
 
 
-- (IBAction)downloadROMS:(id)sender {
-    
+- (IBAction)displayROMS:(id)sender {
     if (!_downloader) {
-        _downloader = [DownloadWindowController new];
+        _downloader = [DownloadWindowController sharedInstance];
     }
     [_downloader showWindow: sender];
+}
+
+- (IBAction)displayRecentDiskImages:(id)sender {
+    if (!_diskImages) {
+        _diskImages = [DiskImagesWindowController sharedInstance];
+    }
+    [_diskImages showWindow: sender];
 }
 
 @end

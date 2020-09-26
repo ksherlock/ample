@@ -79,6 +79,14 @@
 		B63C1BA8250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B63C1BA9250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
+		B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
+		B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
+		B64AF1F2250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */; };
+		B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */; };
+		B64AF1F6250ED5E400A09B9B /* TableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F5250ED5E400A09B9B /* TableCellView.m */; };
+		B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F5250ED5E400A09B9B /* TableCellView.m */; };
+		B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
+		B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -282,6 +290,13 @@
 		B63C1BA7250192E600511A71 /* zijini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zijini.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		B64AF1ED250EC35B00A09B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiskImages.xib; sourceTree = "<group>"; };
+		B64AF1F0250ECB2E00A09B9B /* DiskImagesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiskImagesWindowController.h; sourceTree = "<group>"; };
+		B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiskImagesWindowController.m; sourceTree = "<group>"; };
+		B64AF1F4250ED5E400A09B9B /* TableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellView.h; sourceTree = "<group>"; };
+		B64AF1F5250ED5E400A09B9B /* TableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellView.m; sourceTree = "<group>"; };
+		B64AF1F8250EF6A500A09B9B /* Transformers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transformers.h; sourceTree = "<group>"; };
+		B64AF1F9250EF6A500A09B9B /* Transformers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transformers.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
 		B64E15A824EA1D5300E8AD3D /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
@@ -450,16 +465,14 @@
 		B6BA257D24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXGroup;
 			children = (
-				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
-				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
-				B63C1B9125008A2700511A71 /* DownloadWindowController.h */,
-				B63C1B9225008A2700511A71 /* DownloadWindowController.m */,
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
-				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
-				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
+				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
+				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
+				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
+				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
@@ -470,12 +483,11 @@
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B608E17D2502FE0C00D53465 /* TransparentScroller.h */,
 				B608E17E2502FE0C00D53465 /* TransparentScroller.m */,
-				B6004DED24FB05D600D38596 /* LogWindowController.h */,
-				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
-				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
-				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+				B6BA563A251685DA00B0C47D /* Window Controllers */,
 				B6B9EA652506A5550080E70D /* EjectButton.h */,
 				B6B9EA642506A5550080E70D /* EjectButton.m */,
+				B64AF1F8250EF6A500A09B9B /* Transformers.h */,
+				B64AF1F9250EF6A500A09B9B /* Transformers.m */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -486,6 +498,23 @@
 				B6D6DE4224FAEE8900661A5F /* Nibs */,
 			);
 			path = Ample;
+			sourceTree = "<group>";
+		};
+		B6BA563A251685DA00B0C47D /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B64AF1F0250ECB2E00A09B9B /* DiskImagesWindowController.h */,
+				B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */,
+				B63C1B9125008A2700511A71 /* DownloadWindowController.h */,
+				B63C1B9225008A2700511A71 /* DownloadWindowController.m */,
+				B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */,
+				B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */,
+				B6004DED24FB05D600D38596 /* LogWindowController.h */,
+				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
+				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
+				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+			);
+			name = "Window Controllers";
 			sourceTree = "<group>";
 		};
 		B6D6DE4224FAEE8900661A5F /* Nibs */ = {
@@ -500,6 +529,7 @@
 				B61099E524F5F230005CB652 /* MediaView.xib */,
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
+				B64AF1EC250EC35B00A09B9B /* DiskImages.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -648,6 +678,7 @@
 				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
+				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
@@ -691,6 +722,7 @@
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
 				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
 				B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */,
+				B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
@@ -768,7 +800,10 @@
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */,
+				B64AF1F2250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
+				B64AF1F6250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */,
+				B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,12 +812,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */,
+				B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
+				B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
 				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
+				B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */,
 				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
 				B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */,
@@ -808,6 +846,14 @@
 				B61099E624F5F230005CB652 /* Base */,
 			);
 			name = MediaView.xib;
+			sourceTree = "<group>";
+		};
+		B64AF1EC250EC35B00A09B9B /* DiskImages.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64AF1ED250EC35B00A09B9B /* Base */,
+			);
+			name = DiskImages.xib;
 			sourceTree = "<group>";
 		};
 		B66236BF24FDB7A6006CABD7 /* Credits.rtf */ = {

@@ -402,7 +402,13 @@
                             <menuItem title="Manage ROMs…" id="St3-qR-2Y8">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="downloadROMS:" target="Voe-Tx-rLC" id="jFm-nv-kRC"/>
+                                    <action selector="displayROMS:" target="Voe-Tx-rLC" id="jFm-nv-kRC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Recent Disk Images…" id="QY9-lF-kDy">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="displayRecentDiskImages:" target="Voe-Tx-rLC" id="9W1-nJ-8eJ"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>

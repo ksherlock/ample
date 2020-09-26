@@ -7,42 +7,7 @@
 //
 
 #import "MediaViewController.h"
-
-
-@implementation TablePathView {
-    NSTrackingRectTag _trackingRect;
-}
-
-#if 0
--(void)awakeFromNib {
-    
-    // this is apparently necessary for setTintColor to work.
-    NSImage *img;
-    img = [_ejectButton image];
-    [img setTemplate: YES];
-    img = [_ejectButton alternateImage];
-    [img setTemplate: YES];
-}
-#endif
-
--(void)viewDidMoveToSuperview {
-    return;
-    if (_trackingRect) {
-        [self removeTrackingRect: _trackingRect];
-    }
-    NSRect rect = [_dragHandle frame];
-    _trackingRect = [self addTrackingRect: rect owner: self userData: NULL assumeInside:NO];
-}
-
--(void)mouseEntered:(NSEvent *)event {
-    [_dragHandle setHidden: NO];
-}
-
--(void)mouseExited:(NSEvent *)event {
-    [_dragHandle setHidden: YES];
-}
-
-@end
+#import "TableCellView.h"
 
 
 @protocol MediaNode
@@ -286,7 +251,7 @@
     b = [[MediaCategory alloc] initWithTitle: @"3.5\" Floppies"];
     c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
     d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
-    e = [[MediaCategory alloc] initWithTitle: @"Casettes"];
+    e = [[MediaCategory alloc] initWithTitle: @"Cassettes"];
 
     
     _data[0] = a;
@@ -526,7 +491,7 @@ static NSString *kDragType = @"private.ample.media";
     NSInteger indexes[2] =  { 0, 0 };
     indexes[0] = [cat index];
     indexes[1] = [item index];
-    NSData *data =[NSData dataWithBytes: indexes length: sizeof(indexes)];
+    NSData *data = [NSData dataWithBytes: indexes length: sizeof(indexes)];
 
     [pasteboard setData: data forType: kDragType];
     return YES;
@@ -646,6 +611,14 @@ static NSString *kDragType = @"private.ample.media";
 
 - (IBAction)pathAction:(id)sender {
     // need to update the eject button...
+    
+    NSURL *url = [(NSPathControl *)sender URL];
+    
+    if (url) {
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc postNotificationName: @"DiskImageAdded" object: url];
+    }
+    
     [self rebuildArgs];
 }
 @end

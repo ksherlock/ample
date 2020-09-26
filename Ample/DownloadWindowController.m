@@ -52,12 +52,38 @@ enum {
     NSMutableDictionary *_taskIndex;
 }
 
++(instancetype)sharedInstance {
+    static DownloadWindowController *me = nil;
+    if (!me) {
+        me = [self new];
+    }
+    return me;
+}
+
++ (void)restoreWindowWithIdentifier:(nonnull NSUserInterfaceItemIdentifier)identifier state:(nonnull NSCoder *)state completionHandler:(nonnull void (^)(NSWindow * _Nullable, NSError * _Nullable))completionHandler {
+    NSLog(@"restore rom manager window");
+
+    NSWindowController *controller = [DownloadWindowController sharedInstance];
+    NSWindow *w = [controller window];
+    [w restoreStateWithCoder: state];
+    completionHandler(w, nil);
+}
+
+#if 0
+- (void)encodeWithCoder:(nonnull NSCoder *)coder {
+    
+}
+#endif
+
 -(NSString *)windowNibName {
     return @"DownloadWindow";
 }
 
 - (void)windowDidLoad {
     [super windowDidLoad];
+    NSWindow *window = [self window];
+    [window setRestorable: YES];
+    [window setRestorationClass: [self class]];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
@@ -303,6 +329,7 @@ enum {
     */
     NSLog(@"%@", src);
 }
+
 @end
 
 @implementation DownloadWindowController (Table)
