@@ -13,11 +13,12 @@ void RegisterTransformers(void);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FilePathTransformer : NSValueTransformer
-
 @end
 
 @interface FileSizeTransformer : NSValueTransformer
+@end
 
+@interface ValidColorTransformer : NSValueTransformer
 @end
 
 

@@ -163,7 +163,7 @@
         [item setIndex: ix];
         [item setValid: ix < _validCount];
         
-        [view reloadItem: item];
+//        [view reloadItem: item];
         
         ++ix;
     }
@@ -201,21 +201,33 @@
 }
 
 -(void)prepareView: (TablePathView *)view {
+    
+    NSValueTransformer *t;
+    NSDictionary *options;
+    
     NSPathControl *pc = [view pathControl];
     NSButton *button = [view ejectButton];
 
     [pc unbind: @"value"];
+    [pc unbind: @"enabled"];
     [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
+    [pc bind: @"enabled" toObject: self withKeyPath: @"valid" options: options];
     
     [button unbind: @"enabled"];
-    NSValueTransformer *t = [NSValueTransformer valueTransformerForName: NSIsNotNilTransformerName];
-    NSDictionary *options = @{ NSValueTransformerBindingOption: t};
+    [button unbind: @"contentTintColor"];
+    t = [NSValueTransformer valueTransformerForName: NSIsNotNilTransformerName];
+    options = @{ NSValueTransformerBindingOption: t};
     [button bind: @"enabled" toObject: self withKeyPath: @"url" options: options];
     
-        
+    t = [NSValueTransformer valueTransformerForName: @"ValidColorTransformer"];
+    options = @{ NSValueTransformerBindingOption: t};
+    [button bind: @"contentTintColor" toObject: self withKeyPath: @"valid" options: options];
+   
+#if 0
     NSColor *tintColor = nil;
     if (!_valid) tintColor = [NSColor redColor];
     [button setContentTintColor: tintColor];
+#endif
 }
 
 -(CGFloat)height {
@@ -223,7 +235,8 @@
 }
 
 -(void)invalidate {
-    _valid = NO;
+    if (!_valid) return;
+    [self setValid: NO];
 }
 @end
 
@@ -391,6 +404,7 @@ static NSString *kDragType = @"private.ample.media";
     if (!ident) return nil;
     NSTableCellView *v = [outlineView makeViewWithIdentifier: ident owner: self];
     [(id<MediaNode>)item prepareView: v];
+    [v setObjectValue: item];
     return v;
 }
 

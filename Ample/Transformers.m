@@ -8,6 +8,8 @@
 
 #import "Transformers.h"
 
+#import <AppKit/NSColor.h>
+
 @implementation FilePathTransformer
 
 + (Class)transformedValueClass {
@@ -55,6 +57,22 @@
 @end
 
 
+@implementation ValidColorTransformer
++ (BOOL)allowsReverseTransformation {
+    return NO;
+}
++ (Class)transformedValueClass {
+    return [NSColor class];
+}
+
+- (id)transformedValue:(id)value {
+    BOOL valid = [(NSNumber *)value boolValue];
+    return valid ? nil : [NSColor redColor];
+}
+
+@end
+
+
 
 void RegisterTransformers(void) {
     
@@ -65,4 +83,6 @@ void RegisterTransformers(void) {
     t = [FilePathTransformer new];
     [NSValueTransformer setValueTransformer: t forName: @"FilePathTransformer"];
 
+    t = [ValidColorTransformer new];
+    [NSValueTransformer setValueTransformer: t forName: @"ValidColorTransformer"];
 }
