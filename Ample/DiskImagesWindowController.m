@@ -47,7 +47,7 @@
         [self loadRecentDiskImages];
         
         _extensions = [NSSet setWithObjects:
-            @"2img", @"2mg", @"chd", @"dc", @"do", @"dsk", @"hd", @"hdv", @"image", @"nib", @"po", @"wav", @"woz", @"iso", nil
+            @"2img", @"2mg", @"chd", @"dc", @"do", @"dsk", @"hd", @"hdv", @"image", @"nib", @"po", @"wav", @"woz", @"iso", @"raw", nil
         ];
     }
     return self;
