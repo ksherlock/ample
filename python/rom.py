@@ -54,9 +54,12 @@ m68705p3
 votrax
 zijini
 agat_fdc
-a2sider1
-a2sider2
+
+qsound
+ym2608
 """.splitlines()
+# a2sider1 -- needs .225 rom set
+# a2sider2
 #
 # others
 # mprof3
@@ -65,7 +68,7 @@ a2sider2
 # prav8c
 #
 
-ROMS.remove("")
+ROMS = [x for x in ROMS if x != ""]
 ROMS.sort()
 
 data = {}
