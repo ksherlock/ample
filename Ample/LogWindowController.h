@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LogWindowController : NSWindowController <NSWindowDelegate>
 
 +(id)controllerForTask: (NSTask *)task;
-
++(id)controllerForArgs: (NSArray *)args;
 @end
 
 NS_ASSUME_NONNULL_END

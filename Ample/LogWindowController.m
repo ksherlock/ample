@@ -36,6 +36,50 @@ static NSMutableSet *LogWindows;
     return controller;
 }
 
+static NSURL *MameURL(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSBundle *bundle = [NSBundle mainBundle];
+        
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMamePath];
+        if (![path length]) return [NSURL fileURLWithPath: path];
+    }
+    
+    return [bundle URLForAuxiliaryExecutable: @"mame64"];
+
+    return nil;
+}
+
++(id)controllerForArgs: (NSArray *)args {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    NSURL *url = MameURL();
+
+    if (!url) {
+        NSAlert *alert = [NSAlert new];
+
+        [alert setMessageText: @"Unable to find MAME executable path"];
+        [alert runModal];
+        return nil;
+    }
+    
+
+    NSTask *task = [NSTask new];
+    [task setExecutableURL: url];
+    [task setArguments: args];
+
+    if (![defaults boolForKey: kUseCustomMame]) {
+        // run in Application Support/Ample.
+        [task setCurrentDirectoryURL: SupportDirectory()];
+    }
+    
+    return [LogWindowController controllerForTask: task];
+
+    
+}
+
 - (void)windowDidLoad {
     [super windowDidLoad];
     

@@ -13,6 +13,8 @@
 #import "DiskImagesWindowController.h"
 #import "Transformers.h"
 
+#import "LogWindowController.h"
+
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *installWindow;
 
@@ -139,6 +141,18 @@
 }
 
 
+-(BOOL)application:(NSApplication *)sender openFile:(NSString *)filename {
+    
+    NSString *ext = [[filename pathExtension] lowercaseString];
+    
+    if ([ext isEqualToString: @"vgm"] || [ext isEqualToString: @"vgz"]) {
+        // run mame...
+        NSArray *args = @[ @"vgmplay", @"-window", @"-nomax", @"-quik", filename ];
+        
+        [LogWindowController controllerForArgs: args];
+    }
+    return NO;
+}
 
 
 #pragma mark - IBActions
