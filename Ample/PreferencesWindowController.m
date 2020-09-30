@@ -144,12 +144,23 @@
                                                              kAuthorizationEmptyEnvironment, myFlags, NULL);
 
     if (!myStatus) {
+        FILE *fp = NULL;
+        static char buffer[4096];
         const char *cp = [path fileSystemRepresentation];
         const char* args_chown[] = {"root", cp , NULL};
         const char* args_chmod[] = {"+s", cp, NULL};
-        myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/sbin/chown", kAuthorizationFlagDefaults, (char**)args_chown, NULL);
-        myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/bin/chmod", kAuthorizationFlagDefaults, (char**)args_chmod, NULL);
         
+        // well ... the second command executes a lot more consistently when the (optional) fp is provided and the we fgets the buffer.  
+        myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/sbin/chown", kAuthorizationFlagDefaults, (char**)args_chown, &fp);
+        fgets(buffer, sizeof(buffer), fp);
+        fclose(fp);
+//        fprintf(stderr, "myStatus = %d\ndata: %s\n", myStatus, buffer);
+
+        myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/bin/chmod", kAuthorizationFlagDefaults, (char**)args_chmod, &fp);
+        fgets(buffer, sizeof(buffer), fp);
+        fclose(fp);
+//        fprintf(stderr, "myStatus = %d\ndata: %s\n", myStatus, buffer);
+
     }
     AuthorizationFree(myAuthorizationRef, kAuthorizationFlagDestroyRights);
     
