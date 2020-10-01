@@ -93,7 +93,6 @@
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B6841BDC251ECC17006A5C39 /* vmnet_helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6841BD0251EC913006A5C39 /* vmnet_helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
@@ -123,6 +122,7 @@
 		B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */; };
 		B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
 		B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
+		B6E08076252574690075F4E1 /* vmnet_helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6841BD0251EC913006A5C39 /* vmnet_helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6E4B5B024FDE2670094A35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
 		B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
 		B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
@@ -206,8 +206,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				B6841BDC251ECC17006A5C39 /* vmnet_helper in CopyFiles */,
 				B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */,
+				B6E08076252574690075F4E1 /* vmnet_helper in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -965,6 +965,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -973,6 +974,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

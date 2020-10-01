@@ -6,6 +6,8 @@
 	<dict>
 		<key>Ample Lite.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
@@ -26,8 +28,28 @@
 		</dict>
 		<key>vmnet_helper.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B6841BCF251EC913006A5C39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6BA257A24E99BE9005FB8FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6E4B5AE24FDE2670094A35C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
