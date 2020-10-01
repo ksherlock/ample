@@ -47,13 +47,25 @@ static NSURL *MameURL(void) {
     }
     
     return [bundle URLForAuxiliaryExecutable: @"mame64"];
-
-    return nil;
 }
+
+static NSURL *MameWorkingDirectory(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMameWorkingDirectory];
+        if (![path length]) return [NSURL fileURLWithPath: path];
+    }
+    
+    return SupportDirectory();
+}
+
+
 
 +(id)controllerForArgs: (NSArray *)args {
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
     NSURL *url = MameURL();
 
@@ -65,19 +77,12 @@ static NSURL *MameURL(void) {
         return nil;
     }
     
-
     NSTask *task = [NSTask new];
     [task setExecutableURL: url];
     [task setArguments: args];
-
-    if (![defaults boolForKey: kUseCustomMame]) {
-        // run in Application Support/Ample.
-        [task setCurrentDirectoryURL: SupportDirectory()];
-    }
+    [task setCurrentDirectoryURL: MameWorkingDirectory()];
     
     return [LogWindowController controllerForTask: task];
-
-    
 }
 
 - (void)windowDidLoad {
@@ -103,25 +108,33 @@ static NSURL *MameURL(void) {
 
     NSError *error = nil;
     NSPipe *pipe = [NSPipe pipe];
-
+    
+    // window not yet loaded until [self window] called.
+    const char *path = [[task executableURL] fileSystemRepresentation];
+//    if (cp) [self appendString: [NSString stringWithFormat: @"MAME path: %s", cp]];
+    const char *wd = [[task currentDirectoryURL] fileSystemRepresentation];
+//    if (cp) [self appendString: [NSString stringWithFormat: @"Working Directory: %s", cp]];
+    
     [task setStandardError: pipe];
     [task setStandardOutput: pipe];
     [task launchAndReturnError: &error];
     
 
     if (error) {
-        NSURL *url = [task executableURL];
-        NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
-        NSLog(@"NSTask error. Path = %@ error = %@", path, error);
-        [self appendString: path];
-        [self appendString: [error description]];
+//        NSURL *url = [task executableURL];
+//        NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+        NSLog(@"NSTask error. Path = %s error = %@", path, error);
+//        [self appendString: path];
+//        [self appendString: [error description]];
         return error;
     }
     _task = task;
     NSString *title = [NSString stringWithFormat: @"Ample Log - %u", [task processIdentifier]];
     [[self window] setTitle: title];
     _handle = [pipe fileHandleForReading];
-    
+
+    if (path) [self appendString: [NSString stringWithFormat: @"MAME path: %s\n", path]];
+    if (wd) [self appendString: [NSString stringWithFormat: @"Working Directory: %s\n", wd]];
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 

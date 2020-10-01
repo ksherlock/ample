@@ -37,5 +37,6 @@ NSString *SupportDirectoryPath(void) {
 
 NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
+NSString *kMameWorkingDirectory = @"MameWorkingDirectory";
 NSString *kAutoCloseLogWindow = @"AutoCloseLogWindow";
 NSString *kMameComponentsDate = @"MameComponentsDate";

@@ -17,6 +17,7 @@ NSString *SupportDirectoryPath(void);
 /* NSUserDefaults keys */
 extern NSString *kUseCustomMame;
 extern NSString *kMamePath;
+extern NSString *kMameWorkingDirectory;
 extern NSString *kAutoCloseLogWindow;
 extern NSString *kMameComponentsDate;
 

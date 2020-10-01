@@ -374,6 +374,9 @@ static NSString * JoinArguments(NSArray *argv) {
 
     if (![_args count]) return;
 
+    [LogWindowController controllerForArgs: _args];
+
+#if 0
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSURL *url = MameURL();
     
@@ -395,6 +398,7 @@ static NSString * JoinArguments(NSArray *argv) {
     }
     
     [LogWindowController controllerForTask: task];
+#endif
 }
 
 

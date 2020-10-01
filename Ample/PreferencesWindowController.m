@@ -14,6 +14,7 @@
 
 @interface PreferencesWindowController ()
 @property (weak) IBOutlet NSTextField *pathField;
+@property (weak) IBOutlet NSTextField *wdField;
 @property (weak) IBOutlet NSButton *fixButton;
 
 @end
@@ -31,7 +32,8 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     
     [self validateMamePath: [defaults stringForKey: kMamePath]];
-    
+    [self validateMameWD: [defaults stringForKey: kMameWorkingDirectory]];
+
     /* check vmnet_helper permissions */
     
     int needs_fixin = [self checkHelperPermissions: nil];
@@ -48,12 +50,35 @@
     }
 }
 
+-(void)validateMameWD: (NSString *)path {
+    NSFileManager * fm = [NSFileManager defaultManager];
+    BOOL directory = YES;
+    
+    if ([path length] == 0) {
+        [_wdField setTextColor: [NSColor blackColor]];
+        return;
+    }
+    
+    if ([fm fileExistsAtPath: path isDirectory: &directory] && directory) {
+        [_wdField setTextColor: [NSColor blackColor]];
+        return;
+
+    }
+    [_wdField setTextColor: [NSColor redColor]];
+}
+
 - (IBAction)pathChanged:(id)sender {
 
     NSString *path = [sender stringValue];
     
     [self validateMamePath: path];
 
+}
+- (IBAction)wdChanged:(id)sender {
+
+    NSString *path = [sender stringValue];
+    
+    [self validateMameWD: path];
 }
 
 // -1 - error
@@ -150,7 +175,7 @@
         const char* args_chown[] = {"root", cp , NULL};
         const char* args_chmod[] = {"+s", cp, NULL};
         
-        // well ... the second command executes a lot more consistently when the (optional) fp is provided and the we fgets the buffer.  
+        // well ... the second command executes a lot more consistently when the (optional) fp is provided and the we fgets the buffer.
         myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/sbin/chown", kAuthorizationFlagDefaults, (char**)args_chown, &fp);
         fgets(buffer, sizeof(buffer), fp);
         fclose(fp);
