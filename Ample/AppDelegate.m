@@ -147,7 +147,7 @@
     
     if ([ext isEqualToString: @"vgm"] || [ext isEqualToString: @"vgz"]) {
         // run mame...
-        NSArray *args = @[ @"vgmplay", @"-window", @"-nomax", @"-quik", filename ];
+        NSArray *args = @[ @"vgmplay", @"-window", @"-nomax", @"-skip_gameinfo", @"-quik", filename ];
         
         [LogWindowController controllerForArgs: args];
     }
