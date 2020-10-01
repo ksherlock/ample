@@ -108,7 +108,7 @@ enum {
     [self setCurrentCount: 0];
     [self setTotalCount: [roms count]];
     [self setErrorCount: 0];
-    _sourceURL = [NSURL URLWithString: @"https://archive.org/download/mame0224_rom"]; // hardcoded....
+    _sourceURL = [NSURL URLWithString: @"https://archive.org/download/mame225_rom"]; // hardcoded....
     
     
     NSMutableArray *tmp = [NSMutableArray arrayWithCapacity: [roms count]];
@@ -278,15 +278,17 @@ enum {
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
 
 
+    if (error) NSLog(@"Download error: %@", error);
+
     // not sure if strictly necessary but this happens in a background thread
     // and these are used in KVO binding.  Also, main thread only
     // means no race conditions.
     dispatch_async(dispatch_get_main_queue(), ^(void){
-        if (error)
+        if (error) {
             [self setErrorCount: self->_errorCount + 1];
-        else
+        } else {
             [self setCurrentCount: self->_currentCount + 1];
-        
+        }
         NSMutableDictionary *taskIndex = self->_taskIndex;
         DownloadItem *item = [taskIndex objectForKey: task];
         [taskIndex removeObjectForKey: task];
@@ -307,7 +309,7 @@ enum {
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(nonnull NSURLSessionDownloadTask *)task didFinishDownloadingToURL:(nonnull NSURL *)location {
 
-
+//    NSLog(@"%@", task);
     // need to move to the destination directory...
     // file deleted after this function returns, so can't move asynchronously.
     NSFileManager *fm = [NSFileManager defaultManager];
