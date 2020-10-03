@@ -7,23 +7,8 @@
 //
 
 #import "NewSlotViewController.h"
+#import "Menu.h"
 
-static NSFont *ItalicMenuFont(void) {
-    NSFont *font = [NSFont menuFontOfSize: 0];
-    NSFontDescriptor *fd = [font fontDescriptor];
-    NSFontDescriptor *fd2 = [fd fontDescriptorWithSymbolicTraits: NSFontDescriptorTraitItalic];
-    return [NSFont fontWithDescriptor: fd2 size: [font pointSize]];
-}
-
-static NSAttributedString *ItalicMenuString(NSString *s) {
-    static NSDictionary *attr = nil;
-    if (!attr) {
-        attr = @{
-            NSFontAttributeName: ItalicMenuFont()
-        };
-    }
-    return [[NSAttributedString alloc] initWithString: s attributes: attr];
-}
 
 @implementation SlotTableCellView
 

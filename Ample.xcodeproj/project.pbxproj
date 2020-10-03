@@ -94,6 +94,8 @@
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
+		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
+		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -323,6 +325,8 @@
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
+		B6A1A1932528EB1700DB0FD7 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		B6A1A1962528EB4600DB0FD7 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
 		B6B9EA652506A5550080E70D /* EjectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectButton.h; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -506,6 +510,8 @@
 				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
 				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
 				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
+				B6A1A1932528EB1700DB0FD7 /* Menu.m */,
+				B6A1A1962528EB4600DB0FD7 /* Menu.h */,
 				B65593B024ECB61800722E0C /* SlotViewController.m */,
 				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
@@ -852,6 +858,7 @@
 			files = (
 				B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6E9A18025088B1B005E7525 /* NewSlotViewController.m in Sources */,
+				B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */,
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
 				B6B9EA662506A5550080E70D /* EjectButton.m in Sources */,
@@ -879,6 +886,7 @@
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
 				B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
+				B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
 				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
