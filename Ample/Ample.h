@@ -21,4 +21,10 @@ extern NSString *kMameWorkingDirectory;
 extern NSString *kAutoCloseLogWindow;
 extern NSString *kMameComponentsDate;
 
+extern NSString *kDownloadURL;
+extern NSString *kDownloadExtension;
+
+extern NSString *kDefaultDownloadURL;
+extern NSString *kDefaultDownloadExtension;
+
 #endif /* Ample_h */

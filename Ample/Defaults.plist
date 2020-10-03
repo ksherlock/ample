@@ -10,7 +10,13 @@
 	<true/>
 	<key>MamePath</key>
 	<string>/usr/local/bin/mame</string>
+	<key>MameWorkingDirectory</key>
+	<string>/usr/local/share/mame/</string>
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
+	<key>DefaultDownloadURL</key>
+	<string>https://archive.org/download/mame225_rom</string>
+	<key>DefaultDownloadExtension</key>
+	<string>7z</string>
 </dict>
 </plist>

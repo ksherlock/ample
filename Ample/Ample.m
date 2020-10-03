@@ -40,3 +40,8 @@ NSString *kMamePath = @"MamePath";
 NSString *kMameWorkingDirectory = @"MameWorkingDirectory";
 NSString *kAutoCloseLogWindow = @"AutoCloseLogWindow";
 NSString *kMameComponentsDate = @"MameComponentsDate";
+NSString *kDefaultDownloadURL = @"DefaultDownloadURL";
+NSString *kDefaultDownloadExtension = @"DefaultDownloadExtension";
+
+NSString *kDownloadURL = @"DownloadURL";
+NSString *kDownloadExtension = @"DownloadExtension";

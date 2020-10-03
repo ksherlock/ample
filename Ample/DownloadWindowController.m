@@ -8,6 +8,67 @@
 
 #import "Ample.h"
 #import "DownloadWindowController.h"
+#import "Menu.h"
+
+
+enum {
+    kTagZip = 1,
+    kTag7z = 2,
+};
+
+@interface DownloadExtensionTransformer: NSValueTransformer
+@end
+
+@implementation DownloadExtensionTransformer
+
++(void)load {
+    [NSValueTransformer setValueTransformer: [DownloadExtensionTransformer new] forName: @"FormatTransformer"];
+
+}
+
++ (Class)transformedValueClass {
+    return [NSString class];
+}
+
++ (BOOL)allowsReverseTransformation {
+    return YES;
+}
+
+-(id)transformedValue:(id)value {
+    // string to number.
+    if ([@"zip" isEqualToString: value])
+        return @(kTagZip);
+    if ([@"7z" isEqualToString: value])
+        return @(kTag7z);
+    return @0;
+}
+
+-(id)reverseTransformedValue:(id)value {
+    // number back to string.
+    switch ([value intValue]) {
+        case kTagZip: return @"zip";
+        case kTag7z: return @"7z";
+        default: return @"";
+    }
+}
+
++(unsigned)stringToNumber: (NSString *)string {
+    if ([@"zip" isEqualToString: string])
+        return kTagZip;
+    if ([@"7z" isEqualToString: string])
+        return kTag7z;
+    return 0;
+}
+
++(NSString *)numberToString: (unsigned)number {
+    switch (number) {
+        case kTagZip: return @"zip";
+        case kTag7z: return @"7z";
+        default: return @"";
+    }
+}
+
+@end
 
 enum {
     ItemMissing = 0,
@@ -40,6 +101,9 @@ enum {
 
 @interface DownloadWindowController ()
 @property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSPopUpButton *formatButton;
+@property (weak) IBOutlet NSTextField *downloadField;
+@property NSString *downloadExtension;
 
 @end
 
@@ -47,9 +111,12 @@ enum {
     
     NSArray *_items;
     NSURL *_romFolder;
-    NSURL *_sourceURL;
+    NSURL *_defaultDownloadURL;
+    NSURL *_downloadURL;
+
     NSURLSession *_session;
     NSMutableDictionary *_taskIndex;
+    NSUserDefaults *_defaults;
 }
 
 +(instancetype)sharedInstance {
@@ -69,6 +136,7 @@ enum {
     completionHandler(w, nil);
 }
 
+
 #if 0
 - (void)encodeWithCoder:(nonnull NSCoder *)coder {
     
@@ -79,11 +147,24 @@ enum {
     return @"DownloadWindow";
 }
 
+-(void)windowWillLoad {
+    _defaults = [NSUserDefaults standardUserDefaults];
+    
+    // set here so binding works.
+    NSString *s = [_defaults stringForKey: kDownloadExtension];
+    if (![s length]) s = [_defaults stringForKey: kDefaultDownloadExtension];
+    
+    _downloadExtension = s;
+}
+
 - (void)windowDidLoad {
     [super windowDidLoad];
+#if 0
     NSWindow *window = [self window];
+    // disabled for now ... restoration happens before defaults are loaded.
     [window setRestorable: YES];
     [window setRestorationClass: [self class]];
+#endif
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
@@ -102,15 +183,29 @@ enum {
     
     [fm createDirectoryAtURL: _romFolder withIntermediateDirectories: YES attributes: nil error: &error];
 
+    // so blank URL isn't overwritten.
+    NSString *s = [_defaults stringForKey: kDefaultDownloadURL];
+    _defaultDownloadURL = [NSURL URLWithString: s];
+    [_downloadField setPlaceholderString: s];
+    
+    s = [_defaults stringForKey: kDownloadURL];
+    if ([s length]) {
+        [_downloadField setStringValue: s];
+        _downloadURL = [NSURL URLWithString: s];
+    } else {
+        _downloadURL = _defaultDownloadURL;
+    }
+    
+    [self initializeExtensionMenu];
+    
 
     NSArray *roms = [d objectForKey: @"roms"];
     [self setCurrentROM: @""];
     [self setCurrentCount: 0];
     [self setTotalCount: [roms count]];
     [self setErrorCount: 0];
-    _sourceURL = [NSURL URLWithString: @"https://archive.org/download/mame225_rom"]; // hardcoded....
     
-    
+
     NSMutableArray *tmp = [NSMutableArray arrayWithCapacity: [roms count]];
     unsigned ix = 0;
     for (NSString *name in roms) {
@@ -147,6 +242,27 @@ enum {
     //[self download];
 }
 
+#if 0
+-(void)validateURL: (NSString *)url {
+    NSURL *v;
+    
+    if (![url length]) {
+        _effectiveURL = [NSURL URLWithString: _downloadURL];
+        [_downloadField setTextColor: nil];
+        return;
+    }
+    
+    v = [NSURL URLWithString: url];
+    if (v) {
+        _effectiveURL = v;
+        [_downloadField setTextColor: nil];
+    } else {
+        _effectiveURL = [NSURL URLWithString: _downloadURL];
+        [_downloadField setTextColor: [NSColor redColor]];
+    }
+}
+#endif
+
 -(void)downloadItem: (DownloadItem *)item {
 
     if (!_session) {
@@ -156,8 +272,8 @@ enum {
     
     NSURLSessionDownloadTask *task;
     NSString *s = [item name];
-    NSString *path = [s stringByAppendingString: @".7z"]; // hardcoded.
-    NSURL *url = [_sourceURL URLByAppendingPathComponent: path];
+    NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
+    NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
     
     task = [_session downloadTaskWithURL: url];
     
@@ -170,16 +286,15 @@ enum {
 
 -(void)download {
     
-
-
     // run in thread?
     //unsigned count = 0;
+
     for (DownloadItem *item in _items) {
             
         NSURLSessionDownloadTask *task;
         NSString *s = [item name];
-        NSString *path = [s stringByAppendingString: @".7z"]; // hardcoded.
-        NSURL *url = [_sourceURL URLByAppendingPathComponent: path];
+        NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
+        NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
         
         task = [_session downloadTaskWithURL: url];
         [_taskIndex setObject: item forKey: task];
@@ -210,6 +325,31 @@ enum {
     
     [_tableView reloadDataForRowIndexes: rIx columnIndexes: cIx];
 }
+
+
+-(void)initializeExtensionMenu {
+    
+    unsigned tag;
+    // mark default download extension.
+    NSString *defaultExt = [_defaults stringForKey: kDefaultDownloadExtension];
+    tag = [DownloadExtensionTransformer stringToNumber: defaultExt];
+    
+    NSMenuItem *item = [[_formatButton menu] itemWithTag: tag];
+    if (item) {
+        [item setAttributedTitle: ItalicMenuString([item title])];
+    }
+
+#if 0
+    // handled via binding.
+    NSString *ext = [_defaults stringForKey: kDownloadExtension];
+    if ([ext length]) {
+        ix = [DownloadExtensionTransformer stringToNumber: ext];
+    }
+
+    [_formatButton selectItemWithTag: tag];
+#endif
+}
+
 #pragma mark - IBActions
 
 -(IBAction)cancelAll:(id)sender {
@@ -272,6 +412,22 @@ enum {
     [self redrawRow: [item index]];
 }
 
+// binding screws up with placeholder.
+-(IBAction)downloadURLChanged: (NSTextField *)sender {
+    NSString *value;
+    value = [sender stringValue];
+    if (![value length]) {
+        [_defaults removeObjectForKey: kDownloadURL];
+        _downloadURL = _defaultDownloadURL;
+        return;
+    }
+//    [self validateURL: value];
+    [_defaults setValue: value forKey: kDownloadURL];
+    _downloadURL = [NSURL URLWithString: value];
+}
+- (IBAction)downloadExtensionChanged:(id)sender {
+    [_defaults setValue: _downloadExtension forKey: kDownloadExtension];
+}
 
 #pragma mark - NSURLSessionDelegate
 
@@ -352,22 +508,23 @@ enum {
     DownloadTableCellView *v = [tableView makeViewWithIdentifier: @"DownloadCell" owner: self];
     
     NSTextField *tf;
+    NSColor *redColor = [NSColor systemRedColor];
     
     tf = [v textField];
     [[v textField] setObjectValue: [item name]];
     
     if ([item localURL]) {
-        [tf setTextColor: [NSColor blackColor]];
+        [tf setTextColor: nil];
     } else {
-        [tf setTextColor: [NSColor redColor]];
+        [tf setTextColor: redColor];
     }
     
     tf = [v statusTextField];
     [tf setObjectValue: [item statusDescription]];
     if ([item error]) {
-        [tf setTextColor: [NSColor redColor]];
+        [tf setTextColor: redColor];
     } else {
-        [tf setTextColor: [NSColor blackColor]];
+        [tf setTextColor: nil];
         //if ([tableView isRowSelected: row]){
             //[tf setTextColor: [NSColor whiteColor]];
         //}
@@ -447,6 +604,9 @@ enum {
 };
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
+    
+    if ([menuItem action] == @selector(downloadExtensionChanged:)) return YES;
+
     NSInteger row = [_tableView clickedRow];
     if (row < 0) return NO;
     DownloadItem *item = [_items objectAtIndex: row];
