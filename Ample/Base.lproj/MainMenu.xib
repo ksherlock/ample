@@ -399,6 +399,12 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kE9-em-OHN"/>
+                            <menuItem title="Ample Support Directory…" id="egj-hU-EtE">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="displaySupportDirectory:" target="Voe-Tx-rLC" id="XDA-Bv-9BJ"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Manage ROMs…" id="St3-qR-2Y8">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>

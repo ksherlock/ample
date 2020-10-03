@@ -179,5 +179,10 @@
     }
     [_diskImages showWindow: sender];
 }
+- (IBAction)displaySupportDirectory:(id)sender {
+    NSURL *url = SupportDirectory();
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+    [ws openURL: url];
+}
 
 @end
