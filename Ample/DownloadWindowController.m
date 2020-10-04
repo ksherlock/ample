@@ -177,7 +177,6 @@ enum {
     NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
     
     NSURL *sd = SupportDirectory();
-    NSString *romdir = [SupportDirectoryPath() stringByAppendingPathComponent: @"roms"];
 
     _romFolder = [sd URLByAppendingPathComponent: @"roms"];
     
@@ -215,32 +214,19 @@ enum {
         [item setIndex: ix++];
 
         [tmp addObject: item];
-
-        // check if the file exists.
-        NSString *s = [romdir stringByAppendingPathComponent: name];
-        NSString *path;
-
-        path = [s stringByAppendingPathExtension: @"zip"];
-        if ([fm fileExistsAtPath: path]) {
-            [item setStatus: ItemFound];
-            [item setLocalURL: [NSURL fileURLWithPath: path]];
-            continue;
-        }
-        path = [s stringByAppendingPathExtension: @"7z"];
-        if ([fm fileExistsAtPath: path]) {
-            [item setStatus: ItemFound];
-            [item setLocalURL: [NSURL fileURLWithPath: path]];
-            continue;
-        }
     }
     _items = tmp;
+    [self refreshROMs: nil];
  
+    //[_tableView reloadData];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     _session = [NSURLSession sessionWithConfiguration: config delegate: self delegateQueue: nil];
     _taskIndex = [NSMutableDictionary dictionaryWithCapacity: [_items count]];
     
     //[self download];
 }
+
+
 
 #if 0
 -(void)validateURL: (NSString *)url {
@@ -385,6 +371,40 @@ enum {
         [_tableView reloadData];
     }
 }
+- (IBAction)showRomFolder:(id)sender {
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+
+    [ws openURL: _romFolder];
+}
+
+-(IBAction)refreshROMs: (id)sender {
+    
+    NSString *romdir = [SupportDirectoryPath() stringByAppendingPathComponent: @"roms"];
+    NSFileManager *fm = [NSFileManager defaultManager];
+
+    for (DownloadItem *item in _items) {
+        NSString *name = [item name];
+        NSString *s = [romdir stringByAppendingPathComponent: name];
+        NSString *path;
+        path = [s stringByAppendingPathExtension: @"zip"];
+        if ([fm fileExistsAtPath: path]) {
+            [item setStatus: ItemFound];
+            [item setLocalURL: [NSURL fileURLWithPath: path]];
+            continue;
+        }
+
+        path = [s stringByAppendingPathExtension: @"7z"];
+        if ([fm fileExistsAtPath: path]) {
+            [item setStatus: ItemFound];
+            [item setLocalURL: [NSURL fileURLWithPath: path]];
+            continue;
+        }
+
+
+    }
+    // only needed if items aren't bound.
+    [_tableView reloadData];
+}
 
 - (IBAction)showInFinder:(id)sender {
     DownloadItem *item = [self clickedItem];
@@ -431,11 +451,31 @@ enum {
 
 #pragma mark - NSURLSessionDelegate
 
+static NSInteger TaskStatusCode(NSURLSessionTask *task) {
+    NSURLResponse *response = [task response];
+    if ([response isKindOfClass: [NSHTTPURLResponse class]]) {
+        return [(NSHTTPURLResponse *)response statusCode];
+    }
+    return -1;
+}
+
+
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
 
 
     if (error) NSLog(@"Download error: %@", error);
 
+    NSInteger statusCode = TaskStatusCode(task);
+    if (!error && statusCode != 200) {
+        // treat as an error.
+        NSDictionary *info = @{
+            NSURLErrorKey: [[task originalRequest] URL],
+            NSLocalizedDescriptionKey: [NSHTTPURLResponse localizedStringForStatusCode: statusCode],
+        };
+        error = [NSError errorWithDomain: NSURLErrorDomain code: NSURLErrorFileDoesNotExist userInfo: info];
+    }
+
+    
     // not sure if strictly necessary but this happens in a background thread
     // and these are used in KVO binding.  Also, main thread only
     // means no race conditions.
@@ -465,7 +505,13 @@ enum {
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(nonnull NSURLSessionDownloadTask *)task didFinishDownloadingToURL:(nonnull NSURL *)location {
 
+    
 //    NSLog(@"%@", task);
+//    NSLog(@"%@", [task response]);
+    
+    if (TaskStatusCode(task) != 200) return;
+    
+
     // need to move to the destination directory...
     // file deleted after this function returns, so can't move asynchronously.
     NSFileManager *fm = [NSFileManager defaultManager];
@@ -585,7 +631,7 @@ enum {
         @"Canceled",
         @"Error"
     };
-    if (_error) return [_error description];
+    if (_error) return [_error localizedDescription];
 
     if (_status > sizeof(Names)/sizeof(Names[0])) return @"Unknown";
     return Names[_status];
