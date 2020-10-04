@@ -67,7 +67,7 @@
 
 - (id)transformedValue:(id)value {
     BOOL valid = [(NSNumber *)value boolValue];
-    return valid ? nil : [NSColor redColor];
+    return valid ? nil : [NSColor systemRedColor];
 }
 
 @end

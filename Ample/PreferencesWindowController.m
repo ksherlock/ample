@@ -44,9 +44,9 @@
     NSFileManager * fm = [NSFileManager defaultManager];
 
     if ([path length] == 0 || [fm isExecutableFileAtPath: path]) {
-        [_pathField setTextColor: [NSColor blackColor]];
+        [_pathField setTextColor: nil];
     } else {
-        [_pathField setTextColor: [NSColor redColor]];
+        [_pathField setTextColor: [NSColor systemRedColor]];
     }
 }
 
@@ -55,16 +55,16 @@
     BOOL directory = YES;
     
     if ([path length] == 0) {
-        [_wdField setTextColor: [NSColor blackColor]];
+        [_wdField setTextColor: nil];
         return;
     }
     
     if ([fm fileExistsAtPath: path isDirectory: &directory] && directory) {
-        [_wdField setTextColor: [NSColor blackColor]];
+        [_wdField setTextColor: nil];
         return;
 
     }
-    [_wdField setTextColor: [NSColor redColor]];
+    [_wdField setTextColor: [NSColor systemRedColor]];
 }
 
 - (IBAction)pathChanged:(id)sender {

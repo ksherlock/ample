@@ -225,7 +225,7 @@
    
 #if 0
     NSColor *tintColor = nil;
-    if (!_valid) tintColor = [NSColor redColor];
+    if (!_valid) tintColor = [NSColor systemRedColor];
     [button setContentTintColor: tintColor];
 #endif
 }

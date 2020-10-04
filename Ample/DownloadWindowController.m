@@ -244,7 +244,7 @@ enum {
         [_downloadField setTextColor: nil];
     } else {
         _effectiveURL = [NSURL URLWithString: _downloadURL];
-        [_downloadField setTextColor: [NSColor redColor]];
+        [_downloadField setTextColor: [NSColor systemRedColor]];
     }
 }
 #endif
