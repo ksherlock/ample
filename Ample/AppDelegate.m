@@ -184,5 +184,11 @@
     NSWorkspace *ws = [NSWorkspace sharedWorkspace];
     [ws openURL: url];
 }
+- (IBAction)mameDocumentation:(id)sender {
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+    
+    NSURL *url = [NSURL URLWithString: @"https://docs.mamedev.org"];
+    [ws openURL: url];
+}
 
 @end
