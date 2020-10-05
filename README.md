@@ -1,6 +1,6 @@
 # Ample
 
-A slightly more user-friendly front-end for using MAME as an Apple II emulator.
+A slightly more user-friendly front-end for using MAME as an Apple II emulator. Requires Mac OS X 10.14+
 
 ![](screenshots/2020-09-14.png)
 
