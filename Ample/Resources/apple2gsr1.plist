@@ -224,6 +224,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -236,14 +244,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -475,6 +475,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -670,6 +678,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -682,14 +698,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -921,6 +929,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1116,6 +1132,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -1128,14 +1152,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -1367,6 +1383,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1562,6 +1586,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -1574,14 +1606,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -1813,6 +1837,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2008,6 +2040,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -2020,14 +2060,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -2259,6 +2291,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2454,6 +2494,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -2466,14 +2514,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -2705,6 +2745,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2900,6 +2948,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parallel</string>
+        <key>description</key>
+        <string>Apple II Parallel Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -2912,14 +2968,6 @@
           <key>hard</key>
           <integer>1</integer>
         </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>parallel</string>
-        <key>description</key>
-        <string>Apple Parallel Interface Card</string>
-        <key>default</key>
-        <false/>
       </dict>
       <dict>
         <key>value</key>
@@ -3151,6 +3199,14 @@
         <string>mcms2</string>
         <key>description</key>
         <string>Mountain Computer Music System (card 2)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>grapplerplus</string>
+        <key>description</key>
+        <string>Orange Micro Grappler+ Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
