@@ -72,9 +72,9 @@ ROMS = [x for x in ROMS if x != ""]
 ROMS.sort()
 
 data = {}
-data["source"] = "https://archive.org/download/mame0224_rom"
+data["source"] = "https://archive.org/download/mame225_rom"
 data["type"] = "7z"
-data["version"] = "0.224"
+data["version"] = "0.225"
 data["roms"] = ROMS
 
 # print(ROMS)
