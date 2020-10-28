@@ -58,6 +58,9 @@ a2sider1
 a2sider2
 qsound
 ym2608
+
+a2grapplerplus
+a2pic
 """.splitlines()
 
 #
