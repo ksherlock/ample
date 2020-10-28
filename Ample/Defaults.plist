@@ -15,7 +15,7 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
 	<key>DefaultDownloadURL</key>
-	<string>https://archive.org/download/mame225_rom</string>
+	<string>https://archive.org/download/mame0226_rom</string>
 	<key>DefaultDownloadExtension</key>
 	<string>7z</string>
 </dict>
