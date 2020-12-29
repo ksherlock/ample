@@ -191,4 +191,12 @@
     [ws openURL: url];
 }
 
+- (IBAction)mameAppleWiki:(id)sender {
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+    
+    NSURL *url = [NSURL URLWithString: @"https://wiki.mamedev.org/index.php/Driver:Apple_II"];
+    [ws openURL: url];
+}
+
+
 @end

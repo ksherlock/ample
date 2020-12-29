@@ -436,6 +436,12 @@
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="MAME Apple II Wiki" id="GLh-Cc-5uU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="mameAppleWiki:" target="Voe-Tx-rLC" id="KEg-0U-KdU"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="MAME Documentation" id="1IW-V0-UWA">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
