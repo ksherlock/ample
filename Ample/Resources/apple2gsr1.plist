@@ -232,6 +232,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -318,6 +326,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -573,6 +589,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -686,6 +710,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -772,6 +804,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1027,6 +1067,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1140,6 +1188,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -1226,6 +1282,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1481,6 +1545,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1594,6 +1666,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -1680,6 +1760,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -1935,6 +2023,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2048,6 +2144,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -2134,6 +2238,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2389,6 +2501,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2502,6 +2622,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -2588,6 +2716,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2843,6 +2979,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -2956,6 +3100,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>parprn</string>
+        <key>description</key>
+        <string>Apple II Parallel Printer Interface Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>scsi</string>
         <key>description</key>
         <string>Apple II SCSI Card</string>
@@ -3042,6 +3194,14 @@
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ccs7710</string>
+        <key>description</key>
+        <string>CCS Model 7710 Asynchronous Serial Interface</string>
         <key>default</key>
         <false/>
       </dict>
@@ -3297,6 +3457,14 @@
         <string>ultraterm</string>
         <key>description</key>
         <string>Videx UltraTerm (original)</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>uniprint</string>
+        <key>description</key>
+        <string>Videx Uniprint Printer Interface</string>
         <key>default</key>
         <false/>
       </dict>

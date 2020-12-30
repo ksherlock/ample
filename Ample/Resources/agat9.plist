@@ -57,6 +57,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -83,7 +91,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
@@ -118,6 +126,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -144,7 +160,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
@@ -179,6 +195,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -205,7 +229,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
@@ -240,6 +264,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -266,7 +298,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
@@ -301,6 +333,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -327,7 +367,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
@@ -362,6 +402,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>a7ports</string>
+        <key>description</key>
+        <string>Agat-7 Ports Card</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>a9fdc140</string>
         <key>description</key>
         <string>Agat-9 140K floppy card</string>
@@ -388,7 +436,7 @@
       </dict>
       <dict>
         <key>value</key>
-        <string>a9nclock</string>
+        <string>nclock</string>
         <key>description</key>
         <string>Nippel Clock</string>
         <key>default</key>
