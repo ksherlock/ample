@@ -26,6 +26,7 @@
       <string>a2iwm</string>
       <string>a2memexp</string>
       <string>a2mouse</string>
+      <string>a2parprn</string>
       <string>a2pic</string>
       <string>a2pic</string>
       <string>a2ramfac</string>
@@ -33,6 +34,7 @@
       <string>a2sider1</string>
       <string>a2sider2</string>
       <string>a2ssc</string>
+      <string>a2suprterm</string>
       <string>a2surance</string>
       <string>a2swyft</string>
       <string>a2thunpl</string>
@@ -40,6 +42,7 @@
       <string>a2twarp</string>
       <string>a2ultrme</string>
       <string>a2ulttrm</string>
+      <string>a2uniprint</string>
       <string>a2vidtrm</string>
       <string>a2vtc1</string>
       <string>a2vulcan</string>
@@ -54,6 +57,7 @@
       <string>apple2e</string>
       <string>apple2gs</string>
       <string>apple3</string>
+      <string>ccs7710</string>
       <string>cec2000</string>
       <string>cece</string>
       <string>cecg</string>

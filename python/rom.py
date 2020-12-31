@@ -61,6 +61,11 @@ ym2608
 
 a2grapplerplus
 a2pic
+
+a2parprn
+a2suprterm
+a2uniprint
+ccs7710
 """.splitlines()
 
 #
