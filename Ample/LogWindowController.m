@@ -97,7 +97,10 @@ static NSURL *MameWorkingDirectory(void) {
 {
     if ([string length])
     {
-        [[[_textView textStorage] mutableString] appendString: string];
+        // needs explicit color attribute for proper dark mode support.
+        NSDictionary *attr = @{ NSForegroundColorAttributeName: [NSColor textColor] };
+        NSAttributedString *astr = [[NSAttributedString alloc] initWithString: string attributes: attr];
+        [[_textView textStorage] appendAttributedString: astr];
     }
 }
 
