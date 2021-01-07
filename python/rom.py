@@ -66,6 +66,8 @@ a2parprn
 a2suprterm
 a2uniprint
 ccs7710
+
+aprissi
 """.splitlines()
 
 #
@@ -80,9 +82,9 @@ ROMS = [x for x in ROMS if x != ""]
 ROMS.sort()
 
 data = {}
-data["source"] = "https://archive.org/download/mame0226_rom"
-data["type"] = "7z"
-data["version"] = "0.226"
+data["source"] = "https://archive.org/download/mame0.224"
+data["type"] = "zip"
+data["version"] = "0.224"
 data["roms"] = ROMS
 
 # print(ROMS)

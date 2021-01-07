@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>source</key>
-    <string>https://archive.org/download/mame0226_rom</string>
+    <string>https://archive.org/download/mame0.224</string>
     <key>type</key>
-    <string>7z</string>
+    <string>zip</string>
     <key>version</key>
-    <string>0.226</string>
+    <string>0.224</string>
     <key>roms</key>
     <array>
       <string>a1cass</string>
