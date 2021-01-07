@@ -311,6 +311,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>ssi</string>
+        <key>description</key>
+        <string>Apricorn Super Serial Imager</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>byte8251</string>
         <key>description</key>
         <string>BYTE Serial Interface (8251 based)</string>
@@ -870,6 +878,14 @@
         <false/>
         <key>disabled</key>
         <true/>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>ssi</string>
+        <key>description</key>
+        <string>Apricorn Super Serial Imager</string>
+        <key>default</key>
+        <false/>
       </dict>
       <dict>
         <key>value</key>
