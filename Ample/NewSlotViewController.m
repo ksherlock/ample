@@ -9,6 +9,9 @@
 #import "NewSlotViewController.h"
 #import "Menu.h"
 
+/* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
+#define MAX_SLOTS 16
+static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
 
 @implementation SlotTableCellView
 
@@ -160,9 +163,9 @@
     unsigned _slots_valid;
     unsigned _slots_default;
 
-    NSDictionary *_slot_object[16];
-    NSDictionary *_slot_media[16];
-    NSString *_slot_value[16]; // when explicitely set.
+    NSDictionary *_slot_object[MAX_SLOTS];
+    NSDictionary *_slot_media[MAX_SLOTS];
+    NSString *_slot_value[MAX_SLOTS]; // when explicitely set.
     NSDictionary *_machine_media;
     
     NSDictionary *_machine_data;
@@ -186,7 +189,7 @@
     _machine_media = nil;
     _machine_data = nil;
     
-    for (unsigned i = 0; i < 16; ++i) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
         _slot_media[i] = nil;
         _slot_object[i] = nil;
         _slot_value[i] = nil;
@@ -310,7 +313,7 @@
 #endif
 #if 1
     unsigned mask = 1;
-    for (unsigned i = 0; i < 16; ++i, mask <<= 1) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i, mask <<= 1) {
         
         if (_slots_valid & mask) {
             NSDictionary *tmp = _slot_media[i];
@@ -386,7 +389,7 @@ static NSString *SlotFlagForIndex(unsigned index){
     
 #if 0
     unsigned mask = 1;
-    for (unsigned i = 0 ; i < 16; ++i, mask <<= 1) {
+    for (unsigned i = 0 ; i < MAX_SLOTS; ++i, mask <<= 1) {
         
         if (!(_slots_valid & mask)) continue;
         NSDictionary *d = _slot_object[i];
@@ -439,7 +442,7 @@ static NSString *SlotFlagForIndex(unsigned index){
 -(IBAction)resetSlots:(id)sender {
     
     _slots_explicit = 0;
-    for (unsigned i = 0; i < 16; ++i) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
         _slot_media[i] = nil;
         _slot_object[i] = nil;
         _slot_value[i] = nil;
