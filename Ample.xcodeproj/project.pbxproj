@@ -112,6 +112,8 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6DD1FE825B407E7004A3242 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
+		B6DD1FE925B407E7004A3242 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
 		B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */; };
@@ -352,6 +354,7 @@
 		B6D6DE3D24FADF8B00661A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchWindow.xib; sourceTree = "<group>"; };
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
+		B6DD1FE725B407E6004A3242 /* maclc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc.plist; sourceTree = "<group>"; };
 		B6DDECBD25057A550093587A /* drag-handle-4x10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10.png"; sourceTree = "<group>"; };
 		B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@2x.png"; sourceTree = "<group>"; };
 		B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@3x.png"; sourceTree = "<group>"; };
@@ -457,6 +460,7 @@
 				B61099FA24F5F370005CB652 /* uniap2en.plist */,
 				B61099EE24F5F36E005CB652 /* uniap2pt.plist */,
 				B6109A0224F5F371005CB652 /* uniap2ti.plist */,
+				B6DD1FE725B407E6004A3242 /* maclc.plist */,
 				B63C1F1125B147E10016A611 /* CheatSheet.html */,
 			);
 			path = Resources;
@@ -731,6 +735,7 @@
 				B6109A4124F5F377005CB652 /* apple2cp.plist in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
 				B6109A3A24F5F377005CB652 /* prav82.plist in Resources */,
+				B6DD1FE825B407E7004A3242 /* maclc.plist in Resources */,
 				B6109A2024F5F377005CB652 /* apple2euk.plist in Resources */,
 				B6109A2F24F5F377005CB652 /* uniap2ti.plist in Resources */,
 				B6DDECD42505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
@@ -833,6 +838,7 @@
 				B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */,
 				B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */,
 				B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
+				B6DD1FE925B407E7004A3242 /* maclc.plist in Resources */,
 				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
 				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
 				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,

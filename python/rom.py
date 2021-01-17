@@ -62,12 +62,18 @@ ym2608
 a2grapplerplus
 a2pic
 
+# .227
 a2parprn
 a2suprterm
 a2uniprint
 ccs7710
 
+#.228
 aprissi
+
+# macintosh
+maclc
+egret
 """.splitlines()
 
 #
@@ -79,6 +85,7 @@ aprissi
 #
 
 ROMS = [x for x in ROMS if x != ""]
+ROMS = [x for x in ROMS if x[0] != "#"]
 ROMS.sort()
 
 data = {}

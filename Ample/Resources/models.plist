@@ -377,5 +377,20 @@
         </dict>
       </array>
     </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (NuBus)</string>
+      <key>value</key>
+      <string>maclc</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC</string>
+          <key>value</key>
+          <string>maclc</string>
+        </dict>
+      </array>
+    </dict>
   </array>
 </plist>

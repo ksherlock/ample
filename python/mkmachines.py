@@ -7,6 +7,18 @@ import xml.etree.ElementTree as ET
 
 from machines import MACHINES, SLOTS
 
+# macintosh errata:
+# maclc has scsi:1 - scsi:7 and lcpds slots, but none are currently configurable.
+# maciifx has scsi:1 - scsi:7 (not configurable)
+# maciifx has "nb9",  "nba" - "nbe" as configurable nubus slots
+#
+# w/ nubus, can specify video card which may have different resolution.
+#
+# Inside Macintosh: Devices chapter 2 explains the Nubus slot name scheme
+# (essentially $01-$0e; $0 and $f are reserved)
+#
+
+
 # don't allow these for now. generally because they add floppy/hard drives
 # but don't work with normal disk images
 DISABLED = set((
@@ -43,6 +55,9 @@ def find_machine_media(parent):
 		"apple2_cass": "cass",
 		"floppy_5_25": "flop_5_25",
 		"floppy_3_5": "flop_3_5",
+		# mac
+		"scsi_hdd": "hard",
+		"cdrom": "cdrm",
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -67,6 +82,9 @@ def find_machine_media(parent):
 			# format slot name : slotoption name : machine->device type name
 
 		if mname == "apple2c" and slot == "sl6": slot = None
+
+		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
+		if mname == "maclc" and slot == "scsi": slot = None
 
 		if slot: continue
 		# skip slot devices -- they'll be handled as part of the device.
@@ -196,7 +214,9 @@ for m in machines:
 
 	# node = machine.find('display[@tag="screen"]')
 	node = machine.find('./display')
-	data["resolution"] = [int(node.get("width")), int(node.get("height")) * 2]
+	hscale = 2
+	if m in ("maclc"): hscale = 1
+	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
 
 	mm = {}
 	for x in root.findall("machine[@isdevice='yes']"):

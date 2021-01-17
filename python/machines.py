@@ -21,6 +21,9 @@ MACHINES = (
 	"zijini",
 	# China Education Computer
 	"cec2000", "cece", "cecg", "ceci", "cecm",
+
+	# macintosh...
+	"maclc"
 )
 
 
@@ -32,5 +35,9 @@ SLOTS = (
 	"rs232",
 	"gameio",
 	"printer",
-	"modem"
+	"modem",
+
+	# mac nubus
+	"nb1", "nb2", "nb3", "nb4", "nb5", "nb6", "nb7",
+	"nb8", "nb9", "nba", "nbb", "nbc", "nbd", "nbe",
 )
