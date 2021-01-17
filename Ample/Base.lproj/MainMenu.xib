@@ -436,6 +436,12 @@
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="MAME Keyboard Cheat Sheet" id="vcW-Dz-2Nx">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="displayCheatSheet:" target="Voe-Tx-rLC" id="HvD-mQ-4pe"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="MAME Apple II Wiki" id="GLh-Cc-5uU">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>

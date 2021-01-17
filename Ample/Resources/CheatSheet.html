@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Keyboard Cheat Sheet</title>
+        <style type="text/css">
+            :root {
+              color-scheme: light dark;
+              font-family: -apple-system, 'HelveticaNeue' ;
+              font: -apple-system-body;
+            }
+
+            body {
+                user-select: none;
+
+                background-color: rgb(236, 236, 236);
+                color: rgb(38, 38, 38);
+            }
+            h1, h2 {
+                text-align: center;
+                font-size: 150%;
+            }
+            table {
+              width: 100%;
+            }
+
+            kbd {
+              display: inline-block;
+              border-radius: 3px;
+              padding-left: .5em;
+              padding-right: .5em;
+              padding-top: 4px;
+              padding-bottom: 2px;
+              margin-bottom: 5px;
+              margin-right: 5px;
+              margin-left: 4px;
+
+              border: solid 1px black;
+              box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75), inset 1px 1px 2px 0px white;
+              text-shadow: 0px 1px 0px rgb(255, 255, 255);
+              background-color: rgb(225, 225, 225);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: rgb(50, 50, 50);
+                    color: rgb(225, 225, 225);
+                }
+
+                kbd {
+                  border: solid 1px black;
+                  text-shadow: 0px 1px 0px black;
+                  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+                  background-color: rgb(101, 101, 101);                  
+                }
+            }
+        </style>
+        <script type="text/javascript">
+          function macbook(onoff) {
+            var nodes = document.querySelectorAll("[data-macbook]");
+            nodes.forEach( (e) => {
+              var m = (e.dataset.macbook == "true");
+              e.hidden = m ^ onoff;
+            });
+          }
+          window.addEventListener('load', (event)=> {
+            macbook(false);
+
+            var e = document.getElementById('macbook');
+            if (e) {
+              e.checked = false;
+              e.addEventListener('click', (event) => {
+                macbook(e.checked);
+              });
+            }
+          })
+        </script>
+    </head>
+    <body>
+        <div>
+          MacBook: <input type="checkbox" id="macbook" />
+        </div>
+        <h1>Full UI Mode</h1>
+        <table>
+            <colgroup>
+              <col style="width: 14em;" />
+              <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                      <span data-macbook=false><kbd>Delete</kbd></span>
+                      <span data-macbook=true><kbd>Fn</kbd>+<kbd>Delete</kbd></span>
+                    </td>
+                    <td>Toggle partial UI mode</td>
+                </tr>
+                <tr>
+                    <td><kbd>Option</kbd>+<kbd>Enter</kbd></td>
+                    <td>Toggle full screen mode</td>
+                </tr>
+                <tr>
+                    <td><kbd>F12</kbd></td>
+                    <td>Reset Key</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Partial UI Mode</h1>
+   
+        <table>
+            <colgroup>
+              <col style="width: 14em;" />
+              <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                      <span data-macbook=false><kbd>Delete</kbd></span>
+                      <span data-macbook=true><kbd>Fn</kbd>+<kbd>Delete</kbd></span>
+                    </td>
+                    <td>Toggle full UI mode</td>
+                </tr>
+                <tr>
+                    <td><kbd>Option</kbd>+<kbd>Enter</kbd></td>
+                    <td>Toggle full screen mode</td>
+                </tr>
+                <tr>
+                    <td><kbd>Tab</kbd></td>
+                    <td>Config menu</td>
+                </tr>
+                <tr>
+                    <td><kbd>Esc</kbd></td>
+                    <td>Quit</td>
+                </tr>
+                <tr>
+                    <td><kbd>P</kbd></td>
+                    <td>Pause</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>~</kbd></td>
+                    <td>Debugger break (when active)</td>
+                </tr>
+
+                <tr>
+                    <td>
+                      <span data-macbook=false><kbd>Page Down</kbd></span>
+                      <span data-macbook=true><kbd>Fn</kbd>+<kbd>Down Arrow</kbd></span>
+                    </td>
+                    <td>Fast forward (while pressed)</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>F3</kbd></td>
+                    <td>Soft reset</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd>+<kbd>F3</kbd></td>
+                    <td>Hard reset</td>
+                </tr>
+
+
+                <tr>
+                    <td><kbd>F5</kbd></td>
+                    <td>Toggle debugger</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd>+<kbd>F5</kbd></td>
+                    <td>Toggle graphic filters</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>F7</kbd></td>
+                    <td>Load state</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd>+<kbd>F7</kbd></td>
+                    <td>Save state</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>F10</kbd></td>
+                    <td>Toggle throttle</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>F11</kbd></td>
+                    <td>Show FPS</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Shift</kbd>+<kbd>F11</kbd></td>
+                    <td>Show profiler</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>F12</kbd></td>
+                    <td>Save snapshot</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Shift</kbd>+<kbd>F12</kbd></td>
+                    <td>Record MNG video</td>
+                </tr>
+                <tr>
+                    <td><kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>F12</kbd></td>
+                    <td>Record AVI video</td>
+                </tr>
+                <tr>
+                    <td><kbd>Option</kbd>+<kbd>Shift</kbd>+<kbd>F12</kbd></td>
+                    <td>Record rendered AVI video</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Note</h2>
+        <ul class="note">
+          <li><kbd>F</kbd> keys may require <kbd>Fn</kbd> key depending on keyboard and system settings.</li>
+          <li><kbd>Shift</kbd>, <kbd>Control</kbd>, and <kbd>Option</kbd> assume left-key unless otherwise specified.</li>
+        </ul>
+    </body>
+</html>

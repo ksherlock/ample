@@ -78,6 +78,12 @@
 		B63C1BA6250192D800511A71 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
 		B63C1BA8250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B63C1BA9250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
+		B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F0925B143C50016A611 /* CheatSheet.xib */; };
+		B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F0925B143C50016A611 /* CheatSheet.xib */; };
+		B63C1F0F25B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
+		B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
+		B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
+		B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
 		B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
@@ -303,6 +309,10 @@
 		B63C1B9B250192D800511A71 /* cec2000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cec2000.plist; sourceTree = "<group>"; };
 		B63C1B9C250192D800511A71 /* cecm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cecm.plist; sourceTree = "<group>"; };
 		B63C1BA7250192E600511A71 /* zijini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zijini.plist; sourceTree = "<group>"; };
+		B63C1F0A25B143C50016A611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CheatSheet.xib; sourceTree = "<group>"; };
+		B63C1F0D25B1447C0016A611 /* CheatSheetWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatSheetWindowController.h; sourceTree = "<group>"; };
+		B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheatSheetWindowController.m; sourceTree = "<group>"; };
+		B63C1F1125B147E10016A611 /* CheatSheet.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CheatSheet.html; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64AF1ED250EC35B00A09B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiskImages.xib; sourceTree = "<group>"; };
@@ -447,6 +457,7 @@
 				B61099FA24F5F370005CB652 /* uniap2en.plist */,
 				B61099EE24F5F36E005CB652 /* uniap2pt.plist */,
 				B6109A0224F5F371005CB652 /* uniap2ti.plist */,
+				B63C1F1125B147E10016A611 /* CheatSheet.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -552,6 +563,8 @@
 				B6004DEE24FB05D600D38596 /* LogWindowController.m */,
 				B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */,
 				B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */,
+				B63C1F0D25B1447C0016A611 /* CheatSheetWindowController.h */,
+				B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */,
 			);
 			name = "Window Controllers";
 			sourceTree = "<group>";
@@ -569,6 +582,7 @@
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
 				B61099E324F5F230005CB652 /* SlotView.xib */,
 				B64AF1EC250EC35B00A09B9B /* DiskImages.xib */,
+				B63C1F0925B143C50016A611 /* CheatSheet.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -740,6 +754,7 @@
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
+				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
 				B6109A2224F5F377005CB652 /* models.plist in Resources */,
@@ -759,6 +774,7 @@
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B6109A2924F5F377005CB652 /* apple2gs.plist in Resources */,
 				B6109A1F24F5F377005CB652 /* apple2jp.plist in Resources */,
+				B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6109A3024F5F377005CB652 /* apple2.plist in Resources */,
 				B6109A2D24F5F377005CB652 /* prav8m.plist in Resources */,
 			);
@@ -787,6 +803,7 @@
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
 				B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */,
+				B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
 				B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */,
 				B6DDECCD2505A86E0093587A /* eject-16x16@2x.png in Resources */,
@@ -831,6 +848,7 @@
 				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,
 				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
 				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
+				B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */,
 				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
 				B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */,
 				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
@@ -869,6 +887,7 @@
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */,
+				B63C1F0F25B1447C0016A611 /* CheatSheetWindowController.m in Sources */,
 				B64AF1F2250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B64AF1F6250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */,
@@ -883,6 +902,7 @@
 				B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
+				B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */,
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
 				B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
@@ -916,6 +936,14 @@
 				B61099E624F5F230005CB652 /* Base */,
 			);
 			name = MediaView.xib;
+			sourceTree = "<group>";
+		};
+		B63C1F0925B143C50016A611 /* CheatSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63C1F0A25B143C50016A611 /* Base */,
+			);
+			name = CheatSheet.xib;
 			sourceTree = "<group>";
 		};
 		B64AF1EC250EC35B00A09B9B /* DiskImages.xib */ = {

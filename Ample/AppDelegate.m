@@ -11,6 +11,7 @@
 #import "PreferencesWindowController.h"
 #import "DownloadWindowController.h"
 #import "DiskImagesWindowController.h"
+#import "CheatSheetWindowController.h"
 #import "Transformers.h"
 
 #import "LogWindowController.h"
@@ -25,6 +26,7 @@
     NSWindowController *_launcher;
     NSWindowController *_downloader;
     NSWindowController *_diskImages;
+    NSWindowController *_cheatSheet;
 }
 
 
@@ -179,6 +181,14 @@
     }
     [_diskImages showWindow: sender];
 }
+
+- (IBAction)displayCheatSheet:(id)sender {
+    if (!_cheatSheet) {
+        _cheatSheet = [CheatSheetWindowController new];
+    }
+    [_cheatSheet showWindow: sender];
+}
+
 - (IBAction)displaySupportDirectory:(id)sender {
     NSURL *url = SupportDirectory();
     NSWorkspace *ws = [NSWorkspace sharedWorkspace];
