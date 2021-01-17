@@ -10,8 +10,10 @@
 #import "Menu.h"
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define MAX_SLOTS 16
+#define MAX_SLOTS 24
 static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
+
+#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
 @implementation SlotTableCellView
 
@@ -42,8 +44,18 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"RS232:",
         @"Game I/O:",
         @"Modem:",
-        @"Printer:"
+        @"Printer:",
+
+        // nubus mac
+        @"Slot 9:",
+        @"Slot A:",
+        @"Slot B:",
+        @"Slot C:",
+        @"Slot D:",
+        @"Slot E:",
     };
+
+    static_assert(SIZEOF(Names) <= MAX_SLOTS, "label overflow");
     return Names[_index];
 }
 
@@ -64,8 +76,17 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"-rs232",
         @"-gameio",
         @"-modem",
-        @"-printer"
+        @"-printer",
+        
+        // nubus mac
+        @"-nb9",
+        @"-nba",
+        @"-nbb",
+        @"-nbc",
+        @"-nbd",
+        @"-nbe",
     };
+    static_assert(SIZEOF(Names) <= MAX_SLOTS, "flag overflow");
     return Names[_index];
     
 }
@@ -208,8 +229,13 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"sl4", @"sl5", @"sl6", @"sl7",
         @"exp", @"aux", @"rs232",
         @"gameio", @"printer", @"modem",
+        
+        // mac
+        @"nb9", @"nba", @"nbb", @"nbc", @"nbd", @"nbe",
     };
-    static unsigned SizeofKeys = sizeof(Keys)/sizeof(Keys[0]);
+    
+    static_assert(SIZEOF(Keys) <= MAX_SLOTS, "key overflow");
+    static unsigned SizeofKeys = SIZEOF(Keys);
     
     
     NSBundle *bundle = [NSBundle mainBundle];
@@ -363,8 +389,16 @@ static NSString *SlotFlagForIndex(unsigned index){
          @"-rs232",
          @"-gameio",
          @"-modem",
-         @"-printer"
+         @"-printer",
+         // nubus mac
+         @"-nb9",
+         @"-nba",
+         @"-nbb",
+         @"-nbc",
+         @"-nbd",
+         @"-nbe",
      };
+     static_assert(SIZEOF(Names) <= MAX_SLOTS, "flag overflow");
      return Names[index];
 }
 
