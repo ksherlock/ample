@@ -10,8 +10,8 @@
 #import "Menu.h"
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define MAX_SLOTS 24
-static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
+#define SLOT_COUNT 21
+static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
@@ -55,7 +55,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"Slot E:",
     };
 
-    static_assert(SIZEOF(Names) <= MAX_SLOTS, "label overflow");
+    static_assert(SIZEOF(Names) == SLOT_COUNT, "Missing slot");
     return Names[_index];
 }
 
@@ -86,7 +86,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"-nbd",
         @"-nbe",
     };
-    static_assert(SIZEOF(Names) <= MAX_SLOTS, "flag overflow");
+    static_assert(SIZEOF(Names) == SLOT_COUNT, "Missing Slot");
     return Names[_index];
     
 }
@@ -184,9 +184,9 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
     unsigned _slots_valid;
     unsigned _slots_default;
 
-    NSDictionary *_slot_object[MAX_SLOTS];
-    NSDictionary *_slot_media[MAX_SLOTS];
-    NSString *_slot_value[MAX_SLOTS]; // when explicitely set.
+    NSDictionary *_slot_object[SLOT_COUNT];
+    NSDictionary *_slot_media[SLOT_COUNT];
+    NSString *_slot_value[SLOT_COUNT]; // when explicitely set.
     NSDictionary *_machine_media;
     
     NSDictionary *_machine_data;
@@ -210,7 +210,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
     _machine_media = nil;
     _machine_data = nil;
     
-    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
+    for (unsigned i = 0; i < SLOT_COUNT; ++i) {
         _slot_media[i] = nil;
         _slot_object[i] = nil;
         _slot_value[i] = nil;
@@ -234,7 +234,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"nb9", @"nba", @"nbb", @"nbc", @"nbd", @"nbe",
     };
     
-    static_assert(SIZEOF(Keys) <= MAX_SLOTS, "key overflow");
+    static_assert(SIZEOF(Keys) == SLOT_COUNT, "Missing slot");
     static unsigned SizeofKeys = SIZEOF(Keys);
     
     
@@ -341,7 +341,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
 #endif
 #if 1
     unsigned mask = 1;
-    for (unsigned i = 0; i < MAX_SLOTS; ++i, mask <<= 1) {
+    for (unsigned i = 0; i < SLOT_COUNT; ++i, mask <<= 1) {
         
         if (_slots_valid & mask) {
             NSDictionary *tmp = _slot_media[i];
@@ -403,7 +403,7 @@ static NSString *SlotFlagForIndex(unsigned index){
          @"-nbd",
          @"-nbe",
      };
-     static_assert(SIZEOF(Names) <= MAX_SLOTS, "flag overflow");
+     static_assert(SIZEOF(Names) == SLOT_COUNT, "Missing slot");
      return Names[index];
 }
 
@@ -428,7 +428,7 @@ static NSString *SlotFlagForIndex(unsigned index){
     
 #if 0
     unsigned mask = 1;
-    for (unsigned i = 0 ; i < MAX_SLOTS; ++i, mask <<= 1) {
+    for (unsigned i = 0 ; i < SLOT_COUNT; ++i, mask <<= 1) {
         
         if (!(_slots_valid & mask)) continue;
         NSDictionary *d = _slot_object[i];
@@ -481,7 +481,7 @@ static NSString *SlotFlagForIndex(unsigned index){
 -(IBAction)resetSlots:(id)sender {
     
     _slots_explicit = 0;
-    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
+    for (unsigned i = 0; i < SLOT_COUNT; ++i) {
         _slot_media[i] = nil;
         _slot_object[i] = nil;
         _slot_value[i] = nil;

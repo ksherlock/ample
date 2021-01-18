@@ -269,7 +269,7 @@
     c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
     d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
     e = [[MediaCategory alloc] initWithTitle: @"Cassettes"];
-    f = [[MediaCategory alloc] initWithTitle: @"Hard Disk Images"];
+    f = [[MediaCategory alloc] initWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
     
     _data[0] = a;
     _data[1] = b;
