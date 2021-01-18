@@ -55,8 +55,6 @@
       <integer>2</integer>
       <key>hard</key>
       <integer>2</integer>
-      <key>cdrm</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>

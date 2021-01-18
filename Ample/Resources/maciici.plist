@@ -95,8 +95,6 @@
       <integer>2</integer>
       <key>hard</key>
       <integer>2</integer>
-      <key>cdrm</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -200,6 +198,11 @@
         <string>NuBus Disk Image Pseudo-Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>pseudo_disk</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -339,6 +342,11 @@
         <string>NuBus Disk Image Pseudo-Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>pseudo_disk</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>
@@ -478,6 +486,11 @@
         <string>NuBus Disk Image Pseudo-Card</string>
         <key>default</key>
         <false/>
+        <key>media</key>
+        <dict>
+          <key>pseudo_disk</key>
+          <integer>1</integer>
+        </dict>
       </dict>
       <dict>
         <key>value</key>

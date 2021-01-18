@@ -57,7 +57,7 @@ def find_machine_media(parent):
 		"floppy_3_5": "flop_3_5",
 		# mac
 		"scsi_hdd": "hard",
-		"cdrom": "cdrm",
+		#"cdrom": "cdrm", -- 2021-01-18 - CD rom is more or less broken so exclude it.
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -120,12 +120,14 @@ def find_media(parent, include_slots=False):
 		"floppy_apple": "flop_5_25",
 		"harddisk_image": "hard",
 		"floppy_sonny": "flop_3_5",
+		"messimg_disk_image": "pseudo_disk",
 	}
 	remap_slot = {
 		"harddisk": "hard",
 		"hdd": "hard",
 		"cdrom": "cdrm",
 		"525": "flop_5_25",
+		"image": "psuedo_disk",
 	}
 
 	media = {}
