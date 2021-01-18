@@ -390,6 +390,24 @@
           <key>value</key>
           <string>maclc</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC II</string>
+          <key>value</key>
+          <string>maclc2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC III</string>
+          <key>value</key>
+          <string>maclc3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIci</string>
+          <key>value</key>
+          <string>maciici</string>
+        </dict>
       </array>
     </dict>
   </array>

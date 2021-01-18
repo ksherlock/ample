@@ -84,7 +84,7 @@ def find_machine_media(parent):
 		if mname == "apple2c" and slot == "sl6": slot = None
 
 		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
-		if mname == "maclc" and slot == "scsi": slot = None
+		if mname[0:3] == "mac" and slot == "scsi": slot = None
 
 		if slot: continue
 		# skip slot devices -- they'll be handled as part of the device.
@@ -215,7 +215,7 @@ for m in machines:
 	# node = machine.find('display[@tag="screen"]')
 	node = machine.find('./display')
 	hscale = 2
-	if m in ("maclc"): hscale = 1
+	if m[0:3] == "mac": hscale = 1
 	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
 
 	mm = {}

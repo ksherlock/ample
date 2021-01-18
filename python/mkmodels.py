@@ -24,7 +24,7 @@ iie_clones_children = ["mprof3", "prav8c", "spectred", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
-mac_nubus_children = ["maclc"]
+mac_nubus_children = ["maclc", "maclc2", "maclc3", "maciici"]
 
 tree = [
 	("Apple I", "apple1", apple1_children),

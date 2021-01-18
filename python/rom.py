@@ -73,7 +73,25 @@ aprissi
 
 # macintosh
 maclc
+maclc2
+maclc3
+maciici
 egret
+nb_image
+nb_824gc
+nb_aenet
+nb_qdlink
+nb_amc3b
+nb_btbug
+nb_m2hr
+nb_wspt
+nb_m2vc
+nb_vikbw
+nb_rtpd
+nb_c264
+nb_laserview
+nb_spdq
+nb_sp8s3
 """.splitlines()
 
 #

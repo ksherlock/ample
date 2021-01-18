@@ -71,7 +71,25 @@
       <string>egret</string>
       <string>keytronic_pc3270</string>
       <string>m68705p3</string>
+      <string>maciici</string>
       <string>maclc</string>
+      <string>maclc2</string>
+      <string>maclc3</string>
+      <string>nb_824gc</string>
+      <string>nb_aenet</string>
+      <string>nb_amc3b</string>
+      <string>nb_btbug</string>
+      <string>nb_c264</string>
+      <string>nb_image</string>
+      <string>nb_laserview</string>
+      <string>nb_m2hr</string>
+      <string>nb_m2vc</string>
+      <string>nb_qdlink</string>
+      <string>nb_rtpd</string>
+      <string>nb_sp8s3</string>
+      <string>nb_spdq</string>
+      <string>nb_vikbw</string>
+      <string>nb_wspt</string>
       <string>qsound</string>
       <string>votrax</string>
       <string>ym2608</string>

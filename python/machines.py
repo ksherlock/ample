@@ -23,7 +23,7 @@ MACHINES = (
 	"cec2000", "cece", "cecg", "ceci", "cecm",
 
 	# macintosh...
-	"maclc"
+	"maclc", "maclc2", "maclc3", "maciici",
 )
 
 

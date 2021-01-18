@@ -94,6 +94,12 @@
 		B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E15A824EA1D5300E8AD3D /* MachineViewController.m */; };
+		B65085B925B616AC00354EC9 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B625B616AC00354EC9 /* maclc2.plist */; };
+		B65085BA25B616AC00354EC9 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B625B616AC00354EC9 /* maclc2.plist */; };
+		B65085BB25B616AC00354EC9 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
+		B65085BC25B616AC00354EC9 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
+		B65085BD25B616AC00354EC9 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B825B616AC00354EC9 /* maciici.plist */; };
+		B65085BE25B616AC00354EC9 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B825B616AC00354EC9 /* maciici.plist */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
@@ -326,6 +332,9 @@
 		B64AF1F9250EF6A500A09B9B /* Transformers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transformers.m; sourceTree = "<group>"; };
 		B64E15A724EA1D5300E8AD3D /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
 		B64E15A824EA1D5300E8AD3D /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
+		B65085B625B616AC00354EC9 /* maclc2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc2.plist; sourceTree = "<group>"; };
+		B65085B725B616AC00354EC9 /* maclc3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3.plist; sourceTree = "<group>"; };
+		B65085B825B616AC00354EC9 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
 		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
@@ -461,6 +470,9 @@
 				B61099EE24F5F36E005CB652 /* uniap2pt.plist */,
 				B6109A0224F5F371005CB652 /* uniap2ti.plist */,
 				B6DD1FE725B407E6004A3242 /* maclc.plist */,
+				B65085B825B616AC00354EC9 /* maciici.plist */,
+				B65085B625B616AC00354EC9 /* maclc2.plist */,
+				B65085B725B616AC00354EC9 /* maclc3.plist */,
 				B63C1F1125B147E10016A611 /* CheatSheet.html */,
 			);
 			path = Resources;
@@ -715,6 +727,7 @@
 				B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */,
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
+				B65085BB25B616AC00354EC9 /* maclc3.plist in Resources */,
 				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
 				B6DDECCC2505A86E0093587A /* eject-16x16@2x.png in Resources */,
 				B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */,
@@ -745,6 +758,7 @@
 				B6109A3E24F5F377005CB652 /* albert.plist in Resources */,
 				B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */,
 				B6109A4224F5F377005CB652 /* apple2p.plist in Resources */,
+				B65085B925B616AC00354EC9 /* maclc2.plist in Resources */,
 				B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */,
 				B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */,
 				B63C1BA1250192D800511A71 /* cecg.plist in Resources */,
@@ -759,6 +773,7 @@
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
+				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
 				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
@@ -825,11 +840,14 @@
 				B6E4B5D524FDE2670094A35C /* apple2euk.plist in Resources */,
 				B6E4B5D624FDE2670094A35C /* uniap2ti.plist in Resources */,
 				B6E4B5D724FDE2670094A35C /* apple2c.plist in Resources */,
+				B65085BA25B616AC00354EC9 /* maclc2.plist in Resources */,
 				B6E4B5D824FDE2670094A35C /* microeng.plist in Resources */,
 				B6E4B5D924FDE2670094A35C /* albert.plist in Resources */,
 				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
 				B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */,
 				B6DDECD12505A86E0093587A /* eject-hover-16x16.png in Resources */,
+				B65085BE25B616AC00354EC9 /* maciici.plist in Resources */,
+				B65085BC25B616AC00354EC9 /* maclc3.plist in Resources */,
 				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
 				B6DDECD32505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
