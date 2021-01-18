@@ -240,9 +240,13 @@
 }
 @end
 
+
+#define CATEGORY_COUNT 6
+#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
+
 @interface MediaViewController () {
 
-    MediaCategory *_data[5];
+    MediaCategory *_data[CATEGORY_COUNT];
     NSArray *_root;
     NSDictionary *_media;
 }
@@ -258,20 +262,21 @@
     if (first) return;
     first++;
 
-    MediaCategory *a, *b, *c, *d, *e;
+    MediaCategory *a, *b, *c, *d, *e, *f;
     
     a = [[MediaCategory alloc] initWithTitle: @"5.25\" Floppies"];
     b = [[MediaCategory alloc] initWithTitle: @"3.5\" Floppies"];
     c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
     d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
     e = [[MediaCategory alloc] initWithTitle: @"Cassettes"];
-
+    f = [[MediaCategory alloc] initWithTitle: @"Hard Disk Images"];
     
     _data[0] = a;
     _data[1] = b;
     _data[2] = c;
     _data[3] = d;
     _data[4] = e;
+    _data[5] = f;
 
     _root = @[];
 
@@ -283,19 +288,21 @@ enum {
     kIndexFloppy_3_5,
     kIndex_HardDrive,
     kIndexCDROM,
-    kIndexCassette
+    kIndexCassette,
+    kIndexDisk,
 };
 
 -(void)rebuildArgs {
     
     static char* prefix[] = {
-        "flop", "flop", "hard", "cdrm", "cass"
+        "flop", "flop", "hard", "cdrm", "cass", "disk"
     };
+    static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
     
-    unsigned counts[5] = { 0, 0, 0, 0, 0 };
+    unsigned counts[CATEGORY_COUNT] = { 0 };
     
-    for (unsigned j = 0; j < 5; ++j) {
+    for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
         MediaCategory *cat = _data[j];
         NSInteger valid = [cat validCount];
@@ -319,7 +326,7 @@ enum {
 -(void)rebuildRoot {
     NSMutableArray *tmp = [NSMutableArray new];
     int ix = 0;
-    for (unsigned j = 0 ; j < 5; ++j) {
+    for (unsigned j = 0 ; j < CATEGORY_COUNT; ++j) {
         MediaCategory *cat = _data[j];
         [cat setIndex: -1];
         if ([cat count]) {
@@ -343,8 +350,10 @@ enum {
         @"flop_3_5",
         @"hard",
         @"cdrm",
-        @"cass"
+        @"cass",
+        @"disk",
     };
+    static_assert(SIZEOF(Keys) == CATEGORY_COUNT, "Missing item");
 
     NSNumber *o;
     MediaCategory *cat;
@@ -355,7 +364,7 @@ enum {
     if (_media == media) return;
     _media = media;
     
-    for (unsigned j = 0; j < 5; ++j) {
+    for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
         o = [media objectForKey: Keys[j]];
         i = [o unsignedIntValue];

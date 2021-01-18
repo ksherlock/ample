@@ -324,6 +324,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
     unsigned hard = 0;
     unsigned flop_5_25 = 0;
     unsigned flop_3_5 = 0;
+    unsigned pseudo_disk = 0; // mac psuedo disk
 
 #if 0
     for (SlotItem *item in _root) {
@@ -334,6 +335,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
             _(hard, tmp);
             _(flop_5_25, tmp);
             _(flop_3_5, tmp);
+            _(pseudo_disk, tmp);
         }
     }
 #endif
@@ -349,6 +351,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
                 _(hard, tmp);
                 _(flop_5_25, tmp);
                 _(flop_3_5, tmp);
+                _(pseudo_disk, tmp);
             }
         }
     }
@@ -360,6 +363,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         _(hard, tmp);
         _(flop_5_25, tmp);
         _(flop_3_5, tmp);
+        _(pseudo_disk, tmp);
     }
     
     [self setMedia: @{
@@ -368,6 +372,7 @@ static_assert(MAX_SLOTS <= sizeof(unsigned) * 8, "too many slot types");
         @"hard": @(hard),
         @"flop_5_25": @(flop_5_25),
         @"flop_3_5": @(flop_3_5),
+        @"disk": @(pseudo_disk),
     }];
     
 }
