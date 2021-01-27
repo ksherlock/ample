@@ -198,8 +198,7 @@ static NSURL *MameWorkingDirectory(void) {
     }
     else
     {
-        string = @"\n\n[Caught signal]\n\n";
-        
+        string = [NSString stringWithFormat: @"\n\n[Caught signal %d (%s)]\n\n", status, strsignal(status)];
     }
     
     [self appendString: string];
