@@ -35,6 +35,62 @@ NSString *SupportDirectoryPath(void) {
 }
 
 
+NSURL *MameURL(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSBundle *bundle = [NSBundle mainBundle];
+        
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMamePath];
+        if (![path length]) return [NSURL fileURLWithPath: path];
+    }
+    
+    return [bundle URLForAuxiliaryExecutable: @"mame64"];
+}
+
+NSString *MamePath(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSBundle *bundle = [NSBundle mainBundle];
+
+    NSString *path;
+    
+    if ([defaults boolForKey: kUseCustomMame]) {
+        path = [defaults stringForKey: kMamePath];
+        if ([path length]) return path;
+    }
+    path = [bundle pathForAuxiliaryExecutable: @"mame64"];
+    if ([path length]) return path;
+    return nil;
+}
+
+
+NSURL *MameWorkingDirectory(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMameWorkingDirectory];
+        if (![path length]) return [NSURL fileURLWithPath: path];
+    }
+    
+    return SupportDirectory();
+}
+
+NSString *MameWorkingDirectoryPath(void) {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+    if ([defaults boolForKey: kUseCustomMame]) {
+        NSString *path = [defaults stringForKey: kMameWorkingDirectory];
+        if (![path length]) return path;
+    }
+    
+    return SupportDirectoryPath();
+}
+
+
+
 NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
 NSString *kMameWorkingDirectory = @"MameWorkingDirectory";

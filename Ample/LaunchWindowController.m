@@ -120,36 +120,6 @@ static NSString *kContextMachine = @"kContextMachine";
 }
 
 
-static NSURL *MameURL(void) {
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSBundle *bundle = [NSBundle mainBundle];
-        
-    if ([defaults boolForKey: kUseCustomMame]) {
-        NSString *path = [defaults stringForKey: kMamePath];
-        if (![path length]) return [NSURL fileURLWithPath: path];
-    }
-    
-    return [bundle URLForAuxiliaryExecutable: @"mame64"];
-
-    return nil;
-}
-
-static NSString *MamePath(void) {
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSBundle *bundle = [NSBundle mainBundle];
-
-    NSString *path;
-    
-    if ([defaults boolForKey: kUseCustomMame]) {
-        path = [defaults stringForKey: kMamePath];
-        if ([path length]) return path;
-    }
-    path = [bundle pathForAuxiliaryExecutable: @"mame64"];
-    if ([path length]) return path;
-    return nil;
-}
 
 
 static NSString * JoinArguments(NSArray *argv) {

@@ -11,8 +11,17 @@
 
 #import <Cocoa/Cocoa.h>
 
+/* ~/Library/ApplicationSupport/Ample/ */
 NSURL *SupportDirectory(void);
 NSString *SupportDirectoryPath(void);
+
+/* mame executable URL */
+NSURL *MameURL(void);
+NSString *MamePath(void);
+
+/* mame working directory */
+NSURL *MameWorkingDirectory(void);
+NSString *MameWorkingDirectoryPath(void);
 
 /* NSUserDefaults keys */
 extern NSString *kUseCustomMame;

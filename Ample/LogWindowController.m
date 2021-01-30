@@ -36,31 +36,6 @@ static NSMutableSet *LogWindows;
     return controller;
 }
 
-static NSURL *MameURL(void) {
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSBundle *bundle = [NSBundle mainBundle];
-        
-    if ([defaults boolForKey: kUseCustomMame]) {
-        NSString *path = [defaults stringForKey: kMamePath];
-        if (![path length]) return [NSURL fileURLWithPath: path];
-    }
-    
-    return [bundle URLForAuxiliaryExecutable: @"mame64"];
-}
-
-static NSURL *MameWorkingDirectory(void) {
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-    if ([defaults boolForKey: kUseCustomMame]) {
-        NSString *path = [defaults stringForKey: kMameWorkingDirectory];
-        if (![path length]) return [NSURL fileURLWithPath: path];
-    }
-    
-    return SupportDirectory();
-}
-
 
 
 +(id)controllerForArgs: (NSArray *)args {
