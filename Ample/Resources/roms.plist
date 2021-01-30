@@ -28,7 +28,6 @@
       <string>a2mouse</string>
       <string>a2parprn</string>
       <string>a2pic</string>
-      <string>a2pic</string>
       <string>a2ramfac</string>
       <string>a2scsi</string>
       <string>a2sider1</string>
@@ -50,7 +49,11 @@
       <string>a2vuliie</string>
       <string>a2zipdrv</string>
       <string>a3fdc</string>
+      <string>agat7_flop</string>
+      <string>agat840k_hle</string>
+      <string>agat9_flop</string>
       <string>agat_fdc</string>
+      <string>ap2000</string>
       <string>apple1</string>
       <string>apple2</string>
       <string>apple2c</string>
@@ -64,17 +67,29 @@
       <string>cecg</string>
       <string>ceci</string>
       <string>cecm</string>
-      <string>cga</string>
+      <string>cffa1</string>
+      <string>chessmachine</string>
       <string>cmsscsi</string>
+      <string>comx_pl80</string>
       <string>d2fdc</string>
       <string>diskii13</string>
       <string>egret</string>
+      <string>ex800</string>
+      <string>ie15_device</string>
+      <string>ie15kbd</string>
+      <string>kb_ec1841</string>
+      <string>kb_iskr1030</string>
+      <string>kb_pc83</string>
+      <string>kb_pcxt83</string>
       <string>keytronic_pc3270</string>
+      <string>lx800</string>
+      <string>lx810l</string>
       <string>m68705p3</string>
       <string>maciici</string>
       <string>maclc</string>
       <string>maclc2</string>
       <string>maclc3</string>
+      <string>nb_48gc</string>
       <string>nb_824gc</string>
       <string>nb_aenet</string>
       <string>nb_amc3b</string>
@@ -90,7 +105,9 @@
       <string>nb_spdq</string>
       <string>nb_vikbw</string>
       <string>nb_wspt</string>
+      <string>p72</string>
       <string>qsound</string>
+      <string>swtpc8212_device</string>
       <string>votrax</string>
       <string>ym2608</string>
       <string>zijini</string>
