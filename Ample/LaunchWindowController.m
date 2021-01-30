@@ -13,6 +13,9 @@
 #import "MachineViewController.h"
 #import "LogWindowController.h"
 
+
+#include <sys/stat.h>
+
 static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
 
@@ -122,7 +125,7 @@ static NSString *kContextMachine = @"kContextMachine";
 
 
 
-static NSString * JoinArguments(NSArray *argv) {
+static NSString * JoinArguments(NSArray *argv, NSString *argv0) {
 
     static NSCharacterSet *safe = nil;
     static NSCharacterSet *unsafe = nil;
@@ -142,9 +145,13 @@ static NSString * JoinArguments(NSArray *argv) {
     
     //unsigned ix = 0;
     //[rv appendString: @"mame"];
-    NSString *path = MamePath();
-    path = path ? [path lastPathComponent] : @"mame";
-    [rv appendString: path];
+    if (argv0) {
+        [rv appendString: argv0];
+    } else {
+        NSString *path = MamePath();
+        path = path ? [path lastPathComponent] : @"mame";
+        [rv appendString: path];
+    }
     for (NSString *s in argv) {
         [rv appendString: @" "];
         NSUInteger l = [s length];
@@ -192,6 +199,67 @@ static NSString * JoinArguments(NSArray *argv) {
     }
     return rv;
 }
+
+static NSString *ShellQuote(NSString *s) {
+
+    static NSCharacterSet *safe = nil;
+    static NSCharacterSet *unsafe = nil;
+
+    if (!safe) {
+        NSString *str =
+            @"%+-./:=_"
+            @"0123456789"
+            @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        ;
+        safe = [NSCharacterSet characterSetWithCharactersInString: str];
+        unsafe = [safe invertedSet];
+    }
+        
+    NSUInteger l = [s length];
+    
+    if (!l) {
+        return @"''";
+    }
+    
+    if (!CFStringFindCharacterFromSet((CFStringRef)s, (CFCharacterSetRef)unsafe, CFRangeMake(0, l), 0, NULL)) {
+        return s;
+    }
+
+    NSMutableString *rv = [NSMutableString new];
+
+    unichar *buffer = malloc(sizeof(unichar) * l);
+    [s getCharacters: buffer range: NSMakeRange(0, l)];
+
+    [rv appendString: @"'"];
+    for (NSUInteger i = 0; i < l; ++i) {
+        unichar c = buffer[i];
+        switch (c) {
+            case '\'':
+                [rv appendString: @"\\'"];
+                break;
+            case '\\':
+                [rv appendString: @"\\\\"];
+                break;
+            case 0x7f:
+                [rv appendString: @"\\177"];
+                break;
+            default: {
+                NSString *cc;
+                if (c < 0x20) {
+                    cc = [NSString stringWithFormat: @"\\%o", c];
+                } else {
+                    cc = [NSString stringWithCharacters: &c length: 1];
+                }
+                [rv appendString: cc];
+                break;
+            }
+        }
+    }
+    [rv appendString: @"'"];
+    free(buffer);
+    return rv;
+}
+
 
 -(void)buildCommandLine {
 
@@ -331,14 +399,20 @@ static NSString * JoinArguments(NSArray *argv) {
         }
     }
     
-    [self setCommandLine: JoinArguments(argv)];
+    [self setCommandLine: JoinArguments(argv, nil)];
     [self setArgs: argv];
 }
 
+
+-(BOOL)validateMenuItem:(NSMenuItem *)menuItem {
+    SEL cmd = [menuItem action];
+    if (cmd == @selector(exportShellScript:)) {
+        return [_args count] ? YES : NO;
+    }
+    return [super validateMenuItem: menuItem];
+}
+
 # pragma mark - IBActions
-
-
-
 
 - (IBAction)launchAction:(id)sender {
 
@@ -346,30 +420,49 @@ static NSString * JoinArguments(NSArray *argv) {
 
     [LogWindowController controllerForArgs: _args];
 
-#if 0
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSURL *url = MameURL();
-    
-    if (!url) {
-        NSAlert *alert = [NSAlert new];
-
-        [alert setMessageText: @"Unable to find MAME executable path"];
-        [alert runModal];
-        return;
-    }
-    
-    NSTask *task = [NSTask new];
-    [task setExecutableURL: url];
-    [task setArguments: _args];
-
-    if (![defaults boolForKey: kUseCustomMame]) {
-        // run in Application Support/Ample.
-        [task setCurrentDirectoryURL: SupportDirectory()];
-    }
-    
-    [LogWindowController controllerForTask: task];
-#endif
 }
 
+-(IBAction)exportShellScript: (id)sender {
+    
+    NSSavePanel *p = [NSSavePanel savePanel];
+    [p setTitle: @"Export Shell Script"];
+    [p setExtensionHidden: NO];
+    [p setNameFieldStringValue: @"mame.sh"];
+    
+    //[p setDelegate: self];
+    
+    NSWindow *w = [self window];
+    
+    NSMutableString *data = [NSMutableString new];
+    
+    [data appendString: @"#!/bin/sh\n\n"];
+    [data appendFormat: @"MAME=%@\n", ShellQuote(MamePath())];
+    [data appendFormat: @"cd %@\n", ShellQuote(MameWorkingDirectoryPath())];
+    [data appendString: JoinArguments(_args, @"$MAME")];
+    [data appendString: @"\n\n"];
+    
+    [p beginSheetModalForWindow: w completionHandler: ^(NSModalResponse r) {
+        
+        if (r != NSModalResponseOK) return;
+        
+        NSURL *url = [p URL];
+        NSError *error = nil;
+        [data writeToURL: url atomically: YES encoding: NSUTF8StringEncoding error: &error];
+
+        [p orderOut: nil];
+        
+        if (error) {
+            [self presentError: error];
+            return;
+        }
+        
+        // chmod 755...
+        int ok = chmod([url fileSystemRepresentation], 0755);
+        if (ok < 0) {
+            // ...
+        }
+    }];
+}
 
 @end
+
