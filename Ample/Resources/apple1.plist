@@ -174,5 +174,9 @@
         </dict>
       </dict>
     </array>
+    <key>software</key>
+    <array>
+      <string>apple1.xml</string>
+    </array>
   </dict>
 </plist>

@@ -71,5 +71,10 @@
       <integer>640</integer>
       <integer>480</integer>
     </array>
+    <key>software</key>
+    <array>
+      <string>mac_hdd.xml</string>
+      <string>mac_flop.xml</string>
+    </array>
   </dict>
 </plist>

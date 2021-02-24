@@ -2922,5 +2922,12 @@
         <false/>
       </dict>
     </array>
+    <key>software</key>
+    <array>
+      <string>apple2_flop_clcracked.xml</string>
+      <string>apple2_flop_orig.xml</string>
+      <string>apple2_flop_misc.xml</string>
+      <string>cecflop.xml</string>
+    </array>
   </dict>
 </plist>

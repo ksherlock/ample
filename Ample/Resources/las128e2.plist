@@ -140,6 +140,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>rs_printer</string>
+        <key>description</key>
+        <string>Radio Shack Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
@@ -231,6 +239,14 @@
       </dict>
       <dict>
         <key>value</key>
+        <string>rs_printer</string>
+        <key>description</key>
+        <string>Radio Shack Serial Printer</string>
+        <key>default</key>
+        <false/>
+      </dict>
+      <dict>
+        <key>value</key>
         <string>loopback</string>
         <key>description</key>
         <string>RS232 Loopback</string>
@@ -293,6 +309,12 @@
         <key>default</key>
         <false/>
       </dict>
+    </array>
+    <key>software</key>
+    <array>
+      <string>apple2_flop_clcracked.xml</string>
+      <string>apple2_flop_orig.xml</string>
+      <string>apple2_flop_misc.xml</string>
     </array>
   </dict>
 </plist>

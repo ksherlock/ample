@@ -349,5 +349,8 @@
         <false/>
       </dict>
     </array>
+    <key>software</key>
+    <array>
+    </array>
   </dict>
 </plist>
