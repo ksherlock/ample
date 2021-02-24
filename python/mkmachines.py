@@ -167,6 +167,11 @@ def find_media(parent, include_slots=False):
 	if not media: return None
 	return media
 
+
+def find_software(parent):
+	swl = parent.findall("./softwarelist")
+	return [x.get("name") + ".xml" for x in swl]
+
 devices = {}
 
 p = argparse.ArgumentParser()
@@ -254,6 +259,9 @@ for m in machines:
 		tmp.sort(key=lambda x: x["description"].upper() )
 		tmp.insert(0, {"value": "", "description": "—None—", "default": not has_default})
 		data[s] = tmp
+
+
+	data["software"] = find_software(machine)
 
 
 	path = "../Ample/Resources/{}.plist".format(m)
