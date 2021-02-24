@@ -30,7 +30,7 @@
     [_webView setHidden: YES];
     NSBundle *bundle = [NSBundle mainBundle];
     NSURL *url = [bundle URLForResource: @"CheatSheet" withExtension: @"html"];
-    [[[_webView configuration] preferences] setValue: @YES forKey: @"developerExtrasEnabled"];
+    //[[[_webView configuration] preferences] setValue: @YES forKey: @"developerExtrasEnabled"];
     [_webView loadFileURL: url allowingReadAccessToURL: url];
 
 }
