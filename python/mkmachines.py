@@ -79,9 +79,14 @@ def find_machine_media(parent):
 			# apple2c - tag="sl6:0:525"  - <slot name="sl:0">.
 			# apple3 - tag="0:525" - <slot name="0">
 
+			# .229 apple2gs:
+			# <device type="floppydisk" tag="fdc:0:525" interface="floppy_5_25">
+			# <device type="floppydisk" tag="fdc:2:35dd" interface="floppy_3_5">
+
 			# format slot name : slotoption name : machine->device type name
 
 		if mname == "apple2c" and slot == "sl6": slot = None
+		if slot=="fdc": slot = None # .229 IIgs
 
 		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
 		if mname[0:3] == "mac" and slot == "scsi": slot = None
