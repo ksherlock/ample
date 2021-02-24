@@ -23,6 +23,9 @@ NSString *MamePath(void);
 NSURL *MameWorkingDirectory(void);
 NSString *MameWorkingDirectoryPath(void);
 
+
+NSDictionary *MameMachine(NSString *machine);
+
 /* NSUserDefaults keys */
 extern NSString *kUseCustomMame;
 extern NSString *kMamePath;

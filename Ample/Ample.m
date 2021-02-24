@@ -90,6 +90,23 @@ NSString *MameWorkingDirectoryPath(void) {
 }
 
 
+NSDictionary *MameMachine(NSString *machine) {
+    static NSMutableDictionary *cache;
+    
+    if (!cache) cache = [NSMutableDictionary new];
+    NSDictionary *d;
+    
+    if (!machine) return nil;
+    d = [cache objectForKey: machine];
+    if (d) return d;
+
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSURL *url= [bundle URLForResource: machine withExtension: @"plist"];
+    
+    d = [NSDictionary dictionaryWithContentsOfURL: url];
+    if (d) [cache setObject: d forKey: machine];
+    return d;
+}
 
 NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
