@@ -7,13 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Media.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewSlotViewController : NSViewController
 
 @property NSArray *args;
-@property NSDictionary *media;
+@property Media media;
 @property NSSize resolution;
 @property (nonatomic) NSString *machine;
 @end
@@ -22,26 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface SlotTableCellView  : NSTableCellView
 
-@property (weak) IBOutlet NSPopUpButton *menuButton;
-
-@end
-
-
-@interface SlotItem : NSObject
-@property unsigned index;
-@property NSArray *children;
-@property NSArray *menuItems;
-@property NSInteger defaultIndex;
-@property NSInteger selectedIndex;
-
--(NSDictionary *)selectedItem;
--(NSDictionary *)selectedMedia;
--(BOOL)hasDefault;
-
--(void)reset;
-@end
 
 
 NS_ASSUME_NONNULL_END

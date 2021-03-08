@@ -34,6 +34,10 @@ DISABLED = set((
 	'xebec',
 	'sider1',
 	'sider2',
+	'cmsscsi',
+	('apple2gs', 'cffa202'),
+	('apple2gsr0', 'cffa202'),
+	('apple2gsr1', 'cffa202'),
 ))
 
 
@@ -53,11 +57,11 @@ def find_machine_media(parent):
 		"cassette": "cass",
 		"apple1_cass": "cass",
 		"apple2_cass": "cass",
-		"floppy_5_25": "flop_5_25",
-		"floppy_3_5": "flop_3_5",
+		"floppy_5_25": "floppy_5_25",
+		"floppy_3_5": "floppy_3_5",
 		# mac
 		"scsi_hdd": "hard",
-		#"cdrom": "cdrm", -- 2021-01-18 - CD rom is more or less broken so exclude it.
+		#"cdrom": "cdrom", -- 2021-01-18 - CD rom is more or less broken so exclude it.
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -122,16 +126,16 @@ def find_media(parent, include_slots=False):
 
 	remap_dev = {
 		"cassette_image": "cass",
-		"floppy_apple": "flop_5_25",
+		"floppy_apple": "floppy_5_25",
 		"harddisk_image": "hard",
-		"floppy_sonny": "flop_3_5",
+		"floppy_sonny": "floppy_3_5",
 		"messimg_disk_image": "pseudo_disk",
 	}
 	remap_slot = {
 		"harddisk": "hard",
 		"hdd": "hard",
-		"cdrom": "cdrm",
-		"525": "flop_5_25",
+		"cdrom": "cdrom",
+		"525": "floppy_5_25",
 		"image": "psuedo_disk",
 	}
 
@@ -167,7 +171,7 @@ def find_media(parent, include_slots=False):
 	# n.b. - floppies are 5.25" 360k or 180k.  not bootable, not usable from prodos
 	# without special prodos file or loading driver into pc transporter ram. 
 	if parent.get("name") == "pcxport":
-		media.get["flop_5_25"] = media.get("flop_5_25", 0) + 2
+		media.get["floppy_5_25"] = media.get("floppy_5_25", 0) + 2
 
 	if not media: return None
 	return media
@@ -176,6 +180,52 @@ def find_media(parent, include_slots=False):
 def find_software(parent):
 	swl = parent.findall("./softwarelist")
 	return [x.get("name") + ".xml" for x in swl]
+
+
+
+	# given a machine, return a list of slotoptions.
+def slot_options(machine):
+	REMAP = {
+		'cdrom': 'CD-ROM',
+		'hdd': 'Hard Disk',
+		'harddisk': 'Hard Disk',
+	}
+	MEDIA = {
+		'cdrom': 'cdrom',
+		'hdd': 'hard',
+		'harddisk': 'hard',
+	}
+
+	mname = machine.get('name')
+
+	rv = { }
+	for slot in machine.findall('./slot'):
+		slotname = slot.get("name")
+		tmp = []
+		has_default = False
+		for option in slot.findall("./slotoption"):
+			name = option.get("name")
+			if name not in REMAP: continue
+			default = option.get("default") == "yes"
+			has_default |= default
+			tmp.append({
+				'value': name,
+				'description': REMAP[name],
+				'media': MEDIA[name],
+				'default': default
+			})
+		if len(tmp) < 2 : continue # don't bother if only 1 option which is going to be defaulted anyhow.
+
+		tmp.sort(key=lambda x: x["description"].upper() )
+		tmp.insert(0, {"value": "", "description": "—None—", "default": not has_default})
+
+		rv[slotname] = tmp
+
+	if not len(rv): return None
+
+	return rv
+
+
 
 devices = {}
 
@@ -251,21 +301,35 @@ for m in machines:
 			devname = x.get("devname")
 			desc = mm[devname].find("description").text
 			default = x.get("default") == "yes"
-			disabled = name in DISABLED
+			disabled = name in DISABLED or (m, name) in DISABLED
 
-			d = { "value": name, "description": desc, "default": default }
+			d = { "value": name, "description": desc, "default": default } #, "devname": devname or ''}
 			if disabled: d["disabled"] = True
 			else:
 				media = find_media(mm[devname], True)
 				if media: d["media"] = media
+
+				# slots = find_slot_options(mm[devname])
+				# if slots: d["options"] = slots  # should not include media if it has slot options.
+
 			tmp.append(d)
 			has_default |= default
+
 
 		tmp.sort(key=lambda x: x["description"].upper() )
 		tmp.insert(0, {"value": "", "description": "—None—", "default": not has_default})
 		data[s] = tmp
 
 
+	# also add child slots
+	slots = {}
+	for x in mm.values():
+		name = x.get("name")
+		y = slot_options(x)
+		if y:
+			slots[name] = y
+
+	#if slots: data["device-slots"] = slots
 	data["software"] = find_software(machine)
 
 

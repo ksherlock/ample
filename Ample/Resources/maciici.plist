@@ -91,7 +91,7 @@
     </array>
     <key>media</key>
     <dict>
-      <key>flop_3_5</key>
+      <key>floppy_3_5</key>
       <integer>2</integer>
       <key>hard</key>
       <integer>2</integer>

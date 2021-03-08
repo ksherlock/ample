@@ -23,6 +23,7 @@ NSString *MamePath(void);
 NSURL *MameWorkingDirectory(void);
 NSString *MameWorkingDirectoryPath(void);
 
+NSString *InternString(NSString *key);
 
 NSDictionary *MameMachine(NSString *machine);
 

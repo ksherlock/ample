@@ -51,6 +51,10 @@
 
 @implementation MediaCategory
 
++(instancetype)categoryWithTitle: (NSString *)title {
+    return [[self alloc] initWithTitle: title];
+}
+
 -(instancetype)initWithTitle: (NSString *)title {
     [self setTitle: title];
     return self;
@@ -248,12 +252,22 @@
 
     MediaCategory *_data[CATEGORY_COUNT];
     NSArray *_root;
-    NSDictionary *_media;
+    Media _media;
 }
 
 @end
 
 @implementation MediaViewController
+
+enum {
+    kIndexFloppy525 = 0,
+    kIndexFloppy35,
+    kIndexHardDrive,
+    kIndexCDROM,
+    kIndexCassette,
+    kIndexDiskImage,
+};
+
 
 -(void)awakeFromNib {
     
@@ -262,35 +276,18 @@
     if (first) return;
     first++;
 
-    MediaCategory *a, *b, *c, *d, *e, *f;
-    
-    a = [[MediaCategory alloc] initWithTitle: @"5.25\" Floppies"];
-    b = [[MediaCategory alloc] initWithTitle: @"3.5\" Floppies"];
-    c = [[MediaCategory alloc] initWithTitle: @"Hard Drives"];
-    d = [[MediaCategory alloc] initWithTitle: @"CD-ROMs"];
-    e = [[MediaCategory alloc] initWithTitle: @"Cassettes"];
-    f = [[MediaCategory alloc] initWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
-    
-    _data[0] = a;
-    _data[1] = b;
-    _data[2] = c;
-    _data[3] = d;
-    _data[4] = e;
-    _data[5] = f;
+    _data[kIndexFloppy525] = [MediaCategory categoryWithTitle: @"5.25\" Floppies"];
+    _data[kIndexFloppy35] = [MediaCategory categoryWithTitle: @"3.5\" Floppies"];
+    _data[kIndexHardDrive] = [MediaCategory categoryWithTitle: @"Hard Drives"];
+    _data[kIndexCDROM] = [MediaCategory categoryWithTitle: @"CD-ROMs"];
+    _data[kIndexCassette] = [MediaCategory categoryWithTitle: @"Cassettes"];
+    _data[kIndexDiskImage] = [MediaCategory categoryWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
 
     _root = @[];
 
 }
 
 
-enum {
-    kIndexFloppy_5_25 = 0,
-    kIndexFloppy_3_5,
-    kIndex_HardDrive,
-    kIndexCDROM,
-    kIndexCassette,
-    kIndexDisk,
-};
 
 -(void)rebuildArgs {
     
@@ -343,36 +340,27 @@ enum {
     [_outlineView expandItem: nil expandChildren: YES];
 }
 
--(void)setMedia: (NSDictionary *)media {
+-(void)setMedia: (Media)media {
     
-    static NSString *Keys[] = {
-        @"flop_5_25",
-        @"flop_3_5",
-        @"hard",
-        @"cdrm",
-        @"cass",
-        @"disk",
-    };
-    static_assert(SIZEOF(Keys) == CATEGORY_COUNT, "Missing item");
-
-    NSNumber *o;
     MediaCategory *cat;
-    unsigned i;
     BOOL delta = NO;
-    
-    
-    if (_media == media) return;
+    unsigned x;
+
+    if (MediaEqual(&_media, &media)) return;
     _media = media;
     
-    for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
-        o = [media objectForKey: Keys[j]];
-        i = [o unsignedIntValue];
-        cat = _data[j];
-        delta |= [cat setItemCount: i];
-    }
+#undef _
+#define _(name, index) \
+x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
+    _(cass, kIndexCassette);
+    _(cdrom, kIndexCDROM);
+    _(hard, kIndexHardDrive);
+    _(floppy_3_5, kIndexFloppy35);
+    _(floppy_5_25, kIndexFloppy525);
+    _(pseudo_disk, kIndexDiskImage);
 
-    
+
     if (delta) {
         [self rebuildRoot];
         [self rebuildArgs];

@@ -72,7 +72,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -85,7 +85,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -141,7 +141,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -154,7 +154,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -210,7 +210,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -223,7 +223,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -279,7 +279,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -292,7 +292,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -348,7 +348,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -361,7 +361,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -417,7 +417,7 @@
         <true/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -430,7 +430,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>

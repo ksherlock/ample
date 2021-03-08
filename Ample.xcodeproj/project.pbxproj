@@ -58,6 +58,10 @@
 		B6109A4124F5F377005CB652 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1424F5F376005CB652 /* apple2cp.plist */; };
 		B6109A4224F5F377005CB652 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
 		B6109A4324F5F377005CB652 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
+		B6152B5625F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
+		B6152B5725F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
+		B6152B5A25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
+		B6152B5B25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
@@ -306,6 +310,10 @@
 		B6109A1424F5F376005CB652 /* apple2cp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2cp.plist; sourceTree = "<group>"; };
 		B6109A1524F5F376005CB652 /* apple2p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2p.plist; sourceTree = "<group>"; };
 		B6109A1624F5F376005CB652 /* agat7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = agat7.plist; sourceTree = "<group>"; };
+		B6152B5425F4549F00605E6E /* Slot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slot.h; sourceTree = "<group>"; };
+		B6152B5525F4549F00605E6E /* Slot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slot.m; sourceTree = "<group>"; };
+		B6152B5825F5B4F100605E6E /* Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		B6152B5925F5B57E00605E6E /* Media.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
 		B63C1B8924FF4B7100511A71 /* Ample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ample.h; sourceTree = "<group>"; };
 		B63C1B8A24FF4BF700511A71 /* Ample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ample.m; sourceTree = "<group>"; };
 		B63C1B8D25004C6D00511A71 /* mame-data.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mame-data.tgz"; path = "embedded/mame-data.tgz"; sourceTree = "<group>"; };
@@ -538,9 +546,13 @@
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
+				B6152B5825F5B4F100605E6E /* Media.h */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
 				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
 				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
+				B6152B5425F4549F00605E6E /* Slot.h */,
+				B6152B5525F4549F00605E6E /* Slot.m */,
+				B6152B5925F5B57E00605E6E /* Media.m */,
 				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
 				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
 				B6A1A1932528EB1700DB0FD7 /* Menu.m */,
@@ -910,6 +922,8 @@
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
 				B6B9EA662506A5550080E70D /* EjectButton.m in Sources */,
+				B6152B5A25F5B57E00605E6E /* Media.m in Sources */,
+				B6152B5625F4549F00605E6E /* Slot.m in Sources */,
 				B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */,
 				B64E15A924EA1D5300E8AD3D /* MachineViewController.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
@@ -937,7 +951,9 @@
 				B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
 				B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */,
+				B6152B5B25F5B57E00605E6E /* Media.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
+				B6152B5725F4549F00605E6E /* Slot.m in Sources */,
 				B6E4B5B224FDE2670094A35C /* MachineViewController.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
 				B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */,

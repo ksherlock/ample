@@ -108,6 +108,23 @@ NSDictionary *MameMachine(NSString *machine) {
     return d;
 }
 
+/* NSCache doesn't retain it's key. This essentially interns it. */
+/* could just abuse NSSelectorFromString() */
+NSString *InternString(NSString *key) {
+    static NSMutableDictionary *storage = nil;
+    
+    if (!storage) {
+        storage = [NSMutableDictionary new];
+    }
+    NSString *copy = [storage objectForKey: key];
+    if (!copy) {
+        copy = [key copy];
+        [storage setObject: copy forKey: copy];
+    }
+    return copy;
+}
+
+
 NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
 NSString *kMameWorkingDirectory = @"MameWorkingDirectory";

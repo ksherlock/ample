@@ -7,13 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Media.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MediaViewController : NSViewController <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
 @property (weak) IBOutlet NSOutlineView *outlineView;
-@property (nonatomic) NSDictionary *media;
+@property (nonatomic) Media media;
 @property NSArray *args;
 
 - (IBAction)ejectAction:(id)sender;

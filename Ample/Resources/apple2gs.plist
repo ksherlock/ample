@@ -91,9 +91,9 @@
     </array>
     <key>media</key>
     <dict>
-      <key>flop_5_25</key>
+      <key>floppy_5_25</key>
       <integer>2</integer>
-      <key>flop_3_5</key>
+      <key>floppy_3_5</key>
       <integer>2</integer>
     </dict>
     <key>resolution</key>
@@ -152,7 +152,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -207,7 +207,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -312,11 +312,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -338,11 +335,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -638,7 +632,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -693,7 +687,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -798,11 +792,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -824,11 +815,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1124,7 +1112,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -1179,7 +1167,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -1284,11 +1272,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1310,11 +1295,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1610,7 +1592,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -1665,7 +1647,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -1770,11 +1752,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -1796,11 +1775,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2096,7 +2072,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -2151,7 +2127,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -2256,11 +2232,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2282,11 +2255,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2582,7 +2552,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -2637,7 +2607,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -2742,11 +2712,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -2768,11 +2735,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -3068,7 +3032,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>flop_5_25</key>
+          <key>floppy_5_25</key>
           <integer>2</integer>
         </dict>
       </dict>
@@ -3123,7 +3087,7 @@
         <false/>
         <key>media</key>
         <dict>
-          <key>cdrm</key>
+          <key>cdrom</key>
           <integer>1</integer>
           <key>hard</key>
           <integer>1</integer>
@@ -3228,11 +3192,8 @@
         <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>2</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -3254,11 +3215,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>

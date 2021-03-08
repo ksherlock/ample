@@ -41,7 +41,7 @@
     </array>
     <key>media</key>
     <dict>
-      <key>flop_5_25</key>
+      <key>floppy_5_25</key>
       <integer>4</integer>
     </dict>
     <key>resolution</key>
@@ -87,11 +87,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -158,11 +155,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -229,11 +223,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>
@@ -300,11 +291,8 @@
         <string>CMS SCSI II Card</string>
         <key>default</key>
         <false/>
-        <key>media</key>
-        <dict>
-          <key>hard</key>
-          <integer>1</integer>
-        </dict>
+        <key>disabled</key>
+        <true/>
       </dict>
       <dict>
         <key>value</key>

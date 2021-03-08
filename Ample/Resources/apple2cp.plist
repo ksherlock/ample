@@ -61,9 +61,9 @@
     </array>
     <key>media</key>
     <dict>
-      <key>flop_5_25</key>
+      <key>floppy_5_25</key>
       <integer>2</integer>
-      <key>flop_3_5</key>
+      <key>floppy_3_5</key>
       <integer>2</integer>
     </dict>
     <key>resolution</key>
