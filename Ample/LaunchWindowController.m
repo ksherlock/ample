@@ -425,9 +425,12 @@ static NSString *ShellQuote(NSString *s) {
 -(IBAction)exportShellScript: (id)sender {
     
     NSSavePanel *p = [NSSavePanel savePanel];
+    
+    NSString *defaultName = [_mameMachine stringByAppendingString: @".sh"];
+    
     [p setTitle: @"Export Shell Script"];
     [p setExtensionHidden: NO];
-    [p setNameFieldStringValue: @"mame.sh"];
+    [p setNameFieldStringValue: defaultName];
     
     //[p setDelegate: self];
     
