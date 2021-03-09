@@ -665,6 +665,7 @@
 				B6BA257824E99BE9005FB8FF /* Frameworks */,
 				B6BA257924E99BE9005FB8FF /* Resources */,
 				B66236B124FDA443006CABD7 /* Embed Frameworks */,
+				B6152B5C25F6F4F800605E6E /* ShellScript */,
 				B66236BB24FDA71D006CABD7 /* CopyFiles */,
 			);
 			buildRules = (
@@ -902,6 +903,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6152B5C25F6F4F800605E6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\ncd \"embedded\"\necho perl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\nperl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6841BCC251EC913006A5C39 /* Sources */ = {
