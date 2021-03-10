@@ -9,6 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "Slot.h"
 
+static NSArray *MapArray(NSArray *src, id(^fn)(id)) {
+    NSMutableArray *rv = [NSMutableArray arrayWithCapacity: [src count]];
+    for (id x in src) {
+        [rv addObject: fn(x)];
+    }
+    return rv;
+}
+
 
 static NSArray *DeepCopyArray(NSArray *src) {
     if (!src) return nil;
@@ -27,6 +35,9 @@ static NSArray *DeepCopyArray(NSArray *src) {
 //-(NSArray *)buildArgs: (NSMutableArray *)args prefix: (NSString *)prefix;
 //-(void)buildMedia: (MediaBuilder *)builder;
 //-(NSArray *)buildSerial: (NSMutableArray *)array;
+
+-(instancetype)initWithDictionary: (NSDictionary *)dictionary devices: (NSDictionary *)devices;
+
 @end
 
 @interface SlotOption() {
@@ -34,11 +45,11 @@ static NSArray *DeepCopyArray(NSArray *src) {
     //NSDictionary *_media;
     Media _media;
     NSString *_keyPath;
-    NSString *_devName;
+    //NSString *_devName;
     BOOL _default;
 }
 
--(instancetype)initWithDictionary: (NSDictionary *)dictionary;
+-(instancetype)initWithDictionary: (NSDictionary *)dictionary devices: (NSDictionary *)devices;
 
 -(NSMenuItem *)menuItem;
 
@@ -49,12 +60,42 @@ static NSArray *DeepCopyArray(NSArray *src) {
 -(void)buildMedia: (Media *)media;
 -(void)buildSerial: (NSMutableArray *)array;
 
--(BOOL)loadDeviceSlots: (NSDictionary *)devices;
+//-(BOOL)loadDeviceSlots: (NSDictionary *)devices;
 
 @end
 
 @implementation Slot
 
+static NSDictionary *IndexMap = nil;
++(void)load {
+    
+    IndexMap = @{
+        @"ramsize":    @0,
+        @"sl0":        @1,
+        @"sl1":        @2,
+        @"sl2":        @3,
+        @"sl3":        @4,
+        @"sl4":        @5,
+        @"sl5":        @6,
+        @"sl6":        @7,
+        @"sl7":        @8,
+        @"exp":        @9,
+        @"aux":        @10,
+        @"rs232":      @11,
+        @"gameio":     @12,
+        @"modem":      @13,
+        @"printer":    @14,
+
+        //nubus mac
+        @"nb9":        @15,
+        @"nba":        @16,
+        @"nbb":        @17,
+        @"nbc":        @18,
+        @"nbd":        @19,
+        @"nbe":        @20,
+    };
+    
+}
 
 -(void)reset {
     [self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
@@ -152,7 +193,50 @@ static NSArray *DeepCopyArray(NSArray *src) {
 }
 
 
+-(instancetype)initWithDictionary: (NSDictionary *)data devices: (NSDictionary *)devices {
 
+    BOOL topLevel = NO;
+    _selectedIndex = -1;
+    _defaultIndex = -1;
+    _index = -1;
+    
+    _name = [data objectForKey: @"name"];
+    _title = [data objectForKey: @"description"];
+    
+    NSNumber *x = [IndexMap objectForKey: _name];
+    if (x) {
+        topLevel = YES;
+        _index = [x integerValue];
+        _name = [@"-" stringByAppendingString: _name];
+        _title = [_title stringByAppendingString: @":"];
+    }
+    
+    NSArray *op = [data objectForKey: @"options"];
+    NSMutableArray *options = [NSMutableArray arrayWithCapacity: [op count]];
+
+    
+    NSInteger index = 0;
+    for (NSDictionary *d in op) {
+        SlotOption *o = [[SlotOption alloc] initWithDictionary: d devices: devices];
+        if ([o isDefault]) {
+            _defaultIndex = index;
+        }
+        ++index;
+        if (topLevel) [o setKeyPath: _name];
+        [options addObject: o];
+    }
+    _options = options;
+    
+    _selectedIndex = _defaultIndex;
+    if (_selectedIndex < 0) _selectedIndex = 0;
+
+
+    //if (topLevel) [self setKeyPath];
+    
+    return self;
+}
+
+#if 0
 -(instancetype)initWithName: (NSString *)name title: (NSString *)title data: (NSArray *)data {
     
     _name = [name copy];
@@ -181,6 +265,7 @@ static NSArray *DeepCopyArray(NSArray *src) {
     
     return self;
 }
+#endif
 
 -(NSArray *)menuItems {
     //if (_menuItems) return _menuItems;
@@ -193,11 +278,13 @@ static NSArray *DeepCopyArray(NSArray *src) {
     return menuItems;
 }
 
+#if 0
 -(void)loadDeviceSlots: (NSDictionary *)devices {
     for (SlotOption *s in _options) {
         [s loadDeviceSlots: devices];
     }
 }
+#endif
 
 -(void)prepareView: (SlotTableCellView *)view {
     
@@ -225,15 +312,34 @@ static NSArray *DeepCopyArray(NSArray *src) {
 
 @synthesize  isDefault = _default;
 
+#if 0
 -(instancetype)initWithDictionary: (NSDictionary *)dictionary {
     
     _default = [(NSNumber *)[dictionary objectForKey: @"default"] boolValue];
     _disabled = [(NSNumber *)[dictionary objectForKey: @"disabled"] boolValue];
     _value = [dictionary objectForKey: @"value"];
-    _devName = [dictionary objectForKey: @"devName"];
+    //_devName = [dictionary objectForKey: @"devName"];
     _title = [dictionary objectForKey: @"description"];
     _media = MediaFromDictionary([dictionary objectForKey: @"media"]);
     //_media = [dictionary objectForKey: @"media"];
+    return self;
+}
+#endif
+
+-(instancetype)initWithDictionary: (NSDictionary *)data devices: (NSDictionary *)devices {
+    
+    _default = [(NSNumber *)[data objectForKey: @"default"] boolValue];
+    _disabled = [(NSNumber *)[data objectForKey: @"disabled"] boolValue];
+    _value = [data objectForKey: @"value"];
+    _title = [data objectForKey: @"description"];
+    _media = MediaFromDictionary([data objectForKey: @"media"]);
+    
+    NSString *devName = [data objectForKey: @"devname"];
+    if (devName && devices) {
+        
+        NSArray *tmp = [devices objectForKey: devName];
+        if (tmp) _children = DeepCopyArray(tmp);
+    }
     return self;
 }
 
@@ -267,7 +373,7 @@ static NSArray *DeepCopyArray(NSArray *src) {
     child->_disabled = _disabled;
     child->_media = _media;
     child->_value = [_value copyWithZone: zone];
-    child->_devName = [_devName copyWithZone: zone];
+    //child->_devName = [_devName copyWithZone: zone];
     child->_title = [_title copyWithZone: zone];
     //child->_media = [_media copyWithZone: zone];
     child->_keyPath = [_keyPath copyWithZone: zone];
@@ -333,12 +439,14 @@ static NSArray *DeepCopyArray(NSArray *src) {
 }
 
 
+#if 0
 -(BOOL)loadDeviceSlots: (NSDictionary *)devices {
     NSArray *o = [devices objectForKey: _devName];
     if (!o) return NO;
     _children = DeepCopyArray(o);
     return YES;
 }
+#endif
 
 @end
 
@@ -348,6 +456,45 @@ static NSArray *DeepCopyArray(NSArray *src) {
 @end
 
 
+extern NSString *InternString(NSString *);
+
+NSDictionary *BuildDevices(NSArray *array) {
+
+#if 0
+    static NSCache *cache = nil;
+
+    if (!cache) {
+        cache = [NSCache new];
+    }
+#endif
+
+    NSMutableDictionary *rv = [NSMutableDictionary dictionaryWithCapacity: [array count]];
+    for (NSDictionary *d in array) {
+        NSString *name = [d objectForKey: @"name"];
+        NSArray *slots = [d objectForKey: @"slots"];
+        
+        if (!name) continue;
+        if (!slots) continue;
+
+#if 0
+        name = InternString(name);
+        id x = [cache objectForKey: name];
+        if (x) {
+            [rv setObject: x forKey: name];
+            continue;
+        }
+#endif
+
+        NSArray *data = MapArray(slots, ^(id o){
+            
+            Slot *s = [[Slot alloc] initWithDictionary: o devices: nil];
+            return s;
+        });
+        
+        [rv setObject: data forKey: name];
+    }
+    return rv;
+}
 NSArray *BuildSlots(NSString *name, NSDictionary *data) {
 
     static NSCache *cache = nil;
@@ -391,22 +538,21 @@ NSArray *BuildSlots(NSString *name, NSDictionary *data) {
         cache = [NSCache new];
     }
     
-    extern NSString *InternString(NSString *);
+    
     name = InternString(name);
     NSArray *x = [cache objectForKey: name];
     if (x) {
         return x;
     }
     
-    NSMutableArray *rv = [NSMutableArray new];
-    for (unsigned i = 0, index = 1; i < 21; ++i, index <<= 1) {
-        NSArray *tmp = [data objectForKey: Slots[i].key];
-        if (!tmp) continue;
+    NSArray *slots = [data objectForKey: @"slots"];
 
-        Slot *s = [[Slot alloc] initWithName: Slots[i].flag title: Slots[i].title data: tmp];
-        [s setIndex: i];
+    NSMutableArray *rv = [NSMutableArray arrayWithCapacity: [slots count]];
+
+    NSDictionary *devices = BuildDevices([data objectForKey: @"devices"]);
+    for (NSDictionary *d in slots) {
         
-        [s setKeyPath];
+        Slot *s = [[Slot alloc] initWithDictionary: d devices: devices];
         [rv addObject: s];
     }
     

@@ -6,19 +6,6 @@
     <string>apple2c</string>
     <key>description</key>
     <string>Apple //c</string>
-    <key>ram</key>
-    <array>
-      <dict>
-        <key>intValue</key>
-        <integer>131072</integer>
-        <key>description</key>
-        <string>128K</string>
-        <key>value</key>
-        <string>128K</string>
-        <key>default</key>
-        <true/>
-      </dict>
-    </array>
     <key>media</key>
     <dict>
       <key>floppy_5_25</key>
@@ -29,246 +16,289 @@
       <integer>560</integer>
       <integer>384</integer>
     </array>
-    <key>gameio</key>
+    <key>slots</key>
     <array>
       <dict>
-        <key>value</key>
-        <string></string>
+        <key>name</key>
+        <string>ramsize</string>
         <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
+        <string>RAM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>intValue</key>
+            <integer>131072</integer>
+            <key>description</key>
+            <string>128K</string>
+            <key>value</key>
+            <string>128K</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>joy</string>
+        <key>name</key>
+        <string>gameio</string>
         <key>description</key>
-        <string>Apple II analog joysticks</string>
-        <key>default</key>
-        <false/>
+        <string>Game I/O</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>joy</string>
+            <key>description</key>
+            <string>Apple II analog joysticks</string>
+            <key>devname</key>
+            <string>a2joy</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>paddles</string>
+            <key>description</key>
+            <string>Apple II paddles</string>
+            <key>devname</key>
+            <string>a2pdls</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>compeyes</string>
+            <key>description</key>
+            <string>Digital Vision ComputerEyes</string>
+            <key>devname</key>
+            <string>a2ceyes</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>gizmo</string>
+            <key>description</key>
+            <string>HAL Labs Gizmo</string>
+            <key>devname</key>
+            <string>a2gizmo</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>paddles</string>
-        <key>description</key>
-        <string>Apple II paddles</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>compeyes</string>
-        <key>description</key>
-        <string>Digital Vision ComputerEyes</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>gizmo</string>
-        <key>description</key>
-        <string>HAL Labs Gizmo</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>printer</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ie15</string>
-        <key>description</key>
-        <string>IE15 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>pty</string>
-        <key>description</key>
-        <string>Pseudo terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>rs_printer</string>
-        <key>description</key>
-        <string>Radio Shack Serial Printer</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>keyboard</string>
-        <key>description</key>
-        <string>Serial Keyboard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
+        <key>name</key>
         <string>printer</string>
         <key>description</key>
-        <string>Serial Printer</string>
-        <key>default</key>
-        <false/>
+        <string>Printer</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ie15</string>
+            <key>description</key>
+            <string>IE15 Terminal</string>
+            <key>devname</key>
+            <string>ie15_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pty</string>
+            <key>description</key>
+            <string>Pseudo terminal</string>
+            <key>devname</key>
+            <string>pseudo_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs_printer</string>
+            <key>description</key>
+            <string>Radio Shack Serial Printer</string>
+            <key>devname</key>
+            <string>rs_serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback</string>
+            <key>devname</key>
+            <string>rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dec_loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback (DEC 12-15336-00)</string>
+            <key>devname</key>
+            <string>dec_rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>null_modem</string>
+            <key>description</key>
+            <string>RS232 Null Modem</string>
+            <key>devname</key>
+            <string>null_modem</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>keyboard</string>
+            <key>description</key>
+            <string>Serial Keyboard</string>
+            <key>devname</key>
+            <string>serial_keyboard</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>printer</string>
+            <key>description</key>
+            <string>Serial Printer</string>
+            <key>devname</key>
+            <string>serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>terminal</string>
+            <key>description</key>
+            <string>Serial Terminal</string>
+            <key>devname</key>
+            <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sunkbd</string>
+            <key>description</key>
+            <string>Sun Keyboard Adaptor</string>
+            <key>devname</key>
+            <string>sunkbd_adaptor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>swtpc8212</string>
+            <key>description</key>
+            <string>SWTPC8212 Terminal</string>
+            <key>devname</key>
+            <string>swtpc8212_terminal</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>terminal</string>
+        <key>name</key>
+        <string>modem</string>
         <key>description</key>
-        <string>Serial Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
+        <string>Modem</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ie15</string>
+            <key>description</key>
+            <string>IE15 Terminal</string>
+            <key>devname</key>
+            <string>ie15_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pty</string>
+            <key>description</key>
+            <string>Pseudo terminal</string>
+            <key>devname</key>
+            <string>pseudo_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs_printer</string>
+            <key>description</key>
+            <string>Radio Shack Serial Printer</string>
+            <key>devname</key>
+            <string>rs_serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback</string>
+            <key>devname</key>
+            <string>rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dec_loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback (DEC 12-15336-00)</string>
+            <key>devname</key>
+            <string>dec_rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>null_modem</string>
+            <key>description</key>
+            <string>RS232 Null Modem</string>
+            <key>devname</key>
+            <string>null_modem</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>keyboard</string>
+            <key>description</key>
+            <string>Serial Keyboard</string>
+            <key>devname</key>
+            <string>serial_keyboard</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>printer</string>
+            <key>description</key>
+            <string>Serial Printer</string>
+            <key>devname</key>
+            <string>serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>terminal</string>
+            <key>description</key>
+            <string>Serial Terminal</string>
+            <key>devname</key>
+            <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sunkbd</string>
+            <key>description</key>
+            <string>Sun Keyboard Adaptor</string>
+            <key>devname</key>
+            <string>sunkbd_adaptor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>swtpc8212</string>
+            <key>description</key>
+            <string>SWTPC8212 Terminal</string>
+            <key>devname</key>
+            <string>swtpc8212_terminal</string>
+          </dict>
+        </array>
       </dict>
     </array>
-    <key>modem</key>
+    <key>devices</key>
     <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>ie15</string>
-        <key>description</key>
-        <string>IE15 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>pty</string>
-        <key>description</key>
-        <string>Pseudo terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>rs_printer</string>
-        <key>description</key>
-        <string>Radio Shack Serial Printer</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>dec_loopback</string>
-        <key>description</key>
-        <string>RS232 Loopback (DEC 12-15336-00)</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>null_modem</string>
-        <key>description</key>
-        <string>RS232 Null Modem</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>keyboard</string>
-        <key>description</key>
-        <string>Serial Keyboard</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>printer</string>
-        <key>description</key>
-        <string>Serial Printer</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>terminal</string>
-        <key>description</key>
-        <string>Serial Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>sunkbd</string>
-        <key>description</key>
-        <string>Sun Keyboard Adaptor</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>swtpc8212</string>
-        <key>description</key>
-        <string>SWTPC8212 Terminal</string>
-        <key>default</key>
-        <false/>
-      </dict>
     </array>
     <key>software</key>
     <array>

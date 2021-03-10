@@ -73,6 +73,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     [self setMedia: EmptyMedia];
 }
 
+
 -(void)loadMachine {
 
     
@@ -180,6 +181,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
     NSInteger index = [sender tag];
     if (index < 0) return; //
+    if (index >= SLOT_COUNT) return; //
     unsigned mask = 1 << index;
 
 

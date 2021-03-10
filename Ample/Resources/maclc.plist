@@ -6,59 +6,6 @@
     <string>maclc</string>
     <key>description</key>
     <string>Macintosh LC</string>
-    <key>ram</key>
-    <array>
-      <dict>
-        <key>intValue</key>
-        <integer>2097152</integer>
-        <key>description</key>
-        <string>2M</string>
-        <key>value</key>
-        <string>2M</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>4194304</integer>
-        <key>description</key>
-        <string>4M</string>
-        <key>value</key>
-        <string>4M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>6291456</integer>
-        <key>description</key>
-        <string>6M</string>
-        <key>value</key>
-        <string>6M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>8388608</integer>
-        <key>description</key>
-        <string>8M</string>
-        <key>value</key>
-        <string>8M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>10485760</integer>
-        <key>description</key>
-        <string>10M</string>
-        <key>value</key>
-        <string>10M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
     <key>media</key>
     <dict>
       <key>floppy_3_5</key>
@@ -70,6 +17,71 @@
     <array>
       <integer>640</integer>
       <integer>480</integer>
+    </array>
+    <key>slots</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>ramsize</string>
+        <key>description</key>
+        <string>RAM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>intValue</key>
+            <integer>2097152</integer>
+            <key>description</key>
+            <string>2M</string>
+            <key>value</key>
+            <string>2M</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>4194304</integer>
+            <key>description</key>
+            <string>4M</string>
+            <key>value</key>
+            <string>4M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>6291456</integer>
+            <key>description</key>
+            <string>6M</string>
+            <key>value</key>
+            <string>6M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>8388608</integer>
+            <key>description</key>
+            <string>8M</string>
+            <key>value</key>
+            <string>8M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>10485760</integer>
+            <key>description</key>
+            <string>10M</string>
+            <key>value</key>
+            <string>10M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+        </array>
+      </dict>
+    </array>
+    <key>devices</key>
+    <array>
     </array>
     <key>software</key>
     <array>

@@ -6,89 +6,6 @@
     <string>maciici</string>
     <key>description</key>
     <string>Macintosh IIci</string>
-    <key>ram</key>
-    <array>
-      <dict>
-        <key>intValue</key>
-        <integer>2097152</integer>
-        <key>description</key>
-        <string>2M</string>
-        <key>value</key>
-        <string>2M</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>4194304</integer>
-        <key>description</key>
-        <string>4M</string>
-        <key>value</key>
-        <string>4M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>8388608</integer>
-        <key>description</key>
-        <string>8M</string>
-        <key>value</key>
-        <string>8M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>16777216</integer>
-        <key>description</key>
-        <string>16M</string>
-        <key>value</key>
-        <string>16M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>33554432</integer>
-        <key>description</key>
-        <string>32M</string>
-        <key>value</key>
-        <string>32M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>50331648</integer>
-        <key>description</key>
-        <string>48M</string>
-        <key>value</key>
-        <string>48M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>67108864</integer>
-        <key>description</key>
-        <string>64M</string>
-        <key>value</key>
-        <string>64M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>intValue</key>
-        <integer>134217728</integer>
-        <key>description</key>
-        <string>128M</string>
-        <key>value</key>
-        <string>128M</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
     <key>media</key>
     <dict>
       <key>floppy_3_5</key>
@@ -101,437 +18,550 @@
       <integer>640</integer>
       <integer>480</integer>
     </array>
-    <key>nbc</key>
+    <key>slots</key>
     <array>
       <dict>
-        <key>value</key>
-        <string></string>
+        <key>name</key>
+        <string>ramsize</string>
         <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
+        <string>RAM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>intValue</key>
+            <integer>2097152</integer>
+            <key>description</key>
+            <string>2M</string>
+            <key>value</key>
+            <string>2M</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>4194304</integer>
+            <key>description</key>
+            <string>4M</string>
+            <key>value</key>
+            <string>4M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>8388608</integer>
+            <key>description</key>
+            <string>8M</string>
+            <key>value</key>
+            <string>8M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>16777216</integer>
+            <key>description</key>
+            <string>16M</string>
+            <key>value</key>
+            <string>16M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>33554432</integer>
+            <key>description</key>
+            <string>32M</string>
+            <key>value</key>
+            <string>32M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>50331648</integer>
+            <key>description</key>
+            <string>48M</string>
+            <key>value</key>
+            <string>48M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>67108864</integer>
+            <key>description</key>
+            <string>64M</string>
+            <key>value</key>
+            <string>64M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>134217728</integer>
+            <key>description</key>
+            <string>128M</string>
+            <key>value</key>
+            <string>128M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>48gc</string>
+        <key>name</key>
+        <string>nbc</string>
         <key>description</key>
-        <string>Apple 4*8 video card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot C</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>48gc</string>
+            <key>description</key>
+            <string>Apple 4*8 video card</string>
+            <key>devname</key>
+            <string>nb_48gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>824gc</string>
+            <key>description</key>
+            <string>Apple 8*24 video card</string>
+            <key>devname</key>
+            <string>nb_824gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetnb</string>
+            <key>description</key>
+            <string>Apple NuBus Ethernet card</string>
+            <key>devname</key>
+            <string>nb_aenet</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>quadralink</string>
+            <key>description</key>
+            <string>Applied Engineering Quadralink serial card</string>
+            <key>devname</key>
+            <string>nb_qdlink</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>asmc3nb</string>
+            <key>description</key>
+            <string>Asante MC3NB Ethernet card</string>
+            <key>devname</key>
+            <string>nb_amc3b</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bootbug</string>
+            <key>description</key>
+            <string>Brigent BootBug debugger card</string>
+            <key>devname</key>
+            <string>nb_btbug</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Macintosh II Hi-Resolution video card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>portrait</string>
+            <key>description</key>
+            <string>Macintosh II Portrait Video Card</string>
+            <key>devname</key>
+            <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>vikbw</string>
+            <key>description</key>
+            <string>Moniterm Viking video card</string>
+            <key>devname</key>
+            <string>nb_vikbw</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>image</string>
+            <key>description</key>
+            <string>NuBus Disk Image Pseudo-Card</string>
+            <key>devname</key>
+            <string>nb_image</string>
+            <key>media</key>
+            <dict>
+              <key>pseudo_disk</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>radiustpd</string>
+            <key>description</key>
+            <string>Radius Two Page Display video card</string>
+            <key>devname</key>
+            <string>nb_rtpd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cb264</string>
+            <key>description</key>
+            <string>RasterOps ColorBoard 264 video card</string>
+            <key>devname</key>
+            <string>nb_c264</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>laserview</string>
+            <key>description</key>
+            <string>Sigma Designs LaserView video card</string>
+            <key>devname</key>
+            <string>nb_laserview</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>specpdq</string>
+            <key>description</key>
+            <string>SuperMac Spectrum PDQ video card</string>
+            <key>devname</key>
+            <string>nb_spdq</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>spec8s3</string>
+            <key>description</key>
+            <string>SuperMac Spectrum/8 Series III video card</string>
+            <key>devname</key>
+            <string>nb_sp8s3</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>824gc</string>
+        <key>name</key>
+        <string>nbd</string>
         <key>description</key>
-        <string>Apple 8*24 video card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot D</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>48gc</string>
+            <key>description</key>
+            <string>Apple 4*8 video card</string>
+            <key>devname</key>
+            <string>nb_48gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>824gc</string>
+            <key>description</key>
+            <string>Apple 8*24 video card</string>
+            <key>devname</key>
+            <string>nb_824gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetnb</string>
+            <key>description</key>
+            <string>Apple NuBus Ethernet card</string>
+            <key>devname</key>
+            <string>nb_aenet</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>quadralink</string>
+            <key>description</key>
+            <string>Applied Engineering Quadralink serial card</string>
+            <key>devname</key>
+            <string>nb_qdlink</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>asmc3nb</string>
+            <key>description</key>
+            <string>Asante MC3NB Ethernet card</string>
+            <key>devname</key>
+            <string>nb_amc3b</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bootbug</string>
+            <key>description</key>
+            <string>Brigent BootBug debugger card</string>
+            <key>devname</key>
+            <string>nb_btbug</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Macintosh II Hi-Resolution video card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>portrait</string>
+            <key>description</key>
+            <string>Macintosh II Portrait Video Card</string>
+            <key>devname</key>
+            <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>vikbw</string>
+            <key>description</key>
+            <string>Moniterm Viking video card</string>
+            <key>devname</key>
+            <string>nb_vikbw</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>image</string>
+            <key>description</key>
+            <string>NuBus Disk Image Pseudo-Card</string>
+            <key>devname</key>
+            <string>nb_image</string>
+            <key>media</key>
+            <dict>
+              <key>pseudo_disk</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>radiustpd</string>
+            <key>description</key>
+            <string>Radius Two Page Display video card</string>
+            <key>devname</key>
+            <string>nb_rtpd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cb264</string>
+            <key>description</key>
+            <string>RasterOps ColorBoard 264 video card</string>
+            <key>devname</key>
+            <string>nb_c264</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>laserview</string>
+            <key>description</key>
+            <string>Sigma Designs LaserView video card</string>
+            <key>devname</key>
+            <string>nb_laserview</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>specpdq</string>
+            <key>description</key>
+            <string>SuperMac Spectrum PDQ video card</string>
+            <key>devname</key>
+            <string>nb_spdq</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>spec8s3</string>
+            <key>description</key>
+            <string>SuperMac Spectrum/8 Series III video card</string>
+            <key>devname</key>
+            <string>nb_sp8s3</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>enetnb</string>
+        <key>name</key>
+        <string>nbe</string>
         <key>description</key>
-        <string>Apple NuBus Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>quadralink</string>
-        <key>description</key>
-        <string>Applied Engineering Quadralink serial card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>asmc3nb</string>
-        <key>description</key>
-        <string>Asante MC3NB Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>bootbug</string>
-        <key>description</key>
-        <string>Brigent BootBug debugger card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2hires</string>
-        <key>description</key>
-        <string>Macintosh II Hi-Resolution video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>portrait</string>
-        <key>description</key>
-        <string>Macintosh II Portrait Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2video</string>
-        <key>description</key>
-        <string>Macintosh II Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vikbw</string>
-        <key>description</key>
-        <string>Moniterm Viking video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>image</string>
-        <key>description</key>
-        <string>NuBus Disk Image Pseudo-Card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>pseudo_disk</key>
-          <integer>1</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>radiustpd</string>
-        <key>description</key>
-        <string>Radius Two Page Display video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cb264</string>
-        <key>description</key>
-        <string>RasterOps ColorBoard 264 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>laserview</string>
-        <key>description</key>
-        <string>Sigma Designs LaserView video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>specpdq</string>
-        <key>description</key>
-        <string>SuperMac Spectrum PDQ video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>spec8s3</string>
-        <key>description</key>
-        <string>SuperMac Spectrum/8 Series III video card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot E</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>48gc</string>
+            <key>description</key>
+            <string>Apple 4*8 video card</string>
+            <key>devname</key>
+            <string>nb_48gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>824gc</string>
+            <key>description</key>
+            <string>Apple 8*24 video card</string>
+            <key>devname</key>
+            <string>nb_824gc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetnb</string>
+            <key>description</key>
+            <string>Apple NuBus Ethernet card</string>
+            <key>devname</key>
+            <string>nb_aenet</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>quadralink</string>
+            <key>description</key>
+            <string>Applied Engineering Quadralink serial card</string>
+            <key>devname</key>
+            <string>nb_qdlink</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>asmc3nb</string>
+            <key>description</key>
+            <string>Asante MC3NB Ethernet card</string>
+            <key>devname</key>
+            <string>nb_amc3b</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bootbug</string>
+            <key>description</key>
+            <string>Brigent BootBug debugger card</string>
+            <key>devname</key>
+            <string>nb_btbug</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Macintosh II Hi-Resolution video card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>portrait</string>
+            <key>description</key>
+            <string>Macintosh II Portrait Video Card</string>
+            <key>devname</key>
+            <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>vikbw</string>
+            <key>description</key>
+            <string>Moniterm Viking video card</string>
+            <key>devname</key>
+            <string>nb_vikbw</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>image</string>
+            <key>description</key>
+            <string>NuBus Disk Image Pseudo-Card</string>
+            <key>devname</key>
+            <string>nb_image</string>
+            <key>media</key>
+            <dict>
+              <key>pseudo_disk</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>radiustpd</string>
+            <key>description</key>
+            <string>Radius Two Page Display video card</string>
+            <key>devname</key>
+            <string>nb_rtpd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cb264</string>
+            <key>description</key>
+            <string>RasterOps ColorBoard 264 video card</string>
+            <key>devname</key>
+            <string>nb_c264</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>laserview</string>
+            <key>description</key>
+            <string>Sigma Designs LaserView video card</string>
+            <key>devname</key>
+            <string>nb_laserview</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>specpdq</string>
+            <key>description</key>
+            <string>SuperMac Spectrum PDQ video card</string>
+            <key>devname</key>
+            <string>nb_spdq</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>spec8s3</string>
+            <key>description</key>
+            <string>SuperMac Spectrum/8 Series III video card</string>
+            <key>devname</key>
+            <string>nb_sp8s3</string>
+          </dict>
+        </array>
       </dict>
     </array>
-    <key>nbd</key>
+    <key>devices</key>
     <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>48gc</string>
-        <key>description</key>
-        <string>Apple 4*8 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>824gc</string>
-        <key>description</key>
-        <string>Apple 8*24 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>enetnb</string>
-        <key>description</key>
-        <string>Apple NuBus Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>quadralink</string>
-        <key>description</key>
-        <string>Applied Engineering Quadralink serial card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>asmc3nb</string>
-        <key>description</key>
-        <string>Asante MC3NB Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>bootbug</string>
-        <key>description</key>
-        <string>Brigent BootBug debugger card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2hires</string>
-        <key>description</key>
-        <string>Macintosh II Hi-Resolution video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>portrait</string>
-        <key>description</key>
-        <string>Macintosh II Portrait Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2video</string>
-        <key>description</key>
-        <string>Macintosh II Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vikbw</string>
-        <key>description</key>
-        <string>Moniterm Viking video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>image</string>
-        <key>description</key>
-        <string>NuBus Disk Image Pseudo-Card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>pseudo_disk</key>
-          <integer>1</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>radiustpd</string>
-        <key>description</key>
-        <string>Radius Two Page Display video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cb264</string>
-        <key>description</key>
-        <string>RasterOps ColorBoard 264 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>laserview</string>
-        <key>description</key>
-        <string>Sigma Designs LaserView video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>specpdq</string>
-        <key>description</key>
-        <string>SuperMac Spectrum PDQ video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>spec8s3</string>
-        <key>description</key>
-        <string>SuperMac Spectrum/8 Series III video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>nbe</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>48gc</string>
-        <key>description</key>
-        <string>Apple 4*8 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>824gc</string>
-        <key>description</key>
-        <string>Apple 8*24 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>enetnb</string>
-        <key>description</key>
-        <string>Apple NuBus Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>quadralink</string>
-        <key>description</key>
-        <string>Applied Engineering Quadralink serial card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>asmc3nb</string>
-        <key>description</key>
-        <string>Asante MC3NB Ethernet card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>bootbug</string>
-        <key>description</key>
-        <string>Brigent BootBug debugger card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2hires</string>
-        <key>description</key>
-        <string>Macintosh II Hi-Resolution video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>portrait</string>
-        <key>description</key>
-        <string>Macintosh II Portrait Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>m2video</string>
-        <key>description</key>
-        <string>Macintosh II Video Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>vikbw</string>
-        <key>description</key>
-        <string>Moniterm Viking video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>image</string>
-        <key>description</key>
-        <string>NuBus Disk Image Pseudo-Card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>pseudo_disk</key>
-          <integer>1</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>radiustpd</string>
-        <key>description</key>
-        <string>Radius Two Page Display video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>cb264</string>
-        <key>description</key>
-        <string>RasterOps ColorBoard 264 video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>laserview</string>
-        <key>description</key>
-        <string>Sigma Designs LaserView video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>specpdq</string>
-        <key>description</key>
-        <string>SuperMac Spectrum PDQ video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>spec8s3</string>
-        <key>description</key>
-        <string>SuperMac Spectrum/8 Series III video card</string>
-        <key>default</key>
-        <false/>
-      </dict>
     </array>
     <key>software</key>
     <array>

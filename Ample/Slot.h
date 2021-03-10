@@ -30,13 +30,13 @@
 
 -(void)reset;
 -(void)prepareView: (SlotTableCellView *)view;
--(void)loadDeviceSlots: (NSDictionary *)devices;
+//-(void)loadDeviceSlots: (NSDictionary *)devices;
 
 -(void)selectValue: (NSString *)value;
 -(SlotOption *)selectedItem;
 -(Media)selectedMedia;
 
--(instancetype)initWithName: (NSString *)name title: (NSString *)title data: (NSArray *)data;
+//-(instancetype)initWithName: (NSString *)name title: (NSString *)title data: (NSArray *)data;
 
 
 @end

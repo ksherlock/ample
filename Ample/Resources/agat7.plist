@@ -6,19 +6,6 @@
     <string>agat7</string>
     <key>description</key>
     <string>Agat-7</string>
-    <key>ram</key>
-    <array>
-      <dict>
-        <key>intValue</key>
-        <integer>32768</integer>
-        <key>description</key>
-        <string>32K</string>
-        <key>value</key>
-        <string>32K</string>
-        <key>default</key>
-        <true/>
-      </dict>
-    </array>
     <key>media</key>
     <dict>
       <key>cass</key>
@@ -29,325 +16,388 @@
       <integer>512</integer>
       <integer>512</integer>
     </array>
-    <key>sl2</key>
+    <key>slots</key>
     <array>
       <dict>
-        <key>value</key>
-        <string></string>
+        <key>name</key>
+        <string>ramsize</string>
         <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <false/>
+        <string>RAM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>intValue</key>
+            <integer>32768</integer>
+            <key>description</key>
+            <string>32K</string>
+            <key>value</key>
+            <string>32K</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>a9fdchle</string>
+        <key>name</key>
+        <string>sl2</string>
         <key>description</key>
-        <string>Agat 840K floppy card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot 2</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdchle</string>
+            <key>description</key>
+            <string>Agat 840K floppy card</string>
+            <key>devname</key>
+            <string>agat840k_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdc</string>
+            <key>description</key>
+            <string>Agat 840K floppy controller card</string>
+            <key>devname</key>
+            <string>agat_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7fdc</string>
+            <key>description</key>
+            <string>Agat-7 140K floppy card</string>
+            <key>devname</key>
+            <string>agat7_flop</string>
+            <key>media</key>
+            <dict>
+              <key>floppy_5_25</key>
+              <integer>2</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7lang</string>
+            <key>description</key>
+            <string>Agat-7 32K Language Card</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>a7lang</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ram</string>
+            <key>description</key>
+            <string>Agat-7 32K RAM Card</string>
+            <key>devname</key>
+            <string>a7ram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ports</string>
+            <key>description</key>
+            <string>Agat-7 Ports Card</string>
+            <key>devname</key>
+            <string>a7ports</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>a9fdc</string>
+        <key>name</key>
+        <string>sl3</string>
         <key>description</key>
-        <string>Agat 840K floppy controller card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot 3</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdchle</string>
+            <key>description</key>
+            <string>Agat 840K floppy card</string>
+            <key>devname</key>
+            <string>agat840k_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdc</string>
+            <key>description</key>
+            <string>Agat 840K floppy controller card</string>
+            <key>devname</key>
+            <string>agat_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7fdc</string>
+            <key>description</key>
+            <string>Agat-7 140K floppy card</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>agat7_flop</string>
+            <key>media</key>
+            <dict>
+              <key>floppy_5_25</key>
+              <integer>2</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7lang</string>
+            <key>description</key>
+            <string>Agat-7 32K Language Card</string>
+            <key>devname</key>
+            <string>a7lang</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ram</string>
+            <key>description</key>
+            <string>Agat-7 32K RAM Card</string>
+            <key>devname</key>
+            <string>a7ram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ports</string>
+            <key>description</key>
+            <string>Agat-7 Ports Card</string>
+            <key>devname</key>
+            <string>a7ports</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>a7fdc</string>
+        <key>name</key>
+        <string>sl4</string>
         <key>description</key>
-        <string>Agat-7 140K floppy card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>floppy_5_25</key>
-          <integer>2</integer>
-        </dict>
+        <string>Slot 4</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdchle</string>
+            <key>description</key>
+            <string>Agat 840K floppy card</string>
+            <key>devname</key>
+            <string>agat840k_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdc</string>
+            <key>description</key>
+            <string>Agat 840K floppy controller card</string>
+            <key>devname</key>
+            <string>agat_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7fdc</string>
+            <key>description</key>
+            <string>Agat-7 140K floppy card</string>
+            <key>devname</key>
+            <string>agat7_flop</string>
+            <key>media</key>
+            <dict>
+              <key>floppy_5_25</key>
+              <integer>2</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7lang</string>
+            <key>description</key>
+            <string>Agat-7 32K Language Card</string>
+            <key>devname</key>
+            <string>a7lang</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ram</string>
+            <key>description</key>
+            <string>Agat-7 32K RAM Card</string>
+            <key>devname</key>
+            <string>a7ram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ports</string>
+            <key>description</key>
+            <string>Agat-7 Ports Card</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>a7ports</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>a7lang</string>
+        <key>name</key>
+        <string>sl5</string>
         <key>description</key>
-        <string>Agat-7 32K Language Card</string>
-        <key>default</key>
-        <true/>
+        <string>Slot 5</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdchle</string>
+            <key>description</key>
+            <string>Agat 840K floppy card</string>
+            <key>devname</key>
+            <string>agat840k_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdc</string>
+            <key>description</key>
+            <string>Agat 840K floppy controller card</string>
+            <key>devname</key>
+            <string>agat_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7fdc</string>
+            <key>description</key>
+            <string>Agat-7 140K floppy card</string>
+            <key>devname</key>
+            <string>agat7_flop</string>
+            <key>media</key>
+            <dict>
+              <key>floppy_5_25</key>
+              <integer>2</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7lang</string>
+            <key>description</key>
+            <string>Agat-7 32K Language Card</string>
+            <key>devname</key>
+            <string>a7lang</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ram</string>
+            <key>description</key>
+            <string>Agat-7 32K RAM Card</string>
+            <key>devname</key>
+            <string>a7ram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ports</string>
+            <key>description</key>
+            <string>Agat-7 Ports Card</string>
+            <key>devname</key>
+            <string>a7ports</string>
+          </dict>
+        </array>
       </dict>
       <dict>
-        <key>value</key>
-        <string>a7ram</string>
+        <key>name</key>
+        <string>sl6</string>
         <key>description</key>
-        <string>Agat-7 32K RAM Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ports</string>
-        <key>description</key>
-        <string>Agat-7 Ports Card</string>
-        <key>default</key>
-        <false/>
+        <string>Slot 6</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdchle</string>
+            <key>description</key>
+            <string>Agat 840K floppy card</string>
+            <key>devname</key>
+            <string>agat840k_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a9fdc</string>
+            <key>description</key>
+            <string>Agat 840K floppy controller card</string>
+            <key>devname</key>
+            <string>agat_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7fdc</string>
+            <key>description</key>
+            <string>Agat-7 140K floppy card</string>
+            <key>devname</key>
+            <string>agat7_flop</string>
+            <key>media</key>
+            <dict>
+              <key>floppy_5_25</key>
+              <integer>2</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7lang</string>
+            <key>description</key>
+            <string>Agat-7 32K Language Card</string>
+            <key>devname</key>
+            <string>a7lang</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ram</string>
+            <key>description</key>
+            <string>Agat-7 32K RAM Card</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>a7ram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a7ports</string>
+            <key>description</key>
+            <string>Agat-7 Ports Card</string>
+            <key>devname</key>
+            <string>a7ports</string>
+          </dict>
+        </array>
       </dict>
     </array>
-    <key>sl3</key>
+    <key>devices</key>
     <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdchle</string>
-        <key>description</key>
-        <string>Agat 840K floppy card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdc</string>
-        <key>description</key>
-        <string>Agat 840K floppy controller card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7fdc</string>
-        <key>description</key>
-        <string>Agat-7 140K floppy card</string>
-        <key>default</key>
-        <true/>
-        <key>media</key>
-        <dict>
-          <key>floppy_5_25</key>
-          <integer>2</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7lang</string>
-        <key>description</key>
-        <string>Agat-7 32K Language Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ram</string>
-        <key>description</key>
-        <string>Agat-7 32K RAM Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ports</string>
-        <key>description</key>
-        <string>Agat-7 Ports Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>sl4</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdchle</string>
-        <key>description</key>
-        <string>Agat 840K floppy card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdc</string>
-        <key>description</key>
-        <string>Agat 840K floppy controller card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7fdc</string>
-        <key>description</key>
-        <string>Agat-7 140K floppy card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>floppy_5_25</key>
-          <integer>2</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7lang</string>
-        <key>description</key>
-        <string>Agat-7 32K Language Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ram</string>
-        <key>description</key>
-        <string>Agat-7 32K RAM Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ports</string>
-        <key>description</key>
-        <string>Agat-7 Ports Card</string>
-        <key>default</key>
-        <true/>
-      </dict>
-    </array>
-    <key>sl5</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdchle</string>
-        <key>description</key>
-        <string>Agat 840K floppy card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdc</string>
-        <key>description</key>
-        <string>Agat 840K floppy controller card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7fdc</string>
-        <key>description</key>
-        <string>Agat-7 140K floppy card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>floppy_5_25</key>
-          <integer>2</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7lang</string>
-        <key>description</key>
-        <string>Agat-7 32K Language Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ram</string>
-        <key>description</key>
-        <string>Agat-7 32K RAM Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ports</string>
-        <key>description</key>
-        <string>Agat-7 Ports Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-    </array>
-    <key>sl6</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string></string>
-        <key>description</key>
-        <string>—None—</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdchle</string>
-        <key>description</key>
-        <string>Agat 840K floppy card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a9fdc</string>
-        <key>description</key>
-        <string>Agat 840K floppy controller card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7fdc</string>
-        <key>description</key>
-        <string>Agat-7 140K floppy card</string>
-        <key>default</key>
-        <false/>
-        <key>media</key>
-        <dict>
-          <key>floppy_5_25</key>
-          <integer>2</integer>
-        </dict>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7lang</string>
-        <key>description</key>
-        <string>Agat-7 32K Language Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ram</string>
-        <key>description</key>
-        <string>Agat-7 32K RAM Card</string>
-        <key>default</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>a7ports</string>
-        <key>description</key>
-        <string>Agat-7 Ports Card</string>
-        <key>default</key>
-        <false/>
-      </dict>
     </array>
     <key>software</key>
     <array>

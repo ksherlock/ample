@@ -5,7 +5,7 @@ from plist import to_plist
 
 import xml.etree.ElementTree as ET
 
-from machines import MACHINES, SLOTS
+from machines import MACHINES, SLOTS, SLOT_NAMES
 
 # macintosh errata:
 # maclc has scsi:1 - scsi:7 and lcpds slots, but none are currently configurable.
@@ -132,9 +132,9 @@ def find_media(parent, include_slots=False):
 		"messimg_disk_image": "pseudo_disk",
 	}
 	remap_slot = {
-		"harddisk": "hard",
-		"hdd": "hard",
-		"cdrom": "cdrom",
+		# "harddisk": "hard",
+		# "hdd": "hard",
+		# "cdrom": "cdrom",
 		"525": "floppy_5_25",
 		"image": "psuedo_disk",
 	}
@@ -189,6 +189,10 @@ def slot_options(machine):
 		'cdrom': 'CD-ROM',
 		'hdd': 'Hard Disk',
 		'harddisk': 'Hard Disk',
+		# "525": '5.25"'
+		# '35hd': '3.5" HD',
+		# '35dd': '3.5" DD',
+		# '35sd': '3.5" SD',
 	}
 	MEDIA = {
 		'cdrom': 'cdrom',
@@ -198,32 +202,109 @@ def slot_options(machine):
 
 	mname = machine.get('name')
 
-	rv = { }
+	slots = []
 	for slot in machine.findall('./slot'):
 		slotname = slot.get("name")
-		tmp = []
+		options = []
 		has_default = False
+		#has_media = False
 		for option in slot.findall("./slotoption"):
 			name = option.get("name")
 			if name not in REMAP: continue
 			default = option.get("default") == "yes"
 			has_default |= default
-			tmp.append({
+			options.append({
 				'value': name,
 				'description': REMAP[name],
-				'media': MEDIA[name],
+				'media': { MEDIA[name]: 1 },
 				'default': default
 			})
-		if len(tmp) < 2 : continue # don't bother if only 1 option which is going to be defaulted anyhow.
+		# n.b. 9 diskiing, for example, has media but only 2 options...
+		# if len(options) < 2 : continue # don't bother if only 1 option which is going to be defaulted anyhow.
+		if not options: continue
+		options.sort(key=lambda x: x["description"].upper() )
+		options.insert(0, {"value": "", "description": "—None—", "default": not has_default})
 
-		tmp.sort(key=lambda x: x["description"].upper() )
-		tmp.insert(0, {"value": "", "description": "—None—", "default": not has_default})
+		slots.append({
+			"name": slotname,
+			"options": options
+		})
 
-		rv[slotname] = tmp
+	if not len(slots): return None
 
-	if not len(rv): return None
+	return slots
 
-	return rv
+def make_devices(mm):
+	
+	devices = []
+	for m in mm.values():
+		name = m.get("name")
+		slots = slot_options(m)
+		if slots:
+			devices.append({
+				"name": name,
+				"slots": slots
+				})
+	return devices
+
+
+
+
+def make_ram(machine):
+
+	options = [
+		{
+			"intValue": int(x.text),
+			"description": x.get("name"),
+			"value": x.get("name"),
+			"default": x.get("default") == "yes"
+		}
+		for x in machine.findall('ramoption')
+	]
+	# sort and add empty starting entry.
+	options.sort(key=lambda x: x["intValue"])
+
+	return {
+		"name": "ramsize",
+		"description": SLOT_NAMES["ramsize"],
+		"options": options
+	}
+
+
+def make_slot(m, slotname, nodes):
+
+	options = []
+
+	has_default = False
+	for x in nodes:
+		name = x.get("name")
+		devname = x.get("devname")
+		desc = mm[devname].find("description").text
+		default = x.get("default") == "yes"
+		disabled = name in DISABLED or (m, name) in DISABLED
+
+		d = { "value": name, "description": desc } # "devname": devname or ''}
+		if default: d["default"] = True
+		if disabled: d["disabled"] = True
+		if not disabled:
+			d["devname"] = devname
+			media = find_media(mm[devname], True)
+			if media:
+				d["media"] = media
+
+
+		options.append(d)
+		has_default |= default
+
+
+	options.sort(key=lambda x: x["description"].upper() )
+	options.insert(0, {"value": "", "description": "—None—", "default": not has_default})
+
+	return {
+		"name": slotname,
+		"description": SLOT_NAMES[slotname],
+		"options": options
+	}
 
 
 
@@ -256,20 +337,6 @@ for m in machines:
 
 	data["value"] = m
 	data["description"] = machine.find("description").text
-	tmp = [
-		{
-			"intValue": int(x.text),
-			"description": x.get("name"),
-			"value": x.get("name"),
-			"default": x.get("default") == "yes"
-		}
-		for x in machine.findall('ramoption')
-	]
-	# sort and add empty starting entry.
-	tmp.sort(key=lambda x: x["intValue"])
-	# tmp.insert(0, {"value": 0, "default": False, "description": "" })
-	data["ram"] = tmp
-
 
 	data["media"] = find_machine_media(machine)
 
@@ -289,47 +356,19 @@ for m in machines:
 	# print(mm)
 
 	# ss = {}
+	slots = []
+	slots.append(make_ram(machine))
 	for s in SLOTS:
 		path = 'slot[@name="{}"]/slotoption'.format(s)
 		nodes = machine.findall(path)
 		if not nodes: continue
 
-		tmp = []
-		has_default = False
-		for x in nodes:
-			name = x.get("name")
-			devname = x.get("devname")
-			desc = mm[devname].find("description").text
-			default = x.get("default") == "yes"
-			disabled = name in DISABLED or (m, name) in DISABLED
+		s = make_slot(m, s, nodes)
+		slots.append(s);
 
-			d = { "value": name, "description": desc, "default": default } #, "devname": devname or ''}
-			if disabled: d["disabled"] = True
-			else:
-				media = find_media(mm[devname], True)
-				if media: d["media"] = media
+	data["slots"] = slots
 
-				# slots = find_slot_options(mm[devname])
-				# if slots: d["options"] = slots  # should not include media if it has slot options.
-
-			tmp.append(d)
-			has_default |= default
-
-
-		tmp.sort(key=lambda x: x["description"].upper() )
-		tmp.insert(0, {"value": "", "description": "—None—", "default": not has_default})
-		data[s] = tmp
-
-
-	# also add child slots
-	slots = {}
-	for x in mm.values():
-		name = x.get("name")
-		y = slot_options(x)
-		if y:
-			slots[name] = y
-
-	#if slots: data["device-slots"] = slots
+	data["devices"] = make_devices(mm)
 	data["software"] = find_software(machine)
 
 

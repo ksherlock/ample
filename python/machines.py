@@ -41,3 +41,28 @@ SLOTS = (
 	"nb1", "nb2", "nb3", "nb4", "nb5", "nb6", "nb7",
 	"nb8", "nb9", "nba", "nbb", "nbc", "nbd", "nbe",
 )
+
+SLOT_NAMES = {
+	"ramsize":    "RAM",
+	"sl0":        "Slot 0",
+	"sl1":        "Slot 1",
+	"sl2":        "Slot 2",
+	"sl3":        "Slot 3",
+	"sl4":        "Slot 4",
+	"sl5":        "Slot 5",
+	"sl6":        "Slot 6",
+	"sl7":        "Slot 7",
+	"exp":        "Expansion",
+	"aux":        "Auxiliary",
+	"rs232":      "RS232",
+	"gameio":     "Game I/O",
+	"modem":      "Modem",
+	"printer":    "Printer",
+
+	"nb9":        "Slot 9",
+	"nba":        "Slot A",
+	"nbb":        "Slot B",
+	"nbc":        "Slot C",
+	"nbd":        "Slot D",
+	"nbe":        "Slot E",
+}
