@@ -41,6 +41,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     
     NSDictionary *_machine_data;
         
+    IBOutlet NSPopover *_popover;
     
 }
 
@@ -49,7 +50,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     // Do view setup here.
     
     _root = @[];
-    [_outlineView setIndentationPerLevel: 2.0];
+    //[_outlineView setIndentationPerLevel: 2.0];
 }
 
 -(void)resetMachine {
@@ -219,6 +220,18 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     }
     [self rebuildArgs];
 }
+- (IBAction)hamburger:(id)sender {
+
+#if 1
+    if ([_popover isShown]) {
+        [_popover close];
+    }
+#endif
+    [_popover showRelativeToRect: [sender bounds]
+                          ofView: sender
+                   preferredEdge: NSRectEdgeMaxX];
+}
+
 -(IBAction)resetSlots:(id)sender {
     
     _slots_explicit = 0;

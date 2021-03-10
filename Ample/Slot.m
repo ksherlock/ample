@@ -308,6 +308,9 @@ static NSDictionary *IndexMap = nil;
     NSPopUpButton *button = [view menuButton];
     NSTextField *text = [view textField];
     
+    
+    [view setObjectValue: self];
+    
     [text setObjectValue: _title];
     [button unbind: @"selectedIndex"];
     NSMenu *menu = [button menu];
@@ -316,8 +319,25 @@ static NSDictionary *IndexMap = nil;
     [menu setItemArray: menuItems];
     [button bind: @"selectedIndex" toObject: self withKeyPath: @"selectedIndex" options: nil];
     [button setTag: _index];
+    
+    NSButton *hb = [view hamburgerButton];
+    [hb setTag: _index];
+#if 0
+    // bind w/ NSIsNilTransformerName? selected index would need to flag it dirty.
+    if ([self selectedChildren]) {
+        [hb setHidden: NO];
+    } else {
+        [hb setHidden: YES];
+    }
+#endif
 }
 
+/*
+https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVODependentKeys.html
+ */
++ (NSSet *)keyPathsForValuesAffectingSelectedItem {
+    return [NSSet setWithObject: @"selectedIndex"];
+}
 
 @end
 

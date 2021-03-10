@@ -24,6 +24,7 @@
 @property (readonly) NSString *title;
 @property (readonly) NSArray *menuItems;
 
+@property (readonly) SlotOption *selectedItem;
 
 -(NSArray *)args;
 -(NSArray *)serialize;
@@ -32,7 +33,7 @@
 -(void)prepareView: (SlotTableCellView *)view;
 
 -(void)selectValue: (NSString *)value;
--(SlotOption *)selectedItem;
+
 -(Media)selectedMedia;
 
 -(NSArray *)selectedChildren;
@@ -51,7 +52,7 @@
 @interface SlotTableCellView  : NSTableCellView
 
 @property (weak) IBOutlet NSPopUpButton *menuButton;
-
+@property (weak) IBOutlet NSButton *hamburgerButton;
 @end
 
 

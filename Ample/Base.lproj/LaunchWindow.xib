@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     </customView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
-                        <rect key="frame" x="587" y="58" width="111" height="23"/>
+                        <rect key="frame" x="587.5" y="58" width="111" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Launch" bezelStyle="texturedRounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -47,7 +47,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
-                        <rect key="frame" x="470" y="58" width="109" height="23"/>
+                        <rect key="frame" x="470.5" y="58" width="109" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Reset Slots" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -60,7 +60,7 @@ DQ
                         </connections>
                     </button>
                     <customView id="P9d-sS-qEb" customClass="FlippedView">
-                        <rect key="frame" x="20" y="92" width="306" height="363"/>
+                        <rect key="frame" x="20" y="92" width="316" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                     <tabView initialItem="zUN-Qs-haG" id="l8R-bg-6Zm">
@@ -348,7 +348,7 @@ DQ
                         </tabViewItems>
                     </tabView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
-                        <rect key="frame" x="392" y="92" width="306" height="363"/>
+                        <rect key="frame" x="382" y="92" width="316" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
                     <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" horizontalScrollElasticity="none" id="2ue-XT-byh">
