@@ -49,6 +49,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     // Do view setup here.
     
     _root = @[];
+    [_outlineView setIndentationPerLevel: 2.0];
 }
 
 -(void)resetMachine {
@@ -179,8 +180,16 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
 - (IBAction)menuChanged:(NSPopUpButton *)sender {
 
+    BOOL direct = YES;
     NSInteger index = [sender tag];
     if (index < 0) return; //
+    
+    if (index >= 0 && index < SLOT_COUNT) {
+        direct = YES;
+    } else {
+        direct = NO;
+        index &= ~0x10000;
+    }
     if (index >= SLOT_COUNT) return; //
     unsigned mask = 1 << index;
 
@@ -190,9 +199,11 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     SlotOption *o = [[sender selectedItem] representedObject];
     Slot *item = _slot_object[index];
 
-    _slots_explicit |= mask;
-    _slot_value[index] = [o value];
-    //_slots_default &= ~mask;
+    if (direct) {
+        _slots_explicit |= mask;
+        _slot_value[index] = [o value];
+        //_slots_default &= ~mask;
+    }
     
     Media media = [item selectedMedia];
     if (!MediaEqual(&media, &_slot_media[index])) {
@@ -201,6 +212,11 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
     }
 
+    // needs to reload children if expanded.
+    if (direct) {
+        BOOL rc = ([_outlineView isItemExpanded: item]);
+        [_outlineView reloadItem: item reloadChildren: rc];
+    }
     [self rebuildArgs];
 }
 -(IBAction)resetSlots:(id)sender {
@@ -217,8 +233,8 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
         if (index < 0) continue;
         _slot_media[index] = [item selectedMedia];
     }
-    //[_outlineView reloadData]; // will need to reload if changing the default makes children disappear.
 
+    [_outlineView reloadData];
     [self rebuildMedia];
     [self rebuildArgs];
 }
@@ -233,17 +249,23 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     
     if (!item) return [_root count];
     
-    return 0;
+    NSArray *tmp = [(Slot *)item selectedChildren];
+    return [tmp count];
+//    return 0;
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
     if (!item) return [_root objectAtIndex: index];
+    NSArray *tmp = [(Slot *)item selectedChildren];
+    return [tmp objectAtIndex: index];
     return nil;
 }
 
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
-    return NO;
+    if (!item) return NO;
+     NSArray *tmp = [(Slot *)item selectedChildren];
+    return [tmp count] > 0;
 }
 
 

@@ -41,13 +41,15 @@ static NSArray *DeepCopyArray(NSArray *src) {
 @end
 
 @interface SlotOption() {
-    NSArray<Slot *> *_children;
+    //NSArray<Slot *> *_children;
     //NSDictionary *_media;
     Media _media;
     NSString *_keyPath;
     //NSString *_devName;
     BOOL _default;
 }
+
+@property (readonly) NSArray *children;
 
 -(instancetype)initWithDictionary: (NSDictionary *)dictionary devices: (NSDictionary *)devices;
 
@@ -155,6 +157,12 @@ static NSDictionary *IndexMap = nil;
 }
 
 
+-(NSArray *)selectedChildren {
+    if (_selectedIndex < 0) return nil;
+    return [[_options objectAtIndex: _selectedIndex] children];
+}
+
+
 -(id)copyWithZone:(NSZone *)zone {
     
     Slot *child = [Slot new];
@@ -222,7 +230,13 @@ static NSDictionary *IndexMap = nil;
             _defaultIndex = index;
         }
         ++index;
-        if (topLevel) [o setKeyPath: _name];
+        if (topLevel) {
+            [o setKeyPath: _name];
+            NSArray *tmp = [o children];
+            for (Slot *x in tmp) {
+                [x setIndex: _index | 0x10000];
+            }
+        }
         [options addObject: o];
     }
     _options = options;
@@ -498,42 +512,7 @@ NSDictionary *BuildDevices(NSArray *array) {
 NSArray *BuildSlots(NSString *name, NSDictionary *data) {
 
     static NSCache *cache = nil;
-    
-    typedef struct SlotInfo {
-        NSString *key;
-        NSString *flag;
-        NSString *title;
-    } SlotInfo;
 
-    static SlotInfo Slots[] = {
-        { @"ram",        @"-ramsize",    @"RAM:"  },
-        { @"sl0",        @"-sl0",        @"Slot 0:" },
-        { @"sl1",        @"-sl1",        @"Slot 1:" },
-        { @"sl2",        @"-sl2",        @"Slot 2:" },
-        { @"sl3",        @"-sl3",        @"Slot 3:" },
-        { @"sl4",        @"-sl4",        @"Slot 4:" },
-        { @"sl5",        @"-sl5",        @"Slot 5:" },
-        { @"sl6",        @"-sl6",        @"Slot 6:" },
-        { @"sl7",        @"-sl7",        @"Slot 7:" },
-        { @"exp",        @"-exp",        @"Expansion:" },
-        { @"aux",        @"-aux",        @"Auxiliary:" },
-        { @"rs232",      @"-rs232",      @"RS232:" },
-        { @"gameio",     @"-gameio",     @"Game I/O:" },
-        { @"modem",      @"-modem",      @"Modem:" },
-        { @"printer",    @"-printer",    @"Printer:" },
-
-        // nubus mac
-        { @"nb9",        @"-nb9",        @"Slot 9:" },
-        { @"nba",        @"-nba",        @"Slot A:" },
-        { @"nbb",        @"-nbb",        @"Slot B:" },
-        { @"nbc",        @"-nbc",        @"Slot C:" },
-        { @"nbd",        @"-nbd",        @"Slot D:" },
-        { @"nbe",        @"-nbe",        @"Slot E:" },
-    };
-
-    
-    #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
-    
     if (!cache) {
         cache = [NSCache new];
     }
