@@ -80,6 +80,8 @@
 }
 
 -(void)prepareView: (NSTableCellView *)view {
+
+    [view setObjectValue: self];
     [[view textField] setStringValue: _title];
 }
 
@@ -208,6 +210,8 @@
     
     NSValueTransformer *t;
     NSDictionary *options;
+    
+    [view setObjectValue: self];
     
     NSPathControl *pc = [view pathControl];
     NSButton *button = [view ejectButton];

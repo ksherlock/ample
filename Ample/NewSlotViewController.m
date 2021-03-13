@@ -6,11 +6,15 @@
 //  Copyright © 2020 Kelvin Sherlock. All rights reserved.
 //
 
+
 #import "Ample.h"
 #import "NewSlotViewController.h"
 #import "Menu.h"
 #import "Slot.h"
 #import "Media.h"
+
+
+#import <objc/runtime.h>
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
 #define SLOT_COUNT 21
@@ -19,10 +23,12 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
 
+static unsigned RootKey = 0;
 
 
 @interface NewSlotViewController ()
 @property (weak) IBOutlet NSOutlineView *outlineView;
+@property (weak) IBOutlet NSOutlineView *childOutlineView;
 
 @end
 
@@ -50,12 +56,17 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     // Do view setup here.
     
     _root = @[];
+    objc_setAssociatedObject(_outlineView, &RootKey, _root, OBJC_ASSOCIATION_RETAIN);
+
+
     //[_outlineView setIndentationPerLevel: 2.0];
 }
 
 -(void)resetMachine {
 
     _root = @[];
+    objc_setAssociatedObject(_outlineView, &RootKey, _root, OBJC_ASSOCIATION_RETAIN);
+    
     [_outlineView reloadData];
 
     _slots_valid = 0;
@@ -111,6 +122,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
     extern NSArray *BuildSlots(NSString *name, NSDictionary *data);
     _root = BuildSlots(_machine, d);
+    objc_setAssociatedObject(_outlineView, &RootKey, _root, OBJC_ASSOCIATION_RETAIN);
     
     for (Slot *item in _root) {
         NSInteger index = [item index];
@@ -214,22 +226,41 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
     }
 
     // needs to reload children if expanded.
+#ifdef SLOT_TREE
     if (direct) {
         BOOL rc = ([_outlineView isItemExpanded: item]);
         [_outlineView reloadItem: item reloadChildren: rc];
     }
+#endif
     [self rebuildArgs];
 }
 - (IBAction)hamburger:(id)sender {
 
-#if 1
+#if 0
     if ([_popover isShown]) {
         [_popover close];
     }
 #endif
+    
+    NSInteger index = [sender tag];
+    if (index < 0 || index >= SLOT_COUNT) return;
+    
+    Slot *item = _slot_object[index];
+
+    NSArray *children = [item selectedChildren];
+    objc_setAssociatedObject(_childOutlineView, &RootKey, children, OBJC_ASSOCIATION_RETAIN);
+    if (!children) return;
+    
+    [_childOutlineView reloadData];
+    NSSize size = [_popover contentSize];
+    if (size.width < 200) size.width = 250;
+    size = [_childOutlineView sizeThatFits: size];
+    size.height += 40;
+    [_popover setContentSize: size];
+    
     [_popover showRelativeToRect: [sender bounds]
                           ofView: sender
-                   preferredEdge: NSRectEdgeMaxX];
+                   preferredEdge: NSRectEdgeMaxY];
 }
 
 -(IBAction)resetSlots:(id)sender {
@@ -247,7 +278,9 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
         _slot_media[index] = [item selectedMedia];
     }
 
+#ifdef SLOT_TREE
     [_outlineView reloadData];
+#endif
     [self rebuildMedia];
     [self rebuildArgs];
 }
@@ -260,25 +293,37 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
     
-    if (!item) return [_root count];
+    NSArray *root = objc_getAssociatedObject(outlineView, &RootKey);
+    if (!item) return [root count];
     
+#ifdef SLOT_TREE
     NSArray *tmp = [(Slot *)item selectedChildren];
     return [tmp count];
-//    return 0;
+#endif
+    return 0;
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
-    if (!item) return [_root objectAtIndex: index];
+    NSArray *root = objc_getAssociatedObject(outlineView, &RootKey);
+
+    if (!item) return [root objectAtIndex: index];
+#ifdef SLOT_TREE
     NSArray *tmp = [(Slot *)item selectedChildren];
     return [tmp objectAtIndex: index];
+#endif
     return nil;
 }
 
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
+
+#ifdef SLOT_TREE
     if (!item) return NO;
      NSArray *tmp = [(Slot *)item selectedChildren];
     return [tmp count] > 0;
+#else
+    return NO;
+#endif
 }
 
 

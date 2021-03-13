@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="NewSlotViewController">
             <connections>
                 <outlet property="_popover" destination="QIT-2T-wdy" id="WUB-OS-kem"/>
+                <outlet property="childOutlineView" destination="uM0-Gk-crn" id="aL5-uC-O28"/>
                 <outlet property="outlineView" destination="Xj3-Qf-yek" id="AWE-Rg-XUM"/>
                 <outlet property="view" destination="D45-lv-6Fv" id="av3-OE-ph2"/>
             </connections>
@@ -22,7 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="316" height="386"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="25" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="2" autoresizesOutlineColumn="YES" outlineTableColumn="u7T-p8-F2Z" id="Xj3-Qf-yek">
+                    <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="25" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="2" autoresizesOutlineColumn="YES" outlineTableColumn="u7T-p8-F2Z" id="Xj3-Qf-yek">
                         <rect key="frame" x="0.0" y="0.0" width="316" height="386"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <size key="intercellSpacing" width="3" height="2"/>
@@ -40,6 +41,7 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                 <prototypeCellViews>
                                     <tableCellView identifier="MenuCell" id="1RI-9K-5qj" customClass="SlotTableCellView">
                                         <rect key="frame" x="1" y="1" width="296" height="25"/>
@@ -127,35 +129,38 @@
             </connections>
         </popover>
         <customView id="uew-UQ-Q25">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="406"/>
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button id="2jh-iq-DV6">
-                    <rect key="frame" x="232" y="388" width="14" height="14"/>
+                    <rect key="frame" x="232" y="382" width="14" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSStopProgressFreestandingTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Wp7-Km-kYI">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
                     </buttonCell>
                     <connections>
                         <action selector="performClose:" target="QIT-2T-wdy" id="Q04-24-ZOK"/>
                     </connections>
                 </button>
                 <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="27" horizontalPageScroll="10" verticalLineScroll="27" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" id="5gB-oE-Gza">
-                    <rect key="frame" x="0.0" y="0.0" width="250" height="386"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <rect key="frame" x="0.0" y="20" width="250" height="360"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <clipView key="contentView" focusRingType="none" drawsBackground="NO" copiesOnScroll="NO" id="X5e-Ka-JLr">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="386"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="360"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="25" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="o1K-z1-KVi" id="uM0-Gk-crn">
-                                <rect key="frame" x="0.0" y="0.0" width="253" height="386"/>
+                            <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="25" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="o1K-z1-KVi" id="uM0-Gk-crn">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="360"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <tableColumns>
-                                    <tableColumn width="250" minWidth="40" maxWidth="1000" id="o1K-z1-KVi">
+                                    <tableColumn width="230" minWidth="40" maxWidth="1000" id="o1K-z1-KVi">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -166,14 +171,14 @@
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
-                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                         <prototypeCellViews>
                                             <tableCellView identifier="MenuCell" id="Mgb-8H-DmI" customClass="SlotTableCellView">
-                                                <rect key="frame" x="1" y="1" width="250" height="25"/>
+                                                <rect key="frame" x="1" y="1" width="230" height="25"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-Yz-7Kd">
-                                                        <rect key="frame" x="1" y="0.0" width="249" height="25"/>
+                                                        <rect key="frame" x="1" y="0.0" width="229" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                         <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="djR-rV-wzX" id="SkW-fW-gwL">
                                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -199,7 +204,7 @@
                                     </tableColumn>
                                 </tableColumns>
                                 <connections>
-                                    <outlet property="dataSource" destination="-2" id="l5t-kD-bae"/>
+                                    <outlet property="dataSource" destination="-2" id="HXP-pH-3Lc"/>
                                     <outlet property="delegate" destination="-2" id="nwb-IL-MsP"/>
                                 </connections>
                             </outlineView>
