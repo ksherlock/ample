@@ -193,6 +193,17 @@ DQ
                                                 <binding destination="-2" name="value" keyPath="self.mameMouse" id="vWu-od-2d6"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNa-8k-X89">
+                                            <rect key="frame" x="143" y="29" width="137" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Disk Sound Effects" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="MBT-Uv-Lev">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameSamples" id="77G-8C-HgT"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>

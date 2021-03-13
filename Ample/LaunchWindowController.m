@@ -37,6 +37,7 @@ static NSString *kContextMachine = @"kContextMachine";
 @property BOOL mameDebug;
 @property BOOL mameSquarePixels;
 @property BOOL mameMouse;
+@property BOOL mameSamples;
 
 @property BOOL mameAVI;
 @property BOOL mameWAV;
@@ -68,6 +69,7 @@ static NSString *kContextMachine = @"kContextMachine";
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
     [self setMameMouse: NO];
+    [self setMameSamples: YES];
 }
 
 - (void)windowDidLoad {
@@ -83,7 +85,7 @@ static NSString *kContextMachine = @"kContextMachine";
 
     NSArray *keys = @[
         @"mameMachine", @"mameSquarePixels", @"mameWindowMode",
-        @"mameMouse",
+        @"mameMouse", @"mameSamples",
         @"mameDebug",
         @"mameSpeed",
         @"mameAVI", @"mameAVIPath",
@@ -281,6 +283,9 @@ static NSString *ShellQuote(NSString *s) {
     
     if (_mameMouse)
         [argv addObject: @"-mouse"]; // capture the mouse cursor when over the window.
+
+    if (!_mameSamples)
+        [argv addObject: @"-nosamples"];
     
     if (_mameDebug) [argv addObject: @"-debug"];
 
