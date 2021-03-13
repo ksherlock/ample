@@ -21,13 +21,20 @@ EXTRA_MACHINES = [
 	'kb_pc83',
 	'kb_pcxt83',
 	'keytronic_pc3270',
+	'apple2gsr0p'
+	'apple2gsr0p2',
+	'apple2c0',
+	'apple2c3',
+	'apple2c4',
 ]
 
 
 p = argparse.ArgumentParser()
+p.add_argument('--full', action='store_true')
 p.add_argument('machine', nargs="*")
 args = p.parse_args()
 
+full = args.full
 machines = args.machine
 if not machines: machines = [ *MACHINES, *EXTRA_MACHINES]
 
@@ -104,7 +111,8 @@ for m in machines:
 # for x in ll:
 # 	print(x)
 
-ROMS = list(mnames.difference(EXCLUDE))
+if full: ROMS = list(mnames)
+else: ROMS = list(mnames.difference(EXCLUDE))
 ROMS.sort()
 
 data = {}

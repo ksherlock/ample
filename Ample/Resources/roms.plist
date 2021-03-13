@@ -49,18 +49,36 @@
       <string>a2vuliie</string>
       <string>a2zipdrv</string>
       <string>a3fdc</string>
+      <string>ace100</string>
+      <string>agat7</string>
       <string>agat7_flop</string>
       <string>agat840k_hle</string>
+      <string>agat9</string>
       <string>agat9_flop</string>
       <string>agat_fdc</string>
+      <string>albert</string>
+      <string>am100</string>
+      <string>am64</string>
       <string>ap2000</string>
       <string>apple1</string>
       <string>apple2</string>
       <string>apple2c</string>
+      <string>apple2cp</string>
       <string>apple2e</string>
+      <string>apple2ee</string>
+      <string>apple2eefr</string>
+      <string>apple2ees</string>
+      <string>apple2eeuk</string>
+      <string>apple2ep</string>
+      <string>apple2euk</string>
       <string>apple2gs</string>
+      <string>apple2gsr0</string>
+      <string>apple2gsr1</string>
+      <string>apple2jp</string>
+      <string>apple2p</string>
       <string>apple3</string>
       <string>aprissi</string>
+      <string>basis108</string>
       <string>ccs7710</string>
       <string>cec2000</string>
       <string>cece</string>
@@ -72,17 +90,26 @@
       <string>chessmachine</string>
       <string>cmsscsi</string>
       <string>comx_pl80</string>
+      <string>craft2p</string>
       <string>d2fdc</string>
       <string>diskii13</string>
+      <string>dodo</string>
       <string>egret</string>
+      <string>elppa</string>
       <string>ex800</string>
+      <string>hkc8800a</string>
       <string>ie15_device</string>
       <string>ie15kbd</string>
+      <string>ivelultr</string>
       <string>kb_ec1841</string>
       <string>kb_iskr1030</string>
       <string>kb_pc83</string>
       <string>kb_pcxt83</string>
       <string>keytronic_pc3270</string>
+      <string>las128e2</string>
+      <string>las128ex</string>
+      <string>laser128</string>
+      <string>laser2c</string>
       <string>lx800</string>
       <string>lx810l</string>
       <string>m68705p3</string>
@@ -90,6 +117,9 @@
       <string>maclc</string>
       <string>maclc2</string>
       <string>maclc3</string>
+      <string>maxxi</string>
+      <string>microeng</string>
+      <string>mprof3</string>
       <string>nb_48gc</string>
       <string>nb_824gc</string>
       <string>nb_aenet</string>
@@ -107,8 +137,16 @@
       <string>nb_vikbw</string>
       <string>nb_wspt</string>
       <string>p72</string>
+      <string>prav82</string>
+      <string>prav8c</string>
+      <string>prav8m</string>
       <string>qsound</string>
+      <string>space84</string>
+      <string>spectred</string>
       <string>swtpc8212_device</string>
+      <string>uniap2en</string>
+      <string>uniap2pt</string>
+      <string>uniap2ti</string>
       <string>votrax</string>
       <string>ym2608</string>
       <string>zijini</string>
