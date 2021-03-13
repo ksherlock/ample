@@ -352,6 +352,7 @@ static NSString *ShellQuote(NSString *s) {
                 @"hlsl",
                 @"crt-geom",
                 @"crt-geom-deluxe",
+                @"lcd-grid",
             };
             [argv addObject: @"-bgfx_screen_chains"];
             [argv addObject: Names[_mameEffects]];

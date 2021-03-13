@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     </customView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
-                        <rect key="frame" x="588" y="58" width="111" height="23"/>
+                        <rect key="frame" x="588.5" y="58" width="111" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Launch" bezelStyle="texturedRounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -47,7 +47,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
-                        <rect key="frame" x="470" y="58" width="109" height="23"/>
+                        <rect key="frame" x="470.5" y="58" width="109" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Reset Slots" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -129,11 +129,24 @@ DQ
                                                 <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="WdF-Hw-YI9">
                                                     <items>
-                                                        <menuItem title="Default" state="on" id="Dsm-bi-Txy"/>
-                                                        <menuItem title="Unfiltered" tag="1" id="xgz-We-TFg"/>
-                                                        <menuItem title="HLSL" tag="2" id="1UE-ea-V9a"/>
-                                                        <menuItem title="CRT Geometry" tag="3" id="Dsx-wI-m3r"/>
-                                                        <menuItem title="CRT Geometry Deluxe" tag="4" id="Ylw-Of-TM5"/>
+                                                        <menuItem title="Default" state="on" id="Dsm-bi-Txy">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Unfiltered" tag="1" id="xgz-We-TFg">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="HLSL" tag="2" id="1UE-ea-V9a">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="CRT Geometry" tag="3" id="Dsx-wI-m3r">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="CRT Geometry Deluxe" tag="4" id="Ylw-Of-TM5">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="LCD Grid" tag="5" id="A6k-ku-z2M">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
