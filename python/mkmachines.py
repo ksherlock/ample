@@ -75,29 +75,13 @@ def find_machine_media(parent):
 		slot = None
 		if ':' in tag:
 			tt = tag.split(':')
-			if len(tt) >= 3: slot = tt[0]
-			# exclude:
-			# apple1 - tag="exp:cassette:cassette"
-			# apple2 - tag="sl6:diskiing:0:525" - <slot name="sl6">
-			# include:
-			# apple2c - tag="sl6:0:525"  - <slot name="sl:0">.
-			# apple3 - tag="0:525" - <slot name="0">
-
-			# .229 apple2gs:
-			# <device type="floppydisk" tag="fdc:0:525" interface="floppy_5_25">
-			# <device type="floppydisk" tag="fdc:2:35dd" interface="floppy_3_5">
-
-			# format slot name : slotoption name : machine->device type name
-
-		if mname == "apple2c" and slot == "sl6": slot = None
-		if slot=="fdc": slot = None # .229 IIgs
+			slot = tt[0]
 
 		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
 		if mname[0:3] == "mac" and slot == "scsi": slot = None
 
 		if slot: continue
 		# skip slot devices -- they'll be handled as part of the device.
-		#if ":" in tag and tag[0] not in "0123456789": continue
 
 		if intf in remap:
 			name = remap[intf]
@@ -132,10 +116,11 @@ def find_media(parent, include_slots=False):
 		"messimg_disk_image": "pseudo_disk",
 	}
 	remap_slot = {
+		# now handled at the slot level.
 		# "harddisk": "hard",
 		# "hdd": "hard",
 		# "cdrom": "cdrom",
-		"525": "floppy_5_25",
+		# "525": "floppy_5_25",
 		"image": "psuedo_disk",
 	}
 
@@ -183,48 +168,59 @@ def find_software(parent):
 
 
 
+DEVICE_REMAP = {
+	'cdrom': 'CD-ROM',
+	'hdd': 'Hard Disk',
+	'harddisk': 'Hard Disk',
+	"525": '5.25"',
+	'35hd': '3.5" HD',
+	'35dd': '3.5" DD',
+	'35sd': '3.5" SD',
+}
+DEVICE_MEDIA = {
+	'cdrom': 'cdrom',
+	'hdd': 'hard',
+	'harddisk': 'hard',
+	'525': 'floppy_5_25',
+	'35hd': 'floppy_3_5',
+	'35dd': 'floppy_3_5',
+	'35sd': 'floppy_3_5',
+}
+
+def make_device_options(slot):
+
+	options = []
+	has_default = False
+	#has_media = False
+	for option in slot.findall("./slotoption"):
+		name = option.get("name")
+		if name not in DEVICE_REMAP: continue
+		default = option.get("default") == "yes"
+		has_default |= default
+		options.append({
+			'value': name,
+			'description': DEVICE_REMAP[name],
+			'media': { DEVICE_MEDIA[name]: 1 },
+			'default': default
+		})
+
+	if not options: return None
+	options.sort(key=lambda x: x["description"].upper() )
+	options.insert(0, {"value": "", "description": "—None—", "default": not has_default})
+
+	return options
+
+
 	# given a machine, return a list of slotoptions.
-def slot_options(machine):
-	REMAP = {
-		'cdrom': 'CD-ROM',
-		'hdd': 'Hard Disk',
-		'harddisk': 'Hard Disk',
-		# "525": '5.25"'
-		# '35hd': '3.5" HD',
-		# '35dd': '3.5" DD',
-		# '35sd': '3.5" SD',
-	}
-	MEDIA = {
-		'cdrom': 'cdrom',
-		'hdd': 'hard',
-		'harddisk': 'hard',
-	}
+def make_device_slots(machine):
 
 	mname = machine.get('name')
 
 	slots = []
 	for slot in machine.findall('./slot'):
 		slotname = slot.get("name")
-		options = []
-		has_default = False
-		#has_media = False
-		for option in slot.findall("./slotoption"):
-			name = option.get("name")
-			if name not in REMAP: continue
-			default = option.get("default") == "yes"
-			has_default |= default
-			options.append({
-				'value': name,
-				'description': REMAP[name],
-				'media': { MEDIA[name]: 1 },
-				'default': default
-			})
-		# n.b. 9 diskiing, for example, has media but only 2 options...
-		# if len(options) < 2 : continue # don't bother if only 1 option which is going to be defaulted anyhow.
+		options = make_device_options(slot)
 		if not options: continue
-		options.sort(key=lambda x: x["description"].upper() )
-		options.insert(0, {"value": "", "description": "—None—", "default": not has_default})
-
 		slots.append({
 			"name": slotname,
 			"options": options
@@ -239,12 +235,12 @@ def make_devices(mm):
 	devices = []
 	for m in mm.values():
 		name = m.get("name")
-		slots = slot_options(m)
+		slots = make_device_slots(m)
 		if slots:
 			devices.append({
 				"name": name,
 				"slots": slots
-				})
+			})
 	return devices
 
 
@@ -270,6 +266,34 @@ def make_ram(machine):
 		"options": options
 	}
 
+def make_smartport(machine):
+
+
+# iigs: <slot name="fdc:0" .. "fdc:3">
+# iic: <slot name="sl6:0" .. "sl6:1">
+# apple 3: <slot name="0" .. "3">
+# apple 2: diskiing card
+# maclc <slot name="scsi:1" .. "scsi:7" (but not 4-7 not configurable)
+
+	slots = []
+	for s in ("fdc:0", "fdc:1", "fdc:2", "fdc:3", "sl6:0", "sl6:1", "0", "1", "2", "3"):
+		path = 'slot[@name="{}"]'.format(s)
+		slot = machine.find(path)
+		if not slot: continue
+
+		slotname = slot.get("name")
+		options = make_device_options(slot)
+		if not options: continue
+		slots.append({
+			"name": slotname,
+			"options": options
+		})
+
+	if not slots: return None
+	return {
+		"name": "smartport",
+		"slots": slots
+	}
 
 def make_slot(m, slotname, nodes):
 
@@ -358,6 +382,20 @@ for m in machines:
 	# ss = {}
 	slots = []
 	slots.append(make_ram(machine))
+
+	smartport = make_smartport(machine)
+	if (smartport):
+		slots.append({
+			"name": "smartport",
+			"description": "Disk Drives",
+			"options": [{
+				"value": "",
+				"description": "",
+				"devname": "smartport",
+				"default": True,
+			}]
+		})
+
 	for s in SLOTS:
 		path = 'slot[@name="{}"]/slotoption'.format(s)
 		nodes = machine.findall(path)
@@ -368,7 +406,9 @@ for m in machines:
 
 	data["slots"] = slots
 
-	data["devices"] = make_devices(mm)
+	devices = make_devices(mm)
+	if smartport: devices.insert(0, smartport)
+	data["devices"] = devices
 	data["software"] = find_software(machine)
 
 

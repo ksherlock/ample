@@ -17,7 +17,7 @@
 #import <objc/runtime.h>
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define SLOT_COUNT 21
+#define SLOT_COUNT 22
 static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))

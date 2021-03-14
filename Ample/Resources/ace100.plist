@@ -211,11 +211,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -224,11 +219,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -237,11 +227,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -298,11 +283,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -693,11 +673,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -706,11 +681,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -719,11 +689,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -780,11 +745,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1175,11 +1135,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1188,11 +1143,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1201,11 +1151,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1262,11 +1207,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1657,11 +1597,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1670,11 +1605,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1683,11 +1613,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1744,11 +1669,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2141,11 +2061,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2154,11 +2069,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2167,11 +2077,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2228,11 +2133,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2623,11 +2523,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2636,11 +2531,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2651,11 +2541,6 @@
             <true/>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2712,11 +2597,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3107,11 +2987,6 @@
             <string>Apple Disk II IWM controller</string>
             <key>devname</key>
             <string>a2iwm</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3120,11 +2995,6 @@
             <string>Apple Disk II NG controller (13-sector)</string>
             <key>devname</key>
             <string>diskii13</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3133,11 +3003,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3194,11 +3059,6 @@
             <string>Applesurance Diagnostic Controller</string>
             <key>devname</key>
             <string>a2surance</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3770,6 +3630,132 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2diskiing</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2iwm</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2scsi</string>
         <key>slots</key>
         <array>
@@ -4064,6 +4050,69 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2surance</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2zipdrv</string>
         <key>slots</key>
         <array>
@@ -4146,6 +4195,69 @@
                 </dict>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>diskii13</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
               </dict>
             </array>
           </dict>

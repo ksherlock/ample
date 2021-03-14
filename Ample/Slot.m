@@ -95,6 +95,9 @@ static NSDictionary *IndexMap = nil;
         @"nbc":        @18,
         @"nbd":        @19,
         @"nbe":        @20,
+
+        @"smartport":  @21,
+#define kSMARTPORT 21
     };
     
 }
@@ -194,7 +197,12 @@ static NSDictionary *IndexMap = nil;
 }
 -(void)setKeyPath: (NSString *)path {
     
-    NSString *p = [path stringByAppendingString: _name];
+// extra logic for -fdc:0, -0, -sl6:0, etc, built-in slots.
+    unichar c = [_name characterAtIndex: 0];
+    NSString *p = nil;
+    if (c == ':') p = [path stringByAppendingString: _name];
+    else if (c == '-') p = _name;
+    else p = [@"-" stringByAppendingString: _name];
     for (SlotOption *o in _options) {
         [o setKeyPath: p];
     }
@@ -305,9 +313,9 @@ static NSDictionary *IndexMap = nil;
     // can't cache the menu items since they
     // may still be in use.
     
+    NSButton *hb = [view hamburgerButton];
     NSPopUpButton *button = [view menuButton];
     NSTextField *text = [view textField];
-    
     
     [view setObjectValue: self];
     
@@ -315,21 +323,19 @@ static NSDictionary *IndexMap = nil;
     [button unbind: @"selectedIndex"];
     NSMenu *menu = [button menu];
     NSArray *menuItems = [self menuItems];
-
-    [menu setItemArray: menuItems];
-    [button bind: @"selectedIndex" toObject: self withKeyPath: @"selectedIndex" options: nil];
-    [button setTag: _index];
     
-    NSButton *hb = [view hamburgerButton];
-    [hb setTag: _index];
-#if 0
-    // bind w/ NSIsNilTransformerName? selected index would need to flag it dirty.
-    if ([self selectedChildren]) {
-        [hb setHidden: NO];
+    if (_index == kSMARTPORT) {
+        [menu setItemArray: @[]];
+        [button setHidden: YES];
     } else {
-        [hb setHidden: YES];
+        [menu setItemArray: menuItems];
+        [button bind: @"selectedIndex" toObject: self withKeyPath: @"selectedIndex" options: nil];
+        [button setHidden: NO];
     }
-#endif
+    [button setTag: _index];
+
+    [hb setTag: _index];
+    // hb visible status bound in xib.
 }
 
 /*
@@ -465,7 +471,8 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     
     _keyPath = path;
     if (!_children) return;
-    NSString *p = [path stringByAppendingFormat: @":%@", _value];
+    NSString *p = path;
+    if ([_value length]) p = [path stringByAppendingFormat: @":%@", _value];
     
     for (Slot *s in _children) {
         [s setKeyPath: p];

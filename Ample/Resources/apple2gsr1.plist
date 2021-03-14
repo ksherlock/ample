@@ -8,10 +8,6 @@
     <string>Apple IIgs (ROM01)</string>
     <key>media</key>
     <dict>
-      <key>floppy_5_25</key>
-      <integer>2</integer>
-      <key>floppy_3_5</key>
-      <integer>2</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -151,6 +147,25 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>smartport</string>
+        <key>description</key>
+        <string>Disk Drives</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string></string>
+            <key>devname</key>
+            <string>smartport</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl1</string>
         <key>description</key>
         <string>Slot 1</string>
@@ -203,11 +218,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -657,11 +667,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1111,11 +1116,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1565,11 +1565,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2019,11 +2014,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2473,11 +2463,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2927,11 +2912,6 @@
             <string>Apple Disk II NG controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3607,6 +3587,177 @@
     <array>
       <dict>
         <key>name</key>
+        <string>smartport</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35hd</string>
+                <key>description</key>
+                <string>3.5" HD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35sd</string>
+                <key>description</key>
+                <string>3.5" SD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35hd</string>
+                <key>description</key>
+                <string>3.5" HD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35sd</string>
+                <key>description</key>
+                <string>3.5" SD</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2cffa02</string>
         <key>slots</key>
         <array>
@@ -3774,6 +3925,69 @@
                 <key>media</key>
                 <dict>
                   <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2diskiing</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
                 <key>default</key>
