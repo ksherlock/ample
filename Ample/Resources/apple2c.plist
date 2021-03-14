@@ -151,6 +151,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>rs232_sync_io</string>
+            <key>description</key>
+            <string>RS232 Synchronous I/O</string>
+            <key>devname</key>
+            <string>rs232_sync_io</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>keyboard</string>
             <key>description</key>
             <string>Serial Keyboard</string>
@@ -253,6 +261,14 @@
             <string>RS232 Null Modem</string>
             <key>devname</key>
             <string>null_modem</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs232_sync_io</string>
+            <key>description</key>
+            <string>RS232 Synchronous I/O</string>
+            <key>devname</key>
+            <string>rs232_sync_io</string>
           </dict>
           <dict>
             <key>value</key>

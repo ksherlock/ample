@@ -21,7 +21,7 @@ EXTRA_MACHINES = [
 	'kb_pc83',
 	'kb_pcxt83',
 	'keytronic_pc3270',
-	'apple2gsr0p'
+	'apple2gsr0p',
 	'apple2gsr0p2',
 	'apple2c0',
 	'apple2c3',

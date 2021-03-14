@@ -280,6 +280,12 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>TK3000//e</string>
+          <key>value</key>
+          <string>tk3000</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Zi Jin I</string>
           <key>value</key>
           <string>zijini</string>

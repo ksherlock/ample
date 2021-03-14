@@ -144,6 +144,7 @@
 		B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */; };
 		B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
 		B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
+		B6DE323325FE7BD400418375 /* tk3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323225FE7BD400418375 /* tk3000.plist */; };
 		B6E08076252574690075F4E1 /* vmnet_helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6841BD0251EC913006A5C39 /* vmnet_helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6E4B5B024FDE2670094A35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
 		B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
@@ -384,6 +385,7 @@
 		B6DDECC92505A86E0093587A /* eject-hover-16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-hover-16x16@2x.png"; sourceTree = "<group>"; };
 		B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-hover-16x16@3x.png"; sourceTree = "<group>"; };
 		B6DDECCB2505A86E0093587A /* eject-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eject-16x16.png"; sourceTree = "<group>"; };
+		B6DE323225FE7BD400418375 /* tk3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tk3000.plist; sourceTree = "<group>"; };
 		B6E4B5FA24FDE2670094A35C /* Ample Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ample Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewSlotViewController.h; sourceTree = "<group>"; };
 		B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewSlotViewController.m; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				B6109A0D24F5F374005CB652 /* prav82.plist */,
 				B61099F024F5F36E005CB652 /* space84.plist */,
 				B61099FF24F5F371005CB652 /* spectred.plist */,
+				B6DE323225FE7BD400418375 /* tk3000.plist */,
 				B61099FA24F5F370005CB652 /* uniap2en.plist */,
 				B61099EE24F5F36E005CB652 /* uniap2pt.plist */,
 				B6109A0224F5F371005CB652 /* uniap2ti.plist */,
@@ -761,6 +764,7 @@
 				B6109A1924F5F377005CB652 /* apple2ees.plist in Resources */,
 				B6109A3924F5F377005CB652 /* prav8c.plist in Resources */,
 				B6109A1C24F5F377005CB652 /* ivelultr.plist in Resources */,
+				B6DE323325FE7BD400418375 /* tk3000.plist in Resources */,
 				B6109A3824F5F377005CB652 /* maxxi.plist in Resources */,
 				B6109A2E24F5F377005CB652 /* apple2eefr.plist in Resources */,
 				B6109A2C24F5F377005CB652 /* spectred.plist in Resources */,

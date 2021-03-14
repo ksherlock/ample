@@ -11,7 +11,7 @@ MACHINES = (
 	"laser128", "laser2c", "las128ex", "las128e2",
 
 	# IIe clones
-	"mprof3", "prav8c", "spectred",
+	"mprof3", "prav8c", "spectred", "tk3000",
 	# II clones
 	"ace100", "agat7", "agat9", "albert",
 	"am100", "am64", "basis108", "craft2p",

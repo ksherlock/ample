@@ -63,6 +63,9 @@
       <string>apple1</string>
       <string>apple2</string>
       <string>apple2c</string>
+      <string>apple2c0</string>
+      <string>apple2c3</string>
+      <string>apple2c4</string>
       <string>apple2cp</string>
       <string>apple2e</string>
       <string>apple2ee</string>
@@ -73,6 +76,8 @@
       <string>apple2euk</string>
       <string>apple2gs</string>
       <string>apple2gsr0</string>
+      <string>apple2gsr0p</string>
+      <string>apple2gsr0p2</string>
       <string>apple2gsr1</string>
       <string>apple2jp</string>
       <string>apple2p</string>
@@ -144,6 +149,7 @@
       <string>space84</string>
       <string>spectred</string>
       <string>swtpc8212_device</string>
+      <string>tk3000</string>
       <string>uniap2en</string>
       <string>uniap2pt</string>
       <string>uniap2ti</string>

@@ -20,7 +20,7 @@ ii_clones_children = ["ace100", "albert",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
 	"space84", "uniap2en", "uniap2pt", "uniap2ti"]
-iie_clones_children = ["mprof3", "prav8c", "spectred", "zijini"]
+iie_clones_children = ["mprof3", "prav8c", "spectred", "tk3000", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
