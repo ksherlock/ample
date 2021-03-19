@@ -41,6 +41,70 @@ DISABLED = set((
 ))
 
 
+
+machine_cache = {}
+submachines = {} # with slots.
+
+
+def load_machine(name):
+
+	rootname = name
+	if name in machine_cache: return machine_cache[name]
+
+	# print("    {}".format(name))
+	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
+	st = subprocess.run(["../embedded/mame64", name, "-listxml"], capture_output=True, env=env)
+	if st.returncode != 0:
+		print("mame error: {}".format(name))
+		return False
+
+	xml = st.stdout
+	root = ET.fromstring(xml)
+
+	for x in root.findall("./machine"):
+		name = x.get("name")
+		if name in machine_cache: continue
+		machine_cache[name] = x
+
+	return machine_cache[rootname]
+
+
+def load_machine_recursive(name):
+	# machine_cache.clear()
+	submachines.clear()
+
+	rootname = name
+	m = load_machine(name)
+	if not m: return None
+
+	processed = set()
+	pending = { rootname }
+	while pending:
+
+		name = pending.pop()
+		m = load_machine(name)
+		processed.add(name)
+		if not m:
+			print("    *{}".format(name))
+			continue
+		count = 0
+		for x in m.findall('./slot/slotoption'):
+			count = count+1
+			devname = x.get('devname')
+			if devname in processed: continue
+			pending.add(devname)
+
+		if count:
+			# print("    slots: {}".format(name))
+			submachines[name] = m
+
+
+	if rootname in submachines:
+		del submachines[rootname]
+
+	return machine_cache[rootname]
+
+
 def find_machine_media(parent):
 	# look for relevant device nodes.  If the tag contains a slot, skip since it's
 	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
@@ -187,6 +251,18 @@ DEVICE_MEDIA = {
 	'35sd': 'floppy_3_5',
 }
 
+DEVICE_EXCLUDE = set([
+	# cd drives, etc.
+	'aplcd150',
+	'cdd2000',
+	'cdr4210',
+	'cdrn820s',
+	'cw7501',
+	's1410',
+	'smoc501',
+	'px320a',
+])
+
 def make_device_options(slot):
 
 	options = []
@@ -194,15 +270,28 @@ def make_device_options(slot):
 	#has_media = False
 	for option in slot.findall("./slotoption"):
 		name = option.get("name")
-		if name not in DEVICE_REMAP: continue
+		devname = option.get("devname")
+		if name in DEVICE_EXCLUDE: continue
+
+		if name in DEVICE_REMAP:
+			desc = DEVICE_REMAP[name]
+		elif devname in machine_cache:
+			desc = machine_cache[devname].find("description").text
+		else:
+			# print("{} - {}".format(name, devname))
+			continue
+
 		default = option.get("default") == "yes"
 		has_default |= default
-		options.append({
+		media = None
+		if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
+		item = {
 			'value': name,
-			'description': DEVICE_REMAP[name],
-			'media': { DEVICE_MEDIA[name]: 1 },
+			'description': desc,
 			'default': default
-		})
+		}
+		if media: item['media'] = media
+		options.append(item);
 
 	if not options: return None
 	options.sort(key=lambda x: x["description"].upper() )
@@ -230,11 +319,11 @@ def make_device_slots(machine):
 
 	return slots
 
-def make_devices(mm):
+def make_devices():
 	
 	devices = []
-	for m in mm.values():
-		name = m.get("name")
+	for name, m in submachines.items():
+		# print("   {}".format(name))
 		slots = make_device_slots(m)
 		if slots:
 			devices.append({
@@ -303,7 +392,7 @@ def make_slot(m, slotname, nodes):
 	for x in nodes:
 		name = x.get("name")
 		devname = x.get("devname")
-		desc = mm[devname].find("description").text
+		desc = machine_cache[devname].find("description").text
 		default = x.get("default") == "yes"
 		disabled = name in DISABLED or (m, name) in DISABLED
 
@@ -312,7 +401,7 @@ def make_slot(m, slotname, nodes):
 		if disabled: d["disabled"] = True
 		if not disabled:
 			d["devname"] = devname
-			media = find_media(mm[devname], True)
+			media = find_media(machine_cache[devname], True)
 			if media:
 				d["media"] = media
 
@@ -345,19 +434,22 @@ for m in machines:
 
 	print(m)
 
-	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
-	if st.returncode != 0:
-		print("mame error: {}".format(m))
+	machine = load_machine_recursive(m)
+	if not machine:
 		exit(1)
+	# env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
+	# st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
+	# if st.returncode != 0:
+	# 	print("mame error: {}".format(m))
+	# 	exit(1)
+	# xml = st.stdout
+	# root = ET.fromstring(xml)
 
 	data = {  }
 
-	xml = st.stdout
-	root = ET.fromstring(xml)
 
-	path = 'machine[@name="{}"]'.format(m)
-	machine = root.find(path)
+	# path = 'machine[@name="{}"]'.format(m)
+	# machine = root.find(path)
 
 	data["value"] = m
 	data["description"] = machine.find("description").text
@@ -371,13 +463,12 @@ for m in machines:
 	if m[0:3] == "mac": hscale = 1
 	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
 
-	mm = {}
-	for x in root.findall("machine[@isdevice='yes']"):
-		name = x.get("name")
-		mm[name] = x # .find("description").text
-		# also need to find media...
+	# submachines.clear()
+	# for x in root.findall("machine[@isdevice='yes']"):
+	# 	name = x.get("name")
+	# 	submachines[name] = x # .find("description").text
+	# 	# also need to find media...
 
-	# print(mm)
 
 	# ss = {}
 	slots = []
@@ -406,7 +497,7 @@ for m in machines:
 
 	data["slots"] = slots
 
-	devices = make_devices(mm)
+	devices = make_devices()
 	if smartport: devices.insert(0, smartport)
 	data["devices"] = devices
 	data["software"] = find_software(machine)

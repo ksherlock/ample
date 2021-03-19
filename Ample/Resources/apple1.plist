@@ -211,26 +211,26 @@
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <false/>
               </dict>
               <dict>
                 <key>value</key>
                 <string>hdd</string>
                 <key>description</key>
                 <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
                 <key>media</key>
                 <dict>
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <true/>
               </dict>
             </array>
           </dict>
@@ -252,26 +252,26 @@
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <false/>
               </dict>
               <dict>
                 <key>value</key>
                 <string>hdd</string>
                 <key>description</key>
                 <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>

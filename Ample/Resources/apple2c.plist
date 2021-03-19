@@ -355,13 +355,13 @@
                 <string>525</string>
                 <key>description</key>
                 <string>5.25"</string>
+                <key>default</key>
+                <true/>
                 <key>media</key>
                 <dict>
                   <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <true/>
               </dict>
             </array>
           </dict>
@@ -383,13 +383,13 @@
                 <string>525</string>
                 <key>description</key>
                 <string>5.25"</string>
+                <key>default</key>
+                <true/>
                 <key>media</key>
                 <dict>
                   <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
-                <key>default</key>
-                <true/>
               </dict>
             </array>
           </dict>
@@ -397,12 +397,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>a2diskiing</string>
+        <string>sunkbd_adaptor</string>
         <key>slots</key>
         <array>
           <dict>
             <key>name</key>
-            <string>:0</string>
+            <string>:keyboard</string>
             <key>options</key>
             <array>
               <dict>
@@ -411,48 +411,55 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-                <key>default</key>
                 <true/>
               </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
               <dict>
                 <key>value</key>
-                <string></string>
+                <string>type3hle</string>
                 <key>description</key>
-                <string>—None—</string>
+                <string>Sun Type 3 Keyboard (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>525</string>
+                <string>type4hle</string>
                 <key>description</key>
-                <string>5.25"</string>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
+                <string>Sun Type 4 Keyboard (HLE)</string>
                 <key>default</key>
-                <true/>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5gbhle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5jphle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5sehle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5hle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

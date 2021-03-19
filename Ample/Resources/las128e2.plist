@@ -355,6 +355,76 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>sunkbd_adaptor</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:keyboard</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type3hle</string>
+                <key>description</key>
+                <string>Sun Type 3 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type4hle</string>
+                <key>description</key>
+                <string>Sun Type 4 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5gbhle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5jphle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5sehle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5hle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>software</key>
     <array>
