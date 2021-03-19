@@ -118,10 +118,26 @@
       <string>lx800</string>
       <string>lx810l</string>
       <string>m68705p3</string>
+      <string>mac128k</string>
+      <string>mac512k</string>
+      <string>mac512ke</string>
+      <string>macclasc</string>
       <string>maciici</string>
+      <string>mackbd_m0110</string>
+      <string>mackbd_m0110a</string>
+      <string>mackbd_m0110a_f</string>
+      <string>mackbd_m0110a_j</string>
+      <string>mackbd_m0110b</string>
+      <string>mackbd_m0110f</string>
+      <string>mackbd_m0110t</string>
+      <string>mackbd_m0120</string>
+      <string>mackbd_m0120p</string>
       <string>maclc</string>
       <string>maclc2</string>
       <string>maclc3</string>
+      <string>macplus</string>
+      <string>macse</string>
+      <string>macsefd</string>
       <string>maxxi</string>
       <string>microeng</string>
       <string>mprof3</string>
@@ -142,6 +158,8 @@
       <string>nb_vikbw</string>
       <string>nb_wspt</string>
       <string>p72</string>
+      <string>pds_hyper</string>
+      <string>pds_sefp</string>
       <string>prav82</string>
       <string>prav8c</string>
       <string>prav8m</string>

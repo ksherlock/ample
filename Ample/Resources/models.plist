@@ -385,6 +385,57 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Macintosh (128K)</string>
+      <key>value</key>
+      <string>mac128k</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 128k</string>
+          <key>value</key>
+          <string>mac128k</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 512k</string>
+          <key>value</key>
+          <string>mac512k</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 512ke</string>
+          <key>value</key>
+          <string>mac512ke</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Plus</string>
+          <key>value</key>
+          <string>macplus</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh SE</string>
+          <key>value</key>
+          <string>macse</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh SE (FDHD)</string>
+          <key>value</key>
+          <string>macsefd</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Classic</string>
+          <key>value</key>
+          <string>macclasc</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Macintosh (NuBus)</string>
       <key>value</key>
       <string>maclc</string>

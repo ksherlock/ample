@@ -25,6 +25,7 @@ cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
 mac_nubus_children = ["maclc", "maclc2", "maclc3", "maciici"]
+mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus", "macse", "macsefd", "macclasc"]
 
 tree = [
 	("Apple I", "apple1", apple1_children),
@@ -38,7 +39,8 @@ tree = [
 	("Laser", "laser128", laser_children),
 	("Agat", "agat7", agat_children),
 	("China Education Computer", None, cec_children),
-	("Macintosh (NuBus)", "maclc", mac_nubus_children)
+	("Macintosh (128K)", "mac128k", mac_128k_children),
+	("Macintosh (NuBus)", "maclc", mac_nubus_children),
 ]
 
 env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}

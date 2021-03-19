@@ -24,6 +24,12 @@ MACHINES = (
 
 	# macintosh...
 	"maclc", "maclc2", "maclc3", "maciici",
+
+	# mac 128k-classic
+	"mac128k", "mac512k", "mac512ke", "macplus", "macse", "macsefd", "macclasc",
+
+	# 128k clones
+	# "unitron", "utrn1024",
 )
 
 
