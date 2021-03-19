@@ -564,6 +564,44 @@
     <array>
       <dict>
         <key>name</key>
+        <string>nb_btbug</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:serport0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>nb_qdlink</string>
         <key>slots</key>
         <array>
@@ -688,44 +726,6 @@
                 <string>Serial Terminal</string>
                 <key>default</key>
                 <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>nb_btbug</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:serport0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS232 Null Modem</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <true/>
               </dict>
             </array>
           </dict>

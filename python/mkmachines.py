@@ -322,7 +322,12 @@ def make_device_slots(machine):
 def make_devices():
 	
 	devices = []
-	for name, m in submachines.items():
+	# alphabetically so it doesn't change.
+	names = list(submachines.keys())
+	names.sort()
+
+	for name in names:
+		m = submachines[name]
 		# print("   {}".format(name))
 		slots = make_device_slots(m)
 		if slots:

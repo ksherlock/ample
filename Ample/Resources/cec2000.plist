@@ -2765,6 +2765,564 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2bus_byte8251</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2cffa02</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:cffa2_ata:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:cffa2_ata:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2cffa2</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:cffa2_ata:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:cffa2_ata:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2diskiing</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2focdrv</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:zipdrive_ata:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:zipdrive_ata:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2grapplerplus</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:prn</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>The ChessMachine EC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2hsscsi</string>
         <key>slots</key>
         <array>
@@ -3059,12 +3617,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>cmsscsi</string>
+        <string>a2iwm</string>
         <key>slots</key>
         <array>
           <dict>
             <key>name</key>
-            <string>:scsibus:0</string>
+            <string>:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -3073,31 +3631,18 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
                 <key>media</key>
                 <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
+                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
               </dict>
@@ -3105,7 +3650,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>:scsibus:1</string>
+            <string>:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -3114,39 +3659,33 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
                 <key>media</key>
                 <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
+                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
               </dict>
             </array>
           </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2midi</string>
+        <key>slots</key>
+        <array>
           <dict>
             <key>name</key>
-            <string>:scsibus:2</string>
+            <string>:mdin</string>
             <key>options</key>
             <array>
               <dict>
@@ -3155,39 +3694,21 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>midiin</string>
+                <key>description</key>
+                <string>MIDI In port</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
               </dict>
             </array>
           </dict>
           <dict>
             <key>name</key>
-            <string>:scsibus:3</string>
+            <string>:mdout</string>
             <key>options</key>
             <array>
               <dict>
@@ -3196,39 +3717,28 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>midiout</string>
+                <key>description</key>
+                <string>MIDI Out port</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
               </dict>
             </array>
           </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2parprn</string>
+        <key>slots</key>
+        <array>
           <dict>
             <key>name</key>
-            <string>:scsibus:4</string>
+            <string>:prn</string>
             <key>options</key>
             <array>
               <dict>
@@ -3237,39 +3747,108 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
                 <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>cdrom</string>
+                <string>pl80</string>
                 <key>description</key>
-                <string>CD-ROM</string>
+                <string>COMX PL-80</string>
                 <key>default</key>
                 <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
               </dict>
               <dict>
                 <key>value</key>
-                <string>harddisk</string>
+                <string>covox_stereo</string>
                 <key>description</key>
-                <string>Hard Disk</string>
+                <string>Covox (Stereo-in-1)</string>
                 <key>default</key>
                 <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>The ChessMachine EC</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2pcxport</string>
+        <key>slots</key>
+        <array>
           <dict>
             <key>name</key>
-            <string>:scsibus:5</string>
+            <string>:kbd</string>
             <key>options</key>
             <array>
               <dict>
@@ -3278,39 +3857,60 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ec1841</string>
+                <key>description</key>
+                <string>EC-1841 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc</string>
+                <key>description</key>
+                <string>IBM PC Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pcxt</string>
+                <key>description</key>
+                <string>IBM PC/XT Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>iskr1030</string>
+                <key>description</key>
+                <string>Iskra-1030 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keytronc_pc3270</string>
+                <key>description</key>
+                <string>Keytronic PC3270</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
               </dict>
             </array>
           </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2pic</string>
+        <key>slots</key>
+        <array>
           <dict>
             <key>name</key>
-            <string>:scsibus:6</string>
+            <string>:prn</string>
             <key>options</key>
             <array>
               <dict>
@@ -3323,29 +3923,91 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>cdrom</string>
+                <string>printer</string>
                 <key>description</key>
-                <string>CD-ROM</string>
+                <string>Centronics Printer</string>
                 <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>harddisk</string>
+                <string>pl80</string>
                 <key>description</key>
-                <string>Hard Disk</string>
+                <string>COMX PL-80</string>
                 <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>The ChessMachine EC</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -3638,1419 +4300,6 @@
                 <key>media</key>
                 <dict>
                   <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2midi</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:mdin</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>midiin</string>
-                <key>description</key>
-                <string>MIDI In port</string>
-                <key>default</key>
-                <true/>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:mdout</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>midiout</string>
-                <key>description</key>
-                <string>MIDI Out port</string>
-                <key>default</key>
-                <true/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2cffa02</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:cffa2_ata:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:cffa2_ata:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2grapplerplus</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:prn</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Centronics Printer</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pl80</string>
-                <key>description</key>
-                <string>COMX PL-80</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox_stereo</string>
-                <key>description</key>
-                <string>Covox (Stereo-in-1)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox</string>
-                <key>description</key>
-                <string>Covox Speech Thing</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ap2000</string>
-                <key>description</key>
-                <string>Epson ActionPrinter 2000</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ex800</string>
-                <key>description</key>
-                <string>Epson EX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx800</string>
-                <key>description</key>
-                <string>Epson LX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx810l</string>
-                <key>description</key>
-                <string>Espon LX-810L</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>p72</string>
-                <key>description</key>
-                <string>NEC PinWriter P72</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>samdac</string>
-                <key>description</key>
-                <string>SAMDAC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>chessmec</string>
-                <key>description</key>
-                <string>The ChessMachine EC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2sider2</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:2</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:3</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:4</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:5</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:sasibus:6</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>aprissi</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:rs232</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS232 Null Modem</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2pcxport</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:kbd</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ec1841</string>
-                <key>description</key>
-                <string>EC-1841 Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pc</string>
-                <key>description</key>
-                <string>IBM PC Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pcxt</string>
-                <key>description</key>
-                <string>IBM PC/XT Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>iskr1030</string>
-                <key>description</key>
-                <string>Iskra-1030 Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keytronc_pc3270</string>
-                <key>description</key>
-                <string>Keytronic PC3270</string>
-                <key>default</key>
-                <true/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2diskiing</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2parprn</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:prn</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Centronics Printer</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pl80</string>
-                <key>description</key>
-                <string>COMX PL-80</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox_stereo</string>
-                <key>description</key>
-                <string>Covox (Stereo-in-1)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox</string>
-                <key>description</key>
-                <string>Covox Speech Thing</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ap2000</string>
-                <key>description</key>
-                <string>Epson ActionPrinter 2000</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ex800</string>
-                <key>description</key>
-                <string>Epson EX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx800</string>
-                <key>description</key>
-                <string>Epson LX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx810l</string>
-                <key>description</key>
-                <string>Espon LX-810L</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>p72</string>
-                <key>description</key>
-                <string>NEC PinWriter P72</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>samdac</string>
-                <key>description</key>
-                <string>SAMDAC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>chessmec</string>
-                <key>description</key>
-                <string>The ChessMachine EC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2focdrv</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:zipdrive_ata:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:zipdrive_ata:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2bus_byte8251</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:rs232</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS232 Null Modem</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>ccs7710</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:rs232</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS232 Null Modem</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>diskii13</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2surance</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2iwm</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525</string>
-                <key>description</key>
-                <string>5.25"</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
               </dict>
@@ -5354,163 +4603,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>a2uniprint</string>
+        <string>a2sider2</string>
         <key>slots</key>
         <array>
           <dict>
             <key>name</key>
-            <string>:prn</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Centronics Printer</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pl80</string>
-                <key>description</key>
-                <string>COMX PL-80</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox_stereo</string>
-                <key>description</key>
-                <string>Covox (Stereo-in-1)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>covox</string>
-                <key>description</key>
-                <string>Covox Speech Thing</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ap2000</string>
-                <key>description</key>
-                <string>Epson ActionPrinter 2000</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ex800</string>
-                <key>description</key>
-                <string>Epson EX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx800</string>
-                <key>description</key>
-                <string>Epson LX-800</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>lx810l</string>
-                <key>description</key>
-                <string>Espon LX-810L</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>p72</string>
-                <key>description</key>
-                <string>NEC PinWriter P72</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>samdac</string>
-                <key>description</key>
-                <string>SAMDAC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>chessmec</string>
-                <key>description</key>
-                <string>The ChessMachine EC</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2zipdrv</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:zipdrive_ata:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:zipdrive_ata:1</string>
+            <string>:sasibus:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -5536,7 +4634,7 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>hdd</string>
+                <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
                 <key>default</key>
@@ -5549,16 +4647,9 @@
               </dict>
             </array>
           </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>sunkbd_adaptor</string>
-        <key>slots</key>
-        <array>
           <dict>
             <key>name</key>
-            <string>:keyboard</string>
+            <string>:sasibus:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -5571,51 +4662,234 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>type3hle</string>
+                <string>cdrom</string>
                 <key>description</key>
-                <string>Sun Type 3 Keyboard (HLE)</string>
+                <string>CD-ROM</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type4hle</string>
+                <string>harddisk</string>
                 <key>description</key>
-                <string>Sun Type 4 Keyboard (HLE)</string>
+                <string>Hard Disk</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:sasibus:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5gbhle</string>
+                <string>cdrom</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <string>CD-ROM</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5jphle</string>
+                <string>harddisk</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <string>Hard Disk</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:sasibus:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5sehle</string>
+                <string>cdrom</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <string>CD-ROM</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5hle</string>
+                <string>harddisk</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <string>Hard Disk</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:sasibus:4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:sasibus:5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:sasibus:6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -5741,12 +5015,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>a2vuliie</string>
+        <string>a2surance</string>
         <key>slots</key>
         <array>
           <dict>
             <key>name</key>
-            <string>:vulcan_ata:0</string>
+            <string>:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -5759,27 +5033,14 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>cdrom</string>
+                <string>525</string>
                 <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
+                <string>5.25"</string>
                 <key>default</key>
                 <true/>
                 <key>media</key>
                 <dict>
-                  <key>hard</key>
+                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
               </dict>
@@ -5787,7 +5048,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>:vulcan_ata:1</string>
+            <string>:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -5796,31 +5057,18 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
                 <key>media</key>
                 <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
+                  <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
               </dict>
@@ -5830,96 +5078,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>a2cffa2</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:cffa2_ata:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:cffa2_ata:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>hdd</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>a2pic</string>
+        <string>a2uniprint</string>
         <key>slots</key>
         <array>
           <dict>
@@ -6020,6 +5179,847 @@
                 <string>chessmec</string>
                 <key>description</key>
                 <string>The ChessMachine EC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2vuliie</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:vulcan_ata:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:vulcan_ata:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2zipdrv</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:zipdrive_ata:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:zipdrive_ata:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>aprissi</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>ccs7710</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cmsscsi</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsibus:6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>diskii13</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>sunkbd_adaptor</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:keyboard</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type3hle</string>
+                <key>description</key>
+                <string>Sun Type 3 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type4hle</string>
+                <key>description</key>
+                <string>Sun Type 4 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5gbhle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5jphle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5sehle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5hle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>

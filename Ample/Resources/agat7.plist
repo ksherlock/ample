@@ -400,59 +400,6 @@
     <array>
       <dict>
         <key>name</key>
-        <string>agat_fdc</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525dsqd</string>
-                <key>description</key>
-                <string>5.25" quad density floppy drive</string>
-                <key>default</key>
-                <true/>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>525dsqd</string>
-                <key>description</key>
-                <string>5.25" quad density floppy drive</string>
-                <key>default</key>
-                <true/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>a7ports</string>
         <key>slots</key>
         <array>
@@ -556,6 +503,59 @@
                 <string>The ChessMachine EC</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>agat_fdc</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dsqd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dsqd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
               </dict>
             </array>
           </dict>
