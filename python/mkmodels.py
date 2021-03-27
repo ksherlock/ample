@@ -24,8 +24,13 @@ iie_clones_children = ["mprof3", "prav8c", "spectred", "tk3000", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
-mac_nubus_children = ["maclc", "maclc2", "maclc3", "maciici"]
-mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus", "macse", "macsefd", "macclasc"]
+mac_nubus_children = [
+	"macii", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
+	"maclc", "maclc2", "maclc3"]
+
+# se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.
+mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
+	"macse", "macsefd", "macse30", "macclasc", "macclas2"]
 
 tree = [
 	("Apple I", "apple1", apple1_children),
@@ -39,7 +44,7 @@ tree = [
 	("Laser", "laser128", laser_children),
 	("Agat", "agat7", agat_children),
 	("China Education Computer", None, cec_children),
-	("Macintosh (128K)", "mac128k", mac_128k_children),
+	("Macintosh (Compact)", "macse30", mac_128k_children),
 	("Macintosh (NuBus)", "maclc", mac_nubus_children),
 ]
 

@@ -121,8 +121,15 @@
       <string>mac128k</string>
       <string>mac512k</string>
       <string>mac512ke</string>
+      <string>macclas2</string>
       <string>macclasc</string>
+      <string>macii</string>
       <string>maciici</string>
+      <string>maciicx</string>
+      <string>maciisi</string>
+      <string>maciivi</string>
+      <string>maciivx</string>
+      <string>maciix</string>
       <string>mackbd_m0110</string>
       <string>mackbd_m0110a</string>
       <string>mackbd_m0110a_f</string>
@@ -137,6 +144,7 @@
       <string>maclc3</string>
       <string>macplus</string>
       <string>macse</string>
+      <string>macse30</string>
       <string>macsefd</string>
       <string>maxxi</string>
       <string>microeng</string>
@@ -158,6 +166,11 @@
       <string>nb_vikbw</string>
       <string>nb_wspt</string>
       <string>p72</string>
+      <string>pd3_30hr</string>
+      <string>pd3_c264</string>
+      <string>pd3_lviw</string>
+      <string>pd3_mclr</string>
+      <string>pd3_pc16</string>
       <string>pds_hyper</string>
       <string>pds_sefp</string>
       <string>prav82</string>

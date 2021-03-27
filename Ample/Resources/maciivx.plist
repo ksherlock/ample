@@ -3,9 +3,9 @@
 <plist version="1.0">
   <dict>
     <key>value</key>
-    <string>maciici</string>
+    <string>maciivx</string>
     <key>description</key>
-    <string>Macintosh IIci</string>
+    <string>Macintosh IIvx</string>
     <key>media</key>
     <dict>
       <key>hard</key>
@@ -27,23 +27,13 @@
         <array>
           <dict>
             <key>intValue</key>
-            <integer>2097152</integer>
-            <key>description</key>
-            <string>2M</string>
-            <key>value</key>
-            <string>2M</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>intValue</key>
             <integer>4194304</integer>
             <key>description</key>
             <string>4M</string>
             <key>value</key>
             <string>4M</string>
             <key>default</key>
-            <false/>
+            <true/>
           </dict>
           <dict>
             <key>intValue</key>
@@ -52,6 +42,16 @@
             <string>8M</string>
             <key>value</key>
             <string>8M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>12582912</integer>
+            <key>description</key>
+            <string>12M</string>
+            <key>value</key>
+            <string>12M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -67,11 +67,71 @@
           </dict>
           <dict>
             <key>intValue</key>
+            <integer>20971520</integer>
+            <key>description</key>
+            <string>20M</string>
+            <key>value</key>
+            <string>20M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>25165824</integer>
+            <key>description</key>
+            <string>24M</string>
+            <key>value</key>
+            <string>24M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>29360128</integer>
+            <key>description</key>
+            <string>28M</string>
+            <key>value</key>
+            <string>28M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
             <integer>33554432</integer>
             <key>description</key>
             <string>32M</string>
             <key>value</key>
             <string>32M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>37748736</integer>
+            <key>description</key>
+            <string>36M</string>
+            <key>value</key>
+            <string>36M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>41943040</integer>
+            <key>description</key>
+            <string>40M</string>
+            <key>value</key>
+            <string>40M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>46137344</integer>
+            <key>description</key>
+            <string>44M</string>
+            <key>value</key>
+            <string>44M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -87,21 +147,41 @@
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>67108864</integer>
+            <integer>54525952</integer>
             <key>description</key>
-            <string>64M</string>
+            <string>52M</string>
             <key>value</key>
-            <string>64M</string>
+            <string>52M</string>
             <key>default</key>
             <false/>
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>134217728</integer>
+            <integer>58720256</integer>
             <key>description</key>
-            <string>128M</string>
+            <string>56M</string>
             <key>value</key>
-            <string>128M</string>
+            <string>56M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>62914560</integer>
+            <key>description</key>
+            <string>60M</string>
+            <key>value</key>
+            <string>60M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>67108864</integer>
+            <key>description</key>
+            <string>64M</string>
+            <key>value</key>
+            <string>64M</string>
             <key>default</key>
             <false/>
           </dict>

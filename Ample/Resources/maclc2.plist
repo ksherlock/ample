@@ -8,8 +8,6 @@
     <string>Macintosh LC II</string>
     <key>media</key>
     <dict>
-      <key>floppy_3_5</key>
-      <integer>2</integer>
       <key>hard</key>
       <integer>2</integer>
     </dict>
@@ -69,9 +67,143 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>smartport</string>
+        <key>description</key>
+        <string>Disk Drives</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string></string>
+            <key>devname</key>
+            <string>smartport</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>smartport</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35hd</string>
+                <key>description</key>
+                <string>3.5" HD</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35sd</string>
+                <key>description</key>
+                <string>3.5" SD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35hd</string>
+                <key>description</key>
+                <string>3.5" HD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35sd</string>
+                <key>description</key>
+                <string>3.5" SD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>software</key>
     <array>

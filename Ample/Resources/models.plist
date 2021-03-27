@@ -385,9 +385,9 @@
     </dict>
     <dict>
       <key>description</key>
-      <string>Macintosh (128K)</string>
+      <string>Macintosh (Compact)</string>
       <key>value</key>
-      <string>mac128k</string>
+      <string>macse30</string>
       <key>children</key>
       <array>
         <dict>
@@ -428,9 +428,21 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh SE/30</string>
+          <key>value</key>
+          <string>macse30</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh Classic</string>
           <key>value</key>
           <string>macclasc</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Classic II</string>
+          <key>value</key>
+          <string>macclas2</string>
         </dict>
       </array>
     </dict>
@@ -441,6 +453,48 @@
       <string>maclc</string>
       <key>children</key>
       <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh II</string>
+          <key>value</key>
+          <string>macii</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIx</string>
+          <key>value</key>
+          <string>maciix</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIcx</string>
+          <key>value</key>
+          <string>maciicx</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIci</string>
+          <key>value</key>
+          <string>maciici</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIsi</string>
+          <key>value</key>
+          <string>maciisi</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIvx</string>
+          <key>value</key>
+          <string>maciivx</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIvi</string>
+          <key>value</key>
+          <string>maciivi</string>
+        </dict>
         <dict>
           <key>description</key>
           <string>Macintosh LC</string>
@@ -458,12 +512,6 @@
           <string>Macintosh LC III</string>
           <key>value</key>
           <string>maclc3</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh IIci</string>
-          <key>value</key>
-          <string>maciici</string>
         </dict>
       </array>
     </dict>
