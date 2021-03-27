@@ -62,6 +62,8 @@
 		B6152B5725F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
 		B6152B5A25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
 		B6152B5B25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
+		B6374AC4260EBBCF0045CA16 /* pty_shell.c in Sources */ = {isa = PBXBuildFile; fileRef = B6374AB6260EBB970045CA16 /* pty_shell.c */; };
+		B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6374ABD260EBBC90045CA16 /* pty_shell */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
@@ -232,6 +234,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B6374ABB260EBBC90045CA16 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B66236B124FDA443006CABD7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +262,7 @@
 			files = (
 				B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */,
 				B6E08076252574690075F4E1 /* vmnet_helper in CopyFiles */,
+				B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +347,8 @@
 		B6152B5525F4549F00605E6E /* Slot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slot.m; sourceTree = "<group>"; };
 		B6152B5825F5B4F100605E6E /* Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
 		B6152B5925F5B57E00605E6E /* Media.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		B6374AB6260EBB970045CA16 /* pty_shell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pty_shell.c; sourceTree = "<group>"; };
+		B6374ABD260EBBC90045CA16 /* pty_shell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pty_shell; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63C1B8924FF4B7100511A71 /* Ample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ample.h; sourceTree = "<group>"; };
 		B63C1B8A24FF4BF700511A71 /* Ample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ample.m; sourceTree = "<group>"; };
 		B63C1B8D25004C6D00511A71 /* mame-data.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mame-data.tgz"; path = "embedded/mame-data.tgz"; sourceTree = "<group>"; };
@@ -423,6 +437,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6374ABA260EBBC90045CA16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6841BCD251EC913006A5C39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +471,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6374AB2260EBB970045CA16 /* pty_shell */ = {
+			isa = PBXGroup;
+			children = (
+				B6374AB6260EBB970045CA16 /* pty_shell.c */,
+			);
+			path = pty_shell;
+			sourceTree = "<group>";
+		};
 		B649798C24EEC165008ABD20 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +593,7 @@
 				B6BA257D24E99BE9005FB8FF /* Ample */,
 				B66236BD24FDA7EA006CABD7 /* Embedded Content */,
 				B6841BD1251EC913006A5C39 /* vmnet_helper */,
+				B6374AB2260EBB970045CA16 /* pty_shell */,
 				B6BA257C24E99BE9005FB8FF /* Products */,
 				B649798C24EEC165008ABD20 /* Recovered References */,
 				B66236B624FDA686006CABD7 /* Frameworks */,
@@ -576,6 +606,7 @@
 				B6BA257B24E99BE9005FB8FF /* Ample.app */,
 				B6E4B5FA24FDE2670094A35C /* Ample Lite.app */,
 				B6841BD0251EC913006A5C39 /* vmnet_helper */,
+				B6374ABD260EBBC90045CA16 /* pty_shell */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -683,6 +714,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6374ABC260EBBC90045CA16 /* pty_shell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6374AC1260EBBC90045CA16 /* Build configuration list for PBXNativeTarget "pty_shell" */;
+			buildPhases = (
+				B6374AB9260EBBC90045CA16 /* Sources */,
+				B6374ABA260EBBC90045CA16 /* Frameworks */,
+				B6374ABB260EBBC90045CA16 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pty_shell;
+			productName = pty_shell;
+			productReference = B6374ABD260EBBC90045CA16 /* pty_shell */;
+			productType = "com.apple.product-type.tool";
+		};
 		B6841BCF251EC913006A5C39 /* vmnet_helper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6841BD4251EC913006A5C39 /* Build configuration list for PBXNativeTarget "vmnet_helper" */;
@@ -747,6 +795,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Kelvin Sherlock";
 				TargetAttributes = {
+					B6374ABC260EBBC90045CA16 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					B6841BCF251EC913006A5C39 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -771,6 +822,7 @@
 				B6BA257A24E99BE9005FB8FF /* Ample */,
 				B6E4B5AE24FDE2670094A35C /* Ample Lite */,
 				B6841BCF251EC913006A5C39 /* vmnet_helper */,
+				B6374ABC260EBBC90045CA16 /* pty_shell */,
 			);
 		};
 /* End PBXProject section */
@@ -990,6 +1042,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6374AB9260EBBC90045CA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6374AC4260EBBCF0045CA16 /* pty_shell.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6841BCC251EC913006A5C39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1129,6 +1189,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6374AC2260EBBC90045CA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6374AC3260EBBC90045CA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B6841BD5251EC913006A5C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1335,6 +1413,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6374AC1260EBBC90045CA16 /* Build configuration list for PBXNativeTarget "pty_shell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6374AC2260EBBC90045CA16 /* Debug */,
+				B6374AC3260EBBC90045CA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6841BD4251EC913006A5C39 /* Build configuration list for PBXNativeTarget "vmnet_helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
