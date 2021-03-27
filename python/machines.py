@@ -23,7 +23,7 @@ MACHINES = (
 	"cec2000", "cece", "cecg", "ceci", "cecm",
 
 	# macintosh...
-	"macii", "maciix", "maciicx", "maciici", "maciisi",
+	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi",
 	"maciivx", "maciivi",
 	"maclc", "maclc2", "maclc3",
 

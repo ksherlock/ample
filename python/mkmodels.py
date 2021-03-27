@@ -25,7 +25,7 @@ cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
 mac_nubus_children = [
-	"macii", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
+	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
 	"maclc", "maclc2", "maclc3"]
 
 # se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.

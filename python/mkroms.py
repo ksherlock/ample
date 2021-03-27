@@ -26,6 +26,7 @@ EXTRA_MACHINES = [
 	'apple2c0',
 	'apple2c3',
 	'apple2c4',
+	'mac2fdhd',
 ]
 
 

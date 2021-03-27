@@ -461,6 +461,18 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh II (w/o 68851 MMU)</string>
+          <key>value</key>
+          <string>maciihmu</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh II (FDHD)</string>
+          <key>value</key>
+          <string>mac2fdhd</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh IIx</string>
           <key>value</key>
           <string>maciix</string>

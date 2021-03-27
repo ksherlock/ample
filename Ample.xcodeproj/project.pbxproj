@@ -80,6 +80,10 @@
 		B6374ADE260ECB400045CA16 /* maciivx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACF260ECB3F0045CA16 /* maciivx.plist */; };
 		B6374ADF260ECB400045CA16 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AD0260ECB400045CA16 /* macse30.plist */; };
 		B6374AE0260ECB400045CA16 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AD0260ECB400045CA16 /* macse30.plist */; };
+		B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE1260ECDDD0045CA16 /* maciihmu.plist */; };
+		B6374AE4260ECDDD0045CA16 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE1260ECDDD0045CA16 /* maciihmu.plist */; };
+		B6374AE5260ECDDD0045CA16 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */; };
+		B6374AE6260ECDDD0045CA16 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */; };
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
@@ -373,6 +377,8 @@
 		B6374ACE260ECB3F0045CA16 /* maciix.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciix.plist; sourceTree = "<group>"; };
 		B6374ACF260ECB3F0045CA16 /* maciivx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciivx.plist; sourceTree = "<group>"; };
 		B6374AD0260ECB400045CA16 /* macse30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macse30.plist; sourceTree = "<group>"; };
+		B6374AE1260ECDDD0045CA16 /* maciihmu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciihmu.plist; sourceTree = "<group>"; };
+		B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mac2fdhd.plist; sourceTree = "<group>"; };
 		B63C1B8924FF4B7100511A71 /* Ample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ample.h; sourceTree = "<group>"; };
 		B63C1B8A24FF4BF700511A71 /* Ample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ample.m; sourceTree = "<group>"; };
 		B63C1B8D25004C6D00511A71 /* mame-data.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mame-data.tgz"; path = "embedded/mame-data.tgz"; sourceTree = "<group>"; };
@@ -570,6 +576,7 @@
 				B6109A0224F5F371005CB652 /* uniap2ti.plist */,
 				B63C1BA7250192E600511A71 /* zijini.plist */,
 				B6DE323D2605482400418375 /* mac128k.plist */,
+				B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */,
 				B6DE32422605482500418375 /* mac512k.plist */,
 				B6DE323F2605482400418375 /* mac512ke.plist */,
 				B6374AC9260ECB3F0045CA16 /* macclas2.plist */,
@@ -581,6 +588,7 @@
 				B6374ACC260ECB3F0045CA16 /* maciivi.plist */,
 				B6374ACF260ECB3F0045CA16 /* maciivx.plist */,
 				B6374ACE260ECB3F0045CA16 /* maciix.plist */,
+				B6374AE1260ECDDD0045CA16 /* maciihmu.plist */,
 				B6DD1FE725B407E6004A3242 /* maclc.plist */,
 				B65085B625B616AC00354EC9 /* maclc2.plist */,
 				B65085B725B616AC00354EC9 /* maclc3.plist */,
@@ -935,6 +943,7 @@
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
+				B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */,
 				B6374ADF260ECB400045CA16 /* macse30.plist in Resources */,
 				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
@@ -944,6 +953,7 @@
 				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
 				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
 				B61099E824F5F231005CB652 /* MediaView.xib in Resources */,
+				B6374AE5260ECDDD0045CA16 /* mac2fdhd.plist in Resources */,
 				B63C1B90250088DD00511A71 /* roms.plist in Resources */,
 				B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */,
 				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
@@ -970,6 +980,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6DDECCF2505A86E0093587A /* eject-16x16@3x.png in Resources */,
+				B6374AE6260ECDDD0045CA16 /* mac2fdhd.plist in Resources */,
 				B6374ADC260ECB400045CA16 /* maciix.plist in Resources */,
 				B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */,
 				B63C1BA0250192D800511A71 /* ceci.plist in Resources */,
@@ -1030,6 +1041,7 @@
 				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
 				B6DDECD32505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
+				B6374AE4260ECDDD0045CA16 /* maciihmu.plist in Resources */,
 				B6DDECC525057A550093587A /* drag-handle-4x10@3x.png in Resources */,
 				B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */,
 				B6DE323C26044DB800418375 /* caution@3x.png in Resources */,
