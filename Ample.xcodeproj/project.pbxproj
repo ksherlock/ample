@@ -131,6 +131,8 @@
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
+		B66D0FE72611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
+		B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
@@ -418,6 +420,8 @@
 		B66236B224FDA522006CABD7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = embedded/SDL2.framework; sourceTree = "<group>"; };
 		B66236B824FDA698006CABD7 /* mame64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mame64; path = embedded/mame64; sourceTree = "<group>"; };
 		B66236C024FDB7A6006CABD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B66D0FE62611386B000902F1 /* SoftwareList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareList.m; sourceTree = "<group>"; };
+		B66D0FE926113AA8000902F1 /* SoftwareList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftwareList.h; sourceTree = "<group>"; };
 		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -657,12 +661,12 @@
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
-				B6152B5825F5B4F100605E6E /* Media.h */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
 				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
 				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
 				B6152B5425F4549F00605E6E /* Slot.h */,
 				B6152B5525F4549F00605E6E /* Slot.m */,
+				B6152B5825F5B4F100605E6E /* Media.h */,
 				B6152B5925F5B57E00605E6E /* Media.m */,
 				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
 				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
@@ -678,6 +682,8 @@
 				B60A6E1224EE0AE2004B7EEF /* FlippedView.h */,
 				B608E17D2502FE0C00D53465 /* TransparentScroller.h */,
 				B608E17E2502FE0C00D53465 /* TransparentScroller.m */,
+				B66D0FE62611386B000902F1 /* SoftwareList.m */,
+				B66D0FE926113AA8000902F1 /* SoftwareList.h */,
 				B6BA563A251685DA00B0C47D /* Window Controllers */,
 				B6B9EA652506A5550080E70D /* EjectButton.h */,
 				B6B9EA642506A5550080E70D /* EjectButton.m */,
@@ -1140,6 +1146,7 @@
 				B63C1F0F25B1447C0016A611 /* CheatSheetWindowController.m in Sources */,
 				B64AF1F2250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
 				B64AF1F6250ED5E400A09B9B /* TableCellView.m in Sources */,
+				B66D0FE72611386C000902F1 /* SoftwareList.m in Sources */,
 				B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */,
 				B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */,
 			);
@@ -1165,6 +1172,7 @@
 				B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */,
 				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
+				B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */,
 				B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */,
 				B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */,
 				B63C1B9525008A2700511A71 /* DownloadWindowController.m in Sources */,

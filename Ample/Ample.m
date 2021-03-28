@@ -111,15 +111,15 @@ NSDictionary *MameMachine(NSString *machine) {
 /* NSCache doesn't retain it's key. This essentially interns it. */
 /* could just abuse NSSelectorFromString() */
 NSString *InternString(NSString *key) {
-    static NSMutableDictionary *storage = nil;
+    static NSMutableSet *storage = nil;
     
     if (!storage) {
-        storage = [NSMutableDictionary new];
+        storage = [NSMutableSet new];
     }
-    NSString *copy = [storage objectForKey: key];
+    NSString *copy = [storage member: key];
     if (!copy) {
         copy = [key copy];
-        [storage setObject: copy forKey: copy];
+        [storage addObject: copy];
     }
     return copy;
 }
