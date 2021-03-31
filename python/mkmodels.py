@@ -45,7 +45,7 @@ tree = [
 	("Agat", "agat7", agat_children),
 	("China Education Computer", None, cec_children),
 	("Macintosh (Compact)", "macse30", mac_128k_children),
-	("Macintosh (NuBus)", "maclc", mac_nubus_children),
+	("Macintosh (NuBus)", "maciix", mac_nubus_children),
 ]
 
 env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}

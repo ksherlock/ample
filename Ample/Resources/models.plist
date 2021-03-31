@@ -450,7 +450,7 @@
       <key>description</key>
       <string>Macintosh (NuBus)</string>
       <key>value</key>
-      <string>maclc</string>
+      <string>maciix</string>
       <key>children</key>
       <array>
         <dict>
