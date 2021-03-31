@@ -176,13 +176,15 @@
         const char* args_chmod[] = {"+s", cp, NULL};
         
         // well ... the second command executes a lot more consistently when the (optional) fp is provided and the we fgets the buffer.
+        // textmate does a wait() to wait for a child to exit. Using the fp (which is popened()?) and reading until EOF
+        // accomplishes the same thing.
         myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/sbin/chown", kAuthorizationFlagDefaults, (char**)args_chown, &fp);
-        fgets(buffer, sizeof(buffer), fp);
+        while (fgets(buffer, sizeof(buffer), fp));
         fclose(fp);
 //        fprintf(stderr, "myStatus = %d\ndata: %s\n", myStatus, buffer);
 
         myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/bin/chmod", kAuthorizationFlagDefaults, (char**)args_chmod, &fp);
-        fgets(buffer, sizeof(buffer), fp);
+        while (fgets(buffer, sizeof(buffer), fp));
         fclose(fp);
 //        fprintf(stderr, "myStatus = %d\ndata: %s\n", myStatus, buffer);
 
