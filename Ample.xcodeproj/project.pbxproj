@@ -1262,6 +1262,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1271,6 +1272,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
