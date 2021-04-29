@@ -110,6 +110,8 @@
 		B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
 		B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
 		B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
+		B646D10B263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
+		B646D10C263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
 		B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
@@ -398,6 +400,7 @@
 		B63C1F0D25B1447C0016A611 /* CheatSheetWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatSheetWindowController.h; sourceTree = "<group>"; };
 		B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheatSheetWindowController.m; sourceTree = "<group>"; };
 		B63C1F1125B147E10016A611 /* CheatSheet.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CheatSheet.html; sourceTree = "<group>"; };
+		B646D10A263A5DF20014C586 /* ace1000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace1000.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		B64AF1ED250EC35B00A09B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiskImages.xib; sourceTree = "<group>"; };
@@ -526,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				B6109A0824F5F373005CB652 /* ace100.plist */,
+				B646D10A263A5DF20014C586 /* ace1000.plist */,
 				B6109A1624F5F376005CB652 /* agat7.plist */,
 				B6109A1224F5F375005CB652 /* agat9.plist */,
 				B6109A1124F5F375005CB652 /* albert.plist */,
@@ -881,6 +885,7 @@
 				B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */,
 				B6374ADB260ECB400045CA16 /* maciix.plist in Resources */,
 				B6109A2424F5F377005CB652 /* las128ex.plist in Resources */,
+				B646D10B263A5DF30014C586 /* ace1000.plist in Resources */,
 				B63C1BA8250192E600511A71 /* zijini.plist in Resources */,
 				B6109A1D24F5F377005CB652 /* space84.plist in Resources */,
 				B6374AD9260ECB400045CA16 /* maciicx.plist in Resources */,
@@ -1015,6 +1020,7 @@
 				B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6374AE0260ECB400045CA16 /* macse30.plist in Resources */,
 				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
+				B646D10C263A5DF30014C586 /* ace1000.plist in Resources */,
 				B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */,
 				B6DDECCD2505A86E0093587A /* eject-16x16@2x.png in Resources */,
 				B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */,
@@ -1411,14 +1417,14 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "release 12";
+				MARKETING_VERSION = 0.231;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1431,14 +1437,14 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "release 12";
+				MARKETING_VERSION = 0.231;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
