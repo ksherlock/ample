@@ -13,7 +13,7 @@ MACHINES = (
 	# IIe clones
 	"mprof3", "prav8c", "spectred", "tk3000",
 	# II clones
-	"ace100", "agat7", "agat9", "albert",
+	"ace100", "ace1000", "agat7", "agat9", "albert",
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",

@@ -494,7 +494,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -956,7 +980,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -1418,7 +1466,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -1880,7 +1952,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -2344,7 +2440,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -2808,7 +2928,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -3270,7 +3414,31 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>grapplerplus</string>
+            <string>bufgrapplusa</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplusa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>bufgrapplus</string>
+            <key>description</key>
+            <string>Orange Micro Buffered Grappler+ Printer Interface</string>
+            <key>devname</key>
+            <string>a2bufgrapplerplus</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grappler</string>
+            <key>description</key>
+            <string>Orange Micro Grappler Printer Interface</string>
+            <key>devname</key>
+            <string>a2grappler</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grapplus</string>
             <key>description</key>
             <string>Orange Micro Grappler+ Printer Interface</string>
             <key>devname</key>
@@ -3450,6 +3618,242 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>a2bufgrapplerplus</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:prn</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2bufgrapplerplusa</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:prn</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>a2bus_byte8251</string>
@@ -3811,6 +4215,124 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2grappler</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:prn</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Espon LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2grapplerplus</string>
         <key>slots</key>
         <array>
@@ -3911,7 +4433,15 @@
                 <key>value</key>
                 <string>chessmec</string>
                 <key>description</key>
-                <string>The ChessMachine EC</string>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4137,7 +4667,15 @@
                 <key>value</key>
                 <string>chessmec</string>
                 <key>description</key>
-                <string>The ChessMachine EC</string>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4247,7 +4785,15 @@
                 <key>value</key>
                 <string>chessmec</string>
                 <key>description</key>
-                <string>The ChessMachine EC</string>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4299,6 +4845,30 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4339,6 +4909,30 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -4381,6 +4975,30 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4421,6 +5039,30 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -4463,6 +5105,30 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4504,6 +5170,30 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4544,6 +5234,30 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu415</string>
+                <key>description</key>
+                <string>Sony CDU415 CD-R</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu561_25</string>
+                <key>description</key>
+                <string>Sony CDU561-25</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdu75s</string>
+                <key>description</key>
+                <string>Sony/Apple CDU75S CD-R</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -4832,7 +5546,15 @@
                 <key>value</key>
                 <string>chessmec</string>
                 <key>description</key>
-                <string>The ChessMachine EC</string>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -596,7 +596,15 @@
                 <key>value</key>
                 <string>chessmec</string>
                 <key>description</key>
-                <string>The ChessMachine EC</string>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
               </dict>

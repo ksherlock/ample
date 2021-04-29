@@ -15,12 +15,15 @@
       <string>a2ap16</string>
       <string>a2ap16a</string>
       <string>a2aplcrd</string>
+      <string>a2bufgrapplerplus</string>
+      <string>a2bufgrapplerplusa</string>
       <string>a2cffa02</string>
       <string>a2cffa2</string>
       <string>a2corvus</string>
       <string>a2diskii</string>
       <string>a2diskiing</string>
       <string>a2focdrv</string>
+      <string>a2grappler</string>
       <string>a2grapplerplus</string>
       <string>a2hsscsi</string>
       <string>a2iwm</string>
@@ -50,6 +53,7 @@
       <string>a2zipdrv</string>
       <string>a3fdc</string>
       <string>ace100</string>
+      <string>ace1000</string>
       <string>agat7</string>
       <string>agat7_flop</string>
       <string>agat840k_hle</string>
@@ -187,6 +191,7 @@
       <string>uniap2pt</string>
       <string>uniap2ti</string>
       <string>votrax</string>
+      <string>ym2413</string>
       <string>ym2608</string>
       <string>zijini</string>
     </array>

@@ -153,6 +153,12 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Franklin ACE 1000</string>
+          <key>value</key>
+          <string>ace1000</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Albert</string>
           <key>value</key>
           <string>albert</string>
