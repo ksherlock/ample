@@ -259,6 +259,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>byte8251</string>
             <key>description</key>
             <string>BYTE Serial Interface (8251 based)</string>
@@ -798,6 +806,14 @@
             <string>Apricorn Super Serial Imager</string>
             <key>devname</key>
             <string>aprissi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1343,6 +1359,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>byte8251</string>
             <key>description</key>
             <string>BYTE Serial Interface (8251 based)</string>
@@ -1882,6 +1906,14 @@
             <string>Apricorn Super Serial Imager</string>
             <key>devname</key>
             <string>aprissi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2429,6 +2461,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>byte8251</string>
             <key>description</key>
             <string>BYTE Serial Interface (8251 based)</string>
@@ -2973,6 +3013,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>byte8251</string>
             <key>description</key>
             <string>BYTE Serial Interface (8251 based)</string>
@@ -3512,6 +3560,14 @@
             <string>Apricorn Super Serial Imager</string>
             <key>devname</key>
             <string>aprissi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>booti</string>
+            <key>description</key>
+            <string>Booti Card</string>
+            <key>devname</key>
+            <string>a2booti</string>
           </dict>
           <dict>
             <key>value</key>
@@ -4274,6 +4330,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
@@ -4894,30 +4958,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -4958,30 +4998,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -5024,30 +5040,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -5088,30 +5080,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -5154,30 +5122,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -5219,30 +5163,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -5283,30 +5203,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -5770,30 +5666,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -5834,30 +5706,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -5900,30 +5748,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -5964,30 +5788,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6030,30 +5830,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6095,30 +5871,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6159,30 +5911,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6232,30 +5960,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6296,30 +6000,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6362,30 +6042,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6426,30 +6082,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6492,30 +6124,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6557,30 +6165,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6621,30 +6205,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6694,30 +6254,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6758,30 +6294,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6824,30 +6336,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -6888,30 +6376,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -6954,30 +6418,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -7019,30 +6459,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -7083,30 +6499,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -7215,6 +6607,14 @@
                 <string>sunkbd</string>
                 <key>description</key>
                 <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7697,6 +7097,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
@@ -7815,6 +7223,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
@@ -7869,30 +7285,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -7933,30 +7325,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -7999,30 +7367,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -8063,30 +7407,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>
@@ -8129,30 +7449,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -8194,30 +7490,6 @@
                   <integer>1</integer>
                 </dict>
               </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
             </array>
           </dict>
           <dict>
@@ -8258,30 +7530,6 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu415</string>
-                <key>description</key>
-                <string>Sony CDU415 CD-R</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu561_25</string>
-                <key>description</key>
-                <string>Sony CDU561-25</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdu75s</string>
-                <key>description</key>
-                <string>Sony/Apple CDU75S CD-R</string>
-                <key>default</key>
-                <false/>
               </dict>
             </array>
           </dict>

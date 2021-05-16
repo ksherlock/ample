@@ -208,6 +208,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard D</string>
+            <key>devname</key>
+            <string>mockingboardd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swtpc8212</string>
             <key>description</key>
             <string>SWTPC8212 Terminal</string>
@@ -318,6 +326,14 @@
             <string>Sun Keyboard Adaptor</string>
             <key>devname</key>
             <string>sunkbd_adaptor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard D</string>
+            <key>devname</key>
+            <string>mockingboardd</string>
           </dict>
           <dict>
             <key>value</key>

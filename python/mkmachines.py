@@ -110,11 +110,16 @@ def find_machine_media(parent):
 	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
 	#
 	# apple1 has a "snapshot" device.  not currently supported.
-	#
+	# mac fpds slot - not supported
+	# mac128 kbd slot - not supported
 	# in the //c (but not //c+) the floppy drives are in slot 6 which doesn't otherwise exist.
 	#
+	# not supported:
+	# apple1 - snapshot device
+	# mac [various] - pds/lcpds slot
+	# mac128k - kbd slot
+	#
 
-	# no machines have built-in hard drives.
 
 	mname = parent.get("name")
 	remap = {
@@ -125,7 +130,7 @@ def find_machine_media(parent):
 		"floppy_3_5": "floppy_3_5",
 		# mac
 		"scsi_hdd": "hard",
-		#"cdrom": "cdrom", -- 2021-01-18 - CD rom is more or less broken so exclude it.
+		"cdrom": "cdrom",
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -142,7 +147,8 @@ def find_machine_media(parent):
 			slot = tt[0]
 
 		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
-		if mname[0:3] == "mac" and slot == "scsi": slot = None
+		# as of 232 (231?), these are configurable as :scsi:0, etc or :scsibus:0, etc.
+		# if mname[0:3] == "mac" and slot in ("scsi", "scsibus"): slot = None
 
 		if slot: continue
 		# skip slot devices -- they'll be handled as part of the device.
@@ -257,10 +263,14 @@ DEVICE_EXCLUDE = set([
 	'cdd2000',
 	'cdr4210',
 	'cdrn820s',
+	'cdu415',
+	'cdu561_25',
+	'cdu75s',
+	'crd254sh',
 	'cw7501',
+	'px320a',
 	's1410',
 	'smoc501',
-	'px320a',
 ])
 
 def make_device_options(slot):
@@ -363,14 +373,23 @@ def make_ram(machine):
 def make_smartport(machine):
 
 
-# iigs: <slot name="fdc:0" .. "fdc:3">
-# iic: <slot name="sl6:0" .. "sl6:1">
-# apple 3: <slot name="0" .. "3">
-# apple 2: diskiing card
-# maclc <slot name="scsi:1" .. "scsi:7" (but not 4-7 not configurable)
+	# iigs: <slot name="fdc:0" .. "fdc:3">
+	# iic: <slot name="sl6:0" .. "sl6:1">
+	# apple 3: <slot name="0" .. "3">
+	# apple 2: diskiing card
+	# maclc <slot name="scsi:1" .. "scsi:7" (but not 4-7 not configurable)
+	# maciix <slot name="scsi:6">
+	# macse <slot name="scsibus:6">
 
 	slots = []
-	for s in ("fdc:0", "fdc:1", "fdc:2", "fdc:3", "sl6:0", "sl6:1", "0", "1", "2", "3"):
+	SLOTS = [
+		*['fdc:' + str(x) for x in range(0,4)],
+		*['scsi:' + str(x) for x in range(0,7)],
+		*['scsibus:' + str(x) for x in range(0,7)],
+
+		"sl6:0", "sl6:1", "0", "1", "2", "3"
+	]
+	for s in SLOTS:
 		path = 'slot[@name="{}"]'.format(s)
 		slot = machine.find(path)
 		if not slot: continue
@@ -388,6 +407,7 @@ def make_smartport(machine):
 		"name": "smartport",
 		"slots": slots
 	}
+
 
 def make_slot(m, slotname, nodes):
 
