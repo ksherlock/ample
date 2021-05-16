@@ -197,4 +197,12 @@ static NSMutableSet *LogWindows;
     [LogWindows removeObject: self];
 }
 
+#pragma mark - IBActions
+
+- (IBAction)clearLog:(id)sender {
+    NSAttributedString *empty = [NSAttributedString new];
+    [[_textView textStorage] setAttributedString: empty];
+}
+
+
 @end

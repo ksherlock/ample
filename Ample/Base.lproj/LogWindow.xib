@@ -21,7 +21,7 @@
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="270"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj3-ou-djb">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="270"/>
@@ -52,10 +52,31 @@
                     </scrollView>
                 </subviews>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="54C242E0-0A7F-491A-9B83-7279A9663A36" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="small" id="Cik-bA-ZYu">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="zxC-EA-a7F"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="xZv-cQ-rPS"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="2BZ-oP-sMg"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="j5G-hW-61a"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="a72-iv-2QT"/>
+                    <toolbarItem implicitItemIdentifier="21A9965C-D1B3-4E82-A344-1688A467E870" label="Clear Log" paletteLabel="Clear Log" tag="-1" image="NSTrashEmpty" id="pn5-MM-9p1">
+                        <connections>
+                            <action selector="clearLog:" target="-2" id="VU3-mv-6WR"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="a72-iv-2QT"/>
+                    <toolbarItem reference="pn5-MM-9p1"/>
+                </defaultToolbarItems>
+            </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
             <point key="canvasLocation" x="-285" y="-234"/>
         </window>
     </objects>
+    <resources>
+        <image name="NSTrashEmpty" width="32" height="32"/>
+    </resources>
 </document>
