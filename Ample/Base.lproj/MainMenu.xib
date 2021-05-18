@@ -451,7 +451,13 @@
                             <menuItem title="MAME Apple II Wiki" id="GLh-Cc-5uU">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="mameAppleWiki:" target="Voe-Tx-rLC" id="KEg-0U-KdU"/>
+                                    <action selector="mameAppleWiki:" target="Voe-Tx-rLC" id="jRe-m6-mP0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="MAME Mac 68K Wiki" id="hDL-K6-iVF">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="mameMac68kWiki:" target="Voe-Tx-rLC" id="ZzB-54-vXN"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="MAME Documentation" id="1IW-V0-UWA">

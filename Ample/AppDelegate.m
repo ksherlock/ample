@@ -208,5 +208,14 @@
     [ws openURL: url];
 }
 
+- (IBAction)mameMac68kWiki:(id)sender {
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+    
+    NSURL *url = [NSURL URLWithString: @"https://wiki.mamedev.org/index.php/Driver:Mac_68K"];
+    [ws openURL: url];
+}
+
+
+
 
 @end
