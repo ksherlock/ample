@@ -13,8 +13,11 @@
 #import "MachineViewController.h"
 #import "LogWindowController.h"
 
+#import "AutocompleteControl.h"
+#import "SoftwareList.h"
 
 #include <sys/stat.h>
+#include <wctype.h>
 
 static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
@@ -57,8 +60,16 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @property NSInteger mameWindowMode;
 
+@property (weak) IBOutlet AutocompleteControl *softwareListControl;
+@property SoftwareSet *softwareSet;
+@property Software *software;
 @end
 
+@interface LaunchWindowController (SoftwareList)
+
+-(void)updateSoftwareList;
+
+@end
 
 @implementation LaunchWindowController
 
@@ -94,6 +105,7 @@ static NSString *kContextMachine = @"kContextMachine";
         @"mameVGM", @"mameVGMPath",
         @"mameShareDirectory",
         @"mameBGFX", @"mameBackend", @"mameEffects",
+        @"software",
     ];
     
     for (NSString *key in keys) {
@@ -108,6 +120,10 @@ static NSString *kContextMachine = @"kContextMachine";
     
     [_machineViewController addObserver: self forKeyPath: @"machine" options: 0 context: (__bridge void * _Nullable)kContextMachine];
 
+    
+    [_softwareListControl setMinWidth: 250];
+    [_softwareListControl setHidden: YES];
+    
     [self buildCommandLine];
 }
 
@@ -120,6 +136,7 @@ static NSString *kContextMachine = @"kContextMachine";
         NSString *machine = [_machineViewController machine];
         [self setMameMachine: machine];
         [_slotController setMachine: machine];
+        [self updateSoftwareList];
         [self buildCommandLine];
     } else {
         [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
@@ -278,6 +295,14 @@ static NSString *ShellQuote(NSString *s) {
 
     //[argv addObject: @"mame"];
     [argv addObject: _mameMachine];
+    
+    if (_software) {
+        // todo -- need to include source as well.
+        NSString *name = [_software name];
+        if (![_softwareSet nameIsUnique: name])
+            name = [_software fullName];
+        [argv addObject: name];
+    }
 
     // -confirm_quit?
     [argv addObject: @"-skip_gameinfo"];
@@ -483,3 +508,30 @@ static NSString *ShellQuote(NSString *s) {
 
 @end
 
+
+@implementation LaunchWindowController (SoftwareList)
+
+-(void)updateSoftwareList {
+    
+    _softwareSet = [SoftwareSet softwareSetForMachine: _mameMachine];
+    
+    [_softwareListControl setAutocompleteDelegate: _softwareSet];
+    
+    if (_softwareSet) {
+        [_softwareListControl invalidate];
+        [_softwareListControl setHidden: NO];
+    } else {
+        _software = nil;
+        [_softwareListControl setHidden: YES];
+    }
+}
+
+
+- (IBAction)softwareChanged:(id)sender {
+
+    id o = [(NSControl *)sender objectValue];
+    NSLog(@"%@", o);
+    [self setSoftware: o];
+}
+
+@end

@@ -5944,7 +5944,12 @@
     <key>software</key>
     <array>
       <string>apple2_flop_clcracked.xml</string>
-      <string>apple2_flop_orig.xml</string>
+      <dict>
+        <key>name</key>
+        <string>apple2_flop_orig.xml</string>
+        <key>filter</key>
+        <string>A2</string>
+      </dict>
       <string>apple2_flop_misc.xml</string>
       <string>apple2_cass.xml</string>
     </array>

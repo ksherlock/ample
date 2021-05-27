@@ -14,6 +14,7 @@
                 <outlet property="mediaView" destination="J9O-xI-P5J" id="PmZ-VC-4SN"/>
                 <outlet property="slotController" destination="lyS-mc-3Tf" id="LXo-Ii-fDX"/>
                 <outlet property="slotView" destination="P9d-sS-qEb" id="qlH-u0-hzq"/>
+                <outlet property="softwareListControl" destination="pNl-g4-ZLh" id="U0i-R9-GLE"/>
                 <outlet property="window" destination="Vze-YF-m6e" id="JUs-Eb-MW8"/>
             </connections>
         </customObject>
@@ -372,7 +373,7 @@ DQ
                         </tabViewItems>
                     </tabView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
-                        <rect key="frame" x="382" y="92" width="316" height="363"/>
+                        <rect key="frame" x="382" y="92" width="316" height="331"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
                     <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" horizontalScrollElasticity="none" id="2ue-XT-byh">
@@ -409,6 +410,18 @@ DQ
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
+                    <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" id="pNl-g4-ZLh" customClass="AutocompleteControl">
+                        <rect key="frame" x="382" y="431" width="316" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Software List" usesSingleLineMode="YES" bezelStyle="round" id="sMi-a3-XEn">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                        </searchFieldCell>
+                        <connections>
+                            <action selector="softwareChanged:" target="-2" id="879-da-UEc"/>
+                        </connections>
+                    </searchField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="769" y="120.5"/>

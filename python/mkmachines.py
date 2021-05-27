@@ -232,9 +232,15 @@ def find_media(parent, include_slots=False):
 	return media
 
 
+def one_software(x):
+	xml = x.get("name") + ".xml"
+	filter = x.get("filter")
+	if filter: return { "name": xml, "filter": filter }
+	return xml
+
 def find_software(parent):
 	swl = parent.findall("./softwarelist")
-	return [x.get("name") + ".xml" for x in swl]
+	return [one_software(x) for x in swl]
 
 
 

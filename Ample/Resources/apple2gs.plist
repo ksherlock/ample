@@ -7481,7 +7481,12 @@
     <array>
       <string>apple2gs.xml</string>
       <string>apple2_flop_clcracked.xml</string>
-      <string>apple2_flop_orig.xml</string>
+      <dict>
+        <key>name</key>
+        <string>apple2_flop_orig.xml</string>
+        <key>filter</key>
+        <string>A2GS</string>
+      </dict>
       <string>apple2_flop_misc.xml</string>
     </array>
   </dict>
