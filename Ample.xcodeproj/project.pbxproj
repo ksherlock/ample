@@ -1439,14 +1439,14 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.231;
+				MARKETING_VERSION = 0.232;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1459,14 +1459,14 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.231;
+				MARKETING_VERSION = 0.232;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
