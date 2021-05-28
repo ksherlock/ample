@@ -223,7 +223,7 @@ Todo --
 }
 
 - (void)controlTextDidChange:(NSNotification *)notification {
-    NSLog(@"controlTextDidChange");
+    //NSLog(@"controlTextDidChange");
 
     if (_value) {
         _dirty = YES;
@@ -243,7 +243,7 @@ Todo --
     }
 }
 - (void)controlTextDidBeginEditing:(NSNotification *)obj {
-    NSLog(@"controlTextDidBeginEditing");
+    //NSLog(@"controlTextDidBeginEditing");
 
     _editing = YES;
     _dirty = NO;
@@ -253,7 +253,7 @@ Todo --
 
 
 - (void)controlTextDidEndEditing:(NSNotification *)obj {
-    NSLog(@"controlTextDidEndEditing");
+    //NSLog(@"controlTextDidEndEditing");
 
     _editing = NO;
 
@@ -304,7 +304,7 @@ Todo --
         [_menuView setItems: nil];
 #endif
         
-        NSLog(@"selectItem:withSelector:");
+        //NSLog(@"selectItem:withSelector:");
     }
 }
 

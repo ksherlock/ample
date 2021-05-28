@@ -530,7 +530,7 @@ static NSString *ShellQuote(NSString *s) {
 - (IBAction)softwareChanged:(id)sender {
 
     id o = [(NSControl *)sender objectValue];
-    NSLog(@"%@", o);
+    //NSLog(@"%@", o);
     [self setSoftware: o];
 }
 
