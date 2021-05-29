@@ -1446,6 +1446,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 0.232;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1466,6 +1467,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 0.232;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
