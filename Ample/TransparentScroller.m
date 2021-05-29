@@ -12,11 +12,16 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     //[super drawRect:dirtyRect];
+    [[NSColor clearColor] set];
+    NSRectFill(dirtyRect);
+
+#if 0
     NSColor *color = _backgroundColor;
     if (color) {
         [color setFill];
         NSRectFill(dirtyRect);
     }
+#endif
     [self drawKnob];
 }
 

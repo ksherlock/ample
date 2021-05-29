@@ -800,7 +800,8 @@ static void DrawString(NSString *str, NSDictionary *attr, CGRect rect) {
 
 
 -(void)drawRect:(NSRect)dirtyRect {
-    [[NSColor windowBackgroundColor] set];
+    //[[NSColor windowBackgroundColor] set];
+    [[NSColor clearColor] set];
     NSRectFill(dirtyRect);
     [self drawKnob];
 }

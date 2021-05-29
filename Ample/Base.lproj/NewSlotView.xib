@@ -19,7 +19,7 @@
         <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="27" horizontalPageScroll="10" verticalLineScroll="27" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" id="D45-lv-6Fv">
             <rect key="frame" x="0.0" y="0.0" width="316" height="386"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <clipView key="contentView" autoresizesSubviews="NO" focusRingType="none" copiesOnScroll="NO" id="8x1-xN-a7c">
+            <clipView key="contentView" autoresizesSubviews="NO" focusRingType="none" drawsBackground="NO" copiesOnScroll="NO" id="8x1-xN-a7c">
                 <rect key="frame" x="0.0" y="0.0" width="316" height="386"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
