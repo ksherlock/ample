@@ -50,6 +50,7 @@ static NSString *kContextMachine = @"kContextMachine";
 @property NSString *mameWAVPath;
 @property NSString *mameVGMPath;
 @property NSString *mameShareDirectory;
+@property NSString *mameBitBanger;
 
 @property NSInteger mameSpeed;
 
@@ -103,7 +104,7 @@ static NSString *kContextMachine = @"kContextMachine";
         @"mameAVI", @"mameAVIPath",
         @"mameWAV", @"mameWAVPath",
         @"mameVGM", @"mameVGMPath",
-        @"mameShareDirectory",
+        @"mameShareDirectory", @"mameBitBanger",
         @"mameBGFX", @"mameBackend", @"mameEffects",
         @"software",
     ];
@@ -437,6 +438,10 @@ static NSString *ShellQuote(NSString *s) {
         [argv addObject: _mameShareDirectory];
     }
     
+    if (_mameBitBanger && [_mameBitBanger length]) {
+        [argv addObject: @"-bitbanger"];
+        [argv addObject: _mameBitBanger];
+    }
     
     [self setCommandLine: JoinArguments(argv, nil)];
     [self setArgs: argv];
