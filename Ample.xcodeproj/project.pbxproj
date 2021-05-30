@@ -323,10 +323,8 @@
 		B6004DEF24FB05D600D38596 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LogWindow.xib; path = Base.lproj/LogWindow.xib; sourceTree = "<group>"; };
 		B608E17D2502FE0C00D53465 /* TransparentScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransparentScroller.h; sourceTree = "<group>"; };
 		B608E17E2502FE0C00D53465 /* TransparentScroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentScroller.m; sourceTree = "<group>"; };
-		B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
 		B60A6E1224EE0AE2004B7EEF /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
 		B60A6E1324EE0AE2004B7EEF /* FlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
-		B61099E424F5F230005CB652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SlotView.xib; sourceTree = "<group>"; };
 		B61099E624F5F230005CB652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MediaView.xib; sourceTree = "<group>"; };
 		B61099EA24F5F36E005CB652 /* apple2e.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2e.plist; sourceTree = "<group>"; };
 		B61099EB24F5F36E005CB652 /* hkc8800a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hkc8800a.plist; sourceTree = "<group>"; };
@@ -421,8 +419,6 @@
 		B65085B625B616AC00354EC9 /* maclc2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc2.plist; sourceTree = "<group>"; };
 		B65085B725B616AC00354EC9 /* maclc3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3.plist; sourceTree = "<group>"; };
 		B65085B825B616AC00354EC9 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
-		B65593AF24ECB61800722E0C /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
-		B65593B024ECB61800722E0C /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B65D718525E70BD5008C5F87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
@@ -434,7 +430,6 @@
 		B6665C1B265C639900254939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Autocomplete.xib; sourceTree = "<group>"; };
 		B66D0FE62611386B000902F1 /* SoftwareList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareList.m; sourceTree = "<group>"; };
 		B66D0FE926113AA8000902F1 /* SoftwareList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftwareList.h; sourceTree = "<group>"; };
-		B67BD48424EE249D0073E334 /* apple1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple1.plist; sourceTree = "<group>"; };
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
@@ -528,8 +523,6 @@
 		B649798C24EEC165008ABD20 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				B67BD48424EE249D0073E334 /* apple1.plist */,
-				B60A6E0B24ECE23F004B7EEF /* apple2gs.plist */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -687,8 +680,6 @@
 				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
 				B6A1A1932528EB1700DB0FD7 /* Menu.m */,
 				B6A1A1962528EB4600DB0FD7 /* Menu.h */,
-				B65593B024ECB61800722E0C /* SlotViewController.m */,
-				B65593AF24ECB61800722E0C /* SlotViewController.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
 				B64979C124EF6703008ABD20 /* MediaViewController.m */,
 				B64E15A724EA1D5300E8AD3D /* MachineViewController.h */,
@@ -747,7 +738,6 @@
 				B6BA258324E99BEB005FB8FF /* MainMenu.xib */,
 				B61099E524F5F230005CB652 /* MediaView.xib */,
 				B6D6DE3724FAC8B500661A5F /* Preferences.xib */,
-				B61099E324F5F230005CB652 /* SlotView.xib */,
 				B64AF1EC250EC35B00A09B9B /* DiskImages.xib */,
 				B63C1F0925B143C50016A611 /* CheatSheet.xib */,
 			);
@@ -1206,14 +1196,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B61099E324F5F230005CB652 /* SlotView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B61099E424F5F230005CB652 /* Base */,
-			);
-			name = SlotView.xib;
-			sourceTree = "<group>";
-		};
 		B61099E524F5F230005CB652 /* MediaView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
