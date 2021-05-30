@@ -9,7 +9,7 @@
 #import "Ample.h"
 #import "LaunchWindowController.h"
 #import "MediaViewController.h"
-#import "NewSlotViewController.h"
+#import "SlotViewController.h"
 #import "MachineViewController.h"
 #import "LogWindowController.h"
 
@@ -25,7 +25,7 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @interface LaunchWindowController ()
 @property (strong) IBOutlet MediaViewController *mediaController;
-@property (strong) IBOutlet NewSlotViewController *slotController;
+@property (strong) IBOutlet SlotViewController *slotController;
 @property (strong) IBOutlet MachineViewController *machineViewController;
 
 @property (weak) IBOutlet NSView *machineView;

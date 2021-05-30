@@ -62,8 +62,8 @@
 		B6152B5725F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
 		B6152B5A25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
 		B6152B5B25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
-		B615A99F26640940001FBF99 /* NewSlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* NewSlotView.xib */; };
-		B615A9A026640A70001FBF99 /* NewSlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */; };
+		B615A99F26640940001FBF99 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* SlotView.xib */; };
+		B615A9A026640A70001FBF99 /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* SlotViewController.m */; };
 		B6374AC4260EBBCF0045CA16 /* pty_shell.c in Sources */ = {isa = PBXBuildFile; fileRef = B6374AB6260EBB970045CA16 /* pty_shell.c */; };
 		B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6374ABD260EBBC90045CA16 /* pty_shell */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6374AD1260ECB400045CA16 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
@@ -259,8 +259,8 @@
 		B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
 		B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
 		B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0024F5F371005CB652 /* prav8m.plist */; };
-		B6E9A18025088B1B005E7525 /* NewSlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */; };
-		B6E9A18325088B36005E7525 /* NewSlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* NewSlotView.xib */; };
+		B6E9A18025088B1B005E7525 /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* SlotViewController.m */; };
+		B6E9A18325088B36005E7525 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* SlotView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -472,9 +472,9 @@
 		B6DE32422605482500418375 /* mac512k.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mac512k.plist; sourceTree = "<group>"; };
 		B6DE32432605482500418375 /* macse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macse.plist; sourceTree = "<group>"; };
 		B6E4B5FA24FDE2670094A35C /* Ample Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ample Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewSlotViewController.h; sourceTree = "<group>"; };
-		B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewSlotViewController.m; sourceTree = "<group>"; };
-		B6E9A18225088B36005E7525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewSlotView.xib; sourceTree = "<group>"; };
+		B6E9A17E25088B1B005E7525 /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
+		B6E9A17F25088B1B005E7525 /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
+		B6E9A18225088B36005E7525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SlotView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -676,8 +676,8 @@
 				B6152B5525F4549F00605E6E /* Slot.m */,
 				B6152B5825F5B4F100605E6E /* Media.h */,
 				B6152B5925F5B57E00605E6E /* Media.m */,
-				B6E9A17E25088B1B005E7525 /* NewSlotViewController.h */,
-				B6E9A17F25088B1B005E7525 /* NewSlotViewController.m */,
+				B6E9A17E25088B1B005E7525 /* SlotViewController.h */,
+				B6E9A17F25088B1B005E7525 /* SlotViewController.m */,
 				B6A1A1932528EB1700DB0FD7 /* Menu.m */,
 				B6A1A1962528EB4600DB0FD7 /* Menu.h */,
 				B64979C024EF6703008ABD20 /* MediaViewController.h */,
@@ -730,7 +730,7 @@
 			isa = PBXGroup;
 			children = (
 				B6665C1A265C639900254939 /* Autocomplete.xib */,
-				B6E9A18125088B36005E7525 /* NewSlotView.xib */,
+				B6E9A18125088B36005E7525 /* SlotView.xib */,
 				B63C1B9325008A2700511A71 /* DownloadWindow.xib */,
 				B66236BF24FDB7A6006CABD7 /* Credits.rtf */,
 				B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */,
@@ -904,7 +904,7 @@
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B61099E824F5F231005CB652 /* MediaView.xib in Resources */,
-				B6E9A18325088B36005E7525 /* NewSlotView.xib in Resources */,
+				B6E9A18325088B36005E7525 /* SlotView.xib in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */,
@@ -1030,7 +1030,7 @@
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
 				B6374ADA260ECB400045CA16 /* maciicx.plist in Resources */,
-				B615A99F26640940001FBF99 /* NewSlotView.xib in Resources */,
+				B615A99F26640940001FBF99 /* SlotView.xib in Resources */,
 				B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6374AE0260ECB400045CA16 /* macse30.plist in Resources */,
 				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
@@ -1140,7 +1140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */,
-				B6E9A18025088B1B005E7525 /* NewSlotViewController.m in Sources */,
+				B6E9A18025088B1B005E7525 /* SlotViewController.m in Sources */,
 				B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */,
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
@@ -1183,7 +1183,7 @@
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
 				B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */,
-				B615A9A026640A70001FBF99 /* NewSlotViewController.m in Sources */,
+				B615A9A026640A70001FBF99 /* SlotViewController.m in Sources */,
 				B6665C15265A0E3E00254939 /* AutocompleteControl.m in Sources */,
 				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
 				B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */,
@@ -1260,12 +1260,12 @@
 			name = LaunchWindow.xib;
 			sourceTree = "<group>";
 		};
-		B6E9A18125088B36005E7525 /* NewSlotView.xib */ = {
+		B6E9A18125088B36005E7525 /* SlotView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B6E9A18225088B36005E7525 /* Base */,
 			);
-			name = NewSlotView.xib;
+			name = SlotView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

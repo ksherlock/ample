@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="NewSlotViewController">
+        <customObject id="-2" userLabel="File's Owner" customClass="SlotViewController">
             <connections>
                 <outlet property="_popover" destination="QIT-2T-wdy" id="WUB-OS-kem"/>
                 <outlet property="childOutlineView" destination="uM0-Gk-crn" id="aL5-uC-O28"/>

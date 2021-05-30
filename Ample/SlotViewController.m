@@ -1,5 +1,5 @@
 //
-//  NewSlotViewController.m
+//  SlotViewController.m
 //  Ample
 //
 //  Created by Kelvin Sherlock on 9/9/2020.
@@ -8,7 +8,7 @@
 
 
 #import "Ample.h"
-#import "NewSlotViewController.h"
+#import "SlotViewController.h"
 #import "Menu.h"
 #import "Slot.h"
 #import "Media.h"
@@ -26,13 +26,13 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 static unsigned RootKey = 0;
 
 
-@interface NewSlotViewController ()
+@interface SlotViewController ()
 @property (weak) IBOutlet NSOutlineView *outlineView;
 @property (weak) IBOutlet NSOutlineView *childOutlineView;
 
 @end
 
-@implementation NewSlotViewController {
+@implementation SlotViewController {
     NSArray *_root;
 
     unsigned _slots_explicit;
@@ -288,7 +288,7 @@ static unsigned RootKey = 0;
 @end
 
 
-@implementation NewSlotViewController (OutlineView)
+@implementation SlotViewController (OutlineView)
 
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {

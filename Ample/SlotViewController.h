@@ -1,5 +1,5 @@
 //
-//  NewSlotViewController.h
+//  SlotViewController.h
 //  Ample
 //
 //  Created by Kelvin Sherlock on 9/9/2020.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NewSlotViewController : NSViewController
+@interface SlotViewController : NSViewController
 
 @property NSArray *args;
 @property Media media;
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *machine;
 @end
 
-@interface NewSlotViewController (OutlineView) <NSOutlineViewDelegate, NSOutlineViewDataSource>
+@interface SlotViewController (OutlineView) <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
 @end
 
