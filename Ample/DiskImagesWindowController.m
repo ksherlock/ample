@@ -67,8 +67,11 @@
     [window setRestorable: YES];
     [window setRestorationClass: [self class]];
 
-    
-    [_tableView registerForDraggedTypes: @[NSPasteboardTypeFileURL]];
+    if (@available(macOS 10.13, *)) {
+        [_tableView registerForDraggedTypes: @[NSPasteboardTypeFileURL]];
+    } else {
+        [_tableView registerForDraggedTypes: @[NSURLPboardType]];
+    }
     [_tableView setDraggingSourceOperationMask: NSDragOperationCopy forLocal: NO]; // enable drag/drop to othr apps.
 
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
@@ -95,6 +98,11 @@
     [nc addObserver: self selector: @selector(willTerminate:) name: NSApplicationWillTerminateNotification object: nil];
 }
 
+-(void)timerCallback: (NSTimer *)timer {
+    _timer = nil;
+    [self saveFile];
+}
+
 -(void)diskImageAdded: (NSNotification *)notification {
     
     NSURL *url = [notification object];
@@ -105,11 +113,15 @@
 -(void)markDirty {
     _dirty = YES;
     if (_timer) [_timer invalidate];
+    _timer = [NSTimer scheduledTimerWithTimeInterval: 5 * 60 target: self selector: @selector(timerCallback:) userInfo: nil repeats: NO];
+#if 0
+    // 10.12+
     _timer = [NSTimer scheduledTimerWithTimeInterval: 5 * 60 repeats: NO block: ^(NSTimer *t) {
         
         self->_timer = nil;
         [self saveFile];
     }];
+#endif
 }
 
 -(void)saveFile {
@@ -306,11 +318,15 @@
     for (NSPasteboardItem *item in [pb pasteboardItems]) {
         
         // need to convert from a string to a url back to a file in case it's a file id url?
-        NSString *s = [item stringForType: NSPasteboardTypeFileURL];
+        NSString *s;
+        if (@available(macOS 10.13, *)) {
+            s = [item stringForType: NSPasteboardTypeFileURL];
+        } else {
+            s = [item stringForType: NSURLPboardType];
+        }
         if (!s) continue;
         NSURL *url = [NSURL URLWithString: s];
         if (!url) continue;
-        
         ok |= [self addFile: url];
     }
     return ok;

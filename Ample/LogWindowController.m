@@ -53,9 +53,16 @@ static NSMutableSet *LogWindows;
     }
     
     NSTask *task = [NSTask new];
-    [task setExecutableURL: url];
+    
+    if (@available(macOS 10.13, *)) {
+        [task setExecutableURL: url];
+        [task setCurrentDirectoryURL: MameWorkingDirectory()];
+    } else {
+        [task setLaunchPath: MamePath()];
+        [task setCurrentDirectoryPath: MameWorkingDirectoryPath()];
+    }
+    
     [task setArguments: args];
-    [task setCurrentDirectoryURL: MameWorkingDirectory()];
     
     return [LogWindowController controllerForTask: task];
 }
@@ -84,20 +91,39 @@ static NSMutableSet *LogWindows;
     
     if (_task) return nil;
 
-    NSError *error = nil;
     NSPipe *pipe = [NSPipe pipe];
     
     // window not yet loaded until [self window] called.
-    const char *path = [[task executableURL] fileSystemRepresentation];
-//    if (cp) [self appendString: [NSString stringWithFormat: @"MAME path: %s", cp]];
-    const char *wd = [[task currentDirectoryURL] fileSystemRepresentation];
-//    if (cp) [self appendString: [NSString stringWithFormat: @"Working Directory: %s", cp]];
+
+    const char *path = nil;
+    const char *wd = nil;
+    
     
     [task setStandardError: pipe];
     [task setStandardOutput: pipe];
-    [task launchAndReturnError: &error];
-    
+    if (@available(macOS 10.13, *)) {
+        NSError *error = nil;
+        path = [[task executableURL] fileSystemRepresentation];
+        wd = [[task currentDirectoryURL] fileSystemRepresentation];
 
+        [task launchAndReturnError: &error];
+        if (error) {
+            NSLog(@"NSTask error. Path = %s error = %@", path, error);
+        }
+        return error;
+    } else {
+        path = [[task launchPath] fileSystemRepresentation];
+        wd = [[task currentDirectoryPath] fileSystemRepresentation];
+        @try {
+            [task launch];
+        } @catch (NSException *exception) {
+
+            NSLog(@"NSTask exception.  Path = %s exception = %@", path, exception);
+            return nil; // ?
+        }
+    }
+
+#if 0
     if (error) {
 //        NSURL *url = [task executableURL];
 //        NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
@@ -106,6 +132,7 @@ static NSMutableSet *LogWindows;
 //        [self appendString: [error description]];
         return error;
     }
+#endif
     _task = task;
     NSString *title = [NSString stringWithFormat: @"Ample Log - %u", [task processIdentifier]];
     [[self window] setTitle: title];

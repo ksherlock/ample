@@ -96,10 +96,15 @@
         @"xfz",
         path
     ];
-    [task setExecutableURL: [NSURL fileURLWithPath: @"/usr/bin/tar"]];
+    if (@available(macOS 10.13, *)) {
+        [task setExecutableURL: [NSURL fileURLWithPath: @"/usr/bin/tar"]];
+        [task setCurrentDirectoryURL: sd];
+    } else {
+        [task setLaunchPath:  @"/usr/bin/tar"];
+        [task setCurrentDirectoryPath: SupportDirectoryPath()];
+    }
     [task setArguments: argv];
-    [task setCurrentDirectoryURL: sd];
-    
+
     
     dispatch_time_t when = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC));
     [task setTerminationHandler: ^(NSTask *task){

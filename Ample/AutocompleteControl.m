@@ -411,8 +411,11 @@ Todo --
 
 -(void)_init {
     _backgroundColor = [NSColor windowBackgroundColor];
-    _selectedColor = [NSColor selectedContentBackgroundColor];
-    
+    if (@available(macOS 10.14, *)) {
+        _selectedColor = [NSColor selectedContentBackgroundColor];
+    } else {
+        _selectedColor = [NSColor selectedTextBackgroundColor];
+    }
     NSTrackingAreaOptions options = NSTrackingMouseMoved | NSTrackingMouseEnteredAndExited | NSTrackingInVisibleRect | NSTrackingActiveInActiveApp;
     _trackingArea = [[NSTrackingArea alloc] initWithRect: NSZeroRect
                                                  options: options
