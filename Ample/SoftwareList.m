@@ -367,7 +367,7 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
                 NSLog(@"SoftwareListForMachine: %@ %@: %@", machine, xml, error);
                 continue;
             }
-            [cache setObject: sw forKey: xml];
+            if (sw) [cache setObject: sw forKey: xml];
         }
         if (filter) {
             sw = [sw filter: filter];
@@ -479,7 +479,7 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
                 NSLog(@"SoftwareListForMachine: %@ %@: %@", machine, xml, error);
                 continue;
             }
-            [cache setObject: sw forKey: xml];
+            if (sw) [cache setObject: sw forKey: xml];
         }
         if (filter) {
             sw = [sw filter: filter];

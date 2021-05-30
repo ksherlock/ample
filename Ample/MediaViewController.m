@@ -222,15 +222,20 @@
     [pc bind: @"enabled" toObject: self withKeyPath: @"valid" options: options];
     
     [button unbind: @"enabled"];
-    [button unbind: @"contentTintColor"];
     t = [NSValueTransformer valueTransformerForName: NSIsNotNilTransformerName];
     options = @{ NSValueTransformerBindingOption: t};
     [button bind: @"enabled" toObject: self withKeyPath: @"url" options: options];
     
-    t = [NSValueTransformer valueTransformerForName: @"ValidColorTransformer"];
-    options = @{ NSValueTransformerBindingOption: t};
-    [button bind: @"contentTintColor" toObject: self withKeyPath: @"valid" options: options];
-   
+
+    if (@available(macOS 10.14, *)) {
+        [button unbind: @"contentTintColor"];
+
+        t = [NSValueTransformer valueTransformerForName: @"ValidColorTransformer"];
+        options = @{ NSValueTransformerBindingOption: t};
+        [button bind: @"contentTintColor" toObject: self withKeyPath: @"valid" options: options];
+    } else {
+        // El Capitan TODO...
+    }
 #if 0
     NSColor *tintColor = nil;
     if (!_valid) tintColor = [NSColor systemRedColor];

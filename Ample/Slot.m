@@ -323,12 +323,15 @@ static NSDictionary *IndexMap = nil;
     [button unbind: @"selectedIndex"];
     NSMenu *menu = [button menu];
     NSArray *menuItems = [self menuItems];
-    
+
+    // [menu setItemArray: ] doesn't work prior to 10.14, apparently.
+    [menu removeAllItems];
     if (_index == kSMARTPORT) {
-        [menu setItemArray: @[]];
+        //[menu setItemArray: @[]];
         [button setHidden: YES];
     } else {
-        [menu setItemArray: menuItems];
+        //[menu setItemArray: menuItems];
+        for (NSMenuItem *x in menuItems) [menu addItem: x];
         [button bind: @"selectedIndex" toObject: self withKeyPath: @"selectedIndex" options: nil];
         [button setHidden: NO];
     }
