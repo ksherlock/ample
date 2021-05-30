@@ -27,6 +27,20 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
+    if (!_webView) {
+        WKWebView *webView;
+        NSWindow *window = [self window];
+        CGRect frame = [[window contentView] frame];
+
+
+        webView = [WKWebView new];
+        [webView setFrame: frame];
+        [webView setNavigationDelegate: self];
+        [[window contentView]addSubview: webView];
+        _webView = webView;
+    }
+    
+    
     [_webView setHidden: YES];
     NSBundle *bundle = [NSBundle mainBundle];
     NSURL *url = [bundle URLForResource: @"CheatSheet" withExtension: @"html"];
