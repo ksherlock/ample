@@ -86,6 +86,13 @@ static NSMutableSet *LogWindows;
     }
 }
 
+-(void)appendAttributedString: (NSAttributedString *)string {
+    
+    if ([string length]) {
+        [[_textView textStorage] appendAttributedString: string];
+    }
+}
+
 -(NSError *)runTask: (NSTask *)task {
     
     
@@ -109,8 +116,8 @@ static NSMutableSet *LogWindows;
         [task launchAndReturnError: &error];
         if (error) {
             NSLog(@"NSTask error. Path = %s error = %@", path, error);
+            return error;
         }
-        return error;
     } else {
         path = [[task launchPath] fileSystemRepresentation];
         wd = [[task currentDirectoryPath] fileSystemRepresentation];
