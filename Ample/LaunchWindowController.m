@@ -460,6 +460,7 @@ static NSString *ShellQuote(NSString *s) {
 
 - (IBAction)launchAction:(id)sender {
 
+    [[self window] makeFirstResponder: nil]; // in case text is being edited...
     if (![_args count]) return;
 
     [LogWindowController controllerForArgs: _args];
