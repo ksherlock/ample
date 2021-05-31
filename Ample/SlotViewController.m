@@ -338,5 +338,47 @@ static unsigned RootKey = 0;
 }
 
 
+@end
+
+
+@implementation SlotViewController (Bookmark)
+
+-(BOOL)loadBookmark: (NSDictionary *)bookmark {
+
+    NSDictionary *dict = [bookmark objectForKey: @"slots"];
+    
+    [self resetSlots: nil];
+    for (Slot *item in _root) {
+        [item reserialize: dict];
+        
+        NSInteger index = [item index];
+        if (index >= 0 && index < SLOT_COUNT) {
+            unsigned mask = 1 << index;
+            
+            if ([item defaultIndex] != [item selectedIndex])
+                _slots_explicit |= mask; // grrr.
+        
+            _slot_media[index] = [item selectedMedia];
+            _slot_value[index] = [[item selectedItem] value];
+        }
+
+        ++index;
+    }
+    
+    [self rebuildMedia];
+    [self rebuildArgs];
+    return YES;
+}
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
+
+    NSMutableDictionary *slots = [NSMutableDictionary new];
+    for (Slot *item in _root) {
+        NSDictionary *d = [item serialize];
+        [slots addEntriesFromDictionary: d];
+    }
+
+    [bookmark setObject: slots forKey: @"slots"];
+    return YES;
+}
 
 @end

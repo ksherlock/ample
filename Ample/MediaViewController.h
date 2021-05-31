@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Media.h"
+#import "Ample.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,8 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)ejectAction:(id)sender;
 - (IBAction)pathAction:(id)sender;
 
+@end
 
-//-(void)setMedia: (NSDictionary *)media;
+@interface MediaViewController (Bookmark) <Bookmark>
 
 @end
 

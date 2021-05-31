@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Media.h"
+#import "Ample.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,13 +18,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property Media media;
 @property NSSize resolution;
 @property (nonatomic) NSString *machine;
+
 @end
 
 @interface SlotViewController (OutlineView) <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
 @end
 
+@interface SlotViewController (Bookmark) <Bookmark>
 
+@end
 
 
 NS_ASSUME_NONNULL_END

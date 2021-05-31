@@ -27,7 +27,8 @@
 @property (readonly) SlotOption *selectedItem;
 
 -(NSArray *)args;
--(NSArray *)serialize;
+-(NSDictionary *)serialize;
+-(void)reserialize: (NSDictionary *)dict;
 
 -(void)reset;
 -(void)prepareView: (SlotTableCellView *)view;

@@ -110,5 +110,48 @@
     return [data count];
 }
 
+@end
+
+@implementation MachineViewController (Bookmark)
+
+-(BOOL)loadBookmark: (NSDictionary *)bookmark {
+    
+    NSBrowser *browser = (NSBrowser *)[self view];
+    NSString *machine = [bookmark objectForKey: @"machine"];
+    
+    NSIndexPath *path = nil;
+    NSUInteger ix[2] = {0, 0 };
+    for (NSDictionary *d in _data) {
+        
+        NSString *value = [d objectForKey: @"value"];
+        NSArray *children = [d objectForKey: @"children"];
+        if ([machine isEqualToString: value]) {
+            path = [NSIndexPath indexPathWithIndexes: ix length: 1];
+            [browser setSelectionIndexPath: path];
+            return YES;
+        }
+
+        for (NSDictionary *dd in children) {
+            NSString *value = [dd objectForKey: @"value"];
+
+            if ([machine isEqualToString: value]) {
+                path = [NSIndexPath indexPathWithIndexes: ix length: 2];
+                [browser setSelectionIndexPath: path];
+                return YES;
+            }
+            ++ix[1];
+        }
+        ix[1] = 0;
+        ++ix[0];
+        
+    }
+    NSLog(@"MachineViewController: Unable to find %@", machine);
+    return NO;
+}
+
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
+    // machine saved in parent.
+    return YES;
+}
 
 @end

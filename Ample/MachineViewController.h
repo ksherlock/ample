@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#import "Ample.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MachineViewController : NSViewController <NSBrowserDelegate>
 
 @property NSString *machine;
+
+@end
+
+@interface MachineViewController (Bookmark) <Bookmark>
 
 @end
 

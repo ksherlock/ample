@@ -376,6 +376,28 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     }
 }
 
+-(void)resetDiskImages {
+
+    BOOL delta = NO;
+    for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
+    
+        MediaCategory *cat = _data[j];
+        NSInteger count = [cat count];
+        for (NSInteger i = 0; i < count; ++i) {
+
+            MediaItem *item = [cat objectAtIndex: i];
+            NSURL *url = [item url];
+            if (!url) continue;
+            [item setUrl: nil];
+            delta = YES;
+        }
+    }
+    if (delta) {
+        [self rebuildRoot];
+        [self rebuildArgs];
+    }
+}
+
 static NSString *kDragType = @"private.ample.media";
 - (void)viewDidLoad {
     
@@ -641,4 +663,85 @@ static NSString *kDragType = @"private.ample.media";
     
     [self rebuildArgs];
 }
+
+@end
+
+@implementation MediaViewController (Bookmark)
+
+-(BOOL)loadBookmark: (NSDictionary *)bookmark {
+
+#if 0
+    // hmmm... should rely on machine/slots to set media
+    // so it doesn't go out of sync after an update.
+    NSDictionary *d = [bookmark objectForKey: @"media"];
+    Media m = EmptyMedia;
+
+    if (d) m = MediaFromDictionary(d);
+    [self setMedia: m];
+#endif
+    
+    // reset all media
+    [self resetDiskImages];
+    
+    // if order of indexes change, would need to do a version check.
+    
+    NSArray *media = [bookmark objectForKey: @"media"];
+    unsigned ix = 0;
+    for (NSArray *a in media) {
+        if (ix >= CATEGORY_COUNT) {
+            NSLog(@"MediaViewController: too many categories.");
+            break;
+        }
+        MediaCategory *cat = _data[ix++];
+        NSInteger count = [cat count];
+        unsigned i = 0;
+        for (NSString *path in a) {
+            if (i >= count) {
+                NSLog(@"MediaViewController: too many files.");
+                break; //
+            }
+            MediaItem *item = [cat objectAtIndex: i++];
+            NSURL *url = nil;
+            if ([path length])
+                url = [NSURL fileURLWithPath: path];
+
+            [item setUrl: url];
+        }
+    }
+
+    // add will load bookmark / did load bookmark to block all the rebuilding ?
+    [self rebuildRoot];
+    [self rebuildArgs];
+    return YES;
+
+}
+
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
+
+    NSMutableArray *media = [NSMutableArray arrayWithCapacity: CATEGORY_COUNT];
+
+    for (unsigned ix = 0; ix < CATEGORY_COUNT; ++ix) {
+    
+        MediaCategory *cat = _data[ix];
+        NSInteger count = [cat validCount];
+        
+        NSMutableArray *array = [NSMutableArray new];
+        for (NSInteger i = 0; i < count; ++i) {
+
+            MediaItem *item = [cat objectAtIndex: i];
+            NSURL *url = [item url];
+            NSString *s = @"";
+            if (url)
+                s = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+            
+            [array addObject: s];
+        }
+        [media addObject: array];
+    }
+    
+    [bookmark setObject: media forKey: @"media"];
+    
+    return YES;
+}
+
 @end
