@@ -384,7 +384,11 @@ DQ
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameBitBanger" id="q9v-k6-Ueu"/>
+                                                <binding destination="-2" name="value" keyPath="self.mameBitBanger" id="O76-B6-FhP">
+                                                    <dictionary key="options">
+                                                        <string key="NSNullPlaceholder">socket.127.0.0.1:23 or /path/to/file</string>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDW-FX-9az">
@@ -396,7 +400,11 @@ DQ
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameShareDirectory" id="ZR5-Uk-0yZ"/>
+                                                <binding destination="-2" name="value" keyPath="self.mameShareDirectory" id="fqw-G0-t5P">
+                                                    <dictionary key="options">
+                                                        <string key="NSNullPlaceholder">/path/to/directory/</string>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPk-SB-lIF">
