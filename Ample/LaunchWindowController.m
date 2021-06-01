@@ -41,6 +41,7 @@ static NSString *kContextMachine = @"kContextMachine";
 @property BOOL mameSquarePixels;
 @property BOOL mameMouse;
 @property BOOL mameSamples;
+@property BOOL mameBGFX;
 
 @property BOOL mameAVI;
 @property BOOL mameWAV;
@@ -54,7 +55,6 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @property NSInteger mameSpeed;
 
-@property BOOL mameBGFX;
 @property NSInteger mameBackend;
 @property NSInteger mameEffects;
 
@@ -71,6 +71,23 @@ static NSString *kContextMachine = @"kContextMachine";
 -(void)updateSoftwareList;
 
 @end
+
+static NSString *BackendStrings[] = {
+    @"",
+    @"metal",
+    @"opengl",
+};
+
+static NSString *EffectsStrings[] = {
+    @"-",
+    @"unfiltered",
+    @"hlsl",
+    @"crt-geom",
+    @"crt-geom-deluxe",
+    @"lcd-grid",
+};
+
+
 
 @implementation LaunchWindowController
 
@@ -298,7 +315,6 @@ static NSString *ShellQuote(NSString *s) {
     [argv addObject: _mameMachine];
     
     if (_software) {
-        // todo -- need to include source as well.
         NSString *name = [_software name];
         if (![_softwareSet nameIsUnique: name])
             name = [_software fullName];
@@ -365,25 +381,12 @@ static NSString *ShellQuote(NSString *s) {
 
     if (_mameBGFX) {
         if (_mameBackend) {
-            static NSString *Names[] = {
-                @"-",
-                @"metal",
-                @"opengl",
-            };
             [argv addObject: @"-bgfx_backend"];
-            [argv addObject: Names[_mameBackend]];
+            [argv addObject: BackendStrings[_mameBackend]];
         }
         if (_mameEffects) {
-            static NSString *Names[] = {
-                @"-",
-                @"unfiltered",
-                @"hlsl",
-                @"crt-geom",
-                @"crt-geom-deluxe",
-                @"lcd-grid",
-            };
             [argv addObject: @"-bgfx_screen_chains"];
-            [argv addObject: Names[_mameEffects]];
+            [argv addObject: EffectsStrings[_mameEffects]];
         }
 
     } else {
@@ -539,5 +542,64 @@ static NSString *ShellQuote(NSString *s) {
     //NSLog(@"%@", o);
     [self setSoftware: o];
 }
+
+@end
+
+
+@implementation LaunchWindowController (Bookmark)
+
+-(NSDictionary *)makeBookmark {
+    
+    [[self window] makeFirstResponder: nil];
+
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    
+    [dict setObject: _mameMachine forKey: @"machine"];
+    [dict setObject: @232 forKey: @"version"];
+    [_machineViewController saveBookmark: dict];
+    [_slotController saveBookmark: dict];
+    [_mediaController saveBookmark: dict];
+
+    
+    // Boolean values
+#undef _
+#define _(v,k) [dict setObject: v ? (NSObject *)kCFBooleanTrue : (NSObject *)kCFBooleanFalse forKey: k]
+
+    _(_mameDebug, @"debug");
+    _(_mameSquarePixels, @"squarePixels");
+    _(_mameMouse, @"mouse");
+    _(_mameSamples, @"samples");
+    _(_mameBGFX, @"bgfx");
+
+    // numeric values
+    #undef _
+    #define _(v,k) [dict setObject: @(v) forKey: k]
+    _(_mameWindowMode, @"windowMode");
+    _(_mameSpeed, @"speed");
+
+    // String values
+#undef _
+#define _(v,k) [dict setObject: v forKey: k]
+
+    if (_mameAVI && [_mameAVIPath length]) _(_mameAVIPath, @"AVIPath");
+    if (_mameWAV && [_mameWAVPath length]) _(_mameWAVPath, @"WAVPath");
+    if (_mameVGM && [_mameVGMPath length]) _(_mameVGMPath, @"VGMPath");
+
+    if ([_mameShareDirectory length]) _(_mameShareDirectory, @"shareDirectory");
+    if ([_mameBitBanger length]) _(_mameBitBanger, @"shareDirectory");
+
+    
+    if (_software) _([_software fullName], @"software");
+
+    
+    if (_mameBackend) _(BackendStrings[_mameBackend], @"backend");
+    if (_mameEffects) _(EffectsStrings[_mameEffects], @"effects");
+
+    
+    return dict;
+
+#undef _
+}
+
 
 @end
