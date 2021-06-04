@@ -96,7 +96,7 @@ Todo --
 }
 
 -(void)setStringValue:(NSString *)stringValue {
-    [super setStringValue: stringValue];
+    [super setStringValue: stringValue ? stringValue : @""];
     if (_value && [[_value menuTitle] isEqualToString: stringValue] == NO)
         _value = nil;
     
