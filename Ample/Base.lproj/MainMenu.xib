@@ -19,6 +19,11 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="sJn-ug-xF3" customClass="BookmarkManager">
+            <connections>
+                <outlet property="menu" destination="ha0-nx-PIl" id="vTa-TU-DS1"/>
+            </connections>
+        </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="Ample" id="1Xt-HY-uBw">
@@ -386,6 +391,22 @@
                                     <action selector="toggleFullScreen:" target="-1" id="dU3-MA-1Rq"/>
                                 </connections>
                             </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Bookmarks" id="vHO-2e-qJc">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Bookmarks" id="ha0-nx-PIl">
+                        <items>
+                            <menuItem title="Add Bookmark…" keyEquivalent="d" id="1JF-xV-zmG">
+                                <connections>
+                                    <action selector="addBookmark:" target="-1" id="cqp-ko-BfQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Manage Bookmarks…" id="isI-q6-b1V">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="gWR-Yl-mg6"/>
                         </items>
                     </menu>
                 </menuItem>

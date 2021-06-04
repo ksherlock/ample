@@ -13,6 +13,7 @@
 #import "DiskImagesWindowController.h"
 #import "CheatSheetWindowController.h"
 #import "Transformers.h"
+#import "BookmarkManager.h"
 
 #import "LogWindowController.h"
 
@@ -39,6 +40,10 @@
     
     
     RegisterTransformers();
+    
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+    [bm loadBookmarks];
+    [bm updateMenu];
     
     path = [bundle pathForResource: @"Defaults" ofType: @"plist"];
     dict = [NSDictionary dictionaryWithContentsOfFile: path];

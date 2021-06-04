@@ -15,6 +15,7 @@
 
 #import "AutocompleteControl.h"
 #import "SoftwareList.h"
+#import "BookmarkManager.h"
 
 #include <sys/stat.h>
 #include <wctype.h>
@@ -64,11 +65,24 @@ static NSString *kContextMachine = @"kContextMachine";
 @property (weak) IBOutlet AutocompleteControl *softwareListControl;
 @property SoftwareSet *softwareSet;
 @property Software *software;
+
+
+
+@property (strong) IBOutlet NSWindow *addBookmarkWindow;
+@property (strong) NSString *bookmarkName;
+@property (weak) IBOutlet NSTextField *bookmarkTextField;
 @end
 
 @interface LaunchWindowController (SoftwareList)
 
 -(void)updateSoftwareList;
+
+@end
+
+
+@interface LaunchWindowController (Bookmark)
+
+-(IBAction)addBookmark:(id)sender;
 
 @end
 
@@ -456,7 +470,12 @@ static NSString *ShellQuote(NSString *s) {
     if (cmd == @selector(exportShellScript:)) {
         return [_args count] ? YES : NO;
     }
-    return [super validateMenuItem: menuItem];
+    if (cmd == @selector(addBookmark:)) {
+        return _mameMachine ? YES : NO;
+    }
+    
+    return YES;
+    //return [super validateMenuItem: menuItem]; // not implemented?
 }
 
 # pragma mark - IBActions
@@ -547,6 +566,80 @@ static NSString *ShellQuote(NSString *s) {
 
 
 @implementation LaunchWindowController (Bookmark)
+
+-(IBAction)addBookmark:(id)sender {
+    
+    if (!_mameMachine) return;
+    
+    NSString *name = _mameMachine;
+    if (_software) {
+        name = [name stringByAppendingFormat: @" - %@", [_software title]];
+    }
+    [self setBookmarkName: name];
+    [_bookmarkTextField selectText: nil];
+    [[self window] beginSheet: _addBookmarkWindow completionHandler:  nil];
+}
+
+-(IBAction)bookmarkCancel:(id)sender {
+    [[self window] endSheet: _addBookmarkWindow];
+    [_addBookmarkWindow orderOut: nil];
+}
+
+-(IBAction)bookmarkSave:(id)sender {
+    
+    
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+
+    if (![bm validateName: _bookmarkName]) {
+        [_bookmarkTextField selectText: nil];
+        NSBeep();
+        return;
+    }
+
+    
+    //NSLog(@"%@", _bookmarkName);
+    NSDictionary *d = [self makeBookmark];
+    //NSLog(@"%@", d);
+    
+    [bm saveBookmark: d name: _bookmarkName];
+    
+    [[self window] endSheet: _addBookmarkWindow];
+    [_addBookmarkWindow orderOut: nil];
+    [self setBookmarkName: nil];
+}
+
+
+-(IBAction)loadBookmark:(id)sender {
+    NSURL *url = [sender representedObject];
+    if (!url) return;
+    
+    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
+    if (!d) return; // oops...
+    
+    NSString *machine = [d objectForKey: @"machine"];
+    if (!machine) return;
+
+#if 0
+    _bookmark = YES;
+    [_machineViewController willLoadBookmark];
+    [_slotController willLoadBookmark];
+    [_mediaController willLoadBookmark];
+
+    
+    [self setMameMachine: machine];
+    
+    [_machineViewController loadBookmark: d];
+    [_slotController loadBookmark: d];
+    [_mediaController loadBookmark: d];
+    
+    _bookmark = NO;
+    [_machineViewController didLoadBookmark];
+    [_slotController didLoadBookmark];
+    [_mediaController didLoadBookmark];
+    
+#endif
+    [self buildCommandLine];
+}
 
 -(NSDictionary *)makeBookmark {
     
