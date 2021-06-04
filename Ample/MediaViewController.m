@@ -262,6 +262,8 @@
     MediaCategory *_data[CATEGORY_COUNT];
     NSArray *_root;
     Media _media;
+    
+    BOOL _loadingBookmark;
 }
 
 @end
@@ -742,6 +744,13 @@ static NSString *kDragType = @"private.ample.media";
     [bookmark setObject: media forKey: @"media"];
     
     return YES;
+}
+
+-(void)willLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = YES;
+}
+-(void)didLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = NO;
 }
 
 @end

@@ -24,7 +24,9 @@ static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
 
 
-@interface LaunchWindowController ()
+@interface LaunchWindowController () {
+    BOOL _loadingBookmark;
+}
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
 @property (strong) IBOutlet MachineViewController *machineViewController;
@@ -128,7 +130,8 @@ static NSString *EffectsStrings[] = {
     
 
     NSArray *keys = @[
-        @"mameMachine", @"mameSquarePixels", @"mameWindowMode",
+        //@"mameMachine", // - handled
+        @"mameSquarePixels", @"mameWindowMode",
         @"mameMouse", @"mameSamples",
         @"mameDebug",
         @"mameSpeed",
@@ -163,8 +166,11 @@ static NSString *EffectsStrings[] = {
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
 
     if (context == (__bridge void *)kMyContext) {
+        if (_loadingBookmark) return;
         [self buildCommandLine];
     } else if (context == (__bridge void *)kContextMachine) {
+        if (_loadingBookmark) return;
+
         NSString *machine = [_machineViewController machine];
         [self setMameMachine: machine];
         [_slotController setMachine: machine];
@@ -619,25 +625,26 @@ static NSString *ShellQuote(NSString *s) {
     NSString *machine = [d objectForKey: @"machine"];
     if (!machine) return;
 
-#if 0
-    _bookmark = YES;
-    [_machineViewController willLoadBookmark];
-    [_slotController willLoadBookmark];
-    [_mediaController willLoadBookmark];
+    _loadingBookmark = YES;
+    [_machineViewController willLoadBookmark: d];
+    [_slotController willLoadBookmark: d];
+    [_mediaController willLoadBookmark: d];
 
     
     [self setMameMachine: machine];
-    
+    [self updateSoftwareList];
+    [_softwareListControl setStringValue: [d objectForKey: @"software"]];
+
     [_machineViewController loadBookmark: d];
     [_slotController loadBookmark: d];
     [_mediaController loadBookmark: d];
     
-    _bookmark = NO;
-    [_machineViewController didLoadBookmark];
-    [_slotController didLoadBookmark];
-    [_mediaController didLoadBookmark];
-    
-#endif
+    [_machineViewController didLoadBookmark: d];
+    [_slotController didLoadBookmark: d];
+    [_mediaController didLoadBookmark: d];
+
+    _loadingBookmark = NO;
+
     [self buildCommandLine];
 }
 

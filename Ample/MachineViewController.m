@@ -123,25 +123,38 @@
     NSUInteger ix[2] = {0, 0 };
     for (NSDictionary *d in _data) {
         
-        NSString *value = [d objectForKey: @"value"];
         NSArray *children = [d objectForKey: @"children"];
-        if ([machine isEqualToString: value]) {
-            path = [NSIndexPath indexPathWithIndexes: ix length: 1];
-            [browser setSelectionIndexPath: path];
-            return YES;
-        }
 
         for (NSDictionary *dd in children) {
             NSString *value = [dd objectForKey: @"value"];
 
             if ([machine isEqualToString: value]) {
                 path = [NSIndexPath indexPathWithIndexes: ix length: 2];
-                [browser setSelectionIndexPath: path];
+                [browser selectRow: ix[0] inColumn: 0];
+                [browser selectRow: ix[1] inColumn: 1];
+
+                //[browser setSelectionIndexPath: path];
                 return YES;
             }
             ++ix[1];
         }
         ix[1] = 0;
+
+
+        // check parent after.
+        NSString *value = [d objectForKey: @"value"];
+        if ([machine isEqualToString: value]) {
+            path = [NSIndexPath indexPathWithIndexes: ix length: 1];
+            [browser selectRow: ix[0] inColumn: 0];
+            // "setSelectionIndexPath: is not supported for browsers with matrix delegates."
+            //[browser setSelectionIndexPath: path];
+            return YES;
+        }
+
+
+
+
+
         ++ix[0];
         
     }
@@ -152,6 +165,12 @@
 -(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
     // machine saved in parent.
     return YES;
+}
+
+-(void)willLoadBookmark:(NSDictionary *)bookmark {
+}
+
+-(void)didLoadBookmark:(NSDictionary *)bookmark {
 }
 
 @end

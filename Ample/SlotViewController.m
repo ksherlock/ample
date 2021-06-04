@@ -49,6 +49,7 @@ static unsigned RootKey = 0;
         
     IBOutlet NSPopover *_popover;
     
+    BOOL _loadingBookmark;
 }
 
 - (void)viewDidLoad {
@@ -142,8 +143,10 @@ static unsigned RootKey = 0;
 
 
     [_outlineView reloadData];
-    [self rebuildMedia];
-    [self rebuildArgs];
+    if (!_loadingBookmark) {
+        [self rebuildMedia];
+        [self rebuildArgs];
+    }
 }
 
 -(void)setMachine: (NSString *)machine {
@@ -281,8 +284,10 @@ static unsigned RootKey = 0;
 #ifdef SLOT_TREE
     [_outlineView reloadData];
 #endif
-    [self rebuildMedia];
-    [self rebuildArgs];
+    if (!_loadingBookmark) {
+        [self rebuildMedia];
+        [self rebuildArgs];
+    }
 }
 
 @end
@@ -381,6 +386,14 @@ static unsigned RootKey = 0;
 
     [bookmark setObject: slots forKey: @"slots"];
     return YES;
+}
+
+
+-(void)willLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = YES;
+}
+-(void)didLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = NO;
 }
 
 @end
