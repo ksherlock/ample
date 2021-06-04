@@ -347,6 +347,8 @@ static unsigned RootKey = 0;
 
     NSDictionary *dict = [bookmark objectForKey: @"slots"];
     
+    [self setMachine: [bookmark objectForKey: @"machine"]];
+    
     [self resetSlots: nil];
     for (Slot *item in _root) {
         [item reserialize: dict];
