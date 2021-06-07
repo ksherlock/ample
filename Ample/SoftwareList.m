@@ -425,6 +425,44 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
     return [_set countForObject: name] <= 1;
 }
 
+-(NSString *)nameForSoftware: (Software *)software {
+    
+    if (!software) return nil;
+    if (!_set) [self buildSet];
+    
+    NSString *name = [software name];
+    if ([_set countForObject: name] > 1) {
+        return [software fullName];
+    }
+    return name;
+}
+
+-(Software *)softwareForName: (NSString *)name {
+    /* name will be name or set:name */
+    NSString *set = nil;
+    NSArray *tmp = [name componentsSeparatedByString: @":"];
+    switch([tmp count]) {
+        case 1: break;
+        case 2:
+            set = [tmp objectAtIndex: 0];
+            name = [tmp objectAtIndex: 1];
+            break;
+        default: return nil;
+    }
+    
+    if (_set && ![_set containsObject: name]) return nil;
+
+    for (SoftwareList *list in _items) {
+        if (set && ![set isEqualToString: [list name]]) continue;
+        
+        for (Software *s in [list items]) {
+            if ([name isEqualToString: [s name]]) return s;
+        }
+    }
+    return nil;
+    
+}
+
 +(instancetype)softwareSetForMachine:(NSString *)machine {
     
     static NSCache *cache;
@@ -497,6 +535,24 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
     return s;
 }
 
+
+-(BOOL)hasSoftware: (Software *)software {
+    
+    if (_set) {
+        NSString *name = [software name];
+        if (![_set containsObject: name]) return NO;
+    }
+    
+    NSString *slist = [software list];
+    for (SoftwareList *list in _items) {
+        if (![slist isEqualToString: [list name]]) continue;
+        
+        return [[list items] containsObject: software];        
+    }
+    return NO;
+}
+
+
 - (nonnull NSArray<id<AutocompleteItem>> *)autocomplete:(AutocompleteControl *)control completionsForItem:(id<AutocompleteItem>)item {
 
     for (SoftwareList *list in _items) {
@@ -508,6 +564,15 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
     return nil;
 }
 
+
+// NSStringTransformStripDiacritics
+// pre-process all entries to lowercase and remove diacritics (second string for search text?)
+#if 0
+static unichar diacritics[][2] = {
+    { 0xd8, 'O' }, // Ø
+    { 0xf8, 'o' }, // ø
+};
+#endif
 - (nonnull NSArray<id<AutocompleteItem>> *)autocomplete:(nonnull AutocompleteControl *)control completionsForString:(nonnull NSString *)string {
 
     if (!_cache) {
@@ -515,7 +580,8 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
         [_cache setCountLimit: 10];
     }
     
-    
+    // todo -- diacritic normalization.
+    // déjá vu -> deja vu
     
     enum { max_haystack_length = 256, max_needle_length = 256 };
 
@@ -523,6 +589,8 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
     
     if (!_items) return @[];
 
+    //string = [string stringByApplyingTransform: NSStringTransformStripDiacritics reverse: NO];
+    
     NSUInteger needle_length = [string length];
     needle_length = MIN(needle_length, max_needle_length);
 

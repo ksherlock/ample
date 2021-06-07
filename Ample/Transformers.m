@@ -73,6 +73,21 @@
 @end
 
 
+@implementation StringNotEmptyTransformer
++ (BOOL)allowsReverseTransformation {
+    return NO;
+}
++ (Class)transformedValueClass {
+    return [NSNumber class];
+}
+
+- (id)transformedValue:(id)value {
+    NSUInteger length = [(NSString *)value length];
+    return [NSNumber numberWithBool: length ? YES : NO];
+}
+
+@end
+
 
 void RegisterTransformers(void) {
     
@@ -85,4 +100,8 @@ void RegisterTransformers(void) {
 
     t = [ValidColorTransformer new];
     [NSValueTransformer setValueTransformer: t forName: @"ValidColorTransformer"];
+    
+    t = [StringNotEmptyTransformer new];
+    [NSValueTransformer setValueTransformer: t forName: @"StringNotEmptyTransformer"];
+
 }

@@ -262,6 +262,8 @@
     MediaCategory *_data[CATEGORY_COUNT];
     NSArray *_root;
     Media _media;
+    
+    BOOL _loadingBookmark;
 }
 
 @end
@@ -345,8 +347,10 @@ enum {
     // todo - switch this to use removeItemsAtIndexes:inParent:withAnimation:
     // and insertItemsAtIndexes:inParent:withAnimation:
     
-    [_outlineView reloadData];
-    [_outlineView expandItem: nil expandChildren: YES];
+    if (!_loadingBookmark) {
+        [_outlineView reloadData];
+        [_outlineView expandItem: nil expandChildren: YES];
+    }
 }
 
 -(void)setMedia: (Media)media {
@@ -372,7 +376,29 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
 
     if (delta) {
         [self rebuildRoot];
-        [self rebuildArgs];
+        if (!_loadingBookmark) [self rebuildArgs];
+    }
+}
+
+-(void)resetDiskImages {
+
+    BOOL delta = NO;
+    for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
+    
+        MediaCategory *cat = _data[j];
+        NSInteger count = [cat count];
+        for (NSInteger i = 0; i < count; ++i) {
+
+            MediaItem *item = [cat objectAtIndex: i];
+            NSURL *url = [item url];
+            if (!url) continue;
+            [item setUrl: nil];
+            delta = YES;
+        }
+    }
+    if (delta) {
+        [self rebuildRoot];
+        if (!_loadingBookmark) [self rebuildArgs];
     }
 }
 
@@ -641,4 +667,87 @@ static NSString *kDragType = @"private.ample.media";
     
     [self rebuildArgs];
 }
+
+-(IBAction)reset:(id)sender {
+    [self resetDiskImages];
+}
+
+@end
+
+@implementation MediaViewController (Bookmark)
+
+-(void)willLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = YES;
+    [self resetDiskImages];
+}
+-(void)didLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = NO;
+
+
+    [self rebuildRoot];
+    [self rebuildArgs];
+}
+
+
+-(BOOL)loadBookmark: (NSDictionary *)bookmark {
+
+    
+    // if order of indexes change, would need to do a version check.
+    
+    NSArray *media = [bookmark objectForKey: @"media"];
+    unsigned ix = 0;
+    for (NSArray *a in media) {
+        if (ix >= CATEGORY_COUNT) {
+            NSLog(@"MediaViewController: too many categories.");
+            break;
+        }
+        MediaCategory *cat = _data[ix++];
+        NSInteger count = [cat count];
+        unsigned i = 0;
+        for (NSString *path in a) {
+            if (i >= count) {
+                NSLog(@"MediaViewController: too many files.");
+                break; //
+            }
+            MediaItem *item = [cat objectAtIndex: i++];
+            NSURL *url = nil;
+            if ([path length])
+                url = [NSURL fileURLWithPath: path];
+
+            [item setUrl: url];
+        }
+    }
+    return YES;
+
+}
+
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
+
+    NSMutableArray *media = [NSMutableArray arrayWithCapacity: CATEGORY_COUNT];
+
+    for (unsigned ix = 0; ix < CATEGORY_COUNT; ++ix) {
+    
+        MediaCategory *cat = _data[ix];
+        NSInteger count = [cat validCount];
+        
+        NSMutableArray *array = [NSMutableArray new];
+        for (NSInteger i = 0; i < count; ++i) {
+
+            MediaItem *item = [cat objectAtIndex: i];
+            NSURL *url = [item url];
+            NSString *s = @"";
+            if (url)
+                s = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+            
+            [array addObject: s];
+        }
+        [media addObject: array];
+    }
+    
+    [bookmark setObject: media forKey: @"media"];
+    
+    return YES;
+}
+
+
 @end

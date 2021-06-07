@@ -40,4 +40,13 @@ extern NSString *kDownloadExtension;
 extern NSString *kDefaultDownloadURL;
 extern NSString *kDefaultDownloadExtension;
 
+
+@protocol Bookmark <NSObject>
+-(BOOL)loadBookmark: (NSDictionary *)bookmark;
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark;
+
+-(void)willLoadBookmark: (NSDictionary *)bookmark;
+-(void)didLoadBookmark: (NSDictionary *)bookmark;
+@end
+
 #endif /* Ample_h */

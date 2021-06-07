@@ -60,7 +60,10 @@ static NSArray *DeepCopyArray(NSArray *src) {
 -(void)setKeyPath: (NSString *)path;
 -(void)buildArgs: (NSMutableArray *)args;
 -(void)buildMedia: (Media *)media;
--(void)buildSerial: (NSMutableArray *)array;
+-(void)buildSerial: (NSMutableDictionary *)array;
+
+
+-(void)reserialize: (NSDictionary *)dict;
 
 //-(BOOL)loadDeviceSlots: (NSDictionary *)devices;
 
@@ -138,14 +141,46 @@ static NSDictionary *IndexMap = nil;
     return rv;
 }
 
--(NSArray *)serialize {
+-(NSDictionary *)serialize {
     if (_selectedIndex < 0) return nil;
     
-    NSMutableArray *array = [NSMutableArray new];
+    NSMutableDictionary *d = [NSMutableDictionary new];
     SlotOption *option = [_options objectAtIndex: _selectedIndex];
-    [option buildSerial: array];
-    return array;
+    [option buildSerial: d];
+    //if (![d count]) return nil; //?
+    return d;
 }
+
+-(void)reserialize: (NSDictionary *)dict {
+    // { 'sl3' : 'uthernet' }
+
+    // special case for smartport since the name isn't used.
+    if (_index == kSMARTPORT) {
+        SlotOption *option = [_options objectAtIndex: _selectedIndex];
+        [option reserialize: dict];
+        return;
+    }
+    NSString *value = [dict objectForKey: _name];
+    if (!value) {
+        //[self reset];
+        return;
+    }
+    // find it...
+    BOOL found = NO;
+    unsigned ix = 0;
+    for (SlotOption *option in _options) {
+        if ([value isEqualToString: [option value]]) {
+            
+            [self setSelectedIndex: ix];
+            [option reserialize: dict];
+            found = YES;
+            break;
+        }
+        ++ix;
+    }
+    
+}
+
 
 -(Media)selectedMedia {
 
@@ -457,14 +492,26 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     }
 }
 
+-(void)reserialize: (NSDictionary *)dict {
+    
+#if 0
+    NSString *value = [dict objectForKey: _keyPath];
+    if (value) {
+        // don't need to do anything since set by slot.
+    }
+#endif
+    for (Slot *s in _children) {
+        [s reserialize: dict];
+    }
+}
 
--(void)buildSerial: (NSMutableArray *)array {
+-(void)buildSerial: (NSMutableDictionary *)dict {
 
     if (!_default)
-        [array addObject: _keyPath];
+        [dict setObject: _value forKey: _keyPath];
 
     for (Slot *s in _children)
-        [[s selectedItem] buildSerial: array];
+        [[s selectedItem] buildSerial: dict];
 
 }
 

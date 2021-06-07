@@ -56,20 +56,25 @@
             }
         </style>
         <script type="text/javascript">
-          function macbook(onoff) {
+          /* os x 10.11 */
+          if (window.NodeList && !NodeList.prototype.forEach) {
+             NodeList.prototype.forEach = Array.prototype.forEach;
+          }
+
+        function macbook(onoff) {
             var nodes = document.querySelectorAll("[data-macbook]");
-            nodes.forEach( (e) => {
+            nodes.forEach( function(e) {
               var m = (e.dataset.macbook == "true");
               e.hidden = m ^ onoff;
             });
           }
-          window.addEventListener('load', (event)=> {
+          window.addEventListener('load', function(event) {
             macbook(false);
 
             var e = document.getElementById('macbook');
             if (e) {
               e.checked = false;
-              e.addEventListener('click', (event) => {
+              e.addEventListener('click', function (event) {
                 macbook(e.checked);
               });
             }

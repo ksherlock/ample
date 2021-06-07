@@ -28,11 +28,13 @@
 
 -(void)viewDidMoveToSuperview {
     return;
+#if 0
     if (_trackingRect) {
         [self removeTrackingRect: _trackingRect];
     }
     NSRect rect = [_dragHandle frame];
     _trackingRect = [self addTrackingRect: rect owner: self userData: NULL assumeInside:NO];
+#endif
 }
 
 -(void)mouseEntered:(NSEvent *)event {

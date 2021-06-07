@@ -15,6 +15,7 @@
 
 #import "AutocompleteControl.h"
 #import "SoftwareList.h"
+#import "BookmarkManager.h"
 
 #include <sys/stat.h>
 #include <wctype.h>
@@ -23,7 +24,9 @@ static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
 
 
-@interface LaunchWindowController ()
+@interface LaunchWindowController () {
+    BOOL _loadingBookmark;
+}
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
 @property (strong) IBOutlet MachineViewController *machineViewController;
@@ -41,20 +44,22 @@ static NSString *kContextMachine = @"kContextMachine";
 @property BOOL mameSquarePixels;
 @property BOOL mameMouse;
 @property BOOL mameSamples;
+@property BOOL mameBGFX;
 
 @property BOOL mameAVI;
 @property BOOL mameWAV;
 @property BOOL mameVGM;
+@property BOOL mameBitBanger;
+@property BOOL mameShareDirectory;
 
 @property NSString *mameAVIPath;
 @property NSString *mameWAVPath;
 @property NSString *mameVGMPath;
-@property NSString *mameShareDirectory;
-@property NSString *mameBitBanger;
+@property NSString *mameShareDirectoryPath;
+@property NSString *mameBitBangerPath;
 
 @property NSInteger mameSpeed;
 
-@property BOOL mameBGFX;
 @property NSInteger mameBackend;
 @property NSInteger mameEffects;
 
@@ -64,6 +69,12 @@ static NSString *kContextMachine = @"kContextMachine";
 @property (weak) IBOutlet AutocompleteControl *softwareListControl;
 @property SoftwareSet *softwareSet;
 @property Software *software;
+
+
+
+@property (strong) IBOutlet NSWindow *addBookmarkWindow;
+@property (strong) NSString *bookmarkName;
+@property (weak) IBOutlet NSTextField *bookmarkTextField;
 @end
 
 @interface LaunchWindowController (SoftwareList)
@@ -72,17 +83,84 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @end
 
+
+@interface LaunchWindowController (Bookmark)
+
+-(IBAction)addBookmark:(id)sender;
+
+@end
+
+#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
+static NSString *BackendStrings[] = {
+    @"",
+    @"metal",
+    @"opengl",
+};
+
+static NSString *EffectsStrings[] = {
+    @"-",
+    @"unfiltered",
+    @"hlsl",
+    @"crt-geom",
+    @"crt-geom-deluxe",
+    @"lcd-grid",
+};
+
+
+static int BackEndIndex(NSString *str) {
+    if (!str) return -1;
+    for (int i = 1; i < SIZEOF(BackendStrings); ++i) {
+        if ([str isEqualToString: BackendStrings[i]]) return i;
+    }
+    return -1;
+}
+
+static int EffectsIndex(NSString *str) {
+    if (!str) return -1;
+    for (int i = 1; i < SIZEOF(EffectsStrings); ++i) {
+        if ([str isEqualToString: EffectsStrings[i]]) return i;
+    }
+    return -1;
+}
+
+
 @implementation LaunchWindowController
 
 -(NSString *)windowNibName {
     return @"LaunchWindow";
 }
 
--(void)windowWillLoad {
+-(void)reset {
+    [self setMameMachine: nil];
+
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
     [self setMameMouse: NO];
     [self setMameSamples: YES];
+    [self setMameSquarePixels: NO];
+    [self setMameDebug: NO];
+
+    [self setMameBackend: 0];
+    [self setMameEffects: 0];
+
+    [self setMameBitBangerPath: nil];
+    [self setMameShareDirectoryPath: nil];
+    [self setMameAVIPath: nil];
+    [self setMameWAVPath: nil];
+    [self setMameVGMPath: nil];
+
+    [self setMameAVI: NO];
+    [self setMameWAV: NO];
+    [self setMameVGM: NO];
+    [self setMameBitBanger: NO];
+    [self setMameShareDirectory: NO];
+
+    [self setSoftware: nil];
+}
+
+-(void)windowWillLoad {
+
+    [self reset];
 }
 
 - (void)windowDidLoad {
@@ -97,14 +175,16 @@ static NSString *kContextMachine = @"kContextMachine";
     
 
     NSArray *keys = @[
-        @"mameMachine", @"mameSquarePixels", @"mameWindowMode",
+        //@"mameMachine", // - handled
+        @"mameSquarePixels", @"mameWindowMode",
         @"mameMouse", @"mameSamples",
         @"mameDebug",
         @"mameSpeed",
         @"mameAVI", @"mameAVIPath",
         @"mameWAV", @"mameWAVPath",
         @"mameVGM", @"mameVGMPath",
-        @"mameShareDirectory", @"mameBitBanger",
+        @"mameShareDirectory", @"mameShareDirectoryPath",
+        @"mameBitBanger", @"mameBitBangerPath",
         @"mameBGFX", @"mameBackend", @"mameEffects",
         @"software",
     ];
@@ -132,8 +212,11 @@ static NSString *kContextMachine = @"kContextMachine";
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
 
     if (context == (__bridge void *)kMyContext) {
+        if (_loadingBookmark) return;
         [self buildCommandLine];
     } else if (context == (__bridge void *)kContextMachine) {
+        if (_loadingBookmark) return;
+
         NSString *machine = [_machineViewController machine];
         [self setMameMachine: machine];
         [_slotController setMachine: machine];
@@ -298,11 +381,8 @@ static NSString *ShellQuote(NSString *s) {
     [argv addObject: _mameMachine];
     
     if (_software) {
-        // todo -- need to include source as well.
-        NSString *name = [_software name];
-        if (![_softwareSet nameIsUnique: name])
-            name = [_software fullName];
-        [argv addObject: name];
+        NSString *name = [_softwareSet nameForSoftware: _software];
+        if (name) [argv addObject: name];
     }
 
     // -confirm_quit?
@@ -365,25 +445,12 @@ static NSString *ShellQuote(NSString *s) {
 
     if (_mameBGFX) {
         if (_mameBackend) {
-            static NSString *Names[] = {
-                @"-",
-                @"metal",
-                @"opengl",
-            };
             [argv addObject: @"-bgfx_backend"];
-            [argv addObject: Names[_mameBackend]];
+            [argv addObject: BackendStrings[_mameBackend]];
         }
         if (_mameEffects) {
-            static NSString *Names[] = {
-                @"-",
-                @"unfiltered",
-                @"hlsl",
-                @"crt-geom",
-                @"crt-geom-deluxe",
-                @"lcd-grid",
-            };
             [argv addObject: @"-bgfx_screen_chains"];
-            [argv addObject: Names[_mameEffects]];
+            [argv addObject: EffectsStrings[_mameEffects]];
         }
 
     } else {
@@ -433,14 +500,14 @@ static NSString *ShellQuote(NSString *s) {
         }
     }
     
-    if (_mameShareDirectory && [_mameShareDirectory length]) {
+    if (_mameShareDirectory && [_mameShareDirectoryPath length]) {
         [argv addObject: @"-share_directory"];
-        [argv addObject: _mameShareDirectory];
+        [argv addObject: _mameShareDirectoryPath];
     }
     
-    if (_mameBitBanger && [_mameBitBanger length]) {
+    if (_mameBitBanger && [_mameBitBangerPath length]) {
         [argv addObject: @"-bitbanger"];
-        [argv addObject: _mameBitBanger];
+        [argv addObject: _mameBitBangerPath];
     }
     
     [self setCommandLine: JoinArguments(argv, nil)];
@@ -453,7 +520,12 @@ static NSString *ShellQuote(NSString *s) {
     if (cmd == @selector(exportShellScript:)) {
         return [_args count] ? YES : NO;
     }
-    return [super validateMenuItem: menuItem];
+    if (cmd == @selector(addBookmark:)) {
+        return _mameMachine ? YES : NO;
+    }
+    
+    return YES;
+    //return [super validateMenuItem: menuItem]; // not implemented?
 }
 
 # pragma mark - IBActions
@@ -512,6 +584,14 @@ static NSString *ShellQuote(NSString *s) {
     }];
 }
 
+
+-(IBAction)reset:(id)sender {
+    
+    [self reset];
+    [_slotController resetSlots: sender];
+    [_mediaController reset: sender];
+}
+
 @end
 
 
@@ -539,5 +619,209 @@ static NSString *ShellQuote(NSString *s) {
     //NSLog(@"%@", o);
     [self setSoftware: o];
 }
+
+@end
+
+
+@implementation LaunchWindowController (Bookmark)
+
+-(IBAction)addBookmark:(id)sender {
+    
+    if (!_mameMachine) return;
+    
+    NSString *name = nil;
+    NSDictionary *d = MameMachine(_mameMachine);
+    if (d) name = [d objectForKey:@"description"];
+    if (!name) name = _mameMachine;
+
+        
+    if (_software) {
+        name = [name stringByAppendingFormat: @" - %@", [_software title]];
+    }
+    [self setBookmarkName: name];
+    [_bookmarkTextField selectText: nil];
+    [[self window] beginSheet: _addBookmarkWindow completionHandler:  nil];
+}
+
+-(IBAction)bookmarkCancel:(id)sender {
+    [[self window] endSheet: _addBookmarkWindow];
+    [_addBookmarkWindow orderOut: nil];
+}
+
+-(IBAction)bookmarkSave:(id)sender {
+    
+    
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+
+    if (![bm validateName: _bookmarkName]) {
+        [_bookmarkTextField selectText: nil];
+        NSBeep();
+        return;
+    }
+
+    
+    //NSLog(@"%@", _bookmarkName);
+    NSDictionary *d = [self makeBookmark];
+    //NSLog(@"%@", d);
+    
+    [bm saveBookmark: d name: _bookmarkName];
+    
+    [[self window] endSheet: _addBookmarkWindow];
+    [_addBookmarkWindow orderOut: nil];
+    [self setBookmarkName: nil];
+}
+
+
+-(IBAction)bookmarkMenu:(id)sender {
+    
+    Class StringClass = [NSString class];
+    Class NumberClass = [NSNumber class];
+    
+    NSURL *url = [sender representedObject];
+    if (!url) return;
+    
+    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
+    if (!d) return; // oops...
+    
+    NSString *machine = [d objectForKey: @"machine"];
+    if (!machine) return;
+
+    _loadingBookmark = YES;
+    [_machineViewController willLoadBookmark: d];
+    [_slotController willLoadBookmark: d];
+    [_mediaController willLoadBookmark: d];
+
+    [self reset];
+    
+    [self setMameMachine: machine];
+    [self updateSoftwareList];
+    [_softwareListControl setObjectValue: nil]; // will reload the completion list.
+    
+    NSString *str;
+
+    str = [d objectForKey: @"software"];
+    if ([str isKindOfClass: StringClass]) {
+        Software *s = [_softwareSet softwareForName: str];
+        if (s) {
+            [_softwareListControl setObjectValue: s];
+            [self setSoftware: s];
+        }
+        
+    }
+
+    // Boolean values.
+    NSNumber *n;
+#define _(a,b) n = [d objectForKey: a]; if ([n isKindOfClass: NumberClass]) [self b : [n boolValue]]
+  
+    _(@"debug", setMameDebug);
+    _(@"squarePixels", setMameSquarePixels);
+    _(@"mouse", setMameMouse);
+    _(@"samples", setMameSamples);
+    _(@"bgfx", setMameBGFX);
+    
+    // numeric values
+    // check if in range?
+#undef _
+    #define _(a,b) n = [d objectForKey: a]; if ([n isKindOfClass: NumberClass]) [self b : [n intValue]]
+
+    _(@"windowMode", setMameWindowMode);
+    _(@"speed", setMameSpeed);
+    
+
+    // string values
+#undef _
+    #define _(a,b) str = [d objectForKey: a]; if ([str isKindOfClass: StringClass]) [self b : str]
+
+    _(@"shareDirectory", setMameShareDirectoryPath);
+    _(@"bitBanger", setMameBitBangerPath);
+    if ([_mameShareDirectoryPath length]) [self setMameShareDirectory: YES];
+    if ([_mameBitBangerPath length]) [self setMameBitBanger: YES];
+
+    _(@"AVIPath", setMameAVIPath);
+    _(@"WAVPath", setMameWAVPath);
+    _(@"VGMPath", setMameVGMPath);
+    if ([_mameAVIPath length]) [self setMameAVI: YES];
+    if ([_mameVGMPath length]) [self setMameVGM: YES];
+    if ([_mameWAVPath length]) [self setMameWAV: YES];
+
+
+    str = [d objectForKey: @"backend"];
+    if ([str isKindOfClass: [NSString class]]) {
+        int ix = BackEndIndex(str);
+        if (ix >= 0) [self setMameBackend: ix];
+    }
+
+    str = [d objectForKey: @"effects"];
+    if ([str isKindOfClass: [NSString class]]) {
+        int ix = EffectsIndex(str);
+        if (ix >= 0) [self setMameEffects: ix];
+    }
+    
+    [_machineViewController loadBookmark: d];
+    [_slotController loadBookmark: d];
+    [_mediaController loadBookmark: d];
+    
+    [_machineViewController didLoadBookmark: d];
+    [_slotController didLoadBookmark: d];
+    [_mediaController didLoadBookmark: d];
+
+    _loadingBookmark = NO;
+
+    [self buildCommandLine];
+}
+
+-(NSDictionary *)makeBookmark {
+    
+    [[self window] makeFirstResponder: nil];
+
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    
+    [dict setObject: _mameMachine forKey: @"machine"];
+    [dict setObject: @232 forKey: @"version"];
+    [_machineViewController saveBookmark: dict];
+    [_slotController saveBookmark: dict];
+    [_mediaController saveBookmark: dict];
+
+    
+    // Boolean values
+#undef _
+#define _(v,k) [dict setObject: v ? (NSObject *)kCFBooleanTrue : (NSObject *)kCFBooleanFalse forKey: k]
+
+    _(_mameDebug, @"debug");
+    _(_mameSquarePixels, @"squarePixels");
+    _(_mameMouse, @"mouse");
+    _(_mameSamples, @"samples");
+    _(_mameBGFX, @"bgfx");
+
+    // numeric values
+    #undef _
+    #define _(v,k) [dict setObject: @(v) forKey: k]
+    _(_mameWindowMode, @"windowMode");
+    _(_mameSpeed, @"speed");
+
+    // String values
+#undef _
+#define _(v,k) [dict setObject: v forKey: k]
+
+    if (_mameAVI && [_mameAVIPath length]) _(_mameAVIPath, @"AVIPath");
+    if (_mameWAV && [_mameWAVPath length]) _(_mameWAVPath, @"WAVPath");
+    if (_mameVGM && [_mameVGMPath length]) _(_mameVGMPath, @"VGMPath");
+
+    if (_mameShareDirectory && [_mameShareDirectoryPath length]) _(_mameShareDirectoryPath, @"shareDirectory");
+    if (_mameBitBanger && [_mameBitBangerPath length]) _(_mameBitBangerPath, @"bitBanger");
+
+    
+    if (_software) _([_software fullName], @"software");
+
+    
+    if (_mameBackend) _(BackendStrings[_mameBackend], @"backend");
+    if (_mameEffects) _(EffectsStrings[_mameEffects], @"effects");
+
+    
+    return dict;
+
+#undef _
+}
+
 
 @end

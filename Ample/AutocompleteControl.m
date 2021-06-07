@@ -32,6 +32,10 @@ Todo --
 @property (weak) AutocompleteControl *parent;
 
 -(void)reset;
+-(void)reset: (id<AutocompleteItem>)value;
+-(void)setItems:(NSArray<id<AutocompleteItem>> *)items;
+-(void)setItems:(NSArray<id<AutocompleteItem>> *)items value: (id<AutocompleteItem>)value;
+
 @end
 
 
@@ -96,27 +100,37 @@ Todo --
 }
 
 -(void)setStringValue:(NSString *)stringValue {
-    [super setStringValue: stringValue];
-    if (_value && [[_value menuTitle] isEqualToString: stringValue] == NO)
+    [super setStringValue: stringValue ? stringValue : @""];
+    if (_value && [[_value menuTitle] isEqualToString: stringValue] == NO) {
+        // post change notification?
         _value = nil;
+        [_menuView reset];
+    }
     
+    [self fixTextColor: _editing];
     // todo -- search for a matching item, update text color.
 }
 
+// todo -- _menuView has second copy of value, need to update that.
 -(void)setObjectValue:(id)objectValue {
     if (_value == objectValue) return;
     if (![objectValue conformsToProtocol: @protocol(AutocompleteItem)]) {
         _value = nil;
+        [_menuView reset];
         [super setStringValue: @""];
+        [self fixTextColor: _editing];
         return;
     }
     _value = objectValue;
     if (!_value) [super setStringValue: @""]; //
     else {
         [super setStringValue: [_value menuTitle]];
-        NSArray *array = [_autocompleteDelegate autocomplete: self completionsForItem: _value];
-        [_menuView setItems: array];
+        [_menuView reset: _value];
+        // TODO -- menu view currently uses text search.
+        //NSArray *array = [_autocompleteDelegate autocomplete: self completionsForItem: _value];
+        //[_menuView setItems: array value: _value];
     }
+    [self fixTextColor: NO];
 }
 
 -(BOOL)valid {
@@ -377,6 +391,23 @@ Todo --
         return YES;
     }
     
+    if (commandSelector == @selector(scrollPageDown:)) {
+        if ([_panel isVisible]) {
+            [_menuView scrollPageDown: textView];
+        } else {
+            [self updateSuggestions];
+        }
+        return YES;
+    }
+    if (commandSelector == @selector(scrollPageUp:)) {
+        if ([_panel isVisible]) {
+            [_menuView scrollPageUp: textView];
+        } else {
+            [self updateSuggestions];
+        }
+        return YES;
+    }
+    
     //NSLog(@"%@", NSStringFromSelector(commandSelector));
     return NO;
 }
@@ -468,14 +499,24 @@ static CGFloat HeightForItems(NSUInteger count) {
     _items = nil;
 }
 
--(void)setItems:(NSArray *)items {
-    if (_items == items) return;
+-(void)reset: (id<AutocompleteItem>)value {
+    [self invalidateRow: _index];
+    _index = -1;
+    _items = nil;
+    _value = value;
+}
+
+-(void)setItems:(NSArray *)items value: (id<AutocompleteItem> )value {
+    if (_items == items && _value == value) return;
     _items = [items copy];
     _index = -1;
     _count = [items count];
-
+    _value = value;
     
-    if (!_items) return;
+    if (!_items) {
+        _value = nil;
+        return;
+    }
 
     // also check enabled status....
     if (_value) {
@@ -501,8 +542,6 @@ static CGFloat HeightForItems(NSUInteger count) {
             _index = count;
         }
     }
-    
-
     
     NSInteger displayCount = MIN(_count,  MAX_DISPLAY_ITEMS);
     CGFloat newHeight = HeightForItems(displayCount) + 8 ; // 4px top/bottom
@@ -538,6 +577,14 @@ static CGFloat HeightForItems(NSUInteger count) {
     
     //NSLog(@"%@", NSStringFromRect(wFrame));
 }
+
+-(void)setItems:(NSArray<id<AutocompleteItem>> *)items {
+    
+    if (_items == items) return;
+    [self setItems: items value: _value];
+}
+
+
 
 -(id<AutocompleteItem>)itemAtPoint: (NSPoint)point indexPtr: (NSInteger *)indexPtr {
 
@@ -635,6 +682,18 @@ enum {
     [self scrollToRow: index position: ScrollToBottom force: NO];
     [_parent selectItem: _value withSelector: _cmd];
 }
+
+-(void)scrollPageUp:(id)sender {
+    if (_count == 0 || _index <= 0) return;
+
+    
+}
+
+-(void)scrollPageDown:(id)sender {
+    if (_count == 0  || _index == _count - 1) return;
+
+}
+
 
 -(void)insertNewline:(id)sender {
     if (_value) {

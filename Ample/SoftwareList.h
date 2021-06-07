@@ -37,6 +37,10 @@
 +(instancetype)softwareSetForMachine: (NSString *)machine;
 -(BOOL)nameIsUnique: (NSString *)name;
 
+-(NSString *)nameForSoftware: (Software *)software;
+-(Software *)softwareForName: (NSString *)name;
+
+-(BOOL)hasSoftware: (Software *)software;
 @end
 
 

@@ -21,5 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ValidColorTransformer : NSValueTransformer
 @end
 
+@interface StringNotEmptyTransformer : NSValueTransformer
+@end
+
 
 NS_ASSUME_NONNULL_END

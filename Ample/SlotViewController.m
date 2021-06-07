@@ -49,6 +49,7 @@ static unsigned RootKey = 0;
         
     IBOutlet NSPopover *_popover;
     
+    BOOL _loadingBookmark;
 }
 
 - (void)viewDidLoad {
@@ -142,8 +143,10 @@ static unsigned RootKey = 0;
 
 
     [_outlineView reloadData];
-    [self rebuildMedia];
-    [self rebuildArgs];
+    if (!_loadingBookmark) {
+        [self rebuildMedia];
+        [self rebuildArgs];
+    }
 }
 
 -(void)setMachine: (NSString *)machine {
@@ -281,8 +284,10 @@ static unsigned RootKey = 0;
 #ifdef SLOT_TREE
     [_outlineView reloadData];
 #endif
-    [self rebuildMedia];
-    [self rebuildArgs];
+    if (!_loadingBookmark) {
+        [self rebuildMedia];
+        [self rebuildArgs];
+    }
 }
 
 @end
@@ -335,6 +340,63 @@ static unsigned RootKey = 0;
     [item prepareView: v];
     
     return v;
+}
+
+
+@end
+
+
+@implementation SlotViewController (Bookmark)
+
+
+-(void)willLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = YES;
+    [self setMachine: nil];
+}
+-(void)didLoadBookmark:(NSDictionary *)bookmark {
+    _loadingBookmark = NO;
+
+    [self rebuildArgs];
+}
+
+-(BOOL)loadBookmark: (NSDictionary *)bookmark {
+
+    NSDictionary *dict = [bookmark objectForKey: @"slots"];
+    
+    [self setMachine: [bookmark objectForKey: @"machine"]];
+    [self resetSlots: nil];
+
+    for (Slot *item in _root) {
+        [item reserialize: dict];
+        
+        NSInteger index = [item index];
+        if (index >= 0 && index < SLOT_COUNT) {
+            unsigned mask = 1 << index;
+            
+            if ([item defaultIndex] != [item selectedIndex])
+                _slots_explicit |= mask; // grrr.
+        
+            _slot_media[index] = [item selectedMedia];
+            _slot_value[index] = [[item selectedItem] value];
+        }
+
+        ++index;
+    }
+    
+    // need to do it here so it propogate to media view.
+    [self rebuildMedia];
+    return YES;
+}
+-(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
+
+    NSMutableDictionary *slots = [NSMutableDictionary new];
+    for (Slot *item in _root) {
+        NSDictionary *d = [item serialize];
+        [slots addEntriesFromDictionary: d];
+    }
+
+    [bookmark setObject: slots forKey: @"slots"];
+    return YES;
 }
 
 

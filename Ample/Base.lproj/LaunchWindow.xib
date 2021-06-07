@@ -8,6 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LaunchWindowController">
             <connections>
+                <outlet property="addBookmarkWindow" destination="yIt-hP-HBq" id="Qhx-WV-cg4"/>
+                <outlet property="bookmarkTextField" destination="fAl-Vn-x1w" id="GNr-j6-BiQ"/>
                 <outlet property="machineView" destination="oVt-eD-aaj" id="Q9V-Kr-6GN"/>
                 <outlet property="machineViewController" destination="RgH-d9-xl8" id="DIa-h0-6y2"/>
                 <outlet property="mediaController" destination="t7c-zy-czN" id="a7d-HC-TWx"/>
@@ -123,7 +125,7 @@ DQ
                                             </connections>
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-FM-Agh">
-                                            <rect key="frame" x="382" y="87" width="172" height="25"/>
+                                            <rect key="frame" x="382" y="87" width="174" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dsm-bi-Txy" id="mBS-h4-BWC">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -239,7 +241,7 @@ DQ
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-yK-2ZK">
                                             <rect key="frame" x="15" y="91" width="43" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Speed" id="D9w-Mz-PXs">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -247,7 +249,7 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-gG-fPb">
-                                            <rect key="frame" x="62" y="86" width="107" height="25"/>
+                                            <rect key="frame" x="62" y="86" width="109" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="yoI-Ra-evu" id="M40-f0-awc">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -300,7 +302,7 @@ DQ
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-ZJ-8kx">
                                             <rect key="frame" x="132" y="59" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.wav" drawsBackground="YES" id="Xqc-zw-28b">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.wav" drawsBackground="YES" usesSingleLineMode="YES" id="Xqc-zw-28b">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -317,7 +319,7 @@ DQ
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-5I-D1H">
                                             <rect key="frame" x="132" y="28" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.vgm" drawsBackground="YES" id="xGs-Mi-wzj">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.vgm" drawsBackground="YES" usesSingleLineMode="YES" id="xGs-Mi-wzj">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -342,7 +344,7 @@ DQ
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-PS-Hw8">
                                             <rect key="frame" x="132" y="90" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.avi" drawsBackground="YES" id="iY4-FF-x2e">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.avi" drawsBackground="YES" usesSingleLineMode="YES" id="iY4-FF-x2e">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -378,13 +380,14 @@ DQ
                                         <textField toolTip="path or socket.address:port" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-1O-bDR">
                                             <rect key="frame" x="132" y="90" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="socket.127.0.0.1:23 or /path/to/file" drawsBackground="YES" id="6d8-LZ-wh1">
-                                                <font key="font" usesAppearanceFont="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="socket.127.0.0.1:23 or /path/to/file" drawsBackground="YES" usesSingleLineMode="YES" id="6d8-LZ-wh1">
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameBitBanger" id="O76-B6-FhP">
+                                                <binding destination="-2" name="enabled" keyPath="self.mameBitBanger" id="tcz-38-yaz"/>
+                                                <binding destination="-2" name="value" keyPath="self.mameBitBangerPath" id="jLz-NS-hFB">
                                                     <dictionary key="options">
                                                         <string key="NSNullPlaceholder">socket.127.0.0.1:23 or /path/to/file</string>
                                                     </dictionary>
@@ -394,37 +397,42 @@ DQ
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDW-FX-9az">
                                             <rect key="frame" x="132" y="59" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/directory/" drawsBackground="YES" id="ykl-aj-n1L">
-                                                <font key="font" usesAppearanceFont="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/directory/" drawsBackground="YES" usesSingleLineMode="YES" id="ykl-aj-n1L">
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameShareDirectory" id="fqw-G0-t5P">
+                                                <binding destination="-2" name="enabled" keyPath="self.mameShareDirectory" id="bPv-hU-XgK"/>
+                                                <binding destination="-2" name="value" keyPath="self.mameShareDirectoryPath" id="ddj-BN-tsY">
                                                     <dictionary key="options">
                                                         <string key="NSNullPlaceholder">/path/to/directory/</string>
                                                     </dictionary>
                                                 </binding>
                                             </connections>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPk-SB-lIF">
-                                            <rect key="frame" x="15" y="92" width="71" height="16"/>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNn-Lq-1lv">
+                                            <rect key="frame" x="15" y="91" width="81" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Bit Banger:" id="9jA-4x-Abr">
+                                            <buttonCell key="cell" type="check" title="Bitbanger" bezelStyle="regularSquare" imagePosition="left" inset="2" id="EEl-hT-bOK">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upA-x5-LVd">
-                                            <rect key="frame" x="15" y="61" width="103" height="16"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameBitBanger" id="fTq-ke-gcc"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-nr-wns">
+                                            <rect key="frame" x="15" y="60" width="117" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Share Directory:" id="RmQ-pY-o5K">
+                                            <buttonCell key="cell" type="check" title="Share Directory" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xmA-1v-wU7">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameShareDirectory" id="x3D-ho-u4v"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -487,6 +495,78 @@ DQ
         <viewController title="Media View" nibName="MediaView" id="t7c-zy-czN" customClass="MediaViewController"/>
         <viewController title="Slot View" nibName="SlotView" id="lyS-mc-3Tf" customClass="SlotViewController"/>
         <customObject id="RgH-d9-xl8" customClass="MachineViewController"/>
+        <window title="Add Bookmark" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="yIt-hP-HBq">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="462" height="116"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" wantsLayer="YES" id="WVd-g4-Tbl">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gho-Xy-rn4">
+                        <rect key="frame" x="358" y="13" width="90" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vxo-rD-aMe">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="bookmarkSave:" target="-2" id="wLF-LE-5RO"/>
+                            <binding destination="-2" name="enabled" keyPath="bookmarkName" id="U5R-gU-1bE">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">StringNotEmptyTransformer</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3sv-Kd-Ep5">
+                        <rect key="frame" x="268" y="13" width="90" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jaa-RY-PAg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="bookmarkCancel:" target="-2" id="uWM-vs-hz7"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fO-x7-Gft">
+                        <rect key="frame" x="18" y="80" width="103" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Add Bookmark…" id="AZS-JR-SNt">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-Vn-x1w">
+                        <rect key="frame" x="20" y="49" width="422" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="bookmark name" drawsBackground="YES" id="Enq-2z-cle">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="bookmarkName" id="84v-el-4Uk">
+                                <dictionary key="options">
+                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                    <string key="NSNullPlaceholder">bookmark name</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="130" y="70"/>
+        </window>
     </objects>
     <resources>
         <image name="NSAppleMenuImage" width="11" height="14"/>
