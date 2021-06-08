@@ -253,19 +253,6 @@
 
 @implementation DiskImagesWindowController (TableView)
 
-#if 0
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return 5; //[_data count];
-}
-
-- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    
-    NSTableCellView *v = [tableView makeViewWithIdentifier: @"PathCell" owner: self];
-    
-    return v;
-}
-#endif
-
 
 -(id<NSPasteboardWriting>)tableView:(NSTableView *)tableView pasteboardWriterForRow:(NSInteger)row {
     
