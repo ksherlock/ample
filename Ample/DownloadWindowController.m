@@ -90,6 +90,9 @@ enum {
 @property NSUInteger status;
 @property NSUInteger index;
 
+@property (readonly) NSColor *titleColor;
+@property (readonly) NSColor *descriptionColor;
+
 
 -(void)cancelDownload;
 -(void)beginDownloadWithTask:(NSURLSessionDownloadTask *)task;
@@ -98,12 +101,35 @@ enum {
 @end
 
 
+@interface DownloadItemArrayController : NSArrayController
+
+@property(readonly, copy) NSArray<NSString *> *automaticRearrangementKeyPaths;
+
+@end
+
+@implementation DownloadItemArrayController
+
+-(NSArray<NSString *> *)automaticRearrangementKeyPaths {
+    return @[@"localURL"]; // , @"error", @"task", @"statusDescription"];
+}
+
+
+@end
+
 
 @interface DownloadWindowController ()
 @property (weak) IBOutlet NSTableView *tableView;
 @property (weak) IBOutlet NSPopUpButton *formatButton;
 @property (weak) IBOutlet NSTextField *downloadField;
 @property NSString *downloadExtension;
+
+/* filter buttons */
+@property (weak) IBOutlet NSButton *allFilterButton;
+@property (weak) IBOutlet NSButton *missingFilterButton;
+
+@property (strong) IBOutlet NSArrayController *arrayController;
+
+
 
 @end
 
@@ -117,6 +143,8 @@ enum {
     NSURLSession *_session;
     NSMutableDictionary *_taskIndex;
     NSUserDefaults *_defaults;
+    
+    NSArray<NSButton *> *_filterButtons;
 }
 
 +(instancetype)sharedInstance {
@@ -166,6 +194,12 @@ enum {
     [window setRestorationClass: [self class]];
 #endif
     
+    _filterButtons = @[
+        _allFilterButton,
+        _missingFilterButton
+    ];
+    
+
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
     NSError *error = nil;
@@ -217,6 +251,7 @@ enum {
     }
     _items = tmp;
     [self refreshROMs: nil];
+    [_arrayController setContent: _items];
  
     //[_tableView reloadData];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -299,8 +334,10 @@ enum {
 -(DownloadItem *)clickedItem {
     NSInteger row = [_tableView clickedRow];
     if (row < 0 || row >= [_items count]) return nil;
-    return [_items objectAtIndex: row];
+    return [[_arrayController arrangedObjects] objectAtIndex: row];
+    //return [_items objectAtIndex: row];
 }
+#if 0
 -(void)redrawRow: (NSUInteger)row {
     
     //NSRect r = [_tableView rectOfRow: row];
@@ -311,7 +348,7 @@ enum {
     
     [_tableView reloadDataForRowIndexes: rIx columnIndexes: cIx];
 }
-
+#endif
 
 -(void)initializeExtensionMenu {
     
@@ -350,7 +387,7 @@ enum {
     [self setCurrentCount: 0];
     [self setActive: NO];
 
-    [_tableView reloadData];
+    //[_tableView reloadData];
     //[_tableView setNeedsDisplay: YES]; // doesn't work...
 }
 
@@ -368,7 +405,7 @@ enum {
     
     if (delta) {
         [self setActive: YES];
-        [_tableView reloadData];
+        //[_tableView reloadData];
     }
 }
 - (IBAction)showRomFolder:(id)sender {
@@ -399,11 +436,10 @@ enum {
             [item setLocalURL: [NSURL fileURLWithPath: path]];
             continue;
         }
-
-
+        
+        [item setStatus: ItemMissing];
+        [item setLocalURL: nil];
     }
-    // only needed if items aren't bound.
-    [_tableView reloadData];
 }
 
 - (IBAction)showInFinder:(id)sender {
@@ -422,14 +458,14 @@ enum {
 
     [self downloadItem: item];
     [self setActive: YES];
-    [self redrawRow: [item index]];
+    //[self redrawRow: [item index]];
 }
 - (IBAction)cancel:(id)sender {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
 
     [item cancelDownload];
-    [self redrawRow: [item index]];
+    //[self redrawRow: [item index]];
 }
 
 // binding screws up with placeholder.
@@ -448,6 +484,36 @@ enum {
 - (IBAction)downloadExtensionChanged:(id)sender {
     [_defaults setValue: _downloadExtension forKey: kDownloadExtension];
 }
+
+
+- (IBAction)filterButton:(id)sender {
+
+    NSPredicate *p = nil;
+    NSUInteger tag = [sender tag];
+    [sender setState: NSControlStateValueOn];
+
+
+
+    for (NSButton *b in _filterButtons) {
+        if (b != sender) [b setState: NSControlStateValueOff];
+    }
+    switch (tag) {
+        case 1: // all
+        default:
+            [_arrayController setFilterPredicate: nil];
+            break;
+        case 2: // missing.
+            p = [NSPredicate predicateWithBlock: ^BOOL(DownloadItem *item, NSDictionary *bindings){
+                NSURL *localURL = [item localURL];
+                return localURL == nil;
+            }];
+
+            [_arrayController setFilterPredicate: p];
+            break;
+    }
+}
+
+
 
 #pragma mark - NSURLSessionDelegate
 
@@ -495,9 +561,9 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
         
         if (item) {
             [item completeWithError: error];
-            NSUInteger row = [item index];
+            //NSUInteger row = [item index];
             
-            [self redrawRow: row];
+            //[self redrawRow: row];
         }
     });
     
@@ -536,90 +602,45 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
 
 @end
 
-@implementation DownloadWindowController (Table)
-
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return [_items count];
-}
-
-- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    
-    return [_items objectAtIndex: row];
-}
 
 
-- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
- 
-    DownloadItem *item = [_items objectAtIndex: row];
-    DownloadTableCellView *v = [tableView makeViewWithIdentifier: @"DownloadCell" owner: self];
-    
-    NSTextField *tf;
-    NSColor *redColor = [NSColor systemRedColor];
-    
-    tf = [v textField];
-    [[v textField] setObjectValue: [item name]];
-    
-    if ([item localURL]) {
-        [tf setTextColor: nil];
-    } else {
-        [tf setTextColor: redColor];
-    }
-    
-    tf = [v statusTextField];
-    [tf setObjectValue: [item statusDescription]];
-    if ([item error]) {
-        [tf setTextColor: redColor];
-    } else {
-        [tf setTextColor: nil];
-        //if ([tableView isRowSelected: row]){
-            //[tf setTextColor: [NSColor whiteColor]];
-        //}
-    }
-
-    if ([item task]) {
-        [[v activity] startAnimation: nil];
-    } else {
-        [[v activity] stopAnimation: nil];
-    }
-    
-    
-    return v;
-}
-
-
-@end
-
-
-@implementation DownloadTableCellView
-
-@end
 
 @implementation DownloadItem
 
 -(void)beginDownloadWithTask:(NSURLSessionDownloadTask *)task {
-    _task = task;
-    _error = nil;
-    if (task) _status = ItemDownloading;
+    [self setTask: task];
+    [self setError: nil];
+    if (task) [self setStatus: ItemDownloading];
 }
 
 -(void)cancelDownload {
     if (!_task) return;
+
     [_task cancel];
-    _task = nil;
-    _status = ItemCanceled;
+    [self setTask: nil];
+    [self setStatus: ItemCanceled];
 }
 
 -(void)completeWithError: (NSError *)error {
-    _task = nil;
+    [self setTask: nil];
     if (error) {
-        _error = error;
-        _status = ItemError;
+        [self setError: error];
+        [self setStatus: ItemError];
     } else {
         // what if there was an error moving it?
-        _error = nil;
-        _status = ItemDownloaded;
+        [self setError: nil];
+        [self setStatus: ItemDownloaded];
     }
 }
+
+#if 0
+// in practice, error and status set concurrently.
++(NSSet *)keyPathsForValuesAffectingStatus {
+    static NSSet *set = nil;
+    if (!set) set = [NSSet setWithObjects: @"error", nil];
+    return set;
+}
+#endif
 
 -(NSString *)statusDescription {
 
@@ -635,6 +656,19 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
 
     if (_status > sizeof(Names)/sizeof(Names[0])) return @"Unknown";
     return Names[_status];
+}
+
++(NSSet *)keyPathsForValuesAffectingTitleColor {
+    return [NSSet setWithObject: @"localURL"];
+}
+-(NSColor *)titleColor {
+    return _localURL ? nil : [NSColor systemRedColor];
+}
++(NSSet *)keyPathsForValuesAffectingDescriptionColor {
+    return [NSSet setWithObject: @"error"];
+}
+-(NSColor *)descriptionColor {
+    return _error ? [NSColor systemRedColor] : nil;
 }
 
 @end
@@ -655,7 +689,7 @@ enum {
 
     NSInteger row = [_tableView clickedRow];
     if (row < 0) return NO;
-    DownloadItem *item = [_items objectAtIndex: row];
+    DownloadItem *item = [[_arrayController arrangedObjects] objectAtIndex: row]; //[_items objectAtIndex: row];
     
     NSUInteger status = [item status];
     switch([menuItem tag]) {

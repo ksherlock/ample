@@ -8,8 +8,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="DownloadWindowController">
             <connections>
+                <outlet property="allFilterButton" destination="Kgj-LP-FsF" id="yub-s9-RVW"/>
+                <outlet property="arrayController" destination="jhO-4z-Qwt" id="GHu-xb-4zU"/>
                 <outlet property="downloadField" destination="sJz-So-jbA" id="WjK-48-FcE"/>
                 <outlet property="formatButton" destination="2Rg-eX-DUq" id="oYo-MG-Sc6"/>
+                <outlet property="missingFilterButton" destination="6c7-tU-3F3" id="89Y-wQ-9pB"/>
                 <outlet property="tableView" destination="FLX-Wt-y53" id="a4O-pk-EAt"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -26,7 +29,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-Qf-4Mw">
-                        <rect key="frame" x="324" y="19" width="56" height="23"/>
+                        <rect key="frame" x="324.5" y="19" width="56" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i6Z-OM-lqE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -69,26 +72,8 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                             <prototypeCellViews>
-                                                <tableCellView identifier="Cell" focusRingType="none" id="aBv-F5-XWo">
-                                                    <rect key="frame" x="1" y="1" width="397" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWm-hb-BXB">
-                                                            <rect key="frame" x="0.0" y="0.0" width="397" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="p71-gJ-vFV">
-                                                                <font key="font" metaFont="system"/>
-                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                            </textFieldCell>
-                                                        </textField>
-                                                    </subviews>
-                                                    <connections>
-                                                        <outlet property="textField" destination="pWm-hb-BXB" id="NNG-rj-AAQ"/>
-                                                    </connections>
-                                                </tableCellView>
-                                                <tableCellView identifier="DownloadCell" focusRingType="none" id="onK-6l-2iV" customClass="DownloadTableCellView">
-                                                    <rect key="frame" x="1" y="20" width="397" height="49"/>
+                                                <tableCellView focusRingType="none" id="onK-6l-2iV">
+                                                    <rect key="frame" x="1" y="1" width="397" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A44-us-TEl">
@@ -99,10 +84,28 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.titleColor" id="0Qx-rz-DEZ"/>
+                                                                <binding destination="onK-6l-2iV" name="value" keyPath="objectValue.name" id="t1L-kM-AW6">
+                                                                    <dictionary key="options">
+                                                                        <string key="NSMultipleValuesPlaceholder">multiple</string>
+                                                                        <string key="NSNoSelectionPlaceholder">no selection</string>
+                                                                        <string key="NSNotApplicablePlaceholder">n/a</string>
+                                                                        <string key="NSNullPlaceholder">null</string>
+                                                                    </dictionary>
+                                                                </binding>
+                                                            </connections>
                                                         </textField>
                                                         <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-UJ-tWi">
                                                             <rect key="frame" x="3" y="29" width="16" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <connections>
+                                                                <binding destination="onK-6l-2iV" name="animate" keyPath="objectValue.task" id="d22-JL-3Z7">
+                                                                    <dictionary key="options">
+                                                                        <string key="NSValueTransformerName">NSIsNotNil</string>
+                                                                    </dictionary>
+                                                                </binding>
+                                                            </connections>
                                                         </progressIndicator>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-hP-QAH">
                                                             <rect key="frame" x="25" y="3" width="371" height="17"/>
@@ -112,20 +115,21 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.descriptionColor" id="KVi-3N-Swm"/>
+                                                                <binding destination="onK-6l-2iV" name="value" keyPath="objectValue.statusDescription" id="yV1-5r-YDh"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
-                                                        <outlet property="activity" destination="jBN-UJ-tWi" id="ZwD-yU-Vne"/>
-                                                        <outlet property="statusTextField" destination="hfu-hP-QAH" id="8Hv-BB-kYA"/>
-                                                        <outlet property="textField" destination="A44-us-TEl" id="Ta5-nd-ed1"/>
+                                                        <outlet property="textField" destination="A44-us-TEl" id="ude-er-Gm4"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <outlet property="dataSource" destination="-2" id="Ghf-k9-bRK"/>
-                                        <outlet property="delegate" destination="-2" id="rpR-0W-4Nu"/>
+                                        <binding destination="jhO-4z-Qwt" name="content" keyPath="arrangedObjects" id="2av-gV-V4K"/>
                                         <outlet property="menu" destination="RJM-21-hjO" id="xpL-0n-1jm"/>
                                     </connections>
                                 </tableView>
@@ -239,6 +243,44 @@
                     </popUpButton>
                 </subviews>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="B60021E6-BFBC-44E6-97DC-120AA9FD3269" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="kpz-W4-xgh">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="tbY-ts-Irb"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="3Kc-zG-IdN"/>
+                    <toolbarItem implicitItemIdentifier="BD743A15-0B61-48FF-9EED-FD8D57EF8459" label="All" paletteLabel="All" tag="1" sizingBehavior="auto" id="Jj0-n8-I5a">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" tag="1" id="Kgj-LP-FsF">
+                            <rect key="frame" x="0.0" y="14" width="74" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="recessed" title="All" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9s7-S1-hW1">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="filterButton:" target="-2" id="gTc-Ul-FYR"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="5B013840-E582-4568-8448-DDD7EE1E5AE2" label="Missing" paletteLabel="Missing" tag="2" sizingBehavior="auto" id="GV4-aX-5Ox">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" tag="2" id="6c7-tU-3F3">
+                            <rect key="frame" x="0.0" y="14" width="74" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="recessed" title="Missing" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ui2-dz-IZj">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="filterButton:" target="-2" id="R6W-hU-oqL"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Jj0-n8-I5a"/>
+                    <toolbarItem reference="GV4-aX-5Ox"/>
+                </defaultToolbarItems>
+            </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
@@ -270,6 +312,7 @@
             </connections>
             <point key="canvasLocation" x="-348" y="164"/>
         </menu>
+        <arrayController objectClassName="DownloadItem" editable="NO" preservesSelection="NO" selectsInsertedObjects="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" automaticallyRearrangesObjects="YES" id="jhO-4z-Qwt" customClass="DownloadItemArrayController"/>
         <userDefaultsController representsSharedInstance="YES" id="721-9N-Bma"/>
     </objects>
     <resources>
