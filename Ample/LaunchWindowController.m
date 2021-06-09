@@ -10,7 +10,7 @@
 #import "LaunchWindowController.h"
 #import "MediaViewController.h"
 #import "SlotViewController.h"
-#import "MachineViewController.h"
+#import "NewMachineViewController.h"
 #import "LogWindowController.h"
 
 #import "AutocompleteControl.h"
@@ -29,7 +29,7 @@ static NSString *kContextMachine = @"kContextMachine";
 }
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
-@property (strong) IBOutlet MachineViewController *machineViewController;
+@property (strong) IBOutlet NewMachineViewController *machineViewController;
 
 @property (weak) IBOutlet NSView *machineView;
 @property (weak) IBOutlet NSView *slotView;
