@@ -163,16 +163,20 @@ static int EffectsIndex(NSString *str) {
     [self reset];
 }
 
+static void AddSubview(NSView *parent, NSView *child) {
+    
+    [child setFrame: [parent bounds]];
+    [parent addSubview: child];
+}
 - (void)windowDidLoad {
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
+    AddSubview(_slotView, [_slotController view]);
+    AddSubview(_mediaView, [_mediaController view]);
+    AddSubview(_machineView, [_machineViewController view]);
 
-    [_slotView addSubview: [_slotController view]];
-    [_mediaView addSubview: [_mediaController view]];
-    [_machineView addSubview: [_machineViewController view]];
-    
 
     NSArray *keys = @[
         //@"mameMachine", // - handled
