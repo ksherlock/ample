@@ -26,6 +26,8 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @interface LaunchWindowController () {
     BOOL _loadingBookmark;
+    NSString *_machine;
+    NSDictionary *_machineDescription;
 }
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
@@ -39,7 +41,7 @@ static NSString *kContextMachine = @"kContextMachine";
 @property NSString *commandLine;
 @property NSArray *args;
 
-@property NSString *mameMachine;
+@property NSString *machine;
 @property BOOL mameDebug;
 @property BOOL mameSquarePixels;
 @property BOOL mameMouse;
@@ -131,7 +133,7 @@ static int EffectsIndex(NSString *str) {
 }
 
 -(void)reset {
-    [self setMameMachine: nil];
+    [self setMachine: nil];
 
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
@@ -222,7 +224,7 @@ static void AddSubview(NSView *parent, NSView *child) {
         if (_loadingBookmark) return;
 
         NSString *machine = [_machineViewController machine];
-        [self setMameMachine: machine];
+        [self setMachine: machine];
         [_slotController setMachine: machine];
         [self updateSoftwareList];
         [self buildCommandLine];
@@ -233,6 +235,21 @@ static void AddSubview(NSView *parent, NSView *child) {
 
 
 
+-(NSString *)machine {
+    return _machine;
+}
+
+-(void)setMachine:(NSString *)machine {
+    if (_machine == machine) return;
+    _machine = machine;
+    _machineDescription = MameMachine(machine);
+
+    NSString *title = _machineDescription
+        ? [NSString stringWithFormat: @"Ample – %@", [_machineDescription objectForKey: @"description"]]
+        : @"Ample";
+
+    [[self window] setTitle: title];
+}
 
 static NSString * JoinArguments(NSArray *argv, NSString *argv0) {
 
@@ -374,7 +391,7 @@ static NSString *ShellQuote(NSString *s) {
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
-    if (!_mameMachine) {
+    if (!_machine) {
         [self setCommandLine: @""];
         return;
     }
@@ -382,7 +399,7 @@ static NSString *ShellQuote(NSString *s) {
     NSMutableArray *argv = [NSMutableArray new];
 
     //[argv addObject: @"mame"];
-    [argv addObject: _mameMachine];
+    [argv addObject: _machine];
     
     if (_software) {
         NSString *name = [_softwareSet nameForSoftware: _software];
@@ -525,7 +542,7 @@ static NSString *ShellQuote(NSString *s) {
         return [_args count] ? YES : NO;
     }
     if (cmd == @selector(addBookmark:)) {
-        return _mameMachine ? YES : NO;
+        return _machine ? YES : NO;
     }
     
     return YES;
@@ -547,7 +564,7 @@ static NSString *ShellQuote(NSString *s) {
     
     NSSavePanel *p = [NSSavePanel savePanel];
     
-    NSString *defaultName = [_mameMachine stringByAppendingString: @".sh"];
+    NSString *defaultName = [_machine stringByAppendingString: @".sh"];
     
     [p setTitle: @"Export Shell Script"];
     [p setExtensionHidden: NO];
@@ -603,7 +620,7 @@ static NSString *ShellQuote(NSString *s) {
 
 -(void)updateSoftwareList {
     
-    _softwareSet = [SoftwareSet softwareSetForMachine: _mameMachine];
+    _softwareSet = [SoftwareSet softwareSetForMachine: _machine];
     
     [_softwareListControl setAutocompleteDelegate: _softwareSet];
     
@@ -631,12 +648,11 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)addBookmark:(id)sender {
     
-    if (!_mameMachine) return;
+    if (!_machine) return;
     
     NSString *name = nil;
-    NSDictionary *d = MameMachine(_mameMachine);
-    if (d) name = [d objectForKey:@"description"];
-    if (!name) name = _mameMachine;
+    if (_machineDescription) name = [_machineDescription objectForKey:@"description"];
+    if (!name) name = _machine;
 
         
     if (_software) {
@@ -697,7 +713,7 @@ static NSString *ShellQuote(NSString *s) {
 
     [self reset];
     
-    [self setMameMachine: machine];
+    [self setMachine: machine];
     [self updateSoftwareList];
     [_softwareListControl setObjectValue: nil]; // will reload the completion list.
     
@@ -780,7 +796,7 @@ static NSString *ShellQuote(NSString *s) {
 
     NSMutableDictionary *dict = [NSMutableDictionary new];
     
-    [dict setObject: _mameMachine forKey: @"machine"];
+    [dict setObject: _machine forKey: @"machine"];
     [dict setObject: @232 forKey: @"version"];
     [_machineViewController saveBookmark: dict];
     [_slotController saveBookmark: dict];

@@ -434,7 +434,7 @@ DQ
                             </tabViewItem>
                         </tabViewItems>
                         <connections>
-                            <binding destination="-2" name="hidden" keyPath="mameMachine" id="Fok-Xt-d2z">
+                            <binding destination="-2" name="hidden" keyPath="machine" id="odt-eJ-VrX">
                                 <dictionary key="options">
                                     <string key="NSValueTransformerName">NSIsNil</string>
                                 </dictionary>
