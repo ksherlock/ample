@@ -43,13 +43,22 @@
 #pragma mark - IBActions
 - (IBAction)clickAction:(id)sender {
     
-    NSInteger row = [_outlineView selectedRow];
+    NSInteger row = [_outlineView clickedRow];
     if (row < 0) return;
-    NSDictionary *d = [_outlineView itemAtRow: row];
-    if (!d) return;
-    NSString *value = [d objectForKey: @"value"];
-    if (!d) return;
-    [self setMachine: value];
+    NSDictionary *item = [_outlineView itemAtRow: row];
+    if (!item) return;
+
+    NSString *value = [item objectForKey: @"value"];
+    NSArray *children = [item objectForKey: @"children"];
+    
+    if (value) {
+        [self setMachine: value];
+    } else if (children) {
+        id ap = [_outlineView animator];
+        [_outlineView isItemExpanded: item] ? [ap collapseItem: item] : [ap expandItem: item];
+    }
+
+
 }
 
 @end
@@ -163,7 +172,9 @@
 
 - (BOOL)loadBookmark:(NSDictionary *)bookmark {
     NSString *machine = [bookmark objectForKey: @"machine"];
+
     
+
     //NSInteger row = [_outlineView selectedRow];
     if (!machine) {
         [self setMachine: nil];
@@ -177,7 +188,8 @@
         for (NSDictionary *child in children) {
             if ([machine isEqualToString: [child objectForKey: @"value"]]) {
                 
-                [_outlineView expandItem: parent];
+                id ap = [_outlineView animator];
+                [ap expandItem: parent];
                 NSInteger row = [_outlineView rowForItem: child];
                 if (row >= 0) {
                     NSIndexSet *set = [NSIndexSet indexSetWithIndex: row];
