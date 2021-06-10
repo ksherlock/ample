@@ -433,6 +433,13 @@ DQ
                                 </view>
                             </tabViewItem>
                         </tabViewItems>
+                        <connections>
+                            <binding destination="-2" name="hidden" keyPath="mameMachine" id="Fok-Xt-d2z">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </tabView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
                         <rect key="frame" x="664" y="107" width="316" height="331"/>
