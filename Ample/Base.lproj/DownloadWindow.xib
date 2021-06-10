@@ -26,7 +26,7 @@
             <value key="minSize" type="size" width="300" height="300"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="400" height="575"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-Qf-4Mw">
                         <rect key="frame" x="324.5" y="19" width="56" height="23"/>
@@ -85,7 +85,6 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.titleColor" id="0Qx-rz-DEZ"/>
                                                                 <binding destination="onK-6l-2iV" name="value" keyPath="objectValue.name" id="t1L-kM-AW6">
                                                                     <dictionary key="options">
                                                                         <string key="NSMultipleValuesPlaceholder">multiple</string>
@@ -94,6 +93,7 @@
                                                                         <string key="NSNullPlaceholder">null</string>
                                                                     </dictionary>
                                                                 </binding>
+                                                                <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.titleColor" id="0Qx-rz-DEZ"/>
                                                             </connections>
                                                         </textField>
                                                         <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-UJ-tWi">
@@ -126,6 +126,9 @@
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
+                                            <connections>
+                                                <binding destination="jhO-4z-Qwt" name="value" keyPath="arrangedObjects.selection" id="KQP-Xo-Fbf"/>
+                                            </connections>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
@@ -198,7 +201,7 @@
                     <button verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpY-qZ-2Nk">
                         <rect key="frame" x="90" y="13" width="100" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="ROMs" bezelStyle="rounded" image="NSFolder" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0t-sX-rgE">
+                        <buttonCell key="cell" type="push" title="ROMs" bezelStyle="rounded" image="NSFolder" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0t-sX-rgE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
