@@ -211,11 +211,10 @@
 
 -(NSMutableDictionary *)clickedItem {
 
+    NSArray *array = [_arrayController arrangedObjects];
     NSInteger row = [_tableView clickedRow];
-    if (row < 0) return nil;
-
-    NSTableCellView *v = [_tableView viewAtColumn: 0 row: row makeIfNecessary: NO];
-    return [v objectValue];
+    if (row < 0 || row >= [array count]) return nil;
+    return [array objectAtIndex: row];
 }
 #pragma mark - IBActions
 
