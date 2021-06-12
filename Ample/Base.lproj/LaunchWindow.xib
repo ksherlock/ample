@@ -510,7 +510,7 @@ DQ
                     </box>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="ACA8EE70-5505-4CFD-9F78-7A480D93260B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="b3J-Bx-3nk">
+            <toolbar key="toolbar" implicitIdentifier="ACA8EE70-5505-4CFD-9F78-7A480D93260B" autosavesConfiguration="NO" prefersToBeShown="NO" displayMode="iconAndLabel" sizeMode="regular" id="b3J-Bx-3nk">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="uHd-dY-alN"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="WEM-Gw-Utx"/>
