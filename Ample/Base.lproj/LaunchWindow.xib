@@ -43,6 +43,11 @@ DQ
                         </buttonCell>
                         <connections>
                             <action selector="launchAction:" target="-2" id="a4d-zv-1CU"/>
+                            <binding destination="-2" name="hidden" keyPath="machine" id="8Ks-FY-Tmk">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
@@ -56,6 +61,11 @@ DQ
                         </buttonCell>
                         <connections>
                             <action selector="resetSlots:" target="lyS-mc-3Tf" id="1qi-N0-Q8B"/>
+                            <binding destination="-2" name="hidden" keyPath="machine" id="VHL-FU-XhA">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </button>
                     <customView id="P9d-sS-qEb" customClass="FlippedView">
