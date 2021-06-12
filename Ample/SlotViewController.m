@@ -373,11 +373,12 @@ static unsigned RootKey = 0;
         if (index >= 0 && index < SLOT_COUNT) {
             unsigned mask = 1 << index;
             
-            if ([item defaultIndex] != [item selectedIndex])
+            if ([item defaultIndex] != [item selectedIndex]) {
                 _slots_explicit |= mask; // grrr.
+                _slot_value[index] = [[item selectedItem] value];
+            }
         
             _slot_media[index] = [item selectedMedia];
-            _slot_value[index] = [[item selectedItem] value];
         }
 
         ++index;
