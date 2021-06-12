@@ -21,45 +21,29 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="ROMs" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="DownloadManagerWindow" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="196" y="240" width="400" height="575"/>
+            <rect key="contentRect" x="196" y="240" width="454" height="575"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <value key="minSize" type="size" width="300" height="300"/>
+            <value key="minSize" type="size" width="454" height="300"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="400" height="575"/>
+                <rect key="frame" x="0.0" y="0.0" width="454" height="575"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-Qf-4Mw">
-                        <rect key="frame" x="324.5" y="19" width="56" height="23"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i6Z-OM-lqE">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent">.</string>
-                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                            <connections>
-                                <binding destination="-2" name="enabled" keyPath="self.active" id="mBP-8S-yGB"/>
-                            </connections>
-                        </buttonCell>
-                        <connections>
-                            <action selector="cancelAll:" target="-2" id="ycl-eJ-ByB"/>
-                        </connections>
-                    </button>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="51" horizontalPageScroll="10" verticalLineScroll="51" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMD-nT-mEa">
-                        <rect key="frame" x="0.0" y="130" width="402" height="446"/>
+                        <rect key="frame" x="0.0" y="130" width="456" height="446"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="Igp-aH-flp">
-                            <rect key="frame" x="1" y="1" width="400" height="444"/>
+                            <rect key="frame" x="1" y="1" width="454" height="444"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="49" rowSizeStyle="automatic" viewBased="YES" id="FLX-Wt-y53">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="444"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="454" height="444"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <tableViewGridLines key="gridStyleMask" dashed="YES"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn width="397" minWidth="40" maxWidth="1000" id="5jP-bY-fhI">
+                                        <tableColumn width="451" minWidth="40" maxWidth="1000" id="5jP-bY-fhI">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -73,11 +57,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView focusRingType="none" id="onK-6l-2iV">
-                                                    <rect key="frame" x="1" y="1" width="397" height="49"/>
+                                                    <rect key="frame" x="1" y="1" width="451" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A44-us-TEl">
-                                                            <rect key="frame" x="25" y="28" width="371" height="17"/>
+                                                            <rect key="frame" x="25" y="28" width="425" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="NSU-6I-nsG">
                                                                 <font key="font" metaFont="system"/>
@@ -108,7 +92,7 @@
                                                             </connections>
                                                         </progressIndicator>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-hP-QAH">
-                                                            <rect key="frame" x="25" y="3" width="371" height="17"/>
+                                                            <rect key="frame" x="25" y="3" width="425" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="1cQ-Zh-q0o">
                                                                 <font key="font" metaFont="system" size="10"/>
@@ -149,7 +133,7 @@
                         </scroller>
                     </scrollView>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJz-So-jbA">
-                        <rect key="frame" x="51" y="101" width="329" height="21"/>
+                        <rect key="frame" x="51" y="101" width="383" height="21"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="HKe-di-YSs">
                             <font key="font" metaFont="system"/>
@@ -161,9 +145,9 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-vr-Q2G">
-                        <rect key="frame" x="192" y="18" width="124" height="23"/>
+                        <rect key="frame" x="208" y="13" width="150" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Download Missing" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AKx-eg-iLS">
+                        <buttonCell key="cell" type="push" title="Download Missing" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AKx-eg-iLS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -195,11 +179,11 @@
                         </textFieldCell>
                     </textField>
                     <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-pD-Gul">
-                        <rect key="frame" x="12" y="52" width="368" height="5"/>
+                        <rect key="frame" x="12" y="52" width="422" height="5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     </box>
                     <button verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpY-qZ-2Nk">
-                        <rect key="frame" x="90" y="13" width="100" height="32"/>
+                        <rect key="frame" x="93" y="13" width="115" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="ROMs" bezelStyle="rounded" image="NSFolder" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0t-sX-rgE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -244,6 +228,22 @@
                             </binding>
                         </connections>
                     </popUpButton>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-Qf-4Mw">
+                        <rect key="frame" x="358" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i6Z-OM-lqE">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            <connections>
+                                <binding destination="-2" name="enabled" keyPath="self.active" id="mBP-8S-yGB"/>
+                            </connections>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelAll:" target="-2" id="ycl-eJ-ByB"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <toolbar key="toolbar" implicitIdentifier="B60021E6-BFBC-44E6-97DC-120AA9FD3269" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="kpz-W4-xgh">
@@ -287,7 +287,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="32" y="119.5"/>
+            <point key="canvasLocation" x="59" y="119.5"/>
         </window>
         <menu id="RJM-21-hjO">
             <items>
