@@ -489,6 +489,11 @@ DQ
                         </searchFieldCell>
                         <connections>
                             <action selector="softwareChanged:" target="-2" id="879-da-UEc"/>
+                            <binding destination="-2" name="hidden" keyPath="machine" id="RdE-9k-oFd">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </searchField>
                     <customView id="oVt-eD-aaj" customClass="FlippedView">

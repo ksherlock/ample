@@ -162,6 +162,8 @@ static int EffectsIndex(NSString *str) {
     [self setMameShareDirectory: NO];
 
     [self setSoftware: nil];
+    _softwareSet = nil;
+    [_softwareListControl setObjectValue: nil];
 }
 
 -(void)windowWillLoad {
@@ -681,6 +683,7 @@ static NSString *ShellQuote(NSString *s) {
     NSDictionary *d = [bm loadDefault];
     if (!d) {
         [self reset: sender];
+        [_slotController setMachine: nil];
         return;
     }
     [self loadBookmark: d];
