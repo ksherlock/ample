@@ -138,7 +138,7 @@ static int EffectsIndex(NSString *str) {
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
     [self setMameMouse: NO];
-    [self setMameSamples: YES];
+    [self setMameSamples: NO];
     [self setMameSquarePixels: NO];
     [self setMameDebug: NO];
 
