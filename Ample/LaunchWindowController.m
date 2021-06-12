@@ -42,6 +42,8 @@ static NSString *kContextMachine = @"kContextMachine";
 @property NSArray *args;
 
 @property NSString *machine;
+//@property NSString *machineName;
+
 @property BOOL mameDebug;
 @property BOOL mameSquarePixels;
 @property BOOL mameMouse;
@@ -89,6 +91,8 @@ static NSString *kContextMachine = @"kContextMachine";
 @interface LaunchWindowController (Bookmark)
 
 -(IBAction)addBookmark:(id)sender;
+
+-(IBAction)defaultLoad:(id)sender;
 
 @end
 
@@ -162,22 +166,33 @@ static int EffectsIndex(NSString *str) {
 
 -(void)windowWillLoad {
 
+    // if this calls [self window], it will recurse.  that is bad.
+    //[self defaultLoad: nil];
     [self reset];
 }
+
+
 
 static void AddSubview(NSView *parent, NSView *child) {
     
     [child setFrame: [parent bounds]];
     [parent addSubview: child];
 }
+
 - (void)windowDidLoad {
     [super windowDidLoad];
+    
+
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
     AddSubview(_slotView, [_slotController view]);
     AddSubview(_mediaView, [_mediaController view]);
     AddSubview(_machineView, [_machineViewController view]);
+
+ 
+    // can't be done until above views are set up.
+    [self defaultLoad: nil];
 
 
     NSArray *keys = @[
@@ -244,11 +259,15 @@ static void AddSubview(NSView *parent, NSView *child) {
     _machine = machine;
     _machineDescription = MameMachine(machine);
 
+#if 0
+    [self setMachineName: [_machineDescription objectForKey: @"description"]];
+#else
     NSString *title = _machineDescription
         ? [NSString stringWithFormat: @"Ample – %@", [_machineDescription objectForKey: @"description"]]
         : @"Ample";
 
     [[self window] setTitle: title];
+#endif
 }
 
 static NSString * JoinArguments(NSArray *argv, NSString *argv0) {
@@ -646,6 +665,27 @@ static NSString *ShellQuote(NSString *s) {
 
 @implementation LaunchWindowController (Bookmark)
 
+-(IBAction)defaultSave:(id)sender {
+
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+
+    NSDictionary *d = [self makeBookmark];
+
+    [bm saveDefault: d];
+}
+
+-(IBAction)defaultLoad:(id)sender {
+
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+
+    NSDictionary *d = [bm loadDefault];
+    if (!d) {
+        [self reset: sender];
+        return;
+    }
+    [self loadBookmark: d];
+}
+
 -(IBAction)addBookmark:(id)sender {
     
     if (!_machine) return;
@@ -679,10 +719,7 @@ static NSString *ShellQuote(NSString *s) {
         return;
     }
 
-    
-    //NSLog(@"%@", _bookmarkName);
     NSDictionary *d = [self makeBookmark];
-    //NSLog(@"%@", d);
     
     [bm saveBookmark: d name: _bookmarkName];
     
@@ -694,14 +731,20 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)bookmarkMenu:(id)sender {
     
-    Class StringClass = [NSString class];
-    Class NumberClass = [NSNumber class];
-    
     NSURL *url = [sender representedObject];
     if (!url) return;
     
     NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
     if (!d) return; // oops...
+    
+    [self loadBookmark: d];
+}
+
+
+-(void)loadBookmark: (NSDictionary *)d {
+    Class StringClass = [NSString class];
+    Class NumberClass = [NSNumber class];
+    
     
     NSString *machine = [d objectForKey: @"machine"];
     if (!machine) return;
@@ -731,6 +774,7 @@ static NSString *ShellQuote(NSString *s) {
 
     // Boolean values.
     NSNumber *n;
+#undef _
 #define _(a,b) n = [d objectForKey: a]; if ([n isKindOfClass: NumberClass]) [self b : [n boolValue]]
   
     _(@"debug", setMameDebug);

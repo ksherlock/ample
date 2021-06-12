@@ -406,7 +406,19 @@
                             <menuItem title="Manage Bookmarks…" id="isI-q6-b1V">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
+                            <menuItem title="Set Default" id="vbR-vS-lqO">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="defaultSave:" target="-1" id="FP9-EX-OKP"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="gWR-Yl-mg6"/>
+                            <menuItem title="Default" id="mXC-Lp-gem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="defaultLoad:" target="-1" id="ErS-k6-azP"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
