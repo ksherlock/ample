@@ -9,11 +9,25 @@
 #import "MediaViewController.h"
 #import "TableCellView.h"
 
+enum {
+    kIndexFloppy525 = 0,
+    kIndexFloppy35,
+    kIndexHardDrive,
+    kIndexCDROM,
+    kIndexCassette,
+    kIndexDiskImage,
+    kIndexBitBanger,
+};
+
+#define CATEGORY_COUNT 7
+#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
+
 
 @protocol MediaNode
 -(BOOL)isGroupItem;
 -(BOOL)isExpandable;
 -(NSInteger) count;
+-(NSInteger)category;
 
 -(NSString *)viewIdentifier;
 -(void)prepareView: (NSTableCellView *)view;
@@ -28,6 +42,7 @@
 @property NSMutableArray *children; // URLs?
 @property NSString *title;
 @property NSInteger index;
+@property NSInteger category;
 
 -(NSInteger)count;
 -(id)objectAtIndex:(NSInteger)index;
@@ -36,9 +51,13 @@
 
 @interface MediaItem : NSObject <MediaNode>
 
+@property NSString *string;
 @property NSURL *url;
 @property BOOL valid;
 @property NSInteger index;
+@property NSInteger category;
+
+@property (readonly) BOOL occupied;
 
 -(NSInteger)count;
 -(id)objectAtIndex:(NSInteger)index;
@@ -102,6 +121,7 @@
     for (unsigned i = count; i < newCount; ++i) {
         MediaItem *item = [MediaItem new];
         [item setIndex: i];
+        [item setCategory: _category];
         [_children addObject: item];
     }
 
@@ -113,7 +133,7 @@
 
     for (unsigned i = newCount; i < count; ++i) {
         MediaItem *item = [_children lastObject];
-        if ([item url]) break;
+        if ([item occupied]) break;
         
         [_children removeLastObject];
     }
@@ -129,7 +149,7 @@
 
     for (NSInteger i = _validCount; i < count; ++i) {
         MediaItem *item = [_children lastObject];
-        if ([item url]) break;
+        if ([item occupied]) break;
     
         [_children removeLastObject];
         [set addIndex: [_children count]];
@@ -182,8 +202,32 @@
 
 
 -(instancetype)initWithURL: (NSURL *)url {
-    [self setUrl: url];
+    _url = url;
     return self;
+}
+
+-(instancetype)initWithString: (NSString *)string {
+    _string = string;
+    return self;
+}
+
+-(NSString *)argument {
+    if (_string)
+        return _string;
+
+    // todo -- have setURL also update _string?
+    if (_url)
+        return [NSString stringWithCString: [_url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+
+    return nil;
+}
+
++(NSSet *)keyPathsForValuesAffectingOccupied {
+    return [NSSet setWithObjects: @"url", @"string", nil];
+}
+
+-(BOOL)occupied {
+    return _url || _string;
 }
 
 -(NSInteger) count {
@@ -203,6 +247,7 @@
 }
 
 -(NSString *)viewIdentifier {
+    if (_category == kIndexBitBanger) return @"BBItemView";
     return @"ItemView";
 }
 
@@ -221,8 +266,7 @@
 @end
 
 
-#define CATEGORY_COUNT 7
-#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
+
 
 @interface MediaViewController () {
 
@@ -237,15 +281,6 @@
 
 @implementation MediaViewController
 
-enum {
-    kIndexFloppy525 = 0,
-    kIndexFloppy35,
-    kIndexHardDrive,
-    kIndexCDROM,
-    kIndexCassette,
-    kIndexDiskImage,
-    kIndexBitBanger,
-};
 
 
 -(void)awakeFromNib {
@@ -263,6 +298,9 @@ enum {
     _data[kIndexDiskImage] = [MediaCategory categoryWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
     _data[kIndexBitBanger] = [MediaCategory categoryWithTitle: @"Serial Bit Banger"]; // null_modem
 
+    for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
+        [_data[i] setCategory: i];
+    
     _root = @[];
 
 }
@@ -287,12 +325,12 @@ enum {
             counts[j]++;
 
             MediaItem *item = [cat objectAtIndex: i];
-            NSURL *url = [item url];
-            if (!url) continue;
-            [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], counts[j]]];
-            NSString *s = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
-            
-            [args addObject: s];
+            NSString *arg = [item argument];
+
+            if (arg) {
+                [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], counts[j]]];
+                [args addObject: arg];
+            }
         }
         if (j == 0) counts[1] = counts[0]; // 3.5/5.25
     }
@@ -360,9 +398,9 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
         for (NSInteger i = 0; i < count; ++i) {
 
             MediaItem *item = [cat objectAtIndex: i];
-            NSURL *url = [item url];
-            if (!url) continue;
+            if (![item occupied]) continue;
             [item setUrl: nil];
+            [item setString: nil];
             delta = YES;
         }
         if ([cat pruneChildrenWithOutlineView: _outlineView]) delta = YES;
@@ -398,8 +436,6 @@ static NSString *kDragType = @"private.ample.media";
 - (void)outlineView:(NSOutlineView *)outlineView didRemoveRowView:(NSTableRowView *)rowView forRow:(NSInteger)row {
     
 }
-
-//- (NSTableRowView *)outlineView:(NSOutlineView *)outlineView rowViewForItem:(id)item;
 
 - (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id<MediaNode>)item {
     
@@ -437,12 +473,6 @@ static NSString *kDragType = @"private.ample.media";
 
 -(BOOL)outlineView:(NSOutlineView *)outlineView shouldCollapseItem:(id)item {
     return NO;
-}
-
-
-- (NSCell *)outlineView:(NSOutlineView *)outlineView dataCellForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    //return nil;
-    return [[item cellClass] new];
 }
 
 
@@ -608,10 +638,9 @@ static NSString *kDragType = @"private.ample.media";
     NSInteger row = [_outlineView rowForView: sender];
     if (row < 0) return;
 
-    //TablePathView *pv = [_outlineView viewAtColumn: 0 row: row makeIfNecessary: NO];
     MediaItem *item = [_outlineView itemAtRow: row];
     [item setUrl: nil];
-    //[[pv pathControl] setURL: nil];
+    [item setString: nil];
     
     // if item is invalid, should attempt to remove...
     if (![item valid]) {
@@ -628,15 +657,19 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 - (IBAction)pathAction:(id)sender {
-    // need to update the eject button...
     
     NSURL *url = [(NSPathControl *)sender URL];
-    
-    if (url) {
+    NSInteger tag = [sender tag];
+    // TODO - don't add to recent disks if this is a bitbanger / midi / printer device.
+    if (url && tag == 0) {
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
         [nc postNotificationName: @"DiskImageAdded" object: url];
     }
     
+    [self rebuildArgs];
+}
+
+-(IBAction)textAction: (id)sender {
     [self rebuildArgs];
 }
 
@@ -673,7 +706,7 @@ static NSString *kDragType = @"private.ample.media";
             NSLog(@"MediaViewController: too many categories.");
             break;
         }
-        MediaCategory *cat = _data[ix++];
+        MediaCategory *cat = _data[ix];
         NSInteger count = [cat count];
         unsigned i = 0;
         for (NSString *path in a) {
@@ -682,12 +715,16 @@ static NSString *kDragType = @"private.ample.media";
                 break; //
             }
             MediaItem *item = [cat objectAtIndex: i++];
-            NSURL *url = nil;
-            if ([path length])
-                url = [NSURL fileURLWithPath: path];
+            if (![path length]) continue;
 
-            [item setUrl: url];
+            if (ix == kIndexBitBanger) {
+                [item setString: path];
+            } else {
+                NSURL *url = [NSURL fileURLWithPath: path];
+                [item setUrl: url];
+            }
         }
+        ++ix;
     }
     return YES;
 
@@ -706,10 +743,9 @@ static NSString *kDragType = @"private.ample.media";
         for (NSInteger i = 0; i < count; ++i) {
 
             MediaItem *item = [cat objectAtIndex: i];
-            NSURL *url = [item url];
-            NSString *s = @"";
-            if (url)
-                s = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+            // todo - bitbanger.
+            NSString *s = [item argument];
+            if (!s) s = @"";
             
             [array addObject: s];
         }
