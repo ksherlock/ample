@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
                     <tabView initialItem="zUN-Qs-haG" id="l8R-bg-6Zm">
-                        <rect key="frame" x="296" y="466" width="692" height="160"/>
+                        <rect key="frame" x="295" y="466" width="692" height="160"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
@@ -193,7 +193,7 @@
                             </tabViewItem>
                             <tabViewItem label="CPU" identifier="" id="nr5-4o-DyG">
                                 <view key="view" id="ElY-YI-LLI">
-                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
+                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-ni-Rr6">
@@ -242,7 +242,7 @@
                             </tabViewItem>
                             <tabViewItem label="A/V" identifier="" id="0T5-BN-lxE">
                                 <view key="view" id="knw-WE-UU3">
-                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
+                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-Dx-OGG">
@@ -268,7 +268,7 @@
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-ZJ-8kx">
-                                            <rect key="frame" x="132" y="59" width="522" height="21"/>
+                                            <rect key="frame" x="132" y="59" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.wav" drawsBackground="YES" usesSingleLineMode="YES" id="Xqc-zw-28b">
                                                 <font key="font" metaFont="system"/>
@@ -285,7 +285,7 @@
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-5I-D1H">
-                                            <rect key="frame" x="132" y="28" width="522" height="21"/>
+                                            <rect key="frame" x="132" y="28" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.vgm" drawsBackground="YES" usesSingleLineMode="YES" id="xGs-Mi-wzj">
                                                 <font key="font" metaFont="system"/>
@@ -310,7 +310,7 @@
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-PS-Hw8">
-                                            <rect key="frame" x="132" y="90" width="522" height="21"/>
+                                            <rect key="frame" x="132" y="90" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.avi" drawsBackground="YES" usesSingleLineMode="YES" id="iY4-FF-x2e">
                                                 <font key="font" metaFont="system"/>
@@ -342,28 +342,11 @@
                             </tabViewItem>
                             <tabViewItem label="Paths" identifier="" id="PVN-Iw-nYG">
                                 <view key="view" id="5qP-bQ-Id6">
-                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
+                                    <rect key="frame" x="10" y="33" width="672" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField toolTip="path or socket.address:port" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-1O-bDR">
-                                            <rect key="frame" x="132" y="90" width="522" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="socket.127.0.0.1:23 or /path/to/file" drawsBackground="YES" usesSingleLineMode="YES" id="6d8-LZ-wh1">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                            <connections>
-                                                <binding destination="-2" name="enabled" keyPath="self.mameBitBanger" id="tcz-38-yaz"/>
-                                                <binding destination="-2" name="value" keyPath="self.mameBitBangerPath" id="jLz-NS-hFB">
-                                                    <dictionary key="options">
-                                                        <string key="NSNullPlaceholder">socket.127.0.0.1:23 or /path/to/file</string>
-                                                    </dictionary>
-                                                </binding>
-                                            </connections>
-                                        </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDW-FX-9az">
-                                            <rect key="frame" x="132" y="59" width="522" height="21"/>
+                                            <rect key="frame" x="132" y="90" width="523" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/directory/" drawsBackground="YES" usesSingleLineMode="YES" id="ykl-aj-n1L">
                                                 <font key="font" metaFont="system"/>
@@ -379,19 +362,8 @@
                                                 </binding>
                                             </connections>
                                         </textField>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNn-Lq-1lv">
-                                            <rect key="frame" x="15" y="91" width="81" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Bitbanger" bezelStyle="regularSquare" imagePosition="left" inset="2" id="EEl-hT-bOK">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="-2" name="value" keyPath="self.mameBitBanger" id="fTq-ke-gcc"/>
-                                            </connections>
-                                        </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-nr-wns">
-                                            <rect key="frame" x="15" y="60" width="117" height="18"/>
+                                            <rect key="frame" x="15" y="91" width="117" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Share Directory" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xmA-1v-wU7">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
