@@ -61,6 +61,11 @@
 
 }
 
+-(void)reset {
+    
+    [_outlineView deselectAll: nil];
+    [self setMachine: nil];
+}
 @end
 
 

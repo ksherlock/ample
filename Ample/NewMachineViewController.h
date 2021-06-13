@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable) NSString *machine;
 
+-(void)reset;
+
 @end
 
 @interface NewMachineViewController (Table) <NSOutlineViewDelegate, NSOutlineViewDataSource>

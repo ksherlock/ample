@@ -715,6 +715,7 @@ static NSString *ShellQuote(NSString *s) {
     if (!d) {
         [self resetAll: sender];
         [self setMachine: nil];
+        [_machineViewController reset];
         [_slotController setMachine: nil];
         return;
     }
