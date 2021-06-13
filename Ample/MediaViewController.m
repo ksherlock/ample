@@ -81,8 +81,6 @@
 
 -(void)prepareView: (NSTableCellView *)view {
 
-    [view setObjectValue: self];
-    [[view textField] setStringValue: _title];
 }
 
 -(CGFloat)height {
@@ -208,39 +206,6 @@
 
 -(void)prepareView: (TablePathView *)view {
     
-    NSValueTransformer *t;
-    NSDictionary *options;
-    
-    [view setObjectValue: self];
-    
-    NSPathControl *pc = [view pathControl];
-    NSButton *button = [view ejectButton];
-
-    [pc unbind: @"value"];
-    [pc unbind: @"enabled"];
-    [pc bind: @"value" toObject: self withKeyPath: @"url" options: nil];
-    [pc bind: @"enabled" toObject: self withKeyPath: @"valid" options: options];
-    
-    [button unbind: @"enabled"];
-    t = [NSValueTransformer valueTransformerForName: NSIsNotNilTransformerName];
-    options = @{ NSValueTransformerBindingOption: t};
-    [button bind: @"enabled" toObject: self withKeyPath: @"url" options: options];
-    
-
-    if (@available(macOS 10.14, *)) {
-        [button unbind: @"contentTintColor"];
-
-        t = [NSValueTransformer valueTransformerForName: @"ValidColorTransformer"];
-        options = @{ NSValueTransformerBindingOption: t};
-        [button bind: @"contentTintColor" toObject: self withKeyPath: @"valid" options: options];
-    } else {
-        // El Capitan TODO...
-    }
-#if 0
-    NSColor *tintColor = nil;
-    if (!_valid) tintColor = [NSColor systemRedColor];
-    [button setContentTintColor: tintColor];
-#endif
 }
 
 -(CGFloat)height {
@@ -436,8 +401,9 @@ static NSString *kDragType = @"private.ample.media";
     NSString *ident = [item viewIdentifier];
     if (!ident) return nil;
     NSTableCellView *v = [outlineView makeViewWithIdentifier: ident owner: self];
-    [(id<MediaNode>)item prepareView: v];
     [v setObjectValue: item];
+
+    [(id<MediaNode>)item prepareView: v];
     return v;
 }
 

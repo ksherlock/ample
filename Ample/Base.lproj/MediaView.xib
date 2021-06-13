@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,6 +52,9 @@
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
+                                                <connections>
+                                                    <binding destination="33q-UT-ur5" name="value" keyPath="objectValue.title" id="JQR-UW-ifh"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <connections>
@@ -69,6 +73,8 @@
                                                 </pathCell>
                                                 <connections>
                                                     <action selector="pathAction:" target="-2" id="4oX-bW-ANp"/>
+                                                    <binding destination="yGq-lc-RCM" name="enabled" keyPath="objectValue.valid" id="f8P-gt-vmK"/>
+                                                    <binding destination="yGq-lc-RCM" name="value" keyPath="objectValue.url" id="Ony-ph-VVo"/>
                                                 </connections>
                                             </pathControl>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
@@ -85,6 +91,11 @@
                                                 </buttonCell>
                                                 <connections>
                                                     <action selector="ejectAction:" target="-2" id="XAl-eQ-nUj"/>
+                                                    <binding destination="yGq-lc-RCM" name="enabled" keyPath="objectValue.url" id="suf-EI-g6t">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSIsNotNil</string>
+                                                        </dictionary>
+                                                    </binding>
                                                 </connections>
                                             </button>
                                         </subviews>

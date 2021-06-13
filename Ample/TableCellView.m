@@ -14,6 +14,24 @@
     NSTrackingRectTag _trackingRect;
 }
 
+-(void)awakeFromNib {
+
+    // need to do it here for 10.11 compatibility.
+
+    if (@available(macOS 10.14, *)) {
+        NSValueTransformer *t;
+        NSDictionary *options;
+
+        t = [NSValueTransformer valueTransformerForName: @"ValidColorTransformer"];
+        options = @{ NSValueTransformerBindingOption: t};
+        [_ejectButton bind: @"contentTintColor" toObject: self withKeyPath: @"objectValue.valid" options: options];
+    } else {
+        // El Capitan TODO...
+    }
+    
+}
+
+
 #if 0
 -(void)awakeFromNib {
     
