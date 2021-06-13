@@ -137,7 +137,8 @@ static int EffectsIndex(NSString *str) {
 }
 
 -(void)reset {
-    [self setMachine: nil];
+    // handled elsewhere.
+    //[self setMachine: nil];
 
     [self setMameSpeed: 1];
     [self setMameBGFX: YES];
@@ -145,6 +146,7 @@ static int EffectsIndex(NSString *str) {
     [self setMameSamples: NO];
     [self setMameSquarePixels: NO];
     [self setMameDebug: NO];
+    [self setMameWindowMode: 0];
 
     [self setMameBackend: 0];
     [self setMameEffects: 0];
@@ -161,8 +163,16 @@ static int EffectsIndex(NSString *str) {
     [self setMameBitBanger: NO];
     [self setMameShareDirectory: NO];
 
+#if 0
     [self setSoftware: nil];
-    _softwareSet = nil;
+    //_softwareSet = nil;
+    [_softwareListControl setObjectValue: nil];
+#endif
+}
+
+-(void)resetSoftware {
+    [self setSoftware: nil];
+    //_softwareSet = nil;
     [_softwareListControl setObjectValue: nil];
 }
 
@@ -243,7 +253,6 @@ static void AddSubview(NSView *parent, NSView *child) {
         NSString *machine = [_machineViewController machine];
         [self setMachine: machine];
         [_slotController setMachine: machine];
-        [self updateSoftwareList];
         [self buildCommandLine];
     } else {
         [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
@@ -270,6 +279,16 @@ static void AddSubview(NSView *parent, NSView *child) {
 
     [[self window] setTitle: title];
 #endif
+    
+    // enable/disable the right-click menu
+    NSWindow *window = [self window];
+    NSView *view = [window contentView];
+    if (_machine) [view setMenu: [window menu]];
+    else [view setMenu: nil];
+    
+    
+    // software list.
+    [self updateSoftwareList];
 }
 
 static NSString * JoinArguments(NSArray *argv, NSString *argv0) {
@@ -627,12 +646,24 @@ static NSString *ShellQuote(NSString *s) {
 }
 
 
--(IBAction)reset:(id)sender {
-    
+-(IBAction)resetMachine:(id)sender {
     [self reset];
-    [_slotController resetSlots: sender];
-    [_mediaController reset: sender];
 }
+
+-(IBAction)resetAll:(id)sender {
+
+    [self reset];
+    [self resetSoftware];
+    [_slotController resetSlots: sender];
+    [_mediaController resetMedia: sender];
+}
+
+-(IBAction)resetMedia:(id)sender {
+    [_mediaController resetMedia: sender];
+    [_softwareListControl setObjectValue: nil];
+    [self setSoftware: nil];
+}
+
 
 @end
 
@@ -682,7 +713,8 @@ static NSString *ShellQuote(NSString *s) {
 
     NSDictionary *d = [bm loadDefault];
     if (!d) {
-        [self reset: sender];
+        [self resetAll: sender];
+        [self setMachine: nil];
         [_slotController setMachine: nil];
         return;
     }

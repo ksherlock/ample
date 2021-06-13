@@ -395,6 +395,7 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
             [item setUrl: nil];
             delta = YES;
         }
+        if ([cat pruneChildrenWithOutlineView: _outlineView]) delta = YES;
     }
     if (delta) {
         [self rebuildRoot];
@@ -668,7 +669,7 @@ static NSString *kDragType = @"private.ample.media";
     [self rebuildArgs];
 }
 
--(IBAction)reset:(id)sender {
+-(IBAction)resetMedia:(id)sender {
     [self resetDiskImages];
 }
 

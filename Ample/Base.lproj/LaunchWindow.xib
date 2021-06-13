@@ -30,44 +30,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="1000" height="640"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
-                        <rect key="frame" x="869.5" y="76" width="111" height="23"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Launch" bezelStyle="texturedRounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="launchAction:" target="-2" id="a4d-zv-1CU"/>
-                            <binding destination="-2" name="hidden" keyPath="machine" id="8Ks-FY-Tmk">
-                                <dictionary key="options">
-                                    <string key="NSValueTransformerName">NSIsNil</string>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNO-3T-OAy">
-                        <rect key="frame" x="753.5" y="76" width="109" height="23"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Reset Slots" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uii-5h-2R2">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent">r</string>
-                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="resetSlots:" target="lyS-mc-3Tf" id="1qi-N0-Q8B"/>
-                            <binding destination="-2" name="hidden" keyPath="machine" id="VHL-FU-XhA">
-                                <dictionary key="options">
-                                    <string key="NSValueTransformerName">NSIsNil</string>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </button>
                     <customView id="P9d-sS-qEb" customClass="FlippedView">
                         <rect key="frame" x="302" y="105" width="316" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
@@ -231,11 +193,11 @@ DQ
                             </tabViewItem>
                             <tabViewItem label="CPU" identifier="" id="nr5-4o-DyG">
                                 <view key="view" id="ElY-YI-LLI">
-                                    <rect key="frame" x="10" y="33" width="672" height="134"/>
+                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-ni-Rr6">
-                                            <rect key="frame" x="15" y="80" width="62" height="18"/>
+                                            <rect key="frame" x="15" y="60" width="62" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6is-QN-JEc">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -246,7 +208,7 @@ DQ
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-yK-2ZK">
-                                            <rect key="frame" x="15" y="111" width="43" height="16"/>
+                                            <rect key="frame" x="15" y="91" width="43" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Speed" id="D9w-Mz-PXs">
                                                 <font key="font" metaFont="system"/>
@@ -255,7 +217,7 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-gG-fPb">
-                                            <rect key="frame" x="62" y="106" width="109" height="25"/>
+                                            <rect key="frame" x="62" y="86" width="109" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="yoI-Ra-evu" id="M40-f0-awc">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -280,11 +242,11 @@ DQ
                             </tabViewItem>
                             <tabViewItem label="A/V" identifier="" id="0T5-BN-lxE">
                                 <view key="view" id="knw-WE-UU3">
-                                    <rect key="frame" x="10" y="33" width="672" height="134"/>
+                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-Dx-OGG">
-                                            <rect key="frame" x="15" y="111" width="102" height="18"/>
+                                            <rect key="frame" x="15" y="91" width="102" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Generate AVI" bezelStyle="regularSquare" imagePosition="left" inset="2" id="hRp-Lh-Ebr">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -295,7 +257,7 @@ DQ
                                             </buttonCell>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ejn-wC-UXH">
-                                            <rect key="frame" x="15" y="80" width="110" height="18"/>
+                                            <rect key="frame" x="15" y="60" width="110" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Generate WAV" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7Aa-N2-MHn">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -306,7 +268,7 @@ DQ
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-ZJ-8kx">
-                                            <rect key="frame" x="132" y="79" width="523" height="21"/>
+                                            <rect key="frame" x="132" y="59" width="522" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.wav" drawsBackground="YES" usesSingleLineMode="YES" id="Xqc-zw-28b">
                                                 <font key="font" metaFont="system"/>
@@ -323,7 +285,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-5I-D1H">
-                                            <rect key="frame" x="132" y="48" width="523" height="21"/>
+                                            <rect key="frame" x="132" y="28" width="522" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.vgm" drawsBackground="YES" usesSingleLineMode="YES" id="xGs-Mi-wzj">
                                                 <font key="font" metaFont="system"/>
@@ -348,7 +310,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-PS-Hw8">
-                                            <rect key="frame" x="132" y="110" width="523" height="21"/>
+                                            <rect key="frame" x="132" y="90" width="522" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file.avi" drawsBackground="YES" usesSingleLineMode="YES" id="iY4-FF-x2e">
                                                 <font key="font" metaFont="system"/>
@@ -365,7 +327,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVz-a3-9Pj">
-                                            <rect key="frame" x="15" y="49" width="111" height="18"/>
+                                            <rect key="frame" x="15" y="29" width="111" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Generate VGM" bezelStyle="regularSquare" imagePosition="left" inset="2" id="F9b-kg-ZMV">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -380,11 +342,11 @@ DQ
                             </tabViewItem>
                             <tabViewItem label="Paths" identifier="" id="PVN-Iw-nYG">
                                 <view key="view" id="5qP-bQ-Id6">
-                                    <rect key="frame" x="10" y="33" width="672" height="134"/>
+                                    <rect key="frame" x="10" y="33" width="671" height="114"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField toolTip="path or socket.address:port" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-1O-bDR">
-                                            <rect key="frame" x="132" y="110" width="523" height="21"/>
+                                            <rect key="frame" x="132" y="90" width="522" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="socket.127.0.0.1:23 or /path/to/file" drawsBackground="YES" usesSingleLineMode="YES" id="6d8-LZ-wh1">
                                                 <font key="font" metaFont="system"/>
@@ -401,7 +363,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDW-FX-9az">
-                                            <rect key="frame" x="132" y="79" width="523" height="21"/>
+                                            <rect key="frame" x="132" y="59" width="522" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/directory/" drawsBackground="YES" usesSingleLineMode="YES" id="ykl-aj-n1L">
                                                 <font key="font" metaFont="system"/>
@@ -418,7 +380,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNn-Lq-1lv">
-                                            <rect key="frame" x="15" y="111" width="81" height="18"/>
+                                            <rect key="frame" x="15" y="91" width="81" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Bitbanger" bezelStyle="regularSquare" imagePosition="left" inset="2" id="EEl-hT-bOK">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -429,7 +391,7 @@ DQ
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-nr-wns">
-                                            <rect key="frame" x="15" y="80" width="117" height="18"/>
+                                            <rect key="frame" x="15" y="60" width="117" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Share Directory" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xmA-1v-wU7">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -518,9 +480,29 @@ DQ
                         <rect key="frame" x="291" y="69" width="5" height="571"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                     </box>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKp-px-nHg">
+                        <rect key="frame" x="869.5" y="76" width="111" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" title="Launch" bezelStyle="texturedRounded" image="NSAppleMenuImage" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ct1-Rb-7uI">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="launchAction:" target="-2" id="a4d-zv-1CU"/>
+                            <binding destination="-2" name="hidden" keyPath="machine" id="8Ks-FY-Tmk">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="ACA8EE70-5505-4CFD-9F78-7A480D93260B" autosavesConfiguration="NO" prefersToBeShown="NO" displayMode="iconAndLabel" sizeMode="regular" id="b3J-Bx-3nk">
+            <toolbar key="toolbar" implicitIdentifier="ACA8EE70-5505-4CFD-9F78-7A480D93260B" autosavesConfiguration="NO" allowsUserCustomization="NO" prefersToBeShown="NO" displayMode="iconAndLabel" sizeMode="regular" id="b3J-Bx-3nk">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="uHd-dY-alN"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="WEM-Gw-Utx"/>
@@ -530,7 +512,10 @@ DQ
                 </allowedToolbarItems>
                 <defaultToolbarItems/>
             </toolbar>
-            <point key="canvasLocation" x="628" y="34"/>
+            <connections>
+                <outlet property="menu" destination="Aa5-Sk-gZX" id="Sj0-0o-oZb"/>
+            </connections>
+            <point key="canvasLocation" x="590" y="40"/>
         </window>
         <viewController title="Media View" nibName="MediaView" id="t7c-zy-czN" customClass="MediaViewController"/>
         <viewController title="Slot View" nibName="SlotView" id="lyS-mc-3Tf" customClass="SlotViewController"/>
@@ -607,8 +592,45 @@ Gw
             <point key="canvasLocation" x="130" y="70"/>
         </window>
         <viewController nibName="MachineView" id="FSD-3v-Wni" customClass="NewMachineViewController"/>
+        <menu id="Aa5-Sk-gZX">
+            <items>
+                <menuItem title="Launch" image="NSAppleMenuImage" id="OSH-7C-D6z">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="launchAction:" target="-2" id="ZY2-He-VyK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Iti-F9-p35"/>
+                <menuItem title="Reset All" id="PQ0-yO-SKz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="resetAll:" target="-2" id="hF5-fl-bMr"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reset Machine" id="1by-3B-LSd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="resetMachine:" target="-2" id="7au-OM-Q88"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reset Slots" id="ccx-xm-qeo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="resetSlots:" target="lyS-mc-3Tf" id="39K-rS-u9D"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reset Media" id="Opr-7k-fO1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="resetMedia:" target="-2" id="n5j-1R-NJl"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-121" y="-2"/>
+        </menu>
     </objects>
     <resources>
         <image name="NSAppleMenuImage" width="11" height="14"/>
+        <image name="NSAppleMenuImage" width="128" height="128"/>
     </resources>
 </document>

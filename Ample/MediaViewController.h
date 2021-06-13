@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)ejectAction:(id)sender;
 - (IBAction)pathAction:(id)sender;
 
--(IBAction)reset:(id)sender;
+-(IBAction)resetMedia:(id)sender;
 
 @end
 
