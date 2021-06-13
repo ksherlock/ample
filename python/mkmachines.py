@@ -17,6 +17,8 @@ from machines import MACHINES, SLOTS, SLOT_NAMES
 # Inside Macintosh: Devices chapter 2 explains the Nubus slot name scheme
 # (essentially $01-$0e; $0 and $f are reserved)
 #
+# TODO -midiin, -midiout, -printout, -bitbanger
+
 
 
 # don't allow these for now. generally because they add floppy/hard drives
@@ -184,6 +186,7 @@ def find_media(parent, include_slots=False):
 		"harddisk_image": "hard",
 		"floppy_sonny": "floppy_3_5",
 		"messimg_disk_image": "pseudo_disk",
+		"bitbanger": "bitbanger",
 	}
 	remap_slot = {
 		# now handled at the slot level.
@@ -261,6 +264,8 @@ DEVICE_MEDIA = {
 	'35hd': 'floppy_3_5',
 	'35dd': 'floppy_3_5',
 	'35sd': 'floppy_3_5',
+	# 'null_modem': 'bitbanger',
+	# 'rs232_sync_io': 'bitbanger',
 }
 
 DEVICE_EXCLUDE = set([
@@ -289,10 +294,12 @@ def make_device_options(slot):
 		devname = option.get("devname")
 		if name in DEVICE_EXCLUDE: continue
 
+		device = None
+		if devname in machine_cache: device = machine_cache[devname]
 		if name in DEVICE_REMAP:
 			desc = DEVICE_REMAP[name]
-		elif devname in machine_cache:
-			desc = machine_cache[devname].find("description").text
+		elif device:
+			desc = device.find("description").text
 		else:
 			# print("{} - {}".format(name, devname))
 			continue
@@ -300,7 +307,10 @@ def make_device_options(slot):
 		default = option.get("default") == "yes"
 		has_default |= default
 		media = None
+
 		if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
+		elif device and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
+
 		item = {
 			'value': name,
 			'description': desc,

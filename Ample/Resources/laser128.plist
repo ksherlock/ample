@@ -1288,6 +1288,11 @@
             <string>RS232 Null Modem</string>
             <key>devname</key>
             <string>null_modem</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1296,6 +1301,11 @@
             <string>RS232 Synchronous I/O</string>
             <key>devname</key>
             <string>rs232_sync_io</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1409,6 +1419,11 @@
             <string>RS232 Null Modem</string>
             <key>devname</key>
             <string>null_modem</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1417,6 +1432,11 @@
             <string>RS232 Synchronous I/O</string>
             <key>devname</key>
             <string>rs232_sync_io</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1772,6 +1792,11 @@
                 <string>RS232 Null Modem</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1780,6 +1805,11 @@
                 <string>RS232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4054,6 +4084,11 @@
                 <string>RS232 Null Modem</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4062,6 +4097,11 @@
                 <string>RS232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4539,6 +4579,11 @@
                 <string>RS232 Null Modem</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4547,6 +4592,11 @@
                 <string>RS232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4665,6 +4715,11 @@
                 <string>RS232 Null Modem</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4673,6 +4728,11 @@
                 <string>RS232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
