@@ -163,6 +163,7 @@ static NSDictionary *IndexMap = nil;
     }
     // special case for child options since _name is incorrect.
     // _name is :rs232.  should be set to -sl3:ssc:rs232 :/
+#if 0
     if (!_title) {
  
         BOOL found = NO;
@@ -180,7 +181,7 @@ static NSDictionary *IndexMap = nil;
         }
         return;
     }
-    
+#endif
     
     NSString *value = [dict objectForKey: _name];
     if (!value) {
@@ -263,6 +264,9 @@ static NSDictionary *IndexMap = nil;
     for (SlotOption *o in _options) {
         [o setKeyPath: p];
     }
+    
+    // set up child name so bookmarks work.
+    if (c == ':') _name = p;
 }
 
 
