@@ -485,6 +485,7 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     _(floppy_3_5);
     _(floppy_5_25);
     _(pseudo_disk);
+    _(bitbanger);
 #undef _
         
     for (Slot *s in _children) {

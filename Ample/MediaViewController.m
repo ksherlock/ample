@@ -179,6 +179,8 @@
 
 @implementation MediaItem
 
+
+
 -(instancetype)initWithURL: (NSURL *)url {
     [self setUrl: url];
     return self;
@@ -219,7 +221,7 @@
 @end
 
 
-#define CATEGORY_COUNT 6
+#define CATEGORY_COUNT 7
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
 @interface MediaViewController () {
@@ -242,6 +244,7 @@ enum {
     kIndexCDROM,
     kIndexCassette,
     kIndexDiskImage,
+    kIndexBitBanger,
 };
 
 
@@ -258,6 +261,7 @@ enum {
     _data[kIndexCDROM] = [MediaCategory categoryWithTitle: @"CD-ROMs"];
     _data[kIndexCassette] = [MediaCategory categoryWithTitle: @"Cassettes"];
     _data[kIndexDiskImage] = [MediaCategory categoryWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
+    _data[kIndexBitBanger] = [MediaCategory categoryWithTitle: @"Serial Bit Banger"]; // null_modem
 
     _root = @[];
 
@@ -268,7 +272,7 @@ enum {
 -(void)rebuildArgs {
     
     static char* prefix[] = {
-        "flop", "flop", "hard", "cdrm", "cass", "disk"
+        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb",
     };
     static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
@@ -337,6 +341,7 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     _(floppy_3_5, kIndexFloppy35);
     _(floppy_5_25, kIndexFloppy525);
     _(pseudo_disk, kIndexDiskImage);
+    _(bitbanger, kIndexBitBanger);
 
 
     if (delta) {

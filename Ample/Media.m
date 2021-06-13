@@ -22,6 +22,7 @@ struct Media MediaFromDictionary(NSDictionary *dict) {
     _(floppy_3_5);
     _(floppy_5_25);
     _(pseudo_disk);
+    _(bitbanger);
 
     return m;
 #undef _
@@ -38,6 +39,7 @@ void MediaAdd(Media *dest, const Media *src) {
     _(floppy_3_5);
     _(floppy_5_25);
     _(pseudo_disk);
+    _(bitbanger);
 #undef _
 }
 
@@ -53,6 +55,7 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(floppy_3_5);
     _(floppy_5_25);
     _(pseudo_disk);
+    _(bitbanger);
     return YES;
 #undef _
 }

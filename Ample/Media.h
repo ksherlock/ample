@@ -17,6 +17,7 @@ typedef struct Media {
     unsigned floppy_5_25;
     unsigned floppy_3_5;
     unsigned pseudo_disk;
+    unsigned bitbanger;
 } Media;
 
 struct Media MediaFromDictionary(NSDictionary *);
