@@ -57,6 +57,7 @@ static NSArray *DeepCopyArray(NSArray *src) {
 
 -(void)reset;
 
+-(NSString *)keyPath;
 -(void)setKeyPath: (NSString *)path;
 -(void)buildArgs: (NSMutableArray *)args;
 -(void)buildMedia: (Media *)media;
@@ -160,6 +161,27 @@ static NSDictionary *IndexMap = nil;
         [option reserialize: dict];
         return;
     }
+    // special case for child options since _name is incorrect.
+    // _name is :rs232.  should be set to -sl3:ssc:rs232 :/
+    if (!_title) {
+ 
+        BOOL found = NO;
+        unsigned ix = 0;
+        for (SlotOption *option in _options) {
+            NSString *keyPath = [option keyPath];
+            NSString *value = [dict objectForKey: keyPath];
+            if (value && [value isEqualToString: [option value]]) {
+                [self setSelectedIndex: ix];
+                [option reserialize: dict];
+                found = YES;
+                break;
+            }
+            ++ix;
+        }
+        return;
+    }
+    
+    
     NSString *value = [dict objectForKey: _name];
     if (!value) {
         //[self reset];
@@ -529,7 +551,9 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
         [s setKeyPath: p];
     }
 }
-
+-(NSString *)keyPath {
+    return _keyPath;
+}
 
 #if 0
 -(BOOL)loadDeviceSlots: (NSDictionary *)devices {
