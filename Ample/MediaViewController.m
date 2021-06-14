@@ -26,7 +26,7 @@ enum {
 @protocol MediaNode
 -(BOOL)isGroupItem;
 -(BOOL)isExpandable;
--(NSInteger) count;
+-(NSInteger)count;
 -(NSInteger)category;
 
 -(NSString *)viewIdentifier;
@@ -693,63 +693,123 @@ static NSString *kDragType = @"private.ample.media";
     [self rebuildArgs];
 }
 
+static NSString * BookmarkStrings[] = {
+    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb",
+};
+static_assert(SIZEOF(BookmarkStrings) == CATEGORY_COUNT, "Missing item");
+
+static int BookmarkIndex(NSString *str) {
+    if (!str) return -1;
+    for (int i = 0; i < SIZEOF(BookmarkStrings); ++i) {
+        if ([str isEqualToString: BookmarkStrings[i]]) return i;
+    }
+    return -1;
+}
+
 
 -(BOOL)loadBookmark: (NSDictionary *)bookmark {
 
+    // fragile - depends on order
+    id media = [bookmark objectForKey: @"media"];
     
-    // if order of indexes change, would need to do a version check.
-    
-    NSArray *media = [bookmark objectForKey: @"media"];
-    unsigned ix = 0;
-    for (NSArray *a in media) {
-        if (ix >= CATEGORY_COUNT) {
-            NSLog(@"MediaViewController: too many categories.");
-            break;
-        }
-        MediaCategory *cat = _data[ix];
-        NSInteger count = [cat count];
-        unsigned i = 0;
-        for (NSString *path in a) {
-            if (i >= count) {
-                NSLog(@"MediaViewController: too many files.");
-                break; //
+    if ([media isKindOfClass: [NSArray class]]) {
+        unsigned ix = 0;
+        for (NSArray *a in (NSArray *)media) {
+            if (ix >= CATEGORY_COUNT) {
+                NSLog(@"MediaViewController: too many categories.");
+                break;
             }
-            MediaItem *item = [cat objectAtIndex: i++];
-            if (![path length]) continue;
+            MediaCategory *cat = _data[ix];
+            NSInteger count = [cat count];
+            unsigned i = 0;
+            for (NSString *path in a) {
+                if (i >= count) {
+                    NSLog(@"MediaViewController: too many files.");
+                    break; //
+                }
+                MediaItem *item = [cat objectAtIndex: i++];
+                if (![path length]) continue;
 
-            if (ix == kIndexBitBanger) {
-                [item setString: path];
-            } else {
-                NSURL *url = [NSURL fileURLWithPath: path];
-                [item setUrl: url];
+                if (ix == kIndexBitBanger) {
+                    [item setString: path];
+                } else {
+                    NSURL *url = [NSURL fileURLWithPath: path];
+                    [item setUrl: url];
+                }
             }
+            ++ix;
         }
-        ++ix;
+        return YES;
     }
-    return YES;
+    if ([media isKindOfClass: [NSDictionary class]]) {
+        
+        for (NSString *key in (NSDictionary *)media) {
+            NSInteger ix = BookmarkIndex(key);
+            if (ix < 0) {
+                NSLog(@"MediaViewController: unrecognized category: %@", key);
+                continue;
+            }
+            MediaCategory *cat = _data[ix];
+            NSInteger count = [cat count];
+            NSArray *a = [(NSDictionary *)media objectForKey: key];
+            unsigned i = 0;
 
+            for (NSString *path in a) {
+                if (i >= count) {
+                    NSLog(@"MediaViewController: too many files.");
+                    break; //
+                }
+                MediaItem *item = [cat objectAtIndex: i++];
+                if (![path length]) continue;
+
+                if (ix == kIndexBitBanger) {
+                    [item setString: path];
+                } else {
+                    NSURL *url = [NSURL fileURLWithPath: path];
+                    [item setUrl: url];
+                }
+            }
+        }
+        
+        return YES;
+    }
+    return NO;
+}
+
+static void CompressArray(NSMutableArray *array) {
+    
+    for(;;) {
+        NSString *s = [array lastObject];
+        if (!s) return;
+        if ([s length]) return;
+        [array removeLastObject];
+    }
 }
 
 -(BOOL)saveBookmark: (NSMutableDictionary *)bookmark {
 
-    NSMutableArray *media = [NSMutableArray arrayWithCapacity: CATEGORY_COUNT];
+
+    NSMutableDictionary *media = [NSMutableDictionary new];
 
     for (unsigned ix = 0; ix < CATEGORY_COUNT; ++ix) {
     
         MediaCategory *cat = _data[ix];
         NSInteger count = [cat validCount];
+        if (!count) continue;
         
         NSMutableArray *array = [NSMutableArray new];
         for (NSInteger i = 0; i < count; ++i) {
 
             MediaItem *item = [cat objectAtIndex: i];
-            // todo - bitbanger.
             NSString *s = [item argument];
             if (!s) s = @"";
-            
             [array addObject: s];
         }
-        [media addObject: array];
+
+        CompressArray(array);
+        
+        if ([array count])
+            [media setObject: array forKey: BookmarkStrings[ix]];
     }
     
     [bookmark setObject: media forKey: @"media"];
