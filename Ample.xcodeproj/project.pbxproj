@@ -841,6 +841,7 @@
 				B66236B124FDA443006CABD7 /* Embed Frameworks */,
 				B6152B5C25F6F4F800605E6E /* ShellScript */,
 				B66236BB24FDA71D006CABD7 /* CopyFiles */,
+				B611BA3D26796483008597B5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1131,6 +1132,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B611BA3D26796483008597B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_FOLDER_PATH)/mame64",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_FOLDER_PATH)/mame-link",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#cd \"$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\"\n#if [ ! -e mame-link] ; then ln -s mame64 mame-link ; fi\n";
+			showEnvVarsInLog = 0;
+		};
 		B6152B5C25F6F4F800605E6E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1146,7 +1167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\ncd \"embedded\"\necho perl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\nperl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\n";
+			shellScript = "# set the mame rpath and entitlements.\n\ncd \"embedded\"\necho perl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\nperl install_name_tool.pl --verbose mame64 \"@executable_path/../Frameworks\"\n\necho /usr/bin/codesign --sign - --deep --force --options=runtime --entitlements mame64.entitlements --timestamp mame64\n/usr/bin/codesign --sign - --deep --force --options=runtime --entitlements mame64.entitlements --timestamp mame64\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
