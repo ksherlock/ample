@@ -1,6 +1,9 @@
 dist
 embedded/mame64
 embedded/SDL2.framework
+embedded/Sparkle.framework
+embedded/Sparkle-*
+embedded/SDL2-*
 build
 embedded/mame-data.tgz
 __pycache__

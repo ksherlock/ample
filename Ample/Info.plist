@@ -61,5 +61,7 @@
 	<true/>
 	<key>SUPublicEDKey</key>
 	<string>MgYKY5J1nIJ9+C3IabG24ri2M0CuoMqP78fva2GI5BY=</string>
+	<key>SUFeedURL</key>
+	<string>https://ample.ksherlock.com/updates/appcast.xml</string>
 </dict>
 </plist>
