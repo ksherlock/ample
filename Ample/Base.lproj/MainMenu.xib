@@ -24,6 +24,7 @@
                 <outlet property="menu" destination="ha0-nx-PIl" id="vTa-TU-DS1"/>
             </connections>
         </customObject>
+        <customObject id="3aq-Tx-mno" customClass="SUUpdater"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="Ample" id="1Xt-HY-uBw">
@@ -34,6 +35,12 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Check for Updates…" id="CPy-r4-rzr">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="3aq-Tx-mno" id="qJG-Nv-0Lu"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>

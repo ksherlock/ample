@@ -66,6 +66,10 @@
 		B615A9A026640A70001FBF99 /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* SlotViewController.m */; };
 		B63005332666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
 		B63005342666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
+		B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; };
+		B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09C26784A4800B23BFD /* Sparkle.framework */; };
+		B635C09F26784D4700B23BFD /* AmpleLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B635C09E26784D4700B23BFD /* AmpleLite.m */; };
 		B6374AC4260EBBCF0045CA16 /* pty_shell.c in Sources */ = {isa = PBXBuildFile; fileRef = B6374AB6260EBB970045CA16 /* pty_shell.c */; };
 		B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6374ABD260EBBC90045CA16 /* pty_shell */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6374AD1260ECB400045CA16 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
@@ -284,6 +288,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */,
+				B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +386,9 @@
 		B6152B5925F5B57E00605E6E /* Media.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
 		B63005312666D6940014C381 /* BookmarkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
 		B63005322666D6940014C381 /* BookmarkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
+		B635C09926784A1200B23BFD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = embedded/Sparkle.framework; sourceTree = "<group>"; };
+		B635C09C26784A4800B23BFD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = embedded/Sparkle.framework; sourceTree = "<group>"; };
+		B635C09E26784D4700B23BFD /* AmpleLite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmpleLite.m; sourceTree = "<group>"; };
 		B6374AB6260EBB970045CA16 /* pty_shell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pty_shell.c; sourceTree = "<group>"; };
 		B6374ABD260EBBC90045CA16 /* pty_shell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pty_shell; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6374AC9260ECB3F0045CA16 /* macclas2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macclas2.plist; sourceTree = "<group>"; };
@@ -507,6 +515,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */,
+				B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */,
+				B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +632,7 @@
 		B66236B624FDA686006CABD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B635C09926784A1200B23BFD /* Sparkle.framework */,
 				B65D718525E70BD5008C5F87 /* WebKit.framework */,
 				B6841BDD251ECC29006A5C39 /* vmnet.framework */,
 			);
@@ -633,6 +644,7 @@
 			children = (
 				B63C1B8D25004C6D00511A71 /* mame-data.tgz */,
 				B66236B824FDA698006CABD7 /* mame64 */,
+				B635C09C26784A4800B23BFD /* Sparkle.framework */,
 				B66236B224FDA522006CABD7 /* SDL2.framework */,
 			);
 			name = "Embedded Content";
@@ -678,6 +690,7 @@
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
 				B6BA257F24E99BE9005FB8FF /* AppDelegate.m */,
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
+				B635C09E26784D4700B23BFD /* AmpleLite.m */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
 				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
 				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
@@ -1204,6 +1217,7 @@
 				B6665C15265A0E3E00254939 /* AutocompleteControl.m in Sources */,
 				B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */,
 				B6F7B53D267017A200624C6B /* NewMachineViewController.m in Sources */,
+				B635C09F26784D4700B23BFD /* AmpleLite.m in Sources */,
 				B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */,
 				B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */,
 				B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */,
@@ -1452,7 +1466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/embedded",
+				);
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1472,7 +1489,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/embedded",
+				);
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

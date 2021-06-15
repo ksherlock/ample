@@ -59,5 +59,7 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>SUPublicEDKey</key>
+	<string>MgYKY5J1nIJ9+C3IabG24ri2M0CuoMqP78fva2GI5BY=</string>
 </dict>
 </plist>
