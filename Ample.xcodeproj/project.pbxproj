@@ -380,6 +380,8 @@
 		B6109A1424F5F376005CB652 /* apple2cp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2cp.plist; sourceTree = "<group>"; };
 		B6109A1524F5F376005CB652 /* apple2p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2p.plist; sourceTree = "<group>"; };
 		B6109A1624F5F376005CB652 /* agat7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = agat7.plist; sourceTree = "<group>"; };
+		B611BA392679489F008597B5 /* pty_shell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pty_shell.entitlements; sourceTree = "<group>"; };
+		B611BA3A267948B5008597B5 /* vmnet_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vmnet_helper.entitlements; sourceTree = "<group>"; };
 		B6152B5425F4549F00605E6E /* Slot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slot.h; sourceTree = "<group>"; };
 		B6152B5525F4549F00605E6E /* Slot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slot.m; sourceTree = "<group>"; };
 		B6152B5825F5B4F100605E6E /* Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
@@ -534,6 +536,7 @@
 		B6374AB2260EBB970045CA16 /* pty_shell */ = {
 			isa = PBXGroup;
 			children = (
+				B611BA392679489F008597B5 /* pty_shell.entitlements */,
 				B6374AB6260EBB970045CA16 /* pty_shell.c */,
 			);
 			path = pty_shell;
@@ -653,6 +656,7 @@
 		B6841BD1251EC913006A5C39 /* vmnet_helper */ = {
 			isa = PBXGroup;
 			children = (
+				B611BA3A267948B5008597B5 /* vmnet_helper.entitlements */,
 				B6841BCA251EC88E006A5C39 /* vmnet_helper.c */,
 			);
 			path = vmnet_helper;
@@ -1315,7 +1319,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = pty_shell/pty_shell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1325,7 +1331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = pty_shell/pty_shell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1334,7 +1342,9 @@
 		B6841BD5251EC913006A5C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = vmnet_helper/vmnet_helper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1343,7 +1353,9 @@
 		B6841BD6251EC913006A5C39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = vmnet_helper/vmnet_helper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1465,7 +1477,8 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/embedded",
@@ -1475,7 +1488,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.232;
+				MARKETING_VERSION = "0.233-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1488,7 +1501,8 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/embedded",
@@ -1498,7 +1512,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.232;
+				MARKETING_VERSION = "0.233-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
