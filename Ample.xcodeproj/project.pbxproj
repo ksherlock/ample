@@ -1509,7 +1509,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "0.233-alpha";
+				MARKETING_VERSION = "0.233-wip";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1533,7 +1533,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "0.233-alpha";
+				MARKETING_VERSION = "0.233-wip";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
