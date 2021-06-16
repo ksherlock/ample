@@ -7539,7 +7539,8 @@
     </array>
     <key>software</key>
     <array>
-      <string>apple2gs.xml</string>
+      <string>apple2gs_flop_orig.xml</string>
+      <string>apple2gs_flop_misc.xml</string>
       <string>apple2_flop_clcracked.xml</string>
       <dict>
         <key>name</key>

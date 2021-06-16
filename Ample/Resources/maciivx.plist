@@ -1256,6 +1256,7 @@
     </array>
     <key>software</key>
     <array>
+      <string>mac_hdflop.xml</string>
       <string>mac_hdd.xml</string>
       <string>mac_flop.xml</string>
     </array>
