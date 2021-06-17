@@ -146,7 +146,7 @@ static int EffectsIndex(NSString *str) {
     [self setMameSamples: NO];
     [self setMameSquarePixels: NO];
     [self setMameDebug: NO];
-    [self setMameWindowMode: 0];
+    [self setMameWindowMode: 1]; // default = 1x window.
 
     [self setMameBackend: 0];
     [self setMameEffects: 0];
