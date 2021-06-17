@@ -131,11 +131,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
+            <key>devname</key>
+            <string>a2mockbd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>thclock</string>
             <key>description</key>
             <string>ThunderWare ThunderClock Plus</string>
             <key>devname</key>
             <string>a2thunpl</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>titan3plus2</string>
+            <key>description</key>
+            <string>Titan /// Plus //</string>
+            <key>devname</key>
+            <string>titan3p2</string>
           </dict>
         </array>
       </dict>
@@ -196,11 +212,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
+            <key>devname</key>
+            <string>a2mockbd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>thclock</string>
             <key>description</key>
             <string>ThunderWare ThunderClock Plus</string>
             <key>devname</key>
             <string>a2thunpl</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>titan3plus2</string>
+            <key>description</key>
+            <string>Titan /// Plus //</string>
+            <key>devname</key>
+            <string>titan3p2</string>
           </dict>
         </array>
       </dict>
@@ -261,11 +293,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
+            <key>devname</key>
+            <string>a2mockbd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>thclock</string>
             <key>description</key>
             <string>ThunderWare ThunderClock Plus</string>
             <key>devname</key>
             <string>a2thunpl</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>titan3plus2</string>
+            <key>description</key>
+            <string>Titan /// Plus //</string>
+            <key>devname</key>
+            <string>titan3p2</string>
           </dict>
         </array>
       </dict>
@@ -326,11 +374,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard Sound/Speech I</string>
+            <key>devname</key>
+            <string>a2mockbd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>thclock</string>
             <key>description</key>
             <string>ThunderWare ThunderClock Plus</string>
             <key>devname</key>
             <string>a2thunpl</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>titan3plus2</string>
+            <key>description</key>
+            <string>Titan /// Plus //</string>
+            <key>devname</key>
+            <string>titan3p2</string>
           </dict>
         </array>
       </dict>
@@ -1122,6 +1186,60 @@
                 <string>type5hle</string>
                 <key>description</key>
                 <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>titan3p2</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:gameio</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Apple II analog joysticks</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>paddles</string>
+                <key>description</key>
+                <string>Apple II paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>compeyes</string>
+                <key>description</key>
+                <string>Digital Vision ComputerEyes</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>gizmo</string>
+                <key>description</key>
+                <string>HAL Labs Gizmo</string>
                 <key>default</key>
                 <false/>
               </dict>
