@@ -386,9 +386,6 @@ enum {
     [_taskIndex removeAllObjects];
     [self setCurrentCount: 0];
     [self setActive: NO];
-
-    //[_tableView reloadData];
-    //[_tableView setNeedsDisplay: YES]; // doesn't work...
 }
 
 - (IBAction)downloadMissing:(id)sender {
@@ -405,7 +402,6 @@ enum {
     
     if (delta) {
         [self setActive: YES];
-        //[_tableView reloadData];
     }
 }
 - (IBAction)showRomFolder:(id)sender {
@@ -458,14 +454,12 @@ enum {
 
     [self downloadItem: item];
     [self setActive: YES];
-    //[self redrawRow: [item index]];
 }
 - (IBAction)cancel:(id)sender {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
 
     [item cancelDownload];
-    //[self redrawRow: [item index]];
 }
 
 // binding screws up with placeholder.
@@ -492,8 +486,7 @@ enum {
     NSUInteger tag = [sender tag];
     [sender setState: NSControlStateValueOn];
 
-
-
+ 
     for (NSButton *b in _filterButtons) {
         if (b != sender) [b setState: NSControlStateValueOff];
     }
@@ -561,9 +554,6 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
         
         if (item) {
             [item completeWithError: error];
-            //NSUInteger row = [item index];
-            
-            //[self redrawRow: row];
         }
     });
     
@@ -587,16 +577,12 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     
     [fm moveItemAtURL: location toURL: dest error: &error];
 
-    DownloadItem *item = [_taskIndex objectForKey: task];
-    [item setLocalURL: dest];
-
-    /*
     dispatch_async(dispatch_get_main_queue(), ^(void){
-
-
+        NSMutableDictionary *taskIndex = self->_taskIndex;
+        DownloadItem *item = [taskIndex objectForKey: task];
         [item setLocalURL: dest];
-    }
-    */
+    });
+
     NSLog(@"%@", src);
 }
 
