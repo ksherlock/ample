@@ -277,7 +277,15 @@ void vm_startup(void) {
 			dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
 			interface = NULL;
 		}
-		errx(1,"vmnet_start_interface failed");
+		warnx("vmnet_start_interface failed");
+        if (geteuid() != 0) {
+            fputs(
+                  "\n\n"
+                  "\tvmnet_helper must be run as root.\n"
+                  "\tGo to Ample -> Preferences and Fix VMNet Permissions.\n\n"
+                  ,stderr);
+        }
+        exit(1);
 	}
 
 
