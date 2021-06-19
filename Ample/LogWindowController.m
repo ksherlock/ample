@@ -19,6 +19,10 @@ static NSMutableSet *LogWindows;
 @implementation LogWindowController {
     NSTask *_task;
     NSFileHandle *_handle;
+    NSFont *_font;
+
+    BOOL _close;
+    BOOL _eof;
 }
 
 +(void)initialize {
@@ -30,17 +34,14 @@ static NSMutableSet *LogWindows;
 }
 
 
-+(id)controllerForTask: (NSTask *)task {
++(id)controllerForTask: (NSTask *)task close: (BOOL)close{
     LogWindowController *controller = [[LogWindowController alloc] initWithWindowNibName: @"LogWindow"];
-    [controller runTask: task];
+    [controller runTask: task close: close];
     return controller;
 }
 
 
-
-+(id)controllerForArgs: (NSArray *)args {
-    
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
++(id)controllerForArgs: (NSArray *)args close: (BOOL)close {
 
     NSURL *url = MameURL();
 
@@ -64,15 +65,24 @@ static NSMutableSet *LogWindows;
     
     [task setArguments: args];
     
-    return [LogWindowController controllerForTask: task];
+    return [LogWindowController controllerForTask: task close: close];
+
+}
+
++(id)controllerForArgs: (NSArray *)args {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL close = [defaults boolForKey: kAutoCloseLogWindow];
+    return [self controllerForArgs: args close: close];
 }
 
 - (void)windowDidLoad {
     [super windowDidLoad];
     
     [LogWindows addObject: self];
+
+    _font = [NSFont userFixedPitchFontOfSize: 0];
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
 -(void)appendString: (NSString *)string
@@ -80,7 +90,10 @@ static NSMutableSet *LogWindows;
     if ([string length])
     {
         // needs explicit color attribute for proper dark mode support.
-        NSDictionary *attr = @{ NSForegroundColorAttributeName: [NSColor textColor] };
+        NSDictionary *attr = @{
+            NSForegroundColorAttributeName: [NSColor textColor],
+            NSFontAttributeName: _font,
+        };
         NSAttributedString *astr = [[NSAttributedString alloc] initWithString: string attributes: attr];
         [[_textView textStorage] appendAttributedString: astr];
     }
@@ -93,10 +106,12 @@ static NSMutableSet *LogWindows;
     }
 }
 
--(NSError *)runTask: (NSTask *)task {
+-(NSError *)runTask: (NSTask *)task close: (BOOL)close {
     
     
     if (_task) return nil;
+    _close = close;
+    _eof = NO;
 
     NSPipe *pipe = [NSPipe pipe];
     
@@ -130,16 +145,6 @@ static NSMutableSet *LogWindows;
         }
     }
 
-#if 0
-    if (error) {
-//        NSURL *url = [task executableURL];
-//        NSString *path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
-        NSLog(@"NSTask error. Path = %s error = %@", path, error);
-//        [self appendString: path];
-//        [self appendString: [error description]];
-        return error;
-    }
-#endif
     _task = task;
     NSString *title = [NSString stringWithFormat: @"Ample Log - %u", [task processIdentifier]];
     [[self window] setTitle: title];
@@ -149,6 +154,7 @@ static NSMutableSet *LogWindows;
     if (wd) [self appendString: [NSString stringWithFormat: @"Working Directory: %s\n", wd]];
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+
 
     [nc addObserver: self
            selector: @selector(taskComplete:)
@@ -160,6 +166,7 @@ static NSMutableSet *LogWindows;
              object: _handle];
     
     [_handle readInBackgroundAndNotify];
+
     [[self window] setDocumentEdited: YES];
     return nil;
 }
@@ -172,21 +179,33 @@ static NSMutableSet *LogWindows;
     // read complete, queue up another.
     NSDictionary *dict = [notification userInfo];
     NSData *data = [dict objectForKey: NSFileHandleNotificationDataItem];
-    
+
     if ([data length])
     {
-        
         NSString *string = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
         
         [self appendString: string];
         
         [_handle readInBackgroundAndNotify];
+    } else {
+        [self appendString: @"\n"]; // -listmedia sometimes causes display issues.
+        _eof = YES;
+        //[_textView setNeedsDisplay: YES]; // -listmedia sometimes weird.
     }
-    
 }
 
+-(void)taskCompleteHack {
+
+}
+
+/* hask! task complete may occur while output still being processed. add a delay to compensate. */
 -(void)taskComplete: (NSNotification *)notification
 {
+    if (!_eof) {
+        [self performSelector: @selector(taskComplete:) withObject: notification afterDelay: 0.5];
+        return;
+    }
+
     BOOL ok = NO;
     NSTaskTerminationReason reason;
     int status;
@@ -200,7 +219,7 @@ static NSMutableSet *LogWindows;
         
         if (status == 0)
         {
-            string = @"\n\n[Success]\n\n";
+            //string = @"\n\n[Success]\n\n";
             ok = YES;
         }
         else string = @"\n\n[An error occurred]\n\n";
@@ -209,18 +228,22 @@ static NSMutableSet *LogWindows;
     {
         string = [NSString stringWithFormat: @"\n\n[Caught signal %d (%s)]\n\n", status, strsignal(status)];
     }
-    
-    [self appendString: string];
-    
+    if (string) {
+        NSDictionary *attr = @{
+            NSForegroundColorAttributeName: [NSColor systemRedColor],
+            NSFontAttributeName: _font,
+        };
+        NSAttributedString *astr = [[NSAttributedString alloc] initWithString: string attributes: attr];
+        [self appendAttributedString: astr];
+    }
+
     _handle = nil;
     _task = nil;
     
     [[self window] setDocumentEdited: NO];
     
-    if (ok && [[NSUserDefaults standardUserDefaults] boolForKey: kAutoCloseLogWindow]) {
-        
+    if (ok && _close) {
         [[self window] close];
-        //[LogWindows removeObject: self]; // close sends WindowWillClose notification.
     }
 }
 

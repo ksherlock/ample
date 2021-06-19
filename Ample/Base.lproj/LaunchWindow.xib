@@ -573,6 +573,29 @@ Gw
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Iti-F9-p35"/>
+                <menuItem title="List Media…" id="M5h-4W-0nV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="listMedia:" target="-2" id="IO7-MG-zud"/>
+                        <binding destination="-2" name="hidden" keyPath="optionKey" id="LhL-2l-iss">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </menuItem>
+                <menuItem title="List Slots…" id="cNj-Sb-KkE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="listSlots:" target="-2" id="3nb-mV-eUK"/>
+                        <binding destination="-2" name="hidden" keyPath="optionKey" id="dwp-Kn-LfC">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="yZx-W2-lZg"/>
                 <menuItem title="Reset All" id="PQ0-yO-SKz">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -598,11 +621,13 @@ Gw
                     </connections>
                 </menuItem>
             </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="wqC-IG-63F"/>
+            </connections>
             <point key="canvasLocation" x="-121" y="-2"/>
         </menu>
     </objects>
     <resources>
         <image name="NSAppleMenuImage" width="11" height="14"/>
-        <image name="NSAppleMenuImage" width="128" height="128"/>
     </resources>
 </document>

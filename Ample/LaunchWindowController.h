@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LaunchWindowController : NSWindowController <NSBrowserDelegate>
+@interface LaunchWindowController : NSWindowController <NSBrowserDelegate, NSMenuDelegate>
 
 @end
 

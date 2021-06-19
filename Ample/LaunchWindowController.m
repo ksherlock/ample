@@ -79,6 +79,9 @@ static NSString *kContextMachine = @"kContextMachine";
 @property (strong) IBOutlet NSWindow *addBookmarkWindow;
 @property (strong) NSString *bookmarkName;
 @property (weak) IBOutlet NSTextField *bookmarkTextField;
+
+@property BOOL optionKey;
+
 @end
 
 @interface LaunchWindowController (SoftwareList)
@@ -600,6 +603,62 @@ static NSString *ShellQuote(NSString *s) {
 
 }
 
+
+- (IBAction)listMedia:(id)sender {
+
+    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+    if (!_machine) return;
+    
+    NSMutableArray *argv = [NSMutableArray new];
+
+    [argv addObject: _machine];
+    [argv addObject: @"-listmedia"];
+
+    
+    NSArray *tmp;
+    tmp = [_slotController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
+    }
+
+#if 0
+    tmp = [_mediaController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
+    }
+#endif
+
+    [LogWindowController controllerForArgs: argv close: NO];
+}
+
+- (IBAction)listSlots:(id)sender {
+
+    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+    if (!_machine) return;
+    
+    NSMutableArray *argv = [NSMutableArray new];
+
+    [argv addObject: _machine];
+    [argv addObject: @"-listslots"];
+
+    
+    NSArray *tmp;
+    tmp = [_slotController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
+    }
+
+#if 0
+    tmp = [_mediaController args];
+    if ([tmp count]) {
+        [argv addObjectsFromArray: tmp];
+    }
+#endif
+
+    [LogWindowController controllerForArgs: argv close: NO];
+}
+
+
 -(IBAction)exportShellScript: (id)sender {
     
     NSSavePanel *p = [NSSavePanel savePanel];
@@ -923,5 +982,13 @@ static NSString *ShellQuote(NSString *s) {
 #undef _
 }
 
+
+#pragma mark - NSMenuDelegate
+
+-(void)menuNeedsUpdate:(NSMenu *)menu {
+    NSEventModifierFlags modifiers = [NSEvent modifierFlags];
+    
+    [self setOptionKey: modifiers & NSEventModifierFlagOption ? YES : NO];
+}
 
 @end
