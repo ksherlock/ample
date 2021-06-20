@@ -61,7 +61,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A44-us-TEl">
-                                                            <rect key="frame" x="25" y="28" width="425" height="17"/>
+                                                            <rect key="frame" x="41" y="28" width="409" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="NSU-6I-nsG">
                                                                 <font key="font" metaFont="system"/>
@@ -80,19 +80,8 @@
                                                                 <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.titleColor" id="0Qx-rz-DEZ"/>
                                                             </connections>
                                                         </textField>
-                                                        <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-UJ-tWi">
-                                                            <rect key="frame" x="3" y="29" width="16" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <connections>
-                                                                <binding destination="onK-6l-2iV" name="animate" keyPath="objectValue.task" id="d22-JL-3Z7">
-                                                                    <dictionary key="options">
-                                                                        <string key="NSValueTransformerName">NSIsNotNil</string>
-                                                                    </dictionary>
-                                                                </binding>
-                                                            </connections>
-                                                        </progressIndicator>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-hP-QAH">
-                                                            <rect key="frame" x="25" y="3" width="425" height="17"/>
+                                                            <rect key="frame" x="41" y="3" width="409" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="1cQ-Zh-q0o">
                                                                 <font key="font" metaFont="system" size="10"/>
@@ -104,6 +93,17 @@
                                                                 <binding destination="onK-6l-2iV" name="value" keyPath="objectValue.statusDescription" id="yV1-5r-YDh"/>
                                                             </connections>
                                                         </textField>
+                                                        <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-UJ-tWi">
+                                                            <rect key="frame" x="3" y="9" width="32" height="32"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <connections>
+                                                                <binding destination="onK-6l-2iV" name="animate" keyPath="objectValue.task" id="d22-JL-3Z7">
+                                                                    <dictionary key="options">
+                                                                        <string key="NSValueTransformerName">NSIsNotNil</string>
+                                                                    </dictionary>
+                                                                </binding>
+                                                            </connections>
+                                                        </progressIndicator>
                                                     </subviews>
                                                     <connections>
                                                         <outlet property="textField" destination="A44-us-TEl" id="ude-er-Gm4"/>
