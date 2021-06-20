@@ -985,10 +985,22 @@ static NSString *ShellQuote(NSString *s) {
 
 #pragma mark - NSMenuDelegate
 
+#if 1
 -(void)menuNeedsUpdate:(NSMenu *)menu {
     NSEventModifierFlags modifiers = [NSEvent modifierFlags];
     
     [self setOptionKey: modifiers & NSEventModifierFlagOption ? YES : NO];
 }
+
+#else
+/* doesn't trigger when menu is the first responder. */
+-(void)flagsChanged:(NSEvent *)event {
+    NSEventModifierFlags modifiers = [event modifierFlags];
+
+    [self setOptionKey: modifiers & NSEventModifierFlagOption ? YES : NO];
+
+    [super flagsChanged: event];
+}
+#endif
 
 @end
