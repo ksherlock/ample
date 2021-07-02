@@ -850,6 +850,7 @@ static NSString *ShellQuote(NSString *s) {
     [_mediaController willLoadBookmark: d];
 
     [self reset];
+    [self resetSoftware];
     
     [self setMachine: machine];
     [self updateSoftwareList];
