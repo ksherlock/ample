@@ -619,15 +619,9 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     }
 }
 
-#if 0
-// in practice, error and status set concurrently.
-+(NSSet *)keyPathsForValuesAffectingStatus {
-    static NSSet *set = nil;
-    if (!set) set = [NSSet setWithObjects: @"error", nil];
-    return set;
++(NSSet *)keyPathsForValuesAffectingStatusDescription {
+    return [NSSet setWithObjects: @"error", @"status", nil];
 }
-#endif
-
 -(NSString *)statusDescription {
 
     static NSString *Names[] = {
