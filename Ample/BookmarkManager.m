@@ -119,8 +119,8 @@ static BookmarkManager *singleton = nil;
 
     if (!ok) {
         for (unsigned i = 1 ; i < 100; ++i) {
-            NSString *tmp = [name stringByAppendingFormat: @"(%d)", i];
-            [base URLByAppendingPathComponent: tmp];
+            NSString *tmp = [name stringByAppendingFormat: @" (%d)", i];
+            url = [base URLByAppendingPathComponent: tmp];
 
             ok = [data writeToURL: url options: NSDataWritingWithoutOverwriting error: &error];
             if (ok) {
