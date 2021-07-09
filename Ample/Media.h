@@ -20,6 +20,19 @@ typedef struct Media {
     unsigned bitbanger;
 } Media;
 
+
+typedef enum {
+    MediaTypeErr = -1,
+    MediaTypeUnknown = 0,
+    MediaType_5_25,
+    MediaType_3_5,
+    MediaType_HardDisk,
+    MediaType_CD,
+    MediaType_Cassette,
+    MediaType_Picture,
+    MediaType_MIDI,
+} MediaType;
+
 struct Media MediaFromDictionary(NSDictionary *);
 
 void MediaAdd(Media *dest, const Media *src);
@@ -27,5 +40,7 @@ void MediaAdd(Media *dest, const Media *src);
 BOOL MediaEqual(const Media *lhs, const Media *rhs);
 
 extern const Media EmptyMedia;
+
+MediaType ClassifyMediaFile(NSString *file);
 
 #endif /* Media_h */

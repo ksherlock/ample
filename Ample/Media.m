@@ -64,13 +64,7 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
 #include <unistd.h>
 #include <sys/stat.h>
 
-enum {
-    MediaType_5_25,
-    MediaType_3_5,
-    MediaType_HardDisk,
-    MediaType_CD,
-    MediaType_Cassette,
-};
+
 
 #define _x2(a,b) (a | (b << 8))
 #define _x3(a,b,c) (a | (b << 8) | (c << 16))
@@ -103,7 +97,100 @@ const char *extname(const char *path) {
     return rv;
 }
 
-int ClassifyMediaFile(NSString *file) {
+/*
+ * MAME cares deeply about file extensions. LIST NOT EXHAUSTIVE
+ *
+ * Hard Disk: .chd  .hd   .hdv  .2mg  .hdi
+ * CD-ROM: .chd  .cue  .toc  .nrg  .gdi  .iso  .cdr
+ * 5.25: .dsk .do .po  .edd  .woz  .nib .mfi  .dfi  .rti
+ * 3.5: .dc42 .woz .2mg .mfi  .dfi  .hfe  .mfm  .td0  .imd
+        .d77  .d88  .1dd  .cqm .cqi  .dsk  .ima  .img  .ufi
+        .360  .ipf [also .po and .hdv]
+ * Midi in: .mid
+ * Midi out: .mid
+ * Picture: .png
+ * Cassette: .wav
+ */
+
+static bool is_raw_525(size_t disk_size) {
+    if (disk_size & 255) return NO;
+    size_t blocks = disk_size >> 8;
+    
+    return blocks == 560 || blocks == 640;
+}
+
+static BOOL is_raw_35(size_t disk_size) {
+    if (disk_size & 511) return NO;
+    size_t blocks = disk_size >> 9;
+
+    return blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880;
+}
+
+static MediaType is_woz(const uint8_t *buffer, size_t file_size) {
+
+    /* woz 1/2 ? */
+    if (!memcmp(buffer, "WOZ1\xff\x0a\x0d\x0a", 8) || !memcmp(buffer, "WOZ2\xff\x0a\x0d\x0a", 8)) {
+
+        if (!memcmp(buffer + 12, "INFO", 4)) {
+            unsigned type = buffer[21]; // 1 = 5.25, 2 = 3.5
+            if (type == 1) return MediaType_5_25;
+            if (type == 2) return MediaType_3_5;
+        }
+        return MediaTypeUnknown;
+    }
+    return MediaTypeErr;
+}
+
+static MediaType is_dc42(const uint8_t *buffer, size_t file_size) {
+
+    if (buffer[0x52] == 0x01 && buffer[0x53] == 0x00 && buffer[0] >= 1 && buffer[0] <= 0x3f) {
+        int dsize = OSReadBigInt32(buffer, 0x40);
+        int tsize = OSReadBigInt32(buffer, 0x44);
+        if (dsize + tsize + 0x54 == file_size) {
+            if (is_raw_35(dsize)) return MediaType_3_5;
+            return MediaType_HardDisk;
+        }
+    }
+
+    return MediaTypeErr;
+}
+
+static MediaType is_2img(const uint8_t *buffer, size_t file_size) {
+
+    if (!memcmp(buffer, "2IMG", 4)) {
+        int format = OSReadLittleInt32(buffer, 0x0c); // 0 - dos order, 1 = prodos order, 2 = nib data
+        int blocks = OSReadLittleInt32(buffer, 0x14); // prodos only.
+        //int bytes = OSReadLittleInt32(buffer, 0x1c);
+        
+        if (format == 2 || format == 0) return MediaType_5_25; // nib and dos order
+        if (is_raw_525(blocks * 512))  return MediaType_5_25;
+        if (is_raw_35(blocks * 512)) return MediaType_3_5;
+        return MediaType_HardDisk; //
+        //return MediaTypeUnknown;
+    }
+
+    return MediaTypeErr;
+}
+
+static MediaType is_chd(const uint8_t *buffer, size_t file_size) {
+    if (!memcmp(buffer, "MComprHD", 8)) {
+        static int offsets[] = { 0, 0, 0, 28, 28, 32}; // offset for logival bytes.
+        int version = OSReadBigInt32(buffer, 12);
+
+        if (version >= 3 && version <= 5) {
+            long bytes = OSReadBigInt64(buffer, offsets[version]);
+            if (is_raw_525(bytes)) return MediaType_5_25;
+            if (is_raw_35(bytes)) return MediaType_3_5;
+            return MediaType_HardDisk; // iso?
+        }
+        return MediaTypeUnknown;
+    }
+    return MediaTypeErr;
+}
+
+
+
+MediaType ClassifyMediaFile(NSString *file) {
     
     struct stat st;
     ssize_t size;
@@ -117,86 +204,74 @@ int ClassifyMediaFile(NSString *file) {
     memset(buffer, 0, sizeof(buffer));
 
     fd = open(path, O_RDONLY);
-    if (fd < 0) return -1;
+    if (fd < 0) return MediaTypeErr;
     fstat(fd, &st);
     
     size = read(fd, buffer, sizeof(buffer));
     close(fd);
-    if (size <= 0) return -1;
+    if (size <= 0) return MediaTypeErr;
 
     // 13 sector support ? not on an event 512 block boundary.
     // = 116480 bytes.
     
-    /* woz 1/2 ? */
-    if (!memcmp(buffer, "WOZ1\xff\x0a\x0d\x0a", 8) || !memcmp(buffer, "WOZ2\xff\x0a\x0d\x0a", 8)) {
-
-        if (!memcmp(buffer + 12, "INFO", 4)) {
-            unsigned type = buffer[21]; // 1 = 5.25, 2 = 3.5
-            if (type == 1) return MediaType_5_25;
-            if (type == 2) return MediaType_3_5;
-        }
-        return -1;
-    }
-    
-    /* 2mg? */
-    if (!memcmp(buffer, "2IMG", 4)) {
-        int format = OSReadLittleInt32(buffer, 0x0c); // 0 - dos order, 1 = prodos order, 2 = nib data
-        int blocks = OSReadLittleInt32(buffer, 0x14); // prodos only.
-        //int bytes = OSReadLittleInt32(buffer, 0x1c);
-        
-        if (format == 2 || format == 0) return MediaType_5_25; // nib and dos order
-        if (blocks == 280) return MediaType_5_25;
-        if (blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880) return MediaType_3_5;
-        if (blocks > 2880) return MediaType_HardDisk; //
-        return -1;
-    }
-    
-    /* chd? */
-    if (!memcmp(buffer, "MComprHD", 8)) {
-        static int offsets[] = { 0, 0, 0, 28, 28, 32}; // offset for logival bytes.
-        int version = OSReadBigInt32(buffer, 12);
-
-        if (version >= 3 && version <= 5) {
-            long bytes = OSReadBigInt64(buffer, offsets[version]);
-            long blocks = bytes >> 9;
-            if ((bytes & 511) == 0) {
-                if (blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880) return MediaType_3_5;
-                if (blocks == 280) return MediaType_5_25;
-                if (blocks > 2880) return MediaType_HardDisk; // iso?
-            }
-        }
-        return -1;
-    }
-    
-    
-    /* dc 4.2? magic is pretty weak. */
-    if (buffer[0x52] == 0x01 && buffer[0x53] == 0x00 && buffer[0] >= 1 && buffer[0] <= 0x3f) {
-        int dsize = OSReadBigInt32(buffer, 0x40);
-        int tsize = OSReadBigInt32(buffer, 0x44);
-        if (dsize + tsize + 0x54 == st.st_size && (size & 511) == 0) {
-            int blocks = dsize >>= 9;
-            if (blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880) return MediaType_3_5;
-        }
-    }
-
     switch(ext_hash) {
-        case _x3('n', 'i', 'b'): return MediaType_5_25;
-        case _x3('w', 'a', 'v'): return MediaType_Cassette;
+        case _x3('w', 'o', 'z'):
+            return is_woz(buffer, st.st_size);
+
+        case _x3('2', 'm', 'g'):
+        case _x4('2', 'i', 'm', 'g'):
+            return is_2img(buffer, st.st_size);
+
+        case _x3('c', 'h', 'd'):
+            return is_chd(buffer, st.st_size);
+
+        // dc42 - dc,dc42,dsk,img,image
+        case _x2('d', 'c'): // n.b. as of .233, allowed for mac, not for apple2
+        case _x4('d', 'c', '4', '2'):
+            return is_dc42(buffer, st.st_size);
+
+            // dsk, image, img may also be raw or disk copy.
+        case _x3('d', 's', 'k'):
+        case _x3('i', 'm', 'g'):
+        case _x4('i', 'm', 'a', 'g'):
+
+            if (is_raw_525(st.st_size)) return MediaType_5_25;
+            if (is_raw_35(st.st_size)) return MediaType_3_5;
+            return is_dc42(buffer, st.st_size);
+
+        case _x2('d', 'o'):
+        case _x2('p', 'o'):
+            if (is_raw_525(st.st_size)) return MediaType_5_25;
+            if (is_raw_35(st.st_size)) return MediaType_3_5;
+            return MediaTypeUnknown;
+
+        // hdv - 3.5 or hard drive.
+        case _x3('h', 'd', 'v'):
+            if (is_raw_35(st.st_size)) return MediaType_3_5;
+            if ((st.st_size & 511) == 0) return MediaType_HardDisk;
+            return MediaTypeUnknown;
+            
+
+        case _x3('n', 'i', 'b'):
+            return MediaType_5_25;
+
+        case _x3('w', 'a', 'v'):
+            return MediaType_Cassette;
+
+        // cd-rom
         case _x3('i', 's', 'o'):
         case _x3('c', 'u', 'e'):
         case _x3('c', 'd', 'r'):
             return MediaType_CD;
 
-        // po, do, hdv, dsk - based on size
-        case _x2('d', 'o'):
-        case _x3('d', 's', 'k'):
-        case _x2('p', 'o'):
-        case _x3('h', 'd', 'v'): // usually 3.5 or hard drive
-            if (st.st_size <= 143360) return MediaType_5_25;
-            if (st.st_size <= 1474560) return MediaType_3_5;
-            return MediaType_HardDisk;
-            return MediaType_HardDisk;
+        case _x3('p', 'n', 'g'):
+            return MediaType_Picture;
+
+        case _x3('m', 'i', 'd'):
+            return MediaType_MIDI;
+
     }
 
-    return -1;
+    return MediaTypeUnknown;
+    
 }
