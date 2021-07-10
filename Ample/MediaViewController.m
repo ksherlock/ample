@@ -301,7 +301,7 @@ enum {
 @interface MediaViewController () {
 
     MediaCategory *_data[CATEGORY_COUNT];
-    NSArray *_root;
+    NSMutableArray *_root;
     Media _media;
     
     BOOL _loadingBookmark;
@@ -331,7 +331,7 @@ enum {
     for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
         [_data[i] setCategory: i];
     
-    _root = @[];
+    _root = [NSMutableArray new];
 
 }
 
@@ -694,11 +694,22 @@ static NSString *kDragType = @"private.ample.media";
         MediaCategory *cat = [_outlineView parentForItem: item];
         [_outlineView beginUpdates];
         [cat pruneChildren];
+        
+        // remove the entire category??
+        if (![cat validCount] && ![cat count]) {
+            NSUInteger ix = [_root indexOfObject: cat];
+            if (ix != NSNotFound) {
+                NSIndexSet *set = [NSIndexSet indexSetWithIndex: ix];
+                [_outlineView removeItemsAtIndexes: set
+                                          inParent: nil
+                                     withAnimation: NSTableViewAnimationEffectFade];
+
+                [_root removeObjectAtIndex: ix];
+            }
+        }
+        
         [_outlineView endUpdates];
     }
-    
-    // todo -- if this eliminates a category completely, it will still be included
-    // since we're now using animaations instead of reloading.
     
     [self rebuildArgs];
 }
