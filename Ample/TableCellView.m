@@ -44,15 +44,14 @@
 }
 #endif
 
--(void)viewDidMoveToSuperview {
-    return;
+/* mouse tracking to enable/disable dragger image -- no longer used.*/
 #if 0
+-(void)viewDidMoveToSuperview {
     if (_trackingRect) {
         [self removeTrackingRect: _trackingRect];
     }
     NSRect rect = [_dragHandle frame];
     _trackingRect = [self addTrackingRect: rect owner: self userData: NULL assumeInside:NO];
-#endif
 }
 
 -(void)mouseEntered:(NSEvent *)event {
@@ -62,6 +61,7 @@
 -(void)mouseExited:(NSEvent *)event {
     [_dragHandle setHidden: YES];
 }
+#endif
 
 @end
 
