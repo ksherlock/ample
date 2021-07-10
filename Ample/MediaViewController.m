@@ -778,8 +778,11 @@ static NSString *kDragType = @"private.ample.media";
             return NO;
     }
 
+    [_outlineView beginUpdates];
+    // todo -- check root, insert if necessary?
     MediaCategory *cat = _data[ix];
     [cat addURL: url];
+    [_outlineView endUpdates];
 
     [self rebuildArgs];
     return YES;

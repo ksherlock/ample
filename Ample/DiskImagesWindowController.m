@@ -250,7 +250,6 @@
 
 -(IBAction)doubleClick: (id)sender {
     NSDictionary *d = [self clickedItem];
-    NSLog(@"%@", d);
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
