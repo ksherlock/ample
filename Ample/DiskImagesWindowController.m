@@ -93,7 +93,7 @@
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
-    [nc addObserver: self selector: @selector(diskImageAdded:) name: @"DiskImageAdded" object: nil];
+    [nc addObserver: self selector: @selector(diskImageAdded:) name: kNotificationDiskImageAdded object: nil];
     
     [nc addObserver: self selector: @selector(willTerminate:) name: NSApplicationWillTerminateNotification object: nil];
 }
@@ -246,6 +246,15 @@
         [self markDirty];
     }
 
+}
+
+-(IBAction)doubleClick: (id)sender {
+    NSDictionary *d = [self clickedItem];
+    NSLog(@"%@", d);
+    
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+    [nc postNotificationName: kNotificationDiskImageMagicRoute object: nil userInfo: d];
 }
 
 @end

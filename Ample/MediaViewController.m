@@ -43,6 +43,7 @@ enum {
 @property NSString *title;
 @property NSInteger index;
 @property NSInteger category;
+@property (weak)NSOutlineView *view;
 
 -(NSInteger)count;
 -(id)objectAtIndex:(NSInteger)index;
@@ -141,7 +142,36 @@ enum {
     return YES;
 }
 
--(BOOL)pruneChildrenWithOutlineView: (NSOutlineView *)view {
+-(BOOL)addURL: (NSURL *)url {
+
+    for (MediaItem *item in _children) {
+        if (![item occupied]) {
+            [item setUrl: url];
+            return NO;
+        }
+    }
+    // add an extra item...
+
+    if (!_children) _children = [NSMutableArray new];
+    NSUInteger ix = [_children count];
+
+    MediaItem *item = [MediaItem new];
+    [item setIndex: ix];
+    [item setCategory: _category];
+    [item setUrl: url];
+    [item setValid: ix < _validCount];
+    [_children addObject: item];
+    if (_view) {
+        NSIndexSet *set = [NSIndexSet indexSetWithIndex: ix];
+        [_view insertItemsAtIndexes: set
+                          inParent: self
+                     withAnimation: NSTableViewAnimationEffectFade];
+    }
+
+    return YES;
+}
+
+-(BOOL)pruneChildren {
     NSUInteger count = [_children count];
     BOOL delta = NO;
     if (_validCount == count) return NO;
@@ -158,15 +188,15 @@ enum {
     }
     if (delta) {
 
-        if (view)
-            [view removeItemsAtIndexes: set inParent: self withAnimation: NSTableViewAnimationEffectFade];
+        if (_view)
+            [_view removeItemsAtIndexes: set inParent: self withAnimation: NSTableViewAnimationEffectFade];
 
         return YES;
     }
     return NO;
 }
 
--(BOOL)moveItemFrom: (NSInteger)oldIndex to: (NSInteger)newIndex outlineView: (NSOutlineView *)view {
+-(BOOL)moveItemFrom: (NSInteger)oldIndex to: (NSInteger)newIndex {
     if (newIndex == oldIndex) return NO;
     NSUInteger count = [_children count];
     if (oldIndex >= count) return NO;
@@ -179,7 +209,7 @@ enum {
     } else {
         [_children insertObject: item atIndex: newIndex];
     }
-    if (view) [view moveItemAtIndex: oldIndex inParent: self toIndex: newIndex inParent: self];
+    if (_view) [_view moveItemAtIndex: oldIndex inParent: self toIndex: newIndex inParent: self];
 
     // re-index and re-validate.
     unsigned ix = 0;
@@ -191,7 +221,7 @@ enum {
         
         ++ix;
     }
-    [self pruneChildrenWithOutlineView: view];
+    [self pruneChildren];
     //[view reloadItem: self reloadChildren: YES];
     return YES;
 }
@@ -403,7 +433,7 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
             [item setString: nil];
             delta = YES;
         }
-        if ([cat pruneChildrenWithOutlineView: _outlineView]) delta = YES;
+        if ([cat pruneChildren]) delta = YES;
     }
     if (delta) {
         [self rebuildRoot];
@@ -413,7 +443,9 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
 
 static NSString *kDragType = @"private.ample.media";
 - (void)viewDidLoad {
-    
+
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+
     [super viewDidLoad];
     
     //NSOutlineView *view = [self view];
@@ -424,6 +456,21 @@ static NSString *kDragType = @"private.ample.media";
     [_outlineView expandItem: nil expandChildren: YES];
     
     [_outlineView registerForDraggedTypes: @[kDragType]];
+
+    for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
+        [_data[i] setView: _outlineView];
+
+
+    [nc addObserver: self selector: @selector(magicRouteNotification:) name: kNotificationDiskImageMagicRoute object: nil];
+
+}
+
+-(void)viewWillDisappear {
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver: self];
+    
+    for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
+        [_data[i] setView: nil];
 }
 
 #pragma mark - NSOutlineViewDelegate
@@ -620,7 +667,7 @@ static NSString *kDragType = @"private.ample.media";
     NSInteger oldIndex = indexes[1];
 
     [_outlineView beginUpdates];
-    [cat moveItemFrom: oldIndex to: index outlineView: _outlineView];
+    [cat moveItemFrom: oldIndex to: index];
     [_outlineView endUpdates];
     [self rebuildArgs];
 
@@ -646,7 +693,7 @@ static NSString *kDragType = @"private.ample.media";
     if (![item valid]) {
         MediaCategory *cat = [_outlineView parentForItem: item];
         [_outlineView beginUpdates];
-        [cat pruneChildrenWithOutlineView: _outlineView];
+        [cat pruneChildren];
         [_outlineView endUpdates];
     }
     
@@ -663,7 +710,7 @@ static NSString *kDragType = @"private.ample.media";
     // TODO - don't add to recent disks if this is a bitbanger / midi / printer device.
     if (url && tag == 0) {
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-        [nc postNotificationName: @"DiskImageAdded" object: url];
+        [nc postNotificationName: kNotificationDiskImageAdded object: url];
     }
     
     [self rebuildArgs];
@@ -675,6 +722,60 @@ static NSString *kDragType = @"private.ample.media";
 
 -(IBAction)resetMedia:(id)sender {
     [self resetDiskImages];
+}
+
+
+
+-(void)magicRouteNotification: (NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    id path = [userInfo objectForKey: @"path"];
+    
+    if ([path isKindOfClass: [NSURL class]]) {
+        [self smartRouteURL: path];
+        return;
+    }
+
+    if ([path isKindOfClass: [NSString class]]) {
+        NSURL *url = [NSURL fileURLWithPath: path];
+        [self smartRouteURL: url];
+        return;
+    }
+}
+/*
+ * given a file, add it to the media list.
+ * TODO - how to handle if full or media type missing?
+ */
+-(BOOL)smartRouteURL: (NSURL *)url {
+    
+    if (!url) return NO;
+
+    MediaType mt = ClassifyMediaFile(url);
+    if (mt < 1) return NO; // unknown / error.
+    
+    unsigned ix = 0;
+    switch(mt) {
+        case MediaType_3_5: ix = kIndexFloppy35; break;
+        case MediaType_5_25: ix = kIndexFloppy525; break;
+        case MediaType_Cassette: ix = kIndexCassette; break;
+        case MediaType_HardDisk: ix = kIndexHardDrive; break;
+        case MediaType_CDROM: ix = kIndexCDROM; break;
+
+        case MediaType_Picture:
+        case MediaType_MIDI:
+        case MediaTypeError:
+        case MediaTypeUnknown:
+            return NO;
+    }
+
+    MediaCategory *cat = _data[ix];
+    [cat addURL: url];
+
+    [self rebuildArgs];
+    return YES;
+}
+
+-(BOOL)smartRouteFile: (NSString *)file {
+    return NO;
 }
 
 @end
@@ -816,6 +917,5 @@ static void CompressArray(NSMutableArray *array) {
     
     return YES;
 }
-
 
 @end

@@ -22,12 +22,12 @@ typedef struct Media {
 
 
 typedef enum {
-    MediaTypeErr = -1,
+    MediaTypeError = -1,
     MediaTypeUnknown = 0,
     MediaType_5_25,
     MediaType_3_5,
     MediaType_HardDisk,
-    MediaType_CD,
+    MediaType_CDROM,
     MediaType_Cassette,
     MediaType_Picture,
     MediaType_MIDI,
@@ -41,6 +41,6 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs);
 
 extern const Media EmptyMedia;
 
-MediaType ClassifyMediaFile(NSString *file);
+MediaType ClassifyMediaFile(id file);
 
 #endif /* Media_h */

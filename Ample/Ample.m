@@ -135,3 +135,6 @@ NSString *kDefaultDownloadExtension = @"DefaultDownloadExtension";
 
 NSString *kDownloadURL = @"DownloadURL";
 NSString *kDownloadExtension = @"DownloadExtension";
+
+NSString *kNotificationDiskImageAdded = @"Disk Image Added";
+NSString *kNotificationDiskImageMagicRoute = @"Disk Image Magic Route";

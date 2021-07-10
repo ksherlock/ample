@@ -74,12 +74,12 @@ static unsigned hash(const char *cp) {
     int i, shift;
     if (!cp) return 0;
     for (i = 0, shift = 0; i < 4; ++i, shift += 8) {
-        unsigned c = cp[0];
+        unsigned c = cp[i];
         if (!c) break;
         c = tolower(c);
         rv |= (c << shift);
     }
-    if (i > 4) return 0;
+    //if (i > 4) return 0; // .image is 5....
     return rv;
 }
 
@@ -138,7 +138,7 @@ static MediaType is_woz(const uint8_t *buffer, size_t file_size) {
         }
         return MediaTypeUnknown;
     }
-    return MediaTypeErr;
+    return MediaTypeError;
 }
 
 static MediaType is_dc42(const uint8_t *buffer, size_t file_size) {
@@ -152,7 +152,7 @@ static MediaType is_dc42(const uint8_t *buffer, size_t file_size) {
         }
     }
 
-    return MediaTypeErr;
+    return MediaTypeError;
 }
 
 static MediaType is_2img(const uint8_t *buffer, size_t file_size) {
@@ -169,7 +169,7 @@ static MediaType is_2img(const uint8_t *buffer, size_t file_size) {
         //return MediaTypeUnknown;
     }
 
-    return MediaTypeErr;
+    return MediaTypeError;
 }
 
 static MediaType is_chd(const uint8_t *buffer, size_t file_size) {
@@ -185,18 +185,18 @@ static MediaType is_chd(const uint8_t *buffer, size_t file_size) {
         }
         return MediaTypeUnknown;
     }
-    return MediaTypeErr;
+    return MediaTypeError;
 }
 
 
 
-MediaType ClassifyMediaFile(NSString *file) {
+MediaType ClassifyMediaFile(id file) {
     
     struct stat st;
     ssize_t size;
     unsigned char buffer[128];
     int fd;
-    const char *path = [file fileSystemRepresentation];
+    const char *path = [file fileSystemRepresentation]; // or URL
     const char *ext = extname(path);
     unsigned ext_hash = hash(ext);
 
@@ -204,12 +204,12 @@ MediaType ClassifyMediaFile(NSString *file) {
     memset(buffer, 0, sizeof(buffer));
 
     fd = open(path, O_RDONLY);
-    if (fd < 0) return MediaTypeErr;
+    if (fd < 0) return MediaTypeError;
     fstat(fd, &st);
     
     size = read(fd, buffer, sizeof(buffer));
     close(fd);
-    if (size <= 0) return MediaTypeErr;
+    if (size <= 0) return MediaTypeError;
 
     // 13 sector support ? not on an event 512 block boundary.
     // = 116480 bytes.
@@ -247,11 +247,11 @@ MediaType ClassifyMediaFile(NSString *file) {
 
         // hdv - 3.5 or hard drive.
         case _x3('h', 'd', 'v'):
+        case _x3('r', 'a', 'w'):
             if (is_raw_35(st.st_size)) return MediaType_3_5;
             if ((st.st_size & 511) == 0) return MediaType_HardDisk;
             return MediaTypeUnknown;
             
-
         case _x3('n', 'i', 'b'):
             return MediaType_5_25;
 
@@ -262,7 +262,7 @@ MediaType ClassifyMediaFile(NSString *file) {
         case _x3('i', 's', 'o'):
         case _x3('c', 'u', 'e'):
         case _x3('c', 'd', 'r'):
-            return MediaType_CD;
+            return MediaType_CDROM;
 
         case _x3('p', 'n', 'g'):
             return MediaType_Picture;

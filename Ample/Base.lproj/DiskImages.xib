@@ -100,6 +100,7 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
+                                        <action trigger="doubleAction" selector="doubleClick:" target="-2" id="Zud-ke-iLR"/>
                                         <binding destination="vmp-9h-Z5R" name="content" keyPath="arrangedObjects" id="GHn-tz-ash"/>
                                         <outlet property="dataSource" destination="-2" id="PRV-Rt-UuC"/>
                                         <outlet property="delegate" destination="-2" id="WuV-c9-o5I"/>

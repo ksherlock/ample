@@ -40,6 +40,8 @@ extern NSString *kDownloadExtension;
 extern NSString *kDefaultDownloadURL;
 extern NSString *kDefaultDownloadExtension;
 
+extern NSString *kNotificationDiskImageAdded;
+extern NSString *kNotificationDiskImageMagicRoute;
 
 @protocol Bookmark <NSObject>
 -(BOOL)loadBookmark: (NSDictionary *)bookmark;

@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(IBAction)resetMedia:(id)sender;
 
+-(BOOL)smartRouteURL: (NSURL *)url;
+-(BOOL)smartRouteFile: (NSString *)file;
+
 @end
 
 @interface MediaViewController (Bookmark) <Bookmark>
