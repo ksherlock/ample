@@ -282,7 +282,9 @@ enum {
 }
 
 -(void)prepareView: (TablePathView *)view {
-    
+    /* set the path tag = category. */
+    NSPathControl *pc = [view pathControl];
+    [pc setTag: _category + 1]; // to differentiate 0 / no path control.
 }
 
 -(CGFloat)height {
@@ -717,11 +719,28 @@ static NSString *kDragType = @"private.ample.media";
 - (IBAction)pathAction:(id)sender {
     
     NSURL *url = [(NSPathControl *)sender URL];
-    NSInteger tag = [sender tag];
-    // TODO - don't add to recent disks if this is a bitbanger / midi / printer device.
-    if (url && tag == 0) {
-        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-        [nc postNotificationName: kNotificationDiskImageAdded object: url];
+    NSInteger tag = [sender tag] - 1;
+    
+    switch(tag) {
+
+        case kIndexFloppy525:
+        case kIndexFloppy35:
+        case kIndexHardDrive:
+        case kIndexCDROM:
+        case kIndexCassette:
+        case kIndexDiskImage:
+            if (url) {
+                NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+                [nc postNotificationName: kNotificationDiskImageAdded object: url];
+            }
+            break;
+            /*
+            kIndexPicture,
+            kIndexMIn,
+            kIndexMout,
+             */
+
+        default: break;
     }
     
     [self rebuildArgs];
