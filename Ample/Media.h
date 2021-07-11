@@ -18,6 +18,9 @@ typedef struct Media {
     unsigned floppy_3_5;
     unsigned pseudo_disk;
     unsigned bitbanger;
+    unsigned midiin;
+    unsigned midiout;
+    unsigned picture;
 } Media;
 
 

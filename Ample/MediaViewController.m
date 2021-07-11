@@ -17,11 +17,18 @@ enum {
     kIndexCassette,
     kIndexDiskImage,
     kIndexBitBanger,
+    kIndexMidiIn,
+    kIndexMidiOut,
+    kIndexPicture, // computer eyes -pic, .png only.
+    // kIndexPrintout // -prin, .prn extension only?
+    
+    kIndexLast
 };
 
-#define CATEGORY_COUNT 7
+#define CATEGORY_COUNT 10
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
+static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 @protocol MediaNode
 -(BOOL)isGroupItem;
@@ -278,6 +285,7 @@ enum {
 
 -(NSString *)viewIdentifier {
     if (_category == kIndexBitBanger) return @"BBItemView";
+    if (_category == kIndexBitBanger) return @"OutputItemView";
     return @"ItemView";
 }
 
@@ -330,6 +338,10 @@ enum {
     _data[kIndexDiskImage] = [MediaCategory categoryWithTitle: @"Hard Disk Images"]; // Mac Nubus psuedo image device
     _data[kIndexBitBanger] = [MediaCategory categoryWithTitle: @"Serial Bit Banger"]; // null_modem
 
+    _data[kIndexMidiIn] = [MediaCategory categoryWithTitle: @"MIDI (In)"];
+    _data[kIndexMidiOut] = [MediaCategory categoryWithTitle: @"MIDI (Out)"];
+    _data[kIndexPicture] = [MediaCategory categoryWithTitle: @"Picture"];
+
     for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
         [_data[i] setCategory: i];
     
@@ -342,7 +354,7 @@ enum {
 -(void)rebuildArgs {
     
     static char* prefix[] = {
-        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb",
+        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb", "min", "mout", "pic"
     };
     static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
@@ -394,6 +406,8 @@ enum {
 
 -(void)setMedia: (Media)media {
     
+    // todo -- fancy diff algorithm to animate changes.
+    
     MediaCategory *cat;
     BOOL delta = NO;
     unsigned x;
@@ -412,6 +426,9 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     _(floppy_5_25, kIndexFloppy525);
     _(pseudo_disk, kIndexDiskImage);
     _(bitbanger, kIndexBitBanger);
+    _(midiin, kIndexMidiIn);
+    _(midiout, kIndexMidiOut);
+    _(picture, kIndexPicture);
 
 
     if (delta) {
@@ -635,7 +652,7 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView acceptDrop:(id<NSDraggingInfo>)info item:(id)item childIndex:(NSInteger)index {
- 
+
     if (index < 0) return NO;
 
     
@@ -734,12 +751,12 @@ static NSString *kDragType = @"private.ample.media";
                 [nc postNotificationName: kNotificationDiskImageAdded object: url];
             }
             break;
-            /*
-            kIndexPicture,
-            kIndexMIn,
-            kIndexMout,
-             */
 
+        case kIndexPicture:
+        case kIndexMidiIn:
+            // these don't currently use a path control.
+        case kIndexMidiOut:
+        case kIndexBitBanger:
         default: break;
     }
     
@@ -790,8 +807,8 @@ static NSString *kDragType = @"private.ample.media";
         case MediaType_HardDisk: ix = kIndexHardDrive; break;
         case MediaType_CDROM: ix = kIndexCDROM; break;
 
-        case MediaType_Picture:
-        case MediaType_MIDI:
+        case MediaType_Picture: ix = kIndexPicture; break;
+        case MediaType_MIDI: ix = kIndexMidiIn; break;
         case MediaTypeError:
         case MediaTypeUnknown:
             return NO;
@@ -828,7 +845,7 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 static NSString * BookmarkStrings[] = {
-    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb",
+    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb", @"midiin", @"midiout", @"pic"
 };
 static_assert(SIZEOF(BookmarkStrings) == CATEGORY_COUNT, "Missing item");
 
@@ -864,7 +881,7 @@ static int BookmarkIndex(NSString *str) {
                 MediaItem *item = [cat objectAtIndex: i++];
                 if (![path length]) continue;
 
-                if (ix == kIndexBitBanger) {
+                if (ix == kIndexBitBanger || ix == kIndexMidiOut) {
                     [item setString: path];
                 } else {
                     NSURL *url = [NSURL fileURLWithPath: path];
@@ -896,7 +913,7 @@ static int BookmarkIndex(NSString *str) {
                 MediaItem *item = [cat objectAtIndex: i++];
                 if (![path length]) continue;
 
-                if (ix == kIndexBitBanger) {
+                if (ix == kIndexBitBanger || ix == kIndexMidiOut) {
                     [item setString: path];
                 } else {
                     NSURL *url = [NSURL fileURLWithPath: path];

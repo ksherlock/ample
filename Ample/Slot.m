@@ -165,7 +165,7 @@ static NSDictionary *IndexMap = nil;
     // _name is :rs232.  should be set to -sl3:ssc:rs232 :/
 #if 0
     if (!_title) {
- 
+
         BOOL found = NO;
         unsigned ix = 0;
         for (SlotOption *option in _options) {
@@ -512,6 +512,9 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     _(floppy_5_25);
     _(pseudo_disk);
     _(bitbanger);
+    _(midiin);
+    _(midiout);
+    _(picture);
 #undef _
         
     for (Slot *s in _children) {

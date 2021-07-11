@@ -73,8 +73,8 @@
                                                 </pathCell>
                                                 <connections>
                                                     <action selector="pathAction:" target="-2" id="4oX-bW-ANp"/>
-                                                    <binding destination="yGq-lc-RCM" name="enabled" keyPath="objectValue.valid" id="f8P-gt-vmK"/>
                                                     <binding destination="yGq-lc-RCM" name="value" keyPath="objectValue.url" id="Ony-ph-VVo"/>
+                                                    <binding destination="yGq-lc-RCM" name="enabled" keyPath="objectValue.valid" id="f8P-gt-vmK"/>
                                                 </connections>
                                             </pathControl>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6g1-NT-J1w">
@@ -132,18 +132,63 @@
                                                 </textFieldCell>
                                                 <connections>
                                                     <action selector="textAction:" target="-2" id="lmX-t8-mEc"/>
-                                                    <binding destination="2Nq-Xz-tkV" name="enabled" keyPath="objectValue.valid" id="ZTM-E3-Y9P"/>
                                                     <binding destination="2Nq-Xz-tkV" name="value" keyPath="objectValue.string" id="2dZ-JJ-asM">
                                                         <dictionary key="options">
                                                             <string key="NSNullPlaceholder">socket.address:port or /path/to/file</string>
                                                         </dictionary>
                                                     </binding>
+                                                    <binding destination="2Nq-Xz-tkV" name="enabled" keyPath="objectValue.valid" id="ZTM-E3-Y9P"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
                                         <connections>
                                             <outlet property="dragHandle" destination="47E-Ef-Ott" id="bnY-rz-24V"/>
                                             <outlet property="ejectButton" destination="zxn-1E-o34" id="eC6-Mf-tN6"/>
+                                        </connections>
+                                    </tableCellView>
+                                    <tableCellView identifier="OutputItemView" id="jQd-Ar-5uf" customClass="TablePathView">
+                                        <rect key="frame" x="1" y="71" width="296" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jg1-Wh-HDk">
+                                                <rect key="frame" x="0.0" y="1" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="drag-handle-4x10" id="SjY-iM-xSZ"/>
+                                            </imageView>
+                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vG4-PP-efF" customClass="EjectButton">
+                                                <rect key="frame" x="277" y="3" width="16" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="eject-16x16" imagePosition="only" alignment="center" alternateImage="eject-hover-16x16" imageScaling="proportionallyDown" inset="2" id="VX6-hb-mCU">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="ejectAction:" target="-2" id="LNr-rK-kpx"/>
+                                                    <binding destination="jQd-Ar-5uf" name="enabled" keyPath="objectValue.occupied" id="p4S-6q-dCG"/>
+                                                </connections>
+                                            </button>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tm9-Zq-fag">
+                                                <rect key="frame" x="20" y="0.0" width="244" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="/path/to/file" drawsBackground="YES" id="RUQ-s4-75A">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="textAction:" target="-2" id="N7h-6y-D8W"/>
+                                                    <binding destination="jQd-Ar-5uf" name="enabled" keyPath="objectValue.valid" id="1wE-NY-Vb2"/>
+                                                    <binding destination="jQd-Ar-5uf" name="value" keyPath="objectValue.string" id="kXU-qJ-HKa">
+                                                        <dictionary key="options">
+                                                            <string key="NSNullPlaceholder">/path/to/file</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <connections>
+                                            <outlet property="dragHandle" destination="Jg1-Wh-HDk" id="o14-ay-0Ou"/>
+                                            <outlet property="ejectButton" destination="vG4-PP-efF" id="X2I-2N-t5r"/>
                                         </connections>
                                     </tableCellView>
                                 </prototypeCellViews>
