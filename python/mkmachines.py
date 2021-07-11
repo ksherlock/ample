@@ -186,7 +186,9 @@ def find_media(parent, include_slots=False):
 		"harddisk_image": "hard",
 		"floppy_sonny": "floppy_3_5",
 		"messimg_disk_image": "pseudo_disk",
-		"bitbanger": "bitbanger",
+		"bitbanger": "bitbanger", # null_modem, etc.
+		"picture_image": "picture", # a2ceyes
+		# "printer_image": "printout",
 	}
 	remap_slot = {
 		# now handled at the slot level.
@@ -264,6 +266,8 @@ DEVICE_MEDIA = {
 	'35hd': 'floppy_3_5',
 	'35dd': 'floppy_3_5',
 	'35sd': 'floppy_3_5',
+	'midiin': 'midiin',
+	'midiout': 'midiout',
 	# 'null_modem': 'bitbanger',
 	# 'rs232_sync_io': 'bitbanger',
 }
@@ -310,6 +314,8 @@ def make_device_options(slot):
 
 		if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
 		elif device and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
+		elif device and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
+		# elif device and device.find("./device_ref[@name='printer_image']") != None: media = { 'printout': 1 }
 
 		item = {
 			'value': name,
