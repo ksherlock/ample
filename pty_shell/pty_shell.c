@@ -152,7 +152,7 @@ void sig_handler(int sig, siginfo_t *info, void *context) {
 			ioctl(pty_fd, TIOCOUTQ, &wlen);
 			ioctl(pty_fd, FIONREAD, &rlen);
 
-			if (rlen > 9999) rlen = 9999; 
+			if (rlen > 9999) rlen = 9999;
 			if (wlen > 9999) wlen = 9999;
 
 			memcpy(buffer, "child pid:        read queue:        write queue:        \n", 58);
@@ -163,7 +163,7 @@ void sig_handler(int sig, siginfo_t *info, void *context) {
 			do {
 				buffer[n--] = '0' + (x %10);
 				x /= 10;
-			} while(x);		
+			} while(x);
 
 			n = 35;
 			x = rlen;
@@ -272,9 +272,9 @@ int main(int argc, char **argv) {
 	    tios.c_lflag = TTYDEF_LFLAG;
 	    tios.c_iflag = TTYDEF_IFLAG;
 	    tios.c_cflag = TTYDEF_CFLAG;
-	}	    
-    tios.c_ispeed = tios.c_ospeed = B9600;  
-    
+	}
+    tios.c_ispeed = tios.c_ospeed = B9600;
+
 
 	/* verify it's pty? */
 
@@ -380,7 +380,7 @@ int main(int argc, char **argv) {
 			}
 			break;
 		}
-		// flush discards data. 
+		// flush discards data.
 		//ok = tcflush(fd, TCIOFLUSH);
 		ok = tcdrain(fd);
 	}

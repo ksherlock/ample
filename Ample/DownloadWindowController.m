@@ -252,7 +252,7 @@ enum {
     _items = tmp;
     [self refreshROMs: nil];
     [_arrayController setContent: _items];
- 
+
     //[_tableView reloadData];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     _session = [NSURLSession sessionWithConfiguration: config delegate: self delegateQueue: nil];
@@ -486,7 +486,7 @@ enum {
     NSUInteger tag = [sender tag];
     [sender setState: NSControlStateValueOn];
 
- 
+
     for (NSButton *b in _filterButtons) {
         if (b != sender) [b setState: NSControlStateValueOff];
     }

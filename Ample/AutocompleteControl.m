@@ -11,7 +11,7 @@
 
 
 /*
- 
+
 Todo --
 - when there is a value, can filter the list by only including header items and the selected value
 - draw inactive menu items
@@ -21,7 +21,7 @@ Todo --
  - 1. it's not moved someplace more appropriate when the size shrinks
  - 2. it should display to the left or right in that case.
  - need to know parent's frame.
- 
+
  - fuzzy search - minimum distance between letters?
  */
 

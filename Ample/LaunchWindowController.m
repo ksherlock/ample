@@ -205,7 +205,7 @@ static void AddSubview(NSView *parent, NSView *child) {
     AddSubview(_mediaView, [_mediaController view]);
     AddSubview(_machineView, [_machineViewController view]);
 
- 
+
     // can't be done until above views are set up.
     [self defaultLoad: nil];
 
@@ -545,7 +545,7 @@ static NSString *ShellQuote(NSString *s) {
     }
     
     // audio video.
- 
+
     if (_mameAVI && [_mameAVIPath length]) {
         [argv addObject: @"-aviwrite"];
         [argv addObject: _mameAVIPath];

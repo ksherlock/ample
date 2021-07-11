@@ -199,7 +199,7 @@
 
 /*
  The parts we care about:
- 
+
  <softwarelist name="" description="">
     <software name="">
         <description>...</description>
