@@ -403,6 +403,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -897,6 +902,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1391,6 +1401,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1885,6 +1900,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2381,6 +2401,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2877,6 +2902,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3371,6 +3401,11 @@
             <string>Digital Vision ComputerEyes/2</string>
             <key>devname</key>
             <string>a2ceyes2</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3652,6 +3687,11 @@
             <string>Digital Vision ComputerEyes</string>
             <key>devname</key>
             <string>a2ceyes</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -4611,6 +4651,11 @@
                 <string>MIDI In port</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -4634,6 +4679,11 @@
                 <string>MIDI Out port</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>

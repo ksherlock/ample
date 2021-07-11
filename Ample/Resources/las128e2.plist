@@ -115,6 +115,11 @@
             <string>Digital Vision ComputerEyes</string>
             <key>devname</key>
             <string>a2ceyes</string>
+            <key>media</key>
+            <dict>
+              <key>picture</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
