@@ -342,8 +342,10 @@ static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
     _data[kIndexMidiOut] = [MediaCategory categoryWithTitle: @"MIDI (Out)"];
     _data[kIndexPicture] = [MediaCategory categoryWithTitle: @"Picture"];
 
-    for (unsigned i = 0; i < CATEGORY_COUNT; ++i)
+    for (unsigned i = 0; i < CATEGORY_COUNT; ++i) {
         [_data[i] setCategory: i];
+        [_data[i] setIndex: -1];
+    }
     
     _root = [NSMutableArray new];
 
@@ -383,6 +385,7 @@ static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 }
 
 -(void)rebuildRoot {
+
     NSMutableArray *tmp = [NSMutableArray new];
     int ix = 0;
     for (unsigned j = 0 ; j < CATEGORY_COUNT; ++j) {
@@ -415,6 +418,8 @@ static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
     if (MediaEqual(&_media, &media)) return;
     _media = media;
     
+    [_outlineView beginUpdates];
+
     
 #undef _
 #define _(name, index) \
@@ -435,6 +440,8 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
         [self rebuildRoot];
         if (!_loadingBookmark) [self rebuildArgs];
     }
+
+    [_outlineView endUpdates];
 }
 
 -(void)resetDiskImages {
@@ -724,6 +731,7 @@ static NSString *kDragType = @"private.ample.media";
                                      withAnimation: NSTableViewAnimationEffectFade];
 
                 [_root removeObjectAtIndex: ix];
+                [cat setIndex: -1];
             }
         }
         
