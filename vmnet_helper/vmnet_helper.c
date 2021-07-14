@@ -121,7 +121,7 @@ int classify_mac(uint8_t *mac) {
 	return 2; /* multicast */
 }
 
-void msg_read(uint32_t flags) {	
+void msg_read(uint32_t flags) {
 	/* flag to block broadcast, multicast, etc? */
 
 	int count = 1;
@@ -320,7 +320,7 @@ void vm_shutdown(void) {
 }
 
 int main(int argc, char **argv) {
-	
+
 
 	uint32_t msg;
 	uint32_t extra;
