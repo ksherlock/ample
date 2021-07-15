@@ -31,7 +31,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView id="P9d-sS-qEb" customClass="FlippedView">
-                        <rect key="frame" x="302" y="105" width="316" height="363"/>
+                        <rect key="frame" x="302" y="105" width="326" height="363"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
                     <tabView initialItem="zUN-Qs-haG" id="l8R-bg-6Zm">
@@ -237,6 +237,17 @@
                                                 <binding destination="-2" name="selectedTag" keyPath="self.mameSpeed" id="nFG-yA-KC1"/>
                                             </connections>
                                         </popUpButton>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="knB-Rn-1Cm">
+                                            <rect key="frame" x="15" y="40" width="67" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Rewind" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Y7b-jN-HCc">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.mameRewind" id="Hw5-n7-O27"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -386,7 +397,7 @@
                         </connections>
                     </tabView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-xI-P5J" customClass="FlippedView">
-                        <rect key="frame" x="664" y="107" width="316" height="331"/>
+                        <rect key="frame" x="654" y="107" width="326" height="331"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     </customView>
                     <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" horizontalScrollElasticity="none" id="2ue-XT-byh">
@@ -424,7 +435,7 @@
                         </scroller>
                     </scrollView>
                     <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" id="pNl-g4-ZLh" customClass="AutocompleteControl">
-                        <rect key="frame" x="664" y="446" width="316" height="22"/>
+                        <rect key="frame" x="654" y="446" width="326" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                         <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Software List" usesSingleLineMode="YES" bezelStyle="round" id="sMi-a3-XEn">
                             <font key="font" metaFont="system"/>

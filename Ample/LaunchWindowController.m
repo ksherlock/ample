@@ -49,6 +49,7 @@ static NSString *kContextMachine = @"kContextMachine";
 @property BOOL mameMouse;
 @property BOOL mameSamples;
 @property BOOL mameBGFX;
+@property BOOL mameRewind;
 
 @property BOOL mameAVI;
 @property BOOL mameWAV;
@@ -149,6 +150,7 @@ static int EffectsIndex(NSString *str) {
     [self setMameSamples: NO];
     [self setMameSquarePixels: NO];
     [self setMameDebug: NO];
+    [self setMameRewind: NO];
     [self setMameWindowMode: 1]; // default = 1x window.
 
     [self setMameBackend: 0];
@@ -214,7 +216,7 @@ static void AddSubview(NSView *parent, NSView *child) {
         //@"mameMachine", // - handled
         @"mameSquarePixels", @"mameWindowMode",
         @"mameMouse", @"mameSamples",
-        @"mameDebug",
+        @"mameDebug", @"mameRewind",
         @"mameSpeed",
         @"mameAVI", @"mameAVIPath",
         @"mameWAV", @"mameWAVPath",
@@ -460,7 +462,7 @@ static NSString *ShellQuote(NSString *s) {
         [argv addObject: @"-nosamples"];
     
     if (_mameDebug) [argv addObject: @"-debug"];
-
+    if (_mameRewind) [argv addObject: @"-rewind"];
 
     
     /*
@@ -874,6 +876,7 @@ static NSString *ShellQuote(NSString *s) {
 #define _(a,b) n = [d objectForKey: a]; if ([n isKindOfClass: NumberClass]) [self b : [n boolValue]]
   
     _(@"debug", setMameDebug);
+    _(@"rewind", setMameRewind);
     _(@"squarePixels", setMameSquarePixels);
     _(@"mouse", setMameMouse);
     _(@"samples", setMameSamples);
@@ -948,6 +951,7 @@ static NSString *ShellQuote(NSString *s) {
 #define _(v,k) [dict setObject: v ? (NSObject *)kCFBooleanTrue : (NSObject *)kCFBooleanFalse forKey: k]
 
     _(_mameDebug, @"debug");
+    _(_mameRewind, @"rewind");
     _(_mameSquarePixels, @"squarePixels");
     _(_mameMouse, @"mouse");
     _(_mameSamples, @"samples");
