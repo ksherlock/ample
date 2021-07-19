@@ -42,7 +42,7 @@ NSURL *MameURL(void) {
         
     if ([defaults boolForKey: kUseCustomMame]) {
         NSString *path = [defaults stringForKey: kMamePath];
-        if (![path length]) return [NSURL fileURLWithPath: path];
+        if ([path length]) return [NSURL fileURLWithPath: path];
     }
     
     return [bundle URLForAuxiliaryExecutable: @"mame64"];
