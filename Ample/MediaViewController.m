@@ -285,7 +285,8 @@ static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 -(NSString *)viewIdentifier {
     if (_category == kIndexBitBanger) return @"BBItemView";
-    if (_category == kIndexBitBanger) return @"OutputItemView";
+    if (_category == kIndexMidiOut) return @"OutputItemView";
+    if (_category == kIndexMidiIn) return @"OutputItemView";
     return @"ItemView";
 }
 
@@ -431,8 +432,15 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     _(floppy_5_25, kIndexFloppy525);
     _(pseudo_disk, kIndexDiskImage);
     _(bitbanger, kIndexBitBanger);
+    // disable midi for now - it's either a midi file (which auto-plays too soon to be useful)
+    // or a midi device ("default" for first one).
+    // So we should build a device list (and pre-populate the default one)
+    // another approach is a separate utility to act as a midi/serial input converter
+    // and midi file / serial converter so the modem/serial port could be used.
+#if 0
     _(midiin, kIndexMidiIn);
     _(midiout, kIndexMidiOut);
+#endif
     _(picture, kIndexPicture);
 
 
@@ -760,9 +768,9 @@ static NSString *kDragType = @"private.ample.media";
             }
             break;
 
+            // not disk images or don't use a path control.
         case kIndexPicture:
         case kIndexMidiIn:
-            // these don't currently use a path control.
         case kIndexMidiOut:
         case kIndexBitBanger:
         default: break;
@@ -816,7 +824,7 @@ static NSString *kDragType = @"private.ample.media";
         case MediaType_CDROM: ix = kIndexCDROM; break;
 
         case MediaType_Picture: ix = kIndexPicture; break;
-        case MediaType_MIDI: ix = kIndexMidiIn; break;
+        case MediaType_MIDI: // ix = kIndexMidiIn; break;
         case MediaTypeError:
         case MediaTypeUnknown:
             return NO;
@@ -889,7 +897,7 @@ static int BookmarkIndex(NSString *str) {
                 MediaItem *item = [cat objectAtIndex: i++];
                 if (![path length]) continue;
 
-                if (ix == kIndexBitBanger || ix == kIndexMidiOut) {
+                if (ix == kIndexBitBanger || ix == kIndexMidiOut || ix == kIndexMidiIn) {
                     [item setString: path];
                 } else {
                     NSURL *url = [NSURL fileURLWithPath: path];
@@ -921,7 +929,7 @@ static int BookmarkIndex(NSString *str) {
                 MediaItem *item = [cat objectAtIndex: i++];
                 if (![path length]) continue;
 
-                if (ix == kIndexBitBanger || ix == kIndexMidiOut) {
+                if (ix == kIndexBitBanger || ix == kIndexMidiOut || ix == kIndexMidiIn) {
                     [item setString: path];
                 } else {
                     NSURL *url = [NSURL fileURLWithPath: path];
