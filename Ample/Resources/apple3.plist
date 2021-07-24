@@ -115,6 +115,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>softcard3</string>
+            <key>description</key>
+            <string>Microsoft SoftCard ///</string>
+            <key>devname</key>
+            <string>softcard3</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>focusdrive</string>
             <key>description</key>
             <string>Parsons Engineering Focus Drive</string>
@@ -193,6 +201,14 @@
             <string>CMS SCSI II Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>softcard3</string>
+            <key>description</key>
+            <string>Microsoft SoftCard ///</string>
+            <key>devname</key>
+            <string>softcard3</string>
           </dict>
           <dict>
             <key>value</key>
@@ -277,6 +293,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>softcard3</string>
+            <key>description</key>
+            <string>Microsoft SoftCard ///</string>
+            <key>devname</key>
+            <string>softcard3</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>focusdrive</string>
             <key>description</key>
             <string>Parsons Engineering Focus Drive</string>
@@ -355,6 +379,14 @@
             <string>CMS SCSI II Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>softcard3</string>
+            <key>description</key>
+            <string>Microsoft SoftCard ///</string>
+            <key>devname</key>
+            <string>softcard3</string>
           </dict>
           <dict>
             <key>value</key>
