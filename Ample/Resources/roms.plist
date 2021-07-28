@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>source</key>
-    <string>https://archive.org/download/mame0.224</string>
-    <key>type</key>
-    <string>zip</string>
-    <key>version</key>
-    <string>0.224</string>
     <key>roms</key>
     <array>
       <string>a1cass</string>
@@ -113,7 +107,6 @@
       <string>ivelultr</string>
       <string>kb_ec1841</string>
       <string>kb_iskr1030</string>
-      <string>kb_pc83</string>
       <string>kb_pcxt83</string>
       <string>keytronic_pc3270</string>
       <string>las128e2</string>
@@ -126,17 +119,12 @@
       <string>mac128k</string>
       <string>mac2fdhd</string>
       <string>mac512k</string>
-      <string>mac512ke</string>
       <string>macclas2</string>
       <string>macclasc</string>
       <string>macii</string>
       <string>maciici</string>
-      <string>maciicx</string>
-      <string>maciihmu</string>
       <string>maciisi</string>
-      <string>maciivi</string>
       <string>maciivx</string>
-      <string>maciix</string>
       <string>mackbd_m0110</string>
       <string>mackbd_m0110a</string>
       <string>mackbd_m0110a_f</string>

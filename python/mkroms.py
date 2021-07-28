@@ -4,6 +4,9 @@ import subprocess
 from plist import to_plist
 
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+from os.path import splitext
+
 
 from machines import MACHINES
 
@@ -35,7 +38,7 @@ p.add_argument('--full', action='store_true')
 p.add_argument('machine', nargs="*")
 args = p.parse_args()
 
-full = args.full
+# full = args.full
 machines = args.machine
 if not machines: machines = [ *MACHINES, *EXTRA_MACHINES]
 
@@ -82,8 +85,42 @@ EXCLUDE = [
 ]
 
 
+def build_known_roms_list():
+	infile = "mame-0233-full.html"
+	# infile = "mame-0.231-merged.html"
+	rv = set()
+
+	class X(HTMLParser):
+		rv = set()
+
+		def handle_starttag(self, tag, attrs):
+			if tag != 'a': return
+			href = None
+			for xx in attrs:
+				if xx[0] == 'href':
+					href = xx[1]
+					break
+			if not href: return
+			root, ext = splitext(href)
+			if ext in (".7z", ".zip"): self.rv.add(root)
+
+
+			
+	x = X()
+	with open(infile) as f:
+		data = f.read()
+		x.feed(data)
+		x.close()
+	return x.rv
+
+
+
+
 mnames = set()
 rnames = set()
+
+known = build_known_roms_list()
+
 for m in machines:
 
 	print(m)
@@ -101,9 +138,10 @@ for m in machines:
 
 	# find machines that have a rom child
 	for x in root.findall('machine/rom/..'):
-		mnames.add(x.get('name'))
-		for y in x.findall('./rom'):
-			rnames.add(y.get('name'))
+		name = x.get('name')
+		if (name in known): mnames.add(name)
+		# for y in x.findall('./rom'):
+		# 	rnames.add(y.get('name'))
 		
 
 # print("\n\n\n")
@@ -112,14 +150,15 @@ for m in machines:
 # for x in ll:
 # 	print(x)
 
-if full: ROMS = list(mnames)
-else: ROMS = list(mnames.difference(EXCLUDE))
+# if full: ROMS = list(mnames)
+# else: ROMS = list(mnames.difference(EXCLUDE))
+ROMS = list(mnames)
 ROMS.sort()
 
 data = {}
-data["source"] = "https://archive.org/download/mame0.224"
-data["type"] = "zip"
-data["version"] = "0.224"
+# data["source"] = "https://archive.org/download/mame0.224"
+# data["type"] = "zip"
+# data["version"] = "0.224"
 data["roms"] = ROMS
 
 # print(ROMS)
