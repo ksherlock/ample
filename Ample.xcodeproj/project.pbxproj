@@ -149,6 +149,10 @@
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
+		B68A899026BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
+		B68A899126BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
+		B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
+		B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
 		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
@@ -449,6 +453,9 @@
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
+		B68A898F26BE18E000B2C8C6 /* MidiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiManager.m; sourceTree = "<group>"; };
+		B68A899226BE320200B2C8C6 /* MidiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiManager.h; sourceTree = "<group>"; };
+		B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		B6A1A1932528EB1700DB0FD7 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B6A1A1962528EB4600DB0FD7 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
@@ -518,6 +525,7 @@
 			files = (
 				B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */,
 				B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */,
+				B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */,
 				B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +534,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */,
 				B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +644,7 @@
 		B66236B624FDA686006CABD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */,
 				B635C09926784A1200B23BFD /* Sparkle.framework */,
 				B65D718525E70BD5008C5F87 /* WebKit.framework */,
 				B6841BDD251ECC29006A5C39 /* vmnet.framework */,
@@ -725,6 +735,8 @@
 				B6B9EA642506A5550080E70D /* EjectButton.m */,
 				B64AF1F8250EF6A500A09B9B /* Transformers.h */,
 				B64AF1F9250EF6A500A09B9B /* Transformers.m */,
+				B68A898F26BE18E000B2C8C6 /* MidiManager.m */,
+				B68A899226BE320200B2C8C6 /* MidiManager.h */,
 				B6BA258124E99BEB005FB8FF /* Assets.xcassets */,
 				B64E15AF24EA365E00E8AD3D /* Resources */,
 				B6BA258624E99BEB005FB8FF /* Info.plist */,
@@ -1205,6 +1217,7 @@
 				B6665C14265A0E3E00254939 /* AutocompleteControl.m in Sources */,
 				B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */,
 				B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */,
+				B68A899026BE18E000B2C8C6 /* MidiManager.m in Sources */,
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
 				B63005332666D6940014C381 /* BookmarkManager.m in Sources */,
@@ -1223,6 +1236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68A899126BE18E000B2C8C6 /* MidiManager.m in Sources */,
 				B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,

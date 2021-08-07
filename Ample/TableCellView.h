@@ -11,12 +11,40 @@
 //NS_ASSUME_NONNULL_BEGIN
 
 
+enum {
+    kIndexFloppy525 = 0,
+    kIndexFloppy35,
+    kIndexHardDrive,
+    kIndexCDROM,
+    kIndexCassette,
+    kIndexDiskImage,
+    kIndexBitBanger,
+    kIndexMidiIn,
+    kIndexMidiOut,
+    kIndexPicture, // computer eyes -pic, .png only.
+    // kIndexPrintout // -prin, .prn extension only?
+    
+    kIndexLast
+};
+#define CATEGORY_COUNT 10
+static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
-@interface TablePathView : NSTableCellView
-@property (weak) IBOutlet NSPathControl *pathControl;
+
+@interface MediaTableCellView : NSTableCellView
 @property (weak) IBOutlet NSButton *ejectButton;
 @property (weak) IBOutlet NSImageView *dragHandle;
 @property BOOL movable;
+
+-(void)prepareView: (NSInteger)category;
+@end
+
+@interface PathTableCellView : MediaTableCellView <NSPathControlDelegate>
+@property (weak) IBOutlet NSPathControl *pathControl;
+@end
+
+
+@interface MidiTableCellView : MediaTableCellView
+@property (weak) IBOutlet NSPopUpButton *popUpButton;
 @end
 
 //NS_ASSUME_NONNULL_END

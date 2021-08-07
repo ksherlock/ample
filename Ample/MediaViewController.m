@@ -9,26 +9,8 @@
 #import "MediaViewController.h"
 #import "TableCellView.h"
 
-enum {
-    kIndexFloppy525 = 0,
-    kIndexFloppy35,
-    kIndexHardDrive,
-    kIndexCDROM,
-    kIndexCassette,
-    kIndexDiskImage,
-    kIndexBitBanger,
-    kIndexMidiIn,
-    kIndexMidiOut,
-    kIndexPicture, // computer eyes -pic, .png only.
-    // kIndexPrintout // -prin, .prn extension only?
-    
-    kIndexLast
-};
-
-#define CATEGORY_COUNT 10
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
-static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 @protocol MediaNode
 -(BOOL)isGroupItem;
@@ -285,15 +267,23 @@ static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 -(NSString *)viewIdentifier {
     if (_category == kIndexBitBanger) return @"BBItemView";
-    if (_category == kIndexMidiOut) return @"OutputItemView";
-    if (_category == kIndexMidiIn) return @"OutputItemView";
+    if (_category == kIndexMidiOut) return @"MidiItemView";
+    if (_category == kIndexMidiIn) return @"MidiItemView";
     return @"ItemView";
 }
 
--(void)prepareView: (TablePathView *)view {
+-(void)prepareView: (MediaTableCellView *)view {
     /* set the path tag = category. */
+
+    [view prepareView: _category];
+#if 0
+    if (_category == kIndexMidiIn || _category == kIndexMidiOut || _category == kIndexBitBanger) {
+        return;
+    }
+    
     NSPathControl *pc = [view pathControl];
     [pc setTag: _category + 1]; // to differentiate 0 / no path control.
+#endif
 }
 
 -(CGFloat)height {
@@ -437,7 +427,7 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     // So we should build a device list (and pre-populate the default one)
     // another approach is a separate utility to act as a midi/serial input converter
     // and midi file / serial converter so the modem/serial port could be used.
-#if 0
+#if 1
     _(midiin, kIndexMidiIn);
     _(midiout, kIndexMidiOut);
 #endif
@@ -780,6 +770,9 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 -(IBAction)textAction: (id)sender {
+    [self rebuildArgs];
+}
+- (IBAction)midiAction:(id)sender {
     [self rebuildArgs];
 }
 

@@ -61,7 +61,7 @@
                                             <outlet property="textField" destination="Pep-mX-LHY" id="hUe-cf-6vq"/>
                                         </connections>
                                     </tableCellView>
-                                    <tableCellView identifier="ItemView" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-lc-RCM" customClass="TablePathView">
+                                    <tableCellView identifier="ItemView" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-lc-RCM" customClass="PathTableCellView">
                                         <rect key="frame" x="1" y="21" width="296" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
@@ -101,7 +101,7 @@
                                             <outlet property="pathControl" destination="f7R-TO-fmF" id="oH7-N3-JC7"/>
                                         </connections>
                                     </tableCellView>
-                                    <tableCellView identifier="BBItemView" id="2Nq-Xz-tkV" customClass="TablePathView">
+                                    <tableCellView identifier="BBItemView" id="2Nq-Xz-tkV" customClass="PathTableCellView">
                                         <rect key="frame" x="1" y="46" width="296" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
@@ -146,7 +146,7 @@
                                             <outlet property="ejectButton" destination="zxn-1E-o34" id="eC6-Mf-tN6"/>
                                         </connections>
                                     </tableCellView>
-                                    <tableCellView identifier="OutputItemView" id="jQd-Ar-5uf" customClass="TablePathView">
+                                    <tableCellView identifier="OutputItemView" id="jQd-Ar-5uf" customClass="PathTableCellView">
                                         <rect key="frame" x="1" y="71" width="296" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
@@ -177,18 +177,69 @@
                                                 </textFieldCell>
                                                 <connections>
                                                     <action selector="textAction:" target="-2" id="N7h-6y-D8W"/>
-                                                    <binding destination="jQd-Ar-5uf" name="enabled" keyPath="objectValue.valid" id="1wE-NY-Vb2"/>
                                                     <binding destination="jQd-Ar-5uf" name="value" keyPath="objectValue.string" id="kXU-qJ-HKa">
                                                         <dictionary key="options">
                                                             <string key="NSNullPlaceholder">/path/to/file</string>
                                                         </dictionary>
                                                     </binding>
+                                                    <binding destination="jQd-Ar-5uf" name="enabled" keyPath="objectValue.valid" id="1wE-NY-Vb2"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
                                         <connections>
                                             <outlet property="dragHandle" destination="Jg1-Wh-HDk" id="o14-ay-0Ou"/>
                                             <outlet property="ejectButton" destination="vG4-PP-efF" id="X2I-2N-t5r"/>
+                                        </connections>
+                                    </tableCellView>
+                                    <tableCellView identifier="MidiItemView" id="HDi-YM-iKn" customClass="MidiTableCellView">
+                                        <rect key="frame" x="1" y="96" width="296" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XcO-0S-W4c">
+                                                <rect key="frame" x="0.0" y="1" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="drag-handle-4x10" id="4a2-So-rxD"/>
+                                            </imageView>
+                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3v-8Z-LaF" customClass="EjectButton">
+                                                <rect key="frame" x="277" y="3" width="16" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="eject-16x16" imagePosition="only" alignment="center" alternateImage="eject-hover-16x16" imageScaling="proportionallyDown" inset="2" id="b3t-Zp-2si">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="ejectAction:" target="-2" id="AvU-Sz-QKJ"/>
+                                                    <binding destination="HDi-YM-iKn" name="enabled" keyPath="objectValue.occupied" id="ERy-Iz-T9Q"/>
+                                                </connections>
+                                            </button>
+                                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2F-mj-lkr">
+                                                <rect key="frame" x="20" y="-3" width="244" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="CaJ-NG-vbR" id="Rac-za-bEQ">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                    <menu key="menu" id="I55-5S-oM2">
+                                                        <items>
+                                                            <menuItem state="on" id="CaJ-NG-vbR">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <action selector="midiAction:" target="-2" id="LDL-4h-xUR"/>
+                                                    <binding destination="HDi-YM-iKn" name="selectedValue" keyPath="objectValue.string" id="xjL-hx-VG3">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">EmptyStringTransformer</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </popUpButton>
+                                        </subviews>
+                                        <connections>
+                                            <outlet property="dragHandle" destination="XcO-0S-W4c" id="oKY-UF-LkW"/>
+                                            <outlet property="ejectButton" destination="F3v-8Z-LaF" id="ql8-4u-qCA"/>
+                                            <outlet property="popUpButton" destination="L2F-mj-lkr" id="Ktx-Yc-DIp"/>
                                         </connections>
                                     </tableCellView>
                                 </prototypeCellViews>
