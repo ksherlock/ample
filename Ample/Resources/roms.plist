@@ -22,10 +22,13 @@
       <string>a2grapplerplus</string>
       <string>a2hsscsi</string>
       <string>a2iwm</string>
+      <string>a2lancegs</string>
       <string>a2memexp</string>
       <string>a2mouse</string>
       <string>a2parprn</string>
       <string>a2pic</string>
+      <string>a2q68</string>
+      <string>a2q68plus</string>
       <string>a2ramfac</string>
       <string>a2scsi</string>
       <string>a2sider1</string>
@@ -173,6 +176,7 @@
       <string>prav8c</string>
       <string>prav8m</string>
       <string>qsound</string>
+      <string>softcard3</string>
       <string>space84</string>
       <string>spectred</string>
       <string>swtpc8212_device</string>

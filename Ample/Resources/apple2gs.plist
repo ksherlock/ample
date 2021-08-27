@@ -517,6 +517,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>themill</string>
             <key>description</key>
             <string>Stellation Two The Mill</string>
@@ -1003,6 +1019,22 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1495,6 +1527,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>themill</string>
             <key>description</key>
             <string>Stellation Two The Mill</string>
@@ -1981,6 +2029,22 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2473,6 +2537,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>themill</string>
             <key>description</key>
             <string>Stellation Two The Mill</string>
@@ -2962,6 +3042,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>themill</string>
             <key>description</key>
             <string>Stellation Two The Mill</string>
@@ -3448,6 +3544,22 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68</string>
+            <key>description</key>
+            <string>Stellation Two Q-68</string>
+            <key>devname</key>
+            <string>a2q68</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>q68plus</string>
+            <key>description</key>
+            <string>Stellation Two Q-68 Plus</string>
+            <key>devname</key>
+            <string>a2q68plus</string>
           </dict>
           <dict>
             <key>value</key>
