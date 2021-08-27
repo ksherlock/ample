@@ -43,7 +43,7 @@ machines = args.machine
 if not machines: machines = [ *MACHINES, *EXTRA_MACHINES]
 
 # roms stored in other files.
-EXCLUDE = [
+xEXCLUDE = [
 	'ace100',
 	'agat7',
 	'agat9',
@@ -83,6 +83,17 @@ EXCLUDE = [
 	'uniap2pt',
 	'uniap2ti',
 ]
+
+# non-existent or included elsewhere.
+EXCLUDE = set([
+	'mac512ke',
+	'maciicx',
+	'maciihmu',
+	'maciivi',
+	'maciix',
+
+	'kb_pc83',
+])
 
 
 def build_known_roms_list():
@@ -139,7 +150,9 @@ for m in machines:
 	# find machines that have a rom child
 	for x in root.findall('machine/rom/..'):
 		name = x.get('name')
-		if (name in known): mnames.add(name)
+		if name in EXCLUDE: continue
+		#if (name in known): mnames.add(name)
+		mnames.add(name)
 		# for y in x.findall('./rom'):
 		# 	rnames.add(y.get('name'))
 		
