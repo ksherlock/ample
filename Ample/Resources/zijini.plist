@@ -198,6 +198,19 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>a2sd</string>
+            <key>description</key>
+            <string>Apple II SD Card</string>
+            <key>devname</key>
+            <string>a2sd</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -777,6 +790,19 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>a2sd</string>
+            <key>description</key>
+            <string>Apple II SD Card</string>
+            <key>devname</key>
+            <string>a2sd</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -1353,6 +1379,19 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a2sd</string>
+            <key>description</key>
+            <string>Apple II SD Card</string>
+            <key>devname</key>
+            <string>a2sd</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1937,6 +1976,19 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>a2sd</string>
+            <key>description</key>
+            <string>Apple II SD Card</string>
+            <key>devname</key>
+            <string>a2sd</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -2513,6 +2565,19 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>a2sd</string>
+            <key>description</key>
+            <string>Apple II SD Card</string>
+            <key>devname</key>
+            <string>a2sd</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
