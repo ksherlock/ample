@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>MameComponentsDate</key>
-	<date>2021-08-26T16:00:00Z</date>
+	<date>2021-09-29T16:00:00Z</date>
 	<key>UseCustomMame</key>
 	<false/>
 	<key>AutoCloseLogWindow</key>
@@ -15,8 +15,8 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
 	<key>DefaultDownloadURL</key>
-	<string>https://archive.org/download/mame0232repo</string>
+	<string>https://archive.org/download/mame-0.236-romset</string>
 	<key>DefaultDownloadExtension</key>
-	<string>zip</string>
+	<string>7z</string>
 </dict>
 </plist>
