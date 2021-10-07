@@ -172,9 +172,14 @@
 
 @interface SoftwareListDelegate : NSObject<NSXMLParserDelegate> {
     unsigned _state;
+
     NSString *_name;
     NSString *_description;
     NSString *_compatibility;
+    NSString *_notes;
+    
+    NSString *_scratch;
+
     NSMutableArray *_array;
     SoftwareList *_list;
 }
@@ -201,8 +206,10 @@
  The parts we care about:
 
  <softwarelist name="" description="">
+    <notes>...</notes>
     <software name="">
         <description>...</description>
+        <notes>...</notes>
     </software>
     ...
  </softwarelist>
@@ -239,6 +246,13 @@
             _compatibility = [attributeDict objectForKey: @"value"];
         }
     }
+    if ([@"notes" isEqualToString: elementName]) {
+        /* notes is a child of software list and software. */
+        if (_state == 0b0001 || _state == 0b0011) {
+            _state |= 0b1000;
+        }
+        return;
+    }
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
@@ -268,29 +282,64 @@
                 [s setTitle: _description];
                 [s setName: _name];
                 [s setCompatibility: _compatibility];
+                [s setNotes: _notes];
                 [s setList: [_list name]];
                 [_array addObject: s];
             }
             _name = nil;
             _description = nil;
             _compatibility = nil;
+            _notes = nil;
         }
         return;
     }
     if ([@"description" isEqualToString: elementName]) {
         if (_state == 0b0111) {
             _state &= ~0b0100;
+            _description = _scratch;
+            _scratch = nil;
         }
         return;
     }
+    if ([@"notes" isEqualToString: elementName]) {
+        if (_state == 0b1001) {
+            _state &= ~0b1000;
+
+            [_list setNotes: _scratch];
+            _scratch = nil;
+        }
+        if (_state == 0b1011) {
+            _state &= ~0b1000;
+            _notes = _scratch;
+            _scratch = nil;
+        }
+        return;
+    }
+
 }
 
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    if (_state == 0b0111) {
-        if (_description) _description = [_description stringByAppendingString: string];
-        else _description = string;
+    if (_state == 0b0111 || _state == 0b1011 || _state == 0b1001) {
+        if (_scratch) _scratch = [_scratch stringByAppendingString: string];
+        else _scratch = string;
     }
 }
+
+- (void)parser:(NSXMLParser *)parser foundIgnorableWhitespace:(NSString *)whitespaceString {
+    // ?
+}
+
+- (void)parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock {
+    
+    if (_state & 0b1000) {
+        // notes
+        NSString *string = [[NSString new] initWithData: CDATABlock encoding: NSUTF8StringEncoding];
+
+        if (_scratch) _notes = [_scratch stringByAppendingString: string];
+        else _scratch = string;
+    }
+}
+
 
 
 @end

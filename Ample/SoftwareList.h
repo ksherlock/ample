@@ -17,6 +17,7 @@
 @property NSString *name;
 @property NSString *title;
 @property NSArray *items;
+@property NSString *notes;
 
 -(SoftwareList *)filter: (NSString *)filter;
 
@@ -27,6 +28,7 @@
 @property NSString *title;
 @property NSString *compatibility;
 @property NSString *list;
+@property NSString *notes;
 
 -(NSString *)fullName;
 
