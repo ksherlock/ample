@@ -4363,7 +4363,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4481,7 +4481,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4560,6 +4560,14 @@
                 <string>rs_printer</string>
                 <key>description</key>
                 <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5065,7 +5073,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5183,7 +5191,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5721,7 +5729,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5901,7 +5909,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6867,6 +6875,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
                 <string>RS232 Loopback</string>
@@ -7100,7 +7116,7 @@
                 <key>value</key>
                 <string>lx810l</string>
                 <key>description</key>
-                <string>Espon LX-810L</string>
+                <string>Epson LX-810L</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7362,6 +7378,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
                 <string>RS232 Loopback</string>
@@ -7493,6 +7517,14 @@
                 <string>rs_printer</string>
                 <key>description</key>
                 <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7942,6 +7974,150 @@
                   <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232_patch_box</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:dce</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
