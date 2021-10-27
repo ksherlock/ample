@@ -8,7 +8,7 @@ MACHINES = (
 	"apple2c", "apple2cp",
 
 	# laser family
-	"laser128", "laser2c", "las128ex", "las128e2",
+	"laser128", "laser2c", "las128ex", "las128e2", "laser128o",
 
 	# IIe clones
 	"mprof3", "prav8c", "spectred", "tk3000",
