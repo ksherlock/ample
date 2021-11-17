@@ -594,11 +594,15 @@ static NSString *ShellQuote(NSString *s) {
     //return [super validateMenuItem: menuItem]; // not implemented?
 }
 
+-(void)defocus {
+    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+}
+
 # pragma mark - IBActions
 
 - (IBAction)launchAction:(id)sender {
 
-    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+    [self defocus];
     if (![_args count]) return;
 
     [LogWindowController controllerForArgs: _args];
@@ -608,7 +612,7 @@ static NSString *ShellQuote(NSString *s) {
 
 - (IBAction)listMedia:(id)sender {
 
-    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+    [self defocus];
     if (!_machine) return;
     
     NSMutableArray *argv = [NSMutableArray new];
@@ -635,7 +639,7 @@ static NSString *ShellQuote(NSString *s) {
 
 - (IBAction)listSlots:(id)sender {
 
-    [[self window] makeFirstResponder: nil]; // in case text is being edited...
+    [self defocus];
     if (!_machine) return;
     
     NSMutableArray *argv = [NSMutableArray new];
@@ -935,7 +939,7 @@ static NSString *ShellQuote(NSString *s) {
 
 -(NSDictionary *)makeBookmark {
     
-    [[self window] makeFirstResponder: nil];
+    [self defocus];
 
     NSMutableDictionary *dict = [NSMutableDictionary new];
     
