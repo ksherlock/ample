@@ -1,7 +1,7 @@
 
 #!/bin/sh
 
-VERSION=1.26.0
+VERSION=1.27.1
 TAR=Sparkle-${VERSION}.tar.xz
 URL=https://github.com/sparkle-project/Sparkle/releases/download/${VERSION}/Sparkle-${VERSION}.tar.xz
 FRAMEWORK=Sparkle.framework
