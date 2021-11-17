@@ -373,6 +373,10 @@ enum {
 #endif
 }
 
+-(void) defocus {
+    [[self window] makeFirstResponder: nil];
+}
+
 #pragma mark - IBActions
 
 -(IBAction)cancelAll:(id)sender {
@@ -390,6 +394,7 @@ enum {
 
 - (IBAction)downloadMissing:(id)sender {
 
+    [self defocus];
     BOOL delta = NO;
     for (DownloadItem *item in _items) {
         NSURL *url = [item localURL];
@@ -452,6 +457,8 @@ enum {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
 
+    [self defocus];
+    
     [self downloadItem: item];
     [self setActive: YES];
 }
