@@ -593,6 +593,76 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     NSLog(@"%@", src);
 }
 
+
+
+-(NSURLCredential *)credentialForChallenge: (NSURLAuthenticationChallenge *)challenge {
+
+    
+    //if ([challenge previousFailureCount]) return nil;
+
+    NSURLCredential *credential = nil;
+    NSURLProtectionSpace *space = [challenge protectionSpace];
+    
+    
+    OSStatus status;
+    NSDictionary *query;
+    CFTypeRef item = nil;
+
+
+    query = @{
+        (id)kSecClass: (id)kSecClassInternetPassword,
+        (id)kSecReturnData: (id)kCFBooleanTrue,
+        (id)kSecReturnAttributes: (id)kCFBooleanTrue,
+        (id)kSecAttrServer: [space host],
+        //(id)kSecAttrProtocol: [space protocol],
+        (id)kSecMatchLimit: (id)kSecMatchLimitOne,
+    };
+
+    status = SecItemCopyMatching((CFDictionaryRef)query, &item);
+    NSLog(@"%@", query);
+    if (status != 0) return nil;
+
+    NSDictionary *d = (__bridge NSDictionary *)item;
+    NSLog(@"%@", d);
+
+    NSString *account = [d objectForKey: (id)kSecAttrAccount];
+    NSData *passwordData = [d objectForKey: (id)kSecValueData];
+    NSString *password = [[NSString alloc] initWithData: passwordData encoding: NSUTF8StringEncoding];
+    
+
+    credential = [NSURLCredential credentialWithUser: account password: password persistence: NSURLCredentialPersistenceForSession];
+    
+    return credential;
+
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler {
+    
+    NSLog(@"challenge: %@", challenge);
+    
+    if ([challenge previousFailureCount]) {
+        completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+        return;
+    }
+    
+    NSURLProtectionSpace *space = [challenge protectionSpace];
+    NSString *method = [space authenticationMethod];
+    
+    if ([NSURLAuthenticationMethodHTTPBasic isEqualToString: method] ||
+        [NSURLAuthenticationMethodNTLM isEqualToString: method] ||
+        [NSURLAuthenticationMethodHTTPDigest isEqualToString: method]) {
+    
+        NSURLCredential *credential = [self credentialForChallenge: challenge];
+        
+        if (credential) {
+            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+            return;
+        }
+    }
+
+    completionHandler(NSURLSessionAuthChallengePerformDefaultHandling, nil);
+}
+
 @end
 
 
