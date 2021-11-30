@@ -5171,6 +5171,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5209,6 +5222,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5253,6 +5279,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5291,6 +5330,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5335,6 +5387,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5376,6 +5441,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5414,6 +5492,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5764,6 +5855,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5805,11 +5909,24 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
                 <key>default</key>
-                <true/>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>cdrom</key>
@@ -5843,6 +5960,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5887,6 +6017,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -5925,6 +6068,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5969,6 +6125,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6007,6 +6176,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6058,6 +6240,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6096,6 +6291,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6140,6 +6348,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6178,6 +6399,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6222,6 +6456,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6263,6 +6510,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6301,6 +6561,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6352,6 +6625,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6390,6 +6676,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6434,6 +6733,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6472,6 +6784,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6516,6 +6841,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6557,6 +6895,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -6595,6 +6946,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -7463,6 +7827,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -7501,6 +7878,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -7545,6 +7935,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -7583,6 +7986,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -7627,6 +8043,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -7668,6 +8097,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -7706,6 +8148,19 @@
                 <string>—None—</string>
                 <key>default</key>
                 <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -7954,6 +8409,7 @@
     </array>
     <key>software</key>
     <array>
+      <string>apple2gs_flop_clcracked.xml</string>
       <string>apple2gs_flop_orig.xml</string>
       <string>apple2gs_flop_misc.xml</string>
       <string>apple2_flop_clcracked.xml</string>

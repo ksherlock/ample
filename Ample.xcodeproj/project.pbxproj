@@ -120,6 +120,8 @@
 		B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
 		B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
 		B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
+		B63E57E22755AF2000F8B5D1 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
+		B63E57E32755AF2000F8B5D1 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
 		B646D10B263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
 		B646D10C263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
@@ -427,6 +429,7 @@
 		B63C1F0D25B1447C0016A611 /* CheatSheetWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatSheetWindowController.h; sourceTree = "<group>"; };
 		B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheatSheetWindowController.m; sourceTree = "<group>"; };
 		B63C1F1125B147E10016A611 /* CheatSheet.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CheatSheet.html; sourceTree = "<group>"; };
+		B63E57E12755AF1F00F8B5D1 /* ace500.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace500.plist; sourceTree = "<group>"; };
 		B646D10A263A5DF20014C586 /* ace1000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace1000.plist; sourceTree = "<group>"; };
 		B64979C024EF6703008ABD20 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		B64979C124EF6703008ABD20 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
@@ -565,6 +568,7 @@
 			isa = PBXGroup;
 			children = (
 				B6109A0824F5F373005CB652 /* ace100.plist */,
+				B63E57E12755AF1F00F8B5D1 /* ace500.plist */,
 				B646D10A263A5DF20014C586 /* ace1000.plist */,
 				B6109A1624F5F376005CB652 /* agat7.plist */,
 				B6109A1224F5F375005CB652 /* agat9.plist */,
@@ -967,6 +971,7 @@
 				B63C1B9D250192D800511A71 /* cece.plist in Resources */,
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
 				B6374AD3260ECB400045CA16 /* macii.plist in Resources */,
+				B63E57E22755AF2000F8B5D1 /* ace500.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
 				B65085BB25B616AC00354EC9 /* maclc3.plist in Resources */,
 				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
@@ -1093,6 +1098,7 @@
 				B6DE324B2605482500418375 /* macsefd.plist in Resources */,
 				B6E4B5CF24FDE2670094A35C /* apple2eefr.plist in Resources */,
 				B6374AD8260ECB400045CA16 /* maciivi.plist in Resources */,
+				B63E57E32755AF2000F8B5D1 /* ace500.plist in Resources */,
 				B6E4B5D124FDE2670094A35C /* spectred.plist in Resources */,
 				B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6E4B5D224FDE2670094A35C /* apple2cp.plist in Resources */,

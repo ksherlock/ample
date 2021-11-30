@@ -147,18 +147,6 @@
       <array>
         <dict>
           <key>description</key>
-          <string>Franklin Ace 100</string>
-          <key>value</key>
-          <string>ace100</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Franklin ACE 1000</string>
-          <key>value</key>
-          <string>ace1000</string>
-        </dict>
-        <dict>
-          <key>description</key>
           <string>Albert</string>
           <key>value</key>
           <string>albert</string>
@@ -295,6 +283,31 @@
           <string>Zi Jin I</string>
           <key>value</key>
           <string>zijini</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Franklin</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Franklin Ace 100</string>
+          <key>value</key>
+          <string>ace100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>ACE 500</string>
+          <key>value</key>
+          <string>ace500</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Franklin ACE 1000</string>
+          <key>value</key>
+          <string>ace1000</string>
         </dict>
       </array>
     </dict>

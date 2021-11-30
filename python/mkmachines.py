@@ -268,6 +268,7 @@ DEVICE_MEDIA = {
 	'35sd': 'floppy_3_5',
 	'midiin': 'midiin',
 	'midiout': 'midiout',
+	'aplcdsc': 'cdrom',
 	# 'null_modem': 'bitbanger',
 	# 'rs232_sync_io': 'bitbanger',
 }
@@ -286,6 +287,7 @@ DEVICE_EXCLUDE = set([
 	'px320a',
 	's1410',
 	'smoc501',
+	'cfp1080s',
 ])
 
 def make_device_options(slot):
