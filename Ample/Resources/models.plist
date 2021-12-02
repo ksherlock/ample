@@ -309,6 +309,12 @@
           <key>value</key>
           <string>ace1000</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>ACE 2200</string>
+          <key>value</key>
+          <string>ace2200</string>
+        </dict>
       </array>
     </dict>
     <dict>

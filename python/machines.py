@@ -11,7 +11,7 @@ MACHINES = (
 	"laser128", "laser2c", "las128ex", "las128e2", "laser128o",
 
 	# Franklin
-	"ace100", "ace500", "ace1000",
+	"ace100", "ace500", "ace1000", "ace2200",
 
 	# IIe clones
 	"mprof3", "prav8c", "spectred", "tk3000",

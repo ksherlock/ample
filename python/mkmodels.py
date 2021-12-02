@@ -15,7 +15,7 @@ apple2e_children = ["apple2e", "apple2ees", "apple2euk", "apple2ep", "apple2ee",
 apple2c_children = ["apple2c", "apple2cp"]
 apple2gs_children = ["apple2gsr0", "apple2gsr1", "apple2gs"]
 laser_children = ["laser2c", "laser128", "laser128o", "las128ex", "las128e2"]
-franklin_children = ["ace100", "ace500", "ace1000"]
+franklin_children = ["ace100", "ace500", "ace1000", "ace2200"]
 ii_clones_children = ["albert",
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",

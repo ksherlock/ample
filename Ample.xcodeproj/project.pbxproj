@@ -159,6 +159,8 @@
 		B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
 		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
+		B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
+		B6ABF47D275986EB00DC3D48 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -464,6 +466,7 @@
 		B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		B6A1A1932528EB1700DB0FD7 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B6A1A1962528EB4600DB0FD7 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		B6ABF47B275986EA00DC3D48 /* ace2200.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace2200.plist; sourceTree = "<group>"; };
 		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
 		B6B9EA652506A5550080E70D /* EjectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectButton.h; sourceTree = "<group>"; };
 		B6BA257B24E99BE9005FB8FF /* Ample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -570,6 +573,7 @@
 				B6109A0824F5F373005CB652 /* ace100.plist */,
 				B63E57E12755AF1F00F8B5D1 /* ace500.plist */,
 				B646D10A263A5DF20014C586 /* ace1000.plist */,
+				B6ABF47B275986EA00DC3D48 /* ace2200.plist */,
 				B6109A1624F5F376005CB652 /* agat7.plist */,
 				B6109A1224F5F375005CB652 /* agat9.plist */,
 				B6109A1124F5F375005CB652 /* albert.plist */,
@@ -1014,6 +1018,7 @@
 				B63C1B9F250192D800511A71 /* ceci.plist in Resources */,
 				B6109A3224F5F377005CB652 /* basis108.plist in Resources */,
 				B6109A4324F5F377005CB652 /* agat7.plist in Resources */,
+				B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */,
 				B6DE324E2605482500418375 /* mac512k.plist in Resources */,
 				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
@@ -1133,6 +1138,7 @@
 				B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */,
 				B63C1BA9250192E600511A71 /* zijini.plist in Resources */,
 				B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */,
+				B6ABF47D275986EB00DC3D48 /* ace2200.plist in Resources */,
 				B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */,
 				B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */,
 				B63C1B9E250192D800511A71 /* cece.plist in Resources */,
