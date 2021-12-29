@@ -5,7 +5,7 @@
     <key>value</key>
     <string>ace2200</string>
     <key>description</key>
-    <string>ACE 2200</string>
+    <string>Franklin ACE 2200</string>
     <key>media</key>
     <dict>
       <key>cass</key>
@@ -421,6 +421,14 @@
             <string>First Class Peripherals Sider 2 SASI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1013,6 +1021,14 @@
             <string>First Class Peripherals Sider 2 SASI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1610,6 +1626,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -1831,49 +1855,6 @@
             <string>Zip Technologies ZipDrive</string>
             <key>disabled</key>
             <true/>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>aux</string>
-        <key>description</key>
-        <string>Auxiliary</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ext80</string>
-            <key>description</key>
-            <string>Apple IIe Extended 80-Column Card</string>
-            <key>default</key>
-            <true/>
-            <key>devname</key>
-            <string>a2eext80</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>std80</string>
-            <key>description</key>
-            <string>Apple IIe Standard 80-Column Card</string>
-            <key>devname</key>
-            <string>a2estd80</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rw3</string>
-            <key>description</key>
-            <string>Applied Engineering RamWorks III</string>
-            <key>devname</key>
-            <string>a2erwks3</string>
           </dict>
         </array>
       </dict>

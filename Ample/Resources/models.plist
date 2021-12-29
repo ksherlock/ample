@@ -293,13 +293,13 @@
       <array>
         <dict>
           <key>description</key>
-          <string>Franklin Ace 100</string>
+          <string>Franklin ACE 100</string>
           <key>value</key>
           <string>ace100</string>
         </dict>
         <dict>
           <key>description</key>
-          <string>ACE 500</string>
+          <string>Franklin ACE 500</string>
           <key>value</key>
           <string>ace500</string>
         </dict>
@@ -311,7 +311,7 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>ACE 2200</string>
+          <string>Franklin ACE 2200</string>
           <key>value</key>
           <string>ace2200</string>
         </dict>

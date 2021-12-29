@@ -383,6 +383,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -895,6 +903,14 @@
             <string>E-Z Color Graphics Interface (TMS9958)</string>
             <key>devname</key>
             <string>a2ezcgi5</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1413,6 +1429,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -1925,6 +1949,14 @@
             <string>E-Z Color Graphics Interface (TMS9958)</string>
             <key>devname</key>
             <string>a2ezcgi5</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2445,6 +2477,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -2962,6 +3002,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -3474,6 +3522,14 @@
             <string>E-Z Color Graphics Interface (TMS9958)</string>
             <key>devname</key>
             <string>a2ezcgi5</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>

@@ -115,6 +115,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard3</string>
             <key>description</key>
             <string>Microsoft SoftCard ///</string>
@@ -201,6 +209,14 @@
             <string>CMS SCSI II Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -293,6 +309,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard3</string>
             <key>description</key>
             <string>Microsoft SoftCard ///</string>
@@ -379,6 +403,14 @@
             <string>CMS SCSI II Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>

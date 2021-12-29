@@ -421,6 +421,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -923,6 +931,14 @@
             <string>First Class Peripherals Sider 2 SASI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1431,6 +1447,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -1933,6 +1957,14 @@
             <string>First Class Peripherals Sider 2 SASI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2441,6 +2473,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -2946,6 +2986,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>swyft</string>
             <key>description</key>
             <string>IAI SwyftCard</string>
@@ -3448,6 +3496,14 @@
             <string>First Class Peripherals Sider 2 SASI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>grafex</string>
+            <key>description</key>
+            <string>Grafex-32</string>
+            <key>devname</key>
+            <string>a2grafex</string>
           </dict>
           <dict>
             <key>value</key>
