@@ -17,8 +17,29 @@ from machines import MACHINES, SLOTS, SLOT_NAMES
 # Inside Macintosh: Devices chapter 2 explains the Nubus slot name scheme
 # (essentially $01-$0e; $0 and $f are reserved)
 #
-# TODO -midiin, -midiout, -printout, -bitbanger
+# TODO -printout
 
+#
+# SCSI devices:
+# ROM 1, a2scsi, golden orchard, as of 239 wip:
+# cdrom - CDROM
+# aplcdsc - Apple SCSI CDROM
+#
+# these are all skeleton drivers and generally require a ROM.
+#
+# aplcd150 - Apple CD 150 - bad dump, known problems warning, shows in finder as hard drive
+# cdrn820s - Caravell CDR-N820s - shows in finder as hard drive
+# cfp1080s - known problems warning, shows as hard drive
+# cdr4210 - known problems warning, shows as hard drive
+# cw7501 - known problems warning, shows as hard drive
+# cdd2000 - known problems warning, shows as hard drive
+# crd254sh - known problems warning, shows as hard drive
+# cdu415 - known problems warning, shows as hard drive
+# cdu561_25 - known problems warning, shows as hard drive
+# smoc501 - known problems warning, shows as hard drive
+# cdu75s - known problems warning, shows as hard drive
+#
+#
 
 
 # don't allow these for now. generally because they add floppy/hard drives

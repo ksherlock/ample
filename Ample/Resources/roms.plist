@@ -66,7 +66,6 @@
       <string>am100</string>
       <string>am64</string>
       <string>ap2000</string>
-      <string>aplcd150</string>
       <string>apple1</string>
       <string>apple2</string>
       <string>apple2c</string>
@@ -92,26 +91,17 @@
       <string>aprissi</string>
       <string>basis108</string>
       <string>ccs7710</string>
-      <string>cdd2000</string>
-      <string>cdr4210</string>
-      <string>cdrn820s</string>
-      <string>cdu415</string>
-      <string>cdu561_25</string>
-      <string>cdu75s</string>
       <string>cec2000</string>
       <string>cece</string>
       <string>cecg</string>
       <string>ceci</string>
       <string>cecm</string>
       <string>cffa1</string>
-      <string>cfp1080s</string>
       <string>cga</string>
       <string>chessmachine</string>
       <string>cmsscsi</string>
       <string>comx_pl80</string>
       <string>craft2p</string>
-      <string>crd254sh</string>
-      <string>cw7501</string>
       <string>d2fdc</string>
       <string>diskii13</string>
       <string>dodo</string>
@@ -191,7 +181,6 @@
       <string>prav8c</string>
       <string>prav8m</string>
       <string>qsound</string>
-      <string>smoc501</string>
       <string>softcard3</string>
       <string>space84</string>
       <string>spectred</string>

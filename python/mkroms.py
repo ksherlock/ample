@@ -93,6 +93,21 @@ EXCLUDE = set([
 	'maciix',
 
 	'kb_pc83',
+
+# ROMs for CD Drives, etc, that are intentionally hidden
+# due to lack of functionality.
+	'aplcd150',
+    'cdd2000',
+    'cdr4210',
+    'cdrn820s',
+    'cdu415',
+    'cdu561_25',
+    'cdu75s',
+    'cfp1080s',
+    'crd254sh',
+    'cw7501',
+    'smoc501',
+
 ])
 
 
