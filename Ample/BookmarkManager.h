@@ -7,28 +7,35 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @class NSMenu;
+@class Bookmark;
+@class DiskImage;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BookmarkManager : NSObject
 
 @property (weak) IBOutlet NSMenu *menu;
+@property (readonly) NSManagedObjectContext *managedObjectContext;
 
 +(instancetype)sharedManager;
 
--(void)loadBookmarks;
--(void)updateMenu;
+-(NSString *)uniqueBookmarkName: (NSString *)name;
 
--(BOOL)validateName: (NSString *)name;
+-(NSError *)saveBookmark: (NSDictionary *)bookmark name: (NSString *)name automatic: (BOOL)automatic;
 
--(BOOL)saveBookmark: (NSDictionary *)bookmark name: (NSString *)name;
--(NSDictionary *)loadBookmarkFromURL: (NSURL *)url;
+//-(NSError *)saveDefault: (NSDictionary *)bookmark;
 
--(BOOL)saveDefault: (NSDictionary *)bookmark;
 -(NSDictionary *)loadDefault;
 
+-(NSError *)setAutomatic: (Bookmark *)bookmark;
+
+-(BOOL)addDiskImage: (NSObject *)pathOrURL;
+
+
+//-(void)convertLegacyBookmarks;
 @end
 
 NS_ASSUME_NONNULL_END

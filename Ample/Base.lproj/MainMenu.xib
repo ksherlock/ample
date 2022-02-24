@@ -13,17 +13,17 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="rSq-qV-SGy" customClass="BookmarkManager">
+            <connections>
+                <outlet property="menu" destination="ha0-nx-PIl" id="Ozd-ID-egK"/>
+            </connections>
+        </customObject>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="installWindow" destination="jWX-pY-Zpb" id="xAj-Vj-Vxn"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="sJn-ug-xF3" customClass="BookmarkManager">
-            <connections>
-                <outlet property="menu" destination="ha0-nx-PIl" id="vTa-TU-DS1"/>
-            </connections>
-        </customObject>
         <customObject id="3aq-Tx-mno" customClass="SUUpdater"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -405,28 +405,34 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Bookmarks" id="ha0-nx-PIl">
                         <items>
+                            <menuItem title="Manage Bookmarks…" keyEquivalent="b" id="isI-q6-b1V">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="manageBookmarks:" target="-1" id="vOm-90-AoO"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Add Bookmark…" keyEquivalent="d" id="1JF-xV-zmG">
                                 <connections>
                                     <action selector="addBookmark:" target="-1" id="cqp-ko-BfQ"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Manage Bookmarks…" id="isI-q6-b1V">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                            </menuItem>
-                            <menuItem title="Set Default" id="vbR-vS-lqO">
+                            <menuItem title="Set Default" hidden="YES" id="vbR-vS-lqO">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="defaultSave:" target="-1" id="FP9-EX-OKP"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="gWR-Yl-mg6"/>
-                            <menuItem title="Default" id="mXC-Lp-gem">
+                            <menuItem title="Default" hidden="YES" id="mXC-Lp-gem">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="defaultLoad:" target="-1" id="ErS-k6-azP"/>
                                 </connections>
                             </menuItem>
                         </items>
+                        <connections>
+                            <outlet property="delegate" destination="rSq-qV-SGy" id="Z7N-CG-hU1"/>
+                        </connections>
                     </menu>
                 </menuItem>
                 <menuItem title="Window" id="aUF-d1-5bR">
@@ -532,5 +538,6 @@
             </view>
             <point key="canvasLocation" x="13" y="-182"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="uGS-pc-Wsn"/>
     </objects>
 </document>

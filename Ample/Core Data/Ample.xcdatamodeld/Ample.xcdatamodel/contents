@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G9323" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="0">
+    <entity name="Bookmark" representedClassName="Bookmark" syncable="YES">
+        <attribute name="automatic" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="data" attributeType="Binary"/>
+        <attribute name="machine" optional="YES" attributeType="String"/>
+        <attribute name="modified" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" minValueString="1" maxValueString="32"/>
+        <fetchIndex name="Bookmark_name">
+            <fetchIndexElement property="name" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="DiskImage" representedClassName="DiskImage" syncable="YES">
+        <attribute name="accessed" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="added" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="path" attributeType="String"/>
+        <attribute name="size" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <fetchIndex name="DiskImage_path">
+            <fetchIndexElement property="path" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <elements>
+        <element name="Bookmark" positionX="994.5546875" positionY="-404.046875" width="128" height="148"/>
+        <element name="DiskImage" positionX="1242" positionY="-333" width="128" height="118"/>
+    </elements>
+</model>

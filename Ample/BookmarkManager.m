@@ -9,11 +9,30 @@
 #import "BookmarkManager.h"
 #import "Ample.h"
 
+#import "Bookmark.h"
+#import "DiskImage.h"
+#import "Menu.h"
+
+
 @interface BookmarkManager () {
-    NSArray<NSURL *> *_urls;
+
+    NSPersistentStoreCoordinator *_psc;
+    NSManagedObjectContext *_moc;
+    NSManagedObjectModel *_mom;
+    NSPersistentStore *_store;
+    
+    NSFetchRequest *_defaultRequest;
+    
+    
     NSURL *_bookmarkDirectory;
+    NSArrayController *_items;
+    NSUInteger _newMenuGeneration;
+    NSUInteger _currentMenuGeneration;
 }
 
+@end
+
+@interface BookmarkManager (MenuDelegate) <NSMenuDelegate>
 @end
 
 @implementation BookmarkManager
@@ -21,7 +40,10 @@
 static BookmarkManager *singleton = nil;
 
 -(void)awakeFromNib {
-    if (!singleton) singleton = self;
+    if (!singleton) {
+        singleton = self;
+        if (!_items) [self initMenus];
+    }
 }
 
 +(instancetype)sharedManager {
@@ -31,7 +53,170 @@ static BookmarkManager *singleton = nil;
 
 -(instancetype)init {
     if (singleton) return singleton;
-    return [super init];
+
+
+    if ((self = [super init])) {
+        [self initCoreData];
+
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        
+        [nc addObserver: self selector: @selector(willTerminate:) name: NSApplicationWillTerminateNotification object: nil];
+        [nc addObserver: self selector: @selector(diskImageAdded:) name: kNotificationDiskImageAdded object: nil];
+
+
+        _newMenuGeneration = 1;
+        _currentMenuGeneration = 0;
+    }
+
+    
+    return self;
+}
+
+-(NSManagedObjectContext *)managedObjectContext {
+    return _moc;
+}
+
+-(void)initCoreData {
+    
+    NSError *error;
+    BOOL new = NO;
+
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSURL *url = [bundle URLForResource: @"Ample" withExtension: @"momd"];
+    _mom = [[NSManagedObjectModel alloc] initWithContentsOfURL: url];
+    
+    _psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: _mom];
+    
+    _moc = [[NSManagedObjectContext alloc] initWithConcurrencyType: NSMainQueueConcurrencyType];
+    [_moc setPersistentStoreCoordinator: _psc];
+    
+    //[_moc setMergePolicy: [NSMergePolicy rollbackMergePolicy]];
+    
+    url = SupportDirectory();
+#if 0
+    url = [url URLByAppendingPathComponent: @"Ample.db"];
+
+    if (![url checkResourceIsReachableAndReturnError: &error])
+        new = YES;
+
+    
+    _store = [_psc addPersistentStoreWithType: NSSQLiteStoreType
+                              configuration: nil
+                                        URL: url
+                                    options: nil
+                                      error: &error];
+#else
+
+    url = [url URLByAppendingPathComponent: @"Ample.xml"];
+
+    if (![url checkResourceIsReachableAndReturnError: &error])
+        new = YES;
+
+    
+    _store = [_psc addPersistentStoreWithType: NSXMLStoreType
+                              configuration: nil
+                                        URL: url
+                                    options: nil
+                                      error: &error];
+
+    
+#endif
+    _defaultRequest = [Bookmark fetchRequest];
+    [_defaultRequest setPredicate: [NSPredicate predicateWithFormat: @"automatic == TRUE"]];
+    
+    if (new) {
+        [self convertLegacyBookmarks];
+        [self convertLegacyDiskImages];
+    }
+    
+}
+
+-(void)willTerminate: (NSNotification *)notification {
+
+    NSError *error;
+    
+    if (![_moc save: &error]) {
+        NSLog(@"%@", error);
+    }
+}
+
+
+-(void)convertLegacyBookmarks {
+    
+    //NSEntityDescription *e;
+
+    //e = [NSEntityDescription entityForName: @"Bookmark" inManagedObjectContext: moc];
+
+    NSURL *url = [self bookmarkDirectory];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSError *error = nil;
+
+    NSArray *files = [fm contentsOfDirectoryAtURL: url
+                       includingPropertiesForKeys: nil
+                                          options: NSDirectoryEnumerationSkipsHiddenFiles
+                                            error: &error];
+    
+    NSDate *now = [NSDate date];
+    for (NSURL *url in files) {
+
+
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL: url];
+        //NSData *data = [NSPropertyListSerialization dataWithPropertyList: dict format: NSPropertyListBinaryFormat_v1_0 options: 0 error: &error];
+
+        Bookmark *b = (Bookmark *)[NSEntityDescription insertNewObjectForEntityForName: @"Bookmark" inManagedObjectContext: _moc];
+
+        [b setName: [url lastPathComponent]];
+        [b setDictionary: dict];
+        //[b setData: data];
+        [b setMachine: [dict objectForKey: @"machine"]];
+        [b setCreated: now];
+    }
+
+    // default...
+
+    url = [url URLByAppendingPathComponent: @".Default"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL: url];
+    if (dict) {
+        //NSData *data = [NSPropertyListSerialization dataWithPropertyList: dict format: NSPropertyListBinaryFormat_v1_0 options: 0 error: &error];
+
+        NSString *name = [self uniqueBookmarkName: @"Default"];
+        Bookmark *b = (Bookmark *)[NSEntityDescription insertNewObjectForEntityForName: @"Bookmark" inManagedObjectContext: _moc];
+
+        [b setName: name];
+        [b setAutomatic: YES];
+        [b setDictionary: dict];
+        //[b setData: data];
+        [b setMachine: [dict objectForKey: @"machine"]];
+        [b setCreated: now];
+        
+    }
+
+    if (![_moc save: &error]) {
+        NSLog(@"%@", error);
+    }
+}
+
+-(void)convertLegacyDiskImages {
+
+    NSError *error;
+    NSURL *sd = SupportDirectory();
+    NSURL *url = [sd URLByAppendingPathComponent: @"RecentDiskImages.plist"];
+    
+    NSArray *array = [NSArray arrayWithContentsOfURL: url];
+    if (!array) return;
+
+    for (NSDictionary *d in array) {
+        
+        NSManagedObject *o = [NSEntityDescription insertNewObjectForEntityForName: @"DiskImage" inManagedObjectContext: _moc];
+        [o setValue: [d objectForKey: @"date"] forKey: @"added"];
+        [o setValue: [d objectForKey: @"date"] forKey: @"accessed"];
+        [o setValue: [d objectForKey: @"path"] forKey: @"path"];
+        [o setValue: [d objectForKey: @"size"] forKey: @"size"];
+    }
+
+    if (![_moc save: &error]) {
+        NSLog(@"%@", error);
+    }
 }
 
 -(NSURL *)bookmarkDirectory {
@@ -48,45 +233,59 @@ static BookmarkManager *singleton = nil;
     return url;
 }
 
-/* disallow leading .
- * disallow : or / characters.
- */
--(BOOL)validateName: (NSString *)name {
-    
-    enum { kMaxLength = 128 };
-    unichar buffer[kMaxLength];
-    NSUInteger length = [name length];
-    if (length == 0 || length > kMaxLength) return NO;
-    [name getCharacters: buffer range: NSMakeRange(0, length)];
-    if (buffer[0] == '.') return NO;
-    for (unsigned i = 0; i < length; ++i) {
-        unichar c = buffer[i];
-        if (c == ':' || c == '/') return NO;
-    }
-    return YES;
-}
-
 
 -(NSDictionary *)loadDefault {
-    NSURL *url = [self bookmarkDirectory];
-    url = [url URLByAppendingPathComponent: @".Default"];
+    NSFetchRequest *req;
+    NSError *error;
+    NSArray *array;
+    Bookmark *b;
+
+    req = [Bookmark fetchRequest];
+    [req setPredicate: [NSPredicate predicateWithFormat: @"automatic == TRUE"]];
+    array = [_moc executeFetchRequest: req error: &error];
+
+    b = [array firstObject];
     
-    NSDictionary *d;
-    
-    if (@available(macOS 10.13, *)) {
-        NSError *error = nil;
-        d = [NSDictionary dictionaryWithContentsOfURL: url error: &error];
-        if (!d) NSLog(@"Error loading %@: %@", url, error);
-    } else {
-        d = [NSDictionary dictionaryWithContentsOfURL: url];
-        if (!d) NSLog(@"Error loading %@", url);
-    }
-    return d;
+    return [b dictionary];
+
 }
 
 /* save as .Default */
--(BOOL)saveDefault: (NSDictionary *)bookmark {
+-(NSError *)saveDefault: (NSDictionary *)bookmark {
 
+    return nil;
+
+#if 0
+    /* check if it already exists */
+
+    NSFetchRequest *req;
+    NSError *error;
+    NSArray *array;
+    Bookmark *b;
+    NSDate *now = [NSDate date];
+    BOOL ok;
+
+    req = [[NSFetchRequest alloc] initWithEntityName: @"Default"];
+    array = [_moc executeFetchRequest: req error: &error];
+
+
+    b = [array firstObject];
+    if (b) {
+        [b setModified: now];
+    } else {
+        b = (Bookmark *)[NSEntityDescription insertNewObjectForEntityForName: @"Default" inManagedObjectContext: _moc];
+
+        [b setName: @"Default"];
+        [b setCreated: now];
+    }
+    [b setDictionary: bookmark];
+    [b setMachine: [bookmark objectForKey: @"machine"]];
+
+    ok = [_moc save: &error];
+    if (!ok) NSLog(@"%@", error);
+    return error;
+
+#if 0
     NSURL *url = [self bookmarkDirectory];
     url = [url URLByAppendingPathComponent: @".Default"];
 
@@ -99,116 +298,291 @@ static BookmarkManager *singleton = nil;
         ok = [bookmark writeToURL: url atomically: YES];
     }
     return ok;
+#endif
+#endif
 }
 
--(BOOL)saveBookmark: (NSDictionary *)bookmark name: (NSString *)name {
+
+-(NSError *)setAutomatic: (Bookmark *)bookmark {
     
+    NSError *error = nil;
+    NSFetchRequest *req = [Bookmark fetchRequest];
+    [req setPredicate: [NSPredicate predicateWithFormat: @"automatic == TRUE"]];
+    
+    NSArray *array = [_moc executeFetchRequest: req error: &error];
+    for (Bookmark *b in array) {
+        if (b != bookmark) [b setAutomatic: NO];
+    }
+    [bookmark setAutomatic: YES];
+    if (error) return error;
+    [_moc save: &error];
+    return error;
+}
+
+-(NSError *)saveBookmark: (NSDictionary *)bookmark name: (NSString *)name automatic: (BOOL)automatic {
+
+    NSDate *now = [NSDate date];
     NSError *error;
-    NSData *data = [NSPropertyListSerialization dataWithPropertyList: bookmark
-                                                              format: NSPropertyListXMLFormat_v1_0
-                                                             options: 0
-                                                               error: &error];
-    
-    
-    
-    NSURL *base = [self bookmarkDirectory];
-    
-    NSURL *url = [base URLByAppendingPathComponent: name];
-    
-    BOOL ok = [data writeToURL: url options: NSDataWritingWithoutOverwriting error: &error];
+    BOOL ok;
 
+    Bookmark *b = (Bookmark *)[NSEntityDescription insertNewObjectForEntityForName: @"Bookmark" inManagedObjectContext: _moc];
+    
+    [b setName: name];
+    [b setDictionary: bookmark];
+    [b setMachine: [bookmark objectForKey: @"machine"]];
+    [b setCreated: now];
+    [b setAutomatic: automatic];
+    
+    ok = [b validateForInsert: &error];
     if (!ok) {
-        for (unsigned i = 1 ; i < 100; ++i) {
-            NSString *tmp = [name stringByAppendingFormat: @" (%d)", i];
-            url = [base URLByAppendingPathComponent: tmp];
-
-            ok = [data writeToURL: url options: NSDataWritingWithoutOverwriting error: &error];
-            if (ok) {
-                name = tmp;
-                break;
-            }
-        }
+        // will be useful, eg "name is too long"
+        // keys: NSValidationErrorObject, NSLocalizedDescription, NSValidationErrorKey, NSValidationErrorValue
+        //NSLog(@"%@", error);
+        [_moc deleteObject: b];
+        return error;
     }
-    if (!ok) return NO;
     
-    if (!_menu) return YES; // ?
     
-    NSUInteger ix = [_urls indexOfObjectPassingTest: ^BOOL(NSURL *object, NSUInteger index, BOOL *stop){
-        NSString *path = [object lastPathComponent];
-        return [name caseInsensitiveCompare: path] == NSOrderedAscending;
-    }];
-
-    NSMenuItem *item = [[NSMenuItem alloc] initWithTitle: name action: @selector(bookmarkMenu:) keyEquivalent: @""];
-    [item setRepresentedObject: url];
-    
-    if (ix == NSNotFound) {
-        _urls = [_urls arrayByAddingObject: url];
-        [_menu addItem: item];
-    } else {
-        
-        NSInteger n = [_menu numberOfItems];
-        [_menu insertItem: item atIndex: n - [_urls count] + ix];
-        NSMutableArray *tmp = [_urls mutableCopy];
-
-        [tmp insertObject: url atIndex: ix];
+    ok = [_moc save: &error];
+    if (!ok) {
+        //NSLog(@"%@", error);
+        [_moc deleteObject: b];
+        error = [NSError errorWithDomain: @"Ample" code: 0 userInfo: @{ NSLocalizedDescriptionKey: @"Duplicate name" }];
+        return error;
     }
 
-    return YES;
+    if (automatic) {
+        [self setAutomatic: b];
+    }
+
+
+    return nil;
 }
-
--(NSDictionary *)loadBookmarkFromURL: (NSURL *)url {
-    
-    NSDictionary *d;
-    
-    if (@available(macOS 10.13, *)) {
-        NSError *error = nil;
-        d = [NSDictionary dictionaryWithContentsOfURL: url error: &error];
-        if (!d) NSLog(@"Error loading %@: %@", url, error);
-    } else {
-        d = [NSDictionary dictionaryWithContentsOfURL: url];
-        if (!d) NSLog(@"Error loading %@", url);
-    }
-    return d;
-}
-
 
 -(void)loadBookmarks {
     
-    NSURL *url = [self bookmarkDirectory];
-    
-    NSFileManager *fm = [NSFileManager defaultManager];
-    
-    NSError *error = nil;
+    NSSortDescriptor *s = [NSSortDescriptor sortDescriptorWithKey: @"name" ascending: YES selector: @selector(caseInsensitiveCompare:)];
 
-    NSArray *files = [fm contentsOfDirectoryAtURL: url
-                       includingPropertiesForKeys: nil
-                                          options: NSDirectoryEnumerationSkipsHiddenFiles
-                                            error: &error];
     
-    // bleh, has to create 2 new NSStrings for every comparison
-    files = [files sortedArrayUsingComparator: ^(NSURL *a, NSURL *b){
-        NSString *aa = [a lastPathComponent];
-        NSString *bb = [b lastPathComponent];
-        return [aa caseInsensitiveCompare: bb];
-    }];
-    
-    
-    _urls = files;
+    _items = [NSArrayController new];
+    [_items setManagedObjectContext: _moc];
+    [_items setAvoidsEmptySelection: NO];
+    [_items setAutomaticallyPreparesContent: YES];
+    [_items setAutomaticallyRearrangesObjects: YES];
+    [_items setEntityName: @"Bookmark"];
+    [_items setSortDescriptors: @[ s ]];
+
+    [_items fetch: nil];
 }
 
--(void)updateMenu {
+
+/* extract the number from a trailing " (%d)" */
+static int extract_number(NSString *s, NSInteger offset) {
     
-    NSArray *menus = [_menu itemArray];
+    unichar buffer[32];
+    NSInteger len = [s length] - offset;
+    unichar c;
+    int i;
+    int n = 0;
+    
+    if (len < 4) return -1; /* " (1)"*/
+    if (len > 8) return -1; /* " (99999)" */
+    
+    NSRange r = NSMakeRange(offset, len);
+    [s getCharacters: buffer range: r];
+    
+    buffer[len] = 0;
+    i = 0;
+    if (buffer[i++] != ' ') return -1;
+    if (buffer[i++] != '(') return -1;
+    
+    c = buffer[i++];
+    if (c < '1' || c > '9') return -1;
+    n = c - '0';
+    
+    for (;;) {
+        c = buffer[i];
+        if (c < '0' || c > '9') break;
+        n = n * 10 + (c - '0');
+        ++i;
+    }
+
+    if (buffer[i++] != ')') return -1;
+    if (buffer[i++] != 0) return -1;
+
+    return n;
+}
+
+
+-(NSString *)uniqueBookmarkName: (NSString *)name {
+    
+    NSInteger length = [name length];
+
+    NSError *error = nil;
+    NSPredicate *p = [NSPredicate predicateWithFormat: @"name BEGINSWITH %@", name];
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName: @"Bookmark"];
+    [req setPredicate: p];
+
+    NSArray *array = [_moc executeFetchRequest: req error: &error];
+    if (![array count]) return name;
+
+    uint64_t bits = 1; /* mark 0 as unavailable */
+    NSInteger max = 0;
+    BOOL exact = NO;
+    for (Bookmark *b in array) {
+        NSString *s = [b name];
+        if ([name isEqualToString: s]) {
+            exact = YES;
+            continue;
+        }
+        int n = extract_number(s, length);
+        if (n < 1) continue;
+        if (n > max) max = n;
+        if (n < 64)
+            bits |= (1 << n);
+    }
+    if (!exact) return name;
+    
+    if (bits == (uint64_t)-1) {
+        return [name stringByAppendingFormat: @" (%u)", (int)(max + 1)];
+    }
+    
+#if 1
+    int ix = 0;
+    while (bits & 0x01) {
+        ++ix;
+        bits >>= 1;
+    }
+#else
+    // this doesn't work correctly.
+    int ix = __builtin_ffsll(~bits);
+#endif
+    return [name stringByAppendingFormat: @" (%u)", ix];
+
+
+}
+
+
+-(BOOL)addDiskImage: (NSObject *)pathOrURL {
+    
+    NSError *error;
+    
+    NSString *path = nil;
+    NSURL *url = nil;
+    if ([pathOrURL isKindOfClass: [NSString class]]) {
+        path = (NSString *)pathOrURL;
+    } else if ([pathOrURL isKindOfClass: [NSURL class]]){
+        url = (NSURL *)pathOrURL;
+
+        path = [NSString stringWithCString: [url fileSystemRepresentation] encoding: NSUTF8StringEncoding];
+    }
+    if (!path) return NO;
+
+    NSFileManager *fm = [NSFileManager defaultManager];
+
+
+    NSDictionary *attr = [fm attributesOfItemAtPath: path error: &error];
+    if (error) {
+        NSLog(@"%@ : %@", path, error);
+        return NO;
+    }
+    
+    NSNumber *size = [attr objectForKey: NSFileSize];
+
+    NSDate *now = [NSDate date];
+    
+    NSPredicate *p = [NSPredicate predicateWithFormat: @"path = %@", path];
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName: @"DiskImage"];
+    [req setPredicate: p];
+    
+
+    NSArray *array = [_moc executeFetchRequest: req error: &error];
+    BOOL found = 0;
+    for (NSManagedObject *o in array) {
+        found = YES;
+        [o setValue: now forKey: @"accessed"];
+    }
+    if (found) return NO;
+    
+    DiskImage *o = [NSEntityDescription insertNewObjectForEntityForName: @"DiskImage" inManagedObjectContext: _moc];
+    
+    
+    [o setPath: path];
+    [o setAdded: now];
+    [o setAccessed: now];
+    [o setSize: [size longLongValue]];
+    [o updatePath];
+    
+    if (![_moc save: &error]) {
+        NSLog(@"%@", error);
+        [_moc deleteObject: o];
+    }
+    
+    return YES;
+}
+
+-(void)diskImageAdded: (NSNotification *)notification {
+    
+    NSURL *url = [notification object];
+    if (url) [self addDiskImage: url];
+}
+
+static NSString *kMenuContext = @"";
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if (context == (__bridge void * _Nullable)(kMenuContext)) {
+
+        //NSLog(@"observeValueForKeyPath %@", keyPath);
+        
+        _newMenuGeneration++;
+
+        return;
+    }
+
+    [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
+}
+
+-(void)initMenus {
+    
+    if (!_items) {
+        [self loadBookmarks];
+        [_items addObserver: self forKeyPath: @"arrangedObjects.name" options: 0 context: (__bridge void * _Nullable)(kMenuContext)];
+        [_items addObserver: self forKeyPath: @"arrangedObjects.automatic" options: 0 context: (__bridge void * _Nullable)(kMenuContext)];
+    }
+
+}
+
+-(IBAction)bookmarkMenu:(id)sender
+{
+}
+
+-(void)menuNeedsUpdate:(NSMenu *)menu {
+    
+    if (_currentMenuGeneration == _newMenuGeneration) return;
+    _currentMenuGeneration = _newMenuGeneration;
+    
+
+    NSArray *menus = [menu itemArray];
     for (NSMenuItem *item in [menus reverseObjectEnumerator]) {
         if ([item tag] == 0xdeadbeef) [_menu removeItem: item];
     }
-    for (NSURL *url in _urls) {
-        NSString *title = [url lastPathComponent]; // [[url lastPathComponent] stringByDeletingPathExtension];
+    
+    NSArray *array = [_items arrangedObjects];
+    for (Bookmark *b in array) {
 
-        NSMenuItem *item = [_menu addItemWithTitle: title action: @selector(bookmarkMenu:) keyEquivalent: @""];
-        [item setRepresentedObject: url];
+        NSString *title = [b name];
+        NSMenuItem *item = [menu addItemWithTitle: title action: @selector(bookmarkMenu:) keyEquivalent: @""];
+        [item setRepresentedObject: b];
         [item setTag: 0xdeadbeef];
+        if ([b automatic]) {
+            
+            [item setOnStateImage: [NSImage imageNamed: NSImageNameStatusAvailable]];
+            [item setState: NSOnState];
+        }
+        //if ([b automatic]) [item setAttributedTitle: ItalicMenuString([b name])];
+        //[item setState: [b automatic] ? NSMixedState : NSOffState];
     }
+    
 }
 
 @end

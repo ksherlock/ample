@@ -165,18 +165,19 @@ static unsigned RootKey = 0;
 
 
 -(void)rebuildMedia {
-
-    
-    Media media = _machine_media;
+   
+    Media media = EmptyMedia;
     
     unsigned mask = 1;
     for (unsigned i = 0; i < SLOT_COUNT; ++i, mask <<= 1) {
-        
+
         if (_slots_valid & mask) {
             MediaAdd(&media, &_slot_media[i]);
         }
     }
-
+    // machine media last.
+    MediaAdd(&media, &_machine_media);
+    
     [self setMedia: media];
 }
 

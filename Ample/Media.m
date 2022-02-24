@@ -35,6 +35,12 @@ void MediaAdd(Media *dest, const Media *src) {
 
     if (!src || !dest) return;
 
+    // could merge from src media but not currently set there.
+    
+    unsigned count;
+    unsigned flops = dest->floppy_5_25 + dest->floppy_3_5;
+
+    
 #define _(name) dest->name += src->name;
     _(cass);
     _(cdrom);
@@ -47,6 +53,16 @@ void MediaAdd(Media *dest, const Media *src) {
     _(midiout);
     _(picture);
 #undef _
+
+    
+    if ((count = src->floppy_5_25)) {
+        uint64_t bits = (1 << count) - 1;
+        //dest->floppy_mask <<= count;
+        bits <<= flops;
+        dest->floppy_mask |= bits;
+    }
+
+
 }
 
 BOOL MediaEqual(const Media *lhs, const Media *rhs) {
@@ -65,6 +81,8 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(midiin);
     _(midiout);
     _(picture);
+
+    _(floppy_mask);
 
     return YES;
 #undef _

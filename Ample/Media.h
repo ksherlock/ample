@@ -21,6 +21,7 @@ typedef struct Media {
     unsigned midiin;
     unsigned midiout;
     unsigned picture;
+    uint64_t floppy_mask;
 } Media;
 
 

@@ -49,8 +49,8 @@
                         </textFieldCell>
                         <connections>
                             <action selector="wdChanged:" target="-2" id="g1P-8l-ZXi"/>
-                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="DeG-OW-Gd2"/>
                             <binding destination="yvB-HG-64y" name="value" keyPath="values.MameWorkingDirectory" id="Kc9-Pc-XGU"/>
+                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="DeG-OW-Gd2"/>
                         </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-Ez-c1R">
@@ -104,11 +104,53 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-2I-oSk">
+                        <rect key="frame" x="136" y="106" width="140" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="–None–" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="lcf-aK-7x5" id="Aam-66-SaB">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <menu key="menu" id="rvM-u0-7pI">
+                                <items>
+                                    <menuItem title="–None–" state="on" id="lcf-aK-7x5"/>
+                                    <menuItem isSeparatorItem="YES" id="eqM-0n-Mdx"/>
+                                    <menuItem title="Item 2" tag="1234" id="sbG-FP-AWT"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="eFY-hy-gK0" name="content" keyPath="arrangedObjects" id="5bD-u2-QhR">
+                                <dictionary key="options">
+                                    <integer key="NSContentPlacementTag" value="1234"/>
+                                </dictionary>
+                            </binding>
+                            <binding destination="eFY-hy-gK0" name="contentValues" keyPath="arrangedObjects.name" previousBinding="5bD-u2-QhR" id="1ZH-FE-GV4">
+                                <dictionary key="options">
+                                    <integer key="NSContentPlacementTag" value="1234"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </popUpButton>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="506-Pm-ZdU">
+                        <rect key="frame" x="30" y="112" width="102" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Default Settings" id="7i3-6z-dcZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="140" y="147"/>
         </window>
         <userDefaultsController id="KVS-Ag-1un"/>
         <userDefaultsController representsSharedInstance="YES" id="yvB-HG-64y"/>
+        <arrayController mode="entity" entityName="Bookmark" editable="NO" automaticallyPreparesContent="YES" selectsInsertedObjects="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" automaticallyRearrangesObjects="YES" id="eFY-hy-gK0">
+            <connections>
+                <binding destination="XJv-1E-Jqj" name="managedObjectContext" keyPath="managedObjectContext" id="Q2L-Oe-bi6"/>
+            </connections>
+        </arrayController>
+        <customObject id="XJv-1E-Jqj" customClass="BookmarkManager"/>
     </objects>
 </document>

@@ -12,6 +12,8 @@
 #import "DownloadWindowController.h"
 #import "DiskImagesWindowController.h"
 #import "CheatSheetWindowController.h"
+#import "BookmarkWindowController.h"
+
 #import "Transformers.h"
 #import "BookmarkManager.h"
 
@@ -28,6 +30,8 @@
     NSWindowController *_downloader;
     NSWindowController *_diskImages;
     NSWindowController *_cheatSheet;
+    NSWindowController *_bookmarks;
+
 }
 
 
@@ -41,9 +45,7 @@
     
     RegisterTransformers();
     
-    BookmarkManager *bm = [BookmarkManager sharedManager];
-    [bm loadBookmarks];
-    [bm updateMenu];
+    //BookmarkManager *bm = [BookmarkManager sharedManager];
     
     path = [bundle pathForResource: @"Defaults" ofType: @"plist"];
     dict = [NSDictionary dictionaryWithContentsOfFile: path];
@@ -53,16 +55,16 @@
         [[NSUserDefaults standardUserDefaults] registerDefaults: dict];
     }
     
-
-
     _diskImages = [DiskImagesWindowController sharedInstance]; //[DiskImagesWindowController new];
 
     if ([self installMameComponents]) {
 
         [self displayLaunchWindow];
     }
-
 }
+
+
+
 
 -(void)displayLaunchWindow {
 
@@ -146,6 +148,7 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
@@ -226,6 +229,13 @@
 }
 
 
+- (IBAction)manageBookmarks: (id)sender {
+    
+    if (!_bookmarks) {
+        _bookmarks = [BookmarkWindowController new];
+    }
+    [_bookmarks showWindow: sender];
+}
 
 
 @end

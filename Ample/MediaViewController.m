@@ -352,24 +352,43 @@
     static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
     
-    unsigned counts[CATEGORY_COUNT] = { 0 };
-    
+    //unsigned counts[CATEGORY_COUNT] = { 0 };
+
     for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
+        uint64_t floppy_mask = _media.floppy_mask;
+        unsigned index = 0;
+
         MediaCategory *cat = _data[j];
         NSInteger valid = [cat validCount];
         for (NSInteger i = 0; i < valid; ++i) {
-            counts[j]++;
 
             MediaItem *item = [cat objectAtIndex: i];
             NSString *arg = [item argument];
 
-            if (arg) {
-                [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], counts[j]]];
-                [args addObject: arg];
+
+            if (j == kIndexFloppy525) {
+                // assumes < 64 floppies....
+                // infinite loop if no floppy device...
+                if (floppy_mask == 0) break;
+                while ((floppy_mask & 0x01) == 0) {
+                    floppy_mask >>= 1;
+                    ++index;
+                }
+            } else if (j == kIndexFloppy35) {
+                while ((floppy_mask & 0x01)) {
+                    floppy_mask >>= 1;
+                    ++index;
+                }
             }
+
+            ++index;
+            floppy_mask >>= 1;
+            if (!arg) continue;
+            
+            [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], index]];
+            [args addObject: arg];
         }
-        if (j == 0) counts[1] = counts[0]; // 3.5/5.25
     }
     
     [self setArgs: args];

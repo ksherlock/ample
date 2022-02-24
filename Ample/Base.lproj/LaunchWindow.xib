@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="LaunchWindowController">
             <connections>
                 <outlet property="addBookmarkWindow" destination="yIt-hP-HBq" id="Qhx-WV-cg4"/>
+                <outlet property="bookmarkErrorField" destination="RiJ-Xw-sgW" id="6y5-Fo-AnM"/>
                 <outlet property="bookmarkTextField" destination="fAl-Vn-x1w" id="GNr-j6-BiQ"/>
                 <outlet property="machineView" destination="oVt-eD-aaj" id="Q9V-Kr-6GN"/>
                 <outlet property="machineViewController" destination="FSD-3v-Wni" id="tXv-zJ-QO3"/>
@@ -570,9 +571,29 @@ Gw
                             </binding>
                         </connections>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RiJ-Xw-sgW">
+                        <rect key="frame" x="20" y="20" width="248" height="16"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Ehz-4Z-Tjq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-dZ-y90">
+                        <rect key="frame" x="378" y="79" width="66" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Default" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cOs-WH-9Dr">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="bookmarkDefault" id="Oiv-hR-5fn"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="130" y="70"/>
+            <point key="canvasLocation" x="-62" y="95"/>
         </window>
         <viewController nibName="MachineView" id="FSD-3v-Wni" customClass="NewMachineViewController"/>
         <menu id="Aa5-Sk-gZX">

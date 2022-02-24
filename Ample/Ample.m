@@ -138,3 +138,4 @@ NSString *kDownloadExtension = @"DownloadExtension";
 
 NSString *kNotificationDiskImageAdded = @"Disk Image Added";
 NSString *kNotificationDiskImageMagicRoute = @"Disk Image Magic Route";
+NSString *kNotificationBookmarkMagicRoute = @"Bookmark Magic Route";

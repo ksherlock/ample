@@ -142,7 +142,7 @@ def build_known_roms_list():
 
 
 
-mnames = set()
+mnames = {}
 rnames = set()
 
 known = build_known_roms_list()
@@ -156,18 +156,24 @@ for m in machines:
 	if st.returncode != 0:
 		print("mame error: {}".format(m))
 		exit(1)
+	xml = st.stdout
+	root = ET.fromstring(xml)
 
 	data = {  }
 
-	xml = st.stdout
-	root = ET.fromstring(xml)
 
 	# find machines that have a rom child
 	for x in root.findall('machine/rom/..'):
 		name = x.get('name')
 		if name in EXCLUDE: continue
+		if name in mnames: continue
+		mnames[name] = x.find("description").text
 		#if (name in known): mnames.add(name)
-		mnames.add(name)
+		# if name in mnames:
+			# mnames[name].append(m)
+		# else:
+			# mnames[name] = [ m ]
+		# mnames.add(name)
 		# for y in x.findall('./rom'):
 		# 	rnames.add(y.get('name'))
 		
@@ -180,15 +186,19 @@ for m in machines:
 
 # if full: ROMS = list(mnames)
 # else: ROMS = list(mnames.difference(EXCLUDE))
-ROMS = list(mnames)
-ROMS.sort()
+ROMS =  [{ 'value': k, 'description': v} for k, v in mnames.items()];
+ROMS.sort(key=lambda x: x.get('description'))
 
-data = {}
+# data = []
 # data["source"] = "https://archive.org/download/mame0.224"
 # data["type"] = "zip"
 # data["version"] = "0.224"
-data["roms"] = ROMS
+#data["roms"] = ROMS
+
+# for k in ROMS:
+	# data.append( { 'value': k, 'description': mnames[k] })
+
 
 # print(ROMS)
 with open("../Ample/Resources/roms.plist", "w") as f:
-	f.write(to_plist(data))
+	f.write(to_plist(ROMS))

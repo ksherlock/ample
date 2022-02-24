@@ -16,6 +16,7 @@
 #import "AutocompleteControl.h"
 #import "SoftwareList.h"
 #import "BookmarkManager.h"
+#import "Bookmark.h"
 
 #include <sys/stat.h>
 #include <wctype.h>
@@ -79,9 +80,12 @@ static NSString *kContextMachine = @"kContextMachine";
 
 @property (strong) IBOutlet NSWindow *addBookmarkWindow;
 @property (strong) NSString *bookmarkName;
+@property BOOL bookmarkDefault;
 @property (weak) IBOutlet NSTextField *bookmarkTextField;
+@property (weak) IBOutlet NSTextField *bookmarkErrorField;
 
 @property BOOL optionKey;
+
 
 @end
 
@@ -97,6 +101,8 @@ static NSString *kContextMachine = @"kContextMachine";
 -(IBAction)addBookmark:(id)sender;
 
 -(IBAction)defaultLoad:(id)sender;
+
+-(void)bookmarkNotification: (NSNotification *)notification;
 
 @end
 
@@ -207,9 +213,9 @@ static void AddSubview(NSView *parent, NSView *child) {
     AddSubview(_mediaView, [_mediaController view]);
     AddSubview(_machineView, [_machineViewController view]);
 
-
-    // can't be done until above views are set up.
-    [self defaultLoad: nil];
+    
+    [_softwareListControl setMinWidth: 250];
+    [_softwareListControl setHidden: YES];
 
 
     NSArray *keys = @[
@@ -240,10 +246,17 @@ static void AddSubview(NSView *parent, NSView *child) {
     [_machineViewController addObserver: self forKeyPath: @"machine" options: 0 context: (__bridge void * _Nullable)kContextMachine];
 
     
-    [_softwareListControl setMinWidth: 250];
-    [_softwareListControl setHidden: YES];
+    
+    
+    // can't be done until above views are set up.
+    [self defaultLoad: nil];
+
     
     [self buildCommandLine];
+    
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+    [nc addObserver: self selector: @selector(bookmarkNotification:) name: kNotificationBookmarkMagicRoute object: nil];
 }
 
 
@@ -765,11 +778,14 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)defaultSave:(id)sender {
 
+    #if 0
+
     BookmarkManager *bm = [BookmarkManager sharedManager];
 
     NSDictionary *d = [self makeBookmark];
 
     [bm saveDefault: d];
+#endif
 }
 
 -(IBAction)defaultLoad:(id)sender {
@@ -790,7 +806,9 @@ static NSString *ShellQuote(NSString *s) {
 -(IBAction)addBookmark:(id)sender {
     
     if (!_machine) return;
-    
+
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+
     NSString *name = nil;
     if (_machineDescription) name = [_machineDescription objectForKey:@"description"];
     if (!name) name = _machine;
@@ -799,8 +817,14 @@ static NSString *ShellQuote(NSString *s) {
     if (_software) {
         name = [name stringByAppendingFormat: @" - %@", [_software title]];
     }
+    
+    name = [bm uniqueBookmarkName: name];
+    
     [self setBookmarkName: name];
+    [self setBookmarkDefault: NO];
     [_bookmarkTextField selectText: nil];
+    [_bookmarkErrorField setStringValue: @""];
+
     [[self window] beginSheet: _addBookmarkWindow completionHandler:  nil];
 }
 
@@ -810,19 +834,27 @@ static NSString *ShellQuote(NSString *s) {
 }
 
 -(IBAction)bookmarkSave:(id)sender {
-    
-    
+        
     BookmarkManager *bm = [BookmarkManager sharedManager];
 
+#if 0
     if (![bm validateName: _bookmarkName]) {
         [_bookmarkTextField selectText: nil];
         NSBeep();
         return;
     }
+#endif
 
     NSDictionary *d = [self makeBookmark];
+    NSError *e;
     
-    [bm saveBookmark: d name: _bookmarkName];
+    if (( e = [bm saveBookmark: d name: _bookmarkName automatic: _bookmarkDefault])) {
+        // probably a duplicate name...
+        [_bookmarkTextField selectText: nil];
+        [_bookmarkErrorField setStringValue: [e localizedDescription]];
+        NSBeep();
+        return;
+    }
     
     [[self window] endSheet: _addBookmarkWindow];
     [_addBookmarkWindow orderOut: nil];
@@ -830,14 +862,26 @@ static NSString *ShellQuote(NSString *s) {
 }
 
 
+-(void)bookmarkNotification: (NSNotification *)notification {
+    
+    Bookmark *b = [notification object];
+    NSDictionary *d = [b dictionary];
+    
+    [self loadBookmark: d];
+}
+
 -(IBAction)bookmarkMenu:(id)sender {
     
+#if 0
     NSURL *url = [sender representedObject];
     if (!url) return;
     
     NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
     if (!d) return; // oops...
     
+#endif
+    // represented object is a Bookmark.
+    NSDictionary *d = [(Bookmark *)[sender representedObject] dictionary];
     [self loadBookmark: d];
 }
 

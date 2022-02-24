@@ -9,19 +9,18 @@
 #import "DiskImagesWindowController.h"
 #import "TableCellView.h"
 #import "Ample.h"
+#import "DiskImage.h"
+
+#import "BookmarkManager.h"
 
 @interface DiskImagesWindowController ()
 @property (weak) IBOutlet NSTableView *tableView;
 @property (strong) IBOutlet NSArrayController *arrayController;
-@property (strong) NSMutableArray *content;
 
 @end
 
 @implementation DiskImagesWindowController {
-    BOOL _dirty;
     NSSet *_extensions;
-    NSTimer *_timer;
-    
 }
 
 +(instancetype)sharedInstance {
@@ -44,7 +43,7 @@
     
     if ((self = [super init])) {
         
-        [self loadRecentDiskImages];
+        //[self loadRecentDiskImages];
         
         _extensions = [NSSet setWithObjects:
             @"2img", @"2mg", @"chd", @"dc", @"do", @"dsk", @"hd", @"hdv", @"image", @"nib", @"po", @"wav", @"woz", @"iso", @"raw", nil
@@ -59,9 +58,6 @@
 
 - (void)windowDidLoad {
 
-    if (!_content)
-        [self setContent: [NSMutableArray new]];
-    
     [super windowDidLoad];
     NSWindow *window = [self window];
     [window setRestorable: YES];
@@ -75,8 +71,12 @@
     [_tableView setDraggingSourceOperationMask: NSDragOperationCopy forLocal: NO]; // enable drag/drop to othr apps.
 
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+
+    NSSortDescriptor *s = [NSSortDescriptor sortDescriptorWithKey: @"name" ascending: YES selector: @selector(caseInsensitiveCompare:)];
+    [_arrayController setSortDescriptors: @[ s ]];
 }
 
+#if 0
 -(void)loadRecentDiskImages {
 //    NSError *error;
 
@@ -102,14 +102,16 @@
     _timer = nil;
     [self saveFile];
 }
+#endif
 
 -(void)diskImageAdded: (NSNotification *)notification {
     
     NSURL *url = [notification object];
     if (!url) return;
     
-    [self addFile: url];
+    //[self addFile: url];
 }
+#if 0
 -(void)markDirty {
     _dirty = YES;
     if (_timer) [_timer invalidate];
@@ -123,6 +125,7 @@
     }];
 #endif
 }
+
 
 -(void)saveFile {
 
@@ -147,10 +150,11 @@
     [self saveFile];
     
 }
+#endif
 
 
 
-
+#if 0
 -(BOOL)addFile: (NSObject *)pathOrURL {
     
     NSString *path = nil;
@@ -198,18 +202,20 @@
                               [NSDate new], @"date",
                               nil];
     
+#if 0
     @synchronized (self) {
         if (_arrayController)
             [_arrayController addObject: d];
         else
             [_content addObject: d];
     }
+#endif
     [self markDirty];
     return YES;
 }
 
-
--(NSMutableDictionary *)clickedItem {
+#endif
+-(DiskImage *)clickedItem {
 
     NSArray *array = [_arrayController arrangedObjects];
     NSInteger row = [_tableView clickedRow];
@@ -218,11 +224,21 @@
 }
 #pragma mark - IBActions
 
+- (IBAction)filter:(id)sender {
+    NSString *text = [sender stringValue];
+    NSPredicate *p = nil;
+    if ([text length]) {
+        p = [NSPredicate predicateWithFormat: @"name CONTAINS[cd] %@",text];
+    }
+
+    [_arrayController setFilterPredicate: p];
+}
+
 - (IBAction)showInFinder:(id)sender {
     
-    NSMutableDictionary *item = [self clickedItem];
+    DiskImage *item = [self clickedItem];
     if (!item) return;
-    NSString *path = [item objectForKey: @"path"];
+    NSString *path = [item path];
 
     NSURL *url = [NSURL fileURLWithPath: path];
     if (!url) return;
@@ -233,27 +249,19 @@
 
 - (IBAction)eject:(id)sender {
 
-    NSMutableDictionary *item = [self clickedItem];
+    DiskImage *item = [self clickedItem];
     if (!item) return;
     
-    @synchronized (self) {
-        
-        if (_arrayController) {
-            [_arrayController removeObject: item];
-        } else {
-            [_content removeObject: item];
-        }
-        [self markDirty];
-    }
-
+    [_arrayController removeObject: item];
 }
 
 -(IBAction)doubleClick: (id)sender {
-    NSDictionary *d = [self clickedItem];
+    DiskImage *d = [self clickedItem];
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
-    [nc postNotificationName: kNotificationDiskImageMagicRoute object: nil userInfo: d];
+    NSDictionary *userInfo = @{ @"path": [d path] };
+    [nc postNotificationName: kNotificationDiskImageMagicRoute object: nil userInfo: userInfo];
 }
 
 @end
@@ -265,9 +273,9 @@
     
     id objects = [_arrayController arrangedObjects];
     
-    NSDictionary *d = [objects objectAtIndex: row];
-  
-    NSString *path = [d objectForKey: @"path"];
+    DiskImage *d = [objects objectAtIndex: row];
+    if (!d) return nil;
+    NSString *path = [d path];
     
     NSURL *url = [NSURL fileURLWithPath: path];
     return url;
@@ -304,6 +312,8 @@
 
 -(BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
 
+    BookmarkManager *bm = [BookmarkManager sharedManager];
+    
     if ([info draggingSource] == _tableView) return NO;
 
     NSPasteboard * pb = [info draggingPasteboard];
@@ -322,7 +332,9 @@
         if (!s) continue;
         NSURL *url = [NSURL URLWithString: s];
         if (!url) continue;
-        ok |= [self addFile: url];
+        
+        ok |= [bm addDiskImage: url];
+        //ok |= [self addFile: url];
     }
     return ok;
 }

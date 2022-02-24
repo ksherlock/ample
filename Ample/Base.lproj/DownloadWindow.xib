@@ -78,6 +78,7 @@
                                                                     </dictionary>
                                                                 </binding>
                                                                 <binding destination="onK-6l-2iV" name="textColor" keyPath="objectValue.titleColor" id="0Qx-rz-DEZ"/>
+                                                                <binding destination="onK-6l-2iV" name="toolTip" keyPath="objectValue.value" id="rUb-Jb-KbT"/>
                                                             </connections>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-hP-QAH">

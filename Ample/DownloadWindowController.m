@@ -81,6 +81,7 @@ enum {
 
 @interface DownloadItem : NSObject
 
+@property NSString *value;
 @property NSString *name;
 @property NSError *error;
 @property NSString *pathName;
@@ -208,7 +209,7 @@ enum {
 
     NSURL *url = [bundle URLForResource: @"roms" withExtension: @"plist"];
     
-    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
+    NSArray *roms = [NSArray arrayWithContentsOfURL: url];
     
     NSURL *sd = SupportDirectory();
 
@@ -232,7 +233,6 @@ enum {
     [self initializeExtensionMenu];
     
 
-    NSArray *roms = [d objectForKey: @"roms"];
     [self setCurrentROM: @""];
     [self setCurrentCount: 0];
     [self setTotalCount: [roms count]];
@@ -241,10 +241,11 @@ enum {
 
     NSMutableArray *tmp = [NSMutableArray arrayWithCapacity: [roms count]];
     unsigned ix = 0;
-    for (NSString *name in roms) {
+    for (NSDictionary *d in roms) {
         
         DownloadItem *item  = [DownloadItem new];
-        [item setName: name];
+        [item setValue: [d objectForKey: @"value"]];
+        [item setName: [d objectForKey: @"description"]];
         [item setIndex: ix++];
 
         [tmp addObject: item];
@@ -292,7 +293,7 @@ enum {
     }
     
     NSURLSessionDownloadTask *task;
-    NSString *s = [item name];
+    NSString *s = [item value];
     NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
     NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
     
@@ -313,7 +314,7 @@ enum {
     for (DownloadItem *item in _items) {
             
         NSURLSessionDownloadTask *task;
-        NSString *s = [item name];
+        NSString *s = [item value];
         NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
         NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
         
@@ -421,8 +422,8 @@ enum {
     NSFileManager *fm = [NSFileManager defaultManager];
 
     for (DownloadItem *item in _items) {
-        NSString *name = [item name];
-        NSString *s = [romdir stringByAppendingPathComponent: name];
+        NSString *value = [item value];
+        NSString *s = [romdir stringByAppendingPathComponent: value];
         NSString *path;
         path = [s stringByAppendingPathExtension: @"zip"];
         if ([fm fileExistsAtPath: path]) {

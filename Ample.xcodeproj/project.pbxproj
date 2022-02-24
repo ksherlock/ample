@@ -273,6 +273,20 @@
 		B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
 		B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
 		B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0024F5F371005CB652 /* prav8m.plist */; };
+		B6E6DCEB27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */; };
+		B6E6DCEC27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */; };
+		B6E6DCF727B0873200E0A76E /* BookmarkWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E6DCF527B0873100E0A76E /* BookmarkWindow.xib */; };
+		B6E6DCF827B0873200E0A76E /* BookmarkWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E6DCF527B0873100E0A76E /* BookmarkWindow.xib */; };
+		B6E6DCFB27B0A09300E0A76E /* BookmarkWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCFA27B0A09300E0A76E /* BookmarkWindowController.m */; };
+		B6E6DCFC27B0A09300E0A76E /* BookmarkWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCFA27B0A09300E0A76E /* BookmarkWindowController.m */; };
+		B6E6DD0127B0D17C00E0A76E /* Bookmark+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCFF27B0D17C00E0A76E /* Bookmark+CoreDataClass.m */; };
+		B6E6DD0227B0D17C00E0A76E /* Bookmark+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCFF27B0D17C00E0A76E /* Bookmark+CoreDataClass.m */; };
+		B6E6DD0327B0D17C00E0A76E /* Bookmark+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD0027B0D17C00E0A76E /* Bookmark+CoreDataProperties.m */; };
+		B6E6DD0427B0D17C00E0A76E /* Bookmark+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD0027B0D17C00E0A76E /* Bookmark+CoreDataProperties.m */; };
+		B6E6DD1327B1D71700E0A76E /* DiskImage+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD1127B1D71700E0A76E /* DiskImage+CoreDataClass.m */; };
+		B6E6DD1427B1D71700E0A76E /* DiskImage+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD1127B1D71700E0A76E /* DiskImage+CoreDataClass.m */; };
+		B6E6DD1527B1D71700E0A76E /* DiskImage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD1227B1D71700E0A76E /* DiskImage+CoreDataProperties.m */; };
+		B6E6DD1627B1D71700E0A76E /* DiskImage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DD1227B1D71700E0A76E /* DiskImage+CoreDataProperties.m */; };
 		B6E9A18025088B1B005E7525 /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* SlotViewController.m */; };
 		B6E9A18325088B36005E7525 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* SlotView.xib */; };
 		B6F7B538266FDA5B00624C6B /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F7B536266FDA5B00624C6B /* MachineView.xib */; };
@@ -504,6 +518,20 @@
 		B6DE32422605482500418375 /* mac512k.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mac512k.plist; sourceTree = "<group>"; };
 		B6DE32432605482500418375 /* macse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macse.plist; sourceTree = "<group>"; };
 		B6E4B5FA24FDE2670094A35C /* Ample Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ample Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6DCEA27AEE15F00E0A76E /* Ample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ample.xcdatamodel; sourceTree = "<group>"; };
+		B6E6DCF627B0873100E0A76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookmarkWindow.xib; sourceTree = "<group>"; };
+		B6E6DCF927B0A09300E0A76E /* BookmarkWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkWindowController.h; sourceTree = "<group>"; };
+		B6E6DCFA27B0A09300E0A76E /* BookmarkWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookmarkWindowController.m; sourceTree = "<group>"; };
+		B6E6DCFD27B0D17C00E0A76E /* Bookmark+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bookmark+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B6E6DCFE27B0D17C00E0A76E /* Bookmark+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bookmark+CoreDataClass.h"; sourceTree = "<group>"; };
+		B6E6DCFF27B0D17C00E0A76E /* Bookmark+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bookmark+CoreDataClass.m"; sourceTree = "<group>"; };
+		B6E6DD0027B0D17C00E0A76E /* Bookmark+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bookmark+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B6E6DD0E27B161C400E0A76E /* Bookmark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bookmark.h; path = Ample/Bookmark.h; sourceTree = SOURCE_ROOT; };
+		B6E6DD0F27B1D71700E0A76E /* DiskImage+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiskImage+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B6E6DD1027B1D71700E0A76E /* DiskImage+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiskImage+CoreDataClass.h"; sourceTree = "<group>"; };
+		B6E6DD1127B1D71700E0A76E /* DiskImage+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DiskImage+CoreDataClass.m"; sourceTree = "<group>"; };
+		B6E6DD1227B1D71700E0A76E /* DiskImage+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DiskImage+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B6E6DD1727B1DF5F00E0A76E /* DiskImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiskImage.h; sourceTree = "<group>"; };
 		B6E9A17E25088B1B005E7525 /* SlotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotViewController.h; sourceTree = "<group>"; };
 		B6E9A17F25088B1B005E7525 /* SlotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		B6E9A18225088B36005E7525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SlotView.xib; sourceTree = "<group>"; };
@@ -711,6 +739,7 @@
 		B6BA257D24E99BE9005FB8FF /* Ample */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6DD0527B160D400E0A76E /* Core Data */,
 				B6665C12265A0E3E00254939 /* AutocompleteControl.h */,
 				B6665C13265A0E3E00254939 /* AutocompleteControl.m */,
 				B6BA257E24E99BE9005FB8FF /* AppDelegate.h */,
@@ -718,6 +747,8 @@
 				B63C1B8924FF4B7100511A71 /* Ample.h */,
 				B635C09E26784D4700B23BFD /* AmpleLite.m */,
 				B63C1B8A24FF4BF700511A71 /* Ample.m */,
+				B6E6DD0E27B161C400E0A76E /* Bookmark.h */,
+				B6E6DD1727B1DF5F00E0A76E /* DiskImage.h */,
 				B64AF1F4250ED5E400A09B9B /* TableCellView.h */,
 				B64AF1F5250ED5E400A09B9B /* TableCellView.m */,
 				B6152B5425F4549F00605E6E /* Slot.h */,
@@ -764,6 +795,8 @@
 		B6BA563A251685DA00B0C47D /* Window Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6DCF927B0A09300E0A76E /* BookmarkWindowController.h */,
+				B6E6DCFA27B0A09300E0A76E /* BookmarkWindowController.m */,
 				B64AF1F0250ECB2E00A09B9B /* DiskImagesWindowController.h */,
 				B64AF1F1250ECB2E00A09B9B /* DiskImagesWindowController.m */,
 				B63C1B9125008A2700511A71 /* DownloadWindowController.h */,
@@ -784,6 +817,7 @@
 			isa = PBXGroup;
 			children = (
 				B6665C1A265C639900254939 /* Autocomplete.xib */,
+				B6E6DCF527B0873100E0A76E /* BookmarkWindow.xib */,
 				B6E9A18125088B36005E7525 /* SlotView.xib */,
 				B6F7B536266FDA5B00624C6B /* MachineView.xib */,
 				B63C1B9325008A2700511A71 /* DownloadWindow.xib */,
@@ -816,6 +850,22 @@
 				B6DE323A26044DB800418375 /* caution@3x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		B6E6DD0527B160D400E0A76E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */,
+				B6E6DCFE27B0D17C00E0A76E /* Bookmark+CoreDataClass.h */,
+				B6E6DCFF27B0D17C00E0A76E /* Bookmark+CoreDataClass.m */,
+				B6E6DCFD27B0D17C00E0A76E /* Bookmark+CoreDataProperties.h */,
+				B6E6DD0027B0D17C00E0A76E /* Bookmark+CoreDataProperties.m */,
+				B6E6DD1027B1D71700E0A76E /* DiskImage+CoreDataClass.h */,
+				B6E6DD1127B1D71700E0A76E /* DiskImage+CoreDataClass.m */,
+				B6E6DD0F27B1D71700E0A76E /* DiskImage+CoreDataProperties.h */,
+				B6E6DD1227B1D71700E0A76E /* DiskImage+CoreDataProperties.m */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -964,6 +1014,7 @@
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */,
+				B6E6DCF727B0873200E0A76E /* BookmarkWindow.xib in Resources */,
 				B6374ADB260ECB400045CA16 /* maciix.plist in Resources */,
 				B6109A2424F5F377005CB652 /* las128ex.plist in Resources */,
 				B618B8C42729F6690045C2D8 /* laser128o.plist in Resources */,
@@ -1078,6 +1129,7 @@
 				B6665C1D265C639A00254939 /* Autocomplete.xib in Resources */,
 				B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */,
 				B6E4B5C224FDE2670094A35C /* ace100.plist in Resources */,
+				B6E6DCF827B0873200E0A76E /* BookmarkWindow.xib in Resources */,
 				B6374AD6260ECB400045CA16 /* maciisi.plist in Resources */,
 				B6DE32472605482500418375 /* macclasc.plist in Resources */,
 				B6E4B5C324FDE2670094A35C /* am64.plist in Resources */,
@@ -1225,9 +1277,13 @@
 			files = (
 				B608E17F2502FE0C00D53465 /* TransparentScroller.m in Sources */,
 				B6E9A18025088B1B005E7525 /* SlotViewController.m in Sources */,
+				B6E6DD1527B1D71700E0A76E /* DiskImage+CoreDataProperties.m in Sources */,
 				B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */,
+				B6E6DD1327B1D71700E0A76E /* DiskImage+CoreDataClass.m in Sources */,
+				B6E6DD0127B0D17C00E0A76E /* Bookmark+CoreDataClass.m in Sources */,
 				B6BA258824E99BEB005FB8FF /* main.m in Sources */,
 				B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */,
+				B6E6DCFB27B0A09300E0A76E /* BookmarkWindowController.m in Sources */,
 				B6B9EA662506A5550080E70D /* EjectButton.m in Sources */,
 				B6152B5A25F5B57E00605E6E /* Media.m in Sources */,
 				B6152B5625F4549F00605E6E /* Slot.m in Sources */,
@@ -1238,6 +1294,7 @@
 				B68A899026BE18E000B2C8C6 /* MidiManager.m in Sources */,
 				B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */,
 				B6004DF024FB05D600D38596 /* LogWindowController.m in Sources */,
+				B6E6DD0327B0D17C00E0A76E /* Bookmark+CoreDataProperties.m in Sources */,
 				B63005332666D6940014C381 /* BookmarkManager.m in Sources */,
 				B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */,
 				B63C1F0F25B1447C0016A611 /* CheatSheetWindowController.m in Sources */,
@@ -1245,6 +1302,7 @@
 				B6F7B53C267017A200624C6B /* NewMachineViewController.m in Sources */,
 				B64AF1F6250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B66D0FE72611386C000902F1 /* SoftwareList.m in Sources */,
+				B6E6DCEB27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */,
 				B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */,
 				B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */,
 			);
@@ -1259,16 +1317,22 @@
 				B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */,
 				B6E4B5B024FDE2670094A35C /* main.m in Sources */,
 				B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */,
+				B6E6DD1427B1D71700E0A76E /* DiskImage+CoreDataClass.m in Sources */,
 				B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */,
 				B64AF1F3250ECB2E00A09B9B /* DiskImagesWindowController.m in Sources */,
+				B6E6DCEC27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */,
 				B6B9EA672506A5550080E70D /* EjectButton.m in Sources */,
 				B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */,
 				B6152B5B25F5B57E00605E6E /* Media.m in Sources */,
 				B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */,
 				B6152B5725F4549F00605E6E /* Slot.m in Sources */,
 				B6E4B5B324FDE2670094A35C /* MediaViewController.m in Sources */,
+				B6E6DCFC27B0A09300E0A76E /* BookmarkWindowController.m in Sources */,
+				B6E6DD1627B1D71700E0A76E /* DiskImage+CoreDataProperties.m in Sources */,
 				B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */,
 				B6E4B5B424FDE2670094A35C /* FlippedView.m in Sources */,
+				B6E6DD0227B0D17C00E0A76E /* Bookmark+CoreDataClass.m in Sources */,
+				B6E6DD0427B0D17C00E0A76E /* Bookmark+CoreDataProperties.m in Sources */,
 				B63005342666D6940014C381 /* BookmarkManager.m in Sources */,
 				B615A9A026640A70001FBF99 /* SlotViewController.m in Sources */,
 				B6665C15265A0E3E00254939 /* AutocompleteControl.m in Sources */,
@@ -1347,6 +1411,14 @@
 				B6D6DE3D24FADF8B00661A5F /* Base */,
 			);
 			name = LaunchWindow.xib;
+			sourceTree = "<group>";
+		};
+		B6E6DCF527B0873100E0A76E /* BookmarkWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E6DCF627B0873100E0A76E /* Base */,
+			);
+			name = BookmarkWindow.xib;
 			sourceTree = "<group>";
 		};
 		B6E9A18125088B36005E7525 /* SlotView.xib */ = {
@@ -1656,6 +1728,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6E6DCEA27AEE15F00E0A76E /* Ample.xcdatamodel */,
+			);
+			currentVersion = B6E6DCEA27AEE15F00E0A76E /* Ample.xcdatamodel */;
+			path = Ample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B6BA257324E99BE9005FB8FF /* Project object */;
 }

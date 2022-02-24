@@ -11,6 +11,6 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 - (IBAction)displayPreferences:(id)sender;
-
+- (IBAction)manageBookmarks: (id)sender;
 @end
 

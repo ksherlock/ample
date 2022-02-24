@@ -58,7 +58,7 @@
 	<key>NSSupportsAutomaticTermination</key>
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
-	<true/>
+	<false/>
 	<key>SUFeedURL</key>
 	<string>https://ample.ksherlock.com/updates/appcast.xml</string>
 	<key>SUPublicEDKey</key>
