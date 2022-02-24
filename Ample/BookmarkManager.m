@@ -69,6 +69,7 @@ static BookmarkManager *singleton = nil;
     }
 
     
+    //singleton = self;
     return self;
 }
 
@@ -584,5 +585,43 @@ static NSString *kMenuContext = @"";
     }
     
 }
+
+@end
+
+
+/* MacOS 12.1+ doesn't like class clusters in nibs -
+ 
+ [General] This coder is expecting the replaced object 0x600000938f60 to be returned from
+ NSClassSwapper.initWithCoder instead of <BookmarkManager: 0x600000905da0>
+
+ */
+@interface BookmarkManagerProxy : NSProxy {
+    BookmarkManager *_target;
+}
+@end
+
+@implementation BookmarkManagerProxy
+
+-(id)init {
+    _target = [BookmarkManager sharedManager];
+    return self;
+}
+
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
+    return [_target methodSignatureForSelector: sel];
+}
+
++(BOOL)respondsToSelector:(SEL)aSelector {
+    return [BookmarkManager respondsToSelector: aSelector];
+}
+-(void)forwardInvocation:(NSInvocation *)invocation {
+    if ([_target respondsToSelector: [invocation selector]]) {
+        [invocation invokeWithTarget: _target];
+    } else {
+        [super forwardInvocation: invocation];
+    }
+}
+
+
 
 @end
