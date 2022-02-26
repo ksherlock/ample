@@ -459,11 +459,6 @@ static NSString *ShellQuote(NSString *s) {
     //[argv addObject: @"mame"];
     [argv addObject: _machine];
     
-    if (_software) {
-        NSString *name = [_softwareSet nameForSoftware: _software];
-        if (name) [argv addObject: name];
-    }
-
     // -confirm_quit?
     [argv addObject: @"-skip_gameinfo"];
 
@@ -552,6 +547,12 @@ static NSString *ShellQuote(NSString *s) {
         [argv addObjectsFromArray: tmp];
     }
 
+    // software *AFTER* slots so, eg, apple2ee has access to the superdrive.
+    if (_software) {
+        NSString *name = [_softwareSet nameForSoftware: _software];
+        if (name) [argv addObject: name];
+    }
+    
     if (_mameSpeed < 0) {
         [argv addObject: @"-nothrottle"];
     } else if (_mameSpeed > 1) {
