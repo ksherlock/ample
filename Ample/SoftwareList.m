@@ -614,14 +614,26 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
 }
 
 
-// NSStringTransformStripDiacritics
-// pre-process all entries to lowercase and remove diacritics (second string for search text?)
-#if 0
-static unichar diacritics[][2] = {
-    { 0xd8, 'O' }, // Ø
-    { 0xf8, 'o' }, // ø
-};
-#endif
+
+static NSString *SearchString(NSString *s) {
+    
+    s = [s stringByFoldingWithOptions: NSCaseInsensitiveSearch|NSWidthInsensitiveSearch|NSDiacriticInsensitiveSearch locale: nil];
+    
+    // strip leading "the " ???
+    NSUInteger l = [s length];
+    if (l > 4) {
+        unichar buffer[4];
+        static unichar the_l[4] = { 't', 'h', 'e', ' '};
+        static unichar the_u[4] = { 'T', 'H', 'E', ' '};
+
+        [s getCharacters: buffer range: NSMakeRange(0, 4)];
+        if (!memcmp(buffer, the_l, sizeof(buffer))) return [s substringFromIndex: 4];
+        if (!memcmp(buffer, the_u, sizeof(buffer))) return [s substringFromIndex: 4];
+    }
+    if (l > 256) return [s substringToIndex: 256];
+    return s;
+}
+
 - (nonnull NSArray<id<AutocompleteItem>> *)autocomplete:(nonnull AutocompleteControl *)control completionsForString:(nonnull NSString *)string {
 
     if (!_cache) {
@@ -629,26 +641,28 @@ static unichar diacritics[][2] = {
         [_cache setCountLimit: 10];
     }
     
-    // todo -- diacritic normalization.
-    // déjá vu -> deja vu
+
     
+    // diacritic normalization.
+    // déjá vu -> deja vu
+    string = SearchString(string);
+
     enum { max_haystack_length = 256, max_needle_length = 256 };
 
     unichar needle_data[max_needle_length];
     
     if (!_items) return @[];
-
-    //string = [string stringByApplyingTransform: NSStringTransformStripDiacritics reverse: NO];
     
     NSUInteger needle_length = [string length];
     needle_length = MIN(needle_length, max_needle_length);
 
     [string getCharacters: needle_data range: NSMakeRange(0, needle_length)];
     
+    // based on testing, NSCaseInsensitiveSearch uses lowercase but it's not guaranteed.
     for (NSUInteger i = 0; i < needle_length; ++i)
         needle_data[i] = towlower(needle_data[i]);
-    
     string = InternString([NSString stringWithCharacters: needle_data length: needle_length]);
+
 
     NSArray *a = [_cache objectForKey: string];
     if (a) return a;
@@ -688,7 +702,12 @@ static unichar diacritics[][2] = {
             if (!memcmp(haystack_data, needle_data_ptr, needle_length * sizeof(unichar))) return YES;
         }
 
-        haystack = [o title];
+        haystack = [o searchTitle];
+        if (!haystack) {
+            haystack = SearchString([o title]);
+            [o setSearchTitle: haystack];
+        }
+
         length = [haystack length];
         length = MIN(length, max_haystack_length);
         if (length >= needle_length) {

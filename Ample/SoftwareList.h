@@ -32,6 +32,8 @@
 
 -(NSString *)fullName;
 
+@property NSString *searchTitle;
+
 @end
 
 @interface SoftwareSet : NSObject <NSFastEnumeration, AutoCompleteDelegate>
