@@ -165,7 +165,7 @@ static NSString *kNone = @"—None—";
     
     NSArray *array = _category == kIndexMidiIn ? [mgr sources] : [mgr destinations];
 
-    NSString *selected = [[_popUpButton selectedItem] representedObject];
+    NSString *selected = [[_popUpButton selectedItem] title];
     [menu removeAllItems];
     int selectedIndex = -1;
     NSMenuItem *item;
