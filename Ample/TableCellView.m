@@ -164,9 +164,9 @@ static NSString *kNone = @"—None—";
     MidiManager *mgr = [MidiManager sharedManager];
     
     NSArray *array = _category == kIndexMidiIn ? [mgr sources] : [mgr destinations];
-    
-    [menu removeAllItems];
+
     NSString *selected = [[_popUpButton selectedItem] representedObject];
+    [menu removeAllItems];
     int selectedIndex = -1;
     NSMenuItem *item;
 
