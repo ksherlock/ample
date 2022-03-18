@@ -28,6 +28,8 @@
     NSArrayController *_items;
     NSUInteger _newMenuGeneration;
     NSUInteger _currentMenuGeneration;
+    
+    Bookmark *_currentBookmark;
 }
 
 @end
@@ -235,7 +237,8 @@ static BookmarkManager *singleton = nil;
 }
 
 
--(NSDictionary *)loadDefault {
+-(Bookmark *)defaultBookmark {
+
     NSFetchRequest *req;
     NSError *error;
     NSArray *array;
@@ -245,10 +248,12 @@ static BookmarkManager *singleton = nil;
     [req setPredicate: [NSPredicate predicateWithFormat: @"automatic == TRUE"]];
     array = [_moc executeFetchRequest: req error: &error];
 
-    b = [array firstObject];
-    
-    return [b dictionary];
+    return [array firstObject];
+}
 
+-(NSDictionary *)loadDefault {
+    Bookmark *b = [self defaultBookmark];
+    return [b dictionary];
 }
 
 /* save as .Default */
@@ -557,17 +562,37 @@ static NSString *kMenuContext = @"";
 {
 }
 
+-(Bookmark *)currentBookmark {
+    return _currentBookmark;
+}
+-(void)setCurrentBookmark:(Bookmark *)currentBookmark {
+    if (currentBookmark == _currentBookmark) return;
+    _currentBookmark = currentBookmark;
+    _newMenuGeneration++;
+}
+
 -(void)menuNeedsUpdate:(NSMenu *)menu {
     
     if (_currentMenuGeneration == _newMenuGeneration) return;
     _currentMenuGeneration = _newMenuGeneration;
+
+    if (_currentBookmark && _updateMenuItem) {
+        NSString *title = [NSString stringWithFormat: @"Update “%@”", [_currentBookmark name]];
+        [_updateMenuItem setHidden: NO];
+        [_updateMenuItem setTitle: title];
+        [_updateMenuItem setRepresentedObject: _currentBookmark];
+    } else {
+        [_updateMenuItem setHidden: YES];
+        [_updateMenuItem setRepresentedObject: nil];
+    }
+    
     
 
     NSArray *menus = [menu itemArray];
     for (NSMenuItem *item in [menus reverseObjectEnumerator]) {
         if ([item tag] == 0xdeadbeef) [_menu removeItem: item];
     }
-    
+
     NSArray *array = [_items arrangedObjects];
     for (Bookmark *b in array) {
 

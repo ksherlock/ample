@@ -16,6 +16,7 @@
         <customObject id="rSq-qV-SGy" customClass="BookmarkManager">
             <connections>
                 <outlet property="menu" destination="ha0-nx-PIl" id="Ozd-ID-egK"/>
+                <outlet property="updateMenuItem" destination="30b-vT-HIa" id="AgZ-LE-no6"/>
             </connections>
         </customObject>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
@@ -414,6 +415,11 @@
                             <menuItem title="Add Bookmark…" keyEquivalent="d" id="1JF-xV-zmG">
                                 <connections>
                                     <action selector="addBookmark:" target="-1" id="cqp-ko-BfQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Update Bookmark" keyEquivalent="D" id="30b-vT-HIa">
+                                <connections>
+                                    <action selector="updateBookmark:" target="-1" id="Au0-Sp-cUD"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Set Default" hidden="YES" id="vbR-vS-lqO">

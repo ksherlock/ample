@@ -29,6 +29,7 @@ static NSString *kContextMachine = @"kContextMachine";
     BOOL _loadingBookmark;
     NSString *_machine;
     NSDictionary *_machineDescription;
+    BookmarkManager *_manager;
 }
 @property (strong) IBOutlet MediaViewController *mediaController;
 @property (strong) IBOutlet SlotViewController *slotController;
@@ -189,6 +190,8 @@ static int EffectsIndex(NSString *str) {
 
 -(void)windowWillLoad {
 
+    _manager = [BookmarkManager sharedManager];
+    
     // if this calls [self window], it will recurse.  that is bad.
     //[self defaultLoad: nil];
     [self reset];
@@ -731,6 +734,7 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)resetAll:(id)sender {
 
+    [_manager setCurrentBookmark: nil];
     [self reset];
     [self resetSoftware];
     [_slotController resetSlots: sender];
@@ -779,36 +783,39 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)defaultSave:(id)sender {
 
-    #if 0
-
-    BookmarkManager *bm = [BookmarkManager sharedManager];
-
+#if 0
     NSDictionary *d = [self makeBookmark];
 
-    [bm saveDefault: d];
+    [_manager saveDefault: d];
 #endif
 }
 
 -(IBAction)defaultLoad:(id)sender {
 
-    BookmarkManager *bm = [BookmarkManager sharedManager];
+    Bookmark *b = [_manager defaultBookmark];
 
-    NSDictionary *d = [bm loadDefault];
-    if (!d) {
+    if (!b) {
         [self resetAll: sender];
         [self setMachine: nil];
         [_machineViewController reset];
         [_slotController setMachine: nil];
         return;
     }
-    [self loadBookmark: d];
+    [self loadBookmark: b];
+}
+
+-(IBAction)updateBookmark: (id)sender {
+    
+    Bookmark *b = [sender representedObject];
+    if (!b) return;
+    
+    NSDictionary *d = [self makeBookmark];
+    [b setDictionary: d];
 }
 
 -(IBAction)addBookmark:(id)sender {
     
     if (!_machine) return;
-
-    BookmarkManager *bm = [BookmarkManager sharedManager];
 
     NSString *name = nil;
     if (_machineDescription) name = [_machineDescription objectForKey:@"description"];
@@ -819,7 +826,7 @@ static NSString *ShellQuote(NSString *s) {
         name = [name stringByAppendingFormat: @" - %@", [_software title]];
     }
     
-    name = [bm uniqueBookmarkName: name];
+    name = [_manager uniqueBookmarkName: name];
     
     [self setBookmarkName: name];
     [self setBookmarkDefault: NO];
@@ -836,10 +843,9 @@ static NSString *ShellQuote(NSString *s) {
 
 -(IBAction)bookmarkSave:(id)sender {
         
-    BookmarkManager *bm = [BookmarkManager sharedManager];
 
 #if 0
-    if (![bm validateName: _bookmarkName]) {
+    if (![_manager validateName: _bookmarkName]) {
         [_bookmarkTextField selectText: nil];
         NSBeep();
         return;
@@ -849,7 +855,7 @@ static NSString *ShellQuote(NSString *s) {
     NSDictionary *d = [self makeBookmark];
     NSError *e;
     
-    if (( e = [bm saveBookmark: d name: _bookmarkName automatic: _bookmarkDefault])) {
+    if (( e = [_manager saveBookmark: d name: _bookmarkName automatic: _bookmarkDefault])) {
         // probably a duplicate name...
         [_bookmarkTextField selectText: nil];
         [_bookmarkErrorField setStringValue: [e localizedDescription]];
@@ -866,31 +872,24 @@ static NSString *ShellQuote(NSString *s) {
 -(void)bookmarkNotification: (NSNotification *)notification {
     
     Bookmark *b = [notification object];
-    NSDictionary *d = [b dictionary];
-    
-    [self loadBookmark: d];
+    [self loadBookmark: b];
 }
 
 -(IBAction)bookmarkMenu:(id)sender {
-    
-#if 0
-    NSURL *url = [sender representedObject];
-    if (!url) return;
-    
-    NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL: url];
-    if (!d) return; // oops...
-    
-#endif
+
     // represented object is a Bookmark.
-    NSDictionary *d = [(Bookmark *)[sender representedObject] dictionary];
-    [self loadBookmark: d];
+    Bookmark *b = [sender representedObject];
+    [self loadBookmark: b];
 }
 
 
--(void)loadBookmark: (NSDictionary *)d {
+-(void)loadBookmark: (Bookmark *)b {
     Class StringClass = [NSString class];
     Class NumberClass = [NSNumber class];
-    
+
+    NSDictionary *d = [b dictionary];
+
+    [_manager setCurrentBookmark: b];
     
     NSString *machine = [d objectForKey: @"machine"];
     if (!machine) return;
