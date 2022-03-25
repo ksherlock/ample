@@ -314,7 +314,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -322,7 +322,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -930,7 +930,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -938,7 +938,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -1600,6 +1600,39 @@
             <string>swtpc8212_terminal</string>
           </dict>
         </array>
+      </dict>
+    </array>
+    <key>bios</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>871212</string>
+        <key>description</key>
+        <string>v3.3</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>870320</string>
+        <key>description</key>
+        <string>v3.0</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>870203</string>
+        <key>description</key>
+        <string>v2.9</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>860915</string>
+        <key>description</key>
+        <string>860915</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>860801</string>
+        <key>description</key>
+        <string>860801</string>
       </dict>
     </array>
     <key>devices</key>

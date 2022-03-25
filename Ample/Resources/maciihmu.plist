@@ -1007,6 +1007,21 @@
         </array>
       </dict>
     </array>
+    <key>bios</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>default</string>
+        <key>description</key>
+        <string>rev. B</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>original</string>
+        <key>description</key>
+        <string>rev. A</string>
+      </dict>
+    </array>
     <key>devices</key>
     <array>
       <dict>

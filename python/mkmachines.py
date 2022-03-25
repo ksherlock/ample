@@ -422,7 +422,7 @@ def make_smartport(machine):
 	# iic: <slot name="sl6:0" .. "sl6:1">
 	# apple 3: <slot name="0" .. "3">
 	# apple 2: diskiing card
-	# maclc <slot name="scsi:1" .. "scsi:7" (but not 4-7 not configurable)
+	# maclc <slot name="scsi:1" .. "scsi:7" (but 4-7 not configurable)
 	# maciix <slot name="scsi:6">
 	# macse <slot name="scsibus:6">
 
@@ -453,6 +453,10 @@ def make_smartport(machine):
 		"slots": slots
 	}
 
+def fix_machine_description(x):
+	#
+	x = x.replace(", www.dreher.net","")
+	return x
 
 def make_slot(m, slotname, nodes):
 
@@ -466,7 +470,7 @@ def make_slot(m, slotname, nodes):
 		default = x.get("default") == "yes"
 		disabled = name in DISABLED or (m, name) in DISABLED
 
-		d = { "value": name, "description": desc } # "devname": devname or ''}
+		d = { "value": name, "description": fix_machine_description(desc) } # "devname": devname or ''}
 		if default: d["default"] = True
 		if disabled: d["disabled"] = True
 		if not disabled:
@@ -488,6 +492,18 @@ def make_slot(m, slotname, nodes):
 		"description": SLOT_NAMES[slotname],
 		"options": options
 	}
+
+
+def make_bios(m):
+
+	bios = []
+	for x in m.findall('./biosset'):
+		bios.append({
+			"value": x.get("name"),
+			"description": x.get("description")
+		})
+
+	return bios
 
 
 
@@ -566,6 +582,9 @@ for m in machines:
 		slots.append(s);
 
 	data["slots"] = slots
+
+	bios = make_bios(machine)
+	if bios: data["bios"] = bios
 
 	devices = make_devices()
 	if smartport: devices.insert(0, smartport)

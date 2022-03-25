@@ -368,7 +368,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -376,7 +376,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -891,7 +891,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -899,7 +899,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -1414,7 +1414,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -1422,7 +1422,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -1937,7 +1937,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -1945,7 +1945,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -2462,7 +2462,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -2470,7 +2470,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -2987,7 +2987,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -2995,7 +2995,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -3510,7 +3510,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -3518,7 +3518,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>

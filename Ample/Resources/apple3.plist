@@ -101,7 +101,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -198,7 +198,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -295,7 +295,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -392,7 +392,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -600,6 +600,21 @@
             <string>swtpc8212_terminal</string>
           </dict>
         </array>
+      </dict>
+    </array>
+    <key>bios</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>original</string>
+        <key>description</key>
+        <string>Apple /// boot ROM</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>soshd</string>
+        <key>description</key>
+        <string>Rob Justice SOSHDBOOT</string>
       </dict>
     </array>
     <key>devices</key>

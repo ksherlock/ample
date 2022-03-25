@@ -354,7 +354,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -362,7 +362,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -970,7 +970,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -978,7 +978,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)</string>
+            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -1640,6 +1640,27 @@
             <string>swtpc8212_terminal</string>
           </dict>
         </array>
+      </dict>
+    </array>
+    <key>bios</key>
+    <array>
+      <dict>
+        <key>value</key>
+        <string>871222</string>
+        <key>description</key>
+        <string>v4.3</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>870917</string>
+        <key>description</key>
+        <string>v4.2</string>
+      </dict>
+      <dict>
+        <key>value</key>
+        <string>870724</string>
+        <key>description</key>
+        <string>v4.1</string>
       </dict>
     </array>
     <key>devices</key>

@@ -110,6 +110,10 @@ EXCLUDE = set([
 
 ])
 
+def fix_machine_description(x):
+	# CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)
+	x = x.replace(", www.dreher.net","")
+	return x
 
 def build_known_roms_list():
 	infile = "mame-0233-full.html"
@@ -186,7 +190,7 @@ for m in machines:
 
 # if full: ROMS = list(mnames)
 # else: ROMS = list(mnames.difference(EXCLUDE))
-ROMS =  [{ 'value': k, 'description': v} for k, v in mnames.items()];
+ROMS =  [{ 'value': k, 'description': fix_machine_description(v)} for k, v in mnames.items()];
 ROMS.sort(key=lambda x: x.get('description'))
 
 # data = []
