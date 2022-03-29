@@ -298,6 +298,12 @@
                         <action selector="showInFinder:" target="-2" id="ltL-yL-7EP"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Move to Trash" id="x1Q-OF-5hM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="moveToTrash:" target="-2" id="swr-yf-hA2"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Download" tag="2" id="ree-Zg-jYB">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

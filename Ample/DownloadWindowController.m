@@ -11,6 +11,9 @@
 #import "Menu.h"
 
 
+static NSString *Extensions[] = { @"zip", @"7z" };
+
+
 enum {
     kTagZip = 1,
     kTag7z = 2,
@@ -90,6 +93,7 @@ enum {
 
 @property NSUInteger status;
 @property NSUInteger index;
+@property NSUInteger fileSize;
 
 @property (readonly) NSColor *titleColor;
 @property (readonly) NSColor *descriptionColor;
@@ -99,6 +103,8 @@ enum {
 -(void)beginDownloadWithTask:(NSURLSessionDownloadTask *)task;
 -(void)completeWithError: (NSError *)error;
 -(NSString *)statusDescription;
+
+-(void)refresh: (NSURL *)localURL;
 @end
 
 
@@ -135,7 +141,7 @@ enum {
 @end
 
 @implementation DownloadWindowController {
-    
+
     NSArray *_items;
     NSURL *_romFolder;
     NSURL *_defaultDownloadURL;
@@ -144,7 +150,7 @@ enum {
     NSURLSession *_session;
     NSMutableDictionary *_taskIndex;
     NSUserDefaults *_defaults;
-    
+
     NSArray<NSButton *> *_filterButtons;
 }
 
@@ -168,7 +174,7 @@ enum {
 
 #if 0
 - (void)encodeWithCoder:(nonnull NSCoder *)coder {
-    
+
 }
 #endif
 
@@ -178,11 +184,11 @@ enum {
 
 -(void)windowWillLoad {
     _defaults = [NSUserDefaults standardUserDefaults];
-    
+
     // set here so binding works.
     NSString *s = [_defaults stringForKey: kDownloadExtension];
     if (![s length]) s = [_defaults stringForKey: kDefaultDownloadExtension];
-    
+
     _downloadExtension = s;
 }
 
@@ -194,12 +200,12 @@ enum {
     [window setRestorable: YES];
     [window setRestorationClass: [self class]];
 #endif
-    
+
     _filterButtons = @[
         _allFilterButton,
         _missingFilterButton
     ];
-    
+
 
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 
@@ -208,20 +214,20 @@ enum {
     NSFileManager *fm = [NSFileManager defaultManager];
 
     NSURL *url = [bundle URLForResource: @"roms" withExtension: @"plist"];
-    
+
     NSArray *roms = [NSArray arrayWithContentsOfURL: url];
-    
+
     NSURL *sd = SupportDirectory();
 
     _romFolder = [sd URLByAppendingPathComponent: @"roms"];
-    
+
     [fm createDirectoryAtURL: _romFolder withIntermediateDirectories: YES attributes: nil error: &error];
 
     // so blank URL isn't overwritten.
     NSString *s = [_defaults stringForKey: kDefaultDownloadURL];
     _defaultDownloadURL = [NSURL URLWithString: s];
     [_downloadField setPlaceholderString: s];
-    
+
     s = [_defaults stringForKey: kDownloadURL];
     if ([s length]) {
         [_downloadField setStringValue: s];
@@ -229,20 +235,20 @@ enum {
     } else {
         _downloadURL = _defaultDownloadURL;
     }
-    
+
     [self initializeExtensionMenu];
-    
+
 
     [self setCurrentROM: @""];
     [self setCurrentCount: 0];
     [self setTotalCount: [roms count]];
     [self setErrorCount: 0];
-    
+
 
     NSMutableArray *tmp = [NSMutableArray arrayWithCapacity: [roms count]];
     unsigned ix = 0;
     for (NSDictionary *d in roms) {
-        
+
         DownloadItem *item  = [DownloadItem new];
         [item setValue: [d objectForKey: @"value"]];
         [item setName: [d objectForKey: @"description"]];
@@ -258,7 +264,7 @@ enum {
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     _session = [NSURLSession sessionWithConfiguration: config delegate: self delegateQueue: nil];
     _taskIndex = [NSMutableDictionary dictionaryWithCapacity: [_items count]];
-    
+
     //[self download];
 }
 
@@ -267,13 +273,13 @@ enum {
 #if 0
 -(void)validateURL: (NSString *)url {
     NSURL *v;
-    
+
     if (![url length]) {
         _effectiveURL = [NSURL URLWithString: _downloadURL];
         [_downloadField setTextColor: nil];
         return;
     }
-    
+
     v = [NSURL URLWithString: url];
     if (v) {
         _effectiveURL = v;
@@ -291,36 +297,36 @@ enum {
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         _session = [NSURLSession sessionWithConfiguration: config delegate: self delegateQueue: nil];
     }
-    
+
     NSURLSessionDownloadTask *task;
     NSString *s = [item value];
     NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
     NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
-    
+
     task = [_session downloadTaskWithURL: url];
-    
+
     [item beginDownloadWithTask: task];
     [_taskIndex setObject: item forKey: task];
 
     [task resume];
-    
+
 }
 
 -(void)download {
-    
+
     // run in thread?
     //unsigned count = 0;
 
     for (DownloadItem *item in _items) {
-            
+
         NSURLSessionDownloadTask *task;
         NSString *s = [item value];
         NSString *path = [s stringByAppendingPathExtension: _downloadExtension];
         NSURL *url = [_downloadURL URLByAppendingPathComponent: path];
-        
+
         task = [_session downloadTaskWithURL: url];
         [_taskIndex setObject: item forKey: task];
-        
+
         [item setTask: task];
 
         [task resume];
@@ -329,7 +335,7 @@ enum {
         //if (count >= 2) break;
     }
     [self setActive: YES];
-    
+
 }
 
 -(DownloadItem *)clickedItem {
@@ -340,24 +346,24 @@ enum {
 }
 #if 0
 -(void)redrawRow: (NSUInteger)row {
-    
+
     //NSRect r = [_tableView rectOfRow: row];
     //[_tableView setNeedsDisplayInRect: r];
-    
+
     NSIndexSet *rIx = [NSIndexSet indexSetWithIndex: row];
     NSIndexSet *cIx = [NSIndexSet indexSetWithIndex: 0];
-    
+
     [_tableView reloadDataForRowIndexes: rIx columnIndexes: cIx];
 }
 #endif
 
 -(void)initializeExtensionMenu {
-    
+
     unsigned tag;
     // mark default download extension.
     NSString *defaultExt = [_defaults stringForKey: kDefaultDownloadExtension];
     tag = [DownloadExtensionTransformer stringToNumber: defaultExt];
-    
+
     NSMenuItem *item = [[_formatButton menu] itemWithTag: tag];
     if (item) {
         [item setAttributedTitle: ItalicMenuString([item title])];
@@ -405,7 +411,7 @@ enum {
             delta = YES;
         }
     }
-    
+
     if (delta) {
         [self setActive: YES];
     }
@@ -417,30 +423,31 @@ enum {
 }
 
 -(IBAction)refreshROMs: (id)sender {
-    
+
     NSString *romdir = [SupportDirectoryPath() stringByAppendingPathComponent: @"roms"];
     NSFileManager *fm = [NSFileManager defaultManager];
 
     for (DownloadItem *item in _items) {
+        NSDictionary *attr = nil;
         NSString *value = [item value];
         NSString *s = [romdir stringByAppendingPathComponent: value];
         NSString *path;
-        path = [s stringByAppendingPathExtension: @"zip"];
-        if ([fm fileExistsAtPath: path]) {
-            [item setStatus: ItemFound];
-            [item setLocalURL: [NSURL fileURLWithPath: path]];
-            continue;
+
+        for (unsigned i = 0; i < 2; ++i) {
+            path = [s stringByAppendingPathExtension: Extensions[i]];
+            attr = [fm attributesOfItemAtPath: path error: nil];
+            if (attr) break;
         }
 
-        path = [s stringByAppendingPathExtension: @"7z"];
-        if ([fm fileExistsAtPath: path]) {
+        if (attr) {
             [item setStatus: ItemFound];
             [item setLocalURL: [NSURL fileURLWithPath: path]];
-            continue;
+            [item setFileSize: [attr fileSize]];
+        } else {
+            [item setStatus: ItemMissing];
+            [item setLocalURL: nil];
+            [item setFileSize: 0];
         }
-        
-        [item setStatus: ItemMissing];
-        [item setLocalURL: nil];
     }
 }
 
@@ -454,12 +461,29 @@ enum {
     [ws activateFileViewerSelectingURLs: @[url]];
 }
 
+- (IBAction)moveToTrash:(id)sender {
+    NSError *error = nil;
+
+    DownloadItem *item = [self clickedItem];
+    if (!item) return;
+    NSURL *url = [item localURL];
+    if (!url) return;
+
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if ([fm trashItemAtURL: url resultingItemURL: NULL error: &error]) {
+        [item refresh: nil];
+    } else {
+        [self presentError: error];
+    }
+
+}
+
 - (IBAction)download:(id)sender {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
 
     [self defocus];
-    
+
     [self downloadItem: item];
     [self setActive: YES];
 }
@@ -542,7 +566,7 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
         error = [NSError errorWithDomain: NSURLErrorDomain code: NSURLErrorFileDoesNotExist userInfo: info];
     }
 
-    
+
     // not sure if strictly necessary but this happens in a background thread
     // and these are used in KVO binding.  Also, main thread only
     // means no race conditions.
@@ -559,22 +583,22 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
         if ([taskIndex count] == 0) {
             [self setActive: NO];
         }
-        
+
         if (item) {
             [item completeWithError: error];
         }
     });
-    
+
 }
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(nonnull NSURLSessionDownloadTask *)task didFinishDownloadingToURL:(nonnull NSURL *)location {
 
-    
+
 //    NSLog(@"%@", task);
 //    NSLog(@"%@", [task response]);
-    
+
     if (TaskStatusCode(task) != 200) return;
-    
+
 
     // need to move to the destination directory...
     // file deleted after this function returns, so can't move asynchronously.
@@ -582,13 +606,14 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     NSURL *src = [[task originalRequest] URL];
     NSURL *dest = [_romFolder URLByAppendingPathComponent: [src lastPathComponent]];
     NSError *error = nil;
-    
+
     [fm moveItemAtURL: location toURL: dest error: &error];
 
     dispatch_async(dispatch_get_main_queue(), ^(void){
         NSMutableDictionary *taskIndex = self->_taskIndex;
         DownloadItem *item = [taskIndex objectForKey: task];
-        [item setLocalURL: dest];
+
+        [item refresh: dest];
     });
 
     NSLog(@"%@", src);
@@ -598,13 +623,13 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
 
 -(NSURLCredential *)credentialForChallenge: (NSURLAuthenticationChallenge *)challenge {
 
-    
+
     //if ([challenge previousFailureCount]) return nil;
 
     NSURLCredential *credential = nil;
     NSURLProtectionSpace *space = [challenge protectionSpace];
-    
-    
+
+
     OSStatus status;
     NSDictionary *query;
     CFTypeRef item = nil;
@@ -620,41 +645,41 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     };
 
     status = SecItemCopyMatching((CFDictionaryRef)query, &item);
-    NSLog(@"%@", query);
+    //NSLog(@"%@", query);
     if (status != 0) return nil;
 
     NSDictionary *d = (__bridge NSDictionary *)item;
-    NSLog(@"%@", d);
+    //NSLog(@"%@", d);
 
     NSString *account = [d objectForKey: (id)kSecAttrAccount];
     NSData *passwordData = [d objectForKey: (id)kSecValueData];
     NSString *password = [[NSString alloc] initWithData: passwordData encoding: NSUTF8StringEncoding];
-    
+
 
     credential = [NSURLCredential credentialWithUser: account password: password persistence: NSURLCredentialPersistenceForSession];
-    
+
     return credential;
 
 }
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler {
-    
+
     NSLog(@"challenge: %@", challenge);
-    
+
     if ([challenge previousFailureCount]) {
         completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
         return;
     }
-    
+
     NSURLProtectionSpace *space = [challenge protectionSpace];
     NSString *method = [space authenticationMethod];
-    
+
     if ([NSURLAuthenticationMethodHTTPBasic isEqualToString: method] ||
         [NSURLAuthenticationMethodNTLM isEqualToString: method] ||
         [NSURLAuthenticationMethodHTTPDigest isEqualToString: method]) {
-    
+
         NSURLCredential *credential = [self credentialForChallenge: challenge];
-        
+
         if (credential) {
             completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
             return;
@@ -695,6 +720,42 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
         [self setError: nil];
         [self setStatus: ItemDownloaded];
     }
+}
+
+
+-(void)refresh: (NSURL *)localURL {
+    NSDictionary *attr = nil;
+    NSError * error = nil;
+    NSFileManager *fm = [NSFileManager defaultManager];
+
+    if (localURL) {
+        attr = [fm attributesOfItemAtPath: [localURL path] error: &error];
+    } else {
+        NSString *romdir = [SupportDirectoryPath() stringByAppendingPathComponent: @"roms"];
+        NSString *s = [romdir stringByAppendingPathComponent: _value];
+
+        NSString *path = nil;
+        for (unsigned i = 0; i < 2; ++i) {
+            path = [s stringByAppendingPathExtension: Extensions[i]];
+            attr = [fm attributesOfItemAtPath: path error: nil];
+            if (attr) {
+                localURL = [NSURL fileURLWithPath: path];
+                break;
+            }
+        }
+    }
+
+    if (attr && localURL) {
+        [self setLocalURL: localURL];
+        [self setFileSize: [attr fileSize]];
+        [self setStatus: ItemFound];
+    } else {
+        [self setLocalURL: nil];
+        [self setFileSize: 0];
+        if (_status == ItemFound || _status == ItemDownloaded)
+            [self setStatus: ItemMissing];
+    }
+
 }
 
 +(NSSet *)keyPathsForValuesAffectingStatusDescription {
@@ -742,27 +803,34 @@ enum {
 };
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
-    
-    if ([menuItem action] == @selector(downloadExtensionChanged:)) return YES;
 
+    SEL action = [menuItem action];
+    if (action == @selector(downloadExtensionChanged:)) return YES;
+
+    DownloadItem *item = [self clickedItem];
+    if (!item) return NO;
+#if 0
     NSInteger row = [_tableView clickedRow];
     if (row < 0) return NO;
     DownloadItem *item = [[_arrayController arrangedObjects] objectAtIndex: row]; //[_items objectAtIndex: row];
-    
+#endif
+
     NSUInteger status = [item status];
-    switch([menuItem tag]) {
-        case kOpenInFinder:
-            return status == ItemFound || status == ItemDownloaded;
-            break;
-        case kDownload:
-            return YES;
-            //return status == ItemMissing || status == ItemError || status == ItemCanceled;
-            break;
-        case kCancel:
-            return status == ItemDownloading;
-            break;
-            
+
+    if (action == @selector(moveToTrash:)) {
+        return [item localURL] != nil;
     }
+    if (action == @selector(showInFinder:)) {
+        return [item localURL] != nil;
+    }
+    if (action == @selector(download:)) {
+        return YES;
+    }
+    if (action == @selector(cancel:)) {
+        return status == ItemDownloading;
+    }
+
+
     return NO;
 }
 
