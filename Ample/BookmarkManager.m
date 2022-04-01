@@ -242,7 +242,6 @@ static BookmarkManager *singleton = nil;
     NSFetchRequest *req;
     NSError *error;
     NSArray *array;
-    Bookmark *b;
 
     req = [Bookmark fetchRequest];
     [req setPredicate: [NSPredicate predicateWithFormat: @"automatic == TRUE"]];
