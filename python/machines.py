@@ -56,6 +56,7 @@ SLOTS = (
 
 SLOT_NAMES = {
 	"ramsize":    "RAM",
+	"bios":       "ROM",
 	"sl0":        "Slot 0",
 	"sl1":        "Slot 1",
 	"sl2":        "Slot 2",

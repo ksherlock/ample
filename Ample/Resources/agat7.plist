@@ -39,6 +39,41 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>v1</string>
+            <key>description</key>
+            <string>Version 1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>v2</string>
+            <key>description</key>
+            <string>Version 2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>debug</string>
+            <key>description</key>
+            <string>Debug</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl2</string>
         <key>description</key>
         <string>Slot 2</string>
@@ -394,27 +429,6 @@
             <string>a7ports</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>v1</string>
-        <key>description</key>
-        <string>Version 1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>v2</string>
-        <key>description</key>
-        <string>Version 2</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>debug</string>
-        <key>description</key>
-        <string>Debug</string>
       </dict>
     </array>
     <key>devices</key>

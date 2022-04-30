@@ -39,6 +39,53 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>871212</string>
+            <key>description</key>
+            <string>v3.3</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>870320</string>
+            <key>description</key>
+            <string>v3.0</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>870203</string>
+            <key>description</key>
+            <string>v2.9</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>860915</string>
+            <key>description</key>
+            <string>860915</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>860801</string>
+            <key>description</key>
+            <string>860801</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl5</string>
         <key>description</key>
         <string>Slot 5</string>
@@ -1600,39 +1647,6 @@
             <string>swtpc8212_terminal</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>871212</string>
-        <key>description</key>
-        <string>v3.3</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>870320</string>
-        <key>description</key>
-        <string>v3.0</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>870203</string>
-        <key>description</key>
-        <string>v2.9</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>860915</string>
-        <key>description</key>
-        <string>860915</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>860801</string>
-        <key>description</key>
-        <string>860801</string>
       </dict>
     </array>
     <key>devices</key>

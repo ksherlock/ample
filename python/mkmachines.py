@@ -415,6 +415,31 @@ def make_ram(machine):
 		"options": options
 	}
 
+
+
+def make_bios(m):
+
+	options = [
+		{
+			"value": x.get("name"),
+			"description": x.get("description")
+		}
+		for x in m.findall('./biosset')
+	]
+
+	if not options: return None
+
+	options.insert(0, {"value": "", "description": "—Default—", "default": True })
+
+	return {
+		"name": "bios",
+		"description": SLOT_NAMES["bios"],
+		"options": options
+	}
+
+
+
+
 def make_smartport(machine):
 
 
@@ -494,18 +519,6 @@ def make_slot(m, slotname, nodes):
 	}
 
 
-def make_bios(m):
-
-	bios = []
-	for x in m.findall('./biosset'):
-		bios.append({
-			"value": x.get("name"),
-			"description": x.get("description")
-		})
-
-	return bios
-
-
 
 devices = {}
 
@@ -559,9 +572,11 @@ for m in machines:
 	# ss = {}
 	slots = []
 	slots.append(make_ram(machine))
+	x = make_bios(machine)
+	if x: slots.append(x)
 
 	smartport = make_smartport(machine)
-	if (smartport):
+	if smartport:
 		slots.append({
 			"name": "smartport",
 			"description": "Disk Drives",
@@ -582,9 +597,6 @@ for m in machines:
 		slots.append(s);
 
 	data["slots"] = slots
-
-	bios = make_bios(machine)
-	if bios: data["bios"] = bios
 
 	devices = make_devices()
 	if smartport: devices.insert(0, smartport)

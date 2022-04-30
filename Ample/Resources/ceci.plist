@@ -39,6 +39,41 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>default</string>
+            <key>description</key>
+            <string>ver 1.21</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>older</string>
+            <key>description</key>
+            <string>ver 1.1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>diag</string>
+            <key>description</key>
+            <string>self test</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>smartport</string>
         <key>description</key>
         <string>Disk Drives</string>
@@ -3191,27 +3226,6 @@
             <string>a2gizmo</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>default</string>
-        <key>description</key>
-        <string>ver 1.21</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>older</string>
-        <key>description</key>
-        <string>ver 1.1</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>diag</string>
-        <key>description</key>
-        <string>self test</string>
       </dict>
     </array>
     <key>devices</key>

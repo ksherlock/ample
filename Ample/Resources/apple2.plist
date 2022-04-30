@@ -119,6 +119,35 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>default</string>
+            <key>description</key>
+            <string>Original Monitor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>autostart</string>
+            <key>description</key>
+            <string>Autostart Monitor</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl0</string>
         <key>description</key>
         <string>Slot 0</string>
@@ -3878,21 +3907,6 @@
             <string>a2joyprt</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>default</string>
-        <key>description</key>
-        <string>Original Monitor</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>autostart</string>
-        <key>description</key>
-        <string>Autostart Monitor</string>
       </dict>
     </array>
     <key>devices</key>

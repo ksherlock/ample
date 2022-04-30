@@ -79,6 +79,41 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>871222</string>
+            <key>description</key>
+            <string>v4.3</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>870917</string>
+            <key>description</key>
+            <string>v4.2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>870724</string>
+            <key>description</key>
+            <string>v4.1</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl5</string>
         <key>description</key>
         <string>Slot 5</string>
@@ -1640,27 +1675,6 @@
             <string>swtpc8212_terminal</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>871222</string>
-        <key>description</key>
-        <string>v4.3</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>870917</string>
-        <key>description</key>
-        <string>v4.2</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>870724</string>
-        <key>description</key>
-        <string>v4.1</string>
       </dict>
     </array>
     <key>devices</key>

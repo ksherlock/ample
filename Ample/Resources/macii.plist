@@ -87,6 +87,35 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>default</string>
+            <key>description</key>
+            <string>rev. B</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>original</string>
+            <key>description</key>
+            <string>rev. A</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>smartport</string>
         <key>description</key>
         <string>Disk Drives</string>
@@ -1005,21 +1034,6 @@
             <string>nb_sp8s3</string>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>default</string>
-        <key>description</key>
-        <string>rev. B</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>original</string>
-        <key>description</key>
-        <string>rev. A</string>
       </dict>
     </array>
     <key>devices</key>

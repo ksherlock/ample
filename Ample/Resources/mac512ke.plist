@@ -37,6 +37,41 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bios</string>
+        <key>description</key>
+        <string>ROM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—Default—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>v3</string>
+            <key>description</key>
+            <string>Loud Harmonicas</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>v2</string>
+            <key>description</key>
+            <string>Lonely Heifers</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>v1</string>
+            <key>description</key>
+            <string>Lonely Hearts</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>smartport</string>
         <key>description</key>
         <string>Disk Drives</string>
@@ -53,27 +88,6 @@
             <true/>
           </dict>
         </array>
-      </dict>
-    </array>
-    <key>bios</key>
-    <array>
-      <dict>
-        <key>value</key>
-        <string>v3</string>
-        <key>description</key>
-        <string>Loud Harmonicas</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>v2</string>
-        <key>description</key>
-        <string>Lonely Heifers</string>
-      </dict>
-      <dict>
-        <key>value</key>
-        <string>v1</string>
-        <key>description</key>
-        <string>Lonely Hearts</string>
       </dict>
     </array>
     <key>devices</key>
