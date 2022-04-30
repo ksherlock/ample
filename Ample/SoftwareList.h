@@ -39,6 +39,8 @@
 @interface SoftwareSet : NSObject <NSFastEnumeration, AutoCompleteDelegate>
 
 +(instancetype)softwareSetForMachine: (NSString *)machine;
++(void)invalidate;
+
 -(BOOL)nameIsUnique: (NSString *)name;
 
 -(NSString *)nameForSoftware: (Software *)software;

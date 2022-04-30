@@ -512,9 +512,15 @@ NSArray<SoftwareList *> *SoftwareListForMachine(NSString *machine) {
     
 }
 
+
+static NSCache *cache;
++(void)invalidate {
+// called after mame components are updated.  clears the cache.
+    cache = nil;
+}
+
 +(instancetype)softwareSetForMachine:(NSString *)machine {
     
-    static NSCache *cache;
     
     if (!cache)
         cache = [NSCache new];

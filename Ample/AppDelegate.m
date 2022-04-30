@@ -115,11 +115,11 @@
     
     dispatch_time_t when = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC));
     [task setTerminationHandler: ^(NSTask *task){
-       
+
+        int st = [task terminationStatus];
+        // delay so the install window is visible, I think
         dispatch_after(when, dispatch_get_main_queue(), ^{
   
-            int st = [task terminationStatus];
-
             if (st) {
                 NSAlert *alert = [NSAlert new];
                 [alert setMessageText: @"An error occurred extracting MAME components"];
@@ -237,5 +237,71 @@
     [_bookmarks showWindow: sender];
 }
 
+
+-(IBAction)installMameComponents:(id)sender {
+
+      
+      /* install the mame data components. */
+      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+      NSBundle *bundle = [NSBundle mainBundle];
+      NSURL *sd = SupportDirectory();
+
+      NSURL *ample_url = [sd URLByAppendingPathComponent: @"Ample.plist"];
+      NSMutableDictionary *d = [NSMutableDictionary dictionaryWithContentsOfURL: ample_url];
+      
+      //NSDate *oldDate = [d objectForKey: kMameComponentsDate];
+      NSDate *newDate = [defaults objectForKey: kMameComponentsDate];
+      if (![newDate isKindOfClass: [NSDate class]])
+          newDate = nil;
+      
+      NSString *path = [bundle pathForResource: @"mame-data" ofType: @"tgz"];
+      if (!path) return; // Ample Lite?
+
+      
+      NSWindow *win = _installWindow;
+      [win makeKeyAndOrderFront: nil];
+      NSTask *task = [NSTask new];
+      NSArray *argv = @[
+          @"xfz",
+          path
+      ];
+      if (@available(macOS 10.13, *)) {
+          [task setExecutableURL: [NSURL fileURLWithPath: @"/usr/bin/tar"]];
+          [task setCurrentDirectoryURL: sd];
+      } else {
+          [task setLaunchPath:  @"/usr/bin/tar"];
+          [task setCurrentDirectoryPath: SupportDirectoryPath()];
+      }
+      [task setArguments: argv];
+
+      
+      //dispatch_time_t when = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC));
+      [task setTerminationHandler: ^(NSTask *task){
+
+          int st = [task terminationStatus];
+          dispatch_async(dispatch_get_main_queue(), ^{
+    
+              if (st) {
+                  NSAlert *alert = [NSAlert new];
+                  [alert setMessageText: @"An error occurred extracting MAME components"];
+                  [alert runModal];
+                  [win close];
+                  return;
+              }
+              
+              if (d) {
+                  [d setObject: newDate forKey: kMameComponentsDate];
+                  [d writeToURL: ample_url atomically: YES];
+              } else {
+                  [@{ kMameComponentsDate: newDate } writeToURL: ample_url atomically: YES];
+              }
+              [win close];
+              // need to reload the software list data.
+          });
+          
+      }];
+      [task launch];
+    
+}
 
 @end

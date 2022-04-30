@@ -45,6 +45,9 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Reinstall MAME components" hidden="YES" id="c3P-WT-eUP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
                             <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                 <connections>
                                     <action selector="displayPreferences:" target="Voe-Tx-rLC" id="Hsm-pX-sUc"/>
