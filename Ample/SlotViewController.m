@@ -16,11 +16,7 @@
 
 #import <objc/runtime.h>
 
-/* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define SLOT_COUNT 22
-static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
-#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
 
 
 static unsigned RootKey = 0;
@@ -120,6 +116,7 @@ static unsigned RootKey = 0;
         _slot_object[i] = nil;
     }
     
+    _slot_value[kBIOS_SLOT] = nil; // don't copy over to other machines.
 
     extern NSArray *BuildSlots(NSString *name, NSDictionary *data);
     _root = BuildSlots(_machine, d);

@@ -101,9 +101,10 @@ static NSDictionary *IndexMap = nil;
         @"nbe":        @20,
 
         @"smartport":  @21,
-#define kSMARTPORT 21
+        @"bios":       @22,
     };
-    
+    static_assert(kSMARTPORT_SLOT == 21, "Smartport != 21");
+    static_assert(kBIOS_SLOT == 22, "Bios != 22");
 }
 
 -(void)reset {
@@ -156,7 +157,7 @@ static NSDictionary *IndexMap = nil;
     // { 'sl3' : 'uthernet' }
 
     // special case for smartport since the name isn't used.
-    if (_index == kSMARTPORT) {
+    if (_index == kSMARTPORT_SLOT) {
         SlotOption *option = [_options objectAtIndex: _selectedIndex];
         [option reserialize: dict];
         return;
@@ -387,7 +388,7 @@ static NSDictionary *IndexMap = nil;
 
     // [menu setItemArray: ] doesn't work prior to 10.14, apparently.
     [menu removeAllItems];
-    if (_index == kSMARTPORT) {
+    if (_index == kSMARTPORT_SLOT) {
         //[menu setItemArray: @[]];
         [button setHidden: YES];
     } else {

@@ -10,6 +10,17 @@
 #import <Cocoa/Cocoa.h>
 #import "Media.h"
 
+/* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
+#define SLOT_COUNT 23
+static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
+
+#define kSMARTPORT_SLOT 21
+#define kBIOS_SLOT 22
+
+#ifndef SIZEOF
+#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
+#endif
+
 //NS_ASSUME_NONNULL_BEGIN
 @class Slot, SlotOption, SlotTableCellView;
 
