@@ -584,6 +584,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>q68</string>
             <key>description</key>
             <string>Stellation Two Q-68</string>
@@ -1104,6 +1112,14 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1630,6 +1646,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>q68</string>
             <key>description</key>
             <string>Stellation Two Q-68</string>
@@ -2150,6 +2174,14 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2678,6 +2710,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>q68</string>
             <key>description</key>
             <string>Stellation Two Q-68</string>
@@ -3203,6 +3243,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>q68</string>
             <key>description</key>
             <string>Stellation Two Q-68</string>
@@ -3723,6 +3771,14 @@
             <string>PCPI Applicard</string>
             <key>devname</key>
             <string>a2aplcrd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>excel9</string>
+            <key>description</key>
+            <string>Seikou Excel-9</string>
+            <key>devname</key>
+            <string>a2excel9</string>
           </dict>
           <dict>
             <key>value</key>

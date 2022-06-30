@@ -148,18 +148,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>nb_48gc</string>
-      <key>description</key>
-      <string>Apple 4*8 video card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>nb_824gc</string>
-      <key>description</key>
-      <string>Apple 8*24 video card</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a2iwm</string>
       <key>description</key>
       <string>Apple Disk II IWM controller</string>
@@ -289,6 +277,30 @@
       <string>apple2gs</string>
       <key>description</key>
       <string>Apple IIgs (ROM03)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nb_mdc48</string>
+      <key>description</key>
+      <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nb_mdc824</string>
+      <key>description</key>
+      <string>Apple Macintosh Display Card 8/24 (MDC 1.2)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nb_m2hr</string>
+      <key>description</key>
+      <string>Apple Macintosh II High Resolution Video Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nb_m2vc</string>
+      <key>description</key>
+      <string>Apple Macintosh II Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -706,21 +718,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>nb_m2hr</string>
-      <key>description</key>
-      <string>Macintosh II Hi-Resolution video card</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>nb_wspt</string>
       <key>description</key>
       <string>Macintosh II Portrait Video Card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>nb_m2vc</string>
-      <key>description</key>
-      <string>Macintosh II Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -997,6 +997,12 @@
       <string>swtpc8212_device</string>
       <key>description</key>
       <string>SWTPC8212</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2excel9</string>
+      <key>description</key>
+      <string>Seikou Excel-9</string>
     </dict>
     <dict>
       <key>value</key>

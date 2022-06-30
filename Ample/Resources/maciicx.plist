@@ -121,21 +121,37 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>48gc</string>
+            <string>mdc48</string>
             <key>description</key>
-            <string>Apple 4*8 video card</string>
-            <key>default</key>
-            <true/>
+            <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
             <key>devname</key>
-            <string>nb_48gc</string>
+            <string>nb_mdc48</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>824gc</string>
+            <string>mdc824</string>
             <key>description</key>
-            <string>Apple 8*24 video card</string>
+            <string>Apple Macintosh Display Card 8/24 (MDC 1.2)</string>
+            <key>default</key>
+            <true/>
             <key>devname</key>
-            <string>nb_824gc</string>
+            <string>nb_mdc824</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Apple Macintosh II High Resolution Video Card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Apple Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
@@ -171,27 +187,11 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>m2hires</string>
-            <key>description</key>
-            <string>Macintosh II Hi-Resolution video card</string>
-            <key>devname</key>
-            <string>nb_m2hr</string>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>m2video</string>
-            <key>description</key>
-            <string>Macintosh II Video Card</string>
-            <key>devname</key>
-            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
@@ -273,19 +273,35 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>48gc</string>
+            <string>mdc48</string>
             <key>description</key>
-            <string>Apple 4*8 video card</string>
+            <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
             <key>devname</key>
-            <string>nb_48gc</string>
+            <string>nb_mdc48</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>824gc</string>
+            <string>mdc824</string>
             <key>description</key>
-            <string>Apple 8*24 video card</string>
+            <string>Apple Macintosh Display Card 8/24 (MDC 1.2)</string>
             <key>devname</key>
-            <string>nb_824gc</string>
+            <string>nb_mdc824</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Apple Macintosh II High Resolution Video Card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Apple Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
@@ -321,27 +337,11 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>m2hires</string>
-            <key>description</key>
-            <string>Macintosh II Hi-Resolution video card</string>
-            <key>devname</key>
-            <string>nb_m2hr</string>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>m2video</string>
-            <key>description</key>
-            <string>Macintosh II Video Card</string>
-            <key>devname</key>
-            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
@@ -423,19 +423,35 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>48gc</string>
+            <string>mdc48</string>
             <key>description</key>
-            <string>Apple 4*8 video card</string>
+            <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
             <key>devname</key>
-            <string>nb_48gc</string>
+            <string>nb_mdc48</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>824gc</string>
+            <string>mdc824</string>
             <key>description</key>
-            <string>Apple 8*24 video card</string>
+            <string>Apple Macintosh Display Card 8/24 (MDC 1.2)</string>
             <key>devname</key>
-            <string>nb_824gc</string>
+            <string>nb_mdc824</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2hires</string>
+            <key>description</key>
+            <string>Apple Macintosh II High Resolution Video Card</string>
+            <key>devname</key>
+            <string>nb_m2hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2video</string>
+            <key>description</key>
+            <string>Apple Macintosh II Video Card</string>
+            <key>devname</key>
+            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
@@ -471,27 +487,11 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>m2hires</string>
-            <key>description</key>
-            <string>Macintosh II Hi-Resolution video card</string>
-            <key>devname</key>
-            <string>nb_m2hr</string>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>m2video</string>
-            <key>description</key>
-            <string>Macintosh II Video Card</string>
-            <key>devname</key>
-            <string>nb_m2vc</string>
           </dict>
           <dict>
             <key>value</key>
