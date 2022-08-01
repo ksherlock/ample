@@ -309,6 +309,7 @@ DEVICE_EXCLUDE = set([
 	's1410',
 	'smoc501',
 	'cfp1080s',
+	'cf', # ATA compact flash
 ])
 
 def make_device_options(slot):

@@ -105,6 +105,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>uthernet2</string>
+            <key>description</key>
+            <string>a2RetroSystems Uthernet II</string>
+            <key>devname</key>
+            <string>a2uthernet2</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>alfam2</string>
             <key>description</key>
             <string>ALF MC1 / Apple Music II</string>
@@ -721,6 +729,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>uthernet2</string>
+            <key>description</key>
+            <string>a2RetroSystems Uthernet II</string>
+            <key>devname</key>
+            <string>a2uthernet2</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>alfam2</string>
             <key>description</key>
             <string>ALF MC1 / Apple Music II</string>
@@ -1334,6 +1350,14 @@
             <string>a2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>uthernet2</string>
+            <key>description</key>
+            <string>a2RetroSystems Uthernet II</string>
+            <key>devname</key>
+            <string>a2uthernet2</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1955,6 +1979,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>uthernet2</string>
+            <key>description</key>
+            <string>a2RetroSystems Uthernet II</string>
+            <key>devname</key>
+            <string>a2uthernet2</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>alfam2</string>
             <key>description</key>
             <string>ALF MC1 / Apple Music II</string>
@@ -2568,6 +2600,14 @@
             <string>a2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>uthernet2</string>
+            <key>description</key>
+            <string>a2RetroSystems Uthernet II</string>
+            <key>devname</key>
+            <string>a2uthernet2</string>
           </dict>
           <dict>
             <key>value</key>
