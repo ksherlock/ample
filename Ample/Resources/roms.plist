@@ -676,6 +676,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>las3000</string>
+      <key>description</key>
+      <string>Laser 3000</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2suprterm</string>
       <key>description</key>
       <string>M&amp;R Enterprises SUP'R'TERMINAL</string>

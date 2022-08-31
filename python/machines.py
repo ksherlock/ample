@@ -24,6 +24,8 @@ MACHINES = (
 	"zijini",
 	# China Education Computer
 	"cec2000", "cece", "cecg", "ceci", "cecm",
+	"las3000",
+
 
 	# macintosh...
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi",

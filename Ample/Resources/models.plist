@@ -326,6 +326,12 @@
       <array>
         <dict>
           <key>description</key>
+          <string>Laser 3000</string>
+          <key>value</key>
+          <string>las3000</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Laser //c</string>
           <key>value</key>
           <string>laser2c</string>
