@@ -293,6 +293,8 @@
 		B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F7B536266FDA5B00624C6B /* MachineView.xib */; };
 		B6F7B53C267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
 		B6F7B53D267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
+		B6FECAFB28C0093600E143DA /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECAFA28C0093600E143DA /* las3000.plist */; };
+		B6FECAFC28C0093600E143DA /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECAFA28C0093600E143DA /* las3000.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -538,6 +540,7 @@
 		B6F7B537266FDA5B00624C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MachineView.xib; sourceTree = "<group>"; };
 		B6F7B53A267017A200624C6B /* NewMachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMachineViewController.h; sourceTree = "<group>"; };
 		B6F7B53B267017A200624C6B /* NewMachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMachineViewController.m; sourceTree = "<group>"; };
+		B6FECAFA28C0093600E143DA /* las3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las3000.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -641,6 +644,7 @@
 				B61099F824F5F36F005CB652 /* laser2c.plist */,
 				B6109A1024F5F375005CB652 /* laser128.plist */,
 				B618B8C32729F6690045C2D8 /* laser128o.plist */,
+				B6FECAFA28C0093600E143DA /* las3000.plist */,
 				B6109A0B24F5F373005CB652 /* maxxi.plist */,
 				B61099ED24F5F36E005CB652 /* microeng.plist */,
 				B61099F524F5F36F005CB652 /* models.plist */,
@@ -992,6 +996,7 @@
 			files = (
 				B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */,
 				B6DDECCC2505A86E0093587A /* eject-16x16@2x.png in Resources */,
+				B6FECAFB28C0093600E143DA /* las3000.plist in Resources */,
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B6DDECD02505A86E0093587A /* eject-hover-16x16.png in Resources */,
 				B6DDECD22505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
@@ -1205,6 +1210,7 @@
 				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
 				B6374ADE260ECB400045CA16 /* maciivx.plist in Resources */,
 				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
+				B6FECAFC28C0093600E143DA /* las3000.plist in Resources */,
 				B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */,
 				B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */,
 				B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */,
