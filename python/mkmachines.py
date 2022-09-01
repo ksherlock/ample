@@ -407,6 +407,12 @@ def make_ram(machine):
 		}
 		for x in machine.findall('ramoption')
 	]
+
+	# special case for laser 3000....
+	if len(options) == 0 and machine.get('name') == 'las3000':
+		options.append( { "intValue": 192, "description": "192K", "value": "192K", "default": True} )
+
+
 	# sort and add empty starting entry.
 	options.sort(key=lambda x: x["intValue"])
 

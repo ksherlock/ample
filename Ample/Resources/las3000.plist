@@ -23,6 +23,16 @@
         <string>RAM</string>
         <key>options</key>
         <array>
+          <dict>
+            <key>intValue</key>
+            <integer>192</integer>
+            <key>description</key>
+            <string>192K</string>
+            <key>value</key>
+            <string>192K</string>
+            <key>default</key>
+            <true/>
+          </dict>
         </array>
       </dict>
     </array>
