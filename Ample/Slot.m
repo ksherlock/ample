@@ -131,11 +131,15 @@ static NSDictionary *IndexMap = nil;
 
 -(SlotOption *)selectedItem {
     if (_selectedIndex < 0) return nil;
+    if (_selectedIndex >= [_options count]) return nil;
+
     return [_options objectAtIndex: _selectedIndex];
 }
 
 -(NSArray *)args {
     if (_selectedIndex < 0) return nil;
+    if (_selectedIndex >= [_options count]) return nil;
+
     NSMutableArray *rv = [NSMutableArray new];
     SlotOption *option = [_options objectAtIndex: _selectedIndex];
     
@@ -145,6 +149,8 @@ static NSDictionary *IndexMap = nil;
 
 -(NSDictionary *)serialize {
     if (_selectedIndex < 0) return nil;
+    if (_selectedIndex >= [_options count]) return nil;
+
     
     NSMutableDictionary *d = [NSMutableDictionary new];
     SlotOption *option = [_options objectAtIndex: _selectedIndex];
@@ -209,6 +215,7 @@ static NSDictionary *IndexMap = nil;
 -(Media)selectedMedia {
 
     if (_selectedIndex < 0) return EmptyMedia;
+    if (_selectedIndex >= [_options count]) return EmptyMedia;
 
     Media media = { 0 };
     SlotOption *option = [_options objectAtIndex: _selectedIndex];
@@ -221,6 +228,8 @@ static NSDictionary *IndexMap = nil;
 
 -(NSArray *)selectedChildren {
     if (_selectedIndex < 0) return nil;
+    if (_selectedIndex >= [_options count]) return nil;
+
     return [[_options objectAtIndex: _selectedIndex] children];
 }
 
