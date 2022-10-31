@@ -148,6 +148,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cuda</string>
+      <key>description</key>
+      <string>Apple Cuda</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2iwm</string>
       <key>description</key>
       <string>Apple Disk II IWM controller</string>
@@ -712,6 +718,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>maccclas</string>
+      <key>description</key>
+      <string>Macintosh Color Classic</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macii</string>
       <key>description</key>
       <string>Macintosh II</string>
@@ -775,6 +787,12 @@
       <string>maclc</string>
       <key>description</key>
       <string>Macintosh LC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>maclc520</string>
+      <key>description</key>
+      <string>Macintosh LC 520</string>
     </dict>
     <dict>
       <key>value</key>

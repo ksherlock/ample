@@ -481,6 +481,12 @@
           <key>value</key>
           <string>macclas2</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Color Classic</string>
+          <key>value</key>
+          <string>maccclas</string>
+        </dict>
       </array>
     </dict>
     <dict>
@@ -561,6 +567,12 @@
           <string>Macintosh LC III</string>
           <key>value</key>
           <string>maclc3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC 520</string>
+          <key>value</key>
+          <string>maclc520</string>
         </dict>
       </array>
     </dict>
