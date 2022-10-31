@@ -68,6 +68,10 @@
 		B618B8C52729F6690045C2D8 /* laser128o.plist in Resources */ = {isa = PBXBuildFile; fileRef = B618B8C32729F6690045C2D8 /* laser128o.plist */; };
 		B63005332666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
 		B63005342666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
+		B6301BE429107BE800495022 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE329107BE800495022 /* maclc520.plist */; };
+		B6301BE529107BE800495022 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE329107BE800495022 /* maclc520.plist */; };
+		B6301BE729107C1E00495022 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE629107C1E00495022 /* maccclas.plist */; };
+		B6301BE829107C1E00495022 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE629107C1E00495022 /* maccclas.plist */; };
 		B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; };
 		B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09C26784A4800B23BFD /* Sparkle.framework */; };
@@ -415,6 +419,8 @@
 		B618B8C32729F6690045C2D8 /* laser128o.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laser128o.plist; sourceTree = "<group>"; };
 		B63005312666D6940014C381 /* BookmarkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
 		B63005322666D6940014C381 /* BookmarkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
+		B6301BE329107BE800495022 /* maclc520.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc520.plist; sourceTree = "<group>"; };
+		B6301BE629107C1E00495022 /* maccclas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maccclas.plist; sourceTree = "<group>"; };
 		B635C09926784A1200B23BFD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = embedded/Sparkle.framework; sourceTree = "<group>"; };
 		B635C09C26784A4800B23BFD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = embedded/Sparkle.framework; sourceTree = "<group>"; };
 		B635C09E26784D4700B23BFD /* AmpleLite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmpleLite.m; sourceTree = "<group>"; };
@@ -664,6 +670,7 @@
 				B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */,
 				B6DE32422605482500418375 /* mac512k.plist */,
 				B6DE323F2605482400418375 /* mac512ke.plist */,
+				B6301BE629107C1E00495022 /* maccclas.plist */,
 				B6374AC9260ECB3F0045CA16 /* macclas2.plist */,
 				B6DE323E2605482400418375 /* macclasc.plist */,
 				B6374ACA260ECB3F0045CA16 /* macii.plist */,
@@ -677,6 +684,7 @@
 				B6DD1FE725B407E6004A3242 /* maclc.plist */,
 				B65085B625B616AC00354EC9 /* maclc2.plist */,
 				B65085B725B616AC00354EC9 /* maclc3.plist */,
+				B6301BE329107BE800495022 /* maclc520.plist */,
 				B6DE32412605482500418375 /* macplus.plist */,
 				B6DE32432605482500418375 /* macse.plist */,
 				B6374AD0260ECB400045CA16 /* macse30.plist */,
@@ -1080,6 +1088,7 @@
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
+				B6301BE429107BE800495022 /* maclc520.plist in Resources */,
 				B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */,
 				B6374ADF260ECB400045CA16 /* macse30.plist in Resources */,
 				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
@@ -1100,6 +1109,7 @@
 				B6374AD7260ECB400045CA16 /* maciivi.plist in Resources */,
 				B6374AD1260ECB400045CA16 /* macclas2.plist in Resources */,
 				B6DE324A2605482500418375 /* macsefd.plist in Resources */,
+				B6301BE729107C1E00495022 /* maccclas.plist in Resources */,
 				B6109A3024F5F377005CB652 /* apple2.plist in Resources */,
 				B6109A2D24F5F377005CB652 /* prav8m.plist in Resources */,
 			);
@@ -1190,6 +1200,7 @@
 				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
 				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
 				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
+				B6301BE529107BE800495022 /* maclc520.plist in Resources */,
 				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
 				B6E4B5E424FDE2670094A35C /* models.plist in Resources */,
 				B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */,
@@ -1203,6 +1214,7 @@
 				B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */,
 				B6374AD2260ECB400045CA16 /* macclas2.plist in Resources */,
 				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,
+				B6301BE829107C1E00495022 /* maccclas.plist in Resources */,
 				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
 				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
 				B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */,
