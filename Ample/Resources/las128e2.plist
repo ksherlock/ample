@@ -8,8 +8,6 @@
     <string>Laser 128ex2 (version 6.1)</string>
     <key>media</key>
     <dict>
-      <key>floppy_5_25</key>
-      <integer>2</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -74,6 +72,25 @@
             <string>1152K</string>
             <key>default</key>
             <false/>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>smartport</string>
+        <key>description</key>
+        <string>Disk Drives</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string></string>
+            <key>devname</key>
+            <string>smartport</string>
+            <key>default</key>
+            <true/>
           </dict>
         </array>
       </dict>
@@ -412,6 +429,69 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>smartport</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>rs232_patch_box</string>

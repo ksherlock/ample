@@ -121,19 +121,6 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>diskiiiwm</string>
             <key>description</key>
             <string>Apple Disk II IWM controller</string>
@@ -745,19 +732,6 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>diskiiiwm</string>
             <key>description</key>
             <string>Apple Disk II IWM controller</string>
@@ -1366,19 +1340,6 @@
             <string>ALF MC1 / Apple Music II</string>
             <key>devname</key>
             <string>a2alfam2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1995,19 +1956,6 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>diskiiiwm</string>
             <key>description</key>
             <string>Apple Disk II IWM controller</string>
@@ -2616,19 +2564,6 @@
             <string>ALF MC1 / Apple Music II</string>
             <key>devname</key>
             <string>a2alfam2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>

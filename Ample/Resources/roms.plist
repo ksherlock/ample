@@ -148,6 +148,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>adbmodem</string>
+      <key>description</key>
+      <string>Apple ADB Modem</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cuda</string>
       <key>description</key>
       <string>Apple Cuda</string>
@@ -169,12 +175,6 @@
       <string>a2diskiing</string>
       <key>description</key>
       <string>Apple Disk II NG controller (16-sector)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2diskii</string>
-      <key>description</key>
-      <string>Apple Disk II controller</string>
     </dict>
     <dict>
       <key>value</key>

@@ -8,8 +8,6 @@
     <string>Laser 128</string>
     <key>media</key>
     <dict>
-      <key>floppy_5_25</key>
-      <integer>2</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -114,6 +112,25 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>smartport</string>
+        <key>description</key>
+        <string>Disk Drives</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string></string>
+            <key>devname</key>
+            <string>smartport</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sl5</string>
         <key>description</key>
         <string>Slot 5</string>
@@ -174,19 +191,6 @@
             <string>ALF MC1 / Apple Music II</string>
             <key>devname</key>
             <string>a2alfam2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -798,19 +802,6 @@
             <string>ALF MC1 / Apple Music II</string>
             <key>devname</key>
             <string>a2alfam2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>diskii</string>
-            <key>description</key>
-            <string>Apple Disk II controller</string>
-            <key>devname</key>
-            <string>a2diskii</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1695,6 +1686,69 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>smartport</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>a2bufgrapplerplus</string>

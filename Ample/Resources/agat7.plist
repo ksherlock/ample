@@ -110,11 +110,6 @@
             <string>Agat-7 140K floppy card</string>
             <key>devname</key>
             <string>agat7_flop</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -184,11 +179,6 @@
             <true/>
             <key>devname</key>
             <string>agat7_flop</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -254,11 +244,6 @@
             <string>Agat-7 140K floppy card</string>
             <key>devname</key>
             <string>agat7_flop</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -326,11 +311,6 @@
             <string>Agat-7 140K floppy card</string>
             <key>devname</key>
             <string>agat7_flop</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -396,11 +376,6 @@
             <string>Agat-7 140K floppy card</string>
             <key>devname</key>
             <string>agat7_flop</string>
-            <key>media</key>
-            <dict>
-              <key>floppy_5_25</key>
-              <integer>2</integer>
-            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -546,6 +521,69 @@
                 <string>Tasc SmartBoard SB30 Interface</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>agat7_flop</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525</string>
+                <key>description</key>
+                <string>5.25"</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
