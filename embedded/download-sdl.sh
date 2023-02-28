@@ -1,8 +1,8 @@
 
 #!/bin/sh
-
-DMG=SDL2-2.0.14.dmg
-URL=https://www.libsdl.org/release/SDL2-2.0.14.dmg
+VERSION=2.26.3
+DMG=SDL2-${VERSION}.dmg
+URL=https://www.libsdl.org/release/SDL2-${VERSION}.dmg
 FRAMEWORK=SDL2.framework
 
 if [ -e $FRAMEWORK ] ; then exit 0 ; fi
