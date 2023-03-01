@@ -121,6 +121,7 @@ static NSString *EffectsStrings[] = {
     @"crt-geom",
     @"crt-geom-deluxe",
     @"lcd-grid",
+    @"Fighters",
 };
 
 
@@ -521,6 +522,9 @@ static NSString *ShellQuote(NSString *s) {
 
 
     if (_mameBGFX) {
+        [argv addObject: @"-video"];
+        [argv addObject: @"bgfx"];
+
         if (_mameBackend) {
             [argv addObject: @"-bgfx_backend"];
             [argv addObject: BackendStrings[_mameBackend]];

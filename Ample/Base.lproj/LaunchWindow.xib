@@ -119,6 +119,9 @@
                                                         <menuItem title="LCD Grid" tag="5" id="A6k-ku-z2M">
                                                             <modifierMask key="keyEquivalentModifierMask"/>
                                                         </menuItem>
+                                                        <menuItem title="Fighters" id="1aA-ge-f8R">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
