@@ -1024,6 +1024,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>nlq401</string>
+      <key>description</key>
+      <string>Schneider NLQ 401 Matrix Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2excel9</string>
       <key>description</key>
       <string>Seikou Excel-9</string>

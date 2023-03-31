@@ -578,6 +578,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ap2000</string>
                 <key>description</key>
                 <string>Epson ActionPrinter 2000</string>
@@ -621,6 +629,14 @@
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
                 <key>default</key>
                 <false/>
               </dict>
