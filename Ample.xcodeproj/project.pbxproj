@@ -1624,7 +1624,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1636,7 +1636,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.252-u2";
+				MARKETING_VERSION = "0.253-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1649,7 +1649,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1661,7 +1661,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.252-u2";
+				MARKETING_VERSION = "0.253-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
