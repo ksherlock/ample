@@ -276,7 +276,8 @@ static NSDictionary *IndexMap = nil;
     }
     
     // set up child name so bookmarks work.
-    if (c == ':') _name = p;
+    //if (c == ':') _name = p;
+    if (c != '-') _name = p;
 }
 
 
