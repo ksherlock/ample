@@ -333,9 +333,13 @@
     
     if (_state & 0b1000) {
         // notes
-        NSString *string = [[NSString new] initWithData: CDATABlock encoding: NSUTF8StringEncoding];
+        NSString *string = [[NSString alloc] initWithData: CDATABlock encoding: NSUTF8StringEncoding];
 
-        if (_scratch) _notes = [_scratch stringByAppendingString: string];
+        string = [string stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        if (_scratch) {
+            _scratch = [_scratch stringByAppendingString: @"\n"];
+            _scratch = [_scratch stringByAppendingString: string];
+        }
         else _scratch = string;
     }
 }
