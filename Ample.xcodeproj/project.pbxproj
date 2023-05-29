@@ -145,6 +145,10 @@
 		B65085BE25B616AC00354EC9 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B825B616AC00354EC9 /* maciici.plist */; };
 		B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
+		B66116852A2535EF0038A3E2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
+		B66116862A2535EF0038A3E2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
+		B66116882A2535F60038A3E2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
+		B66116892A2535F60038A3E2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
@@ -470,6 +474,8 @@
 		B65085B725B616AC00354EC9 /* maclc3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3.plist; sourceTree = "<group>"; };
 		B65085B825B616AC00354EC9 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
 		B65D718525E70BD5008C5F87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B66116842A2535EF0038A3E2 /* st.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = st.plist; sourceTree = "<group>"; };
+		B66116872A2535F50038A3E2 /* megast.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = megast.plist; sourceTree = "<group>"; };
 		B66236A724FD9A34006CABD7 /* PreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		B66236B224FDA522006CABD7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = embedded/SDL2.framework; sourceTree = "<group>"; };
@@ -607,6 +613,8 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B66116842A2535EF0038A3E2 /* st.plist */,
+				B66116872A2535F50038A3E2 /* megast.plist */,
 				B6109A0824F5F373005CB652 /* ace100.plist */,
 				B63E57E12755AF1F00F8B5D1 /* ace500.plist */,
 				B646D10A263A5DF20014C586 /* ace1000.plist */,
@@ -1089,6 +1097,7 @@
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
 				B6301BE429107BE800495022 /* maclc520.plist in Resources */,
+				B66116882A2535F60038A3E2 /* megast.plist in Resources */,
 				B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */,
 				B6374ADF260ECB400045CA16 /* macse30.plist in Resources */,
 				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
@@ -1098,6 +1107,7 @@
 				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
 				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
 				B6374AE5260ECDDD0045CA16 /* mac2fdhd.plist in Resources */,
+				B66116852A2535EF0038A3E2 /* st.plist in Resources */,
 				B63C1B90250088DD00511A71 /* roms.plist in Resources */,
 				B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */,
 				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
@@ -1148,10 +1158,12 @@
 				B6374AD6260ECB400045CA16 /* maciisi.plist in Resources */,
 				B6DE32472605482500418375 /* macclasc.plist in Resources */,
 				B6E4B5C324FDE2670094A35C /* am64.plist in Resources */,
+				B66116892A2535F60038A3E2 /* megast.plist in Resources */,
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
 				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
 				B6374AD4260ECB400045CA16 /* macii.plist in Resources */,
 				B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */,
+				B66116862A2535EF0038A3E2 /* st.plist in Resources */,
 				B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */,
 				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,

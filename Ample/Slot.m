@@ -77,34 +77,39 @@ static NSDictionary *IndexMap = nil;
     
     IndexMap = @{
         @"ramsize":    @0,
-        @"sl0":        @1,
-        @"sl1":        @2,
-        @"sl2":        @3,
-        @"sl3":        @4,
-        @"sl4":        @5,
-        @"sl5":        @6,
-        @"sl6":        @7,
-        @"sl7":        @8,
-        @"exp":        @9,
-        @"aux":        @10,
-        @"rs232":      @11,
-        @"gameio":     @12,
-        @"modem":      @13,
-        @"printer":    @14,
+        
+        @"smartport":  @1,
+        @"bios":       @2,
+
+        @"sl0":        @3,
+        @"sl1":        @4,
+        @"sl2":        @5,
+        @"sl3":        @6,
+        @"sl4":        @7,
+        @"sl5":        @8,
+        @"sl6":        @9,
+        @"sl7":        @10,
+        @"exp":        @11,
+        @"aux":        @12,
+        @"rs232":      @13,
+        @"gameio":     @14,
+        @"modem":      @15,
+        @"printer":    @16,
 
         //nubus mac
-        @"nb9":        @15,
-        @"nba":        @16,
-        @"nbb":        @17,
-        @"nbc":        @18,
-        @"nbd":        @19,
-        @"nbe":        @20,
+        @"nb9":        @17,
+        @"nba":        @18,
+        @"nbb":        @19,
+        @"nbc":        @20,
+        @"nbd":        @21,
+        @"nbe":        @22,
 
-        @"smartport":  @21,
-        @"bios":       @22,
+        @"centronics": @23,
+        @"mdin":       @24,
+        @"mdout":      @25
     };
-    static_assert(kSMARTPORT_SLOT == 21, "Smartport != 21");
-    static_assert(kBIOS_SLOT == 22, "Bios != 22");
+    static_assert(kSMARTPORT_SLOT == 1, "Smartport != 1");
+    static_assert(kBIOS_SLOT == 2, "Bios != 2");
 }
 
 -(void)reset {

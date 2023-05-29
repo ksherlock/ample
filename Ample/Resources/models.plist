@@ -576,5 +576,26 @@
         </dict>
       </array>
     </dict>
+    <dict>
+      <key>description</key>
+      <string>Atari ST</string>
+      <key>value</key>
+      <string>st</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>ST (USA)</string>
+          <key>value</key>
+          <string>st</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MEGA ST (USA)</string>
+          <key>value</key>
+          <string>megast</string>
+        </dict>
+      </array>
+    </dict>
   </array>
 </plist>

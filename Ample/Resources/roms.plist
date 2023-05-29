@@ -406,6 +406,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>st_kbd</string>
+      <key>description</key>
+      <string>Atari ST Keyboard/Mouse/Joystick</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>basis108</string>
       <key>description</key>
       <string>Basis 108</string>
@@ -691,6 +697,12 @@
       <string>a2suprterm</string>
       <key>description</key>
       <string>M&amp;R Enterprises SUP'R'TERMINAL</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>megast</string>
+      <key>description</key>
+      <string>MEGA ST (USA)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1018,6 +1030,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>st</string>
+      <key>description</key>
+      <string>ST (USA)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>swtpc8212_device</string>
       <key>description</key>
       <string>SWTPC8212</string>
@@ -1150,9 +1168,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>votrax</string>
+      <string>votrsc01a</string>
       <key>description</key>
-      <string>Votrax SC-01</string>
+      <string>Votrax SC-01-A</string>
     </dict>
     <dict>
       <key>value</key>

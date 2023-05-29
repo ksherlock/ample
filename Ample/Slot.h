@@ -11,11 +11,11 @@
 #import "Media.h"
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define SLOT_COUNT 23
+#define SLOT_COUNT 26
 static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
-#define kSMARTPORT_SLOT 21
-#define kBIOS_SLOT 22
+#define kSMARTPORT_SLOT 1
+#define kBIOS_SLOT 2
 
 #ifndef SIZEOF
 #define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
