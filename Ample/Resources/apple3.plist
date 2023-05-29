@@ -495,7 +495,7 @@
         <key>name</key>
         <string>rs232</string>
         <key>description</key>
-        <string>RS232</string>
+        <string>Modem</string>
         <key>options</key>
         <array>
           <dict>
