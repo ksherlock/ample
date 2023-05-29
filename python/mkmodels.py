@@ -33,6 +33,8 @@ mac_nubus_children = [
 mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 	"macse", "macsefd", "macse30", "macclasc", "macclas2", "maccclas"]
 
+atari_st_children = ["st", "megast"]
+
 tree = [
 	("Apple I", "apple1", apple1_children),
 	("Apple ][", "apple2", apple2_children),
@@ -48,6 +50,7 @@ tree = [
 	("China Education Computer", None, cec_children),
 	("Macintosh (Compact)", "macse30", mac_128k_children),
 	("Macintosh (NuBus)", "maciix", mac_nubus_children),
+	("Atari ST", "st", atari_st_children)
 ]
 
 env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}

@@ -38,6 +38,9 @@ MACHINES = (
 
 	# 128k clones
 	# "unitron", "utrn1024",
+
+	#atari
+	"st", "megast"
 )
 
 
@@ -54,6 +57,9 @@ SLOTS = (
 	# mac nubus
 	"nb1", "nb2", "nb3", "nb4", "nb5", "nb6", "nb7",
 	"nb8", "nb9", "nba", "nbb", "nbc", "nbd", "nbe",
+
+	# st
+	"centronics", "mdin", "mdout"
 )
 
 SLOT_NAMES = {
@@ -69,7 +75,7 @@ SLOT_NAMES = {
 	"sl7":        "Slot 7",
 	"exp":        "Expansion",
 	"aux":        "Auxiliary",
-	"rs232":      "RS232",
+	"rs232":      "Modem",
 	"gameio":     "Game I/O",
 	"modem":      "Modem",
 	"printer":    "Printer",
@@ -80,4 +86,8 @@ SLOT_NAMES = {
 	"nbc":        "Slot C",
 	"nbd":        "Slot D",
 	"nbe":        "Slot E",
+
+	"centronics": "Printer",
+	"mdin":       "MIDI In",
+	"mdout":      "MIDI Out",
 }

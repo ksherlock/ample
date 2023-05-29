@@ -210,6 +210,8 @@ def find_media(parent, include_slots=False):
 		"bitbanger": "bitbanger", # null_modem, etc.
 		"picture_image": "picture", # a2ceyes
 		# "printer_image": "printout",
+		"midiin": "midiin",
+		"midiout": "midiout",
 	}
 	remap_slot = {
 		# now handled at the slot level.
@@ -310,6 +312,7 @@ DEVICE_EXCLUDE = set([
 	'smoc501',
 	'cfp1080s',
 	'cf', # ATA compact flash
+	'cp2024', # Conner Peripherals CP-2024 hard disk
 ])
 
 def make_device_options(slot):
@@ -445,8 +448,6 @@ def make_bios(m):
 	}
 
 
-
-
 def make_smartport(machine):
 
 
@@ -457,12 +458,14 @@ def make_smartport(machine):
 	# maclc <slot name="scsi:1" .. "scsi:7" (but 4-7 not configurable)
 	# maciix <slot name="scsi:6">
 	# macse <slot name="scsibus:6">
+	# atari st, etc: <slot name="wd1772:[0-1]">
 
 	slots = []
 	SLOTS = [
 		*['fdc:' + str(x) for x in range(0,4)],
 		*['scsi:' + str(x) for x in range(0,7)],
 		*['scsibus:' + str(x) for x in range(0,7)],
+		*['wd1772:' + str(x) for x in range(0,4)],
 
 		"sl6:0", "sl6:1", "0", "1", "2", "3"
 	]
