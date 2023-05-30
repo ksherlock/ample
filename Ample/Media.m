@@ -151,7 +151,8 @@ static BOOL is_raw_35(size_t disk_size) {
     if (disk_size & 511) return NO;
     size_t blocks = disk_size >> 9;
 
-    return blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880;
+    // atari st has 360 (single sided) and 720 (double-sided) disks..
+    return blocks == 800 || blocks == 1600 || blocks == 1440 || blocks == 2880 || blocks == 720 || blocks == 360;
 }
 
 static MediaType is_woz(const uint8_t *buffer, size_t file_size) {
@@ -216,7 +217,29 @@ static MediaType is_chd(const uint8_t *buffer, size_t file_size) {
     return MediaTypeError;
 }
 
+static MediaType is_ipf(const uint8_t *buffer, size_t file_size) {
+    // http://justsolve.archiveteam.org/wiki/IPF
+    if (!memcmp(buffer, "CAPS\x00\x00\x00", 7)) return MediaType_3_5;
+    return MediaTypeUnknown;
+}
 
+static MediaType is_hxcf(const uint8_t *buffer, size_t file_size) {
+    // HxCFloppyEmulator
+    if (!memcmp(buffer, "HXCMFM", 6)) return MediaType_3_5;
+    return MediaTypeUnknown;
+}
+
+static MediaType is_msa(const uint8_t *buffer, size_t file_size) {
+    // Atari MSA
+    if (!memcmp(buffer, "\x0x\x0f", 2)) return MediaType_3_5;
+    return MediaTypeUnknown;
+}
+
+static MediaType is_pasti(const uint8_t *buffer, size_t file_size) {
+    // Atari STX/Pasti
+    if (!memcmp(buffer, "RSY\x00\x03\x00", 6)) return MediaType_3_5;
+    return MediaTypeUnknown;
+}
 
 MediaType ClassifyMediaFile(id file) {
     
@@ -297,6 +320,37 @@ MediaType ClassifyMediaFile(id file) {
 
         case _x3('m', 'i', 'd'):
             return MediaType_MIDI;
+
+            
+        // atari st, etc, 3.5 disk?
+        // http://justsolve.archiveteam.org/wiki/Disk_Image_Formats
+            
+        case _x3('i', 'p', 'f'):
+            return is_ipf(buffer, st.st_size);
+
+        case _x3('m', 'f', 'm'):
+            return is_hxcf(buffer, st.st_size);
+
+        case _x3('m', 's', 'a'):
+            return is_msa(buffer, st.st_size);
+
+        case _x2('s', 't'):
+            if (is_raw_35(st.st_size)) return MediaType_3_5;
+            return MediaTypeUnknown;
+
+        case _x3('s', 't', 'x'): // pasti
+            return is_pasti(buffer, st.st_size);
+            
+        //case _x3('m', 'f', 'i'): // mame/mess floppy image [???]
+        //case _x3('d', 'f', 'i'): // disc ferret image
+        //case _x3('h', 'f', 'e'): // ???
+        //case _x3('t', 'd', '0'): // teledisk - may be split across multiple files (.td1, .td2, ...)
+        //case _x3('i', 'm', 'd'): // imagedisk
+        //case _x3('d', '7', '7'): //pc-88, may have multiple disk images
+        //case _x3('d', '8', '8'): //fm-77, may have multiple disk images.
+        //case _x3('1', 'd', 'd'): // related?
+        //case _x3('c', 'q', 'm'): // copyQM
+        //case _x3('c', 'q', 'i'): // copyQM
 
     }
 
