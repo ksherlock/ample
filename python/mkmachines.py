@@ -488,7 +488,7 @@ def make_smartport(machine):
 		"slots": slots
 	}
 
-def fix_machine_description(x):
+def fix_machine_description(x, devname):
 	#
 	x = x.replace(", www.dreher.net","")
 	return x
@@ -505,7 +505,7 @@ def make_slot(m, slotname, nodes):
 		default = x.get("default") == "yes"
 		disabled = name in DISABLED or (m, name) in DISABLED
 
-		d = { "value": name, "description": fix_machine_description(desc) } # "devname": devname or ''}
+		d = { "value": name, "description": fix_machine_description(desc, devname) } # "devname": devname or ''}
 		if default: d["default"] = True
 		if disabled: d["disabled"] = True
 		if not disabled:

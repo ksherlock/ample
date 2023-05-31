@@ -406,6 +406,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>megast</string>
+      <key>description</key>
+      <string>Atari MEGA ST (USA)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>st</string>
+      <key>description</key>
+      <string>Atari ST (USA)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>st_kbd</string>
       <key>description</key>
       <string>Atari ST Keyboard/Mouse/Joystick</string>
@@ -697,12 +709,6 @@
       <string>a2suprterm</string>
       <key>description</key>
       <string>M&amp;R Enterprises SUP'R'TERMINAL</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>megast</string>
-      <key>description</key>
-      <string>MEGA ST (USA)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1027,12 +1033,6 @@
       <string>pd3_c264</string>
       <key>description</key>
       <string>RasterOps Colorboard 264/SE30</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>st</string>
-      <key>description</key>
-      <string>ST (USA)</string>
     </dict>
     <dict>
       <key>value</key>
