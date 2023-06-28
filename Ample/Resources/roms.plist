@@ -238,6 +238,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a2romfp</string>
+      <key>description</key>
+      <string>Apple II ROM Card (Applesoft BASIC)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2romint</string>
+      <key>description</key>
+      <string>Apple II ROM Card (Integer BASIC))</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2scsi</string>
       <key>description</key>
       <string>Apple II SCSI Card</string>

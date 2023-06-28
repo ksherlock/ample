@@ -26,6 +26,7 @@ struct Media MediaFromDictionary(NSDictionary *dict) {
     _(midiin);
     _(midiout);
     _(picture);
+    _(rom);
 
     return m;
 #undef _
@@ -52,6 +53,7 @@ void MediaAdd(Media *dest, const Media *src) {
     _(midiin);
     _(midiout);
     _(picture);
+    _(rom);
 #undef _
 
     
@@ -81,6 +83,7 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(midiin);
     _(midiout);
     _(picture);
+    _(rom);
 
     _(floppy_mask);
 
@@ -352,6 +355,9 @@ MediaType ClassifyMediaFile(id file) {
         //case _x3('c', 'q', 'm'): // copyQM
         //case _x3('c', 'q', 'i'): // copyQM
 
+        case _x3('r', 'o', 'm'):
+        case _x3('b', 'i', 'n'):
+            return MediaType_ROM;
     }
 
     return MediaTypeUnknown;

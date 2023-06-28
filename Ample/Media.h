@@ -21,6 +21,7 @@ typedef struct Media {
     unsigned midiin;
     unsigned midiout;
     unsigned picture;
+    unsigned rom;
     uint64_t floppy_mask;
 } Media;
 
@@ -35,6 +36,7 @@ typedef enum {
     MediaType_Cassette,
     MediaType_Picture,
     MediaType_MIDI,
+    MediaType_ROM,
 } MediaType;
 
 struct Media MediaFromDictionary(NSDictionary *);

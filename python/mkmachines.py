@@ -254,7 +254,12 @@ def find_media(parent, include_slots=False):
 	# n.b. - floppies are 5.25" 360k or 180k.  not bootable, not usable from prodos
 	# without special prodos file or loading driver into pc transporter ram. 
 	if parent.get("name") == "pcxport":
-		media.get["floppy_5_25"] = media.get("floppy_5_25", 0) + 2
+		media["floppy_5_25"] = media.get("floppy_5_25", 0) + 2
+
+
+	# special case for a2romusr
+	if parent.get("name") == "a2romusr":
+		media["rom"] = media.get("rom", 0) + 1 
 
 	if not media: return None
 	return media
@@ -280,6 +285,7 @@ DEVICE_REMAP = {
 	'35hd': '3.5" HD',
 	'35dd': '3.5" DD',
 	'35sd': '3.5" SD',
+	'a2romusr': 'ROM',
 }
 DEVICE_MEDIA = {
 	'cdrom': 'cdrom',
@@ -294,6 +300,7 @@ DEVICE_MEDIA = {
 	'aplcdsc': 'cdrom',
 	# 'null_modem': 'bitbanger',
 	# 'rs232_sync_io': 'bitbanger',
+	'a2romusr': 'rom',
 }
 
 DEVICE_EXCLUDE = set([
@@ -323,6 +330,7 @@ def make_device_options(slot):
 	for option in slot.findall("./slotoption"):
 		name = option.get("name")
 		devname = option.get("devname")
+
 		if name in DEVICE_EXCLUDE: continue
 
 		device = None
@@ -387,7 +395,6 @@ def make_devices():
 
 	for name in names:
 		m = submachines[name]
-		# print("   {}".format(name))
 		slots = make_device_slots(m)
 		if slots:
 			devices.append({
@@ -491,6 +498,7 @@ def make_smartport(machine):
 def fix_machine_description(x, devname):
 	#
 	x = x.replace(", www.dreher.net","")
+	x = x.replace("))", ")") # Apple II ROM Card (Integer BASIC))
 	return x
 
 def make_slot(m, slotname, nodes):

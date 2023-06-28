@@ -49,6 +49,8 @@
             @"2img", @"2mg", @"chd", @"dc", @"do", @"dsk", @"hd", @"hdv", @"image", @"nib", @"po", @"wav", @"woz", @"iso", @"raw",
             // st, etc.
             @"mfm",   @"st", @"msa", @"stx", @"ipf",
+            //
+            @"rom", @"bin",
             // not supported/relevant.
             // @"mfi", @"dfi", @"hfe",  @"d77"  @"d88", @"1dd", @"cqm", @"cqi", @"td0", @"imd", 
             nil

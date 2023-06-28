@@ -531,6 +531,7 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     _(midiin);
     _(midiout);
     _(picture);
+    _(rom);
 #undef _
         
     for (Slot *s in _children) {

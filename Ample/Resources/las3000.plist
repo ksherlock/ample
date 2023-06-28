@@ -8,6 +8,8 @@
     <string>Laser 3000</string>
     <key>media</key>
     <dict>
+      <key>cass</key>
+      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>

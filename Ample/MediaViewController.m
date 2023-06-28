@@ -332,6 +332,7 @@
     _data[kIndexMidiIn] = [MediaCategory categoryWithTitle: @"MIDI (In)"];
     _data[kIndexMidiOut] = [MediaCategory categoryWithTitle: @"MIDI (Out)"];
     _data[kIndexPicture] = [MediaCategory categoryWithTitle: @"Picture"];
+    _data[kIndexROM] = [MediaCategory categoryWithTitle: @"ROM"];
 
     for (unsigned i = 0; i < CATEGORY_COUNT; ++i) {
         [_data[i] setCategory: i];
@@ -339,7 +340,6 @@
     }
     
     _root = [NSMutableArray new];
-
 }
 
 
@@ -347,7 +347,7 @@
 -(void)rebuildArgs {
     
     static char* prefix[] = {
-        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb", "min", "mout", "pic"
+        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb", "min", "mout", "pic", "rom",
     };
     static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
@@ -441,17 +441,10 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     _(floppy_5_25, kIndexFloppy525);
     _(pseudo_disk, kIndexDiskImage);
     _(bitbanger, kIndexBitBanger);
-    // disable midi for now - it's either a midi file (which auto-plays too soon to be useful)
-    // or a midi device ("default" for first one).
-    // So we should build a device list (and pre-populate the default one)
-    // another approach is a separate utility to act as a midi/serial input converter
-    // and midi file / serial converter so the modem/serial port could be used.
-#if 1
     _(midiin, kIndexMidiIn);
     _(midiout, kIndexMidiOut);
-#endif
     _(picture, kIndexPicture);
-
+    _(rom, kIndexROM);
 
     if (delta) {
         [self rebuildRoot];
@@ -782,6 +775,7 @@ static NSString *kDragType = @"private.ample.media";
         case kIndexMidiIn:
         case kIndexMidiOut:
         case kIndexBitBanger:
+        case kIndexROM:
         default: break;
     }
     
@@ -836,6 +830,7 @@ static NSString *kDragType = @"private.ample.media";
         case MediaType_CDROM: ix = kIndexCDROM; break;
 
         case MediaType_Picture: ix = kIndexPicture; break;
+        case MediaType_ROM: ix = kIndexROM; break;
         case MediaType_MIDI: // ix = kIndexMidiIn; break;
         case MediaTypeError:
         case MediaTypeUnknown:
@@ -873,7 +868,7 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 static NSString * BookmarkStrings[] = {
-    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb", @"midiin", @"midiout", @"pic"
+    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb", @"midiin", @"midiout", @"pic", @"rom",
 };
 static_assert(SIZEOF(BookmarkStrings) == CATEGORY_COUNT, "Missing item");
 

@@ -84,6 +84,35 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssram</string>
             <key>description</key>
             <string>Saturn Systems 128K Extended Language Card</string>

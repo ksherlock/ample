@@ -22,11 +22,12 @@ enum {
     kIndexMidiIn,
     kIndexMidiOut,
     kIndexPicture, // computer eyes -pic, .png only.
+    kIndexROM,
     // kIndexPrintout // -prin, .prn extension only?
     
     kIndexLast
 };
-#define CATEGORY_COUNT 10
+#define CATEGORY_COUNT 11
 static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 
