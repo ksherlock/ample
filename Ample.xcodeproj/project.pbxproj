@@ -165,6 +165,22 @@
 		B68A899126BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
 		B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
 		B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
+		B6939C1A2A747B790025D891 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C162A747B790025D891 /* macqd800.plist */; };
+		B6939C1B2A747B790025D891 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C162A747B790025D891 /* macqd800.plist */; };
+		B6939C1C2A747B790025D891 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C172A747B790025D891 /* macqd610.plist */; };
+		B6939C1D2A747B790025D891 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C172A747B790025D891 /* macqd610.plist */; };
+		B6939C1E2A747B790025D891 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
+		B6939C1F2A747B790025D891 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
+		B6939C202A747B790025D891 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C192A747B790025D891 /* macqd650.plist */; };
+		B6939C212A747B790025D891 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C192A747B790025D891 /* macqd650.plist */; };
+		B6939C232A747B950025D891 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
+		B6939C242A747B950025D891 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
+		B6939C262A747BA30025D891 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C252A747BA30025D891 /* maclc3p.plist */; };
+		B6939C272A747BA30025D891 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C252A747BA30025D891 /* maclc3p.plist */; };
+		B6939C2A2A747BBF0025D891 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C282A747BBE0025D891 /* macct650.plist */; };
+		B6939C2B2A747BBF0025D891 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C282A747BBE0025D891 /* macct650.plist */; };
+		B6939C2C2A747BBF0025D891 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
+		B6939C2D2A747BBF0025D891 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
 		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
@@ -492,6 +508,14 @@
 		B68A898F26BE18E000B2C8C6 /* MidiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiManager.m; sourceTree = "<group>"; };
 		B68A899226BE320200B2C8C6 /* MidiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiManager.h; sourceTree = "<group>"; };
 		B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		B6939C162A747B790025D891 /* macqd800.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd800.plist; sourceTree = "<group>"; };
+		B6939C172A747B790025D891 /* macqd610.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd610.plist; sourceTree = "<group>"; };
+		B6939C182A747B790025D891 /* macqd700.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd700.plist; sourceTree = "<group>"; };
+		B6939C192A747B790025D891 /* macqd650.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd650.plist; sourceTree = "<group>"; };
+		B6939C222A747B950025D891 /* maclc550.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc550.plist; sourceTree = "<group>"; };
+		B6939C252A747BA30025D891 /* maclc3p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3p.plist; sourceTree = "<group>"; };
+		B6939C282A747BBE0025D891 /* macct650.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macct650.plist; sourceTree = "<group>"; };
+		B6939C292A747BBE0025D891 /* macct610.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macct610.plist; sourceTree = "<group>"; };
 		B6A1A1932528EB1700DB0FD7 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B6A1A1962528EB4600DB0FD7 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		B6ABF47B275986EA00DC3D48 /* ace2200.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace2200.plist; sourceTree = "<group>"; };
@@ -697,6 +721,14 @@
 				B6DE32432605482500418375 /* macse.plist */,
 				B6374AD0260ECB400045CA16 /* macse30.plist */,
 				B6DE32402605482500418375 /* macsefd.plist */,
+				B6939C172A747B790025D891 /* macqd610.plist */,
+				B6939C192A747B790025D891 /* macqd650.plist */,
+				B6939C182A747B790025D891 /* macqd700.plist */,
+				B6939C162A747B790025D891 /* macqd800.plist */,
+				B6939C222A747B950025D891 /* maclc550.plist */,
+				B6939C252A747BA30025D891 /* maclc3p.plist */,
+				B6939C292A747BBE0025D891 /* macct610.plist */,
+				B6939C282A747BBE0025D891 /* macct650.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1042,10 +1074,13 @@
 				B646D10B263A5DF30014C586 /* ace1000.plist in Resources */,
 				B63C1BA8250192E600511A71 /* zijini.plist in Resources */,
 				B6109A1D24F5F377005CB652 /* space84.plist in Resources */,
+				B6939C1A2A747B790025D891 /* macqd800.plist in Resources */,
+				B6939C202A747B790025D891 /* macqd650.plist in Resources */,
 				B6374AD9260ECB400045CA16 /* maciicx.plist in Resources */,
 				B6109A3F24F5F377005CB652 /* agat9.plist in Resources */,
 				B63C1B9D250192D800511A71 /* cece.plist in Resources */,
 				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
+				B6939C1C2A747B790025D891 /* macqd610.plist in Resources */,
 				B6374AD3260ECB400045CA16 /* macii.plist in Resources */,
 				B63E57E22755AF2000F8B5D1 /* ace500.plist in Resources */,
 				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
@@ -1079,12 +1114,15 @@
 				B6109A1A24F5F377005CB652 /* microeng.plist in Resources */,
 				B6374AD5260ECB400045CA16 /* maciisi.plist in Resources */,
 				B6109A3E24F5F377005CB652 /* albert.plist in Resources */,
+				B6939C2A2A747BBF0025D891 /* macct650.plist in Resources */,
 				B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */,
 				B6109A4224F5F377005CB652 /* apple2p.plist in Resources */,
 				B65085B925B616AC00354EC9 /* maclc2.plist in Resources */,
 				B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */,
 				B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */,
 				B63C1BA1250192D800511A71 /* cecg.plist in Resources */,
+				B6939C2C2A747BBF0025D891 /* macct610.plist in Resources */,
+				B6939C262A747BA30025D891 /* maclc3p.plist in Resources */,
 				B63C1BA3250192D800511A71 /* cec2000.plist in Resources */,
 				B6109A2624F5F377005CB652 /* mprof3.plist in Resources */,
 				B63C1B9F250192D800511A71 /* ceci.plist in Resources */,
@@ -1092,12 +1130,14 @@
 				B6109A4324F5F377005CB652 /* agat7.plist in Resources */,
 				B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */,
 				B6DE324E2605482500418375 /* mac512k.plist in Resources */,
+				B6939C232A747B950025D891 /* maclc550.plist in Resources */,
 				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
 				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
 				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
 				B6301BE429107BE800495022 /* maclc520.plist in Resources */,
 				B66116882A2535F60038A3E2 /* megast.plist in Resources */,
+				B6939C1E2A747B790025D891 /* macqd700.plist in Resources */,
 				B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */,
 				B6374ADF260ECB400045CA16 /* macse30.plist in Resources */,
 				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
@@ -1157,6 +1197,8 @@
 				B6E6DCF827B0873200E0A76E /* BookmarkWindow.xib in Resources */,
 				B6374AD6260ECB400045CA16 /* maciisi.plist in Resources */,
 				B6DE32472605482500418375 /* macclasc.plist in Resources */,
+				B6939C2D2A747BBF0025D891 /* macct610.plist in Resources */,
+				B6939C1B2A747B790025D891 /* macqd800.plist in Resources */,
 				B6E4B5C324FDE2670094A35C /* am64.plist in Resources */,
 				B66116892A2535F60038A3E2 /* megast.plist in Resources */,
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
@@ -1168,6 +1210,7 @@
 				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
 				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
 				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
+				B6939C242A747B950025D891 /* maclc550.plist in Resources */,
 				B6374ADA260ECB400045CA16 /* maciicx.plist in Resources */,
 				B615A99F26640940001FBF99 /* SlotView.xib in Resources */,
 				B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */,
@@ -1202,6 +1245,7 @@
 				B65085BC25B616AC00354EC9 /* maclc3.plist in Resources */,
 				B6DE32492605482500418375 /* mac512ke.plist in Resources */,
 				B6DE32452605482500418375 /* mac128k.plist in Resources */,
+				B6939C2B2A747BBF0025D891 /* macct650.plist in Resources */,
 				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
 				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
 				B6374AE4260ECDDD0045CA16 /* maciihmu.plist in Resources */,
@@ -1210,6 +1254,7 @@
 				B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */,
 				B6DD1FE925B407E7004A3242 /* maclc.plist in Resources */,
 				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
+				B6939C272A747BA30025D891 /* maclc3p.plist in Resources */,
 				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
 				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
 				B6301BE529107BE800495022 /* maclc520.plist in Resources */,
@@ -1219,6 +1264,7 @@
 				B63C1BA9250192E600511A71 /* zijini.plist in Resources */,
 				B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */,
 				B6ABF47D275986EB00DC3D48 /* ace2200.plist in Resources */,
+				B6939C212A747B790025D891 /* macqd650.plist in Resources */,
 				B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */,
 				B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */,
 				B63C1B9E250192D800511A71 /* cece.plist in Resources */,
@@ -1228,6 +1274,8 @@
 				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,
 				B6301BE829107C1E00495022 /* maccclas.plist in Resources */,
 				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
+				B6939C1D2A747B790025D891 /* macqd610.plist in Resources */,
+				B6939C1F2A747B790025D891 /* macqd700.plist in Resources */,
 				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
 				B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */,
 				B6DE324D2605482500418375 /* macplus.plist in Resources */,

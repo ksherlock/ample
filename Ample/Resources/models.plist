@@ -588,18 +588,6 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Macintosh Quadra 700</string>
-          <key>value</key>
-          <string>macqd700</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh Quadra 800</string>
-          <key>value</key>
-          <string>macqd800</string>
-        </dict>
-        <dict>
-          <key>description</key>
           <string>Macintosh Centris 610</string>
           <key>value</key>
           <string>macct610</string>
@@ -621,6 +609,18 @@
           <string>Macintosh Quadra 650</string>
           <key>value</key>
           <string>macqd650</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 700</string>
+          <key>value</key>
+          <string>macqd700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 800</string>
+          <key>value</key>
+          <string>macqd800</string>
         </dict>
       </array>
     </dict>
