@@ -27,7 +27,9 @@ agat_children = ["agat7", "agat9"]
 
 mac_nubus_children = [
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
-	"maclc", "maclc2", "maclc3", "maclc520"]
+	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550",
+	"macqd700", "macqd800", "macct610", "macct650", "macqd610", "macqd650",
+]
 
 # se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.
 mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",

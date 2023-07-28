@@ -570,9 +570,57 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh LC III+</string>
+          <key>value</key>
+          <string>maclc3p</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh LC 520</string>
           <key>value</key>
           <string>maclc520</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC 550</string>
+          <key>value</key>
+          <string>maclc550</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 700</string>
+          <key>value</key>
+          <string>macqd700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 800</string>
+          <key>value</key>
+          <string>macqd800</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Centris 610</string>
+          <key>value</key>
+          <string>macct610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Centris 650</string>
+          <key>value</key>
+          <string>macct650</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 610</string>
+          <key>value</key>
+          <string>macqd610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 650</string>
+          <key>value</key>
+          <string>macqd650</string>
         </dict>
       </array>
     </dict>

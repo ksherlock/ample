@@ -246,7 +246,7 @@
       <key>value</key>
       <string>a2romint</string>
       <key>description</key>
-      <string>Apple II ROM Card (Integer BASIC))</string>
+      <string>Apple II ROM Card (Integer BASIC)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -586,6 +586,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>4dparprn</string>
+      <key>description</key>
+      <string>Fourth Dimension Parallel Printer Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ace100</string>
       <key>description</key>
       <string>Franklin ACE 100</string>
@@ -736,6 +742,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macct610</string>
+      <key>description</key>
+      <string>Macintosh Centris 610</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macct650</string>
+      <key>description</key>
+      <string>Macintosh Centris 650</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macclasc</string>
       <key>description</key>
       <string>Macintosh Classic</string>
@@ -826,6 +844,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>maclc550</string>
+      <key>description</key>
+      <string>Macintosh LC 550</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>maclc2</string>
       <key>description</key>
       <string>Macintosh LC II</string>
@@ -835,6 +859,12 @@
       <string>maclc3</string>
       <key>description</key>
       <string>Macintosh LC III</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>maclc3p</string>
+      <key>description</key>
+      <string>Macintosh LC III+</string>
     </dict>
     <dict>
       <key>value</key>
@@ -871,6 +901,30 @@
       <string>mackbd_m0110a</string>
       <key>description</key>
       <string>Macintosh Plus Keyboard (U.S. - M0110A)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd610</string>
+      <key>description</key>
+      <string>Macintosh Quadra 610</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd650</string>
+      <key>description</key>
+      <string>Macintosh Quadra 650</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd700</string>
+      <key>description</key>
+      <string>Macintosh Quadra 700</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd800</string>
+      <key>description</key>
+      <string>Macintosh Quadra 800</string>
     </dict>
     <dict>
       <key>value</key>

@@ -30,12 +30,14 @@ MACHINES = (
 	# macintosh...
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi",
 	"maciivx", "maciivi",
-	"maclc", "maclc2", "maclc3", "maclc520",
+	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550",
 
 	# mac 128k-classic
 	"mac128k", "mac512k", "mac512ke", "macplus", "macse", "macsefd", "macse30",
 	"macclasc", "macclas2", "maccclas",
 
+	# quadra
+	"macqd700", "macqd800", "macct610", "macct650", "macqd610", "macqd650",
 	# 128k clones
 	# "unitron", "utrn1024",
 
