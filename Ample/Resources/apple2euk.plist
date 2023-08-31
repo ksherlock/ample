@@ -187,6 +187,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -814,6 +819,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -1441,6 +1451,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2068,6 +2083,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -2697,6 +2717,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3326,6 +3351,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -3953,6 +3983,11 @@
             <string>Apple II SCSI Card</string>
             <key>devname</key>
             <string>a2scsi</string>
+            <key>media</key>
+            <dict>
+              <key>cdrom</key>
+              <integer>1</integer>
+            </dict>
           </dict>
           <dict>
             <key>value</key>
@@ -6540,60 +6575,6 @@
                 <string>Apple SCSI CD-ROM</string>
                 <key>default</key>
                 <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:scsibus:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>aplcdsc</string>
-                <key>description</key>
-                <string>Apple SCSI CD-ROM</string>
-                <key>default</key>
-                <true/>
                 <key>media</key>
                 <dict>
                   <key>cdrom</key>

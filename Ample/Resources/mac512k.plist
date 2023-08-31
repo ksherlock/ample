@@ -363,8 +363,9 @@
     </array>
     <key>software</key>
     <array>
+      <string>mac_flop_orig.xml</string>
+      <string>mac_flop_clcracked.xml</string>
       <string>mac_flop.xml</string>
-      <string>mac_hdd.xml</string>
     </array>
   </dict>
 </plist>

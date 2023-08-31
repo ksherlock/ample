@@ -491,7 +491,7 @@
     </dict>
     <dict>
       <key>description</key>
-      <string>Macintosh (NuBus)</string>
+      <string>Macintosh (II)</string>
       <key>value</key>
       <string>maciix</string>
       <key>children</key>
@@ -550,6 +550,56 @@
           <key>value</key>
           <string>maciivi</string>
         </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (Quadra)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 605</string>
+          <key>value</key>
+          <string>macqd605</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 610</string>
+          <key>value</key>
+          <string>macqd610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 630</string>
+          <key>value</key>
+          <string>macqd630</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 650</string>
+          <key>value</key>
+          <string>macqd650</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 700</string>
+          <key>value</key>
+          <string>macqd700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 800</string>
+          <key>value</key>
+          <string>macqd800</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (LC)</string>
+      <key>children</key>
+      <array>
         <dict>
           <key>description</key>
           <string>Macintosh LC</string>
@@ -576,6 +626,12 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh LC/Performa 475</string>
+          <key>value</key>
+          <string>maclc475</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh LC 520</string>
           <key>value</key>
           <string>maclc520</string>
@@ -588,6 +644,18 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh LC/Performa 575</string>
+          <key>value</key>
+          <string>maclc575</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC/Performa 580</string>
+          <key>value</key>
+          <string>maclc580</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh Centris 610</string>
           <key>value</key>
           <string>macct610</string>
@@ -597,30 +665,6 @@
           <string>Macintosh Centris 650</string>
           <key>value</key>
           <string>macct650</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh Quadra 610</string>
-          <key>value</key>
-          <string>macqd610</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh Quadra 650</string>
-          <key>value</key>
-          <string>macqd650</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh Quadra 700</string>
-          <key>value</key>
-          <string>macqd700</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh Quadra 800</string>
-          <key>value</key>
-          <string>macqd800</string>
         </dict>
       </array>
     </dict>

@@ -38,6 +38,7 @@ MACHINES = (
 
 	# quadra
 	"macqd700", "macqd800", "macct610", "macct650", "macqd610", "macqd650",
+	"macqd605", "maclc475", "maclc575", "macqd630", "maclc580",
 	# 128k clones
 	# "unitron", "utrn1024",
 

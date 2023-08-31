@@ -8,6 +8,8 @@
     <string>Macintosh LC II</string>
     <key>media</key>
     <dict>
+      <key>cdrom</key>
+      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -642,60 +644,6 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi:3</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>aplcdsc</string>
-                <key>description</key>
-                <string>Apple SCSI CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>cdrom</string>
-                <key>description</key>
-                <string>CD-ROM</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>cdrom</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>harddisk</string>
-                <key>description</key>
-                <string>Hard Disk</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>hard</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
             <string>scsi:4</string>
             <key>options</key>
             <array>
@@ -705,7 +653,7 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <false/>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
@@ -726,7 +674,7 @@
                 <key>description</key>
                 <string>CD-ROM</string>
                 <key>default</key>
-                <true/>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>cdrom</key>
@@ -1076,6 +1024,12 @@
     <key>software</key>
     <array>
       <string>mac_hdd.xml</string>
+      <dict>
+        <key>name</key>
+        <string>mac_cdrom.xml</string>
+        <key>filter</key>
+        <string>MC68030</string>
+      </dict>
       <string>mac_hdflop.xml</string>
     </array>
   </dict>

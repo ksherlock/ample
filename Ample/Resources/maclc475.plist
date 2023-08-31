@@ -3,9 +3,9 @@
 <plist version="1.0">
   <dict>
     <key>value</key>
-    <string>maccclas</string>
+    <string>maclc475</string>
     <key>description</key>
-    <string>Macintosh Color Classic</string>
+    <string>Macintosh LC/Performa 475</string>
     <key>media</key>
     <dict>
       <key>cdrom</key>
@@ -13,8 +13,8 @@
     </dict>
     <key>resolution</key>
     <array>
-      <integer>512</integer>
-      <integer>384</integer>
+      <integer>640</integer>
+      <integer>480</integer>
     </array>
     <key>slots</key>
     <array>
@@ -37,16 +37,6 @@
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>6291456</integer>
-            <key>description</key>
-            <string>6M</string>
-            <key>value</key>
-            <string>6M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
             <integer>8388608</integer>
             <key>description</key>
             <string>8M</string>
@@ -57,11 +47,111 @@
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>10485760</integer>
+            <integer>16777216</integer>
             <key>description</key>
-            <string>10M</string>
+            <string>16M</string>
             <key>value</key>
-            <string>10M</string>
+            <string>16M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>33554432</integer>
+            <key>description</key>
+            <string>32M</string>
+            <key>value</key>
+            <string>32M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>67108864</integer>
+            <key>description</key>
+            <string>64M</string>
+            <key>value</key>
+            <string>64M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>100663296</integer>
+            <key>description</key>
+            <string>96M</string>
+            <key>value</key>
+            <string>96M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>134217728</integer>
+            <key>description</key>
+            <string>128M</string>
+            <key>value</key>
+            <string>128M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>201326592</integer>
+            <key>description</key>
+            <string>192M</string>
+            <key>value</key>
+            <string>192M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>268435456</integer>
+            <key>description</key>
+            <string>256M</string>
+            <key>value</key>
+            <string>256M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>335544320</integer>
+            <key>description</key>
+            <string>320M</string>
+            <key>value</key>
+            <string>320M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>402653184</integer>
+            <key>description</key>
+            <string>384M</string>
+            <key>value</key>
+            <string>384M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>536870912</integer>
+            <key>description</key>
+            <string>512M</string>
+            <key>value</key>
+            <string>512M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>671088640</integer>
+            <key>description</key>
+            <string>640M</string>
+            <key>value</key>
+            <string>640M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -920,9 +1010,8 @@
         <key>name</key>
         <string>mac_cdrom.xml</string>
         <key>filter</key>
-        <string>MC68030</string>
+        <string>MC68040</string>
       </dict>
-      <string>mac_hdflop.xml</string>
     </array>
   </dict>
 </plist>

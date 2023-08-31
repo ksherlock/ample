@@ -1,6 +1,7 @@
 import argparse
 import subprocess
 
+from copy import deepcopy
 from plist import to_plist
 
 import xml.etree.ElementTree as ET
@@ -142,6 +143,7 @@ def find_machine_media(parent):
 	# mac [various] - pds/lcpds slot
 	# mac128k - kbd slot
 	#
+	# mac - if scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
 
 
 	mname = parent.get("name")
@@ -173,7 +175,8 @@ def find_machine_media(parent):
 		# as of 232 (231?), these are configurable as :scsi:0, etc or :scsibus:0, etc.
 		# if mname[0:3] == "mac" and slot in ("scsi", "scsibus"): slot = None
 
-		if slot: continue
+		# MAME 0.258 - scsi slot 3 now hardcoded for cd-rom
+		if slot and intf != "cdrom": continue
 		# skip slot devices -- they'll be handled as part of the device.
 
 		if intf in remap:
@@ -198,7 +201,7 @@ def find_media(parent, include_slots=False):
 	# slot/slotoption default="yes", devname is a machine with a device node.
 	# diskiing is an exception, naturally.
 
-	# this ignores the above. 
+	# this ignores the above.
 
 
 	remap_dev = {
@@ -252,14 +255,18 @@ def find_media(parent, include_slots=False):
 
 	# special case for the pc transporter.  not in the xml but it adds 2 5.25" floppies
 	# n.b. - floppies are 5.25" 360k or 180k.  not bootable, not usable from prodos
-	# without special prodos file or loading driver into pc transporter ram. 
+	# without special prodos file or loading driver into pc transporter ram.
 	if parent.get("name") == "pcxport":
 		media["floppy_5_25"] = media.get("floppy_5_25", 0) + 2
 
 
 	# special case for a2romusr
 	if parent.get("name") == "a2romusr":
-		media["rom"] = media.get("rom", 0) + 1 
+		media["rom"] = media.get("rom", 0) + 1
+
+	# scsibus:1 is special cd-rom
+	if parent.get("name") == "a2scsi":
+		media["cdrom"] = media.get("cdrom", 0) + 1
 
 	if not media: return None
 	return media
@@ -323,6 +330,12 @@ DEVICE_EXCLUDE = set([
 ])
 
 def make_device_options(slot):
+#
+# As of MAME .258 ---
+# apple 2 scsi slot 1 is a default cd rom device.
+# Macintosh scsi slot 3 is a default cd rom device.
+# THIS IS NOT REFLECTED IN THE XML SINCE IT'S SET AT RUN TIME.
+# IN FACT, THE :scsi
 
 	options = []
 	has_default = False
@@ -352,6 +365,14 @@ def make_device_options(slot):
 		elif device and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
 		# elif device and device.find("./device_ref[@name='printer_image']") != None: media = { 'printout': 1 }
 
+
+		# if name == "cdrom":
+		# 	print("{} - {} - {}".format(slot.get('name'), name, devname))
+		# 	print(option)
+		# 	if slot.get('name') == ':scsibus:1':
+		# 		default = True
+		# 		has_default = True
+
 		item = {
 			'value': name,
 			'description': desc,
@@ -371,6 +392,21 @@ def make_device_options(slot):
 def make_device_slots(machine):
 
 	mname = machine.get('name')
+
+	# add missing cd-rom scsi slot1
+	# s0 = machine.find('./slot[@name=":scsibus:0"]')
+	# s1 = machine.find('./slot[@name=":scsibus:1"]')
+	# if s0 and not s1:
+	# 	s1 = deepcopy(s0)
+	# 	s1.set('name', ':scsibus:1')
+	# 	s1.find('slotoption[@name="cdrom"]').set('default','yes')
+	# 	for ix in range(0, len(machine)):
+	# 		if machine[ix] == s0:
+	# 			machine.insert(ix+1, s1)
+	# 			break
+	# 	#machine.insert(5,s1)
+
+
 
 	slots = []
 	for slot in machine.findall('./slot'):
@@ -476,6 +512,31 @@ def make_smartport(machine):
 
 		"sl6:0", "sl6:1", "0", "1", "2", "3"
 	]
+
+	# surgery to add cd-rom scsi nodes:
+	# s2 = machine.find('slot[@name="scsi:2"]')
+	# s3 = machine.find('slot[@name="scsi:3"]')
+	# if s2 and not s3:
+	# 	s3 = deepcopy(s2)
+	# 	parent = s2.find("..")
+	# 	# print(s2)
+	# 	# print(parent)
+	# 	s3.set('name', 'scsi:3')
+	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
+	# 	machine.append(s3)
+	# 	# print("inserting s3")
+
+	# s2 = machine.find('slot[@name="scsibus:2"]')
+	# s3 = machine.find('slot[@name="scsibus:3"]')
+	# if s2 and not s3:
+	# 	s3 = deepcopy(s2)
+	# 	parent = s2.find("..")
+	# 	s3.set('name', 'scsibus:3')
+	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
+	# 	machine.append(s3)
+
+
+
 	for s in SLOTS:
 		path = 'slot[@name="{}"]'.format(s)
 		slot = machine.find(path)

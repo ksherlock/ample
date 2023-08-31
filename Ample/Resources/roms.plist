@@ -156,7 +156,7 @@
       <key>value</key>
       <string>cuda</string>
       <key>description</key>
-      <string>Apple Cuda</string>
+      <string>Apple Cuda v2.xx ADB/I2C</string>
     </dict>
     <dict>
       <key>value</key>
@@ -186,7 +186,7 @@
       <key>value</key>
       <string>egret</string>
       <key>description</key>
-      <string>Apple Egret</string>
+      <string>Apple Egret ADB/I2C</string>
     </dict>
     <dict>
       <key>value</key>
@@ -517,6 +517,12 @@
       <string>cecm</string>
       <key>description</key>
       <string>China Education Computer M</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cp2024</string>
+      <key>description</key>
+      <string>Conner Peripherals CP-2024 hard disk</string>
     </dict>
     <dict>
       <key>value</key>
@@ -868,6 +874,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>maclc475</string>
+      <key>description</key>
+      <string>Macintosh LC/Performa 475</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>maclc575</string>
+      <key>description</key>
+      <string>Macintosh LC/Performa 575</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>maclc580</string>
+      <key>description</key>
+      <string>Macintosh LC/Performa 580</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>mackbd_m0120</string>
       <key>description</key>
       <string>Macintosh Numeric Keypad (English - M0120)</string>
@@ -904,9 +928,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macqd605</string>
+      <key>description</key>
+      <string>Macintosh Quadra 605</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macqd610</string>
       <key>description</key>
       <string>Macintosh Quadra 610</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd630</string>
+      <key>description</key>
+      <string>Macintosh Quadra 630</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1045,6 +1081,12 @@
       <string>a2focdrv</string>
       <key>description</key>
       <string>Parsons Engineering Focus Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>px320a</string>
+      <key>description</key>
+      <string>PleXCombo PX-320A CD-RW/DVD-ROM Drive</string>
     </dict>
     <dict>
       <key>value</key>

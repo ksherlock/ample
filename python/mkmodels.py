@@ -25,11 +25,19 @@ iie_clones_children = ["mprof3", "prav8c", "spectred", "tk3000", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
-mac_nubus_children = [
+mac_ii_children = [
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
-	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550",
+
+]
+
+mac_lc_children = [
+	"maclc", "maclc2", "maclc3", "maclc3p",
+	"maclc475", "maclc520", "maclc550", "maclc575", "maclc580",
 	"macct610", "macct650",
-	"macqd610", "macqd650", "macqd700", "macqd800", 
+]
+
+mac_quadra_children = [
+	"macqd605", "macqd610", "macqd630", "macqd650", "macqd700", "macqd800",
 ]
 
 # se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.
@@ -52,7 +60,9 @@ tree = [
 	("Agat", "agat7", agat_children),
 	("China Education Computer", None, cec_children),
 	("Macintosh (Compact)", "macse30", mac_128k_children),
-	("Macintosh (NuBus)", "maciix", mac_nubus_children),
+	("Macintosh (II)", "maciix", mac_ii_children),
+	("Macintosh (Quadra)", None, mac_quadra_children),
+	("Macintosh (LC)", None, mac_lc_children),
 	("Atari ST", "st", atari_st_children)
 ]
 
