@@ -61,6 +61,8 @@ SLOTS = (
 	"nb1", "nb2", "nb3", "nb4", "nb5", "nb6", "nb7",
 	"nb8", "nb9", "nba", "nbb", "nbc", "nbd", "nbe",
 
+	"pds", "pds030",
+
 	# st
 	"centronics", "mdin", "mdout"
 )
@@ -89,6 +91,9 @@ SLOT_NAMES = {
 	"nbc":        "Slot C",
 	"nbd":        "Slot D",
 	"nbe":        "Slot E",
+
+	"pds":        "PDS",
+	"pds030":     "PDS",
 
 	"centronics": "Printer",
 	"mdin":       "MIDI In",

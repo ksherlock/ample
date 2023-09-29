@@ -670,6 +670,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>zip100_ide</string>
+      <key>description</key>
+      <string>Iomega Zip 100MB IDE Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>kb_iskr1030</string>
       <key>description</key>
       <string>Iskra-1030 Keyboard</string>
@@ -745,18 +751,6 @@
       <string>mac512k</string>
       <key>description</key>
       <string>Macintosh 512k</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>macct610</string>
-      <key>description</key>
-      <string>Macintosh Centris 610</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>macct650</string>
-      <key>description</key>
-      <string>Macintosh Centris 650</string>
     </dict>
     <dict>
       <key>value</key>
@@ -868,24 +862,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>maclc3p</string>
-      <key>description</key>
-      <string>Macintosh LC III+</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>maclc475</string>
-      <key>description</key>
-      <string>Macintosh LC/Performa 475</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>maclc575</string>
-      <key>description</key>
-      <string>Macintosh LC/Performa 575</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>maclc580</string>
       <key>description</key>
       <string>Macintosh LC/Performa 580</string>
@@ -934,21 +910,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>macqd610</string>
-      <key>description</key>
-      <string>Macintosh Quadra 610</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>macqd630</string>
       <key>description</key>
       <string>Macintosh Quadra 630</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>macqd650</string>
-      <key>description</key>
-      <string>Macintosh Quadra 650</string>
     </dict>
     <dict>
       <key>value</key>

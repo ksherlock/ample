@@ -384,6 +384,63 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>pds030</string>
+        <key>description</key>
+        <string>PDS</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pc816</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8*16</string>
+            <key>devname</key>
+            <string>pd3_pc16</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>30hr</string>
+            <key>description</key>
+            <string>Micron/XCEED Technology Color 30HR</string>
+            <key>devname</key>
+            <string>pd3_30hr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mc30</string>
+            <key>description</key>
+            <string>Micron/XCEED Technology MacroColor 30</string>
+            <key>devname</key>
+            <string>pd3_mclr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cb264</string>
+            <key>description</key>
+            <string>RasterOps Colorboard 264/SE30</string>
+            <key>devname</key>
+            <string>pd3_c264</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>lview</string>
+            <key>description</key>
+            <string>Sigma Designs L-View</string>
+            <key>devname</key>
+            <string>pd3_lviw</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
@@ -552,6 +609,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -605,6 +670,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -660,6 +733,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -713,6 +794,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -768,6 +857,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -821,6 +918,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

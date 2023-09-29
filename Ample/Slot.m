@@ -104,9 +104,12 @@ static NSDictionary *IndexMap = nil;
         @"nbd":        @21,
         @"nbe":        @22,
 
-        @"centronics": @23,
-        @"mdin":       @24,
-        @"mdout":      @25
+        @"pds":        @23,
+        @"pds030":     @24,
+
+        @"centronics": @25,
+        @"mdin":       @26,
+        @"mdout":      @27
     };
     static_assert(kSMARTPORT_SLOT == 1, "Smartport != 1");
     static_assert(kBIOS_SLOT == 2, "Bios != 2");

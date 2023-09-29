@@ -54,6 +54,36 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>pds</string>
+        <key>description</key>
+        <string>PDS</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>hyperdrive</string>
+            <key>description</key>
+            <string>GCC HyperDrive</string>
+            <key>devname</key>
+            <string>pds_hyper</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

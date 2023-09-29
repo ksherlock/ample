@@ -11,7 +11,7 @@
 #import "Media.h"
 
 /* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define SLOT_COUNT 26
+#define SLOT_COUNT 28
 static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 
 #define kSMARTPORT_SLOT 1

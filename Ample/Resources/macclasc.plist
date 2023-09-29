@@ -244,6 +244,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -297,6 +305,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -352,6 +368,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -405,6 +429,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -460,6 +492,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -513,6 +553,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

@@ -76,6 +76,31 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>pds</string>
+        <key>description</key>
+        <string>PDS</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>radiusfpd</string>
+            <key>description</key>
+            <string>Radius SE Full Page Display</string>
+            <key>devname</key>
+            <string>pds_sefp</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
@@ -244,6 +269,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -297,6 +330,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -352,6 +393,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -405,6 +454,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -460,6 +517,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -513,6 +578,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

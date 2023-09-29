@@ -92,6 +92,14 @@ EXCLUDE = set([
 	'maciivi',
 	'maciix',
 
+	'macct610',
+	'macct650',
+	'maclc3p',
+	'maclc475',
+	'maclc575',
+	'macqd610',
+	'macqd650',
+
 	'kb_pc83',
 
 # ROMs for CD Drives, etc, that are intentionally hidden
