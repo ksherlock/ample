@@ -418,6 +418,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>pdslc_macconlc</string>
+      <key>description</key>
+      <string>Asante MacCON i LC Ethernet card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>megast</string>
       <key>description</key>
       <string>Atari MEGA ST (USA)</string>
@@ -577,6 +583,12 @@
       <string>lx810l</string>
       <key>description</key>
       <string>Epson LX-810L</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pds30_emac</string>
+      <key>description</key>
+      <string>Farallon EtherMac 30i-TH Ethernet card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1090,6 +1102,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>nb_thungx</string>
+      <key>description</key>
+      <string>Radius Thunder IV GX video card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nb_rtpd</string>
       <key>description</key>
       <string>Radius Two Page Display video card</string>
@@ -1099,6 +1117,12 @@
       <string>nb_c264</string>
       <key>description</key>
       <string>RasterOps ColorBoard 264 video card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cv8lc</string>
+      <key>description</key>
+      <string>RasterOps ColorVue 8LC video card</string>
     </dict>
     <dict>
       <key>value</key>

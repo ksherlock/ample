@@ -401,6 +401,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ethermac30</string>
+            <key>description</key>
+            <string>Farallon EtherMac 30i-TH Ethernet card</string>
+            <key>devname</key>
+            <string>pds30_emac</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pc816</string>
             <key>description</key>
             <string>Lapis ProColor Server 8*16</string>
@@ -425,7 +433,7 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>cb264</string>
+            <string>cb264se30</string>
             <key>description</key>
             <string>RasterOps Colorboard 264/SE30</string>
             <key>devname</key>

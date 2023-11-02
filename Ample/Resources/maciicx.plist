@@ -496,6 +496,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX video card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
             <string>Radius Two Page Display video card</string>
@@ -646,6 +654,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX video card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
             <string>Radius Two Page Display video card</string>
@@ -793,6 +809,14 @@
               <key>pseudo_disk</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX video card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
           </dict>
           <dict>
             <key>value</key>
