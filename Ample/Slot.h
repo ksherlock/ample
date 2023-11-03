@@ -10,16 +10,6 @@
 #import <Cocoa/Cocoa.h>
 #import "Media.h"
 
-/* number of slot types.  bitmask used so should be < sizeof(unsigned *8) */
-#define SLOT_COUNT 28
-static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
-
-#define kSMARTPORT_SLOT 1
-#define kBIOS_SLOT 2
-
-#ifndef SIZEOF
-#define SIZEOF(x) (sizeof(x) / sizeof(x[0]))
-#endif
 
 //NS_ASSUME_NONNULL_BEGIN
 @class Slot, SlotOption, SlotTableCellView;
@@ -36,6 +26,7 @@ static_assert(SLOT_COUNT <= sizeof(unsigned) * 8, "too many slot types");
 @property (readonly) NSArray *menuItems;
 
 @property (readonly) SlotOption *selectedItem;
+@property (readonly) NSString *selectedValue;
 
 -(NSArray *)args;
 -(NSDictionary *)serialize;

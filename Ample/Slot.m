@@ -72,48 +72,6 @@ static NSArray *DeepCopyArray(NSArray *src) {
 
 @implementation Slot
 
-static NSDictionary *IndexMap = nil;
-+(void)load {
-    
-    IndexMap = @{
-        @"ramsize":    @0,
-        
-        @"smartport":  @1,
-        @"bios":       @2,
-
-        @"sl0":        @3,
-        @"sl1":        @4,
-        @"sl2":        @5,
-        @"sl3":        @6,
-        @"sl4":        @7,
-        @"sl5":        @8,
-        @"sl6":        @9,
-        @"sl7":        @10,
-        @"exp":        @11,
-        @"aux":        @12,
-        @"rs232":      @13,
-        @"gameio":     @14,
-        @"modem":      @15,
-        @"printer":    @16,
-
-        //nubus mac
-        @"nb9":        @17,
-        @"nba":        @18,
-        @"nbb":        @19,
-        @"nbc":        @20,
-        @"nbd":        @21,
-        @"nbe":        @22,
-
-        @"pds":        @23,
-        @"pds030":     @24,
-
-        @"centronics": @25,
-        @"mdin":       @26,
-        @"mdout":      @27
-    };
-    static_assert(kSMARTPORT_SLOT == 1, "Smartport != 1");
-    static_assert(kBIOS_SLOT == 2, "Bios != 2");
-}
 
 -(void)reset {
     [self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
@@ -171,7 +129,7 @@ static NSDictionary *IndexMap = nil;
     // { 'sl3' : 'uthernet' }
 
     // special case for smartport since the name isn't used.
-    if (_index == kSMARTPORT_SLOT) {
+    if ([_name isEqualToString: @"-smartport"]) {
         SlotOption *option = [_options objectAtIndex: _selectedIndex];
         [option reserialize: dict];
         return;
@@ -230,9 +188,14 @@ static NSDictionary *IndexMap = nil;
 
     [option buildMedia: &media];
     return media;
-
 }
 
+-(NSString *)selectedValue {
+
+    if (_selectedIndex < 0) return nil;
+    if (_selectedIndex >= [_options count]) return nil;
+    return [[_options objectAtIndex: _selectedIndex] value];
+}
 
 -(NSArray *)selectedChildren {
     if (_selectedIndex < 0) return nil;
@@ -288,21 +251,22 @@ static NSDictionary *IndexMap = nil;
     if (c != '-') _name = p;
 }
 
-
 -(instancetype)initWithDictionary: (NSDictionary *)data devices: (NSDictionary *)devices {
+    return [self initWithDictionary: data devices: devices index: 0];
+}
+
+-(instancetype)initWithDictionary: (NSDictionary *)data devices: (NSDictionary *)devices index: (NSInteger)index  {
 
     BOOL topLevel = NO;
     _selectedIndex = -1;
     _defaultIndex = -1;
-    _index = -1;
+    _index = index;
     
     _name = [data objectForKey: @"name"];
     _title = [data objectForKey: @"description"];
-    
-    NSNumber *x = [IndexMap objectForKey: _name];
-    if (x) {
+        
+    if (index < 0x10000) {
         topLevel = YES;
-        _index = [x integerValue];
         _name = [@"-" stringByAppendingString: _name];
         _title = [_title stringByAppendingString: @":"];
     }
@@ -310,14 +274,13 @@ static NSDictionary *IndexMap = nil;
     NSArray *op = [data objectForKey: @"options"];
     NSMutableArray *options = [NSMutableArray arrayWithCapacity: [op count]];
 
-    
-    NSInteger index = 0;
+    NSInteger ix = 0;
     for (NSDictionary *d in op) {
         SlotOption *o = [[SlotOption alloc] initWithDictionary: d devices: devices];
         if ([o isDefault]) {
-            _defaultIndex = index;
+            _defaultIndex = ix;
         }
-        ++index;
+        ++ix;
         if (topLevel) {
             [o setKeyPath: _name];
             NSArray *tmp = [o children];
@@ -338,36 +301,6 @@ static NSDictionary *IndexMap = nil;
     return self;
 }
 
-#if 0
--(instancetype)initWithName: (NSString *)name title: (NSString *)title data: (NSArray *)data {
-    
-    _name = [name copy];
-    _title = [title copy];
-    _selectedIndex = -1;
-    _defaultIndex = -1;
-    _index = -1;
-    
-    NSMutableArray *options = [NSMutableArray arrayWithCapacity: [data count]];
-    //NSMutableArray *menuItems = [NSMutableArray arrayWithCapacity: [data count]];
-
-    NSInteger index = 0;
-    for (NSDictionary *d in data) {
-        SlotOption *o = [[SlotOption alloc] initWithDictionary: d];
-        if ([o isDefault]) {
-            _defaultIndex = index;
-        }
-        ++index;
-        [options addObject: o];
-    }
-    _options = options;
-    //_menuItems = menuItems;
-    
-    _selectedIndex = _defaultIndex;
-    if (_selectedIndex < 0) _selectedIndex = 0;
-    
-    return self;
-}
-#endif
 
 -(NSArray *)menuItems {
     //if (_menuItems) return _menuItems;
@@ -406,7 +339,8 @@ static NSDictionary *IndexMap = nil;
 
     // [menu setItemArray: ] doesn't work prior to 10.14, apparently.
     [menu removeAllItems];
-    if (_index == kSMARTPORT_SLOT) {
+
+    if ([_name isEqualToString: @"-smartport"]) {
         //[menu setItemArray: @[]];
         [button setHidden: YES];
     } else {
@@ -630,7 +564,7 @@ NSDictionary *BuildDevices(NSArray *array) {
 
         NSArray *data = MapArray(slots, ^(id o){
             
-            Slot *s = [[Slot alloc] initWithDictionary: o devices: nil];
+            Slot *s = [[Slot alloc] initWithDictionary: o devices: nil index: 0];
             return s;
         });
         
@@ -658,9 +592,11 @@ NSArray *BuildSlots(NSString *name, NSDictionary *data) {
     NSMutableArray *rv = [NSMutableArray arrayWithCapacity: [slots count]];
 
     NSDictionary *devices = BuildDevices([data objectForKey: @"devices"]);
+
+    unsigned ix = 0;
     for (NSDictionary *d in slots) {
         
-        Slot *s = [[Slot alloc] initWithDictionary: d devices: devices];
+        Slot *s = [[Slot alloc] initWithDictionary: d devices: devices index: ++ix];
         [rv addObject: s];
     }
     

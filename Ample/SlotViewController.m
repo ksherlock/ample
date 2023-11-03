@@ -16,7 +16,7 @@
 
 #import <objc/runtime.h>
 
-
+#define MAX_SLOTS 32
 
 
 static unsigned RootKey = 0;
@@ -31,18 +31,13 @@ static unsigned RootKey = 0;
 @implementation SlotViewController {
     NSArray *_root;
 
-    unsigned _slots_explicit;
-    unsigned _slots_valid;
-    unsigned _slots_default;
-
-    Slot *_slot_object[SLOT_COUNT];
-    NSString *_slot_value[SLOT_COUNT]; // when explicitely set.
-
-    Media _slot_media[SLOT_COUNT];
+    Media _slot_media[MAX_SLOTS];
     Media _machine_media;
     
     NSDictionary *_machine_data;
-        
+
+    NSMutableDictionary *_slotValues;
+    
     IBOutlet NSPopover *_popover;
     
     BOOL _loadingBookmark;
@@ -55,6 +50,7 @@ static unsigned RootKey = 0;
     _root = @[];
     objc_setAssociatedObject(_outlineView, &RootKey, _root, OBJC_ASSOCIATION_RETAIN);
 
+    _slotValues = [NSMutableDictionary new];
 
     //[_outlineView setIndentationPerLevel: 2.0];
 }
@@ -66,16 +62,13 @@ static unsigned RootKey = 0;
     
     [_outlineView reloadData];
 
-    _slots_valid = 0;
-    _slots_explicit = 0;
-    _slots_default = 0;
+    [_slotValues removeAllObjects];
+    
     _machine_media = EmptyMedia;
     _machine_data = nil;
     
-    for (unsigned i = 0; i < SLOT_COUNT; ++i) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
         _slot_media[i] = EmptyMedia;
-        _slot_object[i] = nil;
-        _slot_value[i] = nil;
     }
 
     [self setResolution: NSMakeSize(0, 0)];
@@ -86,10 +79,8 @@ static unsigned RootKey = 0;
 
 -(void)loadMachine {
 
-    
     NSDictionary *d = MameMachine(_machine);
     
-
     if (!d) {
         [self resetMachine];
         return;
@@ -103,39 +94,33 @@ static unsigned RootKey = 0;
     }
     [self setResolution: res];
     
-    _slots_valid = 0;
-    //_slots_explicit = 0;
-    _slots_default = 0;
     
     _machine_media = MediaFromDictionary([d objectForKey: @"media"]);
 
     _machine_data = d;
     
-    for (unsigned i = 0; i < SLOT_COUNT; ++i) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
         _slot_media[i] = EmptyMedia;
-        _slot_object[i] = nil;
     }
-    
-    _slot_value[kBIOS_SLOT] = nil; // don't copy over to other machines.
 
     extern NSArray *BuildSlots(NSString *name, NSDictionary *data);
     _root = BuildSlots(_machine, d);
     objc_setAssociatedObject(_outlineView, &RootKey, _root, OBJC_ASSOCIATION_RETAIN);
     
     for (Slot *item in _root) {
-        NSInteger index = [item index];
-        if (index < 0) continue;
-        unsigned mask = 1 << index;
+        NSString *name = [item name];
+        NSInteger index = [item index] - 1;
+        if (index < 0 || index >= MAX_SLOTS) continue;
 
-        _slots_valid |= mask;
-        if ([item defaultIndex] >= 0)
-            _slots_default |= mask;
+        if ([name isEqualToString: @"-bios"]) continue;
         
-        if (_slot_value[index])
-            [item selectValue: _slot_value[index]];
-        
+        NSString *v = [_slotValues objectForKey: name];
+        if (v) {
+            [item selectValue: v];
+        }
+        // TODO -- reset to default index???
+
         _slot_media[index] = [item selectedMedia];
-        _slot_object[index] = item;
     }
 
 
@@ -165,12 +150,9 @@ static unsigned RootKey = 0;
    
     Media media = EmptyMedia;
     
-    unsigned mask = 1;
-    for (unsigned i = 0; i < SLOT_COUNT; ++i, mask <<= 1) {
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
 
-        if (_slots_valid & mask) {
-            MediaAdd(&media, &_slot_media[i]);
-        }
+        MediaAdd(&media, &_slot_media[i]);
     }
     // machine media last.
     MediaAdd(&media, &_machine_media);
@@ -196,34 +178,29 @@ static unsigned RootKey = 0;
 
     BOOL direct = YES;
     NSInteger index = [sender tag];
-    if (index < 0) return; //
     
-    if (index >= 0 && index < SLOT_COUNT) {
+    if (index < 0x10000) {
         direct = YES;
     } else {
         direct = NO;
         index &= ~0x10000;
     }
-    if (index >= SLOT_COUNT) return; //
-    unsigned mask = 1 << index;
-
-
-    // index 0 = ram = special case...
+    index--;
+    if (index < 0 || index >= MAX_SLOTS) return; //
     
     SlotOption *o = [[sender selectedItem] representedObject];
-    Slot *item = _slot_object[index];
+    Slot *item = [_root objectAtIndex: index];
 
     if (direct) {
-        _slots_explicit |= mask;
-        _slot_value[index] = [o value];
-        //_slots_default &= ~mask;
+        NSString *name = [item name];
+        NSString *value = [o value];
+        [_slotValues setObject: value forKey: name];
     }
     
     Media media = [item selectedMedia];
     if (!MediaEqual(&media, &_slot_media[index])) {
         _slot_media[index] = media;
         [self rebuildMedia];
-
     }
 
     // needs to reload children if expanded.
@@ -244,9 +221,9 @@ static unsigned RootKey = 0;
 #endif
     
     NSInteger index = [sender tag];
-    if (index < 0 || index >= SLOT_COUNT) return;
-    
-    Slot *item = _slot_object[index];
+    if (index <= 0 || index >= 0x10000) return;
+    index--;
+    Slot *item = [_root objectAtIndex: index];
 
     NSArray *children = [item selectedChildren];
     objc_setAssociatedObject(_childOutlineView, &RootKey, children, OBJC_ASSOCIATION_RETAIN);
@@ -266,15 +243,19 @@ static unsigned RootKey = 0;
 
 -(IBAction)resetSlots:(id)sender {
     
-    _slots_explicit = 0;
-    for (unsigned i = 0; i < SLOT_COUNT; ++i) {
+    
+    //_slots_explicit = 0;
+    for (unsigned i = 0; i < MAX_SLOTS; ++i) {
         _slot_media[i] = EmptyMedia;
-        _slot_value[i] = nil;
     }
     for (Slot *item in _root) {
+        NSString *name = [item name];
+        
+        [_slotValues removeObjectForKey: name];
+
         [item reset];
         // if children, reset them too...
-        NSInteger index = [item index];
+        NSInteger index = [item index] - 1;
         if (index < 0) continue;
         _slot_media[index] = [item selectedMedia];
     }
@@ -367,19 +348,19 @@ static unsigned RootKey = 0;
     for (Slot *item in _root) {
         [item reserialize: dict];
         
-        NSInteger index = [item index];
-        if (index >= 0 && index < SLOT_COUNT) {
-            unsigned mask = 1 << index;
-            
+        NSInteger index = [item index] - 1;
+        if (index >= 0 && index < MAX_SLOTS) {
+
+            NSString *name = [item name];
+            [_slotValues removeObjectForKey: name];
+
             if ([item defaultIndex] != [item selectedIndex]) {
-                _slots_explicit |= mask; // grrr.
-                _slot_value[index] = [[item selectedItem] value];
+                NSString *v = [item selectedValue];
+                if (v) [_slotValues setObject: v forKey: name];
             }
         
             _slot_media[index] = [item selectedMedia];
         }
-
-        ++index;
     }
     
     // need to do it here so it propogate to media view.
