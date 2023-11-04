@@ -63,7 +63,7 @@ my @args;
 # equal or changeable.
 if (scalar @rpaths == 1) {
 	exit(0) if $rpaths[0] eq $path;
-	push(@args, ("-change_rpath", ${rpaths[0]}, $path))
+	push(@args, ("-change", ${rpaths[0]}, $path))
 } else {
 
 	my @tmp;
