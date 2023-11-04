@@ -72,6 +72,18 @@ static NSArray *DeepCopyArray(NSArray *src) {
 
 @implementation Slot
 
+@synthesize type = _type;
+
+
+static NSDictionary *TypeMap = nil;
+
++(void)load {
+  TypeMap = @{
+      @"ramsize": @(kSlotRAM),
+      @"smartport": @(kSlotFDC),
+      @"bios": @(kSlotBIOS),
+  };
+}
 
 -(void)reset {
     [self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
@@ -129,7 +141,7 @@ static NSArray *DeepCopyArray(NSArray *src) {
     // { 'sl3' : 'uthernet' }
 
     // special case for smartport since the name isn't used.
-    if ([_name isEqualToString: @"-smartport"]) {
+    if (_type == kSlotFDC) {
         SlotOption *option = [_options objectAtIndex: _selectedIndex];
         [option reserialize: dict];
         return;
@@ -264,7 +276,11 @@ static NSArray *DeepCopyArray(NSArray *src) {
     
     _name = [data objectForKey: @"name"];
     _title = [data objectForKey: @"description"];
-        
+    
+    NSNumber *x = [TypeMap objectForKey: _name];
+    if (x) _type = [x intValue];
+    
+    
     if (index < 0x10000) {
         topLevel = YES;
         _name = [@"-" stringByAppendingString: _name];
@@ -340,7 +356,7 @@ static NSArray *DeepCopyArray(NSArray *src) {
     // [menu setItemArray: ] doesn't work prior to 10.14, apparently.
     [menu removeAllItems];
 
-    if ([_name isEqualToString: @"-smartport"]) {
+    if (_type == kSlotFDC) {
         //[menu setItemArray: @[]];
         [button setHidden: YES];
     } else {

@@ -112,7 +112,7 @@ static unsigned RootKey = 0;
         NSInteger index = [item index] - 1;
         if (index < 0 || index >= MAX_SLOTS) continue;
 
-        if ([name isEqualToString: @"-bios"]) continue;
+        if ([item type] == kSlotBIOS) continue;
         
         NSString *v = [_slotValues objectForKey: name];
         if (v) {
@@ -191,7 +191,7 @@ static unsigned RootKey = 0;
     SlotOption *o = [[sender selectedItem] representedObject];
     Slot *item = [_root objectAtIndex: index];
 
-    if (direct) {
+    if (direct && [item type] != kSlotBIOS) {
         NSString *name = [item name];
         NSString *value = [o value];
         [_slotValues setObject: value forKey: name];

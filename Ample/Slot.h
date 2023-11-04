@@ -15,6 +15,12 @@
 @class Slot, SlotOption, SlotTableCellView;
 
 
+typedef enum SlotType {
+    kSlotRAM = 1,
+    kSlotBIOS,
+    kSlotFDC,
+} SlotType;
+
 @interface Slot : NSObject<NSCopying>
 
 @property NSInteger defaultIndex;
@@ -24,6 +30,7 @@
 @property (readonly) NSString *name;
 @property (readonly) NSString *title;
 @property (readonly) NSArray *menuItems;
+@property (readonly) SlotType type;
 
 @property (readonly) SlotOption *selectedItem;
 @property (readonly) NSString *selectedValue;
