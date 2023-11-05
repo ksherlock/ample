@@ -14,6 +14,11 @@ sub help($) {
 	exit(shift);
 }
 
+sub uniq {
+	my %seen;
+	grep !$seen{$_}++, @_;
+}
+
 GetOptions("help" => \$help, "verbose" => \$verbose, "dry-run" => \$dry_run);
 help(0) if $help;
 $verbose = 1 if $dry_run;
@@ -51,6 +56,8 @@ while (<$fh>) {
 }
 close($fh);
 
+@rpaths = uniq(@rpaths);
+
 if ($verbose) {
 	print "current rpaths:\n";
 	foreach(@rpaths) {
@@ -60,11 +67,14 @@ if ($verbose) {
 
 my @args;
 
+# grrr... -change doesn't seem to work anymore.
 # equal or changeable.
 if (scalar @rpaths == 1) {
 	exit(0) if $rpaths[0] eq $path;
-	push(@args, ("-change", ${rpaths[0]}, $path))
-} else {
+#	push(@args, ("-change", ${rpaths[0]}, $path))
+}
+#} else {
+if (1) {
 
 	my @tmp;
 	@tmp = grep {$_ ne $path } @rpaths;
