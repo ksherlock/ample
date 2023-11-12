@@ -213,8 +213,11 @@ enum {
     NSBundle *bundle = [NSBundle mainBundle];
     NSFileManager *fm = [NSFileManager defaultManager];
 
+#ifdef AMPLE_LITE
+    NSURL *url = [bundle URLForResource: @"roms~extra" withExtension: @"plist"];
+#else
     NSURL *url = [bundle URLForResource: @"roms" withExtension: @"plist"];
-
+#endif
     NSArray *roms = [NSArray arrayWithContentsOfURL: url];
 
     NSURL *sd = SupportDirectory();

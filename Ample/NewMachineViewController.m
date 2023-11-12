@@ -27,7 +27,11 @@
     first++;
 
     NSBundle *bundle = [NSBundle mainBundle];
+#ifdef AMPLE_LITE
+    NSString *path = [bundle pathForResource: @"models~extra" ofType: @"plist"];
+#else
     NSString *path = [bundle pathForResource: @"models" ofType: @"plist"];
+#endif
     _data = [NSArray arrayWithContentsOfFile: path];
 
 }
