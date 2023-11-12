@@ -1,12 +1,13 @@
-import subprocess
-
-from plist import to_plist
 
 import xml.etree.ElementTree as ET
-
-from machines import MACHINES
-
 import re
+import sys
+import argparse
+
+from plist import to_plist
+from machines import MACHINES, MACHINES_EXTRA
+import mame
+
 
 apple1_children = None
 apple2_children = ["apple2", "apple2p", "apple2jp"]
@@ -46,7 +47,20 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 
 atari_st_children = ["st", "megast"]
 
-tree = [
+dec_vt_children = ["vt52", "vt100", "vt101", "vt102", "vt240"]
+dec_children = ["ds2100", "ds3100", "ds5k133", "pdp11qb", "pdp11ub", "pdp11ub2"]
+ibm_rt_children = ["rtpc010", "rtpc015", "rtpc020", "rtpc025", "rtpca25"]
+hp_9000_children = ["hp9k310", "hp9k320", "hp9k330", "hp9k332", "hp9k340", "hp9k360", "hp9k370", "hp9k380", "hp9k382"]
+intergraph_children = ["ip2000", "ip2400", "ip2500", "ip2700", "ip2800", "ip6000", "ip6400", "ip6700", "ip6800"]
+mips_children = ["rc2030", "rs2030", "rc3230", "rs3230"]
+sgi_children = ["indigo", "indigo2_4415", "indigo_r4000", "indigo_r4400", "indy_4610", "indy_4613", "indy_5015", "pi4d20", "pi4d25", "pi4d30", "pi4d35"]
+sony_children = ["nws3260", "nws3410", "nws1580", "nws5000x"]
+sun_children = [
+	"sun1", "sun2_50", "sun2_120", "sun3_50", "sun3_60", "sun3_110", "sun3_150", "sun3_260", "sun3_e", "sun3_80",
+	"sun4_40", "sun4_50", "sun4_20", "sun4_25", "sun4_65",
+]
+
+TREE = [
 	("Apple I", "apple1", apple1_children),
 	("Apple ][", "apple2", apple2_children),
 	("Apple IIe", "apple2e", apple2e_children),
@@ -63,18 +77,50 @@ tree = [
 	("Macintosh (II)", "maciix", mac_ii_children),
 	("Macintosh (Quadra)", None, mac_quadra_children),
 	("Macintosh (LC)", None, mac_lc_children),
-	("Atari ST", "st", atari_st_children)
+	("Atari ST", "st", atari_st_children),
 ]
 
-env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-st = subprocess.run(["../embedded/mame64", "-listfull", *MACHINES], check=True, capture_output=True, text=True, env=env)
+TREE_EXTRA = TREE + [
+	("DEC VT", None, dec_vt_children),
+	("DEC", None, dec_children),
+	("HP 9000", None, hp_9000_children),
+	("IBM RT", None, ibm_rt_children),
+	("Intergraph", None, intergraph_children),
+	("MIPS", None, mips_children),
+	("SGI", None, sgi_children),
+	("Sony", None, sony_children),
+	("SUN", None, sun_children),
+]
+
+
+
+extra = False
+machines = MACHINES
+tree = TREE
+
+
+p = argparse.ArgumentParser()
+p.add_argument('--extra', action='store_true')
+p.add_argument('machine', nargs="*")
+args = p.parse_args()
+
+extra = args.extra
+
+if extra:
+	machines = MACHINES_EXTRA
+	tree = TREE_EXTRA
+
+
 # Name:             Description:
 # apple2gs          "Apple IIgs (ROM03)"
 # apple2gsr0        "Apple IIgs (ROM00)"
 
 names = {}
 
-t = st.stdout
+#t = st.stdout
+
+t = mame.run("-listfull", *machines)
+
 lines = t.split("\n")
 lines.pop(0)
 for x in lines:
@@ -99,6 +145,7 @@ def make_children(clist):
 
 data = []
 
+
 for x in tree:
 	desc, value, children = x
 	tmp = { "description": desc }
@@ -107,7 +154,10 @@ for x in tree:
 
 	data.append(tmp)
 
-path = "../Ample/Resources/models.plist"
+if extra:
+	path = "../Ample/Resources/models~extra.plist"
+else:
+	path = "../Ample/Resources/models.plist"
 with open(path, "w") as f:
 	f.write(to_plist(data))
 

@@ -1,15 +1,13 @@
 import argparse
-import subprocess
-
-from plist import to_plist
 
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from os.path import splitext
 
 
-from machines import MACHINES
-
+from machines import MACHINES, MACHINES_EXTRA
+import mame
+from plist import to_plist
 
 
 # a2pcxport dependencies. not automatically included though
@@ -35,12 +33,18 @@ EXTRA_MACHINES = [
 
 p = argparse.ArgumentParser()
 p.add_argument('--full', action='store_true')
+p.add_argument('--extra', action='store_true')
 p.add_argument('machine', nargs="*")
 args = p.parse_args()
 
 # full = args.full
+extra = args.extra
 machines = args.machine
-if not machines: machines = [ *MACHINES, *EXTRA_MACHINES]
+if not machines:
+	if extra:
+		machines = [ *MACHINES_EXTRA, *EXTRA_MACHINES]
+	else:
+		machines = [ *MACHINES, *EXTRA_MACHINES]
 
 # roms stored in other files.
 xEXCLUDE = [
@@ -164,12 +168,7 @@ for m in machines:
 
 	print(m)
 
-	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
-	if st.returncode != 0:
-		print("mame error: {}".format(m))
-		exit(1)
-	xml = st.stdout
+	xml = mame.run(m, "-listxml")
 	root = ET.fromstring(xml)
 
 	data = {  }
@@ -213,5 +212,10 @@ ROMS.sort(key=lambda x: x.get('description'))
 
 
 # print(ROMS)
-with open("../Ample/Resources/roms.plist", "w") as f:
+if extra:
+	path = "../Ample/Resources/roms~extra.plist"
+else:
+	path = "../Ample/Resources/roms.plist"
+
+with open(path, "w") as f:
 	f.write(to_plist(ROMS))

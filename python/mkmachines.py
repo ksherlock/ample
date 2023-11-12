@@ -1,12 +1,13 @@
 import argparse
-import subprocess
+import hashlib
 
 from copy import deepcopy
 from plist import to_plist
 
 import xml.etree.ElementTree as ET
 
-from machines import MACHINES, SLOTS, SLOT_NAMES
+from machines import MACHINES, MACHINES_EXTRA, SLOTS, SLOT_NAMES
+import mame
 
 # macintosh errata:
 # maclc has scsi:1 - scsi:7 and lcpds slots, but none are currently configurable.
@@ -75,14 +76,7 @@ def load_machine(name):
 	rootname = name
 	if name in machine_cache: return machine_cache[name]
 
-	# print("    {}".format(name))
-	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	st = subprocess.run(["../embedded/mame64", name, "-listxml"], capture_output=True, env=env)
-	if st.returncode != 0:
-		print("mame error: {}".format(name))
-		return False
-
-	xml = st.stdout
+	xml = mame.run(name, "-listxml")
 	root = ET.fromstring(xml)
 
 	for x in root.findall("./machine"):
@@ -458,6 +452,7 @@ def make_ram(machine):
 	if len(options) == 0 and machine.get('name') == 'las3000':
 		options.append( { "intValue": 192, "description": "192K", "value": "192K", "default": True} )
 
+	if not options: return None
 
 	# sort and add empty starting entry.
 	options.sort(key=lambda x: x["intValue"])
@@ -598,15 +593,36 @@ def make_slot(m, slotname, nodes):
 	}
 
 
+def file_changed(path, data):
+	# check if a file has changed.
+
+	try:
+		with open(path, mode='rb') as f:
+			d1 = hashlib.file_digest(f, 'sha256')
+	except Exception as e:
+		return 'new'
+
+	d2 = hashlib.sha256(bytes(data, 'utf8'))
+
+	if d1.digest() == d2.digest(): return False
+	return 'updated'
+
+
 
 devices = {}
 
 p = argparse.ArgumentParser()
 p.add_argument('machine', nargs="*")
+p.add_argument('--extra', action='store_true')
 args = p.parse_args()
 
+extra = args.extra
 machines = args.machine
-if not machines: machines = MACHINES
+if not machines:
+	if extra:
+		machines = MACHINES_EXTRA
+	else:
+		machines = MACHINES
 
 for m in machines:
 
@@ -615,13 +631,6 @@ for m in machines:
 	machine = load_machine_recursive(m)
 	if not machine:
 		exit(1)
-	# env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	# st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
-	# if st.returncode != 0:
-	# 	print("mame error: {}".format(m))
-	# 	exit(1)
-	# xml = st.stdout
-	# root = ET.fromstring(xml)
 
 	data = {  }
 
@@ -637,6 +646,7 @@ for m in machines:
 
 	# node = machine.find('display[@tag="screen"]')
 	node = machine.find('./display')
+	#print('display:', node.get('tag'))
 	hscale = 2
 	if m[0:3] == "mac": hscale = 1
 	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
@@ -650,7 +660,8 @@ for m in machines:
 
 	# ss = {}
 	slots = []
-	slots.append(make_ram(machine))
+	x = make_ram(machine)
+	if x: slots.append(x)
 	x = make_bios(machine)
 	if x: slots.append(x)
 
@@ -684,8 +695,12 @@ for m in machines:
 
 
 	path = "../Ample/Resources/{}.plist".format(m)
+	pl = to_plist(data)
+	st = file_changed(path, pl)
+	if st == False: continue
+	print(m + ':', st)
 	with open(path, "w") as f:
-		f.write(to_plist(data))
+		f.write(pl)
 
 
 
