@@ -13,131 +13,31 @@
 		B608E1802502FE0C00D53465 /* TransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B608E17E2502FE0C00D53465 /* TransparentScroller.m */; };
 		B60A6E1424EE0AE2004B7EEF /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A6E1324EE0AE2004B7EEF /* FlippedView.m */; };
 		B61099E824F5F231005CB652 /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
-		B6109A1724F5F377005CB652 /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
-		B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EB24F5F36E005CB652 /* hkc8800a.plist */; };
-		B6109A1924F5F377005CB652 /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EC24F5F36E005CB652 /* apple2ees.plist */; };
-		B6109A1A24F5F377005CB652 /* microeng.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099ED24F5F36E005CB652 /* microeng.plist */; };
-		B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EE24F5F36E005CB652 /* uniap2pt.plist */; };
-		B6109A1C24F5F377005CB652 /* ivelultr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EF24F5F36E005CB652 /* ivelultr.plist */; };
-		B6109A1D24F5F377005CB652 /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
-		B6109A1E24F5F377005CB652 /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F124F5F36F005CB652 /* apple2c.plist */; };
-		B6109A1F24F5F377005CB652 /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
-		B6109A2024F5F377005CB652 /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F324F5F36F005CB652 /* apple2euk.plist */; };
-		B6109A2124F5F377005CB652 /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F424F5F36F005CB652 /* apple2ee.plist */; };
-		B6109A2224F5F377005CB652 /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
-		B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F624F5F36F005CB652 /* apple2gsr0.plist */; };
-		B6109A2424F5F377005CB652 /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
-		B6109A2524F5F377005CB652 /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F824F5F36F005CB652 /* laser2c.plist */; };
-		B6109A2624F5F377005CB652 /* mprof3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F924F5F370005CB652 /* mprof3.plist */; };
-		B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FA24F5F370005CB652 /* uniap2en.plist */; };
-		B6109A2824F5F377005CB652 /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FB24F5F370005CB652 /* apple2ep.plist */; };
-		B6109A2924F5F377005CB652 /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FC24F5F370005CB652 /* apple2gs.plist */; };
-		B6109A2A24F5F377005CB652 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FD24F5F370005CB652 /* apple3.plist */; };
-		B6109A2B24F5F377005CB652 /* elppa.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FE24F5F370005CB652 /* elppa.plist */; };
-		B6109A2C24F5F377005CB652 /* spectred.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FF24F5F371005CB652 /* spectred.plist */; };
-		B6109A2D24F5F377005CB652 /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0024F5F371005CB652 /* prav8m.plist */; };
-		B6109A2E24F5F377005CB652 /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0124F5F371005CB652 /* apple2eefr.plist */; };
-		B6109A2F24F5F377005CB652 /* uniap2ti.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0224F5F371005CB652 /* uniap2ti.plist */; };
-		B6109A3024F5F377005CB652 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
-		B6109A3124F5F377005CB652 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0424F5F372005CB652 /* apple1.plist */; };
-		B6109A3224F5F377005CB652 /* basis108.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0524F5F372005CB652 /* basis108.plist */; };
-		B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
-		B6109A3424F5F377005CB652 /* am64.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0724F5F372005CB652 /* am64.plist */; };
-		B6109A3524F5F377005CB652 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0824F5F373005CB652 /* ace100.plist */; };
-		B6109A3624F5F377005CB652 /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0924F5F373005CB652 /* dodo.plist */; };
-		B6109A3724F5F377005CB652 /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0A24F5F373005CB652 /* las128e2.plist */; };
-		B6109A3824F5F377005CB652 /* maxxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0B24F5F373005CB652 /* maxxi.plist */; };
-		B6109A3924F5F377005CB652 /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
-		B6109A3A24F5F377005CB652 /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
-		B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0E24F5F374005CB652 /* apple2gsr1.plist */; };
-		B6109A3C24F5F377005CB652 /* am100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0F24F5F374005CB652 /* am100.plist */; };
-		B6109A3D24F5F377005CB652 /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1024F5F375005CB652 /* laser128.plist */; };
-		B6109A3E24F5F377005CB652 /* albert.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1124F5F375005CB652 /* albert.plist */; };
-		B6109A3F24F5F377005CB652 /* agat9.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1224F5F375005CB652 /* agat9.plist */; };
-		B6109A4024F5F377005CB652 /* craft2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1324F5F375005CB652 /* craft2p.plist */; };
-		B6109A4124F5F377005CB652 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1424F5F376005CB652 /* apple2cp.plist */; };
-		B6109A4224F5F377005CB652 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
-		B6109A4324F5F377005CB652 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
 		B6152B5625F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
 		B6152B5725F4549F00605E6E /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5525F4549F00605E6E /* Slot.m */; };
 		B6152B5A25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
 		B6152B5B25F5B57E00605E6E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152B5925F5B57E00605E6E /* Media.m */; };
 		B615A99F26640940001FBF99 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E9A18125088B36005E7525 /* SlotView.xib */; };
 		B615A9A026640A70001FBF99 /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A17F25088B1B005E7525 /* SlotViewController.m */; };
-		B618B8C42729F6690045C2D8 /* laser128o.plist in Resources */ = {isa = PBXBuildFile; fileRef = B618B8C32729F6690045C2D8 /* laser128o.plist */; };
-		B618B8C52729F6690045C2D8 /* laser128o.plist in Resources */ = {isa = PBXBuildFile; fileRef = B618B8C32729F6690045C2D8 /* laser128o.plist */; };
-		B622BAD72AA1615700CCB38C /* macqd605.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD62AA1615700CCB38C /* macqd605.plist */; };
-		B622BAD82AA1615700CCB38C /* macqd605.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD62AA1615700CCB38C /* macqd605.plist */; };
-		B622BADA2AA1615D00CCB38C /* macqd630.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD92AA1615D00CCB38C /* macqd630.plist */; };
-		B622BADB2AA1615D00CCB38C /* macqd630.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD92AA1615D00CCB38C /* macqd630.plist */; };
-		B622BADE2AA1618000CCB38C /* maclc580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADC2AA1617F00CCB38C /* maclc580.plist */; };
-		B622BADF2AA1618000CCB38C /* maclc580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADC2AA1617F00CCB38C /* maclc580.plist */; };
-		B622BAE02AA1618000CCB38C /* maclc575.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADD2AA1617F00CCB38C /* maclc575.plist */; };
-		B622BAE12AA1618000CCB38C /* maclc575.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADD2AA1617F00CCB38C /* maclc575.plist */; };
-		B622BAE32AA1619F00CCB38C /* maclc475.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAE22AA1619F00CCB38C /* maclc475.plist */; };
-		B622BAE42AA1619F00CCB38C /* maclc475.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAE22AA1619F00CCB38C /* maclc475.plist */; };
 		B63005332666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
 		B63005342666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
-		B6301BE429107BE800495022 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE329107BE800495022 /* maclc520.plist */; };
-		B6301BE529107BE800495022 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE329107BE800495022 /* maclc520.plist */; };
-		B6301BE729107C1E00495022 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE629107C1E00495022 /* maccclas.plist */; };
-		B6301BE829107C1E00495022 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6301BE629107C1E00495022 /* maccclas.plist */; };
 		B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; };
 		B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09C26784A4800B23BFD /* Sparkle.framework */; };
 		B635C09F26784D4700B23BFD /* AmpleLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B635C09E26784D4700B23BFD /* AmpleLite.m */; };
 		B6374AC4260EBBCF0045CA16 /* pty_shell.c in Sources */ = {isa = PBXBuildFile; fileRef = B6374AB6260EBB970045CA16 /* pty_shell.c */; };
 		B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6374ABD260EBBC90045CA16 /* pty_shell */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B6374AD1260ECB400045CA16 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
-		B6374AD2260ECB400045CA16 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
-		B6374AD3260ECB400045CA16 /* macii.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACA260ECB3F0045CA16 /* macii.plist */; };
-		B6374AD4260ECB400045CA16 /* macii.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACA260ECB3F0045CA16 /* macii.plist */; };
-		B6374AD5260ECB400045CA16 /* maciisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACB260ECB3F0045CA16 /* maciisi.plist */; };
-		B6374AD6260ECB400045CA16 /* maciisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACB260ECB3F0045CA16 /* maciisi.plist */; };
-		B6374AD7260ECB400045CA16 /* maciivi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACC260ECB3F0045CA16 /* maciivi.plist */; };
-		B6374AD8260ECB400045CA16 /* maciivi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACC260ECB3F0045CA16 /* maciivi.plist */; };
-		B6374AD9260ECB400045CA16 /* maciicx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACD260ECB3F0045CA16 /* maciicx.plist */; };
-		B6374ADA260ECB400045CA16 /* maciicx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACD260ECB3F0045CA16 /* maciicx.plist */; };
-		B6374ADB260ECB400045CA16 /* maciix.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACE260ECB3F0045CA16 /* maciix.plist */; };
-		B6374ADC260ECB400045CA16 /* maciix.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACE260ECB3F0045CA16 /* maciix.plist */; };
-		B6374ADD260ECB400045CA16 /* maciivx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACF260ECB3F0045CA16 /* maciivx.plist */; };
-		B6374ADE260ECB400045CA16 /* maciivx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACF260ECB3F0045CA16 /* maciivx.plist */; };
-		B6374ADF260ECB400045CA16 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AD0260ECB400045CA16 /* macse30.plist */; };
-		B6374AE0260ECB400045CA16 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AD0260ECB400045CA16 /* macse30.plist */; };
-		B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE1260ECDDD0045CA16 /* maciihmu.plist */; };
-		B6374AE4260ECDDD0045CA16 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE1260ECDDD0045CA16 /* maciihmu.plist */; };
-		B6374AE5260ECDDD0045CA16 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */; };
-		B6374AE6260ECDDD0045CA16 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AE2260ECDDD0045CA16 /* mac2fdhd.plist */; };
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
-		B63C1B90250088DD00511A71 /* roms.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8F250088DC00511A71 /* roms.plist */; };
 		B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B9225008A2700511A71 /* DownloadWindowController.m */; };
 		B63C1B9525008A2700511A71 /* DownloadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B9225008A2700511A71 /* DownloadWindowController.m */; };
 		B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9325008A2700511A71 /* DownloadWindow.xib */; };
 		B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9325008A2700511A71 /* DownloadWindow.xib */; };
-		B63C1B9D250192D800511A71 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B98250192D700511A71 /* cece.plist */; };
-		B63C1B9E250192D800511A71 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B98250192D700511A71 /* cece.plist */; };
-		B63C1B9F250192D800511A71 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B99250192D700511A71 /* ceci.plist */; };
-		B63C1BA0250192D800511A71 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B99250192D700511A71 /* ceci.plist */; };
-		B63C1BA1250192D800511A71 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
-		B63C1BA2250192D800511A71 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
-		B63C1BA3250192D800511A71 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
-		B63C1BA4250192D800511A71 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
-		B63C1BA5250192D800511A71 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
-		B63C1BA6250192D800511A71 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
-		B63C1BA8250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
-		B63C1BA9250192E600511A71 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1BA7250192E600511A71 /* zijini.plist */; };
 		B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F0925B143C50016A611 /* CheatSheet.xib */; };
 		B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F0925B143C50016A611 /* CheatSheet.xib */; };
 		B63C1F0F25B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
 		B63C1F1025B1447C0016A611 /* CheatSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1F0E25B1447C0016A611 /* CheatSheetWindowController.m */; };
-		B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
-		B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B63C1F1125B147E10016A611 /* CheatSheet.html */; };
-		B63E57E22755AF2000F8B5D1 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
-		B63E57E32755AF2000F8B5D1 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
-		B646D10B263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
-		B646D10C263A5DF30014C586 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B646D10A263A5DF20014C586 /* ace1000.plist */; };
 		B64979C224EF6703008ABD20 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64979C124EF6703008ABD20 /* MediaViewController.m */; };
 		B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
 		B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64AF1EC250EC35B00A09B9B /* DiskImages.xib */; };
@@ -147,18 +47,8 @@
 		B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F5250ED5E400A09B9B /* TableCellView.m */; };
 		B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
-		B65085B925B616AC00354EC9 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B625B616AC00354EC9 /* maclc2.plist */; };
-		B65085BA25B616AC00354EC9 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B625B616AC00354EC9 /* maclc2.plist */; };
-		B65085BB25B616AC00354EC9 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
-		B65085BC25B616AC00354EC9 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
-		B65085BD25B616AC00354EC9 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B825B616AC00354EC9 /* maciici.plist */; };
-		B65085BE25B616AC00354EC9 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B825B616AC00354EC9 /* maciici.plist */; };
 		B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
-		B66116852A2535EF0038A3E2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
-		B66116862A2535EF0038A3E2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
-		B66116882A2535F60038A3E2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
-		B66116892A2535F60038A3E2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
 		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
@@ -168,6 +58,342 @@
 		B6665C1D265C639A00254939 /* Autocomplete.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6665C1A265C639900254939 /* Autocomplete.xib */; };
 		B66D0FE72611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
 		B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
+		B67877D22B01732600CFACF2 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEC2B016CD800251FA4 /* ace100.plist */; };
+		B67877D32B01732600CFACF2 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E322B016CEA00251FA4 /* ace1000.plist */; };
+		B67877D42B01732600CFACF2 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1B2B016CE500251FA4 /* agat7.plist */; };
+		B67877D52B01732600CFACF2 /* albert.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB02B016CCB00251FA4 /* albert.plist */; };
+		B67877D62B01732600CFACF2 /* am100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE12B016CD600251FA4 /* am100.plist */; };
+		B67877D72B01732600CFACF2 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC12B016CCF00251FA4 /* apple2.plist */; };
+		B67877D82B01732600CFACF2 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA12B016CC800251FA4 /* apple2cp.plist */; };
+		B67877D92B01732600CFACF2 /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0D2B016CE100251FA4 /* apple2ee.plist */; };
+		B67877DA2B01732600CFACF2 /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD72B016CD300251FA4 /* apple2ees.plist */; };
+		B67877DB2B01732600CFACF2 /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDD2B016CD500251FA4 /* apple2ep.plist */; };
+		B67877DC2B01732600CFACF2 /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBA2B016CCD00251FA4 /* apple2gs.plist */; };
+		B67877DD2B01732600CFACF2 /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD82B016CD400251FA4 /* apple2gsr1.plist */; };
+		B67877DE2B01732600CFACF2 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEB2B016CD800251FA4 /* apple2p.plist */; };
+		B67877DF2B01732600CFACF2 /* basis108.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E032B016CDE00251FA4 /* basis108.plist */; };
+		B67877E02B01732600CFACF2 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFE2B016CDD00251FA4 /* cece.plist */; };
+		B67877E12B01732600CFACF2 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896D9E2B016CC800251FA4 /* ceci.plist */; };
+		B67877E22B01732600CFACF2 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEE2B016CD900251FA4 /* CheatSheet.html */; };
+		B67877E32B01732600CFACF2 /* cz101.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E262B016CE700251FA4 /* cz101.plist */; };
+		B67877E42B01732600CFACF2 /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAC2B016CCA00251FA4 /* dodo.plist */; };
+		B67877E52B01732600CFACF2 /* ds5k133.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBC2B016CCE00251FA4 /* ds5k133.plist */; };
+		B67877E62B01732600CFACF2 /* ds2100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD12B016CD200251FA4 /* ds2100.plist */; };
+		B67877E72B01732600CFACF2 /* ds3100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1E2B016CE500251FA4 /* ds3100.plist */; };
+		B67877E82B01732600CFACF2 /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC52B016CD000251FA4 /* hkc8800a.plist */; };
+		B67877E92B01732600CFACF2 /* hp9k310.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF22B016CDA00251FA4 /* hp9k310.plist */; };
+		B67877EA2B01732600CFACF2 /* hp9k320.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF02B016CD900251FA4 /* hp9k320.plist */; };
+		B67877EB2B01732600CFACF2 /* hp9k330.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC62B016CD000251FA4 /* hp9k330.plist */; };
+		B67877EC2B01732600CFACF2 /* hp9k332.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC02B016CCF00251FA4 /* hp9k332.plist */; };
+		B67877ED2B01732600CFACF2 /* hp9k340.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD22B016CD200251FA4 /* hp9k340.plist */; };
+		B67877EE2B01732600CFACF2 /* hp9k360.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFB2B016CDC00251FA4 /* hp9k360.plist */; };
+		B67877EF2B01732600CFACF2 /* hp9k370.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2F2B016CEA00251FA4 /* hp9k370.plist */; };
+		B67877F02B01732600CFACF2 /* hp9k380.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB92B016CCD00251FA4 /* hp9k380.plist */; };
+		B67877F12B01732600CFACF2 /* hp9k382.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC42B016CCF00251FA4 /* hp9k382.plist */; };
+		B67877F22B01732600CFACF2 /* indigo_r4000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E162B016CE300251FA4 /* indigo_r4000.plist */; };
+		B67877F32B01732600CFACF2 /* indigo_r4400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E062B016CDF00251FA4 /* indigo_r4400.plist */; };
+		B67877F42B01732600CFACF2 /* indigo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E002B016CDE00251FA4 /* indigo.plist */; };
+		B67877F52B01732600CFACF2 /* indigo2_4415.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA82B016CCA00251FA4 /* indigo2_4415.plist */; };
+		B67877F62B01732600CFACF2 /* indy_4610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE22B016CD600251FA4 /* indy_4610.plist */; };
+		B67877F72B01732600CFACF2 /* indy_4613.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCE2B016CD100251FA4 /* indy_4613.plist */; };
+		B67877F82B01732600CFACF2 /* indy_5015.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD32B016CD300251FA4 /* indy_5015.plist */; };
+		B67877F92B01732600CFACF2 /* ip2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC22B016CCF00251FA4 /* ip2000.plist */; };
+		B67877FA2B01732600CFACF2 /* ip2400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E272B016CE800251FA4 /* ip2400.plist */; };
+		B67877FB2B01732600CFACF2 /* ip2500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD02B016CD200251FA4 /* ip2500.plist */; };
+		B67877FC2B01732600CFACF2 /* ip2700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E252B016CE700251FA4 /* ip2700.plist */; };
+		B67877FD2B01732600CFACF2 /* ip2800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD92B016CD400251FA4 /* ip2800.plist */; };
+		B67877FE2B01732600CFACF2 /* ip6000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E012B016CDE00251FA4 /* ip6000.plist */; };
+		B67877FF2B01732600CFACF2 /* ip6400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896D9D2B016CC700251FA4 /* ip6400.plist */; };
+		B67878002B01732600CFACF2 /* ip6700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBF2B016CCE00251FA4 /* ip6700.plist */; };
+		B67878012B01732600CFACF2 /* ip6800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E282B016CE800251FA4 /* ip6800.plist */; };
+		B67878022B01732600CFACF2 /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE72B016CD700251FA4 /* las128e2.plist */; };
+		B67878032B01732600CFACF2 /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2D2B016CE900251FA4 /* las3000.plist */; };
+		B67878042B01732600CFACF2 /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCF2B016CD200251FA4 /* laser128.plist */; };
+		B67878052B01732600CFACF2 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0A2B016CE000251FA4 /* mac2fdhd.plist */; };
+		B67878062B01732600CFACF2 /* mac512k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB12B016CCC00251FA4 /* mac512k.plist */; };
+		B67878072B01732600CFACF2 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF42B016CDA00251FA4 /* maccclas.plist */; };
+		B67878082B01732600CFACF2 /* macclasc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAA2B016CCA00251FA4 /* macclasc.plist */; };
+		B67878092B01732600CFACF2 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD42B016CD300251FA4 /* macct650.plist */; };
+		B678780A2B01732600CFACF2 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E052B016CDF00251FA4 /* maciici.plist */; };
+		B678780B2B01732600CFACF2 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA62B016CC900251FA4 /* maciihmu.plist */; };
+		B678780C2B01732600CFACF2 /* maciivi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF32B016CDA00251FA4 /* maciivi.plist */; };
+		B678780D2B01732600CFACF2 /* maciix.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEF2B016CD900251FA4 /* maciix.plist */; };
+		B678780E2B01732600CFACF2 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA92B016CCA00251FA4 /* maclc2.plist */; };
+		B678780F2B01732600CFACF2 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD62B016CD300251FA4 /* maclc3p.plist */; };
+		B67878102B01732600CFACF2 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E102B016CE200251FA4 /* maclc520.plist */; };
+		B67878112B01732600CFACF2 /* maclc575.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC72B016CD000251FA4 /* maclc575.plist */; };
+		B67878122B01732600CFACF2 /* macplus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2E2B016CE900251FA4 /* macplus.plist */; };
+		B67878132B01732600CFACF2 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF82B016CDB00251FA4 /* macqd610.plist */; };
+		B67878142B01732600CFACF2 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF92B016CDC00251FA4 /* macqd650.plist */; };
+		B67878152B01732600CFACF2 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0E2B016CE100251FA4 /* macqd800.plist */; };
+		B67878162B01732600CFACF2 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1A2B016CE400251FA4 /* macse30.plist */; };
+		B67878172B01732600CFACF2 /* maxxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E042B016CDF00251FA4 /* maxxi.plist */; };
+		B67878182B01732600CFACF2 /* microeng.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCB2B016CD100251FA4 /* microeng.plist */; };
+		B67878192B01732600CFACF2 /* models~extra.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDA2B016CD400251FA4 /* models~extra.plist */; };
+		B678781A2B01732600CFACF2 /* mprof3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE42B016CD600251FA4 /* mprof3.plist */; };
+		B678781B2B01732600CFACF2 /* nws3260.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC82B016CD000251FA4 /* nws3260.plist */; };
+		B678781C2B01732600CFACF2 /* nws3410.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E202B016CE600251FA4 /* nws3410.plist */; };
+		B678781D2B01732600CFACF2 /* pdp11qb.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA42B016CC900251FA4 /* pdp11qb.plist */; };
+		B678781E2B01732600CFACF2 /* pdp11ub.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAD2B016CCB00251FA4 /* pdp11ub.plist */; };
+		B678781F2B01732600CFACF2 /* pdp11ub2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBB2B016CCE00251FA4 /* pdp11ub2.plist */; };
+		B67878202B01732600CFACF2 /* pi4d20.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF62B016CDB00251FA4 /* pi4d20.plist */; };
+		B67878212B01732600CFACF2 /* pi4d25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB72B016CCD00251FA4 /* pi4d25.plist */; };
+		B67878222B01732600CFACF2 /* pi4d30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE02B016CD500251FA4 /* pi4d30.plist */; };
+		B67878232B01732600CFACF2 /* pi4d35.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDF2B016CD500251FA4 /* pi4d35.plist */; };
+		B67878242B01732600CFACF2 /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF12B016CDA00251FA4 /* prav8m.plist */; };
+		B67878252B01732600CFACF2 /* rc2030.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC92B016CD000251FA4 /* rc2030.plist */; };
+		B67878262B01732600CFACF2 /* rc3230.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E182B016CE400251FA4 /* rc3230.plist */; };
+		B67878272B01732600CFACF2 /* roms.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE92B016CD800251FA4 /* roms.plist */; };
+		B67878282B01732600CFACF2 /* roms~extra.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA02B016CC800251FA4 /* roms~extra.plist */; };
+		B67878292B01732600CFACF2 /* rs2030.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBE2B016CCE00251FA4 /* rs2030.plist */; };
+		B678782A2B01732600CFACF2 /* rs3230.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E112B016CE200251FA4 /* rs3230.plist */; };
+		B678782B2B01732600CFACF2 /* rtpc010.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAE2B016CCB00251FA4 /* rtpc010.plist */; };
+		B678782C2B01732600CFACF2 /* rtpc015.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAF2B016CCB00251FA4 /* rtpc015.plist */; };
+		B678782D2B01732600CFACF2 /* rtpc020.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB82B016CCD00251FA4 /* rtpc020.plist */; };
+		B678782E2B01732600CFACF2 /* rtpc025.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E192B016CE400251FA4 /* rtpc025.plist */; };
+		B678782F2B01732600CFACF2 /* rtpca25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFA2B016CDC00251FA4 /* rtpca25.plist */; };
+		B67878302B01732600CFACF2 /* spectred.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCA2B016CD100251FA4 /* spectred.plist */; };
+		B67878312B01732600CFACF2 /* tk3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCC2B016CD100251FA4 /* tk3000.plist */; };
+		B67878322B01732600CFACF2 /* uniap2pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E132B016CE200251FA4 /* uniap2pt.plist */; };
+		B67878332B01732600CFACF2 /* vt52.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0C2B016CE100251FA4 /* vt52.plist */; };
+		B67878342B01732600CFACF2 /* vt100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE32B016CD600251FA4 /* vt100.plist */; };
+		B67878352B01732600CFACF2 /* vt101.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB32B016CCC00251FA4 /* vt101.plist */; };
+		B67878362B01732600CFACF2 /* vt102.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E082B016CE000251FA4 /* vt102.plist */; };
+		B67878372B01732600CFACF2 /* vt240.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEA2B016CD800251FA4 /* vt240.plist */; };
+		B67878382B01732600CFACF2 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCD2B016CD100251FA4 /* zijini.plist */; };
+		B67878392B01732600CFACF2 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
+		B678783A2B01732600CFACF2 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
+		B678783B2B01732600CFACF2 /* agat9.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1224F5F375005CB652 /* agat9.plist */; };
+		B678783C2B01732600CFACF2 /* am64.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0724F5F372005CB652 /* am64.plist */; };
+		B678783D2B01732600CFACF2 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0424F5F372005CB652 /* apple1.plist */; };
+		B678783E2B01732600CFACF2 /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F124F5F36F005CB652 /* apple2c.plist */; };
+		B678783F2B01732600CFACF2 /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
+		B67878402B01732600CFACF2 /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0124F5F371005CB652 /* apple2eefr.plist */; };
+		B67878412B01732600CFACF2 /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
+		B67878422B01732600CFACF2 /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F324F5F36F005CB652 /* apple2euk.plist */; };
+		B67878432B01732600CFACF2 /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F624F5F36F005CB652 /* apple2gsr0.plist */; };
+		B67878442B01732600CFACF2 /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
+		B67878452B01732600CFACF2 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FD24F5F370005CB652 /* apple3.plist */; };
+		B67878462B01732600CFACF2 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
+		B67878472B01732600CFACF2 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
+		B67878482B01732600CFACF2 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
+		B67878492B01732600CFACF2 /* craft2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1324F5F375005CB652 /* craft2p.plist */; };
+		B678784A2B01732600CFACF2 /* elppa.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FE24F5F370005CB652 /* elppa.plist */; };
+		B678784B2B01732600CFACF2 /* ivelultr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EF24F5F36E005CB652 /* ivelultr.plist */; };
+		B678784C2B01732600CFACF2 /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
+		B678784D2B01732600CFACF2 /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F824F5F36F005CB652 /* laser2c.plist */; };
+		B678784E2B01732600CFACF2 /* laser128o.plist in Resources */ = {isa = PBXBuildFile; fileRef = B618B8C32729F6690045C2D8 /* laser128o.plist */; };
+		B678784F2B01732600CFACF2 /* mac128k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323D2605482400418375 /* mac128k.plist */; };
+		B67878502B01732600CFACF2 /* mac512ke.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323F2605482400418375 /* mac512ke.plist */; };
+		B67878512B01732600CFACF2 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
+		B67878522B01732600CFACF2 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
+		B67878532B01732600CFACF2 /* macii.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACA260ECB3F0045CA16 /* macii.plist */; };
+		B67878542B01732600CFACF2 /* maciicx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACD260ECB3F0045CA16 /* maciicx.plist */; };
+		B67878552B01732600CFACF2 /* maciisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACB260ECB3F0045CA16 /* maciisi.plist */; };
+		B67878562B01732600CFACF2 /* maciivx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACF260ECB3F0045CA16 /* maciivx.plist */; };
+		B67878572B01732600CFACF2 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
+		B67878582B01732600CFACF2 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
+		B67878592B01732600CFACF2 /* maclc475.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAE22AA1619F00CCB38C /* maclc475.plist */; };
+		B678785A2B01732600CFACF2 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
+		B678785B2B01732600CFACF2 /* maclc580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADC2AA1617F00CCB38C /* maclc580.plist */; };
+		B678785C2B01732600CFACF2 /* macqd605.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD62AA1615700CCB38C /* macqd605.plist */; };
+		B678785D2B01732600CFACF2 /* macqd630.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD92AA1615D00CCB38C /* macqd630.plist */; };
+		B678785E2B01732600CFACF2 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
+		B678785F2B01732600CFACF2 /* macse.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32432605482500418375 /* macse.plist */; };
+		B67878602B01732600CFACF2 /* macsefd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32402605482500418375 /* macsefd.plist */; };
+		B67878612B01732600CFACF2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
+		B67878622B01732600CFACF2 /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
+		B67878632B01732600CFACF2 /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
+		B67878642B01732600CFACF2 /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
+		B67878652B01732600CFACF2 /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
+		B67878662B01732600CFACF2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
+		B67878672B01732600CFACF2 /* uniap2en.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FA24F5F370005CB652 /* uniap2en.plist */; };
+		B67878682B01732600CFACF2 /* uniap2ti.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0224F5F371005CB652 /* uniap2ti.plist */; };
+		B67878692B01732700CFACF2 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEC2B016CD800251FA4 /* ace100.plist */; };
+		B678786A2B01732700CFACF2 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E322B016CEA00251FA4 /* ace1000.plist */; };
+		B678786B2B01732700CFACF2 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1B2B016CE500251FA4 /* agat7.plist */; };
+		B678786C2B01732700CFACF2 /* albert.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB02B016CCB00251FA4 /* albert.plist */; };
+		B678786D2B01732700CFACF2 /* am100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE12B016CD600251FA4 /* am100.plist */; };
+		B678786E2B01732700CFACF2 /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC12B016CCF00251FA4 /* apple2.plist */; };
+		B678786F2B01732700CFACF2 /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA12B016CC800251FA4 /* apple2cp.plist */; };
+		B67878702B01732700CFACF2 /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0D2B016CE100251FA4 /* apple2ee.plist */; };
+		B67878712B01732700CFACF2 /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD72B016CD300251FA4 /* apple2ees.plist */; };
+		B67878722B01732700CFACF2 /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDD2B016CD500251FA4 /* apple2ep.plist */; };
+		B67878732B01732700CFACF2 /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBA2B016CCD00251FA4 /* apple2gs.plist */; };
+		B67878742B01732700CFACF2 /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD82B016CD400251FA4 /* apple2gsr1.plist */; };
+		B67878752B01732700CFACF2 /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEB2B016CD800251FA4 /* apple2p.plist */; };
+		B67878762B01732700CFACF2 /* basis108.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E032B016CDE00251FA4 /* basis108.plist */; };
+		B67878772B01732700CFACF2 /* cece.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFE2B016CDD00251FA4 /* cece.plist */; };
+		B67878782B01732700CFACF2 /* ceci.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896D9E2B016CC800251FA4 /* ceci.plist */; };
+		B67878792B01732700CFACF2 /* CheatSheet.html in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEE2B016CD900251FA4 /* CheatSheet.html */; };
+		B678787A2B01732700CFACF2 /* cz101.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E262B016CE700251FA4 /* cz101.plist */; };
+		B678787B2B01732700CFACF2 /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAC2B016CCA00251FA4 /* dodo.plist */; };
+		B678787C2B01732700CFACF2 /* ds5k133.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBC2B016CCE00251FA4 /* ds5k133.plist */; };
+		B678787D2B01732700CFACF2 /* ds2100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD12B016CD200251FA4 /* ds2100.plist */; };
+		B678787E2B01732700CFACF2 /* ds3100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1E2B016CE500251FA4 /* ds3100.plist */; };
+		B678787F2B01732700CFACF2 /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC52B016CD000251FA4 /* hkc8800a.plist */; };
+		B67878802B01732700CFACF2 /* hp9k310.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF22B016CDA00251FA4 /* hp9k310.plist */; };
+		B67878812B01732700CFACF2 /* hp9k320.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF02B016CD900251FA4 /* hp9k320.plist */; };
+		B67878822B01732700CFACF2 /* hp9k330.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC62B016CD000251FA4 /* hp9k330.plist */; };
+		B67878832B01732700CFACF2 /* hp9k332.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC02B016CCF00251FA4 /* hp9k332.plist */; };
+		B67878842B01732700CFACF2 /* hp9k340.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD22B016CD200251FA4 /* hp9k340.plist */; };
+		B67878852B01732700CFACF2 /* hp9k360.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFB2B016CDC00251FA4 /* hp9k360.plist */; };
+		B67878862B01732700CFACF2 /* hp9k370.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2F2B016CEA00251FA4 /* hp9k370.plist */; };
+		B67878872B01732700CFACF2 /* hp9k380.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB92B016CCD00251FA4 /* hp9k380.plist */; };
+		B67878882B01732700CFACF2 /* hp9k382.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC42B016CCF00251FA4 /* hp9k382.plist */; };
+		B67878892B01732700CFACF2 /* indigo_r4000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E162B016CE300251FA4 /* indigo_r4000.plist */; };
+		B678788A2B01732700CFACF2 /* indigo_r4400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E062B016CDF00251FA4 /* indigo_r4400.plist */; };
+		B678788B2B01732700CFACF2 /* indigo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E002B016CDE00251FA4 /* indigo.plist */; };
+		B678788C2B01732700CFACF2 /* indigo2_4415.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA82B016CCA00251FA4 /* indigo2_4415.plist */; };
+		B678788D2B01732700CFACF2 /* indy_4610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE22B016CD600251FA4 /* indy_4610.plist */; };
+		B678788E2B01732700CFACF2 /* indy_4613.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCE2B016CD100251FA4 /* indy_4613.plist */; };
+		B678788F2B01732700CFACF2 /* indy_5015.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD32B016CD300251FA4 /* indy_5015.plist */; };
+		B67878902B01732700CFACF2 /* ip2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC22B016CCF00251FA4 /* ip2000.plist */; };
+		B67878912B01732700CFACF2 /* ip2400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E272B016CE800251FA4 /* ip2400.plist */; };
+		B67878922B01732700CFACF2 /* ip2500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD02B016CD200251FA4 /* ip2500.plist */; };
+		B67878932B01732700CFACF2 /* ip2700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E252B016CE700251FA4 /* ip2700.plist */; };
+		B67878942B01732700CFACF2 /* ip2800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD92B016CD400251FA4 /* ip2800.plist */; };
+		B67878952B01732700CFACF2 /* ip6000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E012B016CDE00251FA4 /* ip6000.plist */; };
+		B67878962B01732700CFACF2 /* ip6400.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896D9D2B016CC700251FA4 /* ip6400.plist */; };
+		B67878972B01732700CFACF2 /* ip6700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBF2B016CCE00251FA4 /* ip6700.plist */; };
+		B67878982B01732700CFACF2 /* ip6800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E282B016CE800251FA4 /* ip6800.plist */; };
+		B67878992B01732700CFACF2 /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE72B016CD700251FA4 /* las128e2.plist */; };
+		B678789A2B01732700CFACF2 /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2D2B016CE900251FA4 /* las3000.plist */; };
+		B678789B2B01732700CFACF2 /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCF2B016CD200251FA4 /* laser128.plist */; };
+		B678789C2B01732700CFACF2 /* mac2fdhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0A2B016CE000251FA4 /* mac2fdhd.plist */; };
+		B678789D2B01732700CFACF2 /* mac512k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB12B016CCC00251FA4 /* mac512k.plist */; };
+		B678789E2B01732700CFACF2 /* maccclas.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF42B016CDA00251FA4 /* maccclas.plist */; };
+		B678789F2B01732700CFACF2 /* macclasc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAA2B016CCA00251FA4 /* macclasc.plist */; };
+		B67878A02B01732700CFACF2 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD42B016CD300251FA4 /* macct650.plist */; };
+		B67878A12B01732700CFACF2 /* maciici.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E052B016CDF00251FA4 /* maciici.plist */; };
+		B67878A22B01732700CFACF2 /* maciihmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA62B016CC900251FA4 /* maciihmu.plist */; };
+		B67878A32B01732700CFACF2 /* maciivi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF32B016CDA00251FA4 /* maciivi.plist */; };
+		B67878A42B01732700CFACF2 /* maciix.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEF2B016CD900251FA4 /* maciix.plist */; };
+		B67878A52B01732700CFACF2 /* maclc2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA92B016CCA00251FA4 /* maclc2.plist */; };
+		B67878A62B01732700CFACF2 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DD62B016CD300251FA4 /* maclc3p.plist */; };
+		B67878A72B01732700CFACF2 /* maclc520.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E102B016CE200251FA4 /* maclc520.plist */; };
+		B67878A82B01732700CFACF2 /* maclc575.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC72B016CD000251FA4 /* maclc575.plist */; };
+		B67878A92B01732700CFACF2 /* macplus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E2E2B016CE900251FA4 /* macplus.plist */; };
+		B67878AA2B01732700CFACF2 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF82B016CDB00251FA4 /* macqd610.plist */; };
+		B67878AB2B01732700CFACF2 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF92B016CDC00251FA4 /* macqd650.plist */; };
+		B67878AC2B01732700CFACF2 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0E2B016CE100251FA4 /* macqd800.plist */; };
+		B67878AD2B01732700CFACF2 /* macse30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1A2B016CE400251FA4 /* macse30.plist */; };
+		B67878AE2B01732700CFACF2 /* maxxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E042B016CDF00251FA4 /* maxxi.plist */; };
+		B67878AF2B01732700CFACF2 /* microeng.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCB2B016CD100251FA4 /* microeng.plist */; };
+		B67878B02B01732700CFACF2 /* models~extra.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDA2B016CD400251FA4 /* models~extra.plist */; };
+		B67878B12B01732700CFACF2 /* mprof3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE42B016CD600251FA4 /* mprof3.plist */; };
+		B67878B22B01732700CFACF2 /* nws3260.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC82B016CD000251FA4 /* nws3260.plist */; };
+		B67878B32B01732700CFACF2 /* nws3410.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E202B016CE600251FA4 /* nws3410.plist */; };
+		B67878B42B01732700CFACF2 /* pdp11qb.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA42B016CC900251FA4 /* pdp11qb.plist */; };
+		B67878B52B01732700CFACF2 /* pdp11ub.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAD2B016CCB00251FA4 /* pdp11ub.plist */; };
+		B67878B62B01732700CFACF2 /* pdp11ub2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBB2B016CCE00251FA4 /* pdp11ub2.plist */; };
+		B67878B72B01732700CFACF2 /* pi4d20.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF62B016CDB00251FA4 /* pi4d20.plist */; };
+		B67878B82B01732700CFACF2 /* pi4d25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB72B016CCD00251FA4 /* pi4d25.plist */; };
+		B67878B92B01732700CFACF2 /* pi4d30.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE02B016CD500251FA4 /* pi4d30.plist */; };
+		B67878BA2B01732700CFACF2 /* pi4d35.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DDF2B016CD500251FA4 /* pi4d35.plist */; };
+		B67878BB2B01732700CFACF2 /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DF12B016CDA00251FA4 /* prav8m.plist */; };
+		B67878BC2B01732700CFACF2 /* rc2030.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DC92B016CD000251FA4 /* rc2030.plist */; };
+		B67878BD2B01732700CFACF2 /* rc3230.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E182B016CE400251FA4 /* rc3230.plist */; };
+		B67878BE2B01732700CFACF2 /* roms.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE92B016CD800251FA4 /* roms.plist */; };
+		B67878BF2B01732700CFACF2 /* roms~extra.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DA02B016CC800251FA4 /* roms~extra.plist */; };
+		B67878C02B01732700CFACF2 /* rs2030.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DBE2B016CCE00251FA4 /* rs2030.plist */; };
+		B67878C12B01732700CFACF2 /* rs3230.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E112B016CE200251FA4 /* rs3230.plist */; };
+		B67878C22B01732700CFACF2 /* rtpc010.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAE2B016CCB00251FA4 /* rtpc010.plist */; };
+		B67878C32B01732700CFACF2 /* rtpc015.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DAF2B016CCB00251FA4 /* rtpc015.plist */; };
+		B67878C42B01732700CFACF2 /* rtpc020.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB82B016CCD00251FA4 /* rtpc020.plist */; };
+		B67878C52B01732700CFACF2 /* rtpc025.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E192B016CE400251FA4 /* rtpc025.plist */; };
+		B67878C62B01732700CFACF2 /* rtpca25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DFA2B016CDC00251FA4 /* rtpca25.plist */; };
+		B67878C72B01732700CFACF2 /* spectred.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCA2B016CD100251FA4 /* spectred.plist */; };
+		B67878C82B01732700CFACF2 /* tk3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCC2B016CD100251FA4 /* tk3000.plist */; };
+		B67878C92B01732700CFACF2 /* uniap2pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E132B016CE200251FA4 /* uniap2pt.plist */; };
+		B67878CA2B01732700CFACF2 /* vt52.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E0C2B016CE100251FA4 /* vt52.plist */; };
+		B67878CB2B01732700CFACF2 /* vt100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DE32B016CD600251FA4 /* vt100.plist */; };
+		B67878CC2B01732700CFACF2 /* vt101.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DB32B016CCC00251FA4 /* vt101.plist */; };
+		B67878CD2B01732700CFACF2 /* vt102.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E082B016CE000251FA4 /* vt102.plist */; };
+		B67878CE2B01732700CFACF2 /* vt240.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEA2B016CD800251FA4 /* vt240.plist */; };
+		B67878CF2B01732700CFACF2 /* zijini.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DCD2B016CD100251FA4 /* zijini.plist */; };
+		B67878D02B01732700CFACF2 /* ace500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63E57E12755AF1F00F8B5D1 /* ace500.plist */; };
+		B67878D12B01732700CFACF2 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
+		B67878D22B01732700CFACF2 /* agat9.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1224F5F375005CB652 /* agat9.plist */; };
+		B67878D32B01732700CFACF2 /* am64.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0724F5F372005CB652 /* am64.plist */; };
+		B67878D42B01732700CFACF2 /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0424F5F372005CB652 /* apple1.plist */; };
+		B67878D52B01732700CFACF2 /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F124F5F36F005CB652 /* apple2c.plist */; };
+		B67878D62B01732700CFACF2 /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
+		B67878D72B01732700CFACF2 /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0124F5F371005CB652 /* apple2eefr.plist */; };
+		B67878D82B01732700CFACF2 /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
+		B67878D92B01732700CFACF2 /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F324F5F36F005CB652 /* apple2euk.plist */; };
+		B67878DA2B01732700CFACF2 /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F624F5F36F005CB652 /* apple2gsr0.plist */; };
+		B67878DB2B01732700CFACF2 /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
+		B67878DC2B01732700CFACF2 /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FD24F5F370005CB652 /* apple3.plist */; };
+		B67878DD2B01732700CFACF2 /* cec2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9B250192D800511A71 /* cec2000.plist */; };
+		B67878DE2B01732700CFACF2 /* cecg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9A250192D700511A71 /* cecg.plist */; };
+		B67878DF2B01732700CFACF2 /* cecm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9C250192D800511A71 /* cecm.plist */; };
+		B67878E02B01732700CFACF2 /* craft2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1324F5F375005CB652 /* craft2p.plist */; };
+		B67878E12B01732700CFACF2 /* elppa.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FE24F5F370005CB652 /* elppa.plist */; };
+		B67878E22B01732700CFACF2 /* ivelultr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EF24F5F36E005CB652 /* ivelultr.plist */; };
+		B67878E32B01732700CFACF2 /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
+		B67878E42B01732700CFACF2 /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F824F5F36F005CB652 /* laser2c.plist */; };
+		B67878E52B01732700CFACF2 /* laser128o.plist in Resources */ = {isa = PBXBuildFile; fileRef = B618B8C32729F6690045C2D8 /* laser128o.plist */; };
+		B67878E62B01732700CFACF2 /* mac128k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323D2605482400418375 /* mac128k.plist */; };
+		B67878E72B01732700CFACF2 /* mac512ke.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323F2605482400418375 /* mac512ke.plist */; };
+		B67878E82B01732700CFACF2 /* macclas2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374AC9260ECB3F0045CA16 /* macclas2.plist */; };
+		B67878E92B01732700CFACF2 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
+		B67878EA2B01732700CFACF2 /* macii.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACA260ECB3F0045CA16 /* macii.plist */; };
+		B67878EB2B01732700CFACF2 /* maciicx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACD260ECB3F0045CA16 /* maciicx.plist */; };
+		B67878EC2B01732700CFACF2 /* maciisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACB260ECB3F0045CA16 /* maciisi.plist */; };
+		B67878ED2B01732700CFACF2 /* maciivx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6374ACF260ECB3F0045CA16 /* maciivx.plist */; };
+		B67878EE2B01732700CFACF2 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
+		B67878EF2B01732700CFACF2 /* maclc3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65085B725B616AC00354EC9 /* maclc3.plist */; };
+		B67878F02B01732700CFACF2 /* maclc475.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAE22AA1619F00CCB38C /* maclc475.plist */; };
+		B67878F12B01732700CFACF2 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
+		B67878F22B01732700CFACF2 /* maclc580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BADC2AA1617F00CCB38C /* maclc580.plist */; };
+		B67878F32B01732700CFACF2 /* macqd605.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD62AA1615700CCB38C /* macqd605.plist */; };
+		B67878F42B01732700CFACF2 /* macqd630.plist in Resources */ = {isa = PBXBuildFile; fileRef = B622BAD92AA1615D00CCB38C /* macqd630.plist */; };
+		B67878F52B01732700CFACF2 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
+		B67878F62B01732700CFACF2 /* macse.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32432605482500418375 /* macse.plist */; };
+		B67878F72B01732700CFACF2 /* macsefd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32402605482500418375 /* macsefd.plist */; };
+		B67878F82B01732700CFACF2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
+		B67878F92B01732700CFACF2 /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
+		B67878FA2B01732700CFACF2 /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
+		B67878FB2B01732700CFACF2 /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
+		B67878FC2B01732700CFACF2 /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
+		B67878FD2B01732700CFACF2 /* st.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116842A2535EF0038A3E2 /* st.plist */; };
+		B67878FE2B01732700CFACF2 /* uniap2en.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FA24F5F370005CB652 /* uniap2en.plist */; };
+		B67878FF2B01732700CFACF2 /* uniap2ti.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0224F5F371005CB652 /* uniap2ti.plist */; };
+		B67879022B0195C200CFACF2 /* nws1580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879002B0195C100CFACF2 /* nws1580.plist */; };
+		B67879032B0195C200CFACF2 /* nws1580.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879002B0195C100CFACF2 /* nws1580.plist */; };
+		B67879042B0195C200CFACF2 /* nws5000x.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879012B0195C100CFACF2 /* nws5000x.plist */; };
+		B67879052B0195C200CFACF2 /* nws5000x.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879012B0195C100CFACF2 /* nws5000x.plist */; };
+		B67879152B0195DB00CFACF2 /* sun3_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879062B0195D800CFACF2 /* sun3_50.plist */; };
+		B67879162B0195DB00CFACF2 /* sun3_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879062B0195D800CFACF2 /* sun3_50.plist */; };
+		B67879172B0195DB00CFACF2 /* sun1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879072B0195D800CFACF2 /* sun1.plist */; };
+		B67879182B0195DB00CFACF2 /* sun1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879072B0195D800CFACF2 /* sun1.plist */; };
+		B67879192B0195DB00CFACF2 /* sun2_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879082B0195D800CFACF2 /* sun2_50.plist */; };
+		B678791A2B0195DB00CFACF2 /* sun2_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879082B0195D800CFACF2 /* sun2_50.plist */; };
+		B678791B2B0195DB00CFACF2 /* sun4_20.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879092B0195D800CFACF2 /* sun4_20.plist */; };
+		B678791C2B0195DB00CFACF2 /* sun4_20.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879092B0195D800CFACF2 /* sun4_20.plist */; };
+		B678791D2B0195DB00CFACF2 /* sun3_80.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790A2B0195D900CFACF2 /* sun3_80.plist */; };
+		B678791E2B0195DB00CFACF2 /* sun3_80.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790A2B0195D900CFACF2 /* sun3_80.plist */; };
+		B678791F2B0195DB00CFACF2 /* sun3_e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790B2B0195D900CFACF2 /* sun3_e.plist */; };
+		B67879202B0195DB00CFACF2 /* sun3_e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790B2B0195D900CFACF2 /* sun3_e.plist */; };
+		B67879212B0195DB00CFACF2 /* sun4_25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790C2B0195D900CFACF2 /* sun4_25.plist */; };
+		B67879222B0195DB00CFACF2 /* sun4_25.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790C2B0195D900CFACF2 /* sun4_25.plist */; };
+		B67879232B0195DB00CFACF2 /* sun4_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790D2B0195D900CFACF2 /* sun4_50.plist */; };
+		B67879242B0195DB00CFACF2 /* sun4_50.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790D2B0195D900CFACF2 /* sun4_50.plist */; };
+		B67879252B0195DB00CFACF2 /* sun4_65.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790E2B0195D900CFACF2 /* sun4_65.plist */; };
+		B67879262B0195DB00CFACF2 /* sun4_65.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790E2B0195D900CFACF2 /* sun4_65.plist */; };
+		B67879272B0195DB00CFACF2 /* sun3_150.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790F2B0195DA00CFACF2 /* sun3_150.plist */; };
+		B67879282B0195DB00CFACF2 /* sun3_150.plist in Resources */ = {isa = PBXBuildFile; fileRef = B678790F2B0195DA00CFACF2 /* sun3_150.plist */; };
+		B67879292B0195DB00CFACF2 /* sun3_60.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879102B0195DA00CFACF2 /* sun3_60.plist */; };
+		B678792A2B0195DB00CFACF2 /* sun3_60.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879102B0195DA00CFACF2 /* sun3_60.plist */; };
+		B678792B2B0195DB00CFACF2 /* sun3_110.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879112B0195DA00CFACF2 /* sun3_110.plist */; };
+		B678792C2B0195DB00CFACF2 /* sun3_110.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879112B0195DA00CFACF2 /* sun3_110.plist */; };
+		B678792D2B0195DB00CFACF2 /* sun3_260.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879122B0195DA00CFACF2 /* sun3_260.plist */; };
+		B678792E2B0195DB00CFACF2 /* sun3_260.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879122B0195DA00CFACF2 /* sun3_260.plist */; };
+		B678792F2B0195DB00CFACF2 /* sun4_40.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879132B0195DA00CFACF2 /* sun4_40.plist */; };
+		B67879302B0195DB00CFACF2 /* sun4_40.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879132B0195DA00CFACF2 /* sun4_40.plist */; };
+		B67879312B0195DB00CFACF2 /* sun2_120.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879142B0195DB00CFACF2 /* sun2_120.plist */; };
+		B67879322B0195DB00CFACF2 /* sun2_120.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67879142B0195DB00CFACF2 /* sun2_120.plist */; };
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
@@ -175,26 +401,8 @@
 		B68A899126BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
 		B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
 		B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
-		B6939C1A2A747B790025D891 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C162A747B790025D891 /* macqd800.plist */; };
-		B6939C1B2A747B790025D891 /* macqd800.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C162A747B790025D891 /* macqd800.plist */; };
-		B6939C1C2A747B790025D891 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C172A747B790025D891 /* macqd610.plist */; };
-		B6939C1D2A747B790025D891 /* macqd610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C172A747B790025D891 /* macqd610.plist */; };
-		B6939C1E2A747B790025D891 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
-		B6939C1F2A747B790025D891 /* macqd700.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C182A747B790025D891 /* macqd700.plist */; };
-		B6939C202A747B790025D891 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C192A747B790025D891 /* macqd650.plist */; };
-		B6939C212A747B790025D891 /* macqd650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C192A747B790025D891 /* macqd650.plist */; };
-		B6939C232A747B950025D891 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
-		B6939C242A747B950025D891 /* maclc550.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C222A747B950025D891 /* maclc550.plist */; };
-		B6939C262A747BA30025D891 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C252A747BA30025D891 /* maclc3p.plist */; };
-		B6939C272A747BA30025D891 /* maclc3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C252A747BA30025D891 /* maclc3p.plist */; };
-		B6939C2A2A747BBF0025D891 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C282A747BBE0025D891 /* macct650.plist */; };
-		B6939C2B2A747BBF0025D891 /* macct650.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C282A747BBE0025D891 /* macct650.plist */; };
-		B6939C2C2A747BBF0025D891 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
-		B6939C2D2A747BBF0025D891 /* macct610.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6939C292A747BBE0025D891 /* macct610.plist */; };
 		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
-		B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
-		B6ABF47D275986EB00DC3D48 /* ace2200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6ABF47B275986EA00DC3D48 /* ace2200.plist */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -205,8 +413,6 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
-		B6DD1FE825B407E7004A3242 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
-		B6DD1FE925B407E7004A3242 /* maclc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD1FE725B407E6004A3242 /* maclc.plist */; };
 		B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */; };
@@ -225,27 +431,12 @@
 		B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCA2505A86E0093587A /* eject-hover-16x16@3x.png */; };
 		B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
 		B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECCB2505A86E0093587A /* eject-16x16.png */; };
-		B6DE323325FE7BD400418375 /* tk3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323225FE7BD400418375 /* tk3000.plist */; };
 		B6DE323626044C1100418375 /* caution@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323426044C1000418375 /* caution@2x.png */; };
 		B6DE323726044C1100418375 /* caution@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323426044C1000418375 /* caution@2x.png */; };
 		B6DE323826044C1100418375 /* caution.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323526044C1100418375 /* caution.png */; };
 		B6DE323926044C1100418375 /* caution.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323526044C1100418375 /* caution.png */; };
 		B6DE323B26044DB800418375 /* caution@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323A26044DB800418375 /* caution@3x.png */; };
 		B6DE323C26044DB800418375 /* caution@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323A26044DB800418375 /* caution@3x.png */; };
-		B6DE32442605482500418375 /* mac128k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323D2605482400418375 /* mac128k.plist */; };
-		B6DE32452605482500418375 /* mac128k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323D2605482400418375 /* mac128k.plist */; };
-		B6DE32462605482500418375 /* macclasc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323E2605482400418375 /* macclasc.plist */; };
-		B6DE32472605482500418375 /* macclasc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323E2605482400418375 /* macclasc.plist */; };
-		B6DE32482605482500418375 /* mac512ke.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323F2605482400418375 /* mac512ke.plist */; };
-		B6DE32492605482500418375 /* mac512ke.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE323F2605482400418375 /* mac512ke.plist */; };
-		B6DE324A2605482500418375 /* macsefd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32402605482500418375 /* macsefd.plist */; };
-		B6DE324B2605482500418375 /* macsefd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32402605482500418375 /* macsefd.plist */; };
-		B6DE324C2605482500418375 /* macplus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32412605482500418375 /* macplus.plist */; };
-		B6DE324D2605482500418375 /* macplus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32412605482500418375 /* macplus.plist */; };
-		B6DE324E2605482500418375 /* mac512k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32422605482500418375 /* mac512k.plist */; };
-		B6DE324F2605482500418375 /* mac512k.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32422605482500418375 /* mac512k.plist */; };
-		B6DE32502605482500418375 /* macse.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32432605482500418375 /* macse.plist */; };
-		B6DE32512605482500418375 /* macse.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32432605482500418375 /* macse.plist */; };
 		B6E08076252574690075F4E1 /* vmnet_helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6841BD0251EC913006A5C39 /* vmnet_helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6E4B5B024FDE2670094A35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA258724E99BEB005FB8FF /* main.m */; };
 		B6E4B5B124FDE2670094A35C /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
@@ -254,59 +445,14 @@
 		B6E4B5B524FDE2670094A35C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
 		B6E4B5B624FDE2670094A35C /* LogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6004DEE24FB05D600D38596 /* LogWindowController.m */; };
 		B6E4B5B724FDE2670094A35C /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
-		B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0624F5F372005CB652 /* apple2eeuk.plist */; };
-		B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F724F5F36F005CB652 /* las128ex.plist */; };
-		B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
-		B6E4B5BF24FDE2670094A35C /* agat9.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1224F5F375005CB652 /* agat9.plist */; };
 		B6E4B5C024FDE2670094A35C /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
-		B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0424F5F372005CB652 /* apple1.plist */; };
-		B6E4B5C224FDE2670094A35C /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0824F5F373005CB652 /* ace100.plist */; };
-		B6E4B5C324FDE2670094A35C /* am64.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0724F5F372005CB652 /* am64.plist */; };
 		B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6004DEF24FB05D600D38596 /* LogWindow.xib */; };
 		B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258124E99BEB005FB8FF /* Assets.xcassets */; };
-		B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EA24F5F36E005CB652 /* apple2e.plist */; };
-		B6E4B5C724FDE2670094A35C /* am100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0F24F5F374005CB652 /* am100.plist */; };
-		B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F824F5F36F005CB652 /* laser2c.plist */; };
-		B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1024F5F375005CB652 /* laser128.plist */; };
-		B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FB24F5F370005CB652 /* apple2ep.plist */; };
-		B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EC24F5F36E005CB652 /* apple2ees.plist */; };
-		B6E4B5CC24FDE2670094A35C /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
-		B6E4B5CD24FDE2670094A35C /* ivelultr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EF24F5F36E005CB652 /* ivelultr.plist */; };
-		B6E4B5CE24FDE2670094A35C /* maxxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0B24F5F373005CB652 /* maxxi.plist */; };
-		B6E4B5CF24FDE2670094A35C /* apple2eefr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0124F5F371005CB652 /* apple2eefr.plist */; };
-		B6E4B5D124FDE2670094A35C /* spectred.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FF24F5F371005CB652 /* spectred.plist */; };
-		B6E4B5D224FDE2670094A35C /* apple2cp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1424F5F376005CB652 /* apple2cp.plist */; };
 		B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BA258324E99BEB005FB8FF /* MainMenu.xib */; };
-		B6E4B5D424FDE2670094A35C /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
-		B6E4B5D524FDE2670094A35C /* apple2euk.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F324F5F36F005CB652 /* apple2euk.plist */; };
-		B6E4B5D624FDE2670094A35C /* uniap2ti.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0224F5F371005CB652 /* uniap2ti.plist */; };
-		B6E4B5D724FDE2670094A35C /* apple2c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F124F5F36F005CB652 /* apple2c.plist */; };
-		B6E4B5D824FDE2670094A35C /* microeng.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099ED24F5F36E005CB652 /* microeng.plist */; };
-		B6E4B5D924FDE2670094A35C /* albert.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1124F5F375005CB652 /* albert.plist */; };
 		B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
-		B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1524F5F376005CB652 /* apple2p.plist */; };
-		B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EB24F5F36E005CB652 /* hkc8800a.plist */; };
-		B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F624F5F36F005CB652 /* apple2gsr0.plist */; };
-		B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F924F5F370005CB652 /* mprof3.plist */; };
-		B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0524F5F372005CB652 /* basis108.plist */; };
-		B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1624F5F376005CB652 /* agat7.plist */; };
-		B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FE24F5F370005CB652 /* elppa.plist */; };
-		B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0E24F5F374005CB652 /* apple2gsr1.plist */; };
 		B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
-		B6E4B5E424FDE2670094A35C /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
-		B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A1324F5F375005CB652 /* craft2p.plist */; };
-		B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099EE24F5F36E005CB652 /* uniap2pt.plist */; };
-		B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0A24F5F373005CB652 /* las128e2.plist */; };
 		B6E4B5E824FDE2670094A35C /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61099E524F5F230005CB652 /* MediaView.xib */; };
-		B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FA24F5F370005CB652 /* uniap2en.plist */; };
-		B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FD24F5F370005CB652 /* apple3.plist */; };
-		B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F424F5F36F005CB652 /* apple2ee.plist */; };
-		B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0924F5F373005CB652 /* dodo.plist */; };
 		B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3724FAC8B500661A5F /* Preferences.xib */; };
-		B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099FC24F5F370005CB652 /* apple2gs.plist */; };
-		B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F224F5F36F005CB652 /* apple2jp.plist */; };
-		B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0324F5F371005CB652 /* apple2.plist */; };
-		B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0024F5F371005CB652 /* prav8m.plist */; };
 		B6E6DCEB27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */; };
 		B6E6DCEC27AEE15F00E0A76E /* Ample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E6DCE927AEE15F00E0A76E /* Ample.xcdatamodeld */; };
 		B6E6DCF727B0873200E0A76E /* BookmarkWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E6DCF527B0873100E0A76E /* BookmarkWindow.xib */; };
@@ -327,8 +473,6 @@
 		B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F7B536266FDA5B00624C6B /* MachineView.xib */; };
 		B6F7B53C267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
 		B6F7B53D267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
-		B6FECAFB28C0093600E143DA /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECAFA28C0093600E143DA /* las3000.plist */; };
-		B6FECAFC28C0093600E143DA /* las3000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECAFA28C0093600E143DA /* las3000.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -517,9 +661,129 @@
 		B6665C1B265C639900254939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Autocomplete.xib; sourceTree = "<group>"; };
 		B66D0FE62611386B000902F1 /* SoftwareList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareList.m; sourceTree = "<group>"; };
 		B66D0FE926113AA8000902F1 /* SoftwareList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftwareList.h; sourceTree = "<group>"; };
+		B67879002B0195C100CFACF2 /* nws1580.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws1580.plist; sourceTree = "<group>"; };
+		B67879012B0195C100CFACF2 /* nws5000x.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws5000x.plist; sourceTree = "<group>"; };
+		B67879062B0195D800CFACF2 /* sun3_50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_50.plist; sourceTree = "<group>"; };
+		B67879072B0195D800CFACF2 /* sun1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun1.plist; sourceTree = "<group>"; };
+		B67879082B0195D800CFACF2 /* sun2_50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun2_50.plist; sourceTree = "<group>"; };
+		B67879092B0195D800CFACF2 /* sun4_20.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun4_20.plist; sourceTree = "<group>"; };
+		B678790A2B0195D900CFACF2 /* sun3_80.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_80.plist; sourceTree = "<group>"; };
+		B678790B2B0195D900CFACF2 /* sun3_e.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_e.plist; sourceTree = "<group>"; };
+		B678790C2B0195D900CFACF2 /* sun4_25.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun4_25.plist; sourceTree = "<group>"; };
+		B678790D2B0195D900CFACF2 /* sun4_50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun4_50.plist; sourceTree = "<group>"; };
+		B678790E2B0195D900CFACF2 /* sun4_65.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun4_65.plist; sourceTree = "<group>"; };
+		B678790F2B0195DA00CFACF2 /* sun3_150.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_150.plist; sourceTree = "<group>"; };
+		B67879102B0195DA00CFACF2 /* sun3_60.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_60.plist; sourceTree = "<group>"; };
+		B67879112B0195DA00CFACF2 /* sun3_110.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_110.plist; sourceTree = "<group>"; };
+		B67879122B0195DA00CFACF2 /* sun3_260.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_260.plist; sourceTree = "<group>"; };
+		B67879132B0195DA00CFACF2 /* sun4_40.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun4_40.plist; sourceTree = "<group>"; };
+		B67879142B0195DB00CFACF2 /* sun2_120.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun2_120.plist; sourceTree = "<group>"; };
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
+		B6896D9D2B016CC700251FA4 /* ip6400.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip6400.plist; sourceTree = "<group>"; };
+		B6896D9E2B016CC800251FA4 /* ceci.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ceci.plist; sourceTree = "<group>"; };
+		B6896DA02B016CC800251FA4 /* roms~extra.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "roms~extra.plist"; sourceTree = "<group>"; };
+		B6896DA12B016CC800251FA4 /* apple2cp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2cp.plist; sourceTree = "<group>"; };
+		B6896DA42B016CC900251FA4 /* pdp11qb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pdp11qb.plist; sourceTree = "<group>"; };
+		B6896DA62B016CC900251FA4 /* maciihmu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciihmu.plist; sourceTree = "<group>"; };
+		B6896DA82B016CCA00251FA4 /* indigo2_4415.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indigo2_4415.plist; sourceTree = "<group>"; };
+		B6896DA92B016CCA00251FA4 /* maclc2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc2.plist; sourceTree = "<group>"; };
+		B6896DAA2B016CCA00251FA4 /* macclasc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macclasc.plist; sourceTree = "<group>"; };
+		B6896DAC2B016CCA00251FA4 /* dodo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dodo.plist; sourceTree = "<group>"; };
+		B6896DAD2B016CCB00251FA4 /* pdp11ub.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pdp11ub.plist; sourceTree = "<group>"; };
+		B6896DAE2B016CCB00251FA4 /* rtpc010.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtpc010.plist; sourceTree = "<group>"; };
+		B6896DAF2B016CCB00251FA4 /* rtpc015.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtpc015.plist; sourceTree = "<group>"; };
+		B6896DB02B016CCB00251FA4 /* albert.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = albert.plist; sourceTree = "<group>"; };
+		B6896DB12B016CCC00251FA4 /* mac512k.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mac512k.plist; sourceTree = "<group>"; };
+		B6896DB32B016CCC00251FA4 /* vt101.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vt101.plist; sourceTree = "<group>"; };
+		B6896DB72B016CCD00251FA4 /* pi4d25.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pi4d25.plist; sourceTree = "<group>"; };
+		B6896DB82B016CCD00251FA4 /* rtpc020.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtpc020.plist; sourceTree = "<group>"; };
+		B6896DB92B016CCD00251FA4 /* hp9k380.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k380.plist; sourceTree = "<group>"; };
+		B6896DBA2B016CCD00251FA4 /* apple2gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gs.plist; sourceTree = "<group>"; };
+		B6896DBB2B016CCE00251FA4 /* pdp11ub2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pdp11ub2.plist; sourceTree = "<group>"; };
+		B6896DBC2B016CCE00251FA4 /* ds5k133.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ds5k133.plist; sourceTree = "<group>"; };
+		B6896DBE2B016CCE00251FA4 /* rs2030.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rs2030.plist; sourceTree = "<group>"; };
+		B6896DBF2B016CCE00251FA4 /* ip6700.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip6700.plist; sourceTree = "<group>"; };
+		B6896DC02B016CCF00251FA4 /* hp9k332.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k332.plist; sourceTree = "<group>"; };
+		B6896DC12B016CCF00251FA4 /* apple2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2.plist; sourceTree = "<group>"; };
+		B6896DC22B016CCF00251FA4 /* ip2000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip2000.plist; sourceTree = "<group>"; };
+		B6896DC42B016CCF00251FA4 /* hp9k382.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k382.plist; sourceTree = "<group>"; };
+		B6896DC52B016CD000251FA4 /* hkc8800a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hkc8800a.plist; sourceTree = "<group>"; };
+		B6896DC62B016CD000251FA4 /* hp9k330.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k330.plist; sourceTree = "<group>"; };
+		B6896DC72B016CD000251FA4 /* maclc575.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc575.plist; sourceTree = "<group>"; };
+		B6896DC82B016CD000251FA4 /* nws3260.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws3260.plist; sourceTree = "<group>"; };
+		B6896DC92B016CD000251FA4 /* rc2030.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rc2030.plist; sourceTree = "<group>"; };
+		B6896DCA2B016CD100251FA4 /* spectred.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = spectred.plist; sourceTree = "<group>"; };
+		B6896DCB2B016CD100251FA4 /* microeng.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = microeng.plist; sourceTree = "<group>"; };
+		B6896DCC2B016CD100251FA4 /* tk3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tk3000.plist; sourceTree = "<group>"; };
+		B6896DCD2B016CD100251FA4 /* zijini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zijini.plist; sourceTree = "<group>"; };
+		B6896DCE2B016CD100251FA4 /* indy_4613.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indy_4613.plist; sourceTree = "<group>"; };
+		B6896DCF2B016CD200251FA4 /* laser128.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = laser128.plist; sourceTree = "<group>"; };
+		B6896DD02B016CD200251FA4 /* ip2500.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip2500.plist; sourceTree = "<group>"; };
+		B6896DD12B016CD200251FA4 /* ds2100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ds2100.plist; sourceTree = "<group>"; };
+		B6896DD22B016CD200251FA4 /* hp9k340.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k340.plist; sourceTree = "<group>"; };
+		B6896DD32B016CD300251FA4 /* indy_5015.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indy_5015.plist; sourceTree = "<group>"; };
+		B6896DD42B016CD300251FA4 /* macct650.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macct650.plist; sourceTree = "<group>"; };
+		B6896DD62B016CD300251FA4 /* maclc3p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3p.plist; sourceTree = "<group>"; };
+		B6896DD72B016CD300251FA4 /* apple2ees.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ees.plist; sourceTree = "<group>"; };
+		B6896DD82B016CD400251FA4 /* apple2gsr1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2gsr1.plist; sourceTree = "<group>"; };
+		B6896DD92B016CD400251FA4 /* ip2800.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip2800.plist; sourceTree = "<group>"; };
+		B6896DDA2B016CD400251FA4 /* models~extra.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "models~extra.plist"; sourceTree = "<group>"; };
+		B6896DDD2B016CD500251FA4 /* apple2ep.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ep.plist; sourceTree = "<group>"; };
+		B6896DDF2B016CD500251FA4 /* pi4d35.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pi4d35.plist; sourceTree = "<group>"; };
+		B6896DE02B016CD500251FA4 /* pi4d30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pi4d30.plist; sourceTree = "<group>"; };
+		B6896DE12B016CD600251FA4 /* am100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = am100.plist; sourceTree = "<group>"; };
+		B6896DE22B016CD600251FA4 /* indy_4610.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indy_4610.plist; sourceTree = "<group>"; };
+		B6896DE32B016CD600251FA4 /* vt100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vt100.plist; sourceTree = "<group>"; };
+		B6896DE42B016CD600251FA4 /* mprof3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mprof3.plist; sourceTree = "<group>"; };
+		B6896DE72B016CD700251FA4 /* las128e2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las128e2.plist; sourceTree = "<group>"; };
+		B6896DE92B016CD800251FA4 /* roms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = roms.plist; sourceTree = "<group>"; };
+		B6896DEA2B016CD800251FA4 /* vt240.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vt240.plist; sourceTree = "<group>"; };
+		B6896DEB2B016CD800251FA4 /* apple2p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2p.plist; sourceTree = "<group>"; };
+		B6896DEC2B016CD800251FA4 /* ace100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace100.plist; sourceTree = "<group>"; };
+		B6896DEE2B016CD900251FA4 /* CheatSheet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CheatSheet.html; sourceTree = "<group>"; };
+		B6896DEF2B016CD900251FA4 /* maciix.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciix.plist; sourceTree = "<group>"; };
+		B6896DF02B016CD900251FA4 /* hp9k320.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k320.plist; sourceTree = "<group>"; };
+		B6896DF12B016CDA00251FA4 /* prav8m.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = prav8m.plist; sourceTree = "<group>"; };
+		B6896DF22B016CDA00251FA4 /* hp9k310.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k310.plist; sourceTree = "<group>"; };
+		B6896DF32B016CDA00251FA4 /* maciivi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciivi.plist; sourceTree = "<group>"; };
+		B6896DF42B016CDA00251FA4 /* maccclas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maccclas.plist; sourceTree = "<group>"; };
+		B6896DF62B016CDB00251FA4 /* pi4d20.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pi4d20.plist; sourceTree = "<group>"; };
+		B6896DF82B016CDB00251FA4 /* macqd610.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd610.plist; sourceTree = "<group>"; };
+		B6896DF92B016CDC00251FA4 /* macqd650.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd650.plist; sourceTree = "<group>"; };
+		B6896DFA2B016CDC00251FA4 /* rtpca25.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtpca25.plist; sourceTree = "<group>"; };
+		B6896DFB2B016CDC00251FA4 /* hp9k360.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k360.plist; sourceTree = "<group>"; };
+		B6896DFE2B016CDD00251FA4 /* cece.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cece.plist; sourceTree = "<group>"; };
+		B6896E002B016CDE00251FA4 /* indigo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indigo.plist; sourceTree = "<group>"; };
+		B6896E012B016CDE00251FA4 /* ip6000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip6000.plist; sourceTree = "<group>"; };
+		B6896E032B016CDE00251FA4 /* basis108.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = basis108.plist; sourceTree = "<group>"; };
+		B6896E042B016CDF00251FA4 /* maxxi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maxxi.plist; sourceTree = "<group>"; };
+		B6896E052B016CDF00251FA4 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
+		B6896E062B016CDF00251FA4 /* indigo_r4400.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indigo_r4400.plist; sourceTree = "<group>"; };
+		B6896E082B016CE000251FA4 /* vt102.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vt102.plist; sourceTree = "<group>"; };
+		B6896E0A2B016CE000251FA4 /* mac2fdhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mac2fdhd.plist; sourceTree = "<group>"; };
+		B6896E0C2B016CE100251FA4 /* vt52.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vt52.plist; sourceTree = "<group>"; };
+		B6896E0D2B016CE100251FA4 /* apple2ee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apple2ee.plist; sourceTree = "<group>"; };
+		B6896E0E2B016CE100251FA4 /* macqd800.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd800.plist; sourceTree = "<group>"; };
+		B6896E102B016CE200251FA4 /* maclc520.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc520.plist; sourceTree = "<group>"; };
+		B6896E112B016CE200251FA4 /* rs3230.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rs3230.plist; sourceTree = "<group>"; };
+		B6896E132B016CE200251FA4 /* uniap2pt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = uniap2pt.plist; sourceTree = "<group>"; };
+		B6896E162B016CE300251FA4 /* indigo_r4000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indigo_r4000.plist; sourceTree = "<group>"; };
+		B6896E182B016CE400251FA4 /* rc3230.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rc3230.plist; sourceTree = "<group>"; };
+		B6896E192B016CE400251FA4 /* rtpc025.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtpc025.plist; sourceTree = "<group>"; };
+		B6896E1A2B016CE400251FA4 /* macse30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macse30.plist; sourceTree = "<group>"; };
+		B6896E1B2B016CE500251FA4 /* agat7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = agat7.plist; sourceTree = "<group>"; };
+		B6896E1E2B016CE500251FA4 /* ds3100.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ds3100.plist; sourceTree = "<group>"; };
+		B6896E202B016CE600251FA4 /* nws3410.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws3410.plist; sourceTree = "<group>"; };
+		B6896E252B016CE700251FA4 /* ip2700.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip2700.plist; sourceTree = "<group>"; };
+		B6896E262B016CE700251FA4 /* cz101.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cz101.plist; sourceTree = "<group>"; };
+		B6896E272B016CE800251FA4 /* ip2400.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip2400.plist; sourceTree = "<group>"; };
+		B6896E282B016CE800251FA4 /* ip6800.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip6800.plist; sourceTree = "<group>"; };
+		B6896E2D2B016CE900251FA4 /* las3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las3000.plist; sourceTree = "<group>"; };
+		B6896E2E2B016CE900251FA4 /* macplus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macplus.plist; sourceTree = "<group>"; };
+		B6896E2F2B016CEA00251FA4 /* hp9k370.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hp9k370.plist; sourceTree = "<group>"; };
+		B6896E322B016CEA00251FA4 /* ace1000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace1000.plist; sourceTree = "<group>"; };
 		B68A898F26BE18E000B2C8C6 /* MidiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiManager.m; sourceTree = "<group>"; };
 		B68A899226BE320200B2C8C6 /* MidiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiManager.h; sourceTree = "<group>"; };
 		B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
@@ -652,6 +916,126 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B67879072B0195D800CFACF2 /* sun1.plist */,
+				B67879082B0195D800CFACF2 /* sun2_50.plist */,
+				B67879142B0195DB00CFACF2 /* sun2_120.plist */,
+				B67879062B0195D800CFACF2 /* sun3_50.plist */,
+				B67879102B0195DA00CFACF2 /* sun3_60.plist */,
+				B678790A2B0195D900CFACF2 /* sun3_80.plist */,
+				B67879112B0195DA00CFACF2 /* sun3_110.plist */,
+				B678790F2B0195DA00CFACF2 /* sun3_150.plist */,
+				B67879122B0195DA00CFACF2 /* sun3_260.plist */,
+				B678790B2B0195D900CFACF2 /* sun3_e.plist */,
+				B67879092B0195D800CFACF2 /* sun4_20.plist */,
+				B678790C2B0195D900CFACF2 /* sun4_25.plist */,
+				B67879132B0195DA00CFACF2 /* sun4_40.plist */,
+				B678790D2B0195D900CFACF2 /* sun4_50.plist */,
+				B678790E2B0195D900CFACF2 /* sun4_65.plist */,
+				B67879002B0195C100CFACF2 /* nws1580.plist */,
+				B67879012B0195C100CFACF2 /* nws5000x.plist */,
+				B6896DEC2B016CD800251FA4 /* ace100.plist */,
+				B6896E322B016CEA00251FA4 /* ace1000.plist */,
+				B6896E1B2B016CE500251FA4 /* agat7.plist */,
+				B6896DB02B016CCB00251FA4 /* albert.plist */,
+				B6896DE12B016CD600251FA4 /* am100.plist */,
+				B6896DC12B016CCF00251FA4 /* apple2.plist */,
+				B6896DA12B016CC800251FA4 /* apple2cp.plist */,
+				B6896E0D2B016CE100251FA4 /* apple2ee.plist */,
+				B6896DD72B016CD300251FA4 /* apple2ees.plist */,
+				B6896DDD2B016CD500251FA4 /* apple2ep.plist */,
+				B6896DBA2B016CCD00251FA4 /* apple2gs.plist */,
+				B6896DD82B016CD400251FA4 /* apple2gsr1.plist */,
+				B6896DEB2B016CD800251FA4 /* apple2p.plist */,
+				B6896E032B016CDE00251FA4 /* basis108.plist */,
+				B6896DFE2B016CDD00251FA4 /* cece.plist */,
+				B6896D9E2B016CC800251FA4 /* ceci.plist */,
+				B6896DEE2B016CD900251FA4 /* CheatSheet.html */,
+				B6896E262B016CE700251FA4 /* cz101.plist */,
+				B6896DAC2B016CCA00251FA4 /* dodo.plist */,
+				B6896DBC2B016CCE00251FA4 /* ds5k133.plist */,
+				B6896DD12B016CD200251FA4 /* ds2100.plist */,
+				B6896E1E2B016CE500251FA4 /* ds3100.plist */,
+				B6896DC52B016CD000251FA4 /* hkc8800a.plist */,
+				B6896DF22B016CDA00251FA4 /* hp9k310.plist */,
+				B6896DF02B016CD900251FA4 /* hp9k320.plist */,
+				B6896DC62B016CD000251FA4 /* hp9k330.plist */,
+				B6896DC02B016CCF00251FA4 /* hp9k332.plist */,
+				B6896DD22B016CD200251FA4 /* hp9k340.plist */,
+				B6896DFB2B016CDC00251FA4 /* hp9k360.plist */,
+				B6896E2F2B016CEA00251FA4 /* hp9k370.plist */,
+				B6896DB92B016CCD00251FA4 /* hp9k380.plist */,
+				B6896DC42B016CCF00251FA4 /* hp9k382.plist */,
+				B6896E162B016CE300251FA4 /* indigo_r4000.plist */,
+				B6896E062B016CDF00251FA4 /* indigo_r4400.plist */,
+				B6896E002B016CDE00251FA4 /* indigo.plist */,
+				B6896DA82B016CCA00251FA4 /* indigo2_4415.plist */,
+				B6896DE22B016CD600251FA4 /* indy_4610.plist */,
+				B6896DCE2B016CD100251FA4 /* indy_4613.plist */,
+				B6896DD32B016CD300251FA4 /* indy_5015.plist */,
+				B6896DC22B016CCF00251FA4 /* ip2000.plist */,
+				B6896E272B016CE800251FA4 /* ip2400.plist */,
+				B6896DD02B016CD200251FA4 /* ip2500.plist */,
+				B6896E252B016CE700251FA4 /* ip2700.plist */,
+				B6896DD92B016CD400251FA4 /* ip2800.plist */,
+				B6896E012B016CDE00251FA4 /* ip6000.plist */,
+				B6896D9D2B016CC700251FA4 /* ip6400.plist */,
+				B6896DBF2B016CCE00251FA4 /* ip6700.plist */,
+				B6896E282B016CE800251FA4 /* ip6800.plist */,
+				B6896DE72B016CD700251FA4 /* las128e2.plist */,
+				B6896E2D2B016CE900251FA4 /* las3000.plist */,
+				B6896DCF2B016CD200251FA4 /* laser128.plist */,
+				B6896E0A2B016CE000251FA4 /* mac2fdhd.plist */,
+				B6896DB12B016CCC00251FA4 /* mac512k.plist */,
+				B6896DF42B016CDA00251FA4 /* maccclas.plist */,
+				B6896DAA2B016CCA00251FA4 /* macclasc.plist */,
+				B6896DD42B016CD300251FA4 /* macct650.plist */,
+				B6896E052B016CDF00251FA4 /* maciici.plist */,
+				B6896DA62B016CC900251FA4 /* maciihmu.plist */,
+				B6896DF32B016CDA00251FA4 /* maciivi.plist */,
+				B6896DEF2B016CD900251FA4 /* maciix.plist */,
+				B6896DA92B016CCA00251FA4 /* maclc2.plist */,
+				B6896DD62B016CD300251FA4 /* maclc3p.plist */,
+				B6896E102B016CE200251FA4 /* maclc520.plist */,
+				B6896DC72B016CD000251FA4 /* maclc575.plist */,
+				B6896E2E2B016CE900251FA4 /* macplus.plist */,
+				B6896DF82B016CDB00251FA4 /* macqd610.plist */,
+				B6896DF92B016CDC00251FA4 /* macqd650.plist */,
+				B6896E0E2B016CE100251FA4 /* macqd800.plist */,
+				B6896E1A2B016CE400251FA4 /* macse30.plist */,
+				B6896E042B016CDF00251FA4 /* maxxi.plist */,
+				B6896DCB2B016CD100251FA4 /* microeng.plist */,
+				B6896DDA2B016CD400251FA4 /* models~extra.plist */,
+				B6896DE42B016CD600251FA4 /* mprof3.plist */,
+				B6896DC82B016CD000251FA4 /* nws3260.plist */,
+				B6896E202B016CE600251FA4 /* nws3410.plist */,
+				B6896DA42B016CC900251FA4 /* pdp11qb.plist */,
+				B6896DAD2B016CCB00251FA4 /* pdp11ub.plist */,
+				B6896DBB2B016CCE00251FA4 /* pdp11ub2.plist */,
+				B6896DF62B016CDB00251FA4 /* pi4d20.plist */,
+				B6896DB72B016CCD00251FA4 /* pi4d25.plist */,
+				B6896DE02B016CD500251FA4 /* pi4d30.plist */,
+				B6896DDF2B016CD500251FA4 /* pi4d35.plist */,
+				B6896DF12B016CDA00251FA4 /* prav8m.plist */,
+				B6896DC92B016CD000251FA4 /* rc2030.plist */,
+				B6896E182B016CE400251FA4 /* rc3230.plist */,
+				B6896DE92B016CD800251FA4 /* roms.plist */,
+				B6896DA02B016CC800251FA4 /* roms~extra.plist */,
+				B6896DBE2B016CCE00251FA4 /* rs2030.plist */,
+				B6896E112B016CE200251FA4 /* rs3230.plist */,
+				B6896DAE2B016CCB00251FA4 /* rtpc010.plist */,
+				B6896DAF2B016CCB00251FA4 /* rtpc015.plist */,
+				B6896DB82B016CCD00251FA4 /* rtpc020.plist */,
+				B6896E192B016CE400251FA4 /* rtpc025.plist */,
+				B6896DFA2B016CDC00251FA4 /* rtpca25.plist */,
+				B6896DCA2B016CD100251FA4 /* spectred.plist */,
+				B6896DCC2B016CD100251FA4 /* tk3000.plist */,
+				B6896E132B016CE200251FA4 /* uniap2pt.plist */,
+				B6896E0C2B016CE100251FA4 /* vt52.plist */,
+				B6896DE32B016CD600251FA4 /* vt100.plist */,
+				B6896DB32B016CCC00251FA4 /* vt101.plist */,
+				B6896E082B016CE000251FA4 /* vt102.plist */,
+				B6896DEA2B016CD800251FA4 /* vt240.plist */,
+				B6896DCD2B016CD100251FA4 /* zijini.plist */,
 				B6109A0824F5F373005CB652 /* ace100.plist */,
 				B63E57E12755AF1F00F8B5D1 /* ace500.plist */,
 				B646D10A263A5DF20014C586 /* ace1000.plist */,
@@ -1062,131 +1446,202 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67878D12B01732700CFACF2 /* ace2200.plist in Resources */,
+				B678786C2B01732700CFACF2 /* albert.plist in Resources */,
+				B678789C2B01732700CFACF2 /* mac2fdhd.plist in Resources */,
+				B67878B82B01732700CFACF2 /* pi4d25.plist in Resources */,
+				B67878D82B01732700CFACF2 /* apple2eeuk.plist in Resources */,
+				B67878B02B01732700CFACF2 /* models~extra.plist in Resources */,
+				B67878EC2B01732700CFACF2 /* maciisi.plist in Resources */,
+				B67878982B01732700CFACF2 /* ip6800.plist in Resources */,
+				B67878892B01732700CFACF2 /* indigo_r4000.plist in Resources */,
+				B67878B92B01732700CFACF2 /* pi4d30.plist in Resources */,
+				B67878822B01732700CFACF2 /* hp9k330.plist in Resources */,
+				B67878C82B01732700CFACF2 /* tk3000.plist in Resources */,
+				B678787E2B01732700CFACF2 /* ds3100.plist in Resources */,
+				B67878BA2B01732700CFACF2 /* pi4d35.plist in Resources */,
+				B67878C42B01732700CFACF2 /* rtpc020.plist in Resources */,
 				B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */,
+				B678788C2B01732700CFACF2 /* indigo2_4415.plist in Resources */,
 				B6DDECCC2505A86E0093587A /* eject-16x16@2x.png in Resources */,
-				B6FECAFB28C0093600E143DA /* las3000.plist in Resources */,
-				B622BAE32AA1619F00CCB38C /* maclc475.plist in Resources */,
+				B67878722B01732700CFACF2 /* apple2ep.plist in Resources */,
+				B67878AF2B01732700CFACF2 /* microeng.plist in Resources */,
+				B67878712B01732700CFACF2 /* apple2ees.plist in Resources */,
+				B678787C2B01732700CFACF2 /* ds5k133.plist in Resources */,
+				B678789D2B01732700CFACF2 /* mac512k.plist in Resources */,
+				B67878F42B01732700CFACF2 /* macqd630.plist in Resources */,
+				B678787B2B01732700CFACF2 /* dodo.plist in Resources */,
+				B67878862B01732700CFACF2 /* hp9k370.plist in Resources */,
+				B67878F32B01732700CFACF2 /* macqd605.plist in Resources */,
+				B67878E72B01732700CFACF2 /* mac512ke.plist in Resources */,
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
+				B678789A2B01732700CFACF2 /* las3000.plist in Resources */,
+				B67878C52B01732700CFACF2 /* rtpc025.plist in Resources */,
+				B678786A2B01732700CFACF2 /* ace1000.plist in Resources */,
+				B67878FB2B01732700CFACF2 /* prav82.plist in Resources */,
+				B67878D92B01732700CFACF2 /* apple2euk.plist in Resources */,
+				B67878F72B01732700CFACF2 /* macsefd.plist in Resources */,
+				B67879252B0195DB00CFACF2 /* sun4_65.plist in Resources */,
 				B6DDECD02505A86E0093587A /* eject-hover-16x16.png in Resources */,
+				B67878F02B01732700CFACF2 /* maclc475.plist in Resources */,
+				B67879272B0195DB00CFACF2 /* sun3_150.plist in Resources */,
+				B67878A12B01732700CFACF2 /* maciici.plist in Resources */,
+				B678789E2B01732700CFACF2 /* maccclas.plist in Resources */,
+				B67878772B01732700CFACF2 /* cece.plist in Resources */,
+				B67878702B01732700CFACF2 /* apple2ee.plist in Resources */,
+				B67878DF2B01732700CFACF2 /* cecm.plist in Resources */,
 				B6DDECD22505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
 				B6DDECD42505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
 				B6DE323826044C1100418375 /* caution.png in Resources */,
+				B67878AB2B01732700CFACF2 /* macqd650.plist in Resources */,
+				B678792B2B0195DB00CFACF2 /* sun3_110.plist in Resources */,
+				B67878D32B01732700CFACF2 /* am64.plist in Resources */,
+				B67878A32B01732700CFACF2 /* maciivi.plist in Resources */,
 				B6DE323626044C1100418375 /* caution@2x.png in Resources */,
+				B678791D2B0195DB00CFACF2 /* sun3_80.plist in Resources */,
+				B67878902B01732700CFACF2 /* ip2000.plist in Resources */,
+				B67879292B0195DB00CFACF2 /* sun3_60.plist in Resources */,
+				B67878762B01732700CFACF2 /* basis108.plist in Resources */,
+				B67878EF2B01732700CFACF2 /* maclc3.plist in Resources */,
+				B67878882B01732700CFACF2 /* hp9k382.plist in Resources */,
+				B67878DA2B01732700CFACF2 /* apple2gsr0.plist in Resources */,
+				B67878A52B01732700CFACF2 /* maclc2.plist in Resources */,
+				B67878F52B01732700CFACF2 /* macqd700.plist in Resources */,
+				B67878C62B01732700CFACF2 /* rtpca25.plist in Resources */,
+				B678787F2B01732700CFACF2 /* hkc8800a.plist in Resources */,
+				B67878692B01732700CFACF2 /* ace100.plist in Resources */,
+				B67878A42B01732700CFACF2 /* maciix.plist in Resources */,
+				B67878922B01732700CFACF2 /* ip2500.plist in Resources */,
+				B67878DB2B01732700CFACF2 /* apple2jp.plist in Resources */,
+				B67879212B0195DB00CFACF2 /* sun4_25.plist in Resources */,
+				B67878812B01732700CFACF2 /* hp9k320.plist in Resources */,
+				B67878FA2B01732700CFACF2 /* prav8c.plist in Resources */,
+				B67878D42B01732700CFACF2 /* apple1.plist in Resources */,
+				B67878BF2B01732700CFACF2 /* roms~extra.plist in Resources */,
 				B6DE323B26044DB800418375 /* caution@3x.png in Resources */,
+				B678788F2B01732700CFACF2 /* indy_5015.plist in Resources */,
+				B67878E32B01732700CFACF2 /* las128ex.plist in Resources */,
+				B678786B2B01732700CFACF2 /* agat7.plist in Resources */,
+				B678788D2B01732700CFACF2 /* indy_4610.plist in Resources */,
+				B678788B2B01732700CFACF2 /* indigo.plist in Resources */,
 				B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */,
+				B67878972B01732700CFACF2 /* ip6700.plist in Resources */,
 				B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */,
+				B67878B42B01732700CFACF2 /* pdp11qb.plist in Resources */,
+				B67878AE2B01732700CFACF2 /* maxxi.plist in Resources */,
 				B6DDECC425057A550093587A /* drag-handle-4x10@3x.png in Resources */,
+				B67878742B01732700CFACF2 /* apple2gsr1.plist in Resources */,
+				B67878D72B01732700CFACF2 /* apple2eefr.plist in Resources */,
+				B67878EB2B01732700CFACF2 /* maciicx.plist in Resources */,
+				B67878FD2B01732700CFACF2 /* st.plist in Resources */,
+				B67878CD2B01732700CFACF2 /* vt102.plist in Resources */,
+				B67878B32B01732700CFACF2 /* nws3410.plist in Resources */,
+				B67878C72B01732700CFACF2 /* spectred.plist in Resources */,
+				B67878E82B01732700CFACF2 /* macclas2.plist in Resources */,
+				B67878E92B01732700CFACF2 /* macct610.plist in Resources */,
 				B6BA258224E99BEB005FB8FF /* Assets.xcassets in Resources */,
+				B67878DE2B01732700CFACF2 /* cecg.plist in Resources */,
+				B67878B52B01732700CFACF2 /* pdp11ub.plist in Resources */,
+				B678791F2B0195DB00CFACF2 /* sun3_e.plist in Resources */,
 				B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */,
+				B678792D2B0195DB00CFACF2 /* sun3_260.plist in Resources */,
 				B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */,
+				B67878932B01732700CFACF2 /* ip2700.plist in Resources */,
+				B67878ED2B01732700CFACF2 /* maciivx.plist in Resources */,
+				B67878BD2B01732700CFACF2 /* rc3230.plist in Resources */,
+				B67878F12B01732700CFACF2 /* maclc550.plist in Resources */,
+				B67878E52B01732700CFACF2 /* laser128o.plist in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
+				B67878CB2B01732700CFACF2 /* vt100.plist in Resources */,
+				B67878C02B01732700CFACF2 /* rs2030.plist in Resources */,
+				B67878C22B01732700CFACF2 /* rtpc010.plist in Resources */,
+				B67878BE2B01732700CFACF2 /* roms.plist in Resources */,
+				B678786D2B01732700CFACF2 /* am100.plist in Resources */,
+				B67878E02B01732700CFACF2 /* craft2p.plist in Resources */,
 				B6665C1C265C639A00254939 /* Autocomplete.xib in Resources */,
+				B67878BC2B01732700CFACF2 /* rc2030.plist in Resources */,
+				B67879312B0195DB00CFACF2 /* sun2_120.plist in Resources */,
+				B67878FE2B01732700CFACF2 /* uniap2en.plist in Resources */,
+				B67879192B0195DB00CFACF2 /* sun2_50.plist in Resources */,
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
+				B67878A02B01732700CFACF2 /* macct650.plist in Resources */,
+				B67879042B0195C200CFACF2 /* nws5000x.plist in Resources */,
+				B67878A72B01732700CFACF2 /* maclc520.plist in Resources */,
+				B67878D02B01732700CFACF2 /* ace500.plist in Resources */,
+				B67878DD2B01732700CFACF2 /* cec2000.plist in Resources */,
+				B67878E22B01732700CFACF2 /* ivelultr.plist in Resources */,
+				B67878E62B01732700CFACF2 /* mac128k.plist in Resources */,
 				B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */,
+				B678789F2B01732700CFACF2 /* macclasc.plist in Resources */,
+				B67878DC2B01732700CFACF2 /* apple3.plist in Resources */,
 				B61099E824F5F231005CB652 /* MediaView.xib in Resources */,
+				B67878E42B01732700CFACF2 /* laser2c.plist in Resources */,
+				B67878F22B01732700CFACF2 /* maclc580.plist in Resources */,
+				B67878D52B01732700CFACF2 /* apple2c.plist in Resources */,
+				B67879022B0195C200CFACF2 /* nws1580.plist in Resources */,
 				B6E9A18325088B36005E7525 /* SlotView.xib in Resources */,
+				B67878BB2B01732700CFACF2 /* prav8m.plist in Resources */,
+				B67878D22B01732700CFACF2 /* agat9.plist in Resources */,
+				B678791B2B0195DB00CFACF2 /* sun4_20.plist in Resources */,
+				B678788A2B01732700CFACF2 /* indigo_r4400.plist in Resources */,
+				B678787A2B01732700CFACF2 /* cz101.plist in Resources */,
+				B67878782B01732700CFACF2 /* ceci.plist in Resources */,
+				B67878B72B01732700CFACF2 /* pi4d20.plist in Resources */,
+				B67878752B01732700CFACF2 /* apple2p.plist in Resources */,
+				B67878EE2B01732700CFACF2 /* maclc.plist in Resources */,
+				B67878802B01732700CFACF2 /* hp9k310.plist in Resources */,
+				B67878842B01732700CFACF2 /* hp9k340.plist in Resources */,
+				B678789B2B01732700CFACF2 /* laser128.plist in Resources */,
+				B678787D2B01732700CFACF2 /* ds2100.plist in Resources */,
+				B67878AC2B01732700CFACF2 /* macqd800.plist in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */,
-				B6109A3324F5F377005CB652 /* apple2eeuk.plist in Resources */,
+				B67878B12B01732700CFACF2 /* mprof3.plist in Resources */,
+				B67878CC2B01732700CFACF2 /* vt101.plist in Resources */,
+				B67878CE2B01732700CFACF2 /* vt240.plist in Resources */,
+				B67878C12B01732700CFACF2 /* rs3230.plist in Resources */,
+				B67879172B0195DB00CFACF2 /* sun1.plist in Resources */,
+				B67878962B01732700CFACF2 /* ip6400.plist in Resources */,
+				B67878EA2B01732700CFACF2 /* macii.plist in Resources */,
+				B67878B22B01732700CFACF2 /* nws3260.plist in Resources */,
+				B67878CA2B01732700CFACF2 /* vt52.plist in Resources */,
+				B67878FC2B01732700CFACF2 /* space84.plist in Resources */,
+				B67878872B01732700CFACF2 /* hp9k380.plist in Resources */,
+				B678788E2B01732700CFACF2 /* indy_4613.plist in Resources */,
+				B67878732B01732700CFACF2 /* apple2gs.plist in Resources */,
+				B67878AA2B01732700CFACF2 /* macqd610.plist in Resources */,
+				B67878D62B01732700CFACF2 /* apple2e.plist in Resources */,
+				B67878792B01732700CFACF2 /* CheatSheet.html in Resources */,
+				B67879152B0195DB00CFACF2 /* sun3_50.plist in Resources */,
+				B67878C32B01732700CFACF2 /* rtpc015.plist in Resources */,
+				B67878B62B01732700CFACF2 /* pdp11ub2.plist in Resources */,
 				B6E6DCF727B0873200E0A76E /* BookmarkWindow.xib in Resources */,
-				B6374ADB260ECB400045CA16 /* maciix.plist in Resources */,
-				B6109A2424F5F377005CB652 /* las128ex.plist in Resources */,
-				B618B8C42729F6690045C2D8 /* laser128o.plist in Resources */,
-				B646D10B263A5DF30014C586 /* ace1000.plist in Resources */,
-				B63C1BA8250192E600511A71 /* zijini.plist in Resources */,
-				B6109A1D24F5F377005CB652 /* space84.plist in Resources */,
-				B6939C1A2A747B790025D891 /* macqd800.plist in Resources */,
-				B6939C202A747B790025D891 /* macqd650.plist in Resources */,
-				B6374AD9260ECB400045CA16 /* maciicx.plist in Resources */,
-				B6109A3F24F5F377005CB652 /* agat9.plist in Resources */,
-				B63C1B9D250192D800511A71 /* cece.plist in Resources */,
-				B6109A3124F5F377005CB652 /* apple1.plist in Resources */,
-				B6939C1C2A747B790025D891 /* macqd610.plist in Resources */,
-				B6374AD3260ECB400045CA16 /* macii.plist in Resources */,
-				B63E57E22755AF2000F8B5D1 /* ace500.plist in Resources */,
-				B6109A3524F5F377005CB652 /* ace100.plist in Resources */,
-				B65085BB25B616AC00354EC9 /* maclc3.plist in Resources */,
-				B622BAD72AA1615700CCB38C /* macqd605.plist in Resources */,
-				B6109A3424F5F377005CB652 /* am64.plist in Resources */,
-				B6DE32462605482500418375 /* macclasc.plist in Resources */,
-				B6DE32502605482500418375 /* macse.plist in Resources */,
-				B6109A1724F5F377005CB652 /* apple2e.plist in Resources */,
-				B6109A3C24F5F377005CB652 /* am100.plist in Resources */,
-				B6109A2524F5F377005CB652 /* laser2c.plist in Resources */,
-				B6109A3D24F5F377005CB652 /* laser128.plist in Resources */,
-				B6109A2824F5F377005CB652 /* apple2ep.plist in Resources */,
+				B67878C92B01732700CFACF2 /* uniap2pt.plist in Resources */,
+				B678786F2B01732700CFACF2 /* apple2cp.plist in Resources */,
 				B6F7B538266FDA5B00624C6B /* MachineView.xib in Resources */,
-				B6109A1924F5F377005CB652 /* apple2ees.plist in Resources */,
-				B6DE32482605482500418375 /* mac512ke.plist in Resources */,
-				B6109A3924F5F377005CB652 /* prav8c.plist in Resources */,
-				B6109A1C24F5F377005CB652 /* ivelultr.plist in Resources */,
-				B6DE323325FE7BD400418375 /* tk3000.plist in Resources */,
-				B6109A3824F5F377005CB652 /* maxxi.plist in Resources */,
-				B6374ADD260ECB400045CA16 /* maciivx.plist in Resources */,
-				B6DE32442605482500418375 /* mac128k.plist in Resources */,
-				B6109A2E24F5F377005CB652 /* apple2eefr.plist in Resources */,
-				B6109A2C24F5F377005CB652 /* spectred.plist in Resources */,
-				B6109A4124F5F377005CB652 /* apple2cp.plist in Resources */,
-				B622BADE2AA1618000CCB38C /* maclc580.plist in Resources */,
-				B6109A3A24F5F377005CB652 /* prav82.plist in Resources */,
-				B6DD1FE825B407E7004A3242 /* maclc.plist in Resources */,
-				B6109A2024F5F377005CB652 /* apple2euk.plist in Resources */,
-				B6DE324C2605482500418375 /* macplus.plist in Resources */,
-				B6109A2F24F5F377005CB652 /* uniap2ti.plist in Resources */,
-				B6109A1E24F5F377005CB652 /* apple2c.plist in Resources */,
-				B6109A1A24F5F377005CB652 /* microeng.plist in Resources */,
-				B6374AD5260ECB400045CA16 /* maciisi.plist in Resources */,
-				B6109A3E24F5F377005CB652 /* albert.plist in Resources */,
-				B6939C2A2A747BBF0025D891 /* macct650.plist in Resources */,
+				B67878852B01732700CFACF2 /* hp9k360.plist in Resources */,
+				B67878942B01732700CFACF2 /* ip2800.plist in Resources */,
+				B67878F82B01732700CFACF2 /* megast.plist in Resources */,
+				B67878F62B01732700CFACF2 /* macse.plist in Resources */,
+				B678792F2B0195DB00CFACF2 /* sun4_40.plist in Resources */,
+				B67878A82B01732700CFACF2 /* maclc575.plist in Resources */,
+				B67878FF2B01732700CFACF2 /* uniap2ti.plist in Resources */,
+				B67878CF2B01732700CFACF2 /* zijini.plist in Resources */,
+				B67878A92B01732700CFACF2 /* macplus.plist in Resources */,
+				B67878912B01732700CFACF2 /* ip2400.plist in Resources */,
+				B67878AD2B01732700CFACF2 /* macse30.plist in Resources */,
+				B67878E12B01732700CFACF2 /* elppa.plist in Resources */,
 				B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */,
-				B6109A4224F5F377005CB652 /* apple2p.plist in Resources */,
-				B622BAE02AA1618000CCB38C /* maclc575.plist in Resources */,
-				B65085B925B616AC00354EC9 /* maclc2.plist in Resources */,
-				B6109A1824F5F377005CB652 /* hkc8800a.plist in Resources */,
-				B6109A2324F5F377005CB652 /* apple2gsr0.plist in Resources */,
-				B63C1BA1250192D800511A71 /* cecg.plist in Resources */,
-				B6939C2C2A747BBF0025D891 /* macct610.plist in Resources */,
-				B6939C262A747BA30025D891 /* maclc3p.plist in Resources */,
-				B63C1BA3250192D800511A71 /* cec2000.plist in Resources */,
-				B6109A2624F5F377005CB652 /* mprof3.plist in Resources */,
-				B63C1B9F250192D800511A71 /* ceci.plist in Resources */,
-				B6109A3224F5F377005CB652 /* basis108.plist in Resources */,
-				B6109A4324F5F377005CB652 /* agat7.plist in Resources */,
-				B622BADA2AA1615D00CCB38C /* macqd630.plist in Resources */,
-				B6ABF47C275986EB00DC3D48 /* ace2200.plist in Resources */,
-				B6DE324E2605482500418375 /* mac512k.plist in Resources */,
-				B6939C232A747B950025D891 /* maclc550.plist in Resources */,
-				B6109A2B24F5F377005CB652 /* elppa.plist in Resources */,
 				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
-				B6109A3B24F5F377005CB652 /* apple2gsr1.plist in Resources */,
-				B65085BD25B616AC00354EC9 /* maciici.plist in Resources */,
-				B6301BE429107BE800495022 /* maclc520.plist in Resources */,
-				B66116882A2535F60038A3E2 /* megast.plist in Resources */,
-				B6939C1E2A747B790025D891 /* macqd700.plist in Resources */,
-				B6374AE3260ECDDD0045CA16 /* maciihmu.plist in Resources */,
-				B6374ADF260ECB400045CA16 /* macse30.plist in Resources */,
-				B63C1F1225B147E10016A611 /* CheatSheet.html in Resources */,
+				B67878832B01732700CFACF2 /* hp9k332.plist in Resources */,
+				B678786E2B01732700CFACF2 /* apple2.plist in Resources */,
+				B67879232B0195DB00CFACF2 /* sun4_50.plist in Resources */,
+				B67878992B01732700CFACF2 /* las128e2.plist in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
-				B6109A2224F5F377005CB652 /* models.plist in Resources */,
-				B6109A4024F5F377005CB652 /* craft2p.plist in Resources */,
-				B6109A1B24F5F377005CB652 /* uniap2pt.plist in Resources */,
-				B6109A3724F5F377005CB652 /* las128e2.plist in Resources */,
-				B6374AE5260ECDDD0045CA16 /* mac2fdhd.plist in Resources */,
-				B66116852A2535EF0038A3E2 /* st.plist in Resources */,
-				B63C1B90250088DD00511A71 /* roms.plist in Resources */,
-				B6109A2724F5F377005CB652 /* uniap2en.plist in Resources */,
-				B6109A2A24F5F377005CB652 /* apple3.plist in Resources */,
-				B6109A2124F5F377005CB652 /* apple2ee.plist in Resources */,
-				B63C1BA5250192D800511A71 /* cecm.plist in Resources */,
-				B6109A3624F5F377005CB652 /* dodo.plist in Resources */,
-				B6109A2924F5F377005CB652 /* apple2gs.plist in Resources */,
-				B6109A1F24F5F377005CB652 /* apple2jp.plist in Resources */,
-				B6374AD7260ECB400045CA16 /* maciivi.plist in Resources */,
-				B6374AD1260ECB400045CA16 /* macclas2.plist in Resources */,
-				B6DE324A2605482500418375 /* macsefd.plist in Resources */,
-				B6301BE729107C1E00495022 /* maccclas.plist in Resources */,
-				B6109A3024F5F377005CB652 /* apple2.plist in Resources */,
-				B6109A2D24F5F377005CB652 /* prav8m.plist in Resources */,
+				B67878F92B01732700CFACF2 /* models.plist in Resources */,
+				B67878952B01732700CFACF2 /* ip6000.plist in Resources */,
+				B67878A62B01732700CFACF2 /* maclc3p.plist in Resources */,
+				B67878A22B01732700CFACF2 /* maciihmu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1194,128 +1649,201 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67878232B01732600CFACF2 /* pi4d35.plist in Resources */,
+				B67878502B01732600CFACF2 /* mac512ke.plist in Resources */,
+				B67878632B01732600CFACF2 /* prav8c.plist in Resources */,
+				B67877F72B01732600CFACF2 /* indy_4613.plist in Resources */,
+				B67877D32B01732600CFACF2 /* ace1000.plist in Resources */,
+				B67878222B01732600CFACF2 /* pi4d30.plist in Resources */,
+				B67878022B01732600CFACF2 /* las128e2.plist in Resources */,
+				B67877F92B01732600CFACF2 /* ip2000.plist in Resources */,
+				B678782D2B01732600CFACF2 /* rtpc020.plist in Resources */,
+				B67879202B0195DB00CFACF2 /* sun3_e.plist in Resources */,
+				B67879182B0195DB00CFACF2 /* sun1.plist in Resources */,
+				B67877EC2B01732600CFACF2 /* hp9k332.plist in Resources */,
+				B67877F82B01732600CFACF2 /* indy_5015.plist in Resources */,
+				B678792A2B0195DB00CFACF2 /* sun3_60.plist in Resources */,
+				B678785B2B01732600CFACF2 /* maclc580.plist in Resources */,
+				B67877FE2B01732600CFACF2 /* ip6000.plist in Resources */,
+				B67878402B01732600CFACF2 /* apple2eefr.plist in Resources */,
+				B67878082B01732600CFACF2 /* macclasc.plist in Resources */,
+				B67877F52B01732600CFACF2 /* indigo2_4415.plist in Resources */,
+				B67877D82B01732600CFACF2 /* apple2cp.plist in Resources */,
+				B67879052B0195C200CFACF2 /* nws5000x.plist in Resources */,
+				B67878242B01732600CFACF2 /* prav8m.plist in Resources */,
+				B67877D92B01732600CFACF2 /* apple2ee.plist in Resources */,
+				B678785F2B01732600CFACF2 /* macse.plist in Resources */,
 				B6DDECD72505A86E0093587A /* eject-16x16.png in Resources */,
+				B67878352B01732600CFACF2 /* vt101.plist in Resources */,
 				B6DDECCD2505A86E0093587A /* eject-16x16@2x.png in Resources */,
+				B67878312B01732600CFACF2 /* tk3000.plist in Resources */,
+				B678791C2B0195DB00CFACF2 /* sun4_20.plist in Resources */,
+				B678781A2B01732600CFACF2 /* mprof3.plist in Resources */,
+				B678782F2B01732600CFACF2 /* rtpca25.plist in Resources */,
+				B67878292B01732600CFACF2 /* rs2030.plist in Resources */,
+				B678784D2B01732600CFACF2 /* laser2c.plist in Resources */,
+				B67877F62B01732600CFACF2 /* indy_4610.plist in Resources */,
+				B678792C2B0195DB00CFACF2 /* sun3_110.plist in Resources */,
+				B67877DB2B01732600CFACF2 /* apple2ep.plist in Resources */,
+				B67877E52B01732600CFACF2 /* ds5k133.plist in Resources */,
+				B67877D52B01732600CFACF2 /* albert.plist in Resources */,
+				B678791A2B0195DB00CFACF2 /* sun2_50.plist in Resources */,
+				B67877FF2B01732600CFACF2 /* ip6400.plist in Resources */,
+				B67877DA2B01732600CFACF2 /* apple2ees.plist in Resources */,
+				B678783D2B01732600CFACF2 /* apple1.plist in Resources */,
+				B67878622B01732600CFACF2 /* models.plist in Resources */,
+				B67877D62B01732600CFACF2 /* am100.plist in Resources */,
+				B678783E2B01732600CFACF2 /* apple2c.plist in Resources */,
+				B67878012B01732600CFACF2 /* ip6800.plist in Resources */,
+				B678782B2B01732600CFACF2 /* rtpc010.plist in Resources */,
 				B6DDECCF2505A86E0093587A /* eject-16x16@3x.png in Resources */,
+				B67877FA2B01732600CFACF2 /* ip2400.plist in Resources */,
+				B67878042B01732600CFACF2 /* laser128.plist in Resources */,
 				B6DDECD12505A86E0093587A /* eject-hover-16x16.png in Resources */,
+				B67878442B01732600CFACF2 /* apple2jp.plist in Resources */,
+				B67877DE2B01732600CFACF2 /* apple2p.plist in Resources */,
+				B678782A2B01732600CFACF2 /* rs3230.plist in Resources */,
+				B67878332B01732600CFACF2 /* vt52.plist in Resources */,
+				B678780A2B01732600CFACF2 /* maciici.plist in Resources */,
+				B67878172B01732600CFACF2 /* maxxi.plist in Resources */,
+				B67878032B01732600CFACF2 /* las3000.plist in Resources */,
+				B67877F32B01732600CFACF2 /* indigo_r4400.plist in Resources */,
+				B67878612B01732600CFACF2 /* megast.plist in Resources */,
+				B67877F02B01732600CFACF2 /* hp9k380.plist in Resources */,
+				B67878252B01732600CFACF2 /* rc2030.plist in Resources */,
+				B67878452B01732600CFACF2 /* apple3.plist in Resources */,
+				B67878392B01732600CFACF2 /* ace500.plist in Resources */,
+				B67878192B01732600CFACF2 /* models~extra.plist in Resources */,
+				B67877D72B01732600CFACF2 /* apple2.plist in Resources */,
+				B67878072B01732600CFACF2 /* maccclas.plist in Resources */,
+				B678783F2B01732600CFACF2 /* apple2e.plist in Resources */,
+				B67877DD2B01732600CFACF2 /* apple2gsr1.plist in Resources */,
+				B678781E2B01732600CFACF2 /* pdp11ub.plist in Resources */,
+				B678783C2B01732600CFACF2 /* am64.plist in Resources */,
+				B67878282B01732600CFACF2 /* roms~extra.plist in Resources */,
+				B67879282B0195DB00CFACF2 /* sun3_150.plist in Resources */,
+				B67877FC2B01732600CFACF2 /* ip2700.plist in Resources */,
+				B67879322B0195DB00CFACF2 /* sun2_120.plist in Resources */,
+				B67878492B01732600CFACF2 /* craft2p.plist in Resources */,
+				B678780F2B01732600CFACF2 /* maclc3p.plist in Resources */,
+				B67877D22B01732600CFACF2 /* ace100.plist in Resources */,
+				B678785D2B01732600CFACF2 /* macqd630.plist in Resources */,
+				B67878652B01732600CFACF2 /* space84.plist in Resources */,
+				B67877ED2B01732600CFACF2 /* hp9k340.plist in Resources */,
+				B67878532B01732600CFACF2 /* macii.plist in Resources */,
+				B678780B2B01732600CFACF2 /* maciihmu.plist in Resources */,
+				B678792E2B0195DB00CFACF2 /* sun3_260.plist in Resources */,
+				B67878602B01732600CFACF2 /* macsefd.plist in Resources */,
+				B67878412B01732600CFACF2 /* apple2eeuk.plist in Resources */,
+				B67878522B01732600CFACF2 /* macct610.plist in Resources */,
+				B678781C2B01732600CFACF2 /* nws3410.plist in Resources */,
+				B67878572B01732600CFACF2 /* maclc.plist in Resources */,
+				B67878432B01732600CFACF2 /* apple2gsr0.plist in Resources */,
 				B6DDECD32505A86E0093587A /* eject-hover-16x16@2x.png in Resources */,
+				B67877E02B01732600CFACF2 /* cece.plist in Resources */,
+				B678785C2B01732600CFACF2 /* macqd605.plist in Resources */,
+				B67878122B01732600CFACF2 /* macplus.plist in Resources */,
+				B67878592B01732600CFACF2 /* maclc475.plist in Resources */,
+				B678784F2B01732600CFACF2 /* mac128k.plist in Resources */,
+				B678782E2B01732600CFACF2 /* rtpc025.plist in Resources */,
 				B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
+				B678784C2B01732600CFACF2 /* las128ex.plist in Resources */,
+				B67878262B01732600CFACF2 /* rc3230.plist in Resources */,
+				B67877E72B01732600CFACF2 /* ds3100.plist in Resources */,
+				B678781D2B01732600CFACF2 /* pdp11qb.plist in Resources */,
+				B678780C2B01732600CFACF2 /* maciivi.plist in Resources */,
+				B67879162B0195DB00CFACF2 /* sun3_50.plist in Resources */,
+				B67878322B01732600CFACF2 /* uniap2pt.plist in Resources */,
 				B6DE323926044C1100418375 /* caution.png in Resources */,
+				B678783A2B01732600CFACF2 /* ace2200.plist in Resources */,
 				B6DE323726044C1100418375 /* caution@2x.png in Resources */,
-				B622BAE42AA1619F00CCB38C /* maclc475.plist in Resources */,
+				B67877F42B01732600CFACF2 /* indigo.plist in Resources */,
 				B6DE323C26044DB800418375 /* caution@3x.png in Resources */,
 				B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */,
 				B6DDECC325057A550093587A /* drag-handle-4x10@2x.png in Resources */,
 				B6DDECC525057A550093587A /* drag-handle-4x10@3x.png in Resources */,
-				B6374AE6260ECDDD0045CA16 /* mac2fdhd.plist in Resources */,
-				B6374ADC260ECB400045CA16 /* maciix.plist in Resources */,
-				B6E4B5BC24FDE2670094A35C /* apple2eeuk.plist in Resources */,
-				B63C1BA0250192D800511A71 /* ceci.plist in Resources */,
-				B6E4B5BD24FDE2670094A35C /* las128ex.plist in Resources */,
-				B6E4B5BE24FDE2670094A35C /* space84.plist in Resources */,
-				B6DE324F2605482500418375 /* mac512k.plist in Resources */,
-				B63C1BA6250192D800511A71 /* cecm.plist in Resources */,
-				B6E4B5BF24FDE2670094A35C /* agat9.plist in Resources */,
+				B67878212B01732600CFACF2 /* pi4d25.plist in Resources */,
+				B67878582B01732600CFACF2 /* maclc3.plist in Resources */,
+				B67878202B01732600CFACF2 /* pi4d20.plist in Resources */,
+				B67878112B01732600CFACF2 /* maclc575.plist in Resources */,
 				B6E4B5C024FDE2670094A35C /* LaunchWindow.xib in Resources */,
+				B678785E2B01732600CFACF2 /* macqd700.plist in Resources */,
 				B6665C1D265C639A00254939 /* Autocomplete.xib in Resources */,
-				B6E4B5C124FDE2670094A35C /* apple1.plist in Resources */,
-				B6E4B5C224FDE2670094A35C /* ace100.plist in Resources */,
 				B6E6DCF827B0873200E0A76E /* BookmarkWindow.xib in Resources */,
-				B6374AD6260ECB400045CA16 /* maciisi.plist in Resources */,
-				B6DE32472605482500418375 /* macclasc.plist in Resources */,
-				B6939C2D2A747BBF0025D891 /* macct610.plist in Resources */,
-				B6939C1B2A747B790025D891 /* macqd800.plist in Resources */,
-				B6E4B5C324FDE2670094A35C /* am64.plist in Resources */,
-				B66116892A2535F60038A3E2 /* megast.plist in Resources */,
+				B67878272B01732600CFACF2 /* roms.plist in Resources */,
+				B67877E32B01732600CFACF2 /* cz101.plist in Resources */,
+				B67878482B01732600CFACF2 /* cecm.plist in Resources */,
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
+				B67879032B0195C200CFACF2 /* nws1580.plist in Resources */,
+				B67877E22B01732600CFACF2 /* CheatSheet.html in Resources */,
+				B67877E42B01732600CFACF2 /* dodo.plist in Resources */,
+				B67877E62B01732600CFACF2 /* ds2100.plist in Resources */,
 				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
-				B6374AD4260ECB400045CA16 /* macii.plist in Resources */,
-				B6E4B5C624FDE2670094A35C /* apple2e.plist in Resources */,
-				B66116862A2535EF0038A3E2 /* st.plist in Resources */,
+				B678791E2B0195DB00CFACF2 /* sun3_80.plist in Resources */,
+				B67877E92B01732600CFACF2 /* hp9k310.plist in Resources */,
+				B67877FB2B01732600CFACF2 /* ip2500.plist in Resources */,
+				B67878472B01732600CFACF2 /* cecg.plist in Resources */,
+				B67878102B01732600CFACF2 /* maclc520.plist in Resources */,
+				B67878512B01732600CFACF2 /* macclas2.plist in Resources */,
+				B67878462B01732600CFACF2 /* cec2000.plist in Resources */,
+				B67877F22B01732600CFACF2 /* indigo_r4000.plist in Resources */,
+				B67879222B0195DB00CFACF2 /* sun4_25.plist in Resources */,
+				B67877DC2B01732600CFACF2 /* apple2gs.plist in Resources */,
 				B64AF1EF250EC35B00A09B9B /* DiskImages.xib in Resources */,
-				B63C1BA2250192D800511A71 /* cecg.plist in Resources */,
-				B6E4B5C724FDE2670094A35C /* am100.plist in Resources */,
-				B6E4B5C824FDE2670094A35C /* laser2c.plist in Resources */,
-				B6939C242A747B950025D891 /* maclc550.plist in Resources */,
-				B6374ADA260ECB400045CA16 /* maciicx.plist in Resources */,
 				B615A99F26640940001FBF99 /* SlotView.xib in Resources */,
+				B67878672B01732600CFACF2 /* uniap2en.plist in Resources */,
+				B678780D2B01732600CFACF2 /* maciix.plist in Resources */,
+				B678781F2B01732600CFACF2 /* pdp11ub2.plist in Resources */,
+				B67878382B01732600CFACF2 /* zijini.plist in Resources */,
+				B67879242B0195DB00CFACF2 /* sun4_50.plist in Resources */,
+				B67879302B0195DB00CFACF2 /* sun4_40.plist in Resources */,
+				B67877D42B01732600CFACF2 /* agat7.plist in Resources */,
+				B67877FD2B01732600CFACF2 /* ip2800.plist in Resources */,
+				B67878562B01732600CFACF2 /* maciivx.plist in Resources */,
+				B678782C2B01732600CFACF2 /* rtpc015.plist in Resources */,
+				B67878362B01732600CFACF2 /* vt102.plist in Resources */,
 				B63C1F0C25B143C50016A611 /* CheatSheet.xib in Resources */,
-				B6374AE0260ECB400045CA16 /* macse30.plist in Resources */,
-				B6E4B5C924FDE2670094A35C /* laser128.plist in Resources */,
-				B646D10C263A5DF30014C586 /* ace1000.plist in Resources */,
-				B6E4B5CA24FDE2670094A35C /* apple2ep.plist in Resources */,
-				B6E4B5CB24FDE2670094A35C /* apple2ees.plist in Resources */,
-				B6E4B5CC24FDE2670094A35C /* prav8c.plist in Resources */,
-				B6E4B5CD24FDE2670094A35C /* ivelultr.plist in Resources */,
-				B6E4B5CE24FDE2670094A35C /* maxxi.plist in Resources */,
-				B6DE324B2605482500418375 /* macsefd.plist in Resources */,
-				B6E4B5CF24FDE2670094A35C /* apple2eefr.plist in Resources */,
-				B6374AD8260ECB400045CA16 /* maciivi.plist in Resources */,
-				B63E57E32755AF2000F8B5D1 /* ace500.plist in Resources */,
-				B6E4B5D124FDE2670094A35C /* spectred.plist in Resources */,
+				B67878682B01732600CFACF2 /* uniap2ti.plist in Resources */,
+				B67877DF2B01732600CFACF2 /* basis108.plist in Resources */,
+				B67878132B01732600CFACF2 /* macqd610.plist in Resources */,
+				B67878542B01732600CFACF2 /* maciicx.plist in Resources */,
 				B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */,
-				B6E4B5D224FDE2670094A35C /* apple2cp.plist in Resources */,
-				B618B8C52729F6690045C2D8 /* laser128o.plist in Resources */,
 				B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */,
-				B622BAE12AA1618000CCB38C /* maclc575.plist in Resources */,
-				B6E4B5D424FDE2670094A35C /* prav82.plist in Resources */,
-				B6E4B5D524FDE2670094A35C /* apple2euk.plist in Resources */,
-				B6E4B5D624FDE2670094A35C /* uniap2ti.plist in Resources */,
-				B6E4B5D724FDE2670094A35C /* apple2c.plist in Resources */,
-				B65085BA25B616AC00354EC9 /* maclc2.plist in Resources */,
-				B6E4B5D824FDE2670094A35C /* microeng.plist in Resources */,
-				B6E4B5D924FDE2670094A35C /* albert.plist in Resources */,
+				B67877EB2B01732600CFACF2 /* hp9k330.plist in Resources */,
+				B678780E2B01732600CFACF2 /* maclc2.plist in Resources */,
+				B67878642B01732600CFACF2 /* prav82.plist in Resources */,
+				B67879262B0195DB00CFACF2 /* sun4_65.plist in Resources */,
+				B67877EA2B01732600CFACF2 /* hp9k320.plist in Resources */,
+				B67878142B01732600CFACF2 /* macqd650.plist in Resources */,
 				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
-				B6E4B5DB24FDE2670094A35C /* apple2p.plist in Resources */,
-				B65085BE25B616AC00354EC9 /* maciici.plist in Resources */,
-				B6DE32512605482500418375 /* macse.plist in Resources */,
-				B65085BC25B616AC00354EC9 /* maclc3.plist in Resources */,
-				B6DE32492605482500418375 /* mac512ke.plist in Resources */,
-				B6DE32452605482500418375 /* mac128k.plist in Resources */,
-				B6939C2B2A747BBF0025D891 /* macct650.plist in Resources */,
-				B63C1BA4250192D800511A71 /* cec2000.plist in Resources */,
-				B6E4B5DC24FDE2670094A35C /* hkc8800a.plist in Resources */,
-				B6374AE4260ECDDD0045CA16 /* maciihmu.plist in Resources */,
-				B6E4B5DD24FDE2670094A35C /* apple2gsr0.plist in Resources */,
-				B622BAD82AA1615700CCB38C /* macqd605.plist in Resources */,
-				B6E4B5DE24FDE2670094A35C /* mprof3.plist in Resources */,
-				B6E4B5DF24FDE2670094A35C /* basis108.plist in Resources */,
-				B6DD1FE925B407E7004A3242 /* maclc.plist in Resources */,
-				B622BADF2AA1618000CCB38C /* maclc580.plist in Resources */,
-				B6E4B5E024FDE2670094A35C /* agat7.plist in Resources */,
-				B6939C272A747BA30025D891 /* maclc3p.plist in Resources */,
-				B6E4B5E124FDE2670094A35C /* elppa.plist in Resources */,
-				B6E4B5E224FDE2670094A35C /* apple2gsr1.plist in Resources */,
-				B6301BE529107BE800495022 /* maclc520.plist in Resources */,
+				B67878422B01732600CFACF2 /* apple2euk.plist in Resources */,
+				B678781B2B01732600CFACF2 /* nws3260.plist in Resources */,
+				B67878182B01732600CFACF2 /* microeng.plist in Resources */,
+				B678784E2B01732600CFACF2 /* laser128o.plist in Resources */,
+				B67878092B01732600CFACF2 /* macct650.plist in Resources */,
+				B67878662B01732600CFACF2 /* st.plist in Resources */,
+				B67878552B01732600CFACF2 /* maciisi.plist in Resources */,
+				B67878052B01732600CFACF2 /* mac2fdhd.plist in Resources */,
+				B678784B2B01732600CFACF2 /* ivelultr.plist in Resources */,
+				B67878162B01732600CFACF2 /* macse30.plist in Resources */,
+				B678785A2B01732600CFACF2 /* maclc550.plist in Resources */,
+				B678784A2B01732600CFACF2 /* elppa.plist in Resources */,
 				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
-				B6E4B5E424FDE2670094A35C /* models.plist in Resources */,
 				B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */,
-				B622BADB2AA1615D00CCB38C /* macqd630.plist in Resources */,
-				B63C1BA9250192E600511A71 /* zijini.plist in Resources */,
-				B6E4B5E524FDE2670094A35C /* craft2p.plist in Resources */,
-				B6ABF47D275986EB00DC3D48 /* ace2200.plist in Resources */,
-				B6939C212A747B790025D891 /* macqd650.plist in Resources */,
-				B6E4B5E624FDE2670094A35C /* uniap2pt.plist in Resources */,
-				B6E4B5E724FDE2670094A35C /* las128e2.plist in Resources */,
-				B63C1B9E250192D800511A71 /* cece.plist in Resources */,
+				B678783B2B01732600CFACF2 /* agat9.plist in Resources */,
 				B6E4B5E824FDE2670094A35C /* MediaView.xib in Resources */,
-				B6E4B5E924FDE2670094A35C /* uniap2en.plist in Resources */,
-				B6374AD2260ECB400045CA16 /* macclas2.plist in Resources */,
-				B6E4B5EA24FDE2670094A35C /* apple3.plist in Resources */,
-				B6301BE829107C1E00495022 /* maccclas.plist in Resources */,
-				B6E4B5EB24FDE2670094A35C /* apple2ee.plist in Resources */,
-				B6939C1D2A747B790025D891 /* macqd610.plist in Resources */,
-				B6939C1F2A747B790025D891 /* macqd700.plist in Resources */,
-				B6E4B5EC24FDE2670094A35C /* dodo.plist in Resources */,
-				B63C1F1325B147E10016A611 /* CheatSheet.html in Resources */,
-				B6DE324D2605482500418375 /* macplus.plist in Resources */,
+				B67877EE2B01732600CFACF2 /* hp9k360.plist in Resources */,
+				B67877EF2B01732600CFACF2 /* hp9k370.plist in Resources */,
+				B67877E12B01732600CFACF2 /* ceci.plist in Resources */,
+				B67878062B01732600CFACF2 /* mac512k.plist in Resources */,
+				B67878002B01732600CFACF2 /* ip6700.plist in Resources */,
+				B67878342B01732600CFACF2 /* vt100.plist in Resources */,
 				B6E4B5ED24FDE2670094A35C /* Preferences.xib in Resources */,
-				B6374ADE260ECB400045CA16 /* maciivx.plist in Resources */,
-				B6E4B5EF24FDE2670094A35C /* apple2gs.plist in Resources */,
-				B6FECAFC28C0093600E143DA /* las3000.plist in Resources */,
-				B6E4B5F024FDE2670094A35C /* apple2jp.plist in Resources */,
-				B6E4B5F124FDE2670094A35C /* apple2.plist in Resources */,
-				B6E4B5F224FDE2670094A35C /* prav8m.plist in Resources */,
+				B67877F12B01732600CFACF2 /* hp9k382.plist in Resources */,
+				B67878152B01732600CFACF2 /* macqd800.plist in Resources */,
+				B67878372B01732600CFACF2 /* vt240.plist in Resources */,
+				B67878302B01732600CFACF2 /* spectred.plist in Resources */,
+				B67877E82B01732600CFACF2 /* hkc8800a.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1764,15 +2292,20 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 52;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"AMPLE_LITE=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.258-u2";
+				MARKETING_VERSION = 0.260;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1785,15 +2318,16 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 52;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = "AMPLE_LITE=1";
 				INFOPLIST_FILE = Ample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.258-u2";
+				MARKETING_VERSION = 0.260;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

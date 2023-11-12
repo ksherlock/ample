@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>description</key>
+      <string>Apple I</string>
+      <key>value</key>
+      <string>apple1</string>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple ][</string>
+      <key>value</key>
+      <string>apple2</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple ][</string>
+          <key>value</key>
+          <string>apple2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple ][+</string>
+          <key>value</key>
+          <string>apple2p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple ][ J-Plus</string>
+          <key>value</key>
+          <string>apple2jp</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIe</string>
+      <key>value</key>
+      <string>apple2e</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple //e</string>
+          <key>value</key>
+          <string>apple2e</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Spain)</string>
+          <key>value</key>
+          <string>apple2ees</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (UK)</string>
+          <key>value</key>
+          <string>apple2euk</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum)</string>
+          <key>value</key>
+          <string>apple2ep</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced)</string>
+          <key>value</key>
+          <string>apple2ee</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced, UK)</string>
+          <key>value</key>
+          <string>apple2eeuk</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced, France)</string>
+          <key>value</key>
+          <string>apple2eefr</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple //c</string>
+      <key>value</key>
+      <string>apple2c</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple //c</string>
+          <key>value</key>
+          <string>apple2c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c Plus</string>
+          <key>value</key>
+          <string>apple2cp</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIgs</string>
+      <key>value</key>
+      <string>apple2gs</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM00)</string>
+          <key>value</key>
+          <string>apple2gsr0</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM01)</string>
+          <key>value</key>
+          <string>apple2gsr1</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple IIgs (ROM03)</string>
+          <key>value</key>
+          <string>apple2gs</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple ///</string>
+      <key>value</key>
+      <string>apple3</string>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>II Clones</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Albert</string>
+          <key>value</key>
+          <string>albert</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>AM100</string>
+          <key>value</key>
+          <string>am100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>AM 64</string>
+          <key>value</key>
+          <string>am64</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Basis 108</string>
+          <key>value</key>
+          <string>basis108</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Craft II+</string>
+          <key>value</key>
+          <string>craft2p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Do-Do</string>
+          <key>value</key>
+          <string>dodo</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Elppa II+</string>
+          <key>value</key>
+          <string>elppa</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HKC 8800A</string>
+          <key>value</key>
+          <string>hkc8800a</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Ivel Ultra</string>
+          <key>value</key>
+          <string>ivelultr</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Maxxi</string>
+          <key>value</key>
+          <string>maxxi</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Micro Engenho</string>
+          <key>value</key>
+          <string>microeng</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 82</string>
+          <key>value</key>
+          <string>prav82</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8M</string>
+          <key>value</key>
+          <string>prav8m</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Space 84</string>
+          <key>value</key>
+          <string>space84</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II (in English)</string>
+          <key>value</key>
+          <string>uniap2en</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II (in Brazilian Portuguese)</string>
+          <key>value</key>
+          <string>uniap2pt</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Unitron AP II+ (Teclado Inteligente)</string>
+          <key>value</key>
+          <string>uniap2ti</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>IIe Clones</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Microprofessor III</string>
+          <key>value</key>
+          <string>mprof3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8C</string>
+          <key>value</key>
+          <string>prav8c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Spectrum ED</string>
+          <key>value</key>
+          <string>spectred</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>TK3000//e</string>
+          <key>value</key>
+          <string>tk3000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Zi Jin I</string>
+          <key>value</key>
+          <string>zijini</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Franklin</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Franklin ACE 100</string>
+          <key>value</key>
+          <string>ace100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Franklin ACE 500</string>
+          <key>value</key>
+          <string>ace500</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Franklin ACE 1000</string>
+          <key>value</key>
+          <string>ace1000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Franklin ACE 2200</string>
+          <key>value</key>
+          <string>ace2200</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Laser</string>
+      <key>value</key>
+      <string>laser128</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Laser 3000</string>
+          <key>value</key>
+          <string>las3000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser //c</string>
+          <key>value</key>
+          <string>laser2c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128</string>
+          <key>value</key>
+          <string>laser128</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128 (original hardware)</string>
+          <key>value</key>
+          <string>laser128o</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128ex (version 4.5)</string>
+          <key>value</key>
+          <string>las128ex</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Laser 128ex2 (version 6.1)</string>
+          <key>value</key>
+          <string>las128e2</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Agat</string>
+      <key>value</key>
+      <string>agat7</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Agat-7</string>
+          <key>value</key>
+          <string>agat7</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Agat-9</string>
+          <key>value</key>
+          <string>agat9</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>China Education Computer</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer 2000</string>
+          <key>value</key>
+          <string>cec2000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer E</string>
+          <key>value</key>
+          <string>cece</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer G</string>
+          <key>value</key>
+          <string>cecg</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer I</string>
+          <key>value</key>
+          <string>ceci</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>China Education Computer M</string>
+          <key>value</key>
+          <string>cecm</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (Compact)</string>
+      <key>value</key>
+      <string>macse30</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 128k</string>
+          <key>value</key>
+          <string>mac128k</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 512k</string>
+          <key>value</key>
+          <string>mac512k</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh 512ke</string>
+          <key>value</key>
+          <string>mac512ke</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Plus</string>
+          <key>value</key>
+          <string>macplus</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh SE</string>
+          <key>value</key>
+          <string>macse</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh SE (FDHD)</string>
+          <key>value</key>
+          <string>macsefd</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh SE/30</string>
+          <key>value</key>
+          <string>macse30</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Classic</string>
+          <key>value</key>
+          <string>macclasc</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Classic II</string>
+          <key>value</key>
+          <string>macclas2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Color Classic</string>
+          <key>value</key>
+          <string>maccclas</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (II)</string>
+      <key>value</key>
+      <string>maciix</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh II</string>
+          <key>value</key>
+          <string>macii</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh II (w/o 68851 MMU)</string>
+          <key>value</key>
+          <string>maciihmu</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh II (FDHD)</string>
+          <key>value</key>
+          <string>mac2fdhd</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIx</string>
+          <key>value</key>
+          <string>maciix</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIcx</string>
+          <key>value</key>
+          <string>maciicx</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIci</string>
+          <key>value</key>
+          <string>maciici</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIsi</string>
+          <key>value</key>
+          <string>maciisi</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIvx</string>
+          <key>value</key>
+          <string>maciivx</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh IIvi</string>
+          <key>value</key>
+          <string>maciivi</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (Quadra)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 605</string>
+          <key>value</key>
+          <string>macqd605</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 610</string>
+          <key>value</key>
+          <string>macqd610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 630</string>
+          <key>value</key>
+          <string>macqd630</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 650</string>
+          <key>value</key>
+          <string>macqd650</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 700</string>
+          <key>value</key>
+          <string>macqd700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 800</string>
+          <key>value</key>
+          <string>macqd800</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Macintosh (LC)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC</string>
+          <key>value</key>
+          <string>maclc</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC II</string>
+          <key>value</key>
+          <string>maclc2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC III</string>
+          <key>value</key>
+          <string>maclc3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC III+</string>
+          <key>value</key>
+          <string>maclc3p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC/Performa 475</string>
+          <key>value</key>
+          <string>maclc475</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC 520</string>
+          <key>value</key>
+          <string>maclc520</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC 550</string>
+          <key>value</key>
+          <string>maclc550</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC/Performa 575</string>
+          <key>value</key>
+          <string>maclc575</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh LC/Performa 580</string>
+          <key>value</key>
+          <string>maclc580</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Centris 610</string>
+          <key>value</key>
+          <string>macct610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Centris 650</string>
+          <key>value</key>
+          <string>macct650</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Atari ST</string>
+      <key>value</key>
+      <string>st</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>ST (USA)</string>
+          <key>value</key>
+          <string>st</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MEGA ST (USA)</string>
+          <key>value</key>
+          <string>megast</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>DEC VT</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>VT52 Video Display Terminal (M4)</string>
+          <key>value</key>
+          <string>vt52</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>VT100</string>
+          <key>value</key>
+          <string>vt100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>VT101</string>
+          <key>value</key>
+          <string>vt101</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>VT102</string>
+          <key>value</key>
+          <string>vt102</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>VT240</string>
+          <key>value</key>
+          <string>vt240</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>DEC</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>DECstation 2100</string>
+          <key>value</key>
+          <string>ds2100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>DECstation 3100</string>
+          <key>value</key>
+          <string>ds3100</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>DECstation 5000/133</string>
+          <key>value</key>
+          <string>ds5k133</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>PDP-11 [Q-BUS] (M7195 - MXV11-B)</string>
+          <key>value</key>
+          <string>pdp11qb</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>PDP-11 [Unibus](M9301-YA)</string>
+          <key>value</key>
+          <string>pdp11ub</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>PDP-11 [Unibus](M9312)</string>
+          <key>value</key>
+          <string>pdp11ub2</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>HP 9000</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>HP9000/310</string>
+          <key>value</key>
+          <string>hp9k310</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/320</string>
+          <key>value</key>
+          <string>hp9k320</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/330</string>
+          <key>value</key>
+          <string>hp9k330</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/332</string>
+          <key>value</key>
+          <string>hp9k332</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/340</string>
+          <key>value</key>
+          <string>hp9k340</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/360</string>
+          <key>value</key>
+          <string>hp9k360</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/370</string>
+          <key>value</key>
+          <string>hp9k370</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/380</string>
+          <key>value</key>
+          <string>hp9k380</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>HP9000/382</string>
+          <key>value</key>
+          <string>hp9k382</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>IBM RT</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>IBM RT PC Model 010</string>
+          <key>value</key>
+          <string>rtpc010</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IBM RT PC Model 015</string>
+          <key>value</key>
+          <string>rtpc015</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IBM RT PC Model 020</string>
+          <key>value</key>
+          <string>rtpc020</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IBM RT PC Model 025</string>
+          <key>value</key>
+          <string>rtpc025</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IBM RT PC Model A25</string>
+          <key>value</key>
+          <string>rtpca25</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Intergraph</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 20x0</string>
+          <key>value</key>
+          <string>ip2000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 24x0</string>
+          <key>value</key>
+          <string>ip2400</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 25x0</string>
+          <key>value</key>
+          <string>ip2500</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 27x0</string>
+          <key>value</key>
+          <string>ip2700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 28x0</string>
+          <key>value</key>
+          <string>ip2800</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 60x0</string>
+          <key>value</key>
+          <string>ip6000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 64x0</string>
+          <key>value</key>
+          <string>ip6400</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 67x0</string>
+          <key>value</key>
+          <string>ip6700</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>InterPro/InterServe 68x0</string>
+          <key>value</key>
+          <string>ip6800</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>MIPS</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>RC2030</string>
+          <key>value</key>
+          <string>rc2030</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>RS2030</string>
+          <key>value</key>
+          <string>rs2030</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>RC3230</string>
+          <key>value</key>
+          <string>rc3230</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Magnum 3000</string>
+          <key>value</key>
+          <string>rs3230</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>SGI</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>IRIS Indigo</string>
+          <key>value</key>
+          <string>indigo</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Indigo2 (R4400, 150MHz)</string>
+          <key>value</key>
+          <string>indigo2_4415</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IRIS Indigo R4000</string>
+          <key>value</key>
+          <string>indigo_r4000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>IRIS Indigo R4400</string>
+          <key>value</key>
+          <string>indigo_r4400</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Indy (R4600, 100MHz)</string>
+          <key>value</key>
+          <string>indy_4610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Indy (R4600, 133MHz)</string>
+          <key>value</key>
+          <string>indy_4613</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Indy (R5000, 150MHz)</string>
+          <key>value</key>
+          <string>indy_5015</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Personal IRIS 4D/20</string>
+          <key>value</key>
+          <string>pi4d20</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Personal IRIS 4D/25</string>
+          <key>value</key>
+          <string>pi4d25</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Personal IRIS 4D/30</string>
+          <key>value</key>
+          <string>pi4d30</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Personal IRIS 4D/35</string>
+          <key>value</key>
+          <string>pi4d35</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Sony</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>NWS-3260</string>
+          <key>value</key>
+          <string>nws3260</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>NWS-3410</string>
+          <key>value</key>
+          <string>nws3410</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>NWS-1580</string>
+          <key>value</key>
+          <string>nws1580</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>NET WORK STATION NWS-5000X</string>
+          <key>value</key>
+          <string>nws5000x</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>SUN</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Sun-1</string>
+          <key>value</key>
+          <string>sun1</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 2/50</string>
+          <key>value</key>
+          <string>sun2_50</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 2/120</string>
+          <key>value</key>
+          <string>sun2_120</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/50</string>
+          <key>value</key>
+          <string>sun3_50</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/60</string>
+          <key>value</key>
+          <string>sun3_60</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/110</string>
+          <key>value</key>
+          <string>sun3_110</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/75/140/150/160/180</string>
+          <key>value</key>
+          <string>sun3_150</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/260/280</string>
+          <key>value</key>
+          <string>sun3_260</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/E</string>
+          <key>value</key>
+          <string>sun3_e</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Sun 3/80</string>
+          <key>value</key>
+          <string>sun3_80</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>SPARCstation IPC (Sun 4/40)</string>
+          <key>value</key>
+          <string>sun4_40</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>SPARCstation IPX (Sun 4/50)</string>
+          <key>value</key>
+          <string>sun4_50</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>SPARCstation SLC (Sun 4/20)</string>
+          <key>value</key>
+          <string>sun4_20</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>SPARCstation ELC (Sun 4/25)</string>
+          <key>value</key>
+          <string>sun4_25</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>SPARCstation 1+ (Sun 4/65)</string>
+          <key>value</key>
+          <string>sun4_65</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</plist>
