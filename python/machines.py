@@ -91,7 +91,8 @@ SLOTS = (
 	"centronics", "mdin", "mdout",
 
 	# dec
-	"eia", "host", "com_prt", "prt_port"
+	"eia", "host", "com_prt", "prt_port",
+	"rs232a", "rs232b", "serial0", "serial1", 
 )
 
 SLOT_NAMES = {
@@ -127,8 +128,12 @@ SLOT_NAMES = {
 	"mdin":       "MIDI In",
 	"mdout":      "MIDI Out",
 
-	"eia":        "Modem",
-	"host":       "Modem",
-	"com_prt":    "Modem",
-	"prt_port":   "Printer"
+	"eia":        "Serial",
+	"host":       "Serial",
+	"com_prt":    "Serial",
+	"prt_port":   "Printer",
+	"rs232a":     "Serial A",
+	"rs232b":     "Serial B",
+	"serial0":    "Serial 0",
+	"serial1":    "Serial 1",
 }

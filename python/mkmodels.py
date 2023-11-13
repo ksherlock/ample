@@ -33,12 +33,13 @@ mac_ii_children = [
 
 mac_lc_children = [
 	"maclc", "maclc2", "maclc3", "maclc3p",
-	"maclc475", "maclc520", "maclc550", "maclc575", "maclc580",
+	"maclc475", "maclc520", "maclc550", "maclc575",
 	"macct610", "macct650",
 ]
+# maclc50" / macqd630 slots are messed up right now.
 
 mac_quadra_children = [
-	"macqd605", "macqd610", "macqd630", "macqd650", "macqd700", "macqd800",
+	"macqd605", "macqd610", "macqd650", "macqd700", "macqd800",
 ]
 
 # se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.

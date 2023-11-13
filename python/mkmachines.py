@@ -137,10 +137,12 @@ def find_machine_media(parent):
 	# mac [various] - pds/lcpds slot
 	# mac128k - kbd slot
 	#
-	# mac - if scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
 
 
 	mname = parent.get("name")
+
+
+
 	remap = {
 		"cassette": "cass",
 		"apple1_cass": "cass",
@@ -158,7 +160,6 @@ def find_machine_media(parent):
 		intf = x.get("interface")
 		if intf == None: intf = typ # cassette has no interface.
 
-		# print("  ",intf)
 
 		slot = None
 		if ':' in tag:
@@ -169,13 +170,31 @@ def find_machine_media(parent):
 		# as of 232 (231?), these are configurable as :scsi:0, etc or :scsibus:0, etc.
 		# if mname[0:3] == "mac" and slot in ("scsi", "scsibus"): slot = None
 
-		# MAME 0.258 - scsi slot 3 now hardcoded for cd-rom
-		if slot and intf != "cdrom": continue
+		# MAME 0.258 - macintosh scsi slot 3 now hardcoded for cd-rom
+
+		#print(tag, " - ", slot, "  - ",intf)
+
+		#if slot and intf != "cdrom": continue
 		# skip slot devices -- they'll be handled as part of the device.
+		if slot: continue
 
 		if intf in remap:
 			name = remap[intf]
 			media[name] = media.get(name, 0) + 1
+
+
+	# mac - scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
+	# check for undeclared cd-rom
+	slotlist = set()
+	for x in parent.findall("./slot"):
+		slotname = split2(x.get("name"))
+		slotlist.add(slotname)
+
+	# print(slotlist)
+	for name in ("scsi","scsibus","scsi1"):
+		if name + ":4" in slotlist and name + ":3" not in slotlist:
+			media["cdrom"] = media.get("cdrom", 0) + 1
+
 
 	return media
 
@@ -227,6 +246,8 @@ def find_media(parent, include_slots=False):
 			name = remap_dev[name]
 			media[name] = media.get(name, 0) + 1
 
+
+
 		# ata_slot (vulcan, cffa, zip, etc) needs to check slot to see if default.
 		# nscsi_connector (a2scsi, a2hsscsi) needs to check slot to see if default.
 
@@ -257,6 +278,7 @@ def find_media(parent, include_slots=False):
 	# special case for a2romusr
 	if parent.get("name") == "a2romusr":
 		media["rom"] = media.get("rom", 0) + 1
+
 
 	# scsibus:1 is special cd-rom
 	if parent.get("name") == "a2scsi":
@@ -381,6 +403,11 @@ def make_device_options(slot):
 
 	return options
 
+
+def split2(x):
+	xx = x.split(":")
+	if len(xx) == 1: return xx[0]
+	return xx[0] + ":" + xx[1]
 
 	# given a machine, return a list of slotoptions.
 def make_device_slots(machine):
