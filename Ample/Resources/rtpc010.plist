@@ -39,6 +39,187 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>kbd_con</string>
+        <key>description</key>
+        <string>Keyboard</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>kbd</string>
+            <key>description</key>
+            <string>IBM RT PC Keyboard</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>rtpc_kbd</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa1</string>
+        <key>description</key>
+        <string>Slot 1</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display and Printer Adapter</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa2</string>
+        <key>description</key>
+        <string>Slot 2</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa3</string>
+        <key>description</key>
+        <string>Slot 3</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa4</string>
+        <key>description</key>
+        <string>Slot 4</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa5</string>
+        <key>description</key>
+        <string>Slot 5</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa6</string>
+        <key>description</key>
+        <string>Slot 6</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC hookup</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

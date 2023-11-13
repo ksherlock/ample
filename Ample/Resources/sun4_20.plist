@@ -362,6 +362,108 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>keyboard</string>
+        <key>description</key>
+        <string>Keyboard</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type3hle</string>
+            <key>description</key>
+            <string>Sun Type 3 Keyboard (HLE)</string>
+            <key>devname</key>
+            <string>kbd_type3_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type4hle</string>
+            <key>description</key>
+            <string>Sun Type 4 Keyboard (HLE)</string>
+            <key>devname</key>
+            <string>kbd_type4_hle</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type5gbhle</string>
+            <key>description</key>
+            <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+            <key>devname</key>
+            <string>kbd_type5_hle_gb</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type5jphle</string>
+            <key>description</key>
+            <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+            <key>devname</key>
+            <string>kbd_type5_hle_jp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type5sehle</string>
+            <key>description</key>
+            <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+            <key>devname</key>
+            <string>kbd_type5_hle_se</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type5hle</string>
+            <key>description</key>
+            <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>kbd_type5_hle_us</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mouseport</string>
+        <key>description</key>
+        <string>Mouse</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>hle1200</string>
+            <key>description</key>
+            <string>Sun Mouse (1200 Baud, HLE)</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>sunmouse_hle1200</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>hle4800</string>
+            <key>description</key>
+            <string>Sun Mouse (4800 Baud, HLE)</string>
+            <key>devname</key>
+            <string>sunmouse_hle4800</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

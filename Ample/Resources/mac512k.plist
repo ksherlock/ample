@@ -84,6 +84,97 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>kbd</string>
+        <key>description</key>
+        <string>Keyboard</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>gb</string>
+            <key>description</key>
+            <string>Macintosh Keyboard (British - M0110B)</string>
+            <key>devname</key>
+            <string>mackbd_m0110b</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fr</string>
+            <key>description</key>
+            <string>Macintosh Keyboard (French - M0110F)</string>
+            <key>devname</key>
+            <string>mackbd_m0110f</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>it</string>
+            <key>description</key>
+            <string>Macintosh Keyboard (Italian - M0110T)</string>
+            <key>devname</key>
+            <string>mackbd_m0110t</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>us</string>
+            <key>description</key>
+            <string>Macintosh Keyboard (U.S. - M0110)</string>
+            <key>devname</key>
+            <string>mackbd_m0110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pad</string>
+            <key>description</key>
+            <string>Macintosh Numeric Keypad (English - M0120)</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>mackbd_m0120</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>eupad</string>
+            <key>description</key>
+            <string>Macintosh Numeric Keypad (European - M0120P)</string>
+            <key>devname</key>
+            <string>mackbd_m0120p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>frp</string>
+            <key>description</key>
+            <string>Macintosh Plus Keyboard (French - M0110A F)</string>
+            <key>devname</key>
+            <string>mackbd_m0110a_f</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>jpp</string>
+            <key>description</key>
+            <string>Macintosh Plus Keyboard (Japanese - M0110A J)</string>
+            <key>devname</key>
+            <string>mackbd_m0110a_j</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>usp</string>
+            <key>description</key>
+            <string>Macintosh Plus Keyboard (U.S. - M0110A)</string>
+            <key>devname</key>
+            <string>mackbd_m0110a</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

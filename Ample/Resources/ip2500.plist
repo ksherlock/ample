@@ -395,6 +395,68 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>kbd</string>
+        <key>description</key>
+        <string>Keyboard</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>hle_en_us</string>
+            <key>description</key>
+            <string>InterPro Keyboard (HLE, US English)</string>
+            <key>devname</key>
+            <string>kbd_hle_en_us</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>lle_en_us</string>
+            <key>description</key>
+            <string>InterPro Keyboard (LLE, US English)</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>kbd_lle_en_us</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mse</string>
+        <key>description</key>
+        <string>Mouse</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>interpro_mouse</string>
+            <key>description</key>
+            <string>InterPro Mouse</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>interpro_mouse</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

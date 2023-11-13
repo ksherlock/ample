@@ -20,7 +20,7 @@
         <key>name</key>
         <string>rs232</string>
         <key>description</key>
-        <string>Modem</string>
+        <string>Serial</string>
         <key>options</key>
         <array>
           <dict>
@@ -154,6 +154,204 @@
             <string>SWTPC8212 Terminal</string>
             <key>devname</key>
             <string>swtpc8212_terminal</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>qbus:1</string>
+        <key>description</key>
+        <string>Q-Bus 1</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pc11</string>
+            <key>description</key>
+            <string>DEC PC11 controller</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>pc11</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dsd4432</string>
+            <key>description</key>
+            <string>DSD A4432 Floppy Disk Interface</string>
+            <key>devname</key>
+            <string>dsd4432</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>kgd</string>
+            <key>description</key>
+            <string>DVK KGD framebuffer</string>
+            <key>devname</key>
+            <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>qts1</string>
+            <key>description</key>
+            <string>TTI QTS-1 SCSI Host Adapter</string>
+            <key>devname</key>
+            <string>qts1</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>qbus:2</string>
+        <key>description</key>
+        <string>Q-Bus 2</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pc11</string>
+            <key>description</key>
+            <string>DEC PC11 controller</string>
+            <key>devname</key>
+            <string>pc11</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dsd4432</string>
+            <key>description</key>
+            <string>DSD A4432 Floppy Disk Interface</string>
+            <key>devname</key>
+            <string>dsd4432</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>kgd</string>
+            <key>description</key>
+            <string>DVK KGD framebuffer</string>
+            <key>devname</key>
+            <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>qts1</string>
+            <key>description</key>
+            <string>TTI QTS-1 SCSI Host Adapter</string>
+            <key>devname</key>
+            <string>qts1</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>qbus:3</string>
+        <key>description</key>
+        <string>Q-Bus 3</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pc11</string>
+            <key>description</key>
+            <string>DEC PC11 controller</string>
+            <key>devname</key>
+            <string>pc11</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dsd4432</string>
+            <key>description</key>
+            <string>DSD A4432 Floppy Disk Interface</string>
+            <key>devname</key>
+            <string>dsd4432</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>kgd</string>
+            <key>description</key>
+            <string>DVK KGD framebuffer</string>
+            <key>devname</key>
+            <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>qts1</string>
+            <key>description</key>
+            <string>TTI QTS-1 SCSI Host Adapter</string>
+            <key>devname</key>
+            <string>qts1</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>qbus:4</string>
+        <key>description</key>
+        <string>Q-Bus 4</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pc11</string>
+            <key>description</key>
+            <string>DEC PC11 controller</string>
+            <key>devname</key>
+            <string>pc11</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dsd4432</string>
+            <key>description</key>
+            <string>DSD A4432 Floppy Disk Interface</string>
+            <key>devname</key>
+            <string>dsd4432</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>kgd</string>
+            <key>description</key>
+            <string>DVK KGD framebuffer</string>
+            <key>devname</key>
+            <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>qts1</string>
+            <key>description</key>
+            <string>TTI QTS-1 SCSI Host Adapter</string>
+            <key>devname</key>
+            <string>qts1</string>
           </dict>
         </array>
       </dict>
