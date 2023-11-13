@@ -94,7 +94,7 @@ SLOTS = (
 	"zorro1", "zorro2", "zorro3", "zorro4", "zorro5",
 
 	# dec
-	"eia", "host", "com_prt", "prt_port",
+	"eia", "host", "com_port", "prt_port",
 	"rs232a", "rs232b", "serial0", "serial1", "tty0", "tty1",
 	"kbd", "mse", "keyboard", "kbd_con", "mouseport", 
 
@@ -150,7 +150,7 @@ SLOT_NAMES = {
 
 	"eia":        "Serial",
 	"host":       "Serial",
-	"com_prt":    "Serial",
+	"com_port":   "Serial",
 	"prt_port":   "Printer",
 	"rs232a":     "Serial A",
 	"rs232b":     "Serial B",
