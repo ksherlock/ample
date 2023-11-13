@@ -191,7 +191,7 @@ def find_machine_media(parent):
 		slotlist.add(slotname)
 
 	# print(slotlist)
-	for name in ("scsi","scsibus","scsi1"):
+	for name in ("scsi","scsibus","scsi0", "scsi1"):
 		if name + ":4" in slotlist and name + ":3" not in slotlist:
 			media["cdrom"] = media.get("cdrom", 0) + 1
 
@@ -414,21 +414,6 @@ def make_device_slots(machine):
 
 	mname = machine.get('name')
 
-	# add missing cd-rom scsi slot1
-	# s0 = machine.find('./slot[@name=":scsibus:0"]')
-	# s1 = machine.find('./slot[@name=":scsibus:1"]')
-	# if s0 and not s1:
-	# 	s1 = deepcopy(s0)
-	# 	s1.set('name', ':scsibus:1')
-	# 	s1.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	for ix in range(0, len(machine)):
-	# 		if machine[ix] == s0:
-	# 			machine.insert(ix+1, s1)
-	# 			break
-	# 	#machine.insert(5,s1)
-
-
-
 	slots = []
 	for slot in machine.findall('./slot'):
 		slotname = slot.get("name")
@@ -529,6 +514,8 @@ def make_smartport(machine):
 	SLOTS = [
 		*['fdc:' + str(x) for x in range(0,4)],
 		*['scsi:' + str(x) for x in range(0,7)],
+		*['scsi0:' + str(x) for x in range(0,7)],
+		*['scsi1:' + str(x) for x in range(0,7)],
 		*['scsibus:' + str(x) for x in range(0,7)],
 		*['wd1772:' + str(x) for x in range(0,4)],
 

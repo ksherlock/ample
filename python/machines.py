@@ -90,9 +90,16 @@ SLOTS = (
 	# st
 	"centronics", "mdin", "mdout",
 
+	# amiga
+	"zorro1", "zorro2", "zorro3", "zorro4", "zorro5",
+
 	# dec
 	"eia", "host", "com_prt", "prt_port",
-	"rs232a", "rs232b", "serial0", "serial1", 
+	"rs232a", "rs232b", "serial0", "serial1", "tty0", "tty1",
+	"kbd", "mse", "keyboard", "kbd_con", "mouseport", 
+
+	"isa0", "isa1", "isa2", "isa3", "isa4", "isa5", "isa6", "isa7", "isa8", "isa9",
+	"qbus:1", "qbus:2", "qbus:3", "qbus:4", "qbus:5",
 )
 
 SLOT_NAMES = {
@@ -108,7 +115,7 @@ SLOT_NAMES = {
 	"sl7":        "Slot 7",
 	"exp":        "Expansion",
 	"aux":        "Auxiliary",
-	"rs232":      "Modem",
+	"rs232":      "Serial",
 	"gameio":     "Game I/O",
 	"modem":      "Modem",
 	"printer":    "Printer",
@@ -128,6 +135,19 @@ SLOT_NAMES = {
 	"mdin":       "MIDI In",
 	"mdout":      "MIDI Out",
 
+	"zorro1":     "Zorro 1",
+	"zorro2":     "Zorro 2",
+	"zorro3":     "Zorro 3",
+	"zorro4":     "Zorro 4",
+	"zorro5":     "Zorro 5",
+
+
+	"kbd":        "Keyboard",
+	"keyboard":   "Keyboard",
+	"kbd_con":    "Keyboard",
+	"mse":        "Mouse",
+	"mouseport":  "Mouse",
+
 	"eia":        "Serial",
 	"host":       "Serial",
 	"com_prt":    "Serial",
@@ -136,4 +156,23 @@ SLOT_NAMES = {
 	"rs232b":     "Serial B",
 	"serial0":    "Serial 0",
 	"serial1":    "Serial 1",
+	"tty0":       "TTY 0",
+	"tty1":       "TTY 1",
+
+	"isa0":       "Slot 0",
+	"isa1":       "Slot 1",
+	"isa2":       "Slot 2",
+	"isa3":       "Slot 3",
+	"isa4":       "Slot 4",
+	"isa5":       "Slot 5",
+	"isa6":       "Slot 6",
+	"isa7":       "Slot 7",
+	"isa8":       "Slot 8",
+	"isa9":       "Slot 9",
+
+	"qbus:1":     "Q-Bus 1",
+	"qbus:2":     "Q-Bus 2",
+	"qbus:3":     "Q-Bus 3",
+	"qbus:4":     "Q-Bus 4",
+	"qbus:5":     "Q-Bus 5",
 }
