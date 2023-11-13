@@ -12,7 +12,8 @@
 
 
 enum {
-    kIndexFloppy525 = 0,
+    kIndexFloppy8 = 0,
+    kIndexFloppy525,
     kIndexFloppy35,
     kIndexHardDrive,
     kIndexCDROM,
@@ -27,7 +28,7 @@ enum {
     
     kIndexLast
 };
-#define CATEGORY_COUNT 11
+#define CATEGORY_COUNT 12
 static_assert(kIndexLast == CATEGORY_COUNT, "Invalid Category Count");
 
 

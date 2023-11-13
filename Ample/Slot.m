@@ -479,6 +479,7 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     _(hard);
     _(floppy_3_5);
     _(floppy_5_25);
+    _(floppy_8);
     _(pseudo_disk);
     _(bitbanger);
     _(midiin);

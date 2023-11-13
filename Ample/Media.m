@@ -21,6 +21,7 @@ struct Media MediaFromDictionary(NSDictionary *dict) {
     _(hard);
     _(floppy_3_5);
     _(floppy_5_25);
+    _(floppy_8);
     _(pseudo_disk);
     _(bitbanger);
     _(midiin);
@@ -38,8 +39,8 @@ void MediaAdd(Media *dest, const Media *src) {
 
     // could merge from src media but not currently set there.
     
-    unsigned count;
-    unsigned flops = dest->floppy_5_25 + dest->floppy_3_5;
+    //unsigned count;
+    //unsigned flops = dest->floppy_8 + dest->floppy_5_25 + dest->floppy_3_5;
 
     
 #define _(name) dest->name += src->name;
@@ -48,6 +49,7 @@ void MediaAdd(Media *dest, const Media *src) {
     _(hard);
     _(floppy_3_5);
     _(floppy_5_25);
+    _(floppy_8);
     _(pseudo_disk);
     _(bitbanger);
     _(midiin);
@@ -56,14 +58,15 @@ void MediaAdd(Media *dest, const Media *src) {
     _(rom);
 #undef _
 
-    
+#if 0
+    // TODO - FLOPPY_8
     if ((count = src->floppy_5_25)) {
         uint64_t bits = (1 << count) - 1;
         //dest->floppy_mask <<= count;
         bits <<= flops;
         dest->floppy_mask |= bits;
     }
-
+#endif
 
 }
 
@@ -78,6 +81,7 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(hard);
     _(floppy_3_5);
     _(floppy_5_25);
+    _(floppy_8);
     _(pseudo_disk);
     _(bitbanger);
     _(midiin);
@@ -85,7 +89,7 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(picture);
     _(rom);
 
-    _(floppy_mask);
+    //_(floppy_mask);
 
     return YES;
 #undef _
