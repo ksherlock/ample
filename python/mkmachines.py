@@ -128,15 +128,14 @@ def find_machine_media(parent):
 	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
 	#
 	# apple1 has a "snapshot" device.  not currently supported.
-	# mac fpds slot - not supported
 	# mac128 kbd slot - not supported
 	# in the //c (but not //c+) the floppy drives are in slot 6 which doesn't otherwise exist.
 	#
 	# not supported:
 	# apple1 - snapshot device
-	# mac [various] - pds/lcpds slot
 	# mac128k - kbd slot
 	#
+	# pdp11 "floppydisk" is an 8" floppy.
 
 
 	mname = parent.get("name")
@@ -149,6 +148,7 @@ def find_machine_media(parent):
 		"apple2_cass": "cass",
 		"floppy_5_25": "floppy_5_25",
 		"floppy_3_5": "floppy_3_5",
+		"floppy_8": "floppy_8", # pdp-11, etc
 		# mac
 		"scsi_hdd": "hard",
 		"cdrom": "cdrom",
@@ -165,23 +165,17 @@ def find_machine_media(parent):
 		if ':' in tag:
 			tt = tag.split(':')
 			slot = tt[0]
-
-		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
-		# as of 232 (231?), these are configurable as :scsi:0, etc or :scsibus:0, etc.
-		# if mname[0:3] == "mac" and slot in ("scsi", "scsibus"): slot = None
-
-		# MAME 0.258 - macintosh scsi slot 3 now hardcoded for cd-rom
+			if slot in ("rx01", ):
+				slot = None # pdp-11
 
 		#print(tag, " - ", slot, "  - ",intf)
 
-		#if slot and intf != "cdrom": continue
 		# skip slot devices -- they'll be handled as part of the device.
 		if slot: continue
 
 		if intf in remap:
 			name = remap[intf]
 			media[name] = media.get(name, 0) + 1
-
 
 	# mac - scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
 	# check for undeclared cd-rom
@@ -196,6 +190,7 @@ def find_machine_media(parent):
 			media["cdrom"] = media.get("cdrom", 0) + 1
 
 
+	#print(media)
 	return media
 
 
@@ -521,29 +516,6 @@ def make_smartport(machine):
 
 		"sl6:0", "sl6:1", "0", "1", "2", "3"
 	]
-
-	# surgery to add cd-rom scsi nodes:
-	# s2 = machine.find('slot[@name="scsi:2"]')
-	# s3 = machine.find('slot[@name="scsi:3"]')
-	# if s2 and not s3:
-	# 	s3 = deepcopy(s2)
-	# 	parent = s2.find("..")
-	# 	# print(s2)
-	# 	# print(parent)
-	# 	s3.set('name', 'scsi:3')
-	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	machine.append(s3)
-	# 	# print("inserting s3")
-
-	# s2 = machine.find('slot[@name="scsibus:2"]')
-	# s3 = machine.find('slot[@name="scsibus:3"]')
-	# if s2 and not s3:
-	# 	s3 = deepcopy(s2)
-	# 	parent = s2.find("..")
-	# 	s3.set('name', 'scsibus:3')
-	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	machine.append(s3)
-
 
 
 	for s in SLOTS:
