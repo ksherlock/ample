@@ -8,8 +8,6 @@
     <string>Sun 3/260/280</string>
     <key>media</key>
     <dict>
-      <key>cdrom</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -118,6 +116,284 @@
             <string>smartport</string>
             <key>default</key>
             <true/>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232a</string>
+        <key>description</key>
+        <string>Serial A</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ie15</string>
+            <key>description</key>
+            <string>IE15 Terminal</string>
+            <key>devname</key>
+            <string>ie15_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pty</string>
+            <key>description</key>
+            <string>Pseudo terminal</string>
+            <key>devname</key>
+            <string>pseudo_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs_printer</string>
+            <key>description</key>
+            <string>Radio Shack Serial Printer</string>
+            <key>devname</key>
+            <string>rs_serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>patch</string>
+            <key>description</key>
+            <string>RS-232 Patch Box</string>
+            <key>devname</key>
+            <string>rs232_patch_box</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback</string>
+            <key>devname</key>
+            <string>rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dec_loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback (DEC 12-15336-00)</string>
+            <key>devname</key>
+            <string>dec_rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>null_modem</string>
+            <key>description</key>
+            <string>RS232 Null Modem</string>
+            <key>devname</key>
+            <string>null_modem</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs232_sync_io</string>
+            <key>description</key>
+            <string>RS232 Synchronous I/O</string>
+            <key>devname</key>
+            <string>rs232_sync_io</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>keyboard</string>
+            <key>description</key>
+            <string>Serial Keyboard</string>
+            <key>devname</key>
+            <string>serial_keyboard</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>printer</string>
+            <key>description</key>
+            <string>Serial Printer</string>
+            <key>devname</key>
+            <string>serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>terminal</string>
+            <key>description</key>
+            <string>Serial Terminal</string>
+            <key>devname</key>
+            <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sunkbd</string>
+            <key>description</key>
+            <string>Sun Keyboard Adaptor</string>
+            <key>devname</key>
+            <string>sunkbd_adaptor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard D</string>
+            <key>devname</key>
+            <string>mockingboardd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>swtpc8212</string>
+            <key>description</key>
+            <string>SWTPC8212 Terminal</string>
+            <key>devname</key>
+            <string>swtpc8212_terminal</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232b</string>
+        <key>description</key>
+        <string>Serial B</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ie15</string>
+            <key>description</key>
+            <string>IE15 Terminal</string>
+            <key>devname</key>
+            <string>ie15_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pty</string>
+            <key>description</key>
+            <string>Pseudo terminal</string>
+            <key>devname</key>
+            <string>pseudo_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs_printer</string>
+            <key>description</key>
+            <string>Radio Shack Serial Printer</string>
+            <key>devname</key>
+            <string>rs_serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>patch</string>
+            <key>description</key>
+            <string>RS-232 Patch Box</string>
+            <key>devname</key>
+            <string>rs232_patch_box</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback</string>
+            <key>devname</key>
+            <string>rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dec_loopback</string>
+            <key>description</key>
+            <string>RS232 Loopback (DEC 12-15336-00)</string>
+            <key>devname</key>
+            <string>dec_rs232_loopback</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>null_modem</string>
+            <key>description</key>
+            <string>RS232 Null Modem</string>
+            <key>devname</key>
+            <string>null_modem</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs232_sync_io</string>
+            <key>description</key>
+            <string>RS232 Synchronous I/O</string>
+            <key>devname</key>
+            <string>rs232_sync_io</string>
+            <key>media</key>
+            <dict>
+              <key>bitbanger</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>keyboard</string>
+            <key>description</key>
+            <string>Serial Keyboard</string>
+            <key>devname</key>
+            <string>serial_keyboard</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>printer</string>
+            <key>description</key>
+            <string>Serial Printer</string>
+            <key>devname</key>
+            <string>serial_printer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>terminal</string>
+            <key>description</key>
+            <string>Serial Terminal</string>
+            <key>devname</key>
+            <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sunkbd</string>
+            <key>description</key>
+            <string>Sun Keyboard Adaptor</string>
+            <key>devname</key>
+            <string>sunkbd_adaptor</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mockingboard</string>
+            <key>description</key>
+            <string>Sweet Micro Systems Mockingboard D</string>
+            <key>devname</key>
+            <string>mockingboardd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>swtpc8212</string>
+            <key>description</key>
+            <string>SWTPC8212 Terminal</string>
+            <key>devname</key>
+            <string>swtpc8212_terminal</string>
           </dict>
         </array>
       </dict>

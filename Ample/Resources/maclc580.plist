@@ -8,8 +8,6 @@
     <string>Macintosh LC/Performa 580</string>
     <key>media</key>
     <dict>
-      <key>cdrom</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>

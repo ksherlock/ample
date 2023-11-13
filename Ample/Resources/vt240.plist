@@ -188,7 +188,7 @@
         <key>name</key>
         <string>host</string>
         <key>description</key>
-        <string>Modem</string>
+        <string>Serial</string>
         <key>options</key>
         <array>
           <dict>

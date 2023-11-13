@@ -8,8 +8,6 @@
     <string>Indigo2 (R4400, 150MHz)</string>
     <key>media</key>
     <dict>
-      <key>cdrom</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>

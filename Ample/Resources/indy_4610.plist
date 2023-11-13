@@ -8,8 +8,6 @@
     <string>Indy (R4600, 100MHz)</string>
     <key>media</key>
     <dict>
-      <key>cdrom</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
