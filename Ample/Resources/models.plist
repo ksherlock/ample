@@ -571,12 +571,6 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Macintosh Quadra 630</string>
-          <key>value</key>
-          <string>macqd630</string>
-        </dict>
-        <dict>
-          <key>description</key>
           <string>Macintosh Quadra 650</string>
           <key>value</key>
           <string>macqd650</string>
@@ -647,12 +641,6 @@
           <string>Macintosh LC/Performa 575</string>
           <key>value</key>
           <string>maclc575</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh LC/Performa 580</string>
-          <key>value</key>
-          <string>maclc580</string>
         </dict>
         <dict>
           <key>description</key>

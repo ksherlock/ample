@@ -594,6 +594,46 @@ def file_changed(path, data):
 	return 'updated'
 
 
+def find_machine_resolution(machine):
+
+	name = machine.get("cloneof")
+	if not name: name = machine.get("name")
+
+	# node = machine.find('display[@tag="screen"]')
+	node = machine.find('./display')
+	width = int(node.get("width"))
+	height = int(node.get("height"))
+
+	hscale = 1
+	wscale = 1
+
+	# mame height is often garbage.
+
+	# raster screens have a default aspect ratio of 4 : 3
+	# pre-calc something like that, but integer-based.
+
+	hscale = round((width * 3 / 4 ) / height)
+	if hscale < 1 : hscale = 1
+
+	return [width, height * hscale]
+
+	# if height * 2 < width:
+	# 	hscale = 2
+
+	# if name in (
+	# 	"apple1", "apple2", "apple2e", "apple2c", "apple2gs", "apple3",
+	# 	"las3000",
+	# 	"st", "ste", "tt030",
+	# 	"ceci", "cece", "cecg", "cecm", "cec2000", "zijini"):
+	# 	hscale = 2
+
+
+	#print('display:', node.get('tag'))
+	#hscale = 2
+	#if m[0:3] == "mac": hscale = 1
+	#return [int(node.get("width")), int(node.get("height")) * hscale]
+
+
 
 devices = {}
 
@@ -629,13 +669,7 @@ for m in machines:
 
 	data["media"] = find_machine_media(machine)
 
-
-	# node = machine.find('display[@tag="screen"]')
-	node = machine.find('./display')
-	#print('display:', node.get('tag'))
-	hscale = 2
-	if m[0:3] == "mac": hscale = 1
-	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
+	data["resolution"] = find_machine_resolution(machine)
 
 	# submachines.clear()
 	# for x in root.findall("machine[@isdevice='yes']"):
