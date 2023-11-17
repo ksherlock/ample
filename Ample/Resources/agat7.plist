@@ -14,7 +14,7 @@
     <key>resolution</key>
     <array>
       <integer>512</integer>
-      <integer>512</integer>
+      <integer>256</integer>
     </array>
     <key>slots</key>
     <array>

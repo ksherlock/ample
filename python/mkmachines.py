@@ -612,8 +612,8 @@ def find_machine_resolution(machine):
 	# raster screens have a default aspect ratio of 4 : 3
 	# pre-calc something like that, but integer-based.
 
-	hscale = round((width * 3 / 4 ) / height)
-	if hscale < 1 : hscale = 1
+	#hscale = round((width * 3 / 4 ) / height)
+	#if hscale < 1 : hscale = 1
 
 	return [width, height * hscale]
 
