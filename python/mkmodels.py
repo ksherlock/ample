@@ -48,6 +48,8 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 
 atari_st_children = ["st", "megast"]
 
+amiga_children = ["a500", "a500n", "a1000", "a1000n", "a2000", "a2000n" ]
+
 dec_vt_children = ["vt52", "vt100", "vt101", "vt102", "vt240"]
 dec_children = ["ds2100", "ds3100", "ds5k133", "pdp11qb", "pdp11ub", "pdp11ub2"]
 ibm_rt_children = ["rtpc010", "rtpc015", "rtpc020", "rtpc025", "rtpca25"]
@@ -82,6 +84,7 @@ TREE = [
 ]
 
 TREE_EXTRA = TREE + [
+	("Amiga", None, amiga_children),
 	("DEC VT", None, dec_vt_children),
 	("DEC", None, dec_children),
 	("HP 9000", None, hp_9000_children),

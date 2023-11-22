@@ -28,6 +28,7 @@ EXTRA_MACHINES = [
 	'apple2c3',
 	'apple2c4',
 	'mac2fdhd',
+	'cuda',
 ]
 
 
@@ -120,6 +121,10 @@ EXCLUDE = set([
     'cw7501',
     'smoc501',
 
+	# amiga ntsc
+	"a500n",
+	"a1000n",
+	"a2000n",
 ])
 
 def fix_machine_description(x, devname):

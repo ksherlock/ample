@@ -100,6 +100,222 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a1000</string>
+      <key>description</key>
+      <string>Amiga 1000 (PAL)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_dk</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (Denmark)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_fr</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (France/Belgium)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_de</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (Germany/Austria)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_it</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (Italy)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_se</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (Sweden/Finland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_us</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (U.S./Canada)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1000kbd_gb</string>
+      <key>description</key>
+      <string>Amiga 1000 Keyboard (UK)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a1200kbd_rb</string>
+      <key>description</key>
+      <string>Amiga 1200 Keyboard Rev B</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000</string>
+      <key>description</key>
+      <string>Amiga 2000 (PAL)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_g80_dk</string>
+      <key>description</key>
+      <string>Amiga 2000 Keyboard (Cherry - Denmark)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_g80_de</string>
+      <key>description</key>
+      <string>Amiga 2000 Keyboard (Cherry - Germany/Austria)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_g80_se</string>
+      <key>description</key>
+      <string>Amiga 2000 Keyboard (Cherry - Sweden/Finland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_g80_us</string>
+      <key>description</key>
+      <string>Amiga 2000 Keyboard (Cherry - U.S./Canada)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_g80_gb</string>
+      <key>description</key>
+      <string>Amiga 2000 Keyboard (Cherry - UK)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_dk</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Denmark)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_fr</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (France/Belgium)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_de</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Germany/Austria)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_it</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Italy)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_no</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Norway)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_es</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Spain)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_se</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Sweden/Finland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_ch</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (Switzerland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_us</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (U.S./Canada)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2000kbd_gb</string>
+      <key>description</key>
+      <string>Amiga 2000/3000/4000 Keyboard (UK)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500</string>
+      <key>description</key>
+      <string>Amiga 500 (PAL)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_dk</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Denmark)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_fr</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (France/Belgium)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_de</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Germany/Austria)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_it</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Italy)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_no</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Norway)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_es</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Spain)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_se</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Sweden/Finland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_ch</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (Switzerland)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_us</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (U.S./Canada)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a500kbd_gb</string>
+      <key>description</key>
+      <string>Amiga 500 Keyboard (UK)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>apple3</string>
       <key>description</key>
       <string>Apple ///</string>
@@ -496,6 +712,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>zorro_buddha</string>
+      <key>description</key>
+      <string>Buddha IDE controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>zorro_a2091</string>
+      <key>description</key>
+      <string>CBM A2091 HD Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>zorro_a590</string>
+      <key>description</key>
+      <string>CBM A590 HD Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ccs7710</string>
       <key>description</key>
       <string>CCS Model 7710 Asynchronous Serial Interface</string>
@@ -613,6 +847,24 @@
       <string>dsd4432</string>
       <key>description</key>
       <string>DSD A4432 Floppy Disk Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>zorro_ar1</string>
+      <key>description</key>
+      <string>Datel Action Replay MK-I</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>zorro_ar2</string>
+      <key>description</key>
+      <string>Datel Action Replay MK-II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>zorro_ar3</string>
+      <key>description</key>
+      <string>Datel Action Replay MK-III</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1405,6 +1657,12 @@
       <string>m68705p3</string>
       <key>description</key>
       <string>Motorola MC68705P3</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>m68hc705c8a</string>
+      <key>description</key>
+      <string>Motorola MC68HC705C8A</string>
     </dict>
     <dict>
       <key>value</key>

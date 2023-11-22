@@ -679,6 +679,49 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Amiga</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Amiga 500 (PAL)</string>
+          <key>value</key>
+          <string>a500</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Amiga 500 (NTSC)</string>
+          <key>value</key>
+          <string>a500n</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Amiga 1000 (PAL)</string>
+          <key>value</key>
+          <string>a1000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Amiga 1000 (NTSC)</string>
+          <key>value</key>
+          <string>a1000n</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Amiga 2000 (PAL)</string>
+          <key>value</key>
+          <string>a2000</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Amiga 2000 (NTSC)</string>
+          <key>value</key>
+          <string>a2000n</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>DEC VT</string>
       <key>children</key>
       <array>

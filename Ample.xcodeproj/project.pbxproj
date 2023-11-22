@@ -397,6 +397,12 @@
 		B6841BD7251EC926006A5C39 /* vmnet_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B6841BCA251EC88E006A5C39 /* vmnet_helper.c */; };
 		B6841BDA251ECB1C006A5C39 /* mame64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B66236B824FDA698006CABD7 /* mame64 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B6841BDE251ECC29006A5C39 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6841BDD251ECC29006A5C39 /* vmnet.framework */; };
+		B6852EC92B0EAA7500BBFFC7 /* a500n.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC32B0EAA7400BBFFC7 /* a500n.plist */; };
+		B6852ECA2B0EAA7500BBFFC7 /* a1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC42B0EAA7400BBFFC7 /* a1000.plist */; };
+		B6852ECB2B0EAA7500BBFFC7 /* a1000n.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC52B0EAA7400BBFFC7 /* a1000n.plist */; };
+		B6852ECC2B0EAA7500BBFFC7 /* a2000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC62B0EAA7400BBFFC7 /* a2000.plist */; };
+		B6852ECD2B0EAA7500BBFFC7 /* a2000n.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC72B0EAA7400BBFFC7 /* a2000n.plist */; };
+		B6852ECE2B0EAA7500BBFFC7 /* a500.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6852EC82B0EAA7500BBFFC7 /* a500.plist */; };
 		B68A899026BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
 		B68A899126BE18E000B2C8C6 /* MidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A898F26BE18E000B2C8C6 /* MidiManager.m */; };
 		B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
@@ -681,6 +687,12 @@
 		B6841BCA251EC88E006A5C39 /* vmnet_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmnet_helper.c; sourceTree = "<group>"; };
 		B6841BD0251EC913006A5C39 /* vmnet_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vmnet_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6841BDD251ECC29006A5C39 /* vmnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vmnet.framework; path = System/Library/Frameworks/vmnet.framework; sourceTree = SDKROOT; };
+		B6852EC32B0EAA7400BBFFC7 /* a500n.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a500n.plist; sourceTree = "<group>"; };
+		B6852EC42B0EAA7400BBFFC7 /* a1000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a1000.plist; sourceTree = "<group>"; };
+		B6852EC52B0EAA7400BBFFC7 /* a1000n.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a1000n.plist; sourceTree = "<group>"; };
+		B6852EC62B0EAA7400BBFFC7 /* a2000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a2000.plist; sourceTree = "<group>"; };
+		B6852EC72B0EAA7400BBFFC7 /* a2000n.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a2000n.plist; sourceTree = "<group>"; };
+		B6852EC82B0EAA7500BBFFC7 /* a500.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a500.plist; sourceTree = "<group>"; };
 		B6896D9D2B016CC700251FA4 /* ip6400.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ip6400.plist; sourceTree = "<group>"; };
 		B6896D9E2B016CC800251FA4 /* ceci.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ceci.plist; sourceTree = "<group>"; };
 		B6896DA02B016CC800251FA4 /* roms~extra.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "roms~extra.plist"; sourceTree = "<group>"; };
@@ -916,6 +928,12 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6852EC82B0EAA7500BBFFC7 /* a500.plist */,
+				B6852EC32B0EAA7400BBFFC7 /* a500n.plist */,
+				B6852EC42B0EAA7400BBFFC7 /* a1000.plist */,
+				B6852EC52B0EAA7400BBFFC7 /* a1000n.plist */,
+				B6852EC62B0EAA7400BBFFC7 /* a2000.plist */,
+				B6852EC72B0EAA7400BBFFC7 /* a2000n.plist */,
 				B67879072B0195D800CFACF2 /* sun1.plist */,
 				B67879082B0195D800CFACF2 /* sun2_50.plist */,
 				B67879142B0195DB00CFACF2 /* sun2_120.plist */,
@@ -1654,6 +1672,7 @@
 				B67878632B01732600CFACF2 /* prav8c.plist in Resources */,
 				B67877F72B01732600CFACF2 /* indy_4613.plist in Resources */,
 				B67877D32B01732600CFACF2 /* ace1000.plist in Resources */,
+				B6852ECE2B0EAA7500BBFFC7 /* a500.plist in Resources */,
 				B67878222B01732600CFACF2 /* pi4d30.plist in Resources */,
 				B67878022B01732600CFACF2 /* las128e2.plist in Resources */,
 				B67877F92B01732600CFACF2 /* ip2000.plist in Resources */,
@@ -1696,13 +1715,16 @@
 				B678783E2B01732600CFACF2 /* apple2c.plist in Resources */,
 				B67878012B01732600CFACF2 /* ip6800.plist in Resources */,
 				B678782B2B01732600CFACF2 /* rtpc010.plist in Resources */,
+				B6852ECD2B0EAA7500BBFFC7 /* a2000n.plist in Resources */,
 				B6DDECCF2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B67877FA2B01732600CFACF2 /* ip2400.plist in Resources */,
+				B6852EC92B0EAA7500BBFFC7 /* a500n.plist in Resources */,
 				B67878042B01732600CFACF2 /* laser128.plist in Resources */,
 				B6DDECD12505A86E0093587A /* eject-hover-16x16.png in Resources */,
 				B67878442B01732600CFACF2 /* apple2jp.plist in Resources */,
 				B67877DE2B01732600CFACF2 /* apple2p.plist in Resources */,
 				B678782A2B01732600CFACF2 /* rs3230.plist in Resources */,
+				B6852ECA2B0EAA7500BBFFC7 /* a1000.plist in Resources */,
 				B67878332B01732600CFACF2 /* vt52.plist in Resources */,
 				B678780A2B01732600CFACF2 /* maciici.plist in Resources */,
 				B67878172B01732600CFACF2 /* maxxi.plist in Resources */,
@@ -1810,6 +1832,7 @@
 				B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */,
 				B67877EB2B01732600CFACF2 /* hp9k330.plist in Resources */,
+				B6852ECC2B0EAA7500BBFFC7 /* a2000.plist in Resources */,
 				B678780E2B01732600CFACF2 /* maclc2.plist in Resources */,
 				B67878642B01732600CFACF2 /* prav82.plist in Resources */,
 				B67879262B0195DB00CFACF2 /* sun4_65.plist in Resources */,
@@ -1817,6 +1840,7 @@
 				B67878142B01732600CFACF2 /* macqd650.plist in Resources */,
 				B6E4B5DA24FDE2670094A35C /* Credits.rtf in Resources */,
 				B67878422B01732600CFACF2 /* apple2euk.plist in Resources */,
+				B6852ECB2B0EAA7500BBFFC7 /* a1000n.plist in Resources */,
 				B678781B2B01732600CFACF2 /* nws3260.plist in Resources */,
 				B67878182B01732600CFACF2 /* microeng.plist in Resources */,
 				B678784E2B01732600CFACF2 /* laser128o.plist in Resources */,

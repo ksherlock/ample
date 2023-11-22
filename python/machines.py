@@ -50,6 +50,10 @@ MACHINES = (
 MACHINES_EXTRA = MACHINES + (
 
 	# other (for Ample-lite...)
+
+	# amiga
+	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n", 
+
 	# DEC
 	"vt52", "vt100", "vt101", "vt102", "vt240",
 	"ds2100", "ds3100", "ds5k133", "pdp11qb", "pdp11ub", "pdp11ub2",
