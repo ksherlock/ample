@@ -8,6 +8,10 @@
     <string>BBC Micro Model A</string>
     <key>media</key>
     <dict>
+      <key>cass</key>
+      <integer>1</integer>
+      <key>rom</key>
+      <integer>4</integer>
     </dict>
     <key>resolution</key>
     <array>

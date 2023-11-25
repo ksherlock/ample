@@ -8,6 +8,10 @@
     <string>BBC Master Turbo</string>
     <key>media</key>
     <dict>
+      <key>cass</key>
+      <integer>1</integer>
+      <key>rom</key>
+      <integer>3</integer>
     </dict>
     <key>resolution</key>
     <array>

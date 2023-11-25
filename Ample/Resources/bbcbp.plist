@@ -8,6 +8,10 @@
     <string>BBC Micro Model B+ 64K</string>
     <key>media</key>
     <dict>
+      <key>cass</key>
+      <integer>1</integer>
+      <key>rom</key>
+      <integer>5</integer>
     </dict>
     <key>resolution</key>
     <array>

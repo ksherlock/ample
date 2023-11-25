@@ -8,6 +8,8 @@
     <string>BBC Master Compact</string>
     <key>media</key>
     <dict>
+      <key>rom</key>
+      <integer>6</integer>
     </dict>
     <key>resolution</key>
     <array>

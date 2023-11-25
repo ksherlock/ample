@@ -152,6 +152,10 @@ def find_machine_media(parent):
 		# mac
 		"scsi_hdd": "hard",
 		"cdrom": "cdrom",
+
+		# bbc
+		"bbc_rom": "rom", # bbc rom slot 0-3
+		"bbc_cass": "cass",
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -168,7 +172,7 @@ def find_machine_media(parent):
 			if slot in ("rx01", ):
 				slot = None # pdp-11
 
-		#print(tag, " - ", slot, "  - ",intf)
+		# print(tag, " - ", slot, "  - ",intf)
 
 		# skip slot devices -- they'll be handled as part of the device.
 		if slot: continue
