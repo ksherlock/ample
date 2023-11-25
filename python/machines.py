@@ -51,8 +51,13 @@ MACHINES_EXTRA = MACHINES + (
 
 	# other (for Ample-lite...)
 
+	# acorn
+	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
+
+
 	# amiga
 	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n", 
+
 
 	# DEC
 	"vt52", "vt100", "vt101", "vt102", "vt240",
@@ -104,6 +109,9 @@ SLOTS = (
 
 	"isa0", "isa1", "isa2", "isa3", "isa4", "isa5", "isa6", "isa7", "isa8", "isa9",
 	"qbus:1", "qbus:2", "qbus:3", "qbus:4", "qbus:5",
+
+	# bbc
+	"rs423", "tube", "econet254", "analogue", "userport", "internal", "1mhzbus"
 )
 
 SLOT_NAMES = {
@@ -152,6 +160,7 @@ SLOT_NAMES = {
 	"mse":        "Mouse",
 	"mouseport":  "Mouse",
 
+	"rs423":      "Serial",
 	"eia":        "Serial",
 	"host":       "Serial",
 	"com_port":   "Serial",
@@ -179,4 +188,11 @@ SLOT_NAMES = {
 	"qbus:3":     "Q-Bus 3",
 	"qbus:4":     "Q-Bus 4",
 	"qbus:5":     "Q-Bus 5",
+
+	"tube":       "Tube",
+	"econet254":  "Econet",
+	"analogue":   "Analog Port",
+	"userport":   "User Port",
+	"internal":   "Internal",
+	"1mhzbus":    "1MHz Bus",
 }
