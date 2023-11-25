@@ -324,9 +324,10 @@ DEVICE_MEDIA = {
 	# 'rs232_sync_io': 'bitbanger',
 	'a2romusr': 'rom',
 
-	# bbc
-	"525qd": "floppy_5_25",
+	# bbc, etc
 	"525dd": "floppy_5_25",
+	"525hd": "floppy_5_25",
+	"525qd": "floppy_5_25",
 	"525sd": "floppy_5_25",
 	"525ssdd": "floppy_5_25",
 	"525sssd": "floppy_5_25",
