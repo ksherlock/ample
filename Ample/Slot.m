@@ -85,6 +85,10 @@ static NSDictionary *TypeMap = nil;
   };
 }
 
+-(NSString *)description {
+    return [NSString stringWithFormat: @"<Slot: %@>", _name];
+}
+
 -(void)reset {
     [self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
     for (SlotOption *s in _options) {
@@ -281,7 +285,7 @@ static NSDictionary *TypeMap = nil;
     if (x) _type = [x intValue];
     
     
-    if (index < 0x10000) {
+    if (index && index < 0x10000) {
         topLevel = YES;
         _name = [@"-" stringByAppendingString: _name];
         _title = [_title stringByAppendingString: @":"];
