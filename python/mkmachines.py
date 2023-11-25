@@ -323,6 +323,14 @@ DEVICE_MEDIA = {
 	# 'null_modem': 'bitbanger',
 	# 'rs232_sync_io': 'bitbanger',
 	'a2romusr': 'rom',
+
+	# bbc
+	"525qd": "floppy_5_25",
+	"525dd": "floppy_5_25",
+	"525sd": "floppy_5_25",
+	"525ssdd": "floppy_5_25",
+	"525sssd": "floppy_5_25",
+
 }
 
 DEVICE_EXCLUDE = set([
@@ -350,7 +358,6 @@ def make_device_options(slot):
 # apple 2 scsi slot 1 is a default cd rom device.
 # Macintosh scsi slot 3 is a default cd rom device.
 # THIS IS NOT REFLECTED IN THE XML SINCE IT'S SET AT RUN TIME.
-# IN FACT, THE :scsi
 
 	options = []
 	has_default = False
@@ -418,6 +425,7 @@ def make_device_slots(machine):
 		slotname = slot.get("name")
 		options = make_device_options(slot)
 		if not options: continue
+
 		slots.append({
 			"name": slotname,
 			"options": options

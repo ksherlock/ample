@@ -82,6 +82,7 @@ MACHINES_EXTRA = MACHINES + (
 
 
 SLOTS = (
+	"fdc", # bbc fdc
 	"sl0", "sl1", "sl2", "sl3",
 	"sl4", "sl5", "sl6", "sl7",
 	"exp", "aux",
@@ -195,4 +196,5 @@ SLOT_NAMES = {
 	"userport":   "User Port",
 	"internal":   "Internal",
 	"1mhzbus":    "1MHz Bus",
+	"fdc":        "Disk Drives",
 }

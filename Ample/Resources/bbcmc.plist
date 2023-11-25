@@ -4422,6 +4422,11 @@
                 <string>5.25" quad density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -4445,6 +4450,11 @@
                 <string>5.25" quad density floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -5447,6 +5457,11 @@
                 <string>5.25" quad density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -5470,6 +5485,11 @@
                 <string>5.25" quad density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -6491,6 +6511,11 @@
                 <string>5.25" quad density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
