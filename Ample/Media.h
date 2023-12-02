@@ -14,6 +14,7 @@ typedef struct Media {
     unsigned cass;
     unsigned cdrom;
     unsigned hard;
+    unsigned floppy_8;
     unsigned floppy_5_25;
     unsigned floppy_3_5;
     unsigned pseudo_disk;
@@ -22,13 +23,14 @@ typedef struct Media {
     unsigned midiout;
     unsigned picture;
     unsigned rom;
-    uint64_t floppy_mask;
+    //uint64_t floppy_mask;
 } Media;
 
 
 typedef enum {
     MediaTypeError = -1,
     MediaTypeUnknown = 0,
+    MediaType_8,
     MediaType_5_25,
     MediaType_3_5,
     MediaType_HardDisk,

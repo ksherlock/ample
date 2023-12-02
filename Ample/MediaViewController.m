@@ -321,6 +321,7 @@
     if (first) return;
     first++;
 
+    _data[kIndexFloppy8] = [MediaCategory categoryWithTitle: @"8\" Floppies"];
     _data[kIndexFloppy525] = [MediaCategory categoryWithTitle: @"5.25\" Floppies"];
     _data[kIndexFloppy35] = [MediaCategory categoryWithTitle: @"3.5\" Floppies"];
     _data[kIndexHardDrive] = [MediaCategory categoryWithTitle: @"Hard Drives"];
@@ -347,7 +348,7 @@
 -(void)rebuildArgs {
     
     static char* prefix[] = {
-        "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb", "min", "mout", "pic", "rom",
+        "flop", "flop", "flop", "hard", "cdrm", "cass", "disk", "bitb", "min", "mout", "pic", "rom",
     };
     static_assert(SIZEOF(prefix) == CATEGORY_COUNT, "Missing item");
     NSMutableArray *args = [NSMutableArray new];
@@ -356,16 +357,34 @@
 
     for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
-        uint64_t floppy_mask = _media.floppy_mask;
+        //uint64_t floppy_mask = _media.floppy_mask;
         unsigned index = 0;
 
         MediaCategory *cat = _data[j];
         NSInteger valid = [cat validCount];
+        
+        // assumes floppy order is 8", 5.25", 3.5".
+        switch(j) {
+            case kIndexFloppy8:
+                index = 0;
+                break;
+            case kIndexFloppy525:
+                index = _media.floppy_8;
+                break;
+            case kIndexFloppy35:
+                index = _media.floppy_8 + _media.floppy_5_25;
+                break;
+        }
+        
         for (NSInteger i = 0; i < valid; ++i) {
 
             MediaItem *item = [cat objectAtIndex: i];
             NSString *arg = [item argument];
 
+            ++index;
+            if (!arg) continue;
+#if 0
+            // TODO -- FLOPPY_8 support.
 
             if (j == kIndexFloppy525) {
                 // assumes < 64 floppies....
@@ -385,7 +404,7 @@
             ++index;
             floppy_mask >>= 1;
             if (!arg) continue;
-            
+#endif
             [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], index]];
             [args addObject: arg];
         }
@@ -439,6 +458,7 @@ x = media.name; cat = _data[index]; delta |= [cat setItemCount: x]
     _(hard, kIndexHardDrive);
     _(floppy_3_5, kIndexFloppy35);
     _(floppy_5_25, kIndexFloppy525);
+    _(floppy_8, kIndexFloppy8);
     _(pseudo_disk, kIndexDiskImage);
     _(bitbanger, kIndexBitBanger);
     _(midiin, kIndexMidiIn);
@@ -758,6 +778,7 @@ static NSString *kDragType = @"private.ample.media";
     
     switch(tag) {
 
+        case kIndexFloppy8:
         case kIndexFloppy525:
         case kIndexFloppy35:
         case kIndexHardDrive:
@@ -825,6 +846,7 @@ static NSString *kDragType = @"private.ample.media";
     switch(mt) {
         case MediaType_3_5: ix = kIndexFloppy35; break;
         case MediaType_5_25: ix = kIndexFloppy525; break;
+        case MediaType_8: ix = kIndexFloppy8; break;
         case MediaType_Cassette: ix = kIndexCassette; break;
         case MediaType_HardDisk: ix = kIndexHardDrive; break;
         case MediaType_CDROM: ix = kIndexCDROM; break;
@@ -868,7 +890,7 @@ static NSString *kDragType = @"private.ample.media";
 }
 
 static NSString * BookmarkStrings[] = {
-    @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb", @"midiin", @"midiout", @"pic", @"rom",
+    @"flop_8", @"flop_525", @"flop_35", @"hard", @"cdrm", @"cass", @"disk", @"bitb", @"midiin", @"midiout", @"pic", @"rom",
 };
 static_assert(SIZEOF(BookmarkStrings) == CATEGORY_COUNT, "Missing item");
 

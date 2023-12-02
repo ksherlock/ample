@@ -1,0 +1,2827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>electron</string>
+    <key>description</key>
+    <string>Acorn Electron</string>
+    <key>media</key>
+    <dict>
+      <key>cass</key>
+      <integer>1</integer>
+    </dict>
+    <key>resolution</key>
+    <array>
+      <integer>640</integer>
+      <integer>256</integer>
+    </array>
+    <key>slots</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>ramsize</string>
+        <key>description</key>
+        <string>RAM</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>intValue</key>
+            <integer>32768</integer>
+            <key>description</key>
+            <string>32K</string>
+            <key>value</key>
+            <string>32K</string>
+            <key>default</key>
+            <true/>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>exp</string>
+        <key>description</key>
+        <string>Expansion</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>m2105</string>
+            <key>description</key>
+            <string>Acorn M2105 Expansion</string>
+            <key>devname</key>
+            <string>electron_m2105</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>plus1</string>
+            <key>description</key>
+            <string>Acorn Plus 1 Expansion</string>
+            <key>devname</key>
+            <string>electron_plus1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>plus3</string>
+            <key>description</key>
+            <string>Acorn Plus 3 Disc Expansion</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>electron_plus3</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mc68k</string>
+            <key>description</key>
+            <string>Electron 68000 Expansion</string>
+            <key>devname</key>
+            <string>electron_mc68k</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>elksd128</string>
+            <key>description</key>
+            <string>ElkSD128 Electron SD Interface</string>
+            <key>devname</key>
+            <string>electron_elksd128</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>elksd64</string>
+            <key>description</key>
+            <string>ElkSD64 Electron SD Interface</string>
+            <key>devname</key>
+            <string>electron_elksd64</string>
+            <key>media</key>
+            <dict>
+              <key>hard</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fbjoy</string>
+            <key>description</key>
+            <string>First Byte Joystick Interface</string>
+            <key>devname</key>
+            <string>electron_fbjoy</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fbprint</string>
+            <key>description</key>
+            <string>First Byte Printer Interface</string>
+            <key>devname</key>
+            <string>electron_fbprint</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mode7</string>
+            <key>description</key>
+            <string>JAFA Mode 7 Display Unit</string>
+            <key>devname</key>
+            <string>electron_mode7</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>voxbox</string>
+            <key>description</key>
+            <string>Millsgrade Voxbox Speech Synthesiser</string>
+            <key>devname</key>
+            <string>electron_voxbox</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ap1</string>
+            <key>description</key>
+            <string>P.R.E.S. Advanced Plus 1</string>
+            <key>devname</key>
+            <string>electron_ap1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ap6</string>
+            <key>description</key>
+            <string>P.R.E.S. Advanced Plus 6</string>
+            <key>devname</key>
+            <string>electron_ap6</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pwrjoy</string>
+            <key>description</key>
+            <string>Power Software Joystick Interface</string>
+            <key>devname</key>
+            <string>electron_pwrjoy</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>plus2</string>
+            <key>description</key>
+            <string>Slogger Plus 2 Expansion</string>
+            <key>devname</key>
+            <string>electron_plus2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rombox</string>
+            <key>description</key>
+            <string>Slogger Rombox</string>
+            <key>devname</key>
+            <string>electron_rombox</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romboxp</string>
+            <key>description</key>
+            <string>Slogger Rombox+</string>
+            <key>devname</key>
+            <string>electron_romboxp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sidewndr</string>
+            <key>description</key>
+            <string>Wizard Sidewinder Rom Expansion Board</string>
+            <key>devname</key>
+            <string>electron_sidewndr</string>
+          </dict>
+        </array>
+      </dict>
+    </array>
+    <key>devices</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>bbc_usersplit</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:userport1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m512mouse</string>
+                <key>description</key>
+                <string>Acorn Master 512 Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>amxmouse</string>
+                <key>description</key>
+                <string>AMX Mouse (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcard</string>
+                <key>description</key>
+                <string>BBC Micro SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcardt</string>
+                <key>description</key>
+                <string>BBC Micro Turbo SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>usersplit</string>
+                <key>description</key>
+                <string>BBC Micro User Port Splitter</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebspch</string>
+                <key>description</key>
+                <string>Beeb Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cpalette</string>
+                <key>description</key>
+                <string>Clwyd Technics Colour Palette</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m4000</string>
+                <key>description</key>
+                <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tracker</string>
+                <key>description</key>
+                <string>Marconi RB2 Tracker Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chameleon</string>
+                <key>description</key>
+                <string>Micro User Chameleon (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voicebox</string>
+                <key>description</key>
+                <string>Robin Voice Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lcd</string>
+                <key>description</key>
+                <string>Sprow LCD Display</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:userport2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m512mouse</string>
+                <key>description</key>
+                <string>Acorn Master 512 Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>amxmouse</string>
+                <key>description</key>
+                <string>AMX Mouse (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcard</string>
+                <key>description</key>
+                <string>BBC Micro SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcardt</string>
+                <key>description</key>
+                <string>BBC Micro Turbo SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>usersplit</string>
+                <key>description</key>
+                <string>BBC Micro User Port Splitter</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebspch</string>
+                <key>description</key>
+                <string>Beeb Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cpalette</string>
+                <key>description</key>
+                <string>Clwyd Technics Colour Palette</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m4000</string>
+                <key>description</key>
+                <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tracker</string>
+                <key>description</key>
+                <string>Marconi RB2 Tracker Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chameleon</string>
+                <key>description</key>
+                <string>Micro User Chameleon (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voicebox</string>
+                <key>description</key>
+                <string>Robin Voice Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lcd</string>
+                <key>description</key>
+                <string>Sprow LCD Display</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_ap1</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:analogue</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>acornjoy</string>
+                <key>description</key>
+                <string>Acorn Analogue Joysticks</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik1</string>
+                <key>description</key>
+                <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik2</string>
+                <key>description</key>
+                <string>Robo Bitstik 2</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voltmace3b</string>
+                <key>description</key>
+                <string>Voltmace Delta 3b Twin Joysticks</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_ap6</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:analogue</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>acornjoy</string>
+                <key>description</key>
+                <string>Acorn Analogue Joysticks</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik1</string>
+                <key>description</key>
+                <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik2</string>
+                <key>description</key>
+                <string>Robo Bitstik 2</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voltmace3b</string>
+                <key>description</key>
+                <string>Voltmace Delta 3b Twin Joysticks</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_fbprint</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_m2105</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:modem</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_mode7</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:exp</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m2105</string>
+                <key>description</key>
+                <string>Acorn M2105 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus1</string>
+                <key>description</key>
+                <string>Acorn Plus 1 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus3</string>
+                <key>description</key>
+                <string>Acorn Plus 3 Disc Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mc68k</string>
+                <key>description</key>
+                <string>Electron 68000 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd128</string>
+                <key>description</key>
+                <string>ElkSD128 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd64</string>
+                <key>description</key>
+                <string>ElkSD64 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbjoy</string>
+                <key>description</key>
+                <string>First Byte Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbprint</string>
+                <key>description</key>
+                <string>First Byte Printer Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mode7</string>
+                <key>description</key>
+                <string>JAFA Mode 7 Display Unit</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voxbox</string>
+                <key>description</key>
+                <string>Millsgrade Voxbox Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap1</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 1</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap6</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 6</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pwrjoy</string>
+                <key>description</key>
+                <string>Power Software Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus2</string>
+                <key>description</key>
+                <string>Slogger Plus 2 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rombox</string>
+                <key>description</key>
+                <string>Slogger Rombox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>romboxp</string>
+                <key>description</key>
+                <string>Slogger Rombox+</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sidewndr</string>
+                <key>description</key>
+                <string>Wizard Sidewinder Rom Expansion Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_plus1</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:analogue</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>acornjoy</string>
+                <key>description</key>
+                <string>Acorn Analogue Joysticks</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik1</string>
+                <key>description</key>
+                <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bitstik2</string>
+                <key>description</key>
+                <string>Robo Bitstik 2</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voltmace3b</string>
+                <key>description</key>
+                <string>Voltmace Delta 3b Twin Joysticks</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_plus2</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:userport</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m512mouse</string>
+                <key>description</key>
+                <string>Acorn Master 512 Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>amxmouse</string>
+                <key>description</key>
+                <string>AMX Mouse (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcard</string>
+                <key>description</key>
+                <string>BBC Micro SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sdcardt</string>
+                <key>description</key>
+                <string>BBC Micro Turbo SD Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>usersplit</string>
+                <key>description</key>
+                <string>BBC Micro User Port Splitter</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebspch</string>
+                <key>description</key>
+                <string>Beeb Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cpalette</string>
+                <key>description</key>
+                <string>Clwyd Technics Colour Palette</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m4000</string>
+                <key>description</key>
+                <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tracker</string>
+                <key>description</key>
+                <string>Marconi RB2 Tracker Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chameleon</string>
+                <key>description</key>
+                <string>Micro User Chameleon (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voicebox</string>
+                <key>description</key>
+                <string>Robin Voice Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lcd</string>
+                <key>description</key>
+                <string>Sprow LCD Display</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:exp</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m2105</string>
+                <key>description</key>
+                <string>Acorn M2105 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus1</string>
+                <key>description</key>
+                <string>Acorn Plus 1 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus3</string>
+                <key>description</key>
+                <string>Acorn Plus 3 Disc Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mc68k</string>
+                <key>description</key>
+                <string>Electron 68000 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd128</string>
+                <key>description</key>
+                <string>ElkSD128 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd64</string>
+                <key>description</key>
+                <string>ElkSD64 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbjoy</string>
+                <key>description</key>
+                <string>First Byte Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbprint</string>
+                <key>description</key>
+                <string>First Byte Printer Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mode7</string>
+                <key>description</key>
+                <string>JAFA Mode 7 Display Unit</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voxbox</string>
+                <key>description</key>
+                <string>Millsgrade Voxbox Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap1</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 1</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap6</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 6</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pwrjoy</string>
+                <key>description</key>
+                <string>Power Software Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus2</string>
+                <key>description</key>
+                <string>Slogger Plus 2 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rombox</string>
+                <key>description</key>
+                <string>Slogger Rombox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>romboxp</string>
+                <key>description</key>
+                <string>Slogger Rombox+</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sidewndr</string>
+                <key>description</key>
+                <string>Wizard Sidewinder Rom Expansion Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_plus3</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:exp</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m2105</string>
+                <key>description</key>
+                <string>Acorn M2105 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus1</string>
+                <key>description</key>
+                <string>Acorn Plus 1 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus3</string>
+                <key>description</key>
+                <string>Acorn Plus 3 Disc Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mc68k</string>
+                <key>description</key>
+                <string>Electron 68000 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd128</string>
+                <key>description</key>
+                <string>ElkSD128 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd64</string>
+                <key>description</key>
+                <string>ElkSD64 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbjoy</string>
+                <key>description</key>
+                <string>First Byte Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbprint</string>
+                <key>description</key>
+                <string>First Byte Printer Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mode7</string>
+                <key>description</key>
+                <string>JAFA Mode 7 Display Unit</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voxbox</string>
+                <key>description</key>
+                <string>Millsgrade Voxbox Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap1</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 1</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap6</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 6</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pwrjoy</string>
+                <key>description</key>
+                <string>Power Software Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus2</string>
+                <key>description</key>
+                <string>Slogger Plus 2 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rombox</string>
+                <key>description</key>
+                <string>Slogger Rombox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>romboxp</string>
+                <key>description</key>
+                <string>Slogger Rombox+</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sidewndr</string>
+                <key>description</key>
+                <string>Wizard Sidewinder Rom Expansion Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_rombox</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:exp</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m2105</string>
+                <key>description</key>
+                <string>Acorn M2105 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus1</string>
+                <key>description</key>
+                <string>Acorn Plus 1 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus3</string>
+                <key>description</key>
+                <string>Acorn Plus 3 Disc Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mc68k</string>
+                <key>description</key>
+                <string>Electron 68000 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd128</string>
+                <key>description</key>
+                <string>ElkSD128 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd64</string>
+                <key>description</key>
+                <string>ElkSD64 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbjoy</string>
+                <key>description</key>
+                <string>First Byte Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbprint</string>
+                <key>description</key>
+                <string>First Byte Printer Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mode7</string>
+                <key>description</key>
+                <string>JAFA Mode 7 Display Unit</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voxbox</string>
+                <key>description</key>
+                <string>Millsgrade Voxbox Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap1</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 1</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap6</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 6</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pwrjoy</string>
+                <key>description</key>
+                <string>Power Software Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus2</string>
+                <key>description</key>
+                <string>Slogger Plus 2 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rombox</string>
+                <key>description</key>
+                <string>Slogger Rombox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>romboxp</string>
+                <key>description</key>
+                <string>Slogger Rombox+</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sidewndr</string>
+                <key>description</key>
+                <string>Wizard Sidewinder Rom Expansion Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_romboxp</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>electron_sidewndr</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:exp</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>m2105</string>
+                <key>description</key>
+                <string>Acorn M2105 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus1</string>
+                <key>description</key>
+                <string>Acorn Plus 1 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus3</string>
+                <key>description</key>
+                <string>Acorn Plus 3 Disc Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mc68k</string>
+                <key>description</key>
+                <string>Electron 68000 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd128</string>
+                <key>description</key>
+                <string>ElkSD128 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>elksd64</string>
+                <key>description</key>
+                <string>ElkSD64 Electron SD Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbjoy</string>
+                <key>description</key>
+                <string>First Byte Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fbprint</string>
+                <key>description</key>
+                <string>First Byte Printer Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mode7</string>
+                <key>description</key>
+                <string>JAFA Mode 7 Display Unit</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>voxbox</string>
+                <key>description</key>
+                <string>Millsgrade Voxbox Speech Synthesiser</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap1</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 1</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap6</string>
+                <key>description</key>
+                <string>P.R.E.S. Advanced Plus 6</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pwrjoy</string>
+                <key>description</key>
+                <string>Power Software Joystick Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>plus2</string>
+                <key>description</key>
+                <string>Slogger Plus 2 Expansion</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rombox</string>
+                <key>description</key>
+                <string>Slogger Rombox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>romboxp</string>
+                <key>description</key>
+                <string>Slogger Rombox+</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sidewndr</string>
+                <key>description</key>
+                <string>Wizard Sidewinder Rom Expansion Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232_patch_box</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:dce</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>sunkbd_adaptor</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:keyboard</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type3hle</string>
+                <key>description</key>
+                <string>Sun Type 3 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type4hle</string>
+                <key>description</key>
+                <string>Sun Type 4 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5gbhle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5jphle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5sehle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5hle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+    </array>
+    <key>software</key>
+    <array>
+      <string>electron_cass.xml</string>
+      <dict>
+        <key>name</key>
+        <string>bbc_cass.xml</string>
+        <key>filter</key>
+        <string>ELK</string>
+      </dict>
+      <string>electron_cart.xml</string>
+      <string>electron_flop.xml</string>
+      <string>electron_rom.xml</string>
+    </array>
+  </dict>
+</plist>

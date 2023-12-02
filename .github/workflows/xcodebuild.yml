@@ -8,8 +8,12 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: build
       run: xcodebuild -project "Ample.xcodeproj" -target "Ample Lite" | xcpretty
 
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Ample Lite
+        path: build/Release/

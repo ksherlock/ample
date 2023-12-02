@@ -12,7 +12,7 @@
     <key>resolution</key>
     <array>
       <integer>560</integer>
-      <integer>384</integer>
+      <integer>192</integer>
     </array>
     <key>slots</key>
     <array>
@@ -495,7 +495,7 @@
         <key>name</key>
         <string>rs232</string>
         <key>description</key>
-        <string>Modem</string>
+        <string>Serial</string>
         <key>options</key>
         <array>
           <dict>

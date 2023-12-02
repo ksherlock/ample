@@ -1,12 +1,13 @@
 import argparse
-import subprocess
+import hashlib
 
 from copy import deepcopy
 from plist import to_plist
 
 import xml.etree.ElementTree as ET
 
-from machines import MACHINES, SLOTS, SLOT_NAMES
+from machines import MACHINES, MACHINES_EXTRA, SLOTS, SLOT_NAMES
+import mame
 
 # macintosh errata:
 # maclc has scsi:1 - scsi:7 and lcpds slots, but none are currently configurable.
@@ -75,14 +76,7 @@ def load_machine(name):
 	rootname = name
 	if name in machine_cache: return machine_cache[name]
 
-	# print("    {}".format(name))
-	env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	st = subprocess.run(["../embedded/mame64", name, "-listxml"], capture_output=True, env=env)
-	if st.returncode != 0:
-		print("mame error: {}".format(name))
-		return False
-
-	xml = st.stdout
+	xml = mame.run(name, "-listxml")
 	root = ET.fromstring(xml)
 
 	for x in root.findall("./machine"):
@@ -134,28 +128,34 @@ def find_machine_media(parent):
 	# not built in. Except the Apple3, where the floppy drives are actually slots 0/1/2/3/4
 	#
 	# apple1 has a "snapshot" device.  not currently supported.
-	# mac fpds slot - not supported
 	# mac128 kbd slot - not supported
 	# in the //c (but not //c+) the floppy drives are in slot 6 which doesn't otherwise exist.
 	#
 	# not supported:
 	# apple1 - snapshot device
-	# mac [various] - pds/lcpds slot
 	# mac128k - kbd slot
 	#
-	# mac - if scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
+	# pdp11 "floppydisk" is an 8" floppy.
 
 
 	mname = parent.get("name")
+
+
+
 	remap = {
 		"cassette": "cass",
 		"apple1_cass": "cass",
 		"apple2_cass": "cass",
 		"floppy_5_25": "floppy_5_25",
 		"floppy_3_5": "floppy_3_5",
+		"floppy_8": "floppy_8", # pdp-11, etc
 		# mac
 		"scsi_hdd": "hard",
 		"cdrom": "cdrom",
+
+		# bbc
+		"bbc_rom": "rom", # bbc rom slot 0-3
+		"bbc_cass": "cass",
 	}
 	media = {}
 	for x in parent.findall("./device"):
@@ -164,25 +164,37 @@ def find_machine_media(parent):
 		intf = x.get("interface")
 		if intf == None: intf = typ # cassette has no interface.
 
-		# print("  ",intf)
 
 		slot = None
 		if ':' in tag:
 			tt = tag.split(':')
 			slot = tt[0]
+			if slot in ("rx01", ):
+				slot = None # pdp-11
 
-		# hack for now - these are scsi:1-7 slots but slot option isn't adjustable.
-		# as of 232 (231?), these are configurable as :scsi:0, etc or :scsibus:0, etc.
-		# if mname[0:3] == "mac" and slot in ("scsi", "scsibus"): slot = None
+		# print(tag, " - ", slot, "  - ",intf)
 
-		# MAME 0.258 - scsi slot 3 now hardcoded for cd-rom
-		if slot and intf != "cdrom": continue
 		# skip slot devices -- they'll be handled as part of the device.
+		if slot: continue
 
 		if intf in remap:
 			name = remap[intf]
 			media[name] = media.get(name, 0) + 1
 
+	# mac - scsi:3 / scsibus:3 are not in the xml but are hardcoded cd-rom drives.
+	# check for undeclared cd-rom
+	slotlist = set()
+	for x in parent.findall("./slot"):
+		slotname = split2(x.get("name"))
+		slotlist.add(slotname)
+
+	# print(slotlist)
+	for name in ("scsi","scsibus","scsi0", "scsi1"):
+		if name + ":4" in slotlist and name + ":3" not in slotlist:
+			media["cdrom"] = media.get("cdrom", 0) + 1
+
+
+	#print(media)
 	return media
 
 
@@ -233,6 +245,8 @@ def find_media(parent, include_slots=False):
 			name = remap_dev[name]
 			media[name] = media.get(name, 0) + 1
 
+
+
 		# ata_slot (vulcan, cffa, zip, etc) needs to check slot to see if default.
 		# nscsi_connector (a2scsi, a2hsscsi) needs to check slot to see if default.
 
@@ -263,6 +277,7 @@ def find_media(parent, include_slots=False):
 	# special case for a2romusr
 	if parent.get("name") == "a2romusr":
 		media["rom"] = media.get("rom", 0) + 1
+
 
 	# scsibus:1 is special cd-rom
 	if parent.get("name") == "a2scsi":
@@ -308,6 +323,15 @@ DEVICE_MEDIA = {
 	# 'null_modem': 'bitbanger',
 	# 'rs232_sync_io': 'bitbanger',
 	'a2romusr': 'rom',
+
+	# bbc, etc
+	"525dd": "floppy_5_25",
+	"525hd": "floppy_5_25",
+	"525qd": "floppy_5_25",
+	"525sd": "floppy_5_25",
+	"525ssdd": "floppy_5_25",
+	"525sssd": "floppy_5_25",
+
 }
 
 DEVICE_EXCLUDE = set([
@@ -335,7 +359,6 @@ def make_device_options(slot):
 # apple 2 scsi slot 1 is a default cd rom device.
 # Macintosh scsi slot 3 is a default cd rom device.
 # THIS IS NOT REFLECTED IN THE XML SINCE IT'S SET AT RUN TIME.
-# IN FACT, THE :scsi
 
 	options = []
 	has_default = False
@@ -388,31 +411,22 @@ def make_device_options(slot):
 	return options
 
 
+def split2(x):
+	xx = x.split(":")
+	if len(xx) == 1: return xx[0]
+	return xx[0] + ":" + xx[1]
+
 	# given a machine, return a list of slotoptions.
 def make_device_slots(machine):
 
 	mname = machine.get('name')
-
-	# add missing cd-rom scsi slot1
-	# s0 = machine.find('./slot[@name=":scsibus:0"]')
-	# s1 = machine.find('./slot[@name=":scsibus:1"]')
-	# if s0 and not s1:
-	# 	s1 = deepcopy(s0)
-	# 	s1.set('name', ':scsibus:1')
-	# 	s1.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	for ix in range(0, len(machine)):
-	# 		if machine[ix] == s0:
-	# 			machine.insert(ix+1, s1)
-	# 			break
-	# 	#machine.insert(5,s1)
-
-
 
 	slots = []
 	for slot in machine.findall('./slot'):
 		slotname = slot.get("name")
 		options = make_device_options(slot)
 		if not options: continue
+
 		slots.append({
 			"name": slotname,
 			"options": options
@@ -458,6 +472,7 @@ def make_ram(machine):
 	if len(options) == 0 and machine.get('name') == 'las3000':
 		options.append( { "intValue": 192, "description": "192K", "value": "192K", "default": True} )
 
+	if not options: return None
 
 	# sort and add empty starting entry.
 	options.sort(key=lambda x: x["intValue"])
@@ -507,34 +522,13 @@ def make_smartport(machine):
 	SLOTS = [
 		*['fdc:' + str(x) for x in range(0,4)],
 		*['scsi:' + str(x) for x in range(0,7)],
+		*['scsi0:' + str(x) for x in range(0,7)],
+		*['scsi1:' + str(x) for x in range(0,7)],
 		*['scsibus:' + str(x) for x in range(0,7)],
 		*['wd1772:' + str(x) for x in range(0,4)],
 
 		"sl6:0", "sl6:1", "0", "1", "2", "3"
 	]
-
-	# surgery to add cd-rom scsi nodes:
-	# s2 = machine.find('slot[@name="scsi:2"]')
-	# s3 = machine.find('slot[@name="scsi:3"]')
-	# if s2 and not s3:
-	# 	s3 = deepcopy(s2)
-	# 	parent = s2.find("..")
-	# 	# print(s2)
-	# 	# print(parent)
-	# 	s3.set('name', 'scsi:3')
-	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	machine.append(s3)
-	# 	# print("inserting s3")
-
-	# s2 = machine.find('slot[@name="scsibus:2"]')
-	# s3 = machine.find('slot[@name="scsibus:3"]')
-	# if s2 and not s3:
-	# 	s3 = deepcopy(s2)
-	# 	parent = s2.find("..")
-	# 	s3.set('name', 'scsibus:3')
-	# 	s3.find('slotoption[@name="cdrom"]').set('default','yes')
-	# 	machine.append(s3)
-
 
 
 	for s in SLOTS:
@@ -598,15 +592,76 @@ def make_slot(m, slotname, nodes):
 	}
 
 
+def file_changed(path, data):
+	# check if a file has changed.
+
+	try:
+		with open(path, mode='rb') as f:
+			d1 = hashlib.file_digest(f, 'sha256')
+	except Exception as e:
+		return 'new'
+
+	d2 = hashlib.sha256(bytes(data, 'utf8'))
+
+	if d1.digest() == d2.digest(): return False
+	return 'updated'
+
+
+def find_machine_resolution(machine):
+
+	name = machine.get("cloneof")
+	if not name: name = machine.get("name")
+
+	# node = machine.find('display[@tag="screen"]')
+	node = machine.find('./display')
+	width = int(node.get("width"))
+	height = int(node.get("height"))
+
+	hscale = 1
+	wscale = 1
+
+	# mame height is often garbage.
+
+	# raster screens have a default aspect ratio of 4 : 3
+	# pre-calc something like that, but integer-based.
+
+	#hscale = round((width * 3 / 4 ) / height)
+	#if hscale < 1 : hscale = 1
+
+	return [width, height * hscale]
+
+	# if height * 2 < width:
+	# 	hscale = 2
+
+	# if name in (
+	# 	"apple1", "apple2", "apple2e", "apple2c", "apple2gs", "apple3",
+	# 	"las3000",
+	# 	"st", "ste", "tt030",
+	# 	"ceci", "cece", "cecg", "cecm", "cec2000", "zijini"):
+	# 	hscale = 2
+
+
+	#print('display:', node.get('tag'))
+	#hscale = 2
+	#if m[0:3] == "mac": hscale = 1
+	#return [int(node.get("width")), int(node.get("height")) * hscale]
+
+
 
 devices = {}
 
 p = argparse.ArgumentParser()
 p.add_argument('machine', nargs="*")
+p.add_argument('--extra', action='store_true')
 args = p.parse_args()
 
+extra = args.extra
 machines = args.machine
-if not machines: machines = MACHINES
+if not machines:
+	if extra:
+		machines = MACHINES_EXTRA
+	else:
+		machines = MACHINES
 
 for m in machines:
 
@@ -615,13 +670,6 @@ for m in machines:
 	machine = load_machine_recursive(m)
 	if not machine:
 		exit(1)
-	# env = {'DYLD_FALLBACK_FRAMEWORK_PATH': '../embedded'}
-	# st = subprocess.run(["../embedded/mame64", m, "-listxml"], capture_output=True, env=env)
-	# if st.returncode != 0:
-	# 	print("mame error: {}".format(m))
-	# 	exit(1)
-	# xml = st.stdout
-	# root = ET.fromstring(xml)
 
 	data = {  }
 
@@ -634,12 +682,7 @@ for m in machines:
 
 	data["media"] = find_machine_media(machine)
 
-
-	# node = machine.find('display[@tag="screen"]')
-	node = machine.find('./display')
-	hscale = 2
-	if m[0:3] == "mac": hscale = 1
-	data["resolution"] = [int(node.get("width")), int(node.get("height")) * hscale]
+	data["resolution"] = find_machine_resolution(machine)
 
 	# submachines.clear()
 	# for x in root.findall("machine[@isdevice='yes']"):
@@ -650,7 +693,8 @@ for m in machines:
 
 	# ss = {}
 	slots = []
-	slots.append(make_ram(machine))
+	x = make_ram(machine)
+	if x: slots.append(x)
 	x = make_bios(machine)
 	if x: slots.append(x)
 
@@ -684,8 +728,12 @@ for m in machines:
 
 
 	path = "../Ample/Resources/{}.plist".format(m)
+	pl = to_plist(data)
+	st = file_changed(path, pl)
+	if st == False: continue
+	print(m + ':', st)
 	with open(path, "w") as f:
-		f.write(to_plist(data))
+		f.write(pl)
 
 
 

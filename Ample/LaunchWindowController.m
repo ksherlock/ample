@@ -482,6 +482,8 @@ static NSString *ShellQuote(NSString *s) {
      * for square pixels, should pass the true size and true aspect ratio.
      */
 
+
+    
     NSSize screen = [_slotController resolution];
     switch(_mameWindowMode) {
         case 0: // full screen;
@@ -498,12 +500,15 @@ static NSString *ShellQuote(NSString *s) {
             // drop through.
         case 2: // 2x
         case 3: // 3x
-
+            
             if (_mameSquarePixels) {
                 //              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
                 //              [argv addObject: @"-aspect"];
                 //              [argv addObject: aspect];
-                [argv addObject: @"-nounevenstretch"];
+
+                float hscale = round((screen.width * 3 / 4) / screen.height);
+                if (hscale < 1) hscale = 1;
+                screen.height *= hscale;
             } else {
                 screen.height = round(screen.width * 3 / 4);
             }
@@ -516,6 +521,9 @@ static NSString *ShellQuote(NSString *s) {
 
             [argv addObject: @"-resolution"];
             [argv addObject: res];
+            if (_mameSquarePixels) {
+                [argv addObject: @"-nounevenstretch"];
+            }
             break;
     }
 

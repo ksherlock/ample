@@ -85,6 +85,10 @@ static NSDictionary *TypeMap = nil;
   };
 }
 
+-(NSString *)description {
+    return [NSString stringWithFormat: @"<Slot: %@>", _name];
+}
+
 -(void)reset {
     [self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
     for (SlotOption *s in _options) {
@@ -92,18 +96,19 @@ static NSDictionary *TypeMap = nil;
     }
 }
 
--(void)selectValue: (NSString *)value {
+-(BOOL)selectValue: (NSString *)value {
 
     if (value) {
         NSInteger index = 0;
         for (SlotOption *item in _options) {
             if ([[item value] isEqualToString: value]) {
                 [self setSelectedIndex: index];
-                return;
+                return YES;
             }
             ++index;
         }
     }
+    return NO;
     //[self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
 }
 
@@ -281,7 +286,7 @@ static NSDictionary *TypeMap = nil;
     if (x) _type = [x intValue];
     
     
-    if (index < 0x10000) {
+    if (index && index < 0x10000) {
         topLevel = YES;
         _name = [@"-" stringByAppendingString: _name];
         _title = [_title stringByAppendingString: @":"];
@@ -479,6 +484,7 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
     _(hard);
     _(floppy_3_5);
     _(floppy_5_25);
+    _(floppy_8);
     _(pseudo_disk);
     _(bitbanger);
     _(midiin);
