@@ -42,7 +42,7 @@ typedef enum SlotType {
 -(void)reset;
 -(void)prepareView: (SlotTableCellView *)view;
 
--(void)selectValue: (NSString *)value;
+-(BOOL)selectValue: (NSString *)value;
 
 -(Media)selectedMedia;
 

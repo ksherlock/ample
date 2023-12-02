@@ -96,18 +96,19 @@ static NSDictionary *TypeMap = nil;
     }
 }
 
--(void)selectValue: (NSString *)value {
+-(BOOL)selectValue: (NSString *)value {
 
     if (value) {
         NSInteger index = 0;
         for (SlotOption *item in _options) {
             if ([[item value] isEqualToString: value]) {
                 [self setSelectedIndex: index];
-                return;
+                return YES;
             }
             ++index;
         }
     }
+    return NO;
     //[self setSelectedIndex: _defaultIndex >= 0 ? _defaultIndex : 0];
 }
 
