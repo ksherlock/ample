@@ -264,8 +264,13 @@ void vm_startup(void) {
 		}
 		dispatch_semaphore_signal(sem);
 	});
-	dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    if (!interface) {
+        errx(1, "vmnet_start_interface failed");
+    }
 
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+
+    
 	if (interface_status == VMNET_SUCCESS) {
 		buffer_size = (interface_packet_size * 2 + 1023) & ~1023;
 		buffer = (uint8_t *)malloc(buffer_size);
