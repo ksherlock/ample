@@ -94,6 +94,31 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>lcpds</string>
+        <key>description</key>
+        <string>PDS</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>macconilc</string>
+            <key>description</key>
+            <string>Asante MacCON i LC Ethernet card</string>
+            <key>devname</key>
+            <string>pdslc_macconlc</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
