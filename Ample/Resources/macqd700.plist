@@ -515,7 +515,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm Viking video card</string>
+            <string>Moniterm MacViking II video card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -673,7 +673,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm Viking video card</string>
+            <string>Moniterm MacViking II video card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>

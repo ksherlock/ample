@@ -753,6 +753,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>vistaa800</string>
+            <key>description</key>
+            <string>Vista A800 8inch disk Controller Card</string>
+            <key>devname</key>
+            <string>a2vistaa800</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>zipdrive</string>
             <key>description</key>
             <string>Zip Technologies ZipDrive</string>
@@ -1382,6 +1390,14 @@
             <string>Videx Videoterm 80 Column Display</string>
             <key>devname</key>
             <string>a2vidtrm</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>vistaa800</string>
+            <key>description</key>
+            <string>Vista A800 8inch disk Controller Card</string>
+            <key>devname</key>
+            <string>a2vistaa800</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5590,6 +5606,201 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2vistaa800</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dsdd</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dssd</string>
+                <key>description</key>
+                <string>8" double-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8ssdd</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8sssd</string>
+                <key>description</key>
+                <string>8" single-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dsdd</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dssd</string>
+                <key>description</key>
+                <string>8" double-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8ssdd</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8sssd</string>
+                <key>description</key>
+                <string>8" single-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dsdd</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dssd</string>
+                <key>description</key>
+                <string>8" double-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8ssdd</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8sssd</string>
+                <key>description</key>
+                <string>8" single-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dsdd</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8dssd</string>
+                <key>description</key>
+                <string>8" double-sided single density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8ssdd</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>8sssd</string>
+                <key>description</key>
+                <string>8" single-sided single density floppy drive</string>
                 <key>default</key>
                 <false/>
               </dict>

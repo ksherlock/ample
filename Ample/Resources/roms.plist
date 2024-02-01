@@ -996,7 +996,7 @@
       <key>value</key>
       <string>nb_vikbw</string>
       <key>description</key>
-      <string>Moniterm Viking video card</string>
+      <string>Moniterm MacViking II video card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1120,15 +1120,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>cv8lc</string>
+      <string>pd3_c264</string>
       <key>description</key>
-      <string>RasterOps ColorVue 8LC video card</string>
+      <string>RasterOps ColorBoard 264/SE30</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>pd3_c264</string>
+      <string>cv8lc</string>
       <key>description</key>
-      <string>RasterOps Colorboard 264/SE30</string>
+      <string>RasterOps ColorVue 8LC video card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1261,6 +1261,12 @@
       <string>a2vidtrm</string>
       <key>description</key>
       <string>Videx Videoterm 80 Column Display</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2vistaa800</string>
+      <key>description</key>
+      <string>Vista A800 8inch disk Controller Card</string>
     </dict>
     <dict>
       <key>value</key>
