@@ -5603,6 +5603,11 @@
                 <string>8" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5619,6 +5624,11 @@
                 <string>8" single-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5650,6 +5660,11 @@
                 <string>8" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5666,6 +5681,11 @@
                 <string>8" single-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5697,6 +5717,11 @@
                 <string>8" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5713,6 +5738,11 @@
                 <string>8" single-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5744,6 +5774,11 @@
                 <string>8" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5760,6 +5795,11 @@
                 <string>8" single-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>

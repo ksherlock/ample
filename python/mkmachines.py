@@ -332,6 +332,9 @@ DEVICE_MEDIA = {
 	"525ssdd": "floppy_5_25",
 	"525sssd": "floppy_5_25",
 
+	"8dsdd": "floppy_8",
+	"8ssdd": "floppy_8",
+
 }
 
 DEVICE_EXCLUDE = set([
