@@ -334,6 +334,8 @@ DEVICE_MEDIA = {
 
 	"8dsdd": "floppy_8",
 	"8ssdd": "floppy_8",
+	"8dssd": "floppy_8",
+	"8sssd": "floppy_8",
 
 }
 
