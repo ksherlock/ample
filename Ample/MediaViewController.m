@@ -355,6 +355,10 @@
     
     //unsigned counts[CATEGORY_COUNT] = { 0 };
 
+    uint64_t floppy_mask_8 = _media.floppy_mask_8;
+    uint64_t floppy_mask_5_25 = _media.floppy_mask_5_25;
+    uint64_t floppy_mask_3_5 = _media.floppy_mask_3_5;
+
     for (unsigned j = 0; j < CATEGORY_COUNT; ++j) {
     
         //uint64_t floppy_mask = _media.floppy_mask;
@@ -362,49 +366,31 @@
 
         MediaCategory *cat = _data[j];
         NSInteger valid = [cat validCount];
-        
-        // assumes floppy order is 8", 5.25", 3.5".
-        switch(j) {
-            case kIndexFloppy8:
-                index = 0;
-                break;
-            case kIndexFloppy525:
-                index = _media.floppy_8;
-                break;
-            case kIndexFloppy35:
-                index = _media.floppy_8 + _media.floppy_5_25;
-                break;
-        }
-        
+
         for (NSInteger i = 0; i < valid; ++i) {
 
             MediaItem *item = [cat objectAtIndex: i];
             NSString *arg = [item argument];
 
-            ++index;
-            if (!arg) continue;
-#if 0
-            // TODO -- FLOPPY_8 support.
-
-            if (j == kIndexFloppy525) {
-                // assumes < 64 floppies....
-                // infinite loop if no floppy device...
-                if (floppy_mask == 0) break;
-                while ((floppy_mask & 0x01) == 0) {
-                    floppy_mask >>= 1;
+            switch(j) {
+                case kIndexFloppy8:
+                    index = ffsll(floppy_mask_8);
+                    floppy_mask_8 &= ~(1 << (index-1));
+                    break;
+                case kIndexFloppy525:
+                    index = ffsll(floppy_mask_5_25);
+                    floppy_mask_5_25 &= ~(1 << (index-1));
+                    break;
+                case kIndexFloppy35:
+                    index = ffsll(floppy_mask_3_5);
+                    floppy_mask_3_5 &= ~(1 << (index-1));
+                    break;
+                default:
                     ++index;
-                }
-            } else if (j == kIndexFloppy35) {
-                while ((floppy_mask & 0x01)) {
-                    floppy_mask >>= 1;
-                    ++index;
-                }
             }
-
-            ++index;
-            floppy_mask >>= 1;
             if (!arg) continue;
-#endif
+            if (!index) continue;
+
             [args addObject: [NSString stringWithFormat: @"-%s%u", prefix[j], index]];
             [args addObject: arg];
         }

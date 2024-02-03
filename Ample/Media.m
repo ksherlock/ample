@@ -40,7 +40,8 @@ void MediaAdd(Media *dest, const Media *src) {
     // could merge from src media but not currently set there.
     
     //unsigned count;
-    //unsigned flops = dest->floppy_8 + dest->floppy_5_25 + dest->floppy_3_5;
+    unsigned dest_flops = dest->floppy_8 + dest->floppy_5_25 + dest->floppy_3_5;
+    unsigned src_flops = src->floppy_8 || src->floppy_5_25 || src->floppy_8;
 
     
 #define _(name) dest->name += src->name;
@@ -58,15 +59,25 @@ void MediaAdd(Media *dest, const Media *src) {
     _(rom);
 #undef _
 
-#if 0
-    // TODO - FLOPPY_8
-    if ((count = src->floppy_5_25)) {
-        uint64_t bits = (1 << count) - 1;
-        //dest->floppy_mask <<= count;
-        bits <<= flops;
-        dest->floppy_mask |= bits;
+    
+    // this assumes any device that supports more than 1 floppy size
+    // the order is 8" < 5.25" < 3.5"
+
+    if (src_flops) {
+        uint64_t bits = 1 << dest_flops;
+        for (unsigned i = 0; i < src->floppy_8; ++i) {
+            dest->floppy_mask_8 |= bits;
+            bits <<= 1;
+        }
+        for (unsigned i = 0; i < src->floppy_5_25; ++i) {
+            dest->floppy_mask_5_25 |= bits;
+            bits <<= 1;
+        }
+        for (unsigned i = 0; i < src->floppy_3_5; ++i) {
+            dest->floppy_mask_3_5 |= bits;
+            bits <<= 1;
+        }
     }
-#endif
 
 }
 
@@ -89,7 +100,9 @@ BOOL MediaEqual(const Media *lhs, const Media *rhs) {
     _(picture);
     _(rom);
 
-    //_(floppy_mask);
+    _(floppy_mask_8);
+    _(floppy_mask_5_25);
+    _(floppy_mask_3_5);
 
     return YES;
 #undef _

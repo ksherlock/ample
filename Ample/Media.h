@@ -23,7 +23,9 @@ typedef struct Media {
     unsigned midiout;
     unsigned picture;
     unsigned rom;
-    //uint64_t floppy_mask;
+    uint64_t floppy_mask_8;
+    uint64_t floppy_mask_5_25;
+    uint64_t floppy_mask_3_5;
 } Media;
 
 
