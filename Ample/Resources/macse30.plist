@@ -133,7 +133,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -272,7 +272,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -403,7 +403,7 @@
             <key>value</key>
             <string>ethermac30</string>
             <key>description</key>
-            <string>Farallon EtherMac 30i-TH Ethernet card</string>
+            <string>Farallon EtherMac 30i-TH Ethernet Card</string>
             <key>devname</key>
             <string>pds30_emac</string>
           </dict>

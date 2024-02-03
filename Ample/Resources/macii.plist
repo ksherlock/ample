@@ -162,7 +162,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -301,7 +301,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -466,7 +466,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -474,7 +474,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -482,7 +482,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -490,7 +490,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -506,7 +506,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -527,7 +527,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -535,7 +535,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -543,7 +543,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -551,7 +551,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -559,7 +559,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -567,7 +567,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>
@@ -624,7 +624,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -632,7 +632,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -640,7 +640,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -648,7 +648,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -664,7 +664,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -685,7 +685,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -693,7 +693,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -701,7 +701,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -709,7 +709,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -717,7 +717,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -725,7 +725,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>
@@ -782,7 +782,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -790,7 +790,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -798,7 +798,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -806,7 +806,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -822,7 +822,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -843,7 +843,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -851,7 +851,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -859,7 +859,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -867,7 +867,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -875,7 +875,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -883,7 +883,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>
@@ -940,7 +940,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -948,7 +948,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -956,7 +956,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -964,7 +964,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -980,7 +980,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -1001,7 +1001,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -1009,7 +1009,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -1017,7 +1017,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -1025,7 +1025,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -1033,7 +1033,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -1041,7 +1041,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>
@@ -1098,7 +1098,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -1106,7 +1106,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -1114,7 +1114,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -1122,7 +1122,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -1138,7 +1138,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -1159,7 +1159,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -1167,7 +1167,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -1175,7 +1175,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -1183,7 +1183,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -1191,7 +1191,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -1199,7 +1199,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>
@@ -1256,7 +1256,7 @@
             <key>value</key>
             <string>enetnb</string>
             <key>description</key>
-            <string>Apple NuBus Ethernet card</string>
+            <string>Apple NuBus Ethernet Card</string>
             <key>devname</key>
             <string>nb_aenet</string>
           </dict>
@@ -1264,7 +1264,7 @@
             <key>value</key>
             <string>quadralink</string>
             <key>description</key>
-            <string>Applied Engineering Quadralink serial card</string>
+            <string>Applied Engineering Quadralink Serial Card</string>
             <key>devname</key>
             <string>nb_qdlink</string>
           </dict>
@@ -1272,7 +1272,7 @@
             <key>value</key>
             <string>asmc3nb</string>
             <key>description</key>
-            <string>Asante MC3NB Ethernet card</string>
+            <string>Asante MC3NB Ethernet Card</string>
             <key>devname</key>
             <string>nb_amc3b</string>
           </dict>
@@ -1280,7 +1280,7 @@
             <key>value</key>
             <string>bootbug</string>
             <key>description</key>
-            <string>Brigent BootBug debugger card</string>
+            <string>Brigent BootBug Debugger Card</string>
             <key>devname</key>
             <string>nb_btbug</string>
           </dict>
@@ -1296,7 +1296,7 @@
             <key>value</key>
             <string>vikbw</string>
             <key>description</key>
-            <string>Moniterm MacViking II video card</string>
+            <string>Moniterm MacViking II Video Card</string>
             <key>devname</key>
             <string>nb_vikbw</string>
           </dict>
@@ -1317,7 +1317,7 @@
             <key>value</key>
             <string>thunder4gx</string>
             <key>description</key>
-            <string>Radius Thunder IV GX video card</string>
+            <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
             <string>nb_thungx</string>
           </dict>
@@ -1325,7 +1325,7 @@
             <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
-            <string>Radius Two Page Display video card</string>
+            <string>Radius Two Page Display Video Card</string>
             <key>devname</key>
             <string>nb_rtpd</string>
           </dict>
@@ -1333,7 +1333,7 @@
             <key>value</key>
             <string>cb264</string>
             <key>description</key>
-            <string>RasterOps ColorBoard 264 video card</string>
+            <string>RasterOps ColorBoard 264 Video Card</string>
             <key>devname</key>
             <string>nb_c264</string>
           </dict>
@@ -1341,7 +1341,7 @@
             <key>value</key>
             <string>laserview</string>
             <key>description</key>
-            <string>Sigma Designs LaserView video card</string>
+            <string>Sigma Designs LaserView Video Card</string>
             <key>devname</key>
             <string>nb_laserview</string>
           </dict>
@@ -1349,7 +1349,7 @@
             <key>value</key>
             <string>specpdq</string>
             <key>description</key>
-            <string>SuperMac Spectrum PDQ video card</string>
+            <string>SuperMac Spectrum PDQ Video Card</string>
             <key>devname</key>
             <string>nb_spdq</string>
           </dict>
@@ -1357,7 +1357,7 @@
             <key>value</key>
             <string>spec8s3</string>
             <key>description</key>
-            <string>SuperMac Spectrum/8 Series III video card</string>
+            <string>SuperMac Spectrum/8 Series III Video Card</string>
             <key>devname</key>
             <string>nb_sp8s3</string>
           </dict>

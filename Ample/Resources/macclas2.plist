@@ -113,7 +113,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -252,7 +252,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>

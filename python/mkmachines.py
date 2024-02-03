@@ -3,6 +3,7 @@ import hashlib
 
 from copy import deepcopy
 from plist import to_plist
+import re
 
 import xml.etree.ElementTree as ET
 
@@ -558,7 +559,9 @@ def make_smartport(machine):
 def fix_machine_description(x, devname):
 	#
 	x = x.replace(", www.dreher.net","")
-	x = x.replace("))", ")") # Apple II ROM Card (Integer BASIC))
+	x = x.replace('8inch','8"') #
+	x = x.replace("65C02", "65c02")
+	x = re.sub(r"((^| |\()[a-z])", lambda x: x[0].upper(), x) # fix capital-case
 	return x
 
 def make_slot(m, slotname, nodes):

@@ -151,7 +151,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -159,7 +159,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -167,7 +167,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -175,7 +175,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -199,7 +199,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -316,7 +316,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -324,7 +324,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -348,7 +348,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -364,7 +364,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -372,7 +372,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -388,7 +388,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -476,7 +476,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -484,7 +484,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -500,7 +500,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -508,7 +508,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -516,7 +516,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -636,7 +636,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -644,7 +644,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -652,7 +652,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -709,7 +709,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -717,7 +717,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -725,7 +725,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -733,7 +733,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -757,7 +757,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -874,7 +874,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -882,7 +882,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -906,7 +906,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -922,7 +922,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -930,7 +930,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -946,7 +946,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1034,7 +1034,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -1042,7 +1042,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -1058,7 +1058,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -1066,7 +1066,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -1074,7 +1074,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -1194,7 +1194,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -1202,7 +1202,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -1210,7 +1210,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -1267,7 +1267,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -1275,7 +1275,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -1283,7 +1283,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -1291,7 +1291,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -1315,7 +1315,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -1432,7 +1432,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1440,7 +1440,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1464,7 +1464,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -1480,7 +1480,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1488,7 +1488,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -1504,7 +1504,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1592,7 +1592,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -1600,7 +1600,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -1616,7 +1616,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -1624,7 +1624,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -1632,7 +1632,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -1752,7 +1752,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -1760,7 +1760,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -1768,7 +1768,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -1825,7 +1825,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -1833,7 +1833,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -1841,7 +1841,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -1849,7 +1849,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -1873,7 +1873,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -1990,7 +1990,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -1998,7 +1998,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2022,7 +2022,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -2038,7 +2038,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2046,7 +2046,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -2062,7 +2062,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2150,7 +2150,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -2158,7 +2158,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -2174,7 +2174,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -2182,7 +2182,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -2190,7 +2190,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -2310,7 +2310,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -2318,7 +2318,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -2326,7 +2326,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -2383,7 +2383,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -2391,7 +2391,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -2399,7 +2399,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -2407,7 +2407,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -2431,7 +2431,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -2548,7 +2548,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2556,7 +2556,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2580,7 +2580,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -2596,7 +2596,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2604,7 +2604,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -2620,7 +2620,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -2708,7 +2708,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -2716,7 +2716,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -2732,7 +2732,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -2740,7 +2740,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -2748,7 +2748,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -2868,7 +2868,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -2876,7 +2876,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -2884,7 +2884,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -2941,7 +2941,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -2949,7 +2949,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -2957,7 +2957,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -2965,7 +2965,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -2989,7 +2989,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -3106,7 +3106,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3114,7 +3114,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3138,7 +3138,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -3154,7 +3154,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3162,7 +3162,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -3178,7 +3178,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3266,7 +3266,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -3274,7 +3274,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -3290,7 +3290,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -3298,7 +3298,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -3306,7 +3306,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -3426,7 +3426,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -3434,7 +3434,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -3442,7 +3442,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -3499,7 +3499,7 @@
             <key>value</key>
             <string>4play</string>
             <key>description</key>
-            <string>4play Joystick Card (rev. B)</string>
+            <string>4play Joystick Card (Rev. B)</string>
             <key>devname</key>
             <string>a24play</string>
           </dict>
@@ -3507,7 +3507,7 @@
             <key>value</key>
             <string>midi</string>
             <key>description</key>
-            <string>6850 MIDI card</string>
+            <string>6850 MIDI Card</string>
             <key>devname</key>
             <string>a2midi</string>
           </dict>
@@ -3515,7 +3515,7 @@
             <key>value</key>
             <string>uthernet</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet</string>
+            <string>A2RetroSystems Uthernet</string>
             <key>devname</key>
             <string>a2uthernet</string>
           </dict>
@@ -3523,7 +3523,7 @@
             <key>value</key>
             <string>uthernet2</string>
             <key>description</key>
-            <string>a2RetroSystems Uthernet II</string>
+            <string>A2RetroSystems Uthernet II</string>
             <key>devname</key>
             <string>a2uthernet2</string>
           </dict>
@@ -3547,7 +3547,7 @@
             <key>value</key>
             <string>diskiing</string>
             <key>description</key>
-            <string>Apple Disk II NG controller (16-sector)</string>
+            <string>Apple Disk II NG Controller (16-sector)</string>
             <key>devname</key>
             <string>a2diskiing</string>
           </dict>
@@ -3664,7 +3664,7 @@
             <key>value</key>
             <string>vulcangold</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3672,7 +3672,7 @@
             <key>value</key>
             <string>vulcan</string>
             <key>description</key>
-            <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+            <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3696,7 +3696,7 @@
             <key>value</key>
             <string>byte8251</string>
             <key>description</key>
-            <string>BYTE Serial Interface (8251 based)</string>
+            <string>BYTE Serial Interface (8251 Based)</string>
             <key>devname</key>
             <string>a2bus_byte8251</string>
           </dict>
@@ -3712,7 +3712,7 @@
             <key>value</key>
             <string>cffa202</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3720,7 +3720,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
             <key>devname</key>
             <string>a2cffa2</string>
           </dict>
@@ -3736,7 +3736,7 @@
             <key>value</key>
             <string>corvus</string>
             <key>description</key>
-            <string>Corvus Flat Cable interface</string>
+            <string>Corvus Flat Cable Interface</string>
             <key>disabled</key>
             <true/>
           </dict>
@@ -3824,7 +3824,7 @@
             <key>value</key>
             <string>ap16</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card</string>
+            <string>IBS AP-16 80 Column Card</string>
             <key>devname</key>
             <string>a2ap16</string>
           </dict>
@@ -3832,7 +3832,7 @@
             <key>value</key>
             <string>ap16alt</string>
             <key>description</key>
-            <string>IBS AP-16 80 column card (alt. version)</string>
+            <string>IBS AP-16 80 Column Card (Alt. Version)</string>
             <key>devname</key>
             <string>a2ap16a</string>
           </dict>
@@ -3848,7 +3848,7 @@
             <key>value</key>
             <string>mcms1</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 1)</string>
+            <string>Mountain Computer Music System (Card 1)</string>
             <key>devname</key>
             <string>a2mcms1</string>
           </dict>
@@ -3856,7 +3856,7 @@
             <key>value</key>
             <string>mcms2</string>
             <key>description</key>
-            <string>Mountain Computer Music System (card 2)</string>
+            <string>Mountain Computer Music System (Card 2)</string>
             <key>devname</key>
             <string>a2mcms2</string>
           </dict>
@@ -3864,7 +3864,7 @@
             <key>value</key>
             <string>bufgrapplusa</string>
             <key>description</key>
-            <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+            <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
             <key>devname</key>
             <string>a2bufgrapplerplusa</string>
           </dict>
@@ -3984,7 +3984,7 @@
             <key>value</key>
             <string>vtc1</string>
             <key>description</key>
-            <string>unknown Videoterm clone</string>
+            <string>Unknown Videoterm Clone</string>
             <key>devname</key>
             <string>a2vtc1</string>
           </dict>
@@ -3992,7 +3992,7 @@
             <key>value</key>
             <string>ultratermenh</string>
             <key>description</key>
-            <string>Videx UltraTerm (enhanced //e)</string>
+            <string>Videx UltraTerm (Enhanced //e)</string>
             <key>devname</key>
             <string>a2ultrme</string>
           </dict>
@@ -4000,7 +4000,7 @@
             <key>value</key>
             <string>ultraterm</string>
             <key>description</key>
-            <string>Videx UltraTerm (original)</string>
+            <string>Videx UltraTerm (Original)</string>
             <key>devname</key>
             <string>a2ulttrm</string>
           </dict>
@@ -4049,7 +4049,7 @@
             <key>value</key>
             <string>joy</string>
             <key>description</key>
-            <string>Apple II analog joysticks</string>
+            <string>Apple II Analog Joysticks</string>
             <key>devname</key>
             <string>a2joy</string>
           </dict>
@@ -4057,7 +4057,7 @@
             <key>value</key>
             <string>paddles</string>
             <key>description</key>
-            <string>Apple II paddles</string>
+            <string>Apple II Paddles</string>
             <key>devname</key>
             <string>a2pdls</string>
           </dict>
@@ -4111,7 +4111,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -4250,7 +4250,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>

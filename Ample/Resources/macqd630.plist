@@ -84,7 +84,7 @@
             <key>value</key>
             <string>macconilc</string>
             <key>description</key>
-            <string>Asante MacCON i LC Ethernet card</string>
+            <string>Asante MacCON I LC Ethernet Card</string>
             <key>devname</key>
             <string>pdslc_macconlc</string>
           </dict>

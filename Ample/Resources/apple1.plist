@@ -164,7 +164,7 @@
             <key>value</key>
             <string>cassette</string>
             <key>description</key>
-            <string>Apple I cassette board</string>
+            <string>Apple I Cassette Board</string>
             <key>default</key>
             <true/>
             <key>devname</key>
@@ -179,7 +179,7 @@
             <key>value</key>
             <string>cffa</string>
             <key>description</key>
-            <string>CFFA Compact Flash for Apple I</string>
+            <string>CFFA Compact Flash For Apple I</string>
             <key>devname</key>
             <string>cffa1</string>
           </dict>

@@ -130,7 +130,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -227,7 +227,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -324,7 +324,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -421,7 +421,7 @@
             <key>value</key>
             <string>cffa2</string>
             <key>description</key>
-            <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+            <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
             <key>devname</key>
             <string>a2cffa02</string>
           </dict>
@@ -518,7 +518,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>

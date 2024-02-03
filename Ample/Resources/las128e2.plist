@@ -113,7 +113,7 @@
             <key>value</key>
             <string>joy</string>
             <key>description</key>
-            <string>Apple II analog joysticks</string>
+            <string>Apple II Analog Joysticks</string>
             <key>devname</key>
             <string>a2joy</string>
           </dict>
@@ -121,7 +121,7 @@
             <key>value</key>
             <string>paddles</string>
             <key>description</key>
-            <string>Apple II paddles</string>
+            <string>Apple II Paddles</string>
             <key>devname</key>
             <string>a2pdls</string>
           </dict>
@@ -175,7 +175,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -314,7 +314,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>

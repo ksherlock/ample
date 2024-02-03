@@ -113,7 +113,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -252,7 +252,7 @@
             <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -383,7 +383,7 @@
             <key>value</key>
             <string>macconilc</string>
             <key>description</key>
-            <string>Asante MacCON i LC Ethernet card</string>
+            <string>Asante MacCON I LC Ethernet Card</string>
             <key>devname</key>
             <string>pdslc_macconlc</string>
           </dict>
