@@ -223,6 +223,19 @@ static int drop_privileges(void) {
 	return 0;
 }
 
+void vmnet_start_interface_failed(void) {
+
+    warnx("vmnet_start_interface failed");
+    if (geteuid() != 0) {
+        fputs(
+              "\n\n"
+              "\tvmnet_helper must be run as root.\n"
+              "\tGo to Ample -> Preferences and Fix VMNet Permissions.\n\n"
+              , stderr);
+    }
+    exit(1);
+}
+
 void vm_startup(void) {
 
 	xpc_object_t dict;
@@ -265,7 +278,7 @@ void vm_startup(void) {
 		dispatch_semaphore_signal(sem);
 	});
     if (!interface) {
-        errx(1, "vmnet_start_interface failed");
+        vmnet_start_interface_failed();
     }
 
     dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
@@ -282,17 +295,8 @@ void vm_startup(void) {
 			dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
 			interface = NULL;
 		}
-		warnx("vmnet_start_interface failed");
-        if (geteuid() != 0) {
-            fputs(
-                  "\n\n"
-                  "\tvmnet_helper must be run as root.\n"
-                  "\tGo to Ample -> Preferences and Fix VMNet Permissions.\n\n"
-                  ,stderr);
-        }
-        exit(1);
+        vmnet_start_interface_failed();
 	}
-
 
 	dispatch_release(sem);
 	xpc_release(dict);
