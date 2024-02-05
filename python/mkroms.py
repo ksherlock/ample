@@ -1,4 +1,5 @@
 import argparse
+import re
 
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -130,6 +131,10 @@ EXCLUDE = set([
 def fix_machine_description(x, devname):
 	# CFFA 2.0 Compact Flash (65C02 firmware, www.dreher.net)
 	x = x.replace(", www.dreher.net","")
+	x = x.replace('8inch','8"') #
+	x = x.replace("65C02", "65c02")
+	x = re.sub(r"((^| |\()[a-z])", lambda x: x[0].upper(), x) # fix capital-case
+
 	if devname in ("st", "megast"): x = "Atari " + x
 	return x
 

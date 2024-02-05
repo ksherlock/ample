@@ -30,13 +30,13 @@
       <key>value</key>
       <string>agat840k_hle</string>
       <key>description</key>
-      <string>Agat 840K floppy card</string>
+      <string>Agat 840K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>agat_fdc</string>
       <key>description</key>
-      <string>Agat 840K floppy controller card</string>
+      <string>Agat 840K Floppy Controller Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -48,7 +48,7 @@
       <key>value</key>
       <string>agat7_flop</string>
       <key>description</key>
-      <string>Agat-7 140K floppy card</string>
+      <string>Agat-7 140K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -60,7 +60,7 @@
       <key>value</key>
       <string>agat9_flop</string>
       <key>description</key>
-      <string>Agat-9 140K floppy card</string>
+      <string>Agat-9 140K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -88,15 +88,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2c0</string>
+      <string>apple2c4</string>
       <key>description</key>
-      <string>Apple //c (UniDisk 3.5)</string>
+      <string>Apple //c (Rev 4)</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2c4</string>
+      <string>apple2c0</string>
       <key>description</key>
-      <string>Apple //c (rev 4)</string>
+      <string>Apple //c (UniDisk 3.5)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -109,6 +109,24 @@
       <string>apple2e</string>
       <key>description</key>
       <string>Apple //e</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>apple2ee</string>
+      <key>description</key>
+      <string>Apple //e (Enhanced)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>apple2eefr</string>
+      <key>description</key>
+      <string>Apple //e (Enhanced, France)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>apple2eeuk</string>
+      <key>description</key>
+      <string>Apple //e (Enhanced, UK)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -130,24 +148,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2ee</string>
-      <key>description</key>
-      <string>Apple //e (enhanced)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eefr</string>
-      <key>description</key>
-      <string>Apple //e (enhanced, France)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eeuk</string>
-      <key>description</key>
-      <string>Apple //e (enhanced, UK)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>adbmodem</string>
       <key>description</key>
       <string>Apple ADB Modem</string>
@@ -156,31 +156,31 @@
       <key>value</key>
       <string>cuda</string>
       <key>description</key>
-      <string>Apple Cuda v2.xx ADB/I2C</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2iwm</string>
-      <key>description</key>
-      <string>Apple Disk II IWM controller</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>diskii13</string>
-      <key>description</key>
-      <string>Apple Disk II NG controller (13-sector)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2diskiing</string>
-      <key>description</key>
-      <string>Apple Disk II NG controller (16-sector)</string>
+      <string>Apple Cuda V2.xx ADB/I2C</string>
     </dict>
     <dict>
       <key>value</key>
       <string>d2fdc</string>
       <key>description</key>
-      <string>Apple Disk II floppy controller</string>
+      <string>Apple Disk II Floppy Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2iwm</string>
+      <key>description</key>
+      <string>Apple Disk II IWM Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>diskii13</string>
+      <key>description</key>
+      <string>Apple Disk II NG Controller (13-sector)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2diskiing</string>
+      <key>description</key>
+      <string>Apple Disk II NG Controller (16-sector)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -198,7 +198,7 @@
       <key>value</key>
       <string>a1cass</string>
       <key>description</key>
-      <string>Apple I cassette board</string>
+      <string>Apple I Cassette Board</string>
     </dict>
     <dict>
       <key>value</key>
@@ -264,19 +264,19 @@
       <key>value</key>
       <string>a3fdc</string>
       <key>description</key>
-      <string>Apple III floppy controller</string>
+      <string>Apple III Floppy Controller</string>
     </dict>
     <dict>
       <key>value</key>
       <string>apple2gsr0p2</string>
       <key>description</key>
-      <string>Apple IIgs (ROM00 prototype 3/10/1986)</string>
+      <string>Apple IIgs (ROM00 Prototype 3/10/1986)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>apple2gsr0p</string>
       <key>description</key>
-      <string>Apple IIgs (ROM00 prototype 6/19/1986)</string>
+      <string>Apple IIgs (ROM00 Prototype 6/19/1986)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -324,7 +324,7 @@
       <key>value</key>
       <string>nb_aenet</string>
       <key>description</key>
-      <string>Apple NuBus Ethernet card</string>
+      <string>Apple NuBus Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -360,7 +360,7 @@
       <key>value</key>
       <string>nb_qdlink</string>
       <key>description</key>
-      <string>Applied Engineering Quadralink serial card</string>
+      <string>Applied Engineering Quadralink Serial Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -390,19 +390,19 @@
       <key>value</key>
       <string>a2vulgld</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+      <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2vuliie</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      <string>Applied Engineering Vulcan IDE Controller (//e Version)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2vulcan</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+      <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -414,13 +414,13 @@
       <key>value</key>
       <string>nb_amc3b</string>
       <key>description</key>
-      <string>Asante MC3NB Ethernet card</string>
+      <string>Asante MC3NB Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>pdslc_macconlc</string>
       <key>description</key>
-      <string>Asante MacCON i LC Ethernet card</string>
+      <string>Asante MacCON I LC Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -456,7 +456,7 @@
       <key>value</key>
       <string>nb_btbug</string>
       <key>description</key>
-      <string>Brigent BootBug debugger card</string>
+      <string>Brigent BootBug Debugger Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -468,19 +468,19 @@
       <key>value</key>
       <string>a2cffa02</string>
       <key>description</key>
-      <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+      <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2cffa2</string>
       <key>description</key>
-      <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+      <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>cffa1</string>
       <key>description</key>
-      <string>CFFA Compact Flash for Apple I</string>
+      <string>CFFA Compact Flash For Apple I</string>
     </dict>
     <dict>
       <key>value</key>
@@ -528,13 +528,13 @@
       <key>value</key>
       <string>cp2024</string>
       <key>description</key>
-      <string>Conner Peripherals CP-2024 hard disk</string>
+      <string>Conner Peripherals CP-2024 Hard Disk</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2corvus</string>
       <key>description</key>
-      <string>Corvus Flat Cable interface</string>
+      <string>Corvus Flat Cable Interface</string>
     </dict>
     <dict>
       <key>value</key>
@@ -588,7 +588,7 @@
       <key>value</key>
       <string>pds30_emac</string>
       <key>description</key>
-      <string>Farallon EtherMac 30i-TH Ethernet card</string>
+      <string>Farallon EtherMac 30i-TH Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -666,13 +666,13 @@
       <key>value</key>
       <string>a2ap16</string>
       <key>description</key>
-      <string>IBS AP-16 80 column card</string>
+      <string>IBS AP-16 80 Column Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2ap16a</string>
       <key>description</key>
-      <string>IBS AP-16 80 column card (alt. version)</string>
+      <string>IBS AP-16 80 Column Card (Alt. Version)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -726,19 +726,19 @@
       <key>value</key>
       <string>laser128o</string>
       <key>description</key>
-      <string>Laser 128 (original hardware)</string>
+      <string>Laser 128 (Original Hardware)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>las128ex</string>
       <key>description</key>
-      <string>Laser 128ex (version 4.5)</string>
+      <string>Laser 128ex (Version 4.5)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>las128e2</string>
       <key>description</key>
-      <string>Laser 128ex2 (version 6.1)</string>
+      <string>Laser 128ex2 (Version 6.1)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -996,7 +996,7 @@
       <key>value</key>
       <string>nb_vikbw</string>
       <key>description</key>
-      <string>Moniterm MacViking II video card</string>
+      <string>Moniterm MacViking II Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1014,7 +1014,7 @@
       <key>value</key>
       <string>upd7220</string>
       <key>description</key>
-      <string>NEC uPD7220</string>
+      <string>NEC UPD7220</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1026,7 +1026,7 @@
       <key>value</key>
       <string>a2bufgrapplerplusa</string>
       <key>description</key>
-      <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
+      <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1104,19 +1104,19 @@
       <key>value</key>
       <string>nb_thungx</string>
       <key>description</key>
-      <string>Radius Thunder IV GX video card</string>
+      <string>Radius Thunder IV GX Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_rtpd</string>
       <key>description</key>
-      <string>Radius Two Page Display video card</string>
+      <string>Radius Two Page Display Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_c264</string>
       <key>description</key>
-      <string>RasterOps ColorBoard 264 video card</string>
+      <string>RasterOps ColorBoard 264 Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1128,7 +1128,7 @@
       <key>value</key>
       <string>cv8lc</string>
       <key>description</key>
-      <string>RasterOps ColorVue 8LC video card</string>
+      <string>RasterOps ColorVue 8LC Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1158,7 +1158,7 @@
       <key>value</key>
       <string>nb_laserview</string>
       <key>description</key>
-      <string>Sigma Designs LaserView video card</string>
+      <string>Sigma Designs LaserView Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1188,13 +1188,13 @@
       <key>value</key>
       <string>nb_spdq</string>
       <key>description</key>
-      <string>SuperMac Spectrum PDQ video card</string>
+      <string>SuperMac Spectrum PDQ Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_sp8s3</string>
       <key>description</key>
-      <string>SuperMac Spectrum/8 Series III video card</string>
+      <string>SuperMac Spectrum/8 Series III Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1224,13 +1224,13 @@
       <key>value</key>
       <string>uniap2pt</string>
       <key>description</key>
-      <string>Unitron AP II (in Brazilian Portuguese)</string>
+      <string>Unitron AP II (In Brazilian Portuguese)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>uniap2en</string>
       <key>description</key>
-      <string>Unitron AP II (in English)</string>
+      <string>Unitron AP II (In English)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1240,15 +1240,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a2vtc1</string>
+      <key>description</key>
+      <string>Unknown Videoterm Clone</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2ultrme</string>
       <key>description</key>
-      <string>Videx UltraTerm (enhanced //e)</string>
+      <string>Videx UltraTerm (Enhanced //e)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2ulttrm</string>
       <key>description</key>
-      <string>Videx UltraTerm (original)</string>
+      <string>Videx UltraTerm (Original)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1266,7 +1272,7 @@
       <key>value</key>
       <string>a2vistaa800</string>
       <key>description</key>
-      <string>Vista A800 8inch disk Controller Card</string>
+      <string>Vista A800 8" Disk Controller Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1297,12 +1303,6 @@
       <string>a2zipdrv</string>
       <key>description</key>
       <string>Zip Technologies ZipDrive</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2vtc1</string>
-      <key>description</key>
-      <string>unknown Videoterm clone</string>
     </dict>
   </array>
 </plist>
