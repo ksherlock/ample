@@ -139,7 +139,9 @@ def fix_machine_description(x, devname):
 	return x
 
 def build_known_roms_list():
-	infile = "mame-0233-full.html"
+	# https://archive.org/download/mame-merged/mame-merged/
+	infile = "mame-0.263-merged.html"
+	# infile = "mame-0233-full.html"
 	# infile = "mame-0.231-merged.html"
 	rv = set()
 
@@ -187,9 +189,17 @@ for m in machines:
 	# find machines that have a rom child
 	for x in root.findall('machine/rom/..'):
 		name = x.get('name')
-		if name in EXCLUDE: continue
+		#if name in EXCLUDE: continue
 		if name in mnames: continue
+
+		if name not in known: continue
+		# if name not in known:
+		# 	print("skipping", name)
+		# 	continue
+
 		mnames[name] = x.find("description").text
+
+
 		#if (name in known): mnames.add(name)
 		# if name in mnames:
 			# mnames[name].append(m)

@@ -4,27 +4,9 @@
   <array>
     <dict>
       <key>value</key>
-      <string>a2lancegs</string>
-      <key>description</key>
-      <string>///SHH Systeme LANceGS</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>ie15kbd</string>
       <key>description</key>
       <string>15WWW-97-006 Keyboard</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>am64</string>
-      <key>description</key>
-      <string>AM 64</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>am100</string>
-      <key>description</key>
-      <string>AM100</string>
     </dict>
     <dict>
       <key>value</key>
@@ -40,33 +22,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>agat7</string>
-      <key>description</key>
-      <string>Agat-7</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>agat7_flop</string>
       <key>description</key>
       <string>Agat-7 140K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>agat9</string>
-      <key>description</key>
-      <string>Agat-9</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>agat9_flop</string>
       <key>description</key>
       <string>Agat-9 140K Floppy Card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>albert</string>
-      <key>description</key>
-      <string>Albert</string>
     </dict>
     <dict>
       <key>value</key>
@@ -82,69 +46,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2c3</string>
-      <key>description</key>
-      <string>Apple //c (Original Memory Expansion)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2c4</string>
-      <key>description</key>
-      <string>Apple //c (Rev 4)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2c0</string>
-      <key>description</key>
-      <string>Apple //c (UniDisk 3.5)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2cp</string>
-      <key>description</key>
-      <string>Apple //c Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>apple2e</string>
       <key>description</key>
       <string>Apple //e</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ee</string>
-      <key>description</key>
-      <string>Apple //e (Enhanced)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eefr</string>
-      <key>description</key>
-      <string>Apple //e (Enhanced, France)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eeuk</string>
-      <key>description</key>
-      <string>Apple //e (Enhanced, UK)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ep</string>
-      <key>description</key>
-      <string>Apple //e (Platinum)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ees</string>
-      <key>description</key>
-      <string>Apple //e (Spain)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2euk</string>
-      <key>description</key>
-      <string>Apple //e (UK)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -268,30 +172,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2gsr0p2</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00 Prototype 3/10/1986)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr0p</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00 Prototype 6/19/1986)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr0</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr1</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM01)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>apple2gs</string>
       <key>description</key>
       <string>Apple IIgs (ROM03)</string>
@@ -340,15 +220,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2jp</string>
+      <string>aplcd150</string>
       <key>description</key>
-      <string>Apple ][ J-Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2p</string>
-      <key>description</key>
-      <string>Apple ][+</string>
+      <string>AppleCD 150</string>
     </dict>
     <dict>
       <key>value</key>
@@ -424,12 +298,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>megast</string>
-      <key>description</key>
-      <string>Atari MEGA ST (USA)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>st</string>
       <key>description</key>
       <string>Atari ST (USA)</string>
@@ -439,12 +307,6 @@
       <string>st_kbd</string>
       <key>description</key>
       <string>Atari ST Keyboard/Mouse/Joystick</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>basis108</string>
-      <key>description</key>
-      <string>Basis 108</string>
     </dict>
     <dict>
       <key>value</key>
@@ -496,6 +358,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cdrn820s</string>
+      <key>description</key>
+      <string>Caravelle CDR-N820s</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cec2000</string>
       <key>description</key>
       <string>China Education Computer 2000</string>
@@ -526,6 +394,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cfp1080s</string>
+      <key>description</key>
+      <string>Conner CFP1080S</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cp2024</string>
       <key>description</key>
       <string>Conner Peripherals CP-2024 Hard Disk</string>
@@ -538,27 +412,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>craft2p</string>
+      <string>cdr4210</string>
       <key>description</key>
-      <string>Craft II+</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>dodo</string>
-      <key>description</key>
-      <string>Do-Do</string>
+      <string>Creative Technology Blaster CD-R 4210</string>
     </dict>
     <dict>
       <key>value</key>
       <string>kb_ec1841</string>
       <key>description</key>
       <string>EC-1841 Keyboard</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>elppa</string>
-      <key>description</key>
-      <string>Elppa II+</string>
     </dict>
     <dict>
       <key>value</key>
@@ -610,39 +472,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>ace100</string>
-      <key>description</key>
-      <string>Franklin ACE 100</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace1000</string>
-      <key>description</key>
-      <string>Franklin ACE 1000</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace2200</string>
-      <key>description</key>
-      <string>Franklin ACE 2200</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace500</string>
-      <key>description</key>
-      <string>Franklin ACE 500</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>pds_hyper</string>
       <key>description</key>
       <string>GCC HyperDrive</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>hkc8800a</string>
-      <key>description</key>
-      <string>HKC 8800A</string>
     </dict>
     <dict>
       <key>value</key>
@@ -694,12 +526,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>ivelultr</string>
-      <key>description</key>
-      <string>Ivel Ultra</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>keytronic_pc3270</string>
       <key>description</key>
       <string>Keytronic PC3270</string>
@@ -709,36 +535,6 @@
       <string>pd3_pc16</string>
       <key>description</key>
       <string>Lapis ProColor Server 8*16</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>laser2c</string>
-      <key>description</key>
-      <string>Laser //c</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>laser128</string>
-      <key>description</key>
-      <string>Laser 128</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>laser128o</string>
-      <key>description</key>
-      <string>Laser 128 (Original Hardware)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>las128ex</string>
-      <key>description</key>
-      <string>Laser 128ex (Version 4.5)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>las128e2</string>
-      <key>description</key>
-      <string>Laser 128ex2 (Version 6.1)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -757,12 +553,6 @@
       <string>mac128k</string>
       <key>description</key>
       <string>Macintosh 128k</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mac512k</string>
-      <key>description</key>
-      <string>Macintosh 512k</string>
     </dict>
     <dict>
       <key>value</key>
@@ -820,24 +610,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>mackbd_m0110b</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (British - M0110B)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110f</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (French - M0110F)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110t</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (Italian - M0110T)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>mackbd_m0110</string>
       <key>description</key>
       <string>Macintosh Keyboard (U.S. - M0110)</string>
@@ -856,12 +628,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>maclc550</string>
-      <key>description</key>
-      <string>Macintosh LC 550</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>maclc2</string>
       <key>description</key>
       <string>Macintosh LC II</string>
@@ -874,39 +640,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>maclc580</string>
-      <key>description</key>
-      <string>Macintosh LC/Performa 580</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0120</string>
-      <key>description</key>
-      <string>Macintosh Numeric Keypad (English - M0120)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0120p</string>
-      <key>description</key>
-      <string>Macintosh Numeric Keypad (European - M0120P)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>macplus</string>
       <key>description</key>
       <string>Macintosh Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110a_f</string>
-      <key>description</key>
-      <string>Macintosh Plus Keyboard (French - M0110A F)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110a_j</string>
-      <key>description</key>
-      <string>Macintosh Plus Keyboard (Japanese - M0110A J)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -952,24 +688,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>macse30</string>
-      <key>description</key>
-      <string>Macintosh SE/30</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>maxxi</string>
-      <key>description</key>
-      <string>Maxxi</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>microeng</string>
-      <key>description</key>
-      <string>Micro Engenho</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>scorpion_ic</string>
       <key>description</key>
       <string>Micro-Robotics Scorpion Intelligent Controller</string>
@@ -985,12 +703,6 @@
       <string>pd3_mclr</string>
       <key>description</key>
       <string>Micron/XCEED Technology MacroColor 30</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mprof3</string>
-      <key>description</key>
-      <string>Microprofessor III</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1030,12 +742,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>a2bufgrapplerplusa</string>
-      <key>description</key>
-      <string>Orange Micro Buffered Grappler+ (Rev A) Printer Interface</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a2bufgrapplerplus</string>
       <key>description</key>
       <string>Orange Micro Buffered Grappler+ Printer Interface</string>
@@ -1060,33 +766,27 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cw7501</string>
+      <key>description</key>
+      <string>Panasonic CW-7501 CD-R</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2focdrv</string>
       <key>description</key>
       <string>Parsons Engineering Focus Drive</string>
     </dict>
     <dict>
       <key>value</key>
+      <string>cdd2000</string>
+      <key>description</key>
+      <string>Philips CDD2000 CD-R</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>px320a</string>
       <key>description</key>
       <string>PleXCombo PX-320A CD-RW/DVD-ROM Drive</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>prav82</string>
-      <key>description</key>
-      <string>Pravetz 82</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>prav8c</string>
-      <key>description</key>
-      <string>Pravetz 8C</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>prav8m</string>
-      <key>description</key>
-      <string>Pravetz 8M</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1144,6 +844,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>crd254sh</string>
+      <key>description</key>
+      <string>Sanyo CRD-254SH CD-ROM</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nlq401</string>
       <key>description</key>
       <string>Schneider NLQ 401 Matrix Printer</string>
@@ -1168,27 +874,33 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>space84</string>
+      <string>cdu415</string>
       <key>description</key>
-      <string>Space 84</string>
+      <string>Sony CDU415 CD-R</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>spectred</string>
+      <string>cdu561_25</string>
       <key>description</key>
-      <string>Spectrum ED</string>
+      <string>Sony CDU561-25</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>smoc501</string>
+      <key>description</key>
+      <string>Sony SMO-C501 MO Disk Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cdu75s</string>
+      <key>description</key>
+      <string>Sony/Apple CDU75S CD-R</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2q68</string>
       <key>description</key>
       <string>Stellation Two Q-68</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2q68plus</string>
-      <key>description</key>
-      <string>Stellation Two Q-68 Plus</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1210,12 +922,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>tk3000</string>
-      <key>description</key>
-      <string>TK3000//e</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>chessmachine</string>
       <key>description</key>
       <string>Tasc ChessMachine</string>
@@ -1225,24 +931,6 @@
       <string>a2thunpl</string>
       <key>description</key>
       <string>ThunderWare ThunderClock Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>uniap2pt</string>
-      <key>description</key>
-      <string>Unitron AP II (In Brazilian Portuguese)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>uniap2en</string>
-      <key>description</key>
-      <string>Unitron AP II (In English)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>uniap2ti</string>
-      <key>description</key>
-      <string>Unitron AP II+ (Teclado Inteligente)</string>
     </dict>
     <dict>
       <key>value</key>
