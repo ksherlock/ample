@@ -94,7 +94,7 @@ def load_machine_recursive(name):
 
 	rootname = name
 	m = load_machine(name)
-	if not m: return None
+	if m is None: return None
 
 	processed = set()
 	pending = { rootname }
@@ -103,7 +103,7 @@ def load_machine_recursive(name):
 		name = pending.pop()
 		m = load_machine(name)
 		processed.add(name)
-		if not m:
+		if m is None:
 			print("    *{}".format(name))
 			continue
 		count = 0
@@ -379,7 +379,7 @@ def make_device_options(slot):
 		if devname in machine_cache: device = machine_cache[devname]
 		if name in DEVICE_REMAP:
 			desc = DEVICE_REMAP[name]
-		elif device:
+		elif device is not None:
 			desc = device.find("description").text
 		else:
 			# print("{} - {}".format(name, devname))
@@ -390,8 +390,8 @@ def make_device_options(slot):
 		media = None
 
 		if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
-		elif device and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
-		elif device and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
+		elif device is not None and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
+		elif device is not None and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
 		# elif device and device.find("./device_ref[@name='printer_image']") != None: media = { 'printout': 1 }
 
 
@@ -540,7 +540,7 @@ def make_smartport(machine):
 	for s in SLOTS:
 		path = 'slot[@name="{}"]'.format(s)
 		slot = machine.find(path)
-		if not slot: continue
+		if slot is None: continue
 
 		slotname = slot.get("name")
 		options = make_device_options(slot)
@@ -676,7 +676,7 @@ for m in machines:
 	print(m)
 
 	machine = load_machine_recursive(m)
-	if not machine:
+	if machine is None:
 		exit(1)
 
 	data = {  }
