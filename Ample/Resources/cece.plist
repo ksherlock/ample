@@ -3808,6 +3808,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo terminal</string>
@@ -3976,6 +3984,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4022,6 +4046,22 @@
                 <string>zip100</string>
                 <key>description</key>
                 <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4081,6 +4121,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4127,6 +4183,22 @@
                 <string>zip100</string>
                 <key>description</key>
                 <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4249,6 +4321,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -4295,6 +4383,22 @@
                 <string>zip100</string>
                 <key>description</key>
                 <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6756,6 +6860,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo terminal</string>
@@ -7511,6 +7623,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -7557,6 +7685,22 @@
                 <string>zip100</string>
                 <key>description</key>
                 <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7616,6 +7760,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -7665,6 +7825,22 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
         </array>
@@ -7692,6 +7868,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7836,6 +8020,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8484,6 +8676,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -970,6 +970,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>scorpion_ic</string>
+      <key>description</key>
+      <string>Micro-Robotics Scorpion Intelligent Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_30hr</string>
       <key>description</key>
       <string>Micron/XCEED Technology Color 30HR</string>
