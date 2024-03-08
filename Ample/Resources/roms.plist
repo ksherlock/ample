@@ -394,6 +394,72 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>coco_rs232</string>
+      <key>description</key>
+      <string>CoCo Deluxe RS-232 PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_dcmodem</string>
+      <key>description</key>
+      <string>CoCo Direct Connect Modem PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_fdc</string>
+      <key>description</key>
+      <string>CoCo Floppy Disk Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_orch90</string>
+      <key>description</key>
+      <string>CoCo Orch-90 PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_psg</string>
+      <key>description</key>
+      <string>CoCo PSG</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_ssc</string>
+      <key>description</key>
+      <string>CoCo S/SC PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpk</string>
+      <key>description</key>
+      <string>CoCo WordPak</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpk2</string>
+      <key>description</key>
+      <string>CoCo WordPak II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpkrs</string>
+      <key>description</key>
+      <string>CoCo WordPak RS</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cd6809_fdc</string>
+      <key>description</key>
+      <string>Codimex CD-6809 Disk BASIC (1986)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco</string>
+      <key>description</key>
+      <string>Color Computer 1/2</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cfp1080s</string>
       <key>description</key>
       <string>Conner CFP1080S</string>
@@ -415,6 +481,48 @@
       <string>cdr4210</string>
       <key>description</key>
       <string>Creative Technology Blaster CD-R 4210</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_scii</string>
+      <key>description</key>
+      <string>Disto Super Controller II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon32</string>
+      <key>description</key>
+      <string>Dragon 32</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_fdc</string>
+      <key>description</key>
+      <string>Dragon FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_serial</string>
+      <key>description</key>
+      <string>Dragon Peaksoft Prestel Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_jcbsnd</string>
+      <key>description</key>
+      <string>Dragon Sound Extension Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_jcbspch</string>
+      <key>description</key>
+      <string>Dragon Speech Synthesis Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_sprites</string>
+      <key>description</key>
+      <string>Dragon Sprites</string>
     </dict>
     <dict>
       <key>value</key>
@@ -790,9 +898,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>premier_fdc</string>
+      <key>description</key>
+      <string>Premier FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2pdromdr</string>
       <key>description</key>
       <string>ProDOS ROM Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cp450_fdc</string>
+      <key>description</key>
+      <string>Prológica CP-450 BASIC Disco V. 1.0 (1984)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -835,6 +955,12 @@
       <string>cv8lc</string>
       <key>description</key>
       <string>RasterOps ColorVue 8LC Video Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>sdtandy_fdc</string>
+      <key>description</key>
+      <string>SDTANDY FDC</string>
     </dict>
     <dict>
       <key>value</key>
@@ -919,6 +1045,18 @@
       <string>mockingboardd</string>
       <key>description</key>
       <string>Sweet Micro Systems Mockingboard D</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>trs80</string>
+      <key>description</key>
+      <string>TRS-80 Model I (Level I Basic)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>trs80l2</string>
+      <key>description</key>
+      <string>TRS-80 Model I (Level II Basic)</string>
     </dict>
     <dict>
       <key>value</key>

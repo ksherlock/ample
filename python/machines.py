@@ -44,6 +44,12 @@ MACHINES = (
 
 	#atari
 	"st", "megast",
+
+	# trs
+	"coco", "coco2b", "coco3", "coco3p",
+	"trs80", "trs80l2",
+	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
+
 )
 
 

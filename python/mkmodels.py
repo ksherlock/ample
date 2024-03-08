@@ -48,6 +48,13 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 
 atari_st_children = ["st", "megast"]
 
+tandy_children = [
+	"coco", "coco2b", "coco3", "coco3p",
+	"trs80", "trs80l2",
+	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
+]
+
+
 amiga_children = ["a500", "a500n", "a1000", "a1000n", "a2000", "a2000n" ]
 
 acorn_children = [ "bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron" ]
@@ -83,6 +90,7 @@ TREE = [
 	("Macintosh (Quadra)", None, mac_quadra_children),
 	("Macintosh (LC)", None, mac_lc_children),
 	("Atari ST", "st", atari_st_children),
+	("Tandy", None, tandy_children)
 ]
 
 TREE_EXTRA = TREE + [

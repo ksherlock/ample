@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>value</key>
+    <string>trs80</string>
+    <key>description</key>
+    <string>TRS-80 Model I (Level I Basic)</string>
+    <key>media</key>
+    <dict>
+    </dict>
+    <key>resolution</key>
+    <array>
+      <integer>384</integer>
+      <integer>192</integer>
+    </array>
+    <key>slots</key>
+    <array>
+    </array>
+    <key>devices</key>
+    <array>
+    </array>
+    <key>software</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>trs80_cass.xml</string>
+        <key>filter</key>
+        <string>0</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
