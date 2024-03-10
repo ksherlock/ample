@@ -118,7 +118,10 @@ SLOTS = (
 	"qbus:1", "qbus:2", "qbus:3", "qbus:4", "qbus:5",
 
 	# bbc
-	"rs423", "tube", "econet254", "analogue", "userport", "internal", "1mhzbus"
+	"rs423", "tube", "econet254", "analogue", "userport", "internal", "1mhzbus",
+
+	# coco/trs
+	"ext"
 )
 
 SLOT_NAMES = {
@@ -203,4 +206,7 @@ SLOT_NAMES = {
 	"internal":   "Internal",
 	"1mhzbus":    "1MHz Bus",
 	"fdc":        "Disk Drives",
+
+
+	"ext":        "Coco Cart"
 }

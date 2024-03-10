@@ -216,6 +216,201 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>ext</string>
+        <key>description</key>
+        <string>Coco Cart</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ssfm</string>
+            <key>description</key>
+            <string>6x09 SuperSprite FM+</string>
+            <key>devname</key>
+            <string>dragon_msx2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rs232</string>
+            <key>description</key>
+            <string>CoCo Deluxe RS-232 PAK</string>
+            <key>devname</key>
+            <string>coco_rs232</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dcmodem</string>
+            <key>description</key>
+            <string>CoCo Direct Connect Modem PAK</string>
+            <key>devname</key>
+            <string>coco_dcmodem</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>CoCo Floppy Disk Controller</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>coco_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>gmc</string>
+            <key>description</key>
+            <string>CoCo Games Master Cartridge</string>
+            <key>devname</key>
+            <string>cocopakgmc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>max</string>
+            <key>description</key>
+            <string>CoCo Max HI-RES Input Module</string>
+            <key>devname</key>
+            <string>cocopakmax</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>midi</string>
+            <key>description</key>
+            <string>CoCo MIDI PAK</string>
+            <key>devname</key>
+            <string>coco_midi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>multi</string>
+            <key>description</key>
+            <string>CoCo Multi-Pak Interface</string>
+            <key>devname</key>
+            <string>coco_multipack</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>orch90</string>
+            <key>description</key>
+            <string>CoCo Orch-90 PAK</string>
+            <key>devname</key>
+            <string>coco_orch90</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ccpsg</string>
+            <key>description</key>
+            <string>CoCo PSG</string>
+            <key>devname</key>
+            <string>coco_psg</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ssc</string>
+            <key>description</key>
+            <string>CoCo S/SC PAK</string>
+            <key>devname</key>
+            <string>coco_ssc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wpk</string>
+            <key>description</key>
+            <string>CoCo WordPak</string>
+            <key>devname</key>
+            <string>coco_wpk</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wpk2p</string>
+            <key>description</key>
+            <string>CoCo WordPak 2+</string>
+            <key>devname</key>
+            <string>coco_wpk2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wpk2</string>
+            <key>description</key>
+            <string>CoCo WordPak II</string>
+            <key>devname</key>
+            <string>coco_wpk2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wpkrs</string>
+            <key>description</key>
+            <string>CoCo WordPak RS</string>
+            <key>devname</key>
+            <string>coco_wpkrs</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cd6809_fdc</string>
+            <key>description</key>
+            <string>Codimex CD-6809 Disk BASIC (1986)</string>
+            <key>devname</key>
+            <string>cd6809_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ram</string>
+            <key>description</key>
+            <string>Disto RAM Cartridge</string>
+            <key>devname</key>
+            <string>cocopakram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>scii</string>
+            <key>description</key>
+            <string>Disto Super Controller II</string>
+            <key>devname</key>
+            <string>coco_scii</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>Glenside IDE Adapter</string>
+            <key>devname</key>
+            <string>coco_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>cp450_fdc</string>
+            <key>description</key>
+            <string>Prológica CP-450 BASIC Disco V. 1.0 (1984)</string>
+            <key>devname</key>
+            <string>cp450_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>stecomp</string>
+            <key>description</key>
+            <string>Speech Systems Stereo Composer</string>
+            <key>devname</key>
+            <string>coco_stereo_composer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sym12</string>
+            <key>description</key>
+            <string>Speech Systems Symphony Twelve</string>
+            <key>devname</key>
+            <string>coco_symphony_twelve</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

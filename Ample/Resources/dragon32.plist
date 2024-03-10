@@ -45,6 +45,193 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>ext</string>
+        <key>description</key>
+        <string>Coco Cart</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ssfm</string>
+            <key>description</key>
+            <string>6x09 SuperSprite FM+</string>
+            <key>devname</key>
+            <string>dragon_msx2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>gmc</string>
+            <key>description</key>
+            <string>CoCo Games Master Cartridge</string>
+            <key>devname</key>
+            <string>cocopakgmc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>max</string>
+            <key>description</key>
+            <string>CoCo Max HI-RES Input Module</string>
+            <key>devname</key>
+            <string>cocopakmax</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>orch90</string>
+            <key>description</key>
+            <string>CoCo Orch-90 PAK</string>
+            <key>devname</key>
+            <string>coco_orch90</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pak</string>
+            <key>description</key>
+            <string>CoCo Program PAK</string>
+            <key>devname</key>
+            <string>cocopak</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ccpsg</string>
+            <key>description</key>
+            <string>CoCo PSG</string>
+            <key>devname</key>
+            <string>coco_psg</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ssc</string>
+            <key>description</key>
+            <string>CoCo S/SC PAK</string>
+            <key>devname</key>
+            <string>coco_ssc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wpk2p</string>
+            <key>description</key>
+            <string>CoCo WordPak 2+</string>
+            <key>devname</key>
+            <string>coco_wpk2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ram</string>
+            <key>description</key>
+            <string>Disto RAM Cartridge</string>
+            <key>devname</key>
+            <string>cocopakram</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>dragon_fdc</string>
+            <key>description</key>
+            <string>Dragon FDC</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>dragon_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>midi</string>
+            <key>description</key>
+            <string>Dragon MIDI PAK</string>
+            <key>devname</key>
+            <string>dragon_midi</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>multi</string>
+            <key>description</key>
+            <string>Dragon Multi-Pak Interface</string>
+            <key>devname</key>
+            <string>dragon_multipack</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>serial</string>
+            <key>description</key>
+            <string>Dragon Peaksoft Prestel Module</string>
+            <key>devname</key>
+            <string>dragon_serial</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>jcbsnd</string>
+            <key>description</key>
+            <string>Dragon Sound Extension Module</string>
+            <key>devname</key>
+            <string>dragon_jcbsnd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>jcbspch</string>
+            <key>description</key>
+            <string>Dragon Speech Synthesis Module</string>
+            <key>devname</key>
+            <string>dragon_jcbspch</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sprites</string>
+            <key>description</key>
+            <string>Dragon Sprites</string>
+            <key>devname</key>
+            <string>dragon_sprites</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>premier_fdc</string>
+            <key>description</key>
+            <string>Premier FDC</string>
+            <key>devname</key>
+            <string>premier_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sdtandy_fdc</string>
+            <key>description</key>
+            <string>SDTANDY FDC</string>
+            <key>devname</key>
+            <string>sdtandy_fdc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>stecomp</string>
+            <key>description</key>
+            <string>Speech Systems Stereo Composer</string>
+            <key>devname</key>
+            <string>coco_stereo_composer</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sym12</string>
+            <key>description</key>
+            <string>Speech Systems Symphony Twelve</string>
+            <key>devname</key>
+            <string>coco_symphony_twelve</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>claw</string>
+            <key>description</key>
+            <string>The Dragon's Claw</string>
+            <key>devname</key>
+            <string>dragon_claw</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
