@@ -49,8 +49,8 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 atari_st_children = ["st", "megast"]
 
 tandy_children = [
-	"coco", "coco2b", "coco3", "coco3p",
 	"trs80", "trs80l2",
+	"coco", "coco2b", "coco3", "coco3p",
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 ]
 

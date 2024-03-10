@@ -684,6 +684,18 @@
       <array>
         <dict>
           <key>description</key>
+          <string>TRS-80 Model I (Level I Basic)</string>
+          <key>value</key>
+          <string>trs80</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>TRS-80 Model I (Level II Basic)</string>
+          <key>value</key>
+          <string>trs80l2</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Color Computer 1/2</string>
           <key>value</key>
           <string>coco</string>
@@ -705,18 +717,6 @@
           <string>Color Computer 3 (PAL)</string>
           <key>value</key>
           <string>coco3p</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>TRS-80 Model I (Level I Basic)</string>
-          <key>value</key>
-          <string>trs80</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>TRS-80 Model I (Level II Basic)</string>
-          <key>value</key>
-          <string>trs80l2</string>
         </dict>
         <dict>
           <key>description</key>
