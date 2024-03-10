@@ -613,6 +613,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>snesmax</string>
+            <key>description</key>
+            <string>SNES MAX Game Controller Interface</string>
+            <key>devname</key>
+            <string>a2snesmax</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>q68</string>
             <key>description</key>
             <string>Stellation Two Q-68</string>
@@ -1250,6 +1258,14 @@
             <string>ProDOS ROM Drive</string>
             <key>devname</key>
             <string>a2pdromdr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>snesmax</string>
+            <key>description</key>
+            <string>SNES MAX Game Controller Interface</string>
+            <key>devname</key>
+            <string>a2snesmax</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5251,6 +5267,171 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2snesmax</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>barcode_battler</string>
+                <key>description</key>
+                <string>Epoch Barcode Battler (SFC)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>miracle_piano</string>
+                <key>description</key>
+                <string>Miracle Piano SNES Cable</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Mouse Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>multitap</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Multitap Adapter</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sscope</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC SuperScope</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pachinko</string>
+                <key>description</key>
+                <string>Sunsoft Pachinko Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>barcode_battler</string>
+                <key>description</key>
+                <string>Epoch Barcode Battler (SFC)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>miracle_piano</string>
+                <key>description</key>
+                <string>Miracle Piano SNES Cable</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Mouse Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>multitap</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Multitap Adapter</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sscope</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC SuperScope</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pachinko</string>
+                <key>description</key>
+                <string>Sunsoft Pachinko Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2ssc</string>
         <key>slots</key>
         <array>
@@ -7215,6 +7396,200 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>snes_miracle</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:mdin</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>midiin</string>
+                <key>description</key>
+                <string>MIDI In port</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:mdout</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>midiout</string>
+                <key>description</key>
+                <string>MIDI Out port</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>snes_multitap</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:port1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:port2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:port3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:port4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joypad</string>
+                <key>description</key>
+                <string>Nintendo SNES / SFC Control Pad</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>twintap</string>
+                <key>description</key>
+                <string>Yonezawa Twin Tap Controller</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -1133,7 +1133,7 @@
         <key>name</key>
         <string>mac_cdrom.xml</string>
         <key>filter</key>
-        <string>MC68020</string>
+        <string>MC68020,MC68020_32</string>
       </dict>
       <string>mac_hdflop.xml</string>
     </array>
