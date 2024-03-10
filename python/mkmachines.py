@@ -338,6 +338,9 @@ DEVICE_MEDIA = {
 	"8dssd": "floppy_8",
 	"8sssd": "floppy_8",
 
+	# trs dragon32, etc
+	"qd": "floppy_5_25"
+
 }
 
 DEVICE_EXCLUDE = set([
