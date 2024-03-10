@@ -323,6 +323,206 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>floppy0</string>
+        <key>description</key>
+        <string>Floppy 1</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_dd</string>
+            <key>description</key>
+            <string>5.25" Double Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_dd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>80t_qd</string>
+            <key>description</key>
+            <string>5.25" Quad Density Floppy Drive</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>floppy_525_qd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>35t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density 35-track Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd_35t</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>floppy1</string>
+        <key>description</key>
+        <string>Floppy 2</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_dd</string>
+            <key>description</key>
+            <string>5.25" Double Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_dd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>80t_qd</string>
+            <key>description</key>
+            <string>5.25" Quad Density Floppy Drive</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>floppy_525_qd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>35t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density 35-track Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd_35t</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>floppy2</string>
+        <key>description</key>
+        <string>Floppy 3</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_dd</string>
+            <key>description</key>
+            <string>5.25" Double Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_dd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>80t_qd</string>
+            <key>description</key>
+            <string>5.25" Quad Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_qd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>35t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density 35-track Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd_35t</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>floppy3</string>
+        <key>description</key>
+        <string>Floppy 4</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_dd</string>
+            <key>description</key>
+            <string>5.25" Double Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_dd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>80t_qd</string>
+            <key>description</key>
+            <string>5.25" Quad Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_qd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>35t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density 35-track Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd_35t</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>40t_sd</string>
+            <key>description</key>
+            <string>5.25" Single-sided Single Density Floppy Drive</string>
+            <key>devname</key>
+            <string>floppy_525_sssd</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

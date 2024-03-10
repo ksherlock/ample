@@ -121,7 +121,7 @@ SLOTS = (
 	"rs423", "tube", "econet254", "analogue", "userport", "internal", "1mhzbus",
 
 	# coco/trs
-	"ext"
+	"ext", "floppy0", "floppy1", "floppy2", "floppy3",
 )
 
 SLOT_NAMES = {
@@ -208,5 +208,9 @@ SLOT_NAMES = {
 	"fdc":        "Disk Drives",
 
 
-	"ext":        "Coco Cart"
+	"ext":        "Coco Cart",
+	"floppy0":    "Floppy 1",
+	"floppy1":    "Floppy 2",
+	"floppy2":    "Floppy 3",
+	"floppy3":    "Floppy 4",
 }
