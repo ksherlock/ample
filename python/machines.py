@@ -30,7 +30,7 @@ MACHINES = (
 	# macintosh...
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi",
 	"maciivx", "maciivi",
-	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550",
+	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550", "mactv",
 
 	# mac 128k-classic
 	"mac128k", "mac512k", "mac512ke", "macplus", "macse", "macsefd", "macse30",

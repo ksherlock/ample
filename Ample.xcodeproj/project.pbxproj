@@ -58,6 +58,8 @@
 		B64AF1F7250ED5E400A09B9B /* TableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F5250ED5E400A09B9B /* TableCellView.m */; };
 		B64AF1FA250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
+		B65C0A772B9E77DC00CB24C9 /* mactv.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65C0A762B9E77DC00CB24C9 /* mactv.plist */; };
+		B65C0A782B9E77DC00CB24C9 /* mactv.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65C0A762B9E77DC00CB24C9 /* mactv.plist */; };
 		B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
@@ -702,6 +704,7 @@
 		B65085B625B616AC00354EC9 /* maclc2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc2.plist; sourceTree = "<group>"; };
 		B65085B725B616AC00354EC9 /* maclc3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3.plist; sourceTree = "<group>"; };
 		B65085B825B616AC00354EC9 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
+		B65C0A762B9E77DC00CB24C9 /* mactv.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mactv.plist; sourceTree = "<group>"; };
 		B65D718525E70BD5008C5F87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B66116842A2535EF0038A3E2 /* st.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = st.plist; sourceTree = "<group>"; };
 		B66116872A2535F50038A3E2 /* megast.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = megast.plist; sourceTree = "<group>"; };
@@ -1092,6 +1095,7 @@
 				B6896DF92B016CDC00251FA4 /* macqd650.plist */,
 				B6896E0E2B016CE100251FA4 /* macqd800.plist */,
 				B6896E1A2B016CE400251FA4 /* macse30.plist */,
+				B65C0A762B9E77DC00CB24C9 /* mactv.plist */,
 				B6896E042B016CDF00251FA4 /* maxxi.plist */,
 				B6896DCB2B016CD100251FA4 /* microeng.plist */,
 				B6896DDA2B016CD400251FA4 /* models~extra.plist */,
@@ -1559,6 +1563,7 @@
 				B67878982B01732700CFACF2 /* ip6800.plist in Resources */,
 				B67878892B01732700CFACF2 /* indigo_r4000.plist in Resources */,
 				B67878B92B01732700CFACF2 /* pi4d30.plist in Resources */,
+				B65C0A772B9E77DC00CB24C9 /* mactv.plist in Resources */,
 				B67878822B01732700CFACF2 /* hp9k330.plist in Resources */,
 				B67878C82B01732700CFACF2 /* tk3000.plist in Resources */,
 				B678787E2B01732700CFACF2 /* ds3100.plist in Resources */,
@@ -1817,6 +1822,7 @@
 				B67878622B01732600CFACF2 /* models.plist in Resources */,
 				B67877D62B01732600CFACF2 /* am100.plist in Resources */,
 				B678783E2B01732600CFACF2 /* apple2c.plist in Resources */,
+				B65C0A782B9E77DC00CB24C9 /* mactv.plist in Resources */,
 				B67878012B01732600CFACF2 /* ip6800.plist in Resources */,
 				B678782B2B01732600CFACF2 /* rtpc010.plist in Resources */,
 				B6852ECD2B0EAA7500BBFFC7 /* a2000n.plist in Resources */,

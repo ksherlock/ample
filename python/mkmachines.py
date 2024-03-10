@@ -663,7 +663,7 @@ devices = {}
 
 p = argparse.ArgumentParser()
 p.add_argument('machine', nargs="*")
-p.add_argument('--extra', action='store_true')
+p.add_argument('--extra', action='store_true', help='also generate Ample Lite machines')
 args = p.parse_args()
 
 extra = args.extra

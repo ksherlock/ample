@@ -34,7 +34,7 @@ mac_ii_children = [
 mac_lc_children = [
 	"maclc", "maclc2", "maclc3", "maclc3p",
 	"maclc475", "maclc520", "maclc550", "maclc575",
-	"macct610", "macct650",
+	"macct610", "macct650", "mactv",
 ]
 # maclc50" / macqd630 slots are messed up right now.
 

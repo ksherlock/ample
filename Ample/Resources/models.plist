@@ -654,6 +654,12 @@
           <key>value</key>
           <string>macct650</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh TV</string>
+          <key>value</key>
+          <string>mactv</string>
+        </dict>
       </array>
     </dict>
     <dict>
