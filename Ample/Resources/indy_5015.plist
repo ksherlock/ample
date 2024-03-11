@@ -342,6 +342,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo terminal</string>

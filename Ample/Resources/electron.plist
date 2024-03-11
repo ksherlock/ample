@@ -207,6 +207,105 @@
     <array>
       <dict>
         <key>name</key>
+        <string>bbc_quinkey_intf</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey</string>
+                <key>default</key>
+                <true/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_usersplit</string>
         <key>slots</key>
         <array>
@@ -284,6 +383,14 @@
                 <string>m4000</string>
                 <key>description</key>
                 <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lvlecho</string>
+                <key>description</key>
+                <string>LVL Echo Keyboard</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -395,6 +502,14 @@
                 <string>m4000</string>
                 <key>description</key>
                 <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lvlecho</string>
+                <key>description</key>
+                <string>LVL Echo Keyboard</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -597,6 +712,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>bitstik2</string>
                 <key>description</key>
                 <string>Robo Bitstik 2</string>
@@ -773,6 +896,14 @@
                 <string>bitstik1</string>
                 <key>description</key>
                 <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -958,6 +1089,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo terminal</string>
@@ -1090,6 +1229,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1659,6 +1806,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>quinkey</string>
+                <key>description</key>
+                <string>Microwriter Quinkey Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>bitstik2</string>
                 <key>description</key>
                 <string>Robo Bitstik 2</string>
@@ -1756,6 +1911,14 @@
                 <string>m4000</string>
                 <key>description</key>
                 <string>Hybrid Music 4000 Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lvlecho</string>
+                <key>description</key>
+                <string>LVL Echo Keyboard</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2618,6 +2781,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>

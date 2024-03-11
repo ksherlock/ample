@@ -64,9 +64,17 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>scorpion</string>
+            <key>description</key>
+            <string>Micro-Robotics Scorpion Intelligent Controller</string>
+            <key>devname</key>
+            <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -203,9 +211,17 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>scorpion</string>
+            <key>description</key>
+            <string>Micro-Robotics Scorpion Intelligent Controller</string>
+            <key>devname</key>
+            <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -363,7 +379,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>default</key>
             <true/>
             <key>devname</key>
@@ -390,7 +406,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -415,7 +431,7 @@
             <key>value</key>
             <string>mda</string>
             <key>description</key>
-            <string>IBM Monochrome Display and Printer Adapter</string>
+            <string>IBM Monochrome Display And Printer Adapter</string>
             <key>default</key>
             <true/>
             <key>devname</key>
@@ -442,7 +458,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -467,7 +483,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -492,7 +508,7 @@
             <key>value</key>
             <string>mda</string>
             <key>description</key>
-            <string>IBM Monochrome Display and Printer Adapter</string>
+            <string>IBM Monochrome Display And Printer Adapter</string>
             <key>devname</key>
             <string>isa_ibm_mda</string>
           </dict>
@@ -517,7 +533,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -542,7 +558,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -849,6 +865,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -43,9 +43,17 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>scorpion</string>
+            <key>description</key>
+            <string>Micro-Robotics Scorpion Intelligent Controller</string>
+            <key>devname</key>
+            <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pty</string>
             <key>description</key>
-            <string>Pseudo terminal</string>
+            <string>Pseudo Terminal</string>
             <key>devname</key>
             <string>pseudo_terminal</string>
           </dict>
@@ -178,7 +186,7 @@
             <key>value</key>
             <string>pc11</string>
             <key>description</key>
-            <string>DEC PC11 controller</string>
+            <string>DEC PC11 Controller</string>
             <key>default</key>
             <true/>
             <key>devname</key>
@@ -196,9 +204,17 @@
             <key>value</key>
             <string>kgd</string>
             <key>description</key>
-            <string>DVK KGD framebuffer</string>
+            <string>DVK KGD Framebuffer</string>
             <key>devname</key>
             <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mx</string>
+            <key>description</key>
+            <string>DVK MX Floppy Controller</string>
+            <key>devname</key>
+            <string>dvk_mx</string>
           </dict>
           <dict>
             <key>value</key>
@@ -229,7 +245,7 @@
             <key>value</key>
             <string>pc11</string>
             <key>description</key>
-            <string>DEC PC11 controller</string>
+            <string>DEC PC11 Controller</string>
             <key>devname</key>
             <string>pc11</string>
           </dict>
@@ -245,9 +261,17 @@
             <key>value</key>
             <string>kgd</string>
             <key>description</key>
-            <string>DVK KGD framebuffer</string>
+            <string>DVK KGD Framebuffer</string>
             <key>devname</key>
             <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mx</string>
+            <key>description</key>
+            <string>DVK MX Floppy Controller</string>
+            <key>devname</key>
+            <string>dvk_mx</string>
           </dict>
           <dict>
             <key>value</key>
@@ -278,7 +302,7 @@
             <key>value</key>
             <string>pc11</string>
             <key>description</key>
-            <string>DEC PC11 controller</string>
+            <string>DEC PC11 Controller</string>
             <key>devname</key>
             <string>pc11</string>
           </dict>
@@ -294,9 +318,17 @@
             <key>value</key>
             <string>kgd</string>
             <key>description</key>
-            <string>DVK KGD framebuffer</string>
+            <string>DVK KGD Framebuffer</string>
             <key>devname</key>
             <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mx</string>
+            <key>description</key>
+            <string>DVK MX Floppy Controller</string>
+            <key>devname</key>
+            <string>dvk_mx</string>
           </dict>
           <dict>
             <key>value</key>
@@ -327,7 +359,7 @@
             <key>value</key>
             <string>pc11</string>
             <key>description</key>
-            <string>DEC PC11 controller</string>
+            <string>DEC PC11 Controller</string>
             <key>devname</key>
             <string>pc11</string>
           </dict>
@@ -343,9 +375,17 @@
             <key>value</key>
             <string>kgd</string>
             <key>description</key>
-            <string>DVK KGD framebuffer</string>
+            <string>DVK KGD Framebuffer</string>
             <key>devname</key>
             <string>kgd</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mx</string>
+            <key>description</key>
+            <string>DVK MX Floppy Controller</string>
+            <key>devname</key>
+            <string>dvk_mx</string>
           </dict>
           <dict>
             <key>value</key>
@@ -360,6 +400,177 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>dvk_mx</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dd</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dd</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dd</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525dd</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>qts1</string>
@@ -822,6 +1033,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo terminal</string>
@@ -961,6 +1180,14 @@
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
                 <key>default</key>
                 <false/>
               </dict>

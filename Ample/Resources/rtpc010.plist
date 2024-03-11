@@ -85,7 +85,7 @@
             <key>value</key>
             <string>mda</string>
             <key>description</key>
-            <string>IBM Monochrome Display and Printer Adapter</string>
+            <string>IBM Monochrome Display And Printer Adapter</string>
             <key>default</key>
             <true/>
             <key>devname</key>
@@ -112,7 +112,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -137,7 +137,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -162,7 +162,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -187,7 +187,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
@@ -212,7 +212,7 @@
             <key>value</key>
             <string>fdc</string>
             <key>description</key>
-            <string>ISA 8bits AT FDC hookup</string>
+            <string>ISA 8bits AT FDC Hookup</string>
             <key>default</key>
             <true/>
             <key>devname</key>

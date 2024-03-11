@@ -4,12 +4,6 @@
   <array>
     <dict>
       <key>value</key>
-      <string>a2lancegs</string>
-      <key>description</key>
-      <string>///SHH Systeme LANceGS</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>ie15kbd</string>
       <key>description</key>
       <string>15WWW-97-006 Keyboard</string>
@@ -18,43 +12,31 @@
       <key>value</key>
       <string>mpcb963</string>
       <key>description</key>
-      <string>2000 Graphics f/1 1Mp Monitor</string>
+      <string>2000 Graphics F/1 1Mp Monitor</string>
     </dict>
     <dict>
       <key>value</key>
       <string>mpcba79</string>
       <key>description</key>
-      <string>2000 Graphics f/2 1Mp Monitors</string>
+      <string>2000 Graphics F/2 1Mp Monitors</string>
     </dict>
     <dict>
       <key>value</key>
       <string>msmt070</string>
       <key>description</key>
-      <string>2400 Graphics f/1 1Mp Monitor (V-76)</string>
+      <string>2400 Graphics F/1 1Mp Monitor (V-76)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>msmt081</string>
       <key>description</key>
-      <string>2400 Graphics f/1 2Mp Monitor (V-60/76)</string>
+      <string>2400 Graphics F/1 2Mp Monitor (V-60/76)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>msmt071</string>
       <key>description</key>
-      <string>2400 Graphics f/2 1Mp Monitors (V-76)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>am64</string>
-      <key>description</key>
-      <string>AM 64</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>am100</string>
-      <key>description</key>
-      <string>AM100</string>
+      <string>2400 Graphics F/2 1Mp Monitors (V-76)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -78,7 +60,7 @@
       <key>value</key>
       <string>bbc_tube_16032</string>
       <key>description</key>
-      <string>Acorn 16032 2nd processor (prototype)</string>
+      <string>Acorn 16032 2nd Processor (Prototype)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -90,7 +72,7 @@
       <key>value</key>
       <string>bbc_tube_32016</string>
       <key>description</key>
-      <string>Acorn 32016 2nd processor</string>
+      <string>Acorn 32016 2nd Processor</string>
     </dict>
     <dict>
       <key>value</key>
@@ -102,7 +84,7 @@
       <key>value</key>
       <string>bbc_tube_6502p</string>
       <key>description</key>
-      <string>Acorn 6502 2nd Processor (pre-production)</string>
+      <string>Acorn 6502 2nd Processor (Pre-production)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -127,6 +109,12 @@
       <string>bbc_acorn8271</string>
       <key>description</key>
       <string>Acorn 8721 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_a500d</string>
+      <key>description</key>
+      <string>Acorn A500 (Dual MEMC) 2nd Processor</string>
     </dict>
     <dict>
       <key>value</key>
@@ -180,7 +168,7 @@
       <key>value</key>
       <string>bbc_tube_32016l</string>
       <key>description</key>
-      <string>Acorn Large 32016 2nd processor</string>
+      <string>Acorn Large 32016 2nd Processor</string>
     </dict>
     <dict>
       <key>value</key>
@@ -216,43 +204,25 @@
       <key>value</key>
       <string>agat840k_hle</string>
       <key>description</key>
-      <string>Agat 840K floppy card</string>
+      <string>Agat 840K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>agat_fdc</string>
       <key>description</key>
-      <string>Agat 840K floppy controller card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>agat7</string>
-      <key>description</key>
-      <string>Agat-7</string>
+      <string>Agat 840K Floppy Controller Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>agat7_flop</string>
       <key>description</key>
-      <string>Agat-7 140K floppy card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>agat9</string>
-      <key>description</key>
-      <string>Agat-9</string>
+      <string>Agat-7 140K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>agat9_flop</string>
       <key>description</key>
-      <string>Agat-9 140K floppy card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>albert</string>
-      <key>description</key>
-      <string>Albert</string>
+      <string>Agat-9 140K Floppy Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -262,45 +232,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>a1000kbd_dk</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (Denmark)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a1000kbd_fr</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (France/Belgium)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a1000kbd_de</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (Germany/Austria)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a1000kbd_it</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (Italy)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a1000kbd_se</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (Sweden/Finland)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a1000kbd_us</string>
       <key>description</key>
       <string>Amiga 1000 Keyboard (U.S./Canada)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a1000kbd_gb</string>
-      <key>description</key>
-      <string>Amiga 1000 Keyboard (UK)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -316,81 +250,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>a2000kbd_g80_dk</string>
-      <key>description</key>
-      <string>Amiga 2000 Keyboard (Cherry - Denmark)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_g80_de</string>
-      <key>description</key>
-      <string>Amiga 2000 Keyboard (Cherry - Germany/Austria)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_g80_se</string>
-      <key>description</key>
-      <string>Amiga 2000 Keyboard (Cherry - Sweden/Finland)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a2000kbd_g80_us</string>
       <key>description</key>
       <string>Amiga 2000 Keyboard (Cherry - U.S./Canada)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_g80_gb</string>
-      <key>description</key>
-      <string>Amiga 2000 Keyboard (Cherry - UK)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_dk</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Denmark)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_fr</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (France/Belgium)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_de</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Germany/Austria)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_it</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Italy)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_no</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Norway)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_es</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Spain)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_se</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Sweden/Finland)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2000kbd_ch</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (Switzerland)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -400,75 +262,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>a2000kbd_gb</string>
-      <key>description</key>
-      <string>Amiga 2000/3000/4000 Keyboard (UK)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a500</string>
       <key>description</key>
       <string>Amiga 500 (PAL)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_dk</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Denmark)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_fr</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (France/Belgium)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_de</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Germany/Austria)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_it</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Italy)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_no</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Norway)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_es</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Spain)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_se</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Sweden/Finland)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_ch</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (Switzerland)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_us</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (U.S./Canada)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a500kbd_gb</string>
-      <key>description</key>
-      <string>Amiga 500 Keyboard (UK)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -484,69 +280,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2c3</string>
-      <key>description</key>
-      <string>Apple //c (Original Memory Expansion)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2c0</string>
-      <key>description</key>
-      <string>Apple //c (UniDisk 3.5)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2c4</string>
-      <key>description</key>
-      <string>Apple //c (rev 4)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2cp</string>
-      <key>description</key>
-      <string>Apple //c Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>apple2e</string>
       <key>description</key>
       <string>Apple //e</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ep</string>
-      <key>description</key>
-      <string>Apple //e (Platinum)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ees</string>
-      <key>description</key>
-      <string>Apple //e (Spain)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2euk</string>
-      <key>description</key>
-      <string>Apple //e (UK)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2ee</string>
-      <key>description</key>
-      <string>Apple //e (enhanced)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eefr</string>
-      <key>description</key>
-      <string>Apple //e (enhanced, France)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2eeuk</string>
-      <key>description</key>
-      <string>Apple //e (enhanced, UK)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -558,31 +294,31 @@
       <key>value</key>
       <string>cuda</string>
       <key>description</key>
-      <string>Apple Cuda v2.xx ADB/I2C</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2iwm</string>
-      <key>description</key>
-      <string>Apple Disk II IWM controller</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>diskii13</string>
-      <key>description</key>
-      <string>Apple Disk II NG controller (13-sector)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2diskiing</string>
-      <key>description</key>
-      <string>Apple Disk II NG controller (16-sector)</string>
+      <string>Apple Cuda V2.xx ADB/I2C</string>
     </dict>
     <dict>
       <key>value</key>
       <string>d2fdc</string>
       <key>description</key>
-      <string>Apple Disk II floppy controller</string>
+      <string>Apple Disk II Floppy Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2iwm</string>
+      <key>description</key>
+      <string>Apple Disk II IWM Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>diskii13</string>
+      <key>description</key>
+      <string>Apple Disk II NG Controller (13-sector)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2diskiing</string>
+      <key>description</key>
+      <string>Apple Disk II NG Controller (16-sector)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -600,7 +336,7 @@
       <key>value</key>
       <string>a1cass</string>
       <key>description</key>
-      <string>Apple I cassette board</string>
+      <string>Apple I Cassette Board</string>
     </dict>
     <dict>
       <key>value</key>
@@ -666,31 +402,7 @@
       <key>value</key>
       <string>a3fdc</string>
       <key>description</key>
-      <string>Apple III floppy controller</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr0p2</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00 prototype 3/10/1986)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr0p</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00 prototype 6/19/1986)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr0</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM00)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2gsr1</string>
-      <key>description</key>
-      <string>Apple IIgs (ROM01)</string>
+      <string>Apple III Floppy Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -726,7 +438,7 @@
       <key>value</key>
       <string>nb_aenet</string>
       <key>description</key>
-      <string>Apple NuBus Ethernet card</string>
+      <string>Apple NuBus Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -742,15 +454,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>apple2jp</string>
+      <string>aplcd150</string>
       <key>description</key>
-      <string>Apple ][ J-Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>apple2p</string>
-      <key>description</key>
-      <string>Apple ][+</string>
+      <string>AppleCD 150</string>
     </dict>
     <dict>
       <key>value</key>
@@ -762,7 +468,7 @@
       <key>value</key>
       <string>nb_qdlink</string>
       <key>description</key>
-      <string>Applied Engineering Quadralink serial card</string>
+      <string>Applied Engineering Quadralink Serial Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -792,19 +498,19 @@
       <key>value</key>
       <string>a2vulgld</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan Gold IDE controller (IIgs version)</string>
+      <string>Applied Engineering Vulcan Gold IDE Controller (IIgs Version)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2vuliie</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan IDE controller (//e version)</string>
+      <string>Applied Engineering Vulcan IDE Controller (//e Version)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2vulcan</string>
       <key>description</key>
-      <string>Applied Engineering Vulcan IDE controller (IIgs version)</string>
+      <string>Applied Engineering Vulcan IDE Controller (IIgs Version)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -816,37 +522,31 @@
       <key>value</key>
       <string>bbc_ariesb20</string>
       <key>description</key>
-      <string>Aries-B20 RAM expansion (w/ Aries-B12)</string>
+      <string>Aries-B20 RAM Expansion (W/ Aries-B12)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>bbc_ariesb32</string>
       <key>description</key>
-      <string>Aries-B32 RAM expansion (w/ Aries-B12)</string>
+      <string>Aries-B32 RAM Expansion (W/ Aries-B12)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>sb300p</string>
       <key>description</key>
-      <string>Artecon SB-300P 3S/1P controller</string>
+      <string>Artecon SB-300P 3S/1P Controller</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_amc3b</string>
       <key>description</key>
-      <string>Asante MC3NB Ethernet card</string>
+      <string>Asante MC3NB Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>pdslc_macconlc</string>
       <key>description</key>
-      <string>Asante MacCON i LC Ethernet card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>megast</string>
-      <key>description</key>
-      <string>Atari MEGA ST (USA)</string>
+      <string>Asante MacCON I LC Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -874,57 +574,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>bbcmt</string>
-      <key>description</key>
-      <string>BBC Master Turbo</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>bbca</string>
-      <key>description</key>
-      <string>BBC Micro Model A</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>bbcb</string>
       <key>description</key>
       <string>BBC Micro Model B</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>bbcb_de</string>
-      <key>description</key>
-      <string>BBC Micro Model B (German)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>bbcb_no</string>
-      <key>description</key>
-      <string>BBC Micro Model B (Norway)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>bbcb_us</string>
-      <key>description</key>
-      <string>BBC Micro Model B (US)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>bbcbp128</string>
-      <key>description</key>
-      <string>BBC Micro Model B+ 128K</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>bbcbp</string>
       <key>description</key>
       <string>BBC Micro Model B+ 64K</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>basis108</string>
-      <key>description</key>
-      <string>Basis 108</string>
     </dict>
     <dict>
       <key>value</key>
@@ -942,13 +600,13 @@
       <key>value</key>
       <string>nb_btbug</string>
       <key>description</key>
-      <string>Brigent BootBug debugger card</string>
+      <string>Brigent BootBug Debugger Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>zorro_buddha</string>
       <key>description</key>
-      <string>Buddha IDE controller</string>
+      <string>Buddha IDE Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -972,19 +630,19 @@
       <key>value</key>
       <string>a2cffa02</string>
       <key>description</key>
-      <string>CFFA 2.0 Compact Flash (6502 firmware)</string>
+      <string>CFFA 2.0 Compact Flash (6502 Firmware)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2cffa2</string>
       <key>description</key>
-      <string>CFFA 2.0 Compact Flash (65C02 firmware)</string>
+      <string>CFFA 2.0 Compact Flash (65c02 Firmware)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>cffa1</string>
       <key>description</key>
-      <string>CFFA Compact Flash for Apple I</string>
+      <string>CFFA Compact Flash For Apple I</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1009,6 +667,12 @@
       <string>bbc_cc500</string>
       <key>description</key>
       <string>CTS Colour Card 500</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cdrn820s</string>
+      <key>description</key>
+      <string>Caravelle CDR-N820s</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1060,6 +724,72 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>coco_rs232</string>
+      <key>description</key>
+      <string>CoCo Deluxe RS-232 PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_dcmodem</string>
+      <key>description</key>
+      <string>CoCo Direct Connect Modem PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_fdc</string>
+      <key>description</key>
+      <string>CoCo Floppy Disk Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_orch90</string>
+      <key>description</key>
+      <string>CoCo Orch-90 PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_psg</string>
+      <key>description</key>
+      <string>CoCo PSG</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_ssc</string>
+      <key>description</key>
+      <string>CoCo S/SC PAK</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpk</string>
+      <key>description</key>
+      <string>CoCo WordPak</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpk2</string>
+      <key>description</key>
+      <string>CoCo WordPak II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco_wpkrs</string>
+      <key>description</key>
+      <string>CoCo WordPak RS</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cd6809_fdc</string>
+      <key>description</key>
+      <string>Codimex CD-6809 Disk BASIC (1986)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>coco</string>
+      <key>description</key>
+      <string>Color Computer 1/2</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_integrab</string>
       <key>description</key>
       <string>Computech Integra-β</string>
@@ -1072,21 +802,27 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cfp1080s</string>
+      <key>description</key>
+      <string>Conner CFP1080S</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cp2024</string>
       <key>description</key>
-      <string>Conner Peripherals CP-2024 hard disk</string>
+      <string>Conner Peripherals CP-2024 Hard Disk</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2corvus</string>
       <key>description</key>
-      <string>Corvus Flat Cable interface</string>
+      <string>Corvus Flat Cable Interface</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>craft2p</string>
+      <string>cdr4210</string>
       <key>description</key>
-      <string>Craft II+</string>
+      <string>Creative Technology Blaster CD-R 4210</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1156,9 +892,45 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>dodo</string>
+      <string>coco_scii</string>
       <key>description</key>
-      <string>Do-Do</string>
+      <string>Disto Super Controller II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon32</string>
+      <key>description</key>
+      <string>Dragon 32</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_fdc</string>
+      <key>description</key>
+      <string>Dragon FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_serial</string>
+      <key>description</key>
+      <string>Dragon Peaksoft Prestel Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_jcbsnd</string>
+      <key>description</key>
+      <string>Dragon Sound Extension Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_jcbspch</string>
+      <key>description</key>
+      <string>Dragon Speech Synthesis Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dragon_sprites</string>
+      <key>description</key>
+      <string>Dragon Sprites</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1170,37 +942,19 @@
       <key>value</key>
       <string>mpcb828</string>
       <key>description</key>
-      <string>EDGE-1 Graphics f/1 1Mp Monitor (55K/60)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mpcb849</string>
-      <key>description</key>
-      <string>EDGE-1 Graphics f/1 2Mp Monitor (55K/60)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mpcba63</string>
-      <key>description</key>
-      <string>EDGE-2 Frame Buffer f/1Mp Monitor (55K/60)</string>
+      <string>EDGE-1 Graphics F/1 1Mp Monitor (55K/60)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>msmt094</string>
       <key>description</key>
-      <string>EDGE-2 Plus Processor f/1 2Mp-FB</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mpcb030</string>
-      <key>description</key>
-      <string>EDGE-2 Processor f/1 or 2 1Mp-FB's</string>
+      <string>EDGE-2 Plus Processor F/1 2Mp-FB</string>
     </dict>
     <dict>
       <key>value</key>
       <string>mpcb896</string>
       <key>description</key>
-      <string>EDGE-2/Plus Frame Buffer f/2Mp Monitor (V-60)</string>
+      <string>EDGE-2/Plus Frame Buffer F/2Mp Monitor (V-60)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1225,12 +979,6 @@
       <string>electron_elksd64</string>
       <key>description</key>
       <string>ElkSD64 Electron SD Interface</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>elppa</string>
-      <key>description</key>
-      <string>Elppa II+</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1260,7 +1008,7 @@
       <key>value</key>
       <string>pds30_emac</string>
       <key>description</key>
-      <string>Farallon EtherMac 30i-TH Ethernet card</string>
+      <string>Farallon EtherMac 30i-TH Ethernet Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1282,30 +1030,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>ace100</string>
-      <key>description</key>
-      <string>Franklin ACE 100</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace1000</string>
-      <key>description</key>
-      <string>Franklin ACE 1000</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace2200</string>
-      <key>description</key>
-      <string>Franklin ACE 2200</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>ace500</string>
-      <key>description</key>
-      <string>Franklin ACE 500</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>pds_hyper</string>
       <key>description</key>
       <string>GCC HyperDrive</string>
@@ -1314,25 +1038,19 @@
       <key>value</key>
       <string>mpcbb68</string>
       <key>description</key>
-      <string>GT II Graphics f/1 1Mp Monitor (V-76)</string>
+      <string>GT II Graphics F/1 1Mp Monitor (V-76)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>mpcbb92</string>
       <key>description</key>
-      <string>GT II Graphics f/1 2Mp Monitor (V-60/76)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>hkc8800a</string>
-      <key>description</key>
-      <string>HKC 8800A</string>
+      <string>GT II Graphics F/1 2Mp Monitor (V-60/76)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>human_interface</string>
       <key>description</key>
-      <string>HP human interface card</string>
+      <string>HP Human Interface Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1360,24 +1078,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>hp9k340</string>
-      <key>description</key>
-      <string>HP9000/340</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>hp9k360</string>
-      <key>description</key>
-      <string>HP9000/360</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>hp9k370</string>
-      <key>description</key>
-      <string>HP9000/370</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>hp9k380</string>
       <key>description</key>
       <string>HP9000/380</string>
@@ -1392,37 +1092,37 @@
       <key>value</key>
       <string>hp9122c</string>
       <key>description</key>
-      <string>HP9122C Dual High density disk drive</string>
+      <string>HP9122C Dual High Density Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
       <string>dio98543</string>
       <key>description</key>
-      <string>HP98543 medium-res color DIO video card</string>
+      <string>HP98543 Medium-res Color DIO Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>dio98544</string>
       <key>description</key>
-      <string>HP98544 high-res monochrome DIO video card</string>
+      <string>HP98544 High-res Monochrome DIO Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>dio98550</string>
       <key>description</key>
-      <string>HP98550A high-res color DIO video card</string>
+      <string>HP98550A High-res Color DIO Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>dio98603b</string>
       <key>description</key>
-      <string>HP98603 BASIC ROM card</string>
+      <string>HP98603 BASIC ROM Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>dio98603a</string>
       <key>description</key>
-      <string>HP98603A BASIC 4.0 ROM card</string>
+      <string>HP98603A BASIC 4.0 ROM Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1432,9 +1132,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>hd44780_a00</string>
+      <string>hd44780</string>
       <key>description</key>
-      <string>Hitachi HD44780 A00 LCD Controller</string>
+      <string>Hitachi HD44780 LCD Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1464,7 +1164,7 @@
       <key>value</key>
       <string>isa_ibm_mda</string>
       <key>description</key>
-      <string>IBM Monochrome Display and Printer Adapter</string>
+      <string>IBM Monochrome Display And Printer Adapter</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1518,13 +1218,13 @@
       <key>value</key>
       <string>a2ap16</string>
       <key>description</key>
-      <string>IBS AP-16 80 column card</string>
+      <string>IBS AP-16 80 Column Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2ap16a</string>
       <key>description</key>
-      <string>IBS AP-16 80 column card (alt. version)</string>
+      <string>IBS AP-16 80 Column Card (Alt. Version)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1561,18 +1261,6 @@
       <string>indy_4610</string>
       <key>description</key>
       <string>Indy (R4600, 100MHz)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>indy_4613</string>
-      <key>description</key>
-      <string>Indy (R4600, 133MHz)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>indy_5015</string>
-      <key>description</key>
-      <string>Indy (R5000, 150MHz)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1648,12 +1336,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>ivelultr</string>
-      <key>description</key>
-      <string>Ivel Ultra</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>electron_mode7</string>
       <key>description</key>
       <string>JAFA Mode 7 Display Unit</string>
@@ -1684,36 +1366,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>laser2c</string>
-      <key>description</key>
-      <string>Laser //c</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>laser128</string>
-      <key>description</key>
-      <string>Laser 128</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>laser128o</string>
-      <key>description</key>
-      <string>Laser 128 (original hardware)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>las128ex</string>
-      <key>description</key>
-      <string>Laser 128ex (version 4.5)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>las128e2</string>
-      <key>description</key>
-      <string>Laser 128ex2 (version 6.1)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>las3000</string>
       <key>description</key>
       <string>Laser 3000</string>
@@ -1729,12 +1381,6 @@
       <string>mac128k</string>
       <key>description</key>
       <string>Macintosh 128k</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mac512k</string>
-      <key>description</key>
-      <string>Macintosh 512k</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1792,24 +1438,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>mackbd_m0110b</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (British - M0110B)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110f</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (French - M0110F)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110t</string>
-      <key>description</key>
-      <string>Macintosh Keyboard (Italian - M0110T)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>mackbd_m0110</string>
       <key>description</key>
       <string>Macintosh Keyboard (U.S. - M0110)</string>
@@ -1828,12 +1456,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>maclc550</string>
-      <key>description</key>
-      <string>Macintosh LC 550</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>maclc2</string>
       <key>description</key>
       <string>Macintosh LC II</string>
@@ -1846,39 +1468,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>maclc580</string>
-      <key>description</key>
-      <string>Macintosh LC/Performa 580</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0120</string>
-      <key>description</key>
-      <string>Macintosh Numeric Keypad (English - M0120)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0120p</string>
-      <key>description</key>
-      <string>Macintosh Numeric Keypad (European - M0120P)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>macplus</string>
       <key>description</key>
       <string>Macintosh Plus</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110a_f</string>
-      <key>description</key>
-      <string>Macintosh Plus Keyboard (French - M0110A F)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mackbd_m0110a_j</string>
-      <key>description</key>
-      <string>Macintosh Plus Keyboard (Japanese - M0110A J)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1924,39 +1516,21 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>macse30</string>
-      <key>description</key>
-      <string>Macintosh SE/30</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>rs3230</string>
       <key>description</key>
       <string>Magnum 3000</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>maxxi</string>
-      <key>description</key>
-      <string>Maxxi</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>bbc_memexb20</string>
       <key>description</key>
-      <string>Memex-B20 RAM expansion</string>
+      <string>Memex-B20 RAM Expansion</string>
     </dict>
     <dict>
       <key>value</key>
       <string>bbc_mertec</string>
       <key>description</key>
       <string>Mertec Compact Companion</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>microeng</string>
-      <key>description</key>
-      <string>Micro Engenho</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1972,6 +1546,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>scorpion_ic</string>
+      <key>description</key>
+      <string>Micro-Robotics Scorpion Intelligent Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_30hr</string>
       <key>description</key>
       <string>Micron/XCEED Technology Color 30HR</string>
@@ -1981,12 +1561,6 @@
       <string>pd3_mclr</string>
       <key>description</key>
       <string>Micron/XCEED Technology MacroColor 30</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>mprof3</string>
-      <key>description</key>
-      <string>Microprofessor III</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2010,7 +1584,7 @@
       <key>value</key>
       <string>nb_vikbw</string>
       <key>description</key>
-      <string>Moniterm Viking video card</string>
+      <string>Moniterm MacViking II Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2032,12 +1606,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>m68hc705c8a</string>
-      <key>description</key>
-      <string>Motorola MC68HC705C8A</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>p72</string>
       <key>description</key>
       <string>NEC PinWriter P72</string>
@@ -2046,7 +1614,7 @@
       <key>value</key>
       <string>upd7220</string>
       <key>description</key>
-      <string>NEC uPD7220</string>
+      <string>NEC UPD7220</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2116,12 +1684,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>a2bufgrapplerplusa</string>
-      <key>description</key>
-      <string>Orange Micro Buffered Grappler+ (rev A) Printer Interface</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>a2bufgrapplerplus</string>
       <key>description</key>
       <string>Orange Micro Buffered Grappler+ Printer Interface</string>
@@ -2164,21 +1726,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>pdp11qb</string>
-      <key>description</key>
-      <string>PDP-11 [Q-BUS] (M7195 - MXV11-B)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>pdp11ub</string>
       <key>description</key>
       <string>PDP-11 [Unibus](M9301-YA)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>pdp11ub2</string>
-      <key>description</key>
-      <string>PDP-11 [Unibus](M9312)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2188,9 +1738,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_pms64k</string>
+      <key>description</key>
+      <string>PMS 64K Non-Volatile Ram Module</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ps2_keybc</string>
       <key>description</key>
       <string>PS/2 Keyboard/Mouse Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cw7501</string>
+      <key>description</key>
+      <string>Panasonic CW-7501 CD-R</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2212,15 +1774,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>pi4d30</string>
-      <key>description</key>
-      <string>Personal IRIS 4D/30</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>pi4d35</string>
       <key>description</key>
       <string>Personal IRIS 4D/35</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cdd2000</string>
+      <key>description</key>
+      <string>Philips CDD2000 CD-R</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2236,27 +1798,21 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>prav82</string>
+      <string>premier_fdc</string>
       <key>description</key>
-      <string>Pravetz 82</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>prav8c</string>
-      <key>description</key>
-      <string>Pravetz 8C</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>prav8m</string>
-      <key>description</key>
-      <string>Pravetz 8M</string>
+      <string>Premier FDC</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2pdromdr</string>
       <key>description</key>
       <string>ProDOS ROM Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cp450_fdc</string>
+      <key>description</key>
+      <string>Prológica CP-450 BASIC Disco V. 1.0 (1984)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2298,49 +1854,49 @@
       <key>value</key>
       <string>nb_thungx</string>
       <key>description</key>
-      <string>Radius Thunder IV GX video card</string>
+      <string>Radius Thunder IV GX Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_rtpd</string>
       <key>description</key>
-      <string>Radius Two Page Display video card</string>
+      <string>Radius Two Page Display Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_c264</string>
       <key>description</key>
-      <string>RasterOps ColorBoard 264 video card</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>cv8lc</string>
-      <key>description</key>
-      <string>RasterOps ColorVue 8LC video card</string>
+      <string>RasterOps ColorBoard 264 Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>pd3_c264</string>
       <key>description</key>
-      <string>RasterOps Colorboard 264/SE30</string>
+      <string>RasterOps ColorBoard 264/SE30</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cv8lc</string>
+      <key>description</key>
+      <string>RasterOps ColorVue 8LC Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>bbc_raven20</string>
       <key>description</key>
-      <string>Raven-20 RAM expansion</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>bbc_tube_rc6502</string>
-      <key>description</key>
-      <string>ReCo6502 (65C02)</string>
+      <string>Raven-20 RAM Expansion</string>
     </dict>
     <dict>
       <key>value</key>
       <string>bbc_tube_rc65816</string>
       <key>description</key>
       <string>ReCo6502 (65C816)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_rc6502</string>
+      <key>description</key>
+      <string>ReCo6502 (65c02)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2368,45 +1924,27 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>sdtandy_fdc</string>
+      <key>description</key>
+      <string>SDTANDY FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>sgi_kbd</string>
       <key>description</key>
       <string>SGI Keyboard</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>sun4_65</string>
-      <key>description</key>
-      <string>SPARCstation 1+ (Sun 4/65)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>sun4_25</string>
-      <key>description</key>
-      <string>SPARCstation ELC (Sun 4/25)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>sun4_40</string>
-      <key>description</key>
-      <string>SPARCstation IPC (Sun 4/40)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>sun4_50</string>
-      <key>description</key>
-      <string>SPARCstation IPX (Sun 4/50)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>sun4_20</string>
-      <key>description</key>
-      <string>SPARCstation SLC (Sun 4/20)</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>swtpc8212_device</string>
       <key>description</key>
       <string>SWTPC8212</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>crd254sh</string>
+      <key>description</key>
+      <string>Sanyo CRD-254SH CD-ROM</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2430,7 +1968,7 @@
       <key>value</key>
       <string>nb_laserview</string>
       <key>description</key>
-      <string>Sigma Designs LaserView video card</string>
+      <string>Sigma Designs LaserView Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2500,15 +2038,27 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>space84</string>
+      <string>cdu415</string>
       <key>description</key>
-      <string>Space 84</string>
+      <string>Sony CDU415 CD-R</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>spectred</string>
+      <string>cdu561_25</string>
       <key>description</key>
-      <string>Spectrum ED</string>
+      <string>Sony CDU561-25</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>smoc501</string>
+      <key>description</key>
+      <string>Sony SMO-C501 MO Disk Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cdu75s</string>
+      <key>description</key>
+      <string>Sony/Apple CDU75S CD-R</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2533,12 +2083,6 @@
       <string>a2q68</string>
       <key>description</key>
       <string>Stellation Two Q-68</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2q68plus</string>
-      <key>description</key>
-      <string>Stellation Two Q-68 Plus</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2602,9 +2146,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bwtwo</string>
+      <key>description</key>
+      <string>Sun Bwtwo SBus Video</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cgthree</string>
+      <key>description</key>
+      <string>Sun Cgthree SBus Video</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>sbus_sunpc</string>
       <key>description</key>
-      <string>Sun SunPC accelerator</string>
+      <string>Sun SunPC Accelerator</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2620,18 +2176,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>bwtwo</string>
-      <key>description</key>
-      <string>Sun bwtwo SBus Video</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>cgthree</string>
-      <key>description</key>
-      <string>Sun cgthree SBus Video</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>sun1</string>
       <key>description</key>
       <string>Sun-1</string>
@@ -2640,13 +2184,13 @@
       <key>value</key>
       <string>nb_spdq</string>
       <key>description</key>
-      <string>SuperMac Spectrum PDQ video card</string>
+      <string>SuperMac Spectrum PDQ Video Card</string>
     </dict>
     <dict>
       <key>value</key>
       <string>nb_sp8s3</string>
       <key>description</key>
-      <string>SuperMac Spectrum/8 Series III video card</string>
+      <string>SuperMac Spectrum/8 Series III Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2656,9 +2200,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>tk3000</string>
+      <string>trs80</string>
       <key>description</key>
-      <string>TK3000//e</string>
+      <string>TRS-80 Model I (Level I Basic)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>trs80l2</string>
+      <key>description</key>
+      <string>TRS-80 Model I (Level II Basic)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2716,33 +2266,15 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>uniap2pt</string>
+      <string>a2vtc1</string>
       <key>description</key>
-      <string>Unitron AP II (in Brazilian Portuguese)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>uniap2en</string>
-      <key>description</key>
-      <string>Unitron AP II (in English)</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>uniap2ti</string>
-      <key>description</key>
-      <string>Unitron AP II+ (Teclado Inteligente)</string>
+      <string>Unknown Videoterm Clone</string>
     </dict>
     <dict>
       <key>value</key>
       <string>vt100</string>
       <key>description</key>
       <string>VT100</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>vt101</string>
-      <key>description</key>
-      <string>VT101</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2766,13 +2298,13 @@
       <key>value</key>
       <string>a2ultrme</string>
       <key>description</key>
-      <string>Videx UltraTerm (enhanced //e)</string>
+      <string>Videx UltraTerm (Enhanced //e)</string>
     </dict>
     <dict>
       <key>value</key>
       <string>a2ulttrm</string>
       <key>description</key>
-      <string>Videx UltraTerm (original)</string>
+      <string>Videx UltraTerm (Original)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2785,6 +2317,12 @@
       <string>a2vidtrm</string>
       <key>description</key>
       <string>Videx Videoterm 80 Column Display</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2vistaa800</string>
+      <key>description</key>
+      <string>Vista A800 8" Disk Controller Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2839,12 +2377,6 @@
       <string>a2zipdrv</string>
       <key>description</key>
       <string>Zip Technologies ZipDrive</string>
-    </dict>
-    <dict>
-      <key>value</key>
-      <string>a2vtc1</string>
-      <key>description</key>
-      <string>unknown Videoterm clone</string>
     </dict>
   </array>
 </plist>
