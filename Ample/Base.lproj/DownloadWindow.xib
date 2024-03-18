@@ -117,6 +117,7 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
+                                        <action trigger="doubleAction" selector="doubleClick:" target="-2" id="y2y-h7-cfD"/>
                                         <binding destination="jhO-4z-Qwt" name="content" keyPath="arrangedObjects" id="2av-gV-V4K"/>
                                         <outlet property="menu" destination="RJM-21-hjO" id="xpL-0n-1jm"/>
                                     </connections>

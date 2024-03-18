@@ -481,6 +481,10 @@ enum {
 
 }
 
+-(IBAction)doubleClick:(id)sender {
+    [self download: sender];
+}
+
 - (IBAction)download:(id)sender {
     DownloadItem *item = [self clickedItem];
     if (!item) return;
