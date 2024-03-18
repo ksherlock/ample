@@ -634,6 +634,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>oric_jasmin</string>
+      <key>description</key>
+      <string>Jasmin Floppy Drive Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>keytronic_pc3270</string>
       <key>description</key>
       <string>Keytronic PC3270</string>
@@ -802,6 +808,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>oric_microdisc</string>
+      <key>description</key>
+      <string>Microdisc Floppy Drive Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_30hr</string>
       <key>description</key>
       <string>Micron/XCEED Technology Color 30HR</string>
@@ -865,6 +877,12 @@
       <string>a2grapplerplus</string>
       <key>description</key>
       <string>Orange Micro Grappler+ Printer Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>oric1</string>
+      <key>description</key>
+      <string>Oric-1</string>
     </dict>
     <dict>
       <key>value</key>

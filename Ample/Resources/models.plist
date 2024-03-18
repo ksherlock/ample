@@ -685,6 +685,37 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Oric</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Oric-1</string>
+          <key>value</key>
+          <string>oric1</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Oric Atmos</string>
+          <key>value</key>
+          <string>orica</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8D</string>
+          <key>value</key>
+          <string>prav8d</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Oric Telestrat</string>
+          <key>value</key>
+          <string>telstrat</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Tandy</string>
       <key>children</key>
       <array>

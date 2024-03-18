@@ -369,6 +369,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -392,6 +397,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -415,6 +425,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -438,6 +453,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -468,6 +488,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -491,6 +516,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -514,6 +544,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
@@ -537,6 +572,11 @@
                 <string>3" double-sided floppy drive</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>
