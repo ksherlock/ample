@@ -610,13 +610,16 @@ static NSInteger TaskStatusCode(NSURLSessionTask *task) {
     NSURL *dest = [_romFolder URLByAppendingPathComponent: [src lastPathComponent]];
     NSError *error = nil;
 
+    /* just in case ... */
+    [fm removeItemAtURL: dest error: NULL];
     [fm moveItemAtURL: location toURL: dest error: &error];
 
     dispatch_async(dispatch_get_main_queue(), ^(void){
         NSMutableDictionary *taskIndex = self->_taskIndex;
         DownloadItem *item = [taskIndex objectForKey: task];
 
-        [item refresh: dest];
+        if (error) [item completeWithError: error];
+        else [item refresh: dest];
     });
 
     NSLog(@"%@", src);
