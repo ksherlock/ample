@@ -159,10 +159,21 @@
                                                 <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="m4N-Qw-mem">
                                                     <items>
-                                                        <menuItem title="Full Screen" state="on" id="0zZ-Ib-Fne"/>
-                                                        <menuItem title="Window 1x" id="3bZ-rq-fCt"/>
-                                                        <menuItem title="Window 2x" id="KA4-Rs-yyK"/>
-                                                        <menuItem title="Window 3x" id="Dbh-Js-pMx" userLabel="Window 3x"/>
+                                                        <menuItem title="Full Screen" state="on" id="0zZ-Ib-Fne">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Window 1x" id="3bZ-rq-fCt">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Window 2x" id="KA4-Rs-yyK">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Window 3x" id="Dbh-Js-pMx" userLabel="Window 3x">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Window 4x" id="GCs-En-3Jv">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>

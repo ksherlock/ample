@@ -25,6 +25,20 @@ static NSString *kMyContext = @"kMyContext";
 static NSString *kContextMachine = @"kContextMachine";
 
 
+static NSString *NeedsAspectRatio(NSString *machine) {
+    static NSDictionary *dict = nil;
+    
+    if (!dict) {
+        dict = @{
+            @"oric1": @"2:1",
+            @"orica": @"2:1",
+            @"prav8d": @"2:1",
+            @"telstrat": @"2:1",
+        };
+    }
+    return [dict objectForKey: machine];
+}
+
 @interface LaunchWindowController () {
     BOOL _loadingBookmark;
     NSString *_machine;
@@ -500,6 +514,7 @@ static NSString *ShellQuote(NSString *s) {
             // drop through.
         case 2: // 2x
         case 3: // 3x
+        case 4: // 4x
             
             if (_mameSquarePixels) {
                 //              NSString *aspect = [NSString stringWithFormat: @"%u:%u", (unsigned)screen.width, (unsigned)screen.height];
@@ -509,6 +524,8 @@ static NSString *ShellQuote(NSString *s) {
                 float hscale = round((screen.width * 3 / 4) / screen.height);
                 if (hscale < 1) hscale = 1;
                 screen.height *= hscale;
+
+
             } else {
                 screen.height = round(screen.width * 3 / 4);
             }
@@ -523,9 +540,17 @@ static NSString *ShellQuote(NSString *s) {
             [argv addObject: res];
             if (_mameSquarePixels) {
                 [argv addObject: @"-nounevenstretch"];
+
+                NSString *aspect = NeedsAspectRatio(_machine);
+                if (aspect) {
+                    [argv addObject: @"-aspect"];
+                    [argv addObject: aspect];
+                }
+
             }
             break;
     }
+
 
 
 
