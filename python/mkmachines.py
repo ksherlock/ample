@@ -45,6 +45,7 @@ import mame
 #
 
 
+
 # don't allow these for now. generally because they add floppy/hard drives
 # but don't work with normal disk images
 DISABLED = set((
@@ -315,9 +316,11 @@ DEVICE_MEDIA = {
 	'hdd': 'hard',
 	'harddisk': 'hard',
 	'525': 'floppy_5_25',
-	'35hd': 'floppy_3_5',
 	'35dd': 'floppy_3_5',
+	'35ed': 'floppy_3_5',
+	'35hd': 'floppy_3_5',
 	'35sd': 'floppy_3_5',
+	'35ssdd': 'floppy_3_5',
 	'midiin': 'midiin',
 	'midiout': 'midiout',
 	'aplcdsc': 'cdrom',
@@ -339,7 +342,11 @@ DEVICE_MEDIA = {
 	"8sssd": "floppy_8",
 
 	# trs dragon32, etc
-	"qd": "floppy_5_25"
+	"qd": "floppy_5_25",
+
+	# oric, amstrad, sinclair, etc, used a 3" disk. We'll round up.
+	"3dsdd": "floppy_3_5",
+	"3ssdd": "floppy_3_5",
 
 }
 

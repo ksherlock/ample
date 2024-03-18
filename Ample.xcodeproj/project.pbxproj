@@ -518,6 +518,14 @@
 		B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F7B536266FDA5B00624C6B /* MachineView.xib */; };
 		B6F7B53C267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
 		B6F7B53D267017A200624C6B /* NewMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F7B53B267017A200624C6B /* NewMachineViewController.m */; };
+		B6FECDD02BA8AA080025B402 /* prav8d.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCC2BA8AA080025B402 /* prav8d.plist */; };
+		B6FECDD12BA8AA080025B402 /* prav8d.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCC2BA8AA080025B402 /* prav8d.plist */; };
+		B6FECDD22BA8AA080025B402 /* telstrat.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCD2BA8AA080025B402 /* telstrat.plist */; };
+		B6FECDD32BA8AA080025B402 /* telstrat.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCD2BA8AA080025B402 /* telstrat.plist */; };
+		B6FECDD42BA8AA080025B402 /* orica.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCE2BA8AA080025B402 /* orica.plist */; };
+		B6FECDD52BA8AA080025B402 /* orica.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCE2BA8AA080025B402 /* orica.plist */; };
+		B6FECDD62BA8AA080025B402 /* oric1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCF2BA8AA080025B402 /* oric1.plist */; };
+		B6FECDD72BA8AA080025B402 /* oric1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCF2BA8AA080025B402 /* oric1.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -932,6 +940,10 @@
 		B6F7B53A267017A200624C6B /* NewMachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMachineViewController.h; sourceTree = "<group>"; };
 		B6F7B53B267017A200624C6B /* NewMachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMachineViewController.m; sourceTree = "<group>"; };
 		B6FECAFA28C0093600E143DA /* las3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las3000.plist; sourceTree = "<group>"; };
+		B6FECDCC2BA8AA080025B402 /* prav8d.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = prav8d.plist; sourceTree = "<group>"; };
+		B6FECDCD2BA8AA080025B402 /* telstrat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = telstrat.plist; sourceTree = "<group>"; };
+		B6FECDCE2BA8AA080025B402 /* orica.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = orica.plist; sourceTree = "<group>"; };
+		B6FECDCF2BA8AA080025B402 /* oric1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oric1.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1130,6 +1142,10 @@
 				B6896E082B016CE000251FA4 /* vt102.plist */,
 				B6896DEA2B016CD800251FA4 /* vt240.plist */,
 				B6896DCD2B016CD100251FA4 /* zijini.plist */,
+				B6FECDCF2BA8AA080025B402 /* oric1.plist */,
+				B6FECDCE2BA8AA080025B402 /* orica.plist */,
+				B6FECDCC2BA8AA080025B402 /* prav8d.plist */,
+				B6FECDCD2BA8AA080025B402 /* telstrat.plist */,
 				B6EEFAAD2B9ABCAD0068B47C /* coco.plist */,
 				B6EEFAAC2B9ABCAD0068B47C /* coco2b.plist */,
 				B6EEFAA92B9ABCAD0068B47C /* coco3.plist */,
@@ -1568,6 +1584,7 @@
 				B67878C82B01732700CFACF2 /* tk3000.plist in Resources */,
 				B678787E2B01732700CFACF2 /* ds3100.plist in Resources */,
 				B67878BA2B01732700CFACF2 /* pi4d35.plist in Resources */,
+				B6FECDD42BA8AA080025B402 /* orica.plist in Resources */,
 				B67878C42B01732700CFACF2 /* rtpc020.plist in Resources */,
 				B6DDECD62505A86E0093587A /* eject-16x16.png in Resources */,
 				B678788C2B01732700CFACF2 /* indigo2_4415.plist in Resources */,
@@ -1668,6 +1685,7 @@
 				B67878C02B01732700CFACF2 /* rs2030.plist in Resources */,
 				B67878C22B01732700CFACF2 /* rtpc010.plist in Resources */,
 				B67878BE2B01732700CFACF2 /* roms.plist in Resources */,
+				B6FECDD02BA8AA080025B402 /* prav8d.plist in Resources */,
 				B678786D2B01732700CFACF2 /* am100.plist in Resources */,
 				B6EEFAC02B9ABCAE0068B47C /* coco.plist in Resources */,
 				B67878E02B01732700CFACF2 /* craft2p.plist in Resources */,
@@ -1747,6 +1765,7 @@
 				B67878A82B01732700CFACF2 /* maclc575.plist in Resources */,
 				B67878FF2B01732700CFACF2 /* uniap2ti.plist in Resources */,
 				B67878CF2B01732700CFACF2 /* zijini.plist in Resources */,
+				B6FECDD22BA8AA080025B402 /* telstrat.plist in Resources */,
 				B67878A92B01732700CFACF2 /* macplus.plist in Resources */,
 				B6EEFABC2B9ABCAE0068B47C /* trs80l2.plist in Resources */,
 				B67878912B01732700CFACF2 /* ip2400.plist in Resources */,
@@ -1761,6 +1780,7 @@
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
 				B67878F92B01732700CFACF2 /* models.plist in Resources */,
 				B67878952B01732700CFACF2 /* ip6000.plist in Resources */,
+				B6FECDD62BA8AA080025B402 /* oric1.plist in Resources */,
 				B67878A62B01732700CFACF2 /* maclc3p.plist in Resources */,
 				B67878A22B01732700CFACF2 /* maciihmu.plist in Resources */,
 			);
@@ -1849,6 +1869,7 @@
 				B67878192B01732600CFACF2 /* models~extra.plist in Resources */,
 				B67877D72B01732600CFACF2 /* apple2.plist in Resources */,
 				B67878072B01732600CFACF2 /* maccclas.plist in Resources */,
+				B6FECDD12BA8AA080025B402 /* prav8d.plist in Resources */,
 				B678783F2B01732600CFACF2 /* apple2e.plist in Resources */,
 				B67877DD2B01732600CFACF2 /* apple2gsr1.plist in Resources */,
 				B678781E2B01732600CFACF2 /* pdp11ub.plist in Resources */,
@@ -1894,6 +1915,7 @@
 				B67879162B0195DB00CFACF2 /* sun3_50.plist in Resources */,
 				B67878322B01732600CFACF2 /* uniap2pt.plist in Resources */,
 				B6DE323926044C1100418375 /* caution.png in Resources */,
+				B6FECDD72BA8AA080025B402 /* oric1.plist in Resources */,
 				B678783A2B01732600CFACF2 /* ace2200.plist in Resources */,
 				B6DE323726044C1100418375 /* caution@2x.png in Resources */,
 				B67877F42B01732600CFACF2 /* indigo.plist in Resources */,
@@ -1904,6 +1926,7 @@
 				B6EEFAC52B9ABCAE0068B47C /* dragon32.plist in Resources */,
 				B67878212B01732600CFACF2 /* pi4d25.plist in Resources */,
 				B67878582B01732600CFACF2 /* maclc3.plist in Resources */,
+				B6FECDD32BA8AA080025B402 /* telstrat.plist in Resources */,
 				B67878202B01732600CFACF2 /* pi4d20.plist in Resources */,
 				B67878112B01732600CFACF2 /* maclc575.plist in Resources */,
 				B6EEFABB2B9ABCAE0068B47C /* trs80.plist in Resources */,
@@ -1950,6 +1973,7 @@
 				B67877DF2B01732600CFACF2 /* basis108.plist in Resources */,
 				B67878132B01732600CFACF2 /* macqd610.plist in Resources */,
 				B67878542B01732600CFACF2 /* maciicx.plist in Resources */,
+				B6FECDD52BA8AA080025B402 /* orica.plist in Resources */,
 				B636F5D12B1168C00063F9D8 /* electron.plist in Resources */,
 				B63C1B9725008A2700511A71 /* DownloadWindow.xib in Resources */,
 				B6E4B5D324FDE2670094A35C /* MainMenu.xib in Resources */,

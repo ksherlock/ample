@@ -54,6 +54,10 @@ tandy_children = [
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 ]
 
+oric_children = [
+	"oric1", "orica", "prav8d", "telstrat",
+]
+
 
 amiga_children = ["a500", "a500n", "a1000", "a1000n", "a2000", "a2000n" ]
 
@@ -90,7 +94,8 @@ TREE = [
 	("Macintosh (Quadra)", None, mac_quadra_children),
 	("Macintosh (LC)", None, mac_lc_children),
 	("Atari ST", "st", atari_st_children),
-	("Tandy", None, tandy_children)
+	("Oric", None, oric_children),
+	("Tandy", None, tandy_children),
 ]
 
 TREE_EXTRA = TREE + [

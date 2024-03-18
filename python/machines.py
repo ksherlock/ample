@@ -50,6 +50,10 @@ MACHINES = (
 	"trs80", "trs80l2",
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 
+	# oric
+	"oric1", "orica", "prav8d", "telstrat",
+	# mt65, micron, mt6809 -- need tanbus support...
+
 )
 
 
@@ -208,9 +212,12 @@ SLOT_NAMES = {
 	"fdc":        "Disk Drives",
 
 
-	"ext":        "Coco Cart",
+	# "ext":        "Coco Cart",
+	"ext":        "Expansion",
 	"floppy0":    "Floppy 1",
 	"floppy1":    "Floppy 2",
 	"floppy2":    "Floppy 3",
 	"floppy3":    "Floppy 4",
 }
+
+
