@@ -41,7 +41,7 @@ void MediaAdd(Media *dest, const Media *src) {
     
     //unsigned count;
     unsigned dest_flops = dest->floppy_8 + dest->floppy_5_25 + dest->floppy_3_5;
-    unsigned src_flops = src->floppy_8 || src->floppy_5_25 || src->floppy_8;
+    unsigned src_flops = src->floppy_8 || src->floppy_5_25 || src->floppy_3_5;
 
     
 #define _(name) dest->name += src->name;
