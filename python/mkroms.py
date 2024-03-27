@@ -140,7 +140,7 @@ def fix_machine_description(x, devname):
 
 def build_known_roms_list():
 	# https://archive.org/download/mame-merged/mame-merged/
-	infile = "mame-0.263-merged.html"
+	infile = "mame-0.264-merged.html"
 	# infile = "mame-0233-full.html"
 	# infile = "mame-0.231-merged.html"
 	rv = set()

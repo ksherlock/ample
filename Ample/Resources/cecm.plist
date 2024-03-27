@@ -3858,7 +3858,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3872,17 +3872,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3890,7 +3882,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3898,7 +3890,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3909,9 +3901,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -7075,7 +7075,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7089,17 +7089,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7107,7 +7099,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7115,7 +7107,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -7126,9 +7118,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8088,7 +8088,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8102,17 +8102,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8120,7 +8112,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8128,7 +8120,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8139,9 +8131,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8240,7 +8240,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8254,17 +8254,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8272,7 +8264,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8280,7 +8272,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8291,9 +8283,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8896,7 +8896,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8910,17 +8910,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8928,7 +8920,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8936,7 +8928,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8947,9 +8939,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>

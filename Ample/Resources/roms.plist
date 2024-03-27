@@ -802,6 +802,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mactv</string>
+      <key>description</key>
+      <string>Macintosh TV</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>scorpion_ic</string>
       <key>description</key>
       <string>Micro-Robotics Scorpion Intelligent Controller</string>
