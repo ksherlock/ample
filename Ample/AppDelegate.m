@@ -88,12 +88,21 @@
     NSDate *newDate = [defaults objectForKey: kMameComponentsDate];
     if (![newDate isKindOfClass: [NSDate class]])
         newDate = nil;
-    
+  
+
+
     if (!newDate) return YES; //????
     if (oldDate && [oldDate compare: newDate] >= 0) return YES;
 
+#if 0
     NSString *path = [bundle pathForResource: @"mame-data" ofType: @"tgz"];
     if (!path) return YES; // Ample Lite?
+#endif
+
+    NSString *ssp = [bundle sharedSupportPath];
+    NSString *path = [ssp stringByAppendingPathComponent: @"mame-data.tgz"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath: path])
+        return YES; // Ample Lite?
 
     
     NSWindow *win = _installWindow;

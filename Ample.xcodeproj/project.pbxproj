@@ -40,7 +40,6 @@
 		B6374AC5260EBC5A0045CA16 /* pty_shell in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6374ABD260EBBC90045CA16 /* pty_shell */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B63C1B8B24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
 		B63C1B8C24FF4BF700511A71 /* Ample.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B8A24FF4BF700511A71 /* Ample.m */; };
-		B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
 		B63C1B9425008A2700511A71 /* DownloadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B9225008A2700511A71 /* DownloadWindowController.m */; };
 		B63C1B9525008A2700511A71 /* DownloadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B9225008A2700511A71 /* DownloadWindowController.m */; };
 		B63C1B9625008A2700511A71 /* DownloadWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63C1B9325008A2700511A71 /* DownloadWindow.xib */; };
@@ -432,6 +431,8 @@
 		B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3A24FACF4F00661A5F /* Defaults.plist */; };
 		B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D6DE3C24FADF8B00661A5F /* LaunchWindow.xib */; };
 		B6D6DE4124FADFAC00661A5F /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */; };
+		B6DD93972BB4F5DC00921359 /* Host.FST.po in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6DD93942BB4F0FC00921359 /* Host.FST.po */; };
+		B6DD93982BB4F65200921359 /* mame-data.tgz in CopyFiles */ = {isa = PBXBuildFile; fileRef = B63C1B8D25004C6D00511A71 /* mame-data.tgz */; };
 		B6DDECC025057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC125057A550093587A /* drag-handle-4x10.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBD25057A550093587A /* drag-handle-4x10.png */; };
 		B6DDECC225057A550093587A /* drag-handle-4x10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */; };
@@ -570,6 +571,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B6DD93962BB4F5B700921359 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+				B6DD93982BB4F65200921359 /* mame-data.tgz in CopyFiles */,
+				B6DD93972BB4F5DC00921359 /* Host.FST.po in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B6E4B5F324FDE2670094A35C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -885,6 +897,7 @@
 		B6D6DE3F24FADFAC00661A5F /* LaunchWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
 		B6D6DE4024FADFAC00661A5F /* LaunchWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
 		B6DD1FE725B407E6004A3242 /* maclc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc.plist; sourceTree = "<group>"; };
+		B6DD93942BB4F0FC00921359 /* Host.FST.po */ = {isa = PBXFileReference; lastKnownFileType = file; name = Host.FST.po; path = embedded/Host.FST.po; sourceTree = "<group>"; };
 		B6DDECBD25057A550093587A /* drag-handle-4x10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10.png"; sourceTree = "<group>"; };
 		B6DDECBE25057A550093587A /* drag-handle-4x10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@2x.png"; sourceTree = "<group>"; };
 		B6DDECBF25057A550093587A /* drag-handle-4x10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag-handle-4x10@3x.png"; sourceTree = "<group>"; };
@@ -1274,6 +1287,7 @@
 		B66236BD24FDA7EA006CABD7 /* Embedded Content */ = {
 			isa = PBXGroup;
 			children = (
+				B6DD93942BB4F0FC00921359 /* Host.FST.po */,
 				B63C1B8D25004C6D00511A71 /* mame-data.tgz */,
 				B66236B824FDA698006CABD7 /* mame64 */,
 				B635C09C26784A4800B23BFD /* Sparkle.framework */,
@@ -1495,6 +1509,7 @@
 				B6152B5C25F6F4F800605E6E /* ShellScript */,
 				B66236BB24FDA71D006CABD7 /* CopyFiles */,
 				B611BA3D26796483008597B5 /* ShellScript */,
+				B6DD93962BB4F5B700921359 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1772,7 +1787,6 @@
 				B67878AD2B01732700CFACF2 /* macse30.plist in Resources */,
 				B67878E12B01732700CFACF2 /* elppa.plist in Resources */,
 				B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */,
-				B63C1B8E25004C6D00511A71 /* mame-data.tgz in Resources */,
 				B67878832B01732700CFACF2 /* hp9k332.plist in Resources */,
 				B678786E2B01732700CFACF2 /* apple2.plist in Resources */,
 				B67879232B0195DB00CFACF2 /* sun4_50.plist in Resources */,
@@ -2422,7 +2436,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2435,7 +2449,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.263-u2";
+				MARKETING_VERSION = "0.264-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2448,7 +2462,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2461,7 +2475,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = "0.263-u2";
+				MARKETING_VERSION = "0.264-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2474,7 +2488,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2487,7 +2501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.263;
+				MARKETING_VERSION = 0.264;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2500,7 +2514,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "AMPLE_LITE=1";
 				INFOPLIST_FILE = Ample/Info.plist;
@@ -2509,7 +2523,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.263;
+				MARKETING_VERSION = 0.264;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
