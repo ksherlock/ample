@@ -5298,6 +5298,13 @@
                 <string>Miracle Piano SNES Cable</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5377,6 +5384,13 @@
                 <string>Miracle Piano SNES Cable</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>

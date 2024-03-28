@@ -264,6 +264,7 @@ def find_media(parent, include_slots=False):
 	for x in parent.findall("./slot/slotoption"):
 		if x.get("default") != "yes": continue
 		name = x.get("name")
+		devname = x.get("devname")
 		if name in remap_slot:
 			name = remap_slot[name]
 			media[name] = media.get(name, 0) + 1
@@ -369,6 +370,34 @@ DEVICE_EXCLUDE = set([
 	'cp2024', # Conner Peripherals CP-2024 hard disk
 ])
 
+def default_device_media(machine):
+
+	media = {}
+
+	for option in machine.findall("./slot/slotoption[@default='yes']"):
+		m = slot_option_media(option, False)
+		if not m: continue
+		for k,v in m.items():
+			media[k] = v + media.get(k, 0)
+
+	if media: return media
+	return None
+
+def slot_option_media(option, recurse):
+	name = option.get('name')
+	devname = option.get('devname')
+
+	if name in DEVICE_MEDIA: return { DEVICE_MEDIA[name]: 1 }
+
+	if devname: device = machine_cache[devname]
+	if device is None: return None
+
+	if device.find("./device_ref[@name='bitbanger']") != None: return { 'bitbanger': 1 }
+	if device.find("./device_ref[@name='picture_image']") != None: return { 'picture': 1 }
+
+	if recurse: return default_device_media(device)
+	return None
+
 def make_device_options(slot):
 #
 # As of MAME .258 ---
@@ -399,18 +428,12 @@ def make_device_options(slot):
 		has_default |= default
 		media = None
 
-		if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
-		elif device is not None and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
-		elif device is not None and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
+		# if name in DEVICE_MEDIA: media = { DEVICE_MEDIA[name]: 1 }
+		# elif device is not None and device.find("./device_ref[@name='bitbanger']") != None: media = { 'bitbanger': 1 }
+		# elif device is not None and device.find("./device_ref[@name='picture_image']") != None: media = { 'picture': 1 }
 		# elif device and device.find("./device_ref[@name='printer_image']") != None: media = { 'printout': 1 }
 
-
-		# if name == "cdrom":
-		# 	print("{} - {} - {}".format(slot.get('name'), name, devname))
-		# 	print(option)
-		# 	if slot.get('name') == ':scsibus:1':
-		# 		default = True
-		# 		has_default = True
+		media = slot_option_media(option, True)
 
 		item = {
 			'value': name,

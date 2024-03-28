@@ -1124,6 +1124,11 @@
                 <string>Dragon FDC</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1132,6 +1137,13 @@
                 <string>Dragon MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1140,6 +1152,11 @@
                 <string>Dragon Peaksoft Prestel Module</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1172,6 +1189,11 @@
                 <string>Premier FDC</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1180,6 +1202,11 @@
                 <string>SDTANDY FDC</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1516,6 +1543,13 @@
                 <string>Dragon MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1524,6 +1558,11 @@
                 <string>Dragon Peaksoft Prestel Module</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1667,6 +1706,13 @@
                 <string>Dragon MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1675,6 +1721,11 @@
                 <string>Dragon Peaksoft Prestel Module</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1818,6 +1869,13 @@
                 <string>Dragon MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1826,6 +1884,11 @@
                 <string>Dragon Peaksoft Prestel Module</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1969,6 +2032,11 @@
                 <string>Dragon FDC</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1977,6 +2045,13 @@
                 <string>Dragon MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1985,6 +2060,11 @@
                 <string>Dragon Peaksoft Prestel Module</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2017,6 +2097,11 @@
                 <string>Premier FDC</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2025,6 +2110,11 @@
                 <string>SDTANDY FDC</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>

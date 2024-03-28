@@ -1191,6 +1191,11 @@
                 <string>CoCo Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1215,6 +1220,13 @@
                 <string>CoCo MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1279,6 +1291,11 @@
                 <string>Codimex CD-6809 Disk BASIC (1986)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1295,6 +1312,11 @@
                 <string>Disto Super Controller II</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1303,6 +1325,11 @@
                 <string>Glenside IDE Adapter</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1311,6 +1338,11 @@
                 <string>Prológica CP-450 BASIC Disco V. 1.0 (1984)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1488,6 +1520,13 @@
                 <string>CoCo MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1560,6 +1599,11 @@
                 <string>Glenside IDE Adapter</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1639,6 +1683,13 @@
                 <string>CoCo MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1711,6 +1762,11 @@
                 <string>Glenside IDE Adapter</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1790,6 +1846,13 @@
                 <string>CoCo MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1862,6 +1925,11 @@
                 <string>Glenside IDE Adapter</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1925,6 +1993,11 @@
                 <string>CoCo Floppy Disk Controller</string>
                 <key>default</key>
                 <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1949,6 +2022,13 @@
                 <string>CoCo MIDI PAK</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2013,6 +2093,11 @@
                 <string>Codimex CD-6809 Disk BASIC (1986)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2029,6 +2114,11 @@
                 <string>Disto Super Controller II</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2037,6 +2127,11 @@
                 <string>Glenside IDE Adapter</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2045,6 +2140,11 @@
                 <string>Prológica CP-450 BASIC Disco V. 1.0 (1984)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
