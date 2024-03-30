@@ -229,17 +229,9 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>patch</string>
-            <key>description</key>
-            <string>RS-232 Patch Box</string>
-            <key>devname</key>
-            <string>rs232_patch_box</string>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>loopback</string>
             <key>description</key>
-            <string>RS232 Loopback</string>
+            <string>RS-232 Loopback</string>
             <key>devname</key>
             <string>rs232_loopback</string>
           </dict>
@@ -247,7 +239,7 @@
             <key>value</key>
             <string>dec_loopback</string>
             <key>description</key>
-            <string>RS232 Loopback (DEC 12-15336-00)</string>
+            <string>RS-232 Loopback (DEC 12-15336-00)</string>
             <key>devname</key>
             <string>dec_rs232_loopback</string>
           </dict>
@@ -255,7 +247,7 @@
             <key>value</key>
             <string>null_modem</string>
             <key>description</key>
-            <string>RS232 Null Modem</string>
+            <string>RS-232 Null Modem</string>
             <key>devname</key>
             <string>null_modem</string>
             <key>media</key>
@@ -266,9 +258,17 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>patch</string>
+            <key>description</key>
+            <string>RS-232 Patch Box</string>
+            <key>devname</key>
+            <string>rs232_patch_box</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>rs232_sync_io</string>
             <key>description</key>
-            <string>RS232 Synchronous I/O</string>
+            <string>RS-232 Synchronous I/O</string>
             <key>devname</key>
             <string>rs232_sync_io</string>
             <key>media</key>
@@ -1107,6 +1107,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1115,6 +1122,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1163,6 +1177,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1195,6 +1214,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1203,6 +1227,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1227,6 +1256,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1286,7 +1320,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1300,17 +1334,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1318,7 +1344,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1326,7 +1352,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -1337,9 +1363,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -1482,6 +1516,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1490,6 +1531,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1538,6 +1586,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1570,6 +1623,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1578,6 +1636,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1602,6 +1665,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1774,6 +1842,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1782,6 +1857,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1830,6 +1912,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1862,6 +1949,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1870,6 +1962,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1894,6 +1991,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1988,6 +2090,11 @@
                 <string>Commodore 8250</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1996,6 +2103,11 @@
                 <string>Commodore 8280</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2004,6 +2116,11 @@
                 <string>Commodore D9060</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2012,6 +2129,11 @@
                 <string>Commodore D9090</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2020,6 +2142,11 @@
                 <string>Commodore SFD-1001</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2268,6 +2395,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2276,6 +2410,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2324,6 +2465,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2356,6 +2502,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2364,6 +2515,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2388,6 +2544,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2617,6 +2778,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2625,6 +2793,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2673,6 +2848,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2705,6 +2885,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2713,6 +2898,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -2737,6 +2927,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3377,6 +3572,11 @@
                 <string>Commodore 8250</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3385,6 +3585,11 @@
                 <string>Commodore 8280</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3393,6 +3598,11 @@
                 <string>Commodore D9060</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3401,6 +3611,11 @@
                 <string>Commodore D9090</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3409,6 +3624,11 @@
                 <string>Commodore SFD-1001</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3520,6 +3740,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3528,6 +3755,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3576,6 +3810,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3608,6 +3847,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3616,6 +3860,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3640,6 +3889,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3862,6 +4116,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3870,6 +4131,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3918,6 +4186,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3950,6 +4223,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3958,6 +4236,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -3982,6 +4265,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4092,6 +4380,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4100,6 +4395,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4148,6 +4450,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4180,6 +4487,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4188,6 +4500,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4212,6 +4529,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4322,6 +4644,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4330,6 +4659,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4378,6 +4714,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4410,6 +4751,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4418,6 +4764,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4442,6 +4793,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4552,6 +4908,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4560,6 +4923,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4608,6 +4978,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4640,6 +5015,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4648,6 +5028,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4672,6 +5057,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4782,6 +5172,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4790,6 +5187,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4838,6 +5242,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4870,6 +5279,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4878,6 +5292,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -4902,6 +5321,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5174,6 +5598,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5182,6 +5613,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5230,6 +5668,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5262,6 +5705,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5270,6 +5718,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5294,6 +5747,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5649,6 +6107,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5657,6 +6122,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5705,6 +6177,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5737,6 +6214,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5745,6 +6227,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5769,6 +6256,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5879,6 +6371,13 @@
                 <string>EMR BBC MIDI Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>2</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5887,6 +6386,13 @@
                 <string>Hybrid Music 2000 Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>midiout</key>
+                  <integer>3</integer>
+                  <key>midiin</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5935,6 +6441,11 @@
                 <string>Opus Challenger 3-in-1</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5967,6 +6478,11 @@
                 <string>RetroClinic BBC 8-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5975,6 +6491,11 @@
                 <string>RetroClinic DataCentre</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>2</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -5999,6 +6520,11 @@
                 <string>Sprow BeebIDE 16-bit IDE Interface</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -6743,7 +7269,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6757,17 +7283,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6775,7 +7293,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6783,7 +7301,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6794,9 +7312,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6895,7 +7421,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6909,17 +7435,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6927,7 +7445,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6935,7 +7453,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6946,9 +7464,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -7047,7 +7573,7 @@
                 <key>value</key>
                 <string>pty</string>
                 <key>description</key>
-                <string>Pseudo terminal</string>
+                <string>Pseudo Terminal</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7061,17 +7587,9 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
                 <string>loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback</string>
+                <string>RS-232 Loopback</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7079,7 +7597,7 @@
                 <key>value</key>
                 <string>dec_loopback</string>
                 <key>description</key>
-                <string>RS232 Loopback (DEC 12-15336-00)</string>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7087,7 +7605,7 @@
                 <key>value</key>
                 <string>null_modem</string>
                 <key>description</key>
-                <string>RS232 Null Modem</string>
+                <string>RS-232 Null Modem</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -7098,9 +7616,17 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>rs232_sync_io</string>
                 <key>description</key>
-                <string>RS232 Synchronous I/O</string>
+                <string>RS-232 Synchronous I/O</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
