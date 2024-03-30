@@ -59,6 +59,14 @@
 		B64AF1FB250EF6A500A09B9B /* Transformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AF1F9250EF6A500A09B9B /* Transformers.m */; };
 		B65C0A772B9E77DC00CB24C9 /* mactv.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65C0A762B9E77DC00CB24C9 /* mactv.plist */; };
 		B65C0A782B9E77DC00CB24C9 /* mactv.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65C0A762B9E77DC00CB24C9 /* mactv.plist */; };
+		B65D1B942BB7B1AC00C15287 /* cocoh.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B902BB7B1AB00C15287 /* cocoh.plist */; };
+		B65D1B952BB7B1AC00C15287 /* cocoh.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B902BB7B1AB00C15287 /* cocoh.plist */; };
+		B65D1B962BB7B1AC00C15287 /* mc10.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B912BB7B1AB00C15287 /* mc10.plist */; };
+		B65D1B972BB7B1AC00C15287 /* mc10.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B912BB7B1AB00C15287 /* mc10.plist */; };
+		B65D1B982BB7B1AC00C15287 /* coco2bh.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B922BB7B1AB00C15287 /* coco2bh.plist */; };
+		B65D1B992BB7B1AC00C15287 /* coco2bh.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B922BB7B1AB00C15287 /* coco2bh.plist */; };
+		B65D1B9A2BB7B1AC00C15287 /* coco3h.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B932BB7B1AC00C15287 /* coco3h.plist */; };
+		B65D1B9B2BB7B1AC00C15287 /* coco3h.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B932BB7B1AC00C15287 /* coco3h.plist */; };
 		B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
@@ -725,6 +733,10 @@
 		B65085B725B616AC00354EC9 /* maclc3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maclc3.plist; sourceTree = "<group>"; };
 		B65085B825B616AC00354EC9 /* maciici.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciici.plist; sourceTree = "<group>"; };
 		B65C0A762B9E77DC00CB24C9 /* mactv.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mactv.plist; sourceTree = "<group>"; };
+		B65D1B902BB7B1AB00C15287 /* cocoh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cocoh.plist; sourceTree = "<group>"; };
+		B65D1B912BB7B1AB00C15287 /* mc10.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mc10.plist; sourceTree = "<group>"; };
+		B65D1B922BB7B1AB00C15287 /* coco2bh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = coco2bh.plist; sourceTree = "<group>"; };
+		B65D1B932BB7B1AC00C15287 /* coco3h.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = coco3h.plist; sourceTree = "<group>"; };
 		B65D718525E70BD5008C5F87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B66116842A2535EF0038A3E2 /* st.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = st.plist; sourceTree = "<group>"; };
 		B66116872A2535F50038A3E2 /* megast.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = megast.plist; sourceTree = "<group>"; };
@@ -1155,6 +1167,10 @@
 				B6896E082B016CE000251FA4 /* vt102.plist */,
 				B6896DEA2B016CD800251FA4 /* vt240.plist */,
 				B6896DCD2B016CD100251FA4 /* zijini.plist */,
+				B65D1B922BB7B1AB00C15287 /* coco2bh.plist */,
+				B65D1B932BB7B1AC00C15287 /* coco3h.plist */,
+				B65D1B902BB7B1AB00C15287 /* cocoh.plist */,
+				B65D1B912BB7B1AB00C15287 /* mc10.plist */,
 				B6FECDCF2BA8AA080025B402 /* oric1.plist */,
 				B6FECDCE2BA8AA080025B402 /* orica.plist */,
 				B6FECDCC2BA8AA080025B402 /* prav8d.plist */,
@@ -1615,8 +1631,10 @@
 				B67878862B01732700CFACF2 /* hp9k370.plist in Resources */,
 				B67878F32B01732700CFACF2 /* macqd605.plist in Resources */,
 				B67878E72B01732700CFACF2 /* mac512ke.plist in Resources */,
+				B65D1B982BB7B1AC00C15287 /* coco2bh.plist in Resources */,
 				B6DDECCE2505A86E0093587A /* eject-16x16@3x.png in Resources */,
 				B678789A2B01732700CFACF2 /* las3000.plist in Resources */,
+				B65D1B9A2BB7B1AC00C15287 /* coco3h.plist in Resources */,
 				B67878C52B01732700CFACF2 /* rtpc025.plist in Resources */,
 				B678786A2B01732700CFACF2 /* ace1000.plist in Resources */,
 				B6EEFACC2B9ABCAE0068B47C /* dragon200.plist in Resources */,
@@ -1706,6 +1724,7 @@
 				B67878E02B01732700CFACF2 /* craft2p.plist in Resources */,
 				B6665C1C265C639A00254939 /* Autocomplete.xib in Resources */,
 				B67878BC2B01732700CFACF2 /* rc2030.plist in Resources */,
+				B65D1B962BB7B1AC00C15287 /* mc10.plist in Resources */,
 				B67879312B0195DB00CFACF2 /* sun2_120.plist in Resources */,
 				B67878FE2B01732700CFACF2 /* uniap2en.plist in Resources */,
 				B67879192B0195DB00CFACF2 /* sun2_50.plist in Resources */,
@@ -1751,6 +1770,7 @@
 				B67878CC2B01732700CFACF2 /* vt101.plist in Resources */,
 				B67878CE2B01732700CFACF2 /* vt240.plist in Resources */,
 				B67878C12B01732700CFACF2 /* rs3230.plist in Resources */,
+				B65D1B942BB7B1AC00C15287 /* cocoh.plist in Resources */,
 				B6EEFAC42B9ABCAE0068B47C /* dragon32.plist in Resources */,
 				B67879172B0195DB00CFACF2 /* sun1.plist in Resources */,
 				B67878962B01732700CFACF2 /* ip6400.plist in Resources */,
@@ -1880,6 +1900,7 @@
 				B67878252B01732600CFACF2 /* rc2030.plist in Resources */,
 				B67878452B01732600CFACF2 /* apple3.plist in Resources */,
 				B67878392B01732600CFACF2 /* ace500.plist in Resources */,
+				B65D1B952BB7B1AC00C15287 /* cocoh.plist in Resources */,
 				B67878192B01732600CFACF2 /* models~extra.plist in Resources */,
 				B67877D72B01732600CFACF2 /* apple2.plist in Resources */,
 				B67878072B01732600CFACF2 /* maccclas.plist in Resources */,
@@ -1920,6 +1941,7 @@
 				B678784F2B01732600CFACF2 /* mac128k.plist in Resources */,
 				B678782E2B01732600CFACF2 /* rtpc025.plist in Resources */,
 				B6DDECD52505A86E0093587A /* eject-hover-16x16@3x.png in Resources */,
+				B65D1B972BB7B1AC00C15287 /* mc10.plist in Resources */,
 				B6EEFACD2B9ABCAE0068B47C /* dragon200.plist in Resources */,
 				B678784C2B01732600CFACF2 /* las128ex.plist in Resources */,
 				B67878262B01732600CFACF2 /* rc3230.plist in Resources */,
@@ -2011,11 +2033,13 @@
 				B67878092B01732600CFACF2 /* macct650.plist in Resources */,
 				B67878662B01732600CFACF2 /* st.plist in Resources */,
 				B67878552B01732600CFACF2 /* maciisi.plist in Resources */,
+				B65D1B992BB7B1AC00C15287 /* coco2bh.plist in Resources */,
 				B67878052B01732600CFACF2 /* mac2fdhd.plist in Resources */,
 				B678784B2B01732600CFACF2 /* ivelultr.plist in Resources */,
 				B67878162B01732600CFACF2 /* macse30.plist in Resources */,
 				B678785A2B01732600CFACF2 /* maclc550.plist in Resources */,
 				B678784A2B01732600CFACF2 /* elppa.plist in Resources */,
+				B65D1B9B2BB7B1AC00C15287 /* coco3h.plist in Resources */,
 				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
 				B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */,
 				B678783B2B01732600CFACF2 /* agat9.plist in Resources */,

@@ -484,6 +484,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mc10_mcx128</string>
+      <key>description</key>
+      <string>Darren Atkinson's MCX-128 Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>coco_scii</string>
       <key>description</key>
       <string>Disto Super Controller II</string>
@@ -661,6 +667,12 @@
       <string>a2suprterm</string>
       <key>description</key>
       <string>M&amp;R Enterprises SUP'R'TERMINAL</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>mc10</string>
+      <key>description</key>
+      <string>MC-10</string>
     </dict>
     <dict>
       <key>value</key>

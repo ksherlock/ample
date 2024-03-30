@@ -739,9 +739,21 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Color Computer 1/2 (HD6309)</string>
+          <key>value</key>
+          <string>cocoh</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Color Computer 2B</string>
           <key>value</key>
           <string>coco2b</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Color Computer 2B (HD6309)</string>
+          <key>value</key>
+          <string>coco2bh</string>
         </dict>
         <dict>
           <key>description</key>
@@ -754,6 +766,18 @@
           <string>Color Computer 3 (PAL)</string>
           <key>value</key>
           <string>coco3p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Color Computer 3 (NTSC; HD6309)</string>
+          <key>value</key>
+          <string>coco3h</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MC-10</string>
+          <key>value</key>
+          <string>mc10</string>
         </dict>
         <dict>
           <key>description</key>

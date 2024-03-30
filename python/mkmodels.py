@@ -50,7 +50,10 @@ atari_st_children = ["st", "megast"]
 
 tandy_children = [
 	"trs80", "trs80l2",
-	"coco", "coco2b", "coco3", "coco3p",
+	"coco", "cocoh",
+	"coco2b", "coco2bh",
+	"coco3", "coco3p", "coco3h",
+	"mc10",
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 ]
 

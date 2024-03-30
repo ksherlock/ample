@@ -46,7 +46,8 @@ MACHINES = (
 	"st", "megast",
 
 	# trs
-	"coco", "coco2b", "coco3", "coco3p",
+	"coco", "coco2b", "coco3", "coco3p", "mc10",
+	"cocoh", "coco3h", "coco2bh",
 	"trs80", "trs80l2",
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 
@@ -66,7 +67,7 @@ MACHINES_EXTRA = MACHINES + (
 
 
 	# amiga
-	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n", 
+	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n",
 
 
 	# DEC
@@ -116,7 +117,7 @@ SLOTS = (
 	# dec
 	"eia", "host", "com_port", "prt_port",
 	"rs232a", "rs232b", "serial0", "serial1", "tty0", "tty1",
-	"kbd", "mse", "keyboard", "kbd_con", "mouseport", 
+	"kbd", "mse", "keyboard", "kbd_con", "mouseport",
 
 	"isa0", "isa1", "isa2", "isa3", "isa4", "isa5", "isa6", "isa7", "isa8", "isa9",
 	"qbus:1", "qbus:2", "qbus:3", "qbus:4", "qbus:5",
