@@ -5817,6 +5817,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v30</string>
+                <key>description</key>
+                <string>ROM 3.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v32</string>
+                <key>description</key>
+                <string>ROM 3.2</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:prn</string>
             <key>options</key>
             <array>
@@ -9127,6 +9156,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-01</string>
+                <key>description</key>
+                <string>CCS 7710-01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-02</string>
+                <key>description</key>
+                <string>CCS 7710-02</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-03</string>
+                <key>description</key>
+                <string>CCS 7710-03</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:rs232</string>
             <key>options</key>
             <array>
@@ -9277,6 +9341,35 @@
         <string>cmsscsi</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cms3190</string>
+                <key>description</key>
+                <string>CMS SCSI BIOS dated 3-1-90</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cms871109</string>
+                <key>description</key>
+                <string>CMS SCSI BIOS dated 1987-11-09</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:scsibus:0</string>

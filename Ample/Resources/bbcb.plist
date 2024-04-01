@@ -2060,6 +2060,53 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs210</string>
+                <key>description</key>
+                <string>Acorn DFS 2.10</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs220</string>
+                <key>description</key>
+                <string>Acorn DFS 2.20</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs223</string>
+                <key>description</key>
+                <string>Acorn DFS 2.23</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs225</string>
+                <key>description</key>
+                <string>Acorn DFS 2.25</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs226</string>
+                <key>description</key>
+                <string>Acorn DFS 2.26</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:wd1770:0</string>
             <key>options</key>
             <array>
@@ -2225,6 +2272,77 @@
         <string>bbc_acorn8271</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs090</string>
+                <key>description</key>
+                <string>Acorn DFS 0.90</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs098</string>
+                <key>description</key>
+                <string>Acorn DFS 0.98</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dnfs100</string>
+                <key>description</key>
+                <string>Acorn DFS 1.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dnfs120</string>
+                <key>description</key>
+                <string>Acorn DFS 1.20</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wdfs130</string>
+                <key>description</key>
+                <string>Watford Electronics DFS 1.30</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wdfs141</string>
+                <key>description</key>
+                <string>Watford Electronics DFS 1.41</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wdfs142</string>
+                <key>description</key>
+                <string>Watford Electronics DFS 1.42</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wdfs143</string>
+                <key>description</key>
+                <string>Watford Electronics DFS 1.43</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wdfs144</string>
+                <key>description</key>
+                <string>Watford Electronics DFS 1.44</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:i8271:0</string>
@@ -3719,6 +3837,29 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>qfs102</string>
+                <key>description</key>
+                <string>QFS 1.02</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:mb8877a:0</string>
             <key>options</key>
             <array>
@@ -3884,6 +4025,29 @@
         <string>bbc_cumana2</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>qfs200</string>
+                <key>description</key>
+                <string>QFS 2.00</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:mb8877a:0</string>
@@ -4232,6 +4396,29 @@
         <string>bbc_cv1797</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lvldos</string>
+                <key>description</key>
+                <string>LVL Dos 0.91</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:fd1797:0</string>
@@ -4764,6 +4951,41 @@
         <string>bbc_ieee488</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee05</string>
+                <key>description</key>
+                <string>IEEEFS 0.05</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee02</string>
+                <key>description</key>
+                <string>IEEEFS 0.02</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee01</string>
+                <key>description</key>
+                <string>IEEEFS 0.01</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:ieee_dev</string>
@@ -6781,6 +7003,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos345</string>
+                <key>description</key>
+                <string>Opus DDOS 3.45</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos346</string>
+                <key>description</key>
+                <string>Opus DDOS 3.46</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:fdc:0</string>
             <key>options</key>
             <array>
@@ -6946,6 +7197,47 @@
         <string>bbc_opus2791</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos312</string>
+                <key>description</key>
+                <string>Opus DDOS 3.12</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos315</string>
+                <key>description</key>
+                <string>Opus DDOS 3.15</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos316</string>
+                <key>description</key>
+                <string>Opus DDOS 3.16</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>edos04</string>
+                <key>description</key>
+                <string>Opus EDOS 0.4</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:fdc:0</string>
@@ -7115,6 +7407,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos335</string>
+                <key>description</key>
+                <string>Opus DDOS 3.35</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos336</string>
+                <key>description</key>
+                <string>Opus DDOS 3.36</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:fdc:0</string>
             <key>options</key>
             <array>
@@ -7282,6 +7603,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch100</string>
+                <key>description</key>
+                <string>Challenger 1.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch101</string>
+                <key>description</key>
+                <string>Challenger 1.01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch103</string>
+                <key>description</key>
+                <string>Challenger 1.03</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:wd1770:0</string>
             <key>options</key>
             <array>
@@ -7343,6 +7699,35 @@
         <string>bbc_opus8272</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos300</string>
+                <key>description</key>
+                <string>Opus DDOS 3.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddos305</string>
+                <key>description</key>
+                <string>Opus DDOS 3.05</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:i8272:0</string>
@@ -7875,6 +8260,29 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs21j</string>
+                <key>description</key>
+                <string>DFS 2.1J (1770)</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:0</string>
             <key>options</key>
             <array>
@@ -8040,6 +8448,29 @@
         <string>bbc_stl1770_2</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>stl22m</string>
+                <key>description</key>
+                <string>DFS 2.2M Issue 2</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:0</string>
@@ -8209,6 +8640,29 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dfs21</string>
+                <key>description</key>
+                <string>DFS 2.1 (Mar 85)</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:0</string>
             <key>options</key>
             <array>
@@ -8374,6 +8828,47 @@
         <string>bbc_udm</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs310</string>
+                <key>description</key>
+                <string>UDM DDFS 3.10</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs200</string>
+                <key>description</key>
+                <string>UDM DDFS 2.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs098</string>
+                <key>description</key>
+                <string>UDM DDFS 0.98</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs090</string>
+                <key>description</key>
+                <string>Microware DDFS 0.90</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:wd2793:0</string>
@@ -8788,6 +9283,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs140</string>
+                <key>description</key>
+                <string>Watford Electronics DDFS 1.40</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs150</string>
+                <key>description</key>
+                <string>Watford Electronics DDFS 1.50</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs153</string>
+                <key>description</key>
+                <string>Watford Electronics DDFS 1.53</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:wd1772:0</string>
             <key>options</key>
             <array>
@@ -8953,6 +9483,29 @@
         <string>bbc_weddb3</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ddfs154t</string>
+                <key>description</key>
+                <string>Watford Electronics DDFS 1.54T</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:wd1770:0</string>
@@ -9650,6 +10203,47 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r1</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r2</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r3</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 3</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27</string>
+                <key>description</key>
+                <string>DOS 2.7</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:fdc:0</string>
             <key>options</key>
             <array>
@@ -9701,6 +10295,47 @@
         <string>c8250</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r1</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r2</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r3</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 3</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27</string>
+                <key>description</key>
+                <string>DOS 2.7</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:fdc:0</string>
@@ -9766,6 +10401,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r1</string>
+                <key>description</key>
+                <string>Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r2</string>
+                <key>description</key>
+                <string>Revision 2</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:5e:0</string>
             <key>options</key>
             <array>
@@ -9829,6 +10493,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ra</string>
+                <key>description</key>
+                <string>Revision A</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rb</string>
+                <key>description</key>
+                <string>Revision B</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rc</string>
+                <key>description</key>
+                <string>Revision C</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:sasi:1</string>
             <key>options</key>
             <array>
@@ -9862,6 +10561,41 @@
         <string>d9090</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ra</string>
+                <key>description</key>
+                <string>Revision A</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rb</string>
+                <key>description</key>
+                <string>Revision B</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rc</string>
+                <key>description</key>
+                <string>Revision C</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:sasi:1</string>
@@ -10485,6 +11219,41 @@
         <string>pet_softbox</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19810908</string>
+                <key>description</key>
+                <string>8/9/81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19811027</string>
+                <key>description</key>
+                <string>27-Oct-81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19830609</string>
+                <key>description</key>
+                <string>09-June-1983</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:rs232</string>

@@ -810,6 +810,65 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v46</string>
+                <key>description</key>
+                <string>Version 4.6</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v592</string>
+                <key>description</key>
+                <string>Version 5.92</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v60</string>
+                <key>description</key>
+                <string>Version 6.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v61</string>
+                <key>description</key>
+                <string>Version 6.1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v66</string>
+                <key>description</key>
+                <string>Version 6.6</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v70</string>
+                <key>description</key>
+                <string>Version 7.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>g614</string>
+                <key>description</key>
+                <string>Guru-ROM 6.14</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:scsi:0</string>
             <key>options</key>
             <array>

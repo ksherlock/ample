@@ -3672,6 +3672,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee05</string>
+                <key>description</key>
+                <string>IEEEFS 0.05</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee02</string>
+                <key>description</key>
+                <string>IEEEFS 0.02</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee01</string>
+                <key>description</key>
+                <string>IEEEFS 0.01</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:ieee_dev</string>
             <key>options</key>
             <array>
@@ -5520,6 +5555,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch100</string>
+                <key>description</key>
+                <string>Challenger 1.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch101</string>
+                <key>description</key>
+                <string>Challenger 1.01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ch103</string>
+                <key>description</key>
+                <string>Challenger 1.03</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:wd1770:0</string>
             <key>options</key>
             <array>
@@ -6719,6 +6789,47 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r1</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r2</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r3</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 3</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27</string>
+                <key>description</key>
+                <string>DOS 2.7</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:fdc:0</string>
             <key>options</key>
             <array>
@@ -6770,6 +6881,47 @@
         <string>c8250</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r1</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r2</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos25r3</string>
+                <key>description</key>
+                <string>DOS 2.5 Revision 3</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27</string>
+                <key>description</key>
+                <string>DOS 2.7</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:fdc:0</string>
@@ -6835,6 +6987,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r1</string>
+                <key>description</key>
+                <string>Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r2</string>
+                <key>description</key>
+                <string>Revision 2</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:5e:0</string>
             <key>options</key>
             <array>
@@ -6898,6 +7079,41 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ra</string>
+                <key>description</key>
+                <string>Revision A</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rb</string>
+                <key>description</key>
+                <string>Revision B</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rc</string>
+                <key>description</key>
+                <string>Revision C</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:sasi:1</string>
             <key>options</key>
             <array>
@@ -6931,6 +7147,41 @@
         <string>d9090</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ra</string>
+                <key>description</key>
+                <string>Revision A</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rb</string>
+                <key>description</key>
+                <string>Revision B</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rc</string>
+                <key>description</key>
+                <string>Revision C</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:sasi:1</string>
@@ -7554,6 +7805,41 @@
         <string>pet_softbox</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19810908</string>
+                <key>description</key>
+                <string>8/9/81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19811027</string>
+                <key>description</key>
+                <string>27-Oct-81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19830609</string>
+                <key>description</key>
+                <string>09-June-1983</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:rs232</string>

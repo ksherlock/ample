@@ -334,7 +334,7 @@ static NSString * JoinArguments(NSArray *argv, NSString *argv0) {
 
     if (!safe) {
         NSString *str =
-            @"%+-./:=_"
+            @"%+-./:=_,"
             @"0123456789"
             @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         ;
@@ -409,7 +409,7 @@ static NSString *ShellQuote(NSString *s) {
 
     if (!safe) {
         NSString *str =
-            @"%+-./:=_"
+            @"%+-./:=_,"
             @"0123456789"
             @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         ;

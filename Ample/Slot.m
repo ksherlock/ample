@@ -226,6 +226,8 @@ static NSDictionary *TypeMap = nil;
     
     Slot *child = [Slot new];
     child->_index = _index;
+    child->_type = _type;
+
     child->_defaultIndex = _defaultIndex;
     child->_selectedIndex = _selectedIndex;
     child->_name = [_name copyWithZone: zone];
@@ -464,12 +466,24 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyVa
 
 
 -(void)buildArgs: (NSMutableArray *)args {
+  
+    BOOL explicit = !_default;
+    Slot *s = [_children firstObject];
+    BOOL bios = [s type] == kSlotBIOS && ![[s selectedItem] isDefault];
+
+    if (bios) explicit = YES;
     
-    if (!_default) {
+    if (explicit) {
+        NSString *value = _value;
         [args addObject: _keyPath];
-        [args addObject: _value];
+        if (bios) {
+            value = [NSString stringWithFormat: @"%@,bios=%@", _value, [s selectedValue]];
+        }
+        [args addObject: value];
     }
     for (Slot *s in _children) {
+        if ([s type] == kSlotBIOS) continue;
+
         [[s selectedItem] buildArgs: args];
     }
 }

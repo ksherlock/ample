@@ -1352,6 +1352,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bb15</string>
+                <key>description</key>
+                <string>BootBug v1.5</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>bb13</string>
+                <key>description</key>
+                <string>BootBug v1.3</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:serport0</string>
             <key>options</key>
             <array>

@@ -1041,6 +1041,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cms3190</string>
+                <key>description</key>
+                <string>CMS SCSI BIOS dated 3-1-90</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cms871109</string>
+                <key>description</key>
+                <string>CMS SCSI BIOS dated 1987-11-09</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:scsibus:0</string>
             <key>options</key>
             <array>

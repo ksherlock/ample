@@ -471,6 +471,10 @@ def make_device_slots(machine):
 			"options": options
 		})
 
+	bios = make_bios(machine)
+	if bios:
+		slots.insert(0, bios)
+
 	if not len(slots): return None
 
 	return slots
@@ -523,7 +527,10 @@ def make_ram(machine):
 	}
 
 
-
+#
+# bios on the system is selected via -bios (name)
+# bios on sub devices are selected as part of the slot, eg
+# -ext fdc,bios=v10
 def make_bios(m):
 
 	options = [

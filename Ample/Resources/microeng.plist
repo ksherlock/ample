@@ -5107,6 +5107,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v30</string>
+                <key>description</key>
+                <string>ROM 3.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v32</string>
+                <key>description</key>
+                <string>ROM 3.2</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:prn</string>
             <key>options</key>
             <array>
@@ -7104,6 +7133,41 @@
         <string>ccs7710</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-01</string>
+                <key>description</key>
+                <string>CCS 7710-01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-02</string>
+                <key>description</key>
+                <string>CCS 7710-02</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>7710-03</string>
+                <key>description</key>
+                <string>CCS 7710-03</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:rs232</string>

@@ -867,6 +867,83 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v10</string>
+                <key>description</key>
+                <string>RSDOS v1.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v11</string>
+                <key>description</key>
+                <string>RSDOS v1.1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ados</string>
+                <key>description</key>
+                <string>ADOS v1.02 for CoCo 1/2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ados2b</string>
+                <key>description</key>
+                <string>ADOS v1.02 for CoCo 2B</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ados3</string>
+                <key>description</key>
+                <string>ADOS3 v1.01.01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ados340</string>
+                <key>description</key>
+                <string>ADOS3 v1.01.01, 40 track disk drives</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ados380</string>
+                <key>description</key>
+                <string>ADOS3 v1.01.01, 80 track disk drives</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rgbdos</string>
+                <key>description</key>
+                <string>Hard Disk Basic for Emudsk</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdbk12</string>
+                <key>description</key>
+                <string>Hard Disk Basic for Becker Port and DriveWire 3, CoCo 1/2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdbk3</string>
+                <key>description</key>
+                <string>Hard Disk Basic for Becker Port and DriveWire 3, CoCo 3</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:wd17xx:0</string>
             <key>options</key>
             <array>
@@ -2394,6 +2471,35 @@
         <string>coco_scii</string>
         <key>slots</key>
         <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdos</string>
+                <key>description</key>
+                <string>Disto C-DOS v4.0 for the CoCo 1/2</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdos3</string>
+                <key>description</key>
+                <string>Disto C-DOS 3 v1.2 for the CoCo 3</string>
+              </dict>
+            </array>
+          </dict>
           <dict>
             <key>name</key>
             <string>:wd17xx:0</string>

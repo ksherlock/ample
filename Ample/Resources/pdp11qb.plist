@@ -578,6 +578,35 @@
         <array>
           <dict>
             <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v2.3</string>
+                <key>description</key>
+                <string>Firmware Version 2.3</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v1.7</string>
+                <key>description</key>
+                <string>Firmware Version 1.7</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
             <string>:scsibus:0</string>
             <key>options</key>
             <array>
