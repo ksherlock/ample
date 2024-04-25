@@ -2560,6 +2560,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -5820,6 +5828,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -6833,6 +6849,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -7015,6 +7039,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7700,6 +7732,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
