@@ -129,6 +129,7 @@ NSString *kUseCustomMame = @"UseCustomMame";
 NSString *kMamePath = @"MamePath";
 NSString *kMameWorkingDirectory = @"MameWorkingDirectory";
 NSString *kAutoCloseLogWindow = @"AutoCloseLogWindow";
+NSString *kUseLogWindow = @"UseLogWindow";
 NSString *kMameComponentsDate = @"MameComponentsDate";
 NSString *kDefaultDownloadURL = @"DefaultDownloadURL";
 NSString *kDefaultDownloadExtension = @"DefaultDownloadExtension";

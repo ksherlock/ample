@@ -33,6 +33,7 @@ extern NSString *kMamePath;
 extern NSString *kMameWorkingDirectory;
 extern NSString *kAutoCloseLogWindow;
 extern NSString *kMameComponentsDate;
+extern NSString *kUseLogWindow;
 
 extern NSString *kDownloadURL;
 extern NSString *kDownloadExtension;

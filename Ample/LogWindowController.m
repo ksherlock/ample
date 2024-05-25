@@ -34,7 +34,7 @@ static NSMutableSet *LogWindows;
 }
 
 
-+(id)controllerForTask: (NSTask *)task close: (BOOL)close{
++(id)controllerForTask: (NSTask *)task close: (BOOL)close {
     LogWindowController *controller = [[LogWindowController alloc] initWithWindowNibName: @"LogWindow"];
     [controller runTask: task close: close];
     return controller;
@@ -43,6 +43,8 @@ static NSMutableSet *LogWindows;
 
 +(id)controllerForArgs: (NSArray *)args close: (BOOL)close {
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     NSURL *url = MameURL();
 
     if (!url) {
@@ -64,6 +66,30 @@ static NSMutableSet *LogWindows;
     }
     
     [task setArguments: args];
+    
+    if ([defaults boolForKey: kUseLogWindow] == NO) {
+
+        NSAlert *alert = nil;
+        if (@available(macOS 10.13, *)) {
+            NSError *error = nil;
+
+            [task launchAndReturnError: &error];
+            if (error) {
+                alert = [NSAlert alertWithError: error];
+            }
+        } else {
+            @try {
+                [task launch];
+            } @catch (NSException *exception) {
+
+                alert = [NSAlert new];
+                [alert setMessageText: [exception reason]];
+            }
+        }
+        if (alert) [alert runModal];
+        return nil;
+    }
+    
     
     return [LogWindowController controllerForTask: task close: close];
 
