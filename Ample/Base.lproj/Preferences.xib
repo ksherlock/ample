@@ -26,7 +26,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oz5-Xb-btk">
-                        <rect key="frame" x="138" y="181" width="322" height="21"/>
+                        <rect key="frame" x="138" y="159" width="322" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="vDR-2V-qxd">
                             <font key="font" usesAppearanceFont="YES"/>
@@ -40,7 +40,7 @@
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-pC-gml">
-                        <rect key="frame" x="138" y="150" width="322" height="21"/>
+                        <rect key="frame" x="138" y="128" width="322" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="wfj-GY-Qu2">
                             <font key="font" usesAppearanceFont="YES"/>
@@ -49,12 +49,12 @@
                         </textFieldCell>
                         <connections>
                             <action selector="wdChanged:" target="-2" id="g1P-8l-ZXi"/>
-                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="DeG-OW-Gd2"/>
                             <binding destination="yvB-HG-64y" name="value" keyPath="values.MameWorkingDirectory" id="Kc9-Pc-XGU"/>
+                            <binding destination="yvB-HG-64y" name="enabled" keyPath="values.UseCustomMame" id="DeG-OW-Gd2"/>
                         </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-Ez-c1R">
-                        <rect key="frame" x="18" y="153" width="114" height="16"/>
+                        <rect key="frame" x="18" y="131" width="114" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Working Directory" id="UHt-0s-zxA">
                             <font key="font" metaFont="system"/>
@@ -63,7 +63,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAN-P2-ydI">
-                        <rect key="frame" x="136" y="234" width="217" height="18"/>
+                        <rect key="frame" x="136" y="212" width="217" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Close log window on normal exit" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QMz-O0-06U">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -74,7 +74,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7D-jC-17Q">
-                        <rect key="frame" x="136" y="208" width="139" height="18"/>
+                        <rect key="frame" x="136" y="186" width="139" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Use Custom MAME" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="V61-mz-QFo">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -96,7 +96,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-Ag-Xyr">
-                        <rect key="frame" x="58" y="184" width="74" height="16"/>
+                        <rect key="frame" x="58" y="162" width="74" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="MAME Path" id="Xcq-4g-Wlw">
                             <font key="font" metaFont="system"/>
@@ -104,9 +104,20 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-cc-Phc">
+                        <rect key="frame" x="136" y="234" width="118" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Use log window" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Adv-KH-abG">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="yvB-HG-64y" name="value" keyPath="values.UseLogWindow" id="meK-Jb-s8b"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="140" y="147"/>
+            <point key="canvasLocation" x="80" y="144"/>
         </window>
         <userDefaultsController id="KVS-Ag-1un"/>
         <userDefaultsController representsSharedInstance="YES" id="yvB-HG-64y"/>

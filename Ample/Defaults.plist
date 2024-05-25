@@ -16,6 +16,8 @@
 	<true/>
 	<key>DefaultDownloadURL</key>
 	<string>https://archive.org/download/mame-merged/mame-merged</string>
+	<key>UseLogWindow</key>
+	<true/>
 	<key>DefaultDownloadExtension</key>
 	<string>zip</string>
 </dict>
