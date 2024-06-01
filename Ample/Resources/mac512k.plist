@@ -125,6 +125,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>jp</string>
+            <key>description</key>
+            <string>Macintosh Keyboard (Japanese - M0110J)</string>
+            <key>devname</key>
+            <string>mackbd_m0110j</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>us</string>
             <key>description</key>
             <string>Macintosh Keyboard (U.S. - M0110)</string>
@@ -337,6 +345,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>jp</string>
+                <key>description</key>
+                <string>Macintosh Keyboard (Japanese - M0110J)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>us</string>
                 <key>description</key>
                 <string>Macintosh Keyboard (U.S. - M0110)</string>
@@ -426,6 +442,14 @@
                 <string>it</string>
                 <key>description</key>
                 <string>Macintosh Keyboard (Italian - M0110T)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jp</string>
+                <key>description</key>
+                <string>Macintosh Keyboard (Japanese - M0110J)</string>
                 <key>default</key>
                 <false/>
               </dict>
