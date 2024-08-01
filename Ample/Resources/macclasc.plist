@@ -76,6 +76,31 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>pds</string>
+        <key>description</key>
+        <string>PDS</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>radiusfpd</string>
+            <key>description</key>
+            <string>Radius SE Full Page Display</string>
+            <key>devname</key>
+            <string>pds_sefp</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
@@ -194,7 +219,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:0</string>
+            <string>scsi:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -256,7 +281,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:1</string>
+            <string>scsi:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -318,7 +343,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:2</string>
+            <string>scsi:2</string>
             <key>options</key>
             <array>
               <dict>
@@ -380,7 +405,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:4</string>
+            <string>scsi:4</string>
             <key>options</key>
             <array>
               <dict>
@@ -442,7 +467,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:5</string>
+            <string>scsi:5</string>
             <key>options</key>
             <array>
               <dict>
@@ -504,7 +529,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:6</string>
+            <string>scsi:6</string>
             <key>options</key>
             <array>
               <dict>

@@ -522,6 +522,12 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh IIfx</string>
+          <key>value</key>
+          <string>maciifx</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh IIcx</string>
           <key>value</key>
           <string>maciicx</string>
@@ -586,6 +592,18 @@
           <string>Macintosh Quadra 800</string>
           <key>value</key>
           <string>macqd800</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 900</string>
+          <key>value</key>
+          <string>macqd900</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 950</string>
+          <key>value</key>
+          <string>macqd950</string>
         </dict>
       </array>
     </dict>

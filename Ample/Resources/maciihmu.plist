@@ -27,6 +27,16 @@
         <array>
           <dict>
             <key>intValue</key>
+            <integer>1048576</integer>
+            <key>description</key>
+            <string>1M</string>
+            <key>value</key>
+            <string>1M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
             <integer>2097152</integer>
             <key>description</key>
             <string>2M</string>
@@ -37,51 +47,31 @@
           </dict>
           <dict>
             <key>intValue</key>
+            <integer>4194304</integer>
+            <key>description</key>
+            <string>4M</string>
+            <key>value</key>
+            <string>4M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>5242880</integer>
+            <key>description</key>
+            <string>5M</string>
+            <key>value</key>
+            <string>5M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
             <integer>8388608</integer>
             <key>description</key>
             <string>8M</string>
             <key>value</key>
             <string>8M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>33554432</integer>
-            <key>description</key>
-            <string>32M</string>
-            <key>value</key>
-            <string>32M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>67108864</integer>
-            <key>description</key>
-            <string>64M</string>
-            <key>value</key>
-            <string>64M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>100663296</integer>
-            <key>description</key>
-            <string>96M</string>
-            <key>value</key>
-            <string>96M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>134217728</integer>
-            <key>description</key>
-            <string>128M</string>
-            <key>value</key>
-            <string>128M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -165,6 +155,14 @@
             <string>Micro-Robotics Scorpion Intelligent Controller</string>
             <key>devname</key>
             <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
           </dict>
           <dict>
             <key>value</key>
@@ -320,6 +318,14 @@
             <string>Micro-Robotics Scorpion Intelligent Controller</string>
             <key>devname</key>
             <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2139,6 +2145,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>

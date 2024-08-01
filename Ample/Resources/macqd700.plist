@@ -47,31 +47,21 @@
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>16777216</integer>
+            <integer>20971520</integer>
             <key>description</key>
-            <string>16M</string>
+            <string>20M</string>
             <key>value</key>
-            <string>16M</string>
+            <string>20M</string>
             <key>default</key>
             <false/>
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>33554432</integer>
+            <integer>37748736</integer>
             <key>description</key>
-            <string>32M</string>
+            <string>36M</string>
             <key>value</key>
-            <string>32M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>67108864</integer>
-            <key>description</key>
-            <string>64M</string>
-            <key>value</key>
-            <string>64M</string>
+            <string>36M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -82,46 +72,6 @@
             <string>68M</string>
             <key>value</key>
             <string>68M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>75497472</integer>
-            <key>description</key>
-            <string>72M</string>
-            <key>value</key>
-            <string>72M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>83886080</integer>
-            <key>description</key>
-            <string>80M</string>
-            <key>value</key>
-            <string>80M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>100663296</integer>
-            <key>description</key>
-            <string>96M</string>
-            <key>value</key>
-            <string>96M</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>134217728</integer>
-            <key>description</key>
-            <string>128M</string>
-            <key>value</key>
-            <string>128M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -176,6 +126,14 @@
             <string>Micro-Robotics Scorpion Intelligent Controller</string>
             <key>devname</key>
             <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
           </dict>
           <dict>
             <key>value</key>
@@ -331,6 +289,14 @@
             <string>Micro-Robotics Scorpion Intelligent Controller</string>
             <key>devname</key>
             <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
           </dict>
           <dict>
             <key>value</key>
@@ -890,7 +856,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:0</string>
+            <string>scsi:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -952,7 +918,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:1</string>
+            <string>scsi:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -1014,7 +980,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:2</string>
+            <string>scsi:2</string>
             <key>options</key>
             <array>
               <dict>
@@ -1076,7 +1042,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:4</string>
+            <string>scsi:4</string>
             <key>options</key>
             <array>
               <dict>
@@ -1138,7 +1104,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:5</string>
+            <string>scsi:5</string>
             <key>options</key>
             <array>
               <dict>
@@ -1200,7 +1166,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsi1:6</string>
+            <string>scsi:6</string>
             <key>options</key>
             <array>
               <dict>
@@ -1516,6 +1482,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -380,7 +380,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:0</string>
+            <string>scsi:0</string>
             <key>options</key>
             <array>
               <dict>
@@ -442,7 +442,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:1</string>
+            <string>scsi:1</string>
             <key>options</key>
             <array>
               <dict>
@@ -504,7 +504,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:2</string>
+            <string>scsi:2</string>
             <key>options</key>
             <array>
               <dict>
@@ -566,7 +566,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:4</string>
+            <string>scsi:4</string>
             <key>options</key>
             <array>
               <dict>
@@ -628,7 +628,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:5</string>
+            <string>scsi:5</string>
             <key>options</key>
             <array>
               <dict>
@@ -690,7 +690,7 @@
           </dict>
           <dict>
             <key>name</key>
-            <string>scsibus:6</string>
+            <string>scsi:6</string>
             <key>options</key>
             <array>
               <dict>

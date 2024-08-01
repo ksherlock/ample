@@ -27,7 +27,7 @@ cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]
 
 mac_ii_children = [
-	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi", "maciivx", "maciivi",
+	"macii", "maciihmu", "mac2fdhd", "maciix", "maciifx", "maciicx", "maciici", "maciisi", "maciivx", "maciivi", 
 
 ]
 
@@ -39,7 +39,7 @@ mac_lc_children = [
 # maclc50" / macqd630 slots are messed up right now.
 
 mac_quadra_children = [
-	"macqd605", "macqd610", "macqd650", "macqd700", "macqd800",
+	"macqd605", "macqd610", "macqd650", "macqd700", "macqd800", "macqd900", "macqd950"
 ]
 
 # se/30 and classic 2 are implemented as a nubus but i'm sticking then with the 128 due to the form factor.

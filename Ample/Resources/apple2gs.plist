@@ -4173,6 +4173,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>nss_tvi</string>
             <key>description</key>
             <string>Novag Super System TV Interface</string>
@@ -4325,6 +4333,14 @@
             <string>Micro-Robotics Scorpion Intelligent Controller</string>
             <key>devname</key>
             <string>scorpion_ic</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5057,6 +5073,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8205,6 +8229,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>nss_tvi</string>
                 <key>description</key>
                 <string>Novag Super System TV Interface</string>
@@ -9025,6 +9057,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>nss_tvi</string>
                 <key>description</key>
                 <string>Novag Super System TV Interface</string>
@@ -9215,6 +9255,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9845,6 +9893,14 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -29,7 +29,7 @@ MACHINES = (
 
 	# macintosh...
 	"macii", "maciihmu", "mac2fdhd", "maciix", "maciicx", "maciici", "maciisi",
-	"maciivx", "maciivi",
+	"maciivx", "maciivi", "maciifx",
 	"maclc", "maclc2", "maclc3", "maclc3p", "maclc520", "maclc550", "mactv",
 
 	# mac 128k-classic
@@ -38,7 +38,11 @@ MACHINES = (
 
 	# quadra
 	"macqd700", "macqd800", "macct610", "macct650", "macqd610", "macqd650",
-	"macqd605", "maclc475", "maclc575", "macqd630", "maclc580",
+	"macqd605", "maclc475", "maclc575", "macqd630", "maclc580", "macqd900", "macqd950",
+
+	# portable
+	"macprtb", "macpb100",
+
 	# 128k clones
 	# "unitron", "utrn1024",
 
