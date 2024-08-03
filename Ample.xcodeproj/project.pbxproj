@@ -537,6 +537,7 @@
 		B6F9F8B12C5E6814007D5A3B /* macqd950.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6F9F8A92C5E6814007D5A3B /* macqd950.plist */; };
 		B6F9F8B32C5E682E007D5A3B /* maciifx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6F9F8B22C5E682E007D5A3B /* maciifx.plist */; };
 		B6F9F8B42C5E682E007D5A3B /* maciifx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6F9F8B22C5E682E007D5A3B /* maciifx.plist */; };
+		B6F9F8B72C5EA181007D5A3B /* Host.MLI.po in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6F9F8B52C5EA0F8007D5A3B /* Host.MLI.po */; };
 		B6FECDD02BA8AA080025B402 /* prav8d.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCC2BA8AA080025B402 /* prav8d.plist */; };
 		B6FECDD12BA8AA080025B402 /* prav8d.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCC2BA8AA080025B402 /* prav8d.plist */; };
 		B6FECDD22BA8AA080025B402 /* telstrat.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FECDCD2BA8AA080025B402 /* telstrat.plist */; };
@@ -596,6 +597,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 12;
 			files = (
+				B6F9F8B72C5EA181007D5A3B /* Host.MLI.po in CopyFiles */,
 				B6DD93982BB4F65200921359 /* mame-data.tgz in CopyFiles */,
 				B6DD93972BB4F5DC00921359 /* Host.FST.po in CopyFiles */,
 			);
@@ -979,6 +981,7 @@
 		B6F9F8A82C5E6813007D5A3B /* macqd900.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd900.plist; sourceTree = "<group>"; };
 		B6F9F8A92C5E6814007D5A3B /* macqd950.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macqd950.plist; sourceTree = "<group>"; };
 		B6F9F8B22C5E682E007D5A3B /* maciifx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = maciifx.plist; sourceTree = "<group>"; };
+		B6F9F8B52C5EA0F8007D5A3B /* Host.MLI.po */ = {isa = PBXFileReference; lastKnownFileType = file; name = Host.MLI.po; path = embedded/Host.MLI.po; sourceTree = "<group>"; };
 		B6FECAFA28C0093600E143DA /* las3000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = las3000.plist; sourceTree = "<group>"; };
 		B6FECDCC2BA8AA080025B402 /* prav8d.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = prav8d.plist; sourceTree = "<group>"; };
 		B6FECDCD2BA8AA080025B402 /* telstrat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = telstrat.plist; sourceTree = "<group>"; };
@@ -1324,6 +1327,7 @@
 			isa = PBXGroup;
 			children = (
 				B6DD93942BB4F0FC00921359 /* Host.FST.po */,
+				B6F9F8B52C5EA0F8007D5A3B /* Host.MLI.po */,
 				B63C1B8D25004C6D00511A71 /* mame-data.tgz */,
 				B66236B824FDA698006CABD7 /* mame64 */,
 				B635C09C26784A4800B23BFD /* Sparkle.framework */,
