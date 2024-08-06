@@ -5,7 +5,7 @@ MACHINES = (
 	"apple2e", "apple2ees", "apple2euk", "apple2ep",
 	"apple2ee", "apple2eeuk", "apple2eefr",
 	"apple2gs", "apple2gsr0", "apple2gsr1",
-	"apple2c", "apple2cp",
+	"apple2c", "apple2c0", "apple2c3", "apple2c4", "apple2cp",
 
 	# laser family
 	"laser128", "laser2c", "las128ex", "las128e2", "laser128o",

@@ -101,6 +101,24 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Apple //c (UniDisk 3.5)</string>
+          <key>value</key>
+          <string>apple2c0</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c (Original Memory Expansion)</string>
+          <key>value</key>
+          <string>apple2c3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c (rev 4)</string>
+          <key>value</key>
+          <string>apple2c4</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Apple //c Plus</string>
           <key>value</key>
           <string>apple2cp</string>
