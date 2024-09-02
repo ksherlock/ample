@@ -46,6 +46,9 @@ mac_quadra_children = [
 mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 	"macse", "macsefd", "macse30", "macclasc", "macclas2", "maccclas"]
 
+
+mac_portable_children = ["macprtb", "macpb100"]
+
 atari_st_children = ["st", "megast"]
 
 tandy_children = [
@@ -96,6 +99,7 @@ TREE = [
 	("Macintosh (II)", "maciix", mac_ii_children),
 	("Macintosh (Quadra)", None, mac_quadra_children),
 	("Macintosh (LC)", None, mac_lc_children),
+	("Macintosh (Portable)", None, mac_portable_children),
 	("Atari ST", "st", atari_st_children),
 	("Oric", None, oric_children),
 	("Tandy", None, tandy_children),

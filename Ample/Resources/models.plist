@@ -700,6 +700,25 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Macintosh (Portable)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Portable</string>
+          <key>value</key>
+          <string>macprtb</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 100</string>
+          <key>value</key>
+          <string>macpb100</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Atari ST</string>
       <key>value</key>
       <string>st</string>
