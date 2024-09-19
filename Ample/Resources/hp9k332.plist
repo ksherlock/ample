@@ -75,6 +75,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>98624</string>
+            <key>description</key>
+            <string>HP98624 GPIB Interface</string>
+            <key>devname</key>
+            <string>dio98624</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>98643</string>
             <key>description</key>
             <string>HP98643A LANIC Ethernet Card</string>
@@ -145,6 +153,14 @@
             <string>HP98603A BASIC 4.0 ROM Card</string>
             <key>devname</key>
             <string>dio98603a</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>98624</string>
+            <key>description</key>
+            <string>HP98624 GPIB Interface</string>
+            <key>devname</key>
+            <string>dio98624</string>
           </dict>
           <dict>
             <key>value</key>
@@ -225,6 +241,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>98624</string>
+            <key>description</key>
+            <string>HP98624 GPIB Interface</string>
+            <key>devname</key>
+            <string>dio98624</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>98643</string>
             <key>description</key>
             <string>HP98643A LANIC Ethernet Card</string>
@@ -298,6 +322,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>98624</string>
+            <key>description</key>
+            <string>HP98624 GPIB Interface</string>
+            <key>devname</key>
+            <string>dio98624</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>98643</string>
             <key>description</key>
             <string>HP98643A LANIC Ethernet Card</string>
@@ -317,6 +349,52 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>dio98624</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:ieee0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9122c</string>
+                <key>description</key>
+                <string>HP9122C Dual High density disk drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9133</string>
+                <key>description</key>
+                <string>HP9133 Floppy/Fixed disk drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9895</string>
+                <key>description</key>
+                <string>HP9895</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>dio98644</string>
@@ -348,6 +426,22 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -575,6 +669,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>hp9133</string>
+                <key>description</key>
+                <string>HP9133 Floppy/Fixed disk drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>hp9895</string>
                 <key>description</key>
                 <string>HP9895</string>
@@ -616,6 +718,22 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>

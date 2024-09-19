@@ -51,6 +51,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>nss_tvi</string>
+            <key>description</key>
+            <string>Novag Super System TV Interface</string>
+            <key>devname</key>
+            <string>nss_tvinterface</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pty</string>
             <key>description</key>
             <string>Pseudo Terminal</string>
@@ -218,11 +234,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>qg640</string>
+            <key>description</key>
+            <string>Matrox QG-640 Color Display Processor Card</string>
+            <key>devname</key>
+            <string>qg640</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>qts1</string>
             <key>description</key>
             <string>TTI QTS-1 SCSI Host Adapter</string>
             <key>devname</key>
             <string>qts1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mz</string>
+            <key>description</key>
+            <string>UKNC Floppy</string>
+            <key>devname</key>
+            <string>uknc_kmd</string>
           </dict>
         </array>
       </dict>
@@ -275,11 +307,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>qg640</string>
+            <key>description</key>
+            <string>Matrox QG-640 Color Display Processor Card</string>
+            <key>devname</key>
+            <string>qg640</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>qts1</string>
             <key>description</key>
             <string>TTI QTS-1 SCSI Host Adapter</string>
             <key>devname</key>
             <string>qts1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mz</string>
+            <key>description</key>
+            <string>UKNC Floppy</string>
+            <key>devname</key>
+            <string>uknc_kmd</string>
           </dict>
         </array>
       </dict>
@@ -332,11 +380,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>qg640</string>
+            <key>description</key>
+            <string>Matrox QG-640 Color Display Processor Card</string>
+            <key>devname</key>
+            <string>qg640</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>qts1</string>
             <key>description</key>
             <string>TTI QTS-1 SCSI Host Adapter</string>
             <key>devname</key>
             <string>qts1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mz</string>
+            <key>description</key>
+            <string>UKNC Floppy</string>
+            <key>devname</key>
+            <string>uknc_kmd</string>
           </dict>
         </array>
       </dict>
@@ -389,11 +453,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>qg640</string>
+            <key>description</key>
+            <string>Matrox QG-640 Color Display Processor Card</string>
+            <key>devname</key>
+            <string>qg640</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>qts1</string>
             <key>description</key>
             <string>TTI QTS-1 SCSI Host Adapter</string>
             <key>devname</key>
             <string>qts1</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mz</string>
+            <key>description</key>
+            <string>UKNC Floppy</string>
+            <key>devname</key>
+            <string>uknc_kmd</string>
           </dict>
         </array>
       </dict>
@@ -1070,6 +1150,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -1217,6 +1313,22 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1403,6 +1515,125 @@
                 <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>uknc_kmd</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
             </array>
           </dict>

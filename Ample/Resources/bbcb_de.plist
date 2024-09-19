@@ -203,6 +203,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>msystems_mouse</string>
+            <key>description</key>
+            <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+            <key>devname</key>
+            <string>rs232_mouse_hle_msystems</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>nss_tvi</string>
+            <key>description</key>
+            <string>Novag Super System TV Interface</string>
+            <key>devname</key>
+            <string>nss_tvinterface</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pty</string>
             <key>description</key>
             <string>Pseudo Terminal</string>
@@ -467,6 +483,14 @@
             <string>Econet X25 Gateway Co-Processor</string>
             <key>devname</key>
             <string>bbc_tube_x25</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>matchbox</string>
+            <key>description</key>
+            <string>Matchbox Co-Processor</string>
+            <key>devname</key>
+            <string>bbc_tube_matchbox</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1479,6 +1503,22 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7684,6 +7724,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -7871,6 +7927,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>pty</string>
                 <key>description</key>
                 <string>Pseudo Terminal</string>
@@ -8018,6 +8090,22 @@
                 <string>scorpion</string>
                 <key>description</key>
                 <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
                 <key>default</key>
                 <false/>
               </dict>

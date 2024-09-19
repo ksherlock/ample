@@ -101,6 +101,24 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Apple //c (UniDisk 3.5)</string>
+          <key>value</key>
+          <string>apple2c0</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c (Original Memory Expansion)</string>
+          <key>value</key>
+          <string>apple2c3</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //c (rev 4)</string>
+          <key>value</key>
+          <string>apple2c4</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Apple //c Plus</string>
           <key>value</key>
           <string>apple2cp</string>
@@ -522,6 +540,12 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Macintosh IIfx</string>
+          <key>value</key>
+          <string>maciifx</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Macintosh IIcx</string>
           <key>value</key>
           <string>maciicx</string>
@@ -586,6 +610,18 @@
           <string>Macintosh Quadra 800</string>
           <key>value</key>
           <string>macqd800</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 900</string>
+          <key>value</key>
+          <string>macqd900</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Quadra 950</string>
+          <key>value</key>
+          <string>macqd950</string>
         </dict>
       </array>
     </dict>
@@ -664,6 +700,25 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Macintosh (Portable)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh Portable</string>
+          <key>value</key>
+          <string>macprtb</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 100</string>
+          <key>value</key>
+          <string>macpb100</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Atari ST</string>
       <key>value</key>
       <string>st</string>
@@ -680,6 +735,37 @@
           <string>MEGA ST (USA)</string>
           <key>value</key>
           <string>megast</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Oric</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Oric-1</string>
+          <key>value</key>
+          <string>oric1</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Oric Atmos</string>
+          <key>value</key>
+          <string>orica</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Pravetz 8D</string>
+          <key>value</key>
+          <string>prav8d</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Oric Telestrat</string>
+          <key>value</key>
+          <string>telstrat</string>
         </dict>
       </array>
     </dict>
@@ -708,9 +794,21 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Color Computer 1/2 (HD6309)</string>
+          <key>value</key>
+          <string>cocoh</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Color Computer 2B</string>
           <key>value</key>
           <string>coco2b</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Color Computer 2B (HD6309)</string>
+          <key>value</key>
+          <string>coco2bh</string>
         </dict>
         <dict>
           <key>description</key>
@@ -723,6 +821,18 @@
           <string>Color Computer 3 (PAL)</string>
           <key>value</key>
           <string>coco3p</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Color Computer 3 (NTSC; HD6309)</string>
+          <key>value</key>
+          <string>coco3h</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MC-10</string>
+          <key>value</key>
+          <string>mc10</string>
         </dict>
         <dict>
           <key>description</key>

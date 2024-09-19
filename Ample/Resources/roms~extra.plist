@@ -874,12 +874,6 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>mc10_mcx128</string>
-      <key>description</key>
-      <string>Darren Atkinson's MCX-128 Cartridge</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>zorro_ar1</string>
       <key>description</key>
       <string>Datel Action Replay MK-I</string>
@@ -1444,6 +1438,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>maciifx</string>
+      <key>description</key>
+      <string>Macintosh IIfx</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>maciisi</string>
       <key>description</key>
       <string>Macintosh IIsi</string>
@@ -1495,6 +1495,18 @@
       <string>mackbd_m0110a</string>
       <key>description</key>
       <string>Macintosh Plus Keyboard (U.S. - M0110A)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macprtb</string>
+      <key>description</key>
+      <string>Macintosh Portable</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpb100</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 100</string>
     </dict>
     <dict>
       <key>value</key>
