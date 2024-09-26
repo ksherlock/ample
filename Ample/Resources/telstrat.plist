@@ -224,7 +224,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
                 <key>media</key>
@@ -252,7 +252,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -280,7 +280,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -308,7 +308,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -343,7 +343,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <true/>
                 <key>media</key>
@@ -371,7 +371,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -399,7 +399,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -427,7 +427,7 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -462,7 +462,20 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>3dsqd</string>
+                <key>description</key>
+                <string>3" double-sided quad density floppy drive</string>
                 <key>default</key>
                 <true/>
                 <key>media</key>
@@ -490,7 +503,20 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>3dsqd</string>
+                <key>description</key>
+                <string>3" double-sided quad density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -518,7 +544,20 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>3dsqd</string>
+                <key>description</key>
+                <string>3" double-sided quad density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -546,7 +585,20 @@
                 <key>value</key>
                 <string>3dsdd</string>
                 <key>description</key>
-                <string>3" double-sided floppy drive</string>
+                <string>3" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>3dsqd</string>
+                <key>description</key>
+                <string>3" double-sided quad density floppy drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>

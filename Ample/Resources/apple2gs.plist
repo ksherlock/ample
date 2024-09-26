@@ -266,6 +266,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -829,6 +837,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1398,6 +1414,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -1961,6 +1985,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2530,6 +2562,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -3096,6 +3136,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -3659,6 +3707,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>

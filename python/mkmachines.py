@@ -346,8 +346,11 @@ DEVICE_MEDIA = {
 	"qd": "floppy_5_25",
 
 	# oric, amstrad, sinclair, etc, used a 3" disk. We'll round up.
-	"3dsdd": "floppy_3_5",
-	"3ssdd": "floppy_3_5",
+	"3dssd": "floppy_3_5", # double sided, single density
+	"3dsdd": "floppy_3_5", # double sided, double density
+	"3dsqd": "floppy_3_5", # double sided, quad density
+
+	"3ssdd": "floppy_3_5", # single sided, single density
 
 }
 

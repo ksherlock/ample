@@ -239,6 +239,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -791,6 +799,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1349,6 +1365,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -1901,6 +1925,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2461,6 +2493,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -3015,6 +3055,14 @@
               <key>cdrom</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
           </dict>
           <dict>
             <key>value</key>
@@ -3573,6 +3621,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>wicotrackball</string>
+            <key>description</key>
+            <string>Apple II Wico Trackball Card</string>
+            <key>devname</key>
+            <string>a2wicotrackball</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ssc</string>
             <key>description</key>
             <string>Apple Super Serial Card</string>
@@ -4069,6 +4125,30 @@
             <string>Sirius JoyPort</string>
             <key>devname</key>
             <string>a2joyprt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>joyport_paddles</string>
+            <key>description</key>
+            <string>Sirius JoyPort With Apple II Paddles</string>
+            <key>devname</key>
+            <string>a2joyprtpdls</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>brightpen</string>
+            <key>description</key>
+            <string>Softape Bright Pen</string>
+            <key>devname</key>
+            <string>a2brightpen</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>wicojoy</string>
+            <key>description</key>
+            <string>Wico Command Control Joystick Adapter</string>
+            <key>devname</key>
+            <string>a2wicojoy</string>
           </dict>
         </array>
       </dict>
