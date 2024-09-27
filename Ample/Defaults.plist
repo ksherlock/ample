@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>MameComponentsDate</key>
-	<date>2024-09-02T12:00:00Z</date>
+	<date>2024-09-26T12:00:00Z</date>
 	<key>UseCustomMame</key>
 	<false/>
 	<key>AutoCloseLogWindow</key>
@@ -15,7 +15,7 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
 	<key>DefaultDownloadURL</key>
-	<string>https://archive.org/download/mame-merged/mame-merged</string>
+	<string>https://archive.org/download/mame251</string>
 	<key>UseLogWindow</key>
 	<true/>
 	<key>DefaultDownloadExtension</key>
