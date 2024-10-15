@@ -1510,6 +1510,84 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>cdd2000</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v126</string>
+                <key>description</key>
+                <string>Firmware v1.26</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v125</string>
+                <key>description</key>
+                <string>Firmware v1.25</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cdu561_25</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19a</string>
+                <key>description</key>
+                <string>apl1.9a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>18f</string>
+                <key>description</key>
+                <string>apl1.8F</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>17w</string>
+                <key>description</key>
+                <string>apl1.7w</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>nb_btbug</string>
         <key>slots</key>
         <array>
@@ -1733,6 +1811,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>nb_sp8s3</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ver12</string>
+                <key>description</key>
+                <string>Ver. 1.2 (1990)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ver13</string>
+                <key>description</key>
+                <string>Ver. 1.3 (1993)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -1894,6 +2008,36 @@
                 <string>SWTPC8212 Terminal</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
               </dict>
             </array>
           </dict>

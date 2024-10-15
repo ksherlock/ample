@@ -585,6 +585,36 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>sunkbd_adaptor</string>
         <key>slots</key>
         <array>

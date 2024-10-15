@@ -945,6 +945,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bwtwo</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>1081</string>
+                <key>description</key>
+                <string>P/N 525-1081-01</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>1124</string>
+                <key>description</key>
+                <string>P/N 525-1124-01</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -1106,6 +1142,36 @@
                 <string>SWTPC8212 Terminal</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
               </dict>
             </array>
           </dict>

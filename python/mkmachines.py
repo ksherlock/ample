@@ -480,6 +480,7 @@ def split2(x):
 	# given a machine, return a list of slotoptions.
 def make_device_slots(machine):
 
+	# print("make_device_slots", machine.get("name"))
 	mname = machine.get('name')
 
 	slots = []

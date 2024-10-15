@@ -5810,6 +5810,438 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bbc_tube_32016</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>200</string>
+                <key>description</key>
+                <string>Pandora v2.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>100</string>
+                <key>description</key>
+                <string>Pandora v1.00</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>061</string>
+                <key>description</key>
+                <string>Pandora v0.61</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_32016l</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>200</string>
+                <key>description</key>
+                <string>Pandora v2.00</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_6502</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>110</string>
+                <key>description</key>
+                <string>Tube 1.10</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>120</string>
+                <key>description</key>
+                <string>Tube 1.20</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>121</string>
+                <key>description</key>
+                <string>Tube 1.21 (ReCo6502)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_6502e</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>120</string>
+                <key>description</key>
+                <string>Tube 1.20</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_65c102</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>110</string>
+                <key>description</key>
+                <string>Tube 1.10</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>120</string>
+                <key>description</key>
+                <string>Tube 1.20</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>121</string>
+                <key>description</key>
+                <string>Tube 1.21 (ReCo6502)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_arm</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>101</string>
+                <key>description</key>
+                <string>Executive v1.00 (14th August 1986)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>100</string>
+                <key>description</key>
+                <string>Executive v1.00 (6th June 1986)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>005</string>
+                <key>description</key>
+                <string>Brazil v-.005 (8th August 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_arm7</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>045</string>
+                <key>description</key>
+                <string>ARM Tube OS 0.45</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>040</string>
+                <key>description</key>
+                <string>ARM Tube OS 0.40</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_rc6502</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hb84</string>
+                <key>description</key>
+                <string>HiBASIC '84'</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hb02</string>
+                <key>description</key>
+                <string>HiBASIC 4r32 65C02</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_rc65816</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hb84</string>
+                <key>description</key>
+                <string>HiBASIC '84</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hb816</string>
+                <key>description</key>
+                <string>HiBASIC 4r32 65C816</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_z80</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>120</string>
+                <key>description</key>
+                <string>Z80 v1.20</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_z80w</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>200</string>
+                <key>description</key>
+                <string>Z80 v2.00</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_tube_zep100m</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mcp202</string>
+                <key>description</key>
+                <string>MCP v2.02 (CBM)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mcp122</string>
+                <key>description</key>
+                <string>MCP v1.22 (ABM)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_usersplit</string>
         <key>slots</key>
         <array>
@@ -6583,6 +7015,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>c4040</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos20r1</string>
+                <key>description</key>
+                <string>DOS 2.0 Revision 1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos20r2</string>
+                <key>description</key>
+                <string>DOS 2.0 Revision 2</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>c8050</string>
         <key>slots</key>
         <array>
@@ -6866,6 +7334,84 @@
                   <key>floppy_8</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cdd2000</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v126</string>
+                <key>description</key>
+                <string>Firmware v1.26</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v125</string>
+                <key>description</key>
+                <string>Firmware v1.25</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cdu561_25</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19a</string>
+                <key>description</key>
+                <string>apl1.9a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>18f</string>
+                <key>description</key>
+                <string>apl1.8F</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>17w</string>
+                <key>description</key>
+                <string>apl1.7w</string>
               </dict>
             </array>
           </dict>
@@ -7449,6 +7995,48 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>hardbox</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v2.3</string>
+                <key>description</key>
+                <string>Version 2.3 (Corvus)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v2.4</string>
+                <key>description</key>
+                <string>Version 2.4 (Corvus)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v3.1</string>
+                <key>description</key>
+                <string>Version 3.1 (Sunol)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>mshark</string>
         <key>slots</key>
         <array>
@@ -7820,6 +8408,60 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>px320a</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v106</string>
+                <key>description</key>
+                <string>Firmware v1.06</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v105</string>
+                <key>description</key>
+                <string>Firmware v1.05</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v104</string>
+                <key>description</key>
+                <string>Firmware v1.04a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v103</string>
+                <key>description</key>
+                <string>Firmware v1.03</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v102</string>
+                <key>description</key>
+                <string>Firmware v1.02</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -7981,6 +8623,36 @@
                 <string>SWTPC8212 Terminal</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
               </dict>
             </array>
           </dict>
