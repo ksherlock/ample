@@ -268,6 +268,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bluechip</string>
+      <key>description</key>
+      <string>Amtech Blue Chip Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>apple3</string>
       <key>description</key>
       <string>Apple ///</string>
@@ -610,6 +616,42 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>c64_buscard</string>
+      <key>description</key>
+      <string>C64 BusCard Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_buscard2</string>
+      <key>description</key>
+      <string>C64 BusCard II Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_cspeech</string>
+      <key>description</key>
+      <string>C64 Currah Speech</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_mscr</string>
+      <key>description</key>
+      <string>C64 Multiscreen Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_supercpu</string>
+      <key>description</key>
+      <string>C64 SuperCPU V2 + SuperRAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_xl80</string>
+      <key>description</key>
+      <string>C64 XL 80 Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>zorro_a2091</string>
       <key>description</key>
       <string>CBM A2091 HD Controller</string>
@@ -646,6 +688,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cmdhd</string>
+      <key>description</key>
+      <string>CMD HD</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_tube_cms6809</string>
       <key>description</key>
       <string>CMS 6809 2nd Processor</string>
@@ -661,6 +709,12 @@
       <string>comx_pl80</string>
       <key>description</key>
       <string>COMX PL-80</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>csd1</string>
+      <key>description</key>
+      <string>CSD-1 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -790,6 +844,102 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cmdrc2</string>
+      <key>description</key>
+      <string>Commander C-II Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c128</string>
+      <key>description</key>
+      <string>Commodore 128 (NTSC)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1526</string>
+      <key>description</key>
+      <string>Commodore 1526/MPS-802 Dot Matrix Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1540</string>
+      <key>description</key>
+      <string>Commodore 1540 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541</string>
+      <key>description</key>
+      <string>Commodore 1541 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541dd</string>
+      <key>description</key>
+      <string>Commodore 1541 Dolphin-DOS 2.0 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541pdc</string>
+      <key>description</key>
+      <string>Commodore 1541 ProLogic-DOS Classic Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541pd</string>
+      <key>description</key>
+      <string>Commodore 1541 Professional-DOS V1 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541ii</string>
+      <key>description</key>
+      <string>Commodore 1541-II Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1541c</string>
+      <key>description</key>
+      <string>Commodore 1541C Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1570</string>
+      <key>description</key>
+      <string>Commodore 1570 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1571</string>
+      <key>description</key>
+      <string>Commodore 1571 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c1581</string>
+      <key>description</key>
+      <string>Commodore 1581 3.5" Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64</string>
+      <key>description</key>
+      <string>Commodore 64 (NTSC)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>mps1200</string>
+      <key>description</key>
+      <string>Commodore MPS-1200 Dot Matrix Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>mps1250</string>
+      <key>description</key>
+      <string>Commodore MPS-1250 Dot Matrix Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_integrab</string>
       <key>description</key>
       <string>Computech Integra-β</string>
@@ -871,6 +1021,12 @@
       <string>dsd4432</string>
       <key>description</key>
       <string>DSD A4432 Floppy Disk Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_z80videopak</string>
+      <key>description</key>
+      <string>Data20 Z80 Video Pak</string>
     </dict>
     <dict>
       <key>value</key>
@@ -982,6 +1138,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>enh2000</string>
+      <key>description</key>
+      <string>Enhancer 2000 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ap2000</string>
       <key>description</key>
       <string>Epson ActionPrinter 2000</string>
@@ -1003,6 +1165,30 @@
       <string>lx810l</string>
       <key>description</key>
       <string>Epson LX-810L</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>fd2000</string>
+      <key>description</key>
+      <string>FD-2000 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>fd4000</string>
+      <key>description</key>
+      <string>FD-4000 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>fsd1</string>
+      <key>description</key>
+      <string>FSD-1 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>fsd2</string>
+      <key>description</key>
+      <string>FSD-2 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1228,6 +1414,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>minichif</string>
+      <key>description</key>
+      <string>ICT Mini Chief Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ie15_device</string>
       <key>description</key>
       <string>IE15</string>
@@ -1255,6 +1447,12 @@
       <string>indigo2_4415</string>
       <key>description</key>
       <string>Indigo2 (R4400, 150MHz)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>indusgt</string>
+      <key>description</key>
+      <string>Indus GT Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1387,6 +1585,18 @@
       <string>mc10</string>
       <key>description</key>
       <string>MC-10</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>msdsd1</string>
+      <key>description</key>
+      <string>MSD SD-1 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>msdsd2</string>
+      <key>description</key>
+      <string>MSD SD-2 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1750,6 +1960,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cbm_interpod</string>
+      <key>description</key>
+      <string>Oxford Computer Systems Interpod</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>electron_ap1</string>
       <key>description</key>
       <string>P.R.E.S. Advanced Plus 1</string>
@@ -1912,6 +2128,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>fd148</string>
+      <key>description</key>
+      <string>Rapid Access FD-148 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nb_c264</string>
       <key>description</key>
       <string>RasterOps ColorBoard 264 Video Card</string>
@@ -2005,6 +2227,12 @@
       <string>a2excel9</string>
       <key>description</key>
       <string>Seikou Excel-9</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cbm_serbox</string>
+      <key>description</key>
+      <string>Serial Box</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2125,6 +2353,12 @@
       <string>bbc_tube_arm7</string>
       <key>description</key>
       <string>Sprow ARM7TDMI Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_nl10</string>
+      <key>description</key>
+      <string>Star NL-10 C64 Interface Cartridge</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2320,6 +2554,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>vic1515</string>
+      <key>description</key>
+      <string>VIC-1515 Graphic Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>vic1520</string>
+      <key>description</key>
+      <string>VIC-1520 Color Printer Plotter</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>vt100</string>
       <key>description</key>
       <string>VT100</string>
@@ -2395,6 +2641,12 @@
       <string>bbc_weddb3</string>
       <key>description</key>
       <string>Watford Electronics DDB3 1770 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>technica</string>
+      <key>description</key>
+      <string>Westfalia Technica Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>

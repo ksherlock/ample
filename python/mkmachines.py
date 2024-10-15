@@ -114,6 +114,9 @@ def load_machine_recursive(name):
 			if devname in processed: continue
 			pending.add(devname)
 
+		# also include if there's a bios...
+		if m.find('./biosset') is not None: count = count + 1
+
 		if count:
 			# print("    slots: {}".format(name))
 			submachines[name] = m
@@ -273,17 +276,33 @@ def find_media(parent, include_slots=False):
 	# special case for the pc transporter.  not in the xml but it adds 2 5.25" floppies
 	# n.b. - floppies are 5.25" 360k or 180k.  not bootable, not usable from prodos
 	# without special prodos file or loading driver into pc transporter ram.
-	if parent.get("name") == "pcxport":
+
+	name = parent.get("name")
+	sourcefile = parent.get("sourcefile")
+	if name == "pcxport":
 		media["floppy_5_25"] = media.get("floppy_5_25", 0) + 2
+
+	# special case for commodore disk drives...
+	if sourcefile.endswith("/cbmiec/c1541.cpp"):
+		media["floppy_5_25"] = media.get("floppy_5_25", 0) + 1
+
+	if sourcefile.endswith("/cbmiec/c1571.cpp"):
+		media["floppy_5_25"] = media.get("floppy_5_25", 0) + 1
+
+	if sourcefile.endswith("/cbmiec/c1581.cpp"):
+		media["floppy_3_5"] = media.get("floppy_3_5", 0) + 1
+
+	if sourcefile.endswith("/cbmiec/fd2000.cpp"):
+		media["floppy_3_5"] = media.get("floppy_3_5", 0) + 1
 
 
 	# special case for a2romusr
-	if parent.get("name") == "a2romusr":
+	if name == "a2romusr":
 		media["rom"] = media.get("rom", 0) + 1
 
 
 	# scsibus:1 is special cd-rom
-	if parent.get("name") == "a2scsi":
+	if name == "a2scsi":
 		media["cdrom"] = media.get("cdrom", 0) + 1
 
 	if not media: return None

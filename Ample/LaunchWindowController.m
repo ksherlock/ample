@@ -28,8 +28,11 @@ static NSString *kContextMachine = @"kContextMachine";
 static NSString *NeedsAspectRatio(NSString *machine) {
     static NSDictionary *dict = nil;
     
+    /* these are all non-60hz? */
     if (!dict) {
         dict = @{
+            @"c64": @"3:2",
+            @"c64c": @"3:2",
             @"oric1": @"2:1",
             @"orica": @"2:1",
             @"prav8d": @"2:1",

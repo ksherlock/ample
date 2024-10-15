@@ -990,6 +990,33 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Commodore</string>
+      <key>value</key>
+      <string>c64</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64 (NTSC)</string>
+          <key>value</key>
+          <string>c64</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64C (NTSC)</string>
+          <key>value</key>
+          <string>c64c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Commodore 128 (NTSC)</string>
+          <key>value</key>
+          <string>c128</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>DEC VT</string>
       <key>children</key>
       <array>

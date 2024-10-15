@@ -69,6 +69,9 @@ MACHINES_EXTRA = MACHINES + (
 	# acorn
 	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
 
+	# commodore
+	"c64", "c64c", "c128",
+
 
 	# amiga
 	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n",
@@ -131,6 +134,9 @@ SLOTS = (
 
 	# coco/trs
 	"ext", "floppy0", "floppy1", "floppy2", "floppy3",
+
+	# commodore
+	"user", "iec4", "iec8", "iec9", "iec10", "iec11", "tape"
 )
 
 SLOT_NAMES = {
@@ -223,6 +229,19 @@ SLOT_NAMES = {
 	"floppy1":    "Floppy 2",
 	"floppy2":    "Floppy 3",
 	"floppy3":    "Floppy 4",
+
+	# commodore
+	"user":       "User",
+	"tape":       "Tape",
+	"iec4":       "IEC 4",
+	"iec5":       "IEC 5",
+	"iec6":       "IEC 6",
+	"iec7":       "IEC 7",
+	"iec8":       "IEC 8",
+	"iec9":       "IEC 9",
+	"iec10":      "IEC 10",
+	"iec11":      "IEC 11",
+	"iec12":      "IEC 12",
 }
 
 
