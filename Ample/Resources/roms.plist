@@ -790,6 +790,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macpb140</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 140</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpb160</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 160</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macqd605</string>
       <key>description</key>
       <string>Macintosh Quadra 605</string>

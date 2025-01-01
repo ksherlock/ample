@@ -45,6 +45,8 @@ MACHINES = (
 
 	# portable
 	"macprtb", "macpb100",
+	# powerbook
+	"macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c",
 
 	# 128k clones
 	# "unitron", "utrn1024",

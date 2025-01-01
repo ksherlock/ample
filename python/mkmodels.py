@@ -51,6 +51,7 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 
 
 mac_portable_children = ["macprtb", "macpb100"]
+mac_powerbook_children = ["macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c"]
 
 atari_st_children = ["st", "megast"]
 
@@ -106,6 +107,7 @@ TREE = [
 	("Macintosh (Quadra)", None, mac_quadra_children),
 	("Macintosh (LC)", None, mac_lc_children),
 	("Macintosh (Portable)", None, mac_portable_children),
+	("Macintosh (PowerBook)", None, mac_powerbook_children),
 	("Atari ST", "st", atari_st_children),
 	("Oric", None, oric_children),
 	("Tandy", None, tandy_children),

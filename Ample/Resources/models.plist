@@ -791,6 +791,67 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Macintosh (PowerBook)</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 140</string>
+          <key>value</key>
+          <string>macpb140</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 145</string>
+          <key>value</key>
+          <string>macpb145</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 145B</string>
+          <key>value</key>
+          <string>macpb145b</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 160</string>
+          <key>value</key>
+          <string>macpb160</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 165</string>
+          <key>value</key>
+          <string>macpb165</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 165c</string>
+          <key>value</key>
+          <string>macpb165c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 170</string>
+          <key>value</key>
+          <string>macpb170</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 180</string>
+          <key>value</key>
+          <string>macpb180</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook 180c</string>
+          <key>value</key>
+          <string>macpb180c</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Atari ST</string>
       <key>value</key>
       <string>st</string>
