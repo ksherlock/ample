@@ -4180,19 +4180,19 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>joyport</string>
-            <key>description</key>
-            <string>Sirius JoyPort</string>
-            <key>devname</key>
-            <string>a2joyprt</string>
-          </dict>
-          <dict>
-            <key>value</key>
             <string>joyport_paddles</string>
             <key>description</key>
             <string>Sirius JoyPort With Apple II Paddles</string>
             <key>devname</key>
             <string>a2joyprtpdls</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>joyport</string>
+            <key>description</key>
+            <string>Sirius JoyPort With Atari Joysticks</string>
+            <key>devname</key>
+            <string>a2joyprt</string>
           </dict>
           <dict>
             <key>value</key>
