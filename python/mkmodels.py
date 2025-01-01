@@ -12,7 +12,10 @@ import mame
 apple1_children = None
 apple2_children = ["apple2", "apple2p", "apple2jp"]
 apple3_children = None
-apple2e_children = ["apple2e", "apple2ees", "apple2euk", "apple2ep", "apple2ee", "apple2eeuk", "apple2eefr"]
+apple2e_children = ["apple2e", "apple2euk", "apple2ede", "apple2ese", "apple2efr", "apple2ees"]
+apple2ee_children = ["apple2ee", "apple2eeuk", "apple2eede", "apple2eese", "apple2eefr"]
+apple2ep_children = ["apple2ep", "apple2epuk", "apple2epde", "apple2epse", "apple2epfr"]
+
 apple2c_children = ["apple2c", "apple2c0", "apple2c3", "apple2c4", "apple2cp"]
 apple2gs_children = ["apple2gsr0", "apple2gsr1", "apple2gs"]
 laser_children = ["las3000", "laser2c", "laser128", "laser128o", "las128ex", "las128e2"]
@@ -87,6 +90,8 @@ TREE = [
 	("Apple I", "apple1", apple1_children),
 	("Apple ][", "apple2", apple2_children),
 	("Apple IIe", "apple2e", apple2e_children),
+	("Apple IIe (enhanced)", "apple2ee", apple2ee_children),
+	("Apple IIe (platinum)", "apple2p", apple2ep_children),
 	("Apple //c", "apple2c", apple2c_children),
 	("Apple IIgs", "apple2gs", apple2gs_children),
 	("Apple ///", "apple3", apple3_children),

@@ -50,22 +50,43 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Apple //e (Spain)</string>
-          <key>value</key>
-          <string>apple2ees</string>
-        </dict>
-        <dict>
-          <key>description</key>
           <string>Apple //e (UK)</string>
           <key>value</key>
           <string>apple2euk</string>
         </dict>
         <dict>
           <key>description</key>
-          <string>Apple //e (Platinum)</string>
+          <string>Apple //e (Germany)</string>
           <key>value</key>
-          <string>apple2ep</string>
+          <string>apple2ede</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Sweden)</string>
+          <key>value</key>
+          <string>apple2ese</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (France)</string>
+          <key>value</key>
+          <string>apple2efr</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Spain)</string>
+          <key>value</key>
+          <string>apple2ees</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIe (enhanced)</string>
+      <key>value</key>
+      <string>apple2ee</string>
+      <key>children</key>
+      <array>
         <dict>
           <key>description</key>
           <string>Apple //e (enhanced)</string>
@@ -80,9 +101,60 @@
         </dict>
         <dict>
           <key>description</key>
+          <string>Apple //e (enhanced, Germany)</string>
+          <key>value</key>
+          <string>apple2eede</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (enhanced, Sweden)</string>
+          <key>value</key>
+          <string>apple2eese</string>
+        </dict>
+        <dict>
+          <key>description</key>
           <string>Apple //e (enhanced, France)</string>
           <key>value</key>
           <string>apple2eefr</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Apple IIe (platinum)</string>
+      <key>value</key>
+      <string>apple2p</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum)</string>
+          <key>value</key>
+          <string>apple2ep</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum, UK)</string>
+          <key>value</key>
+          <string>apple2epuk</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum, Germany)</string>
+          <key>value</key>
+          <string>apple2epde</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum, Sweden)</string>
+          <key>value</key>
+          <string>apple2epse</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Apple //e (Platinum, France)</string>
+          <key>value</key>
+          <string>apple2epfr</string>
         </dict>
       </array>
     </dict>

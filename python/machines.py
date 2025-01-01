@@ -2,9 +2,12 @@ MACHINES = (
 	"apple1",
 	"apple2", "apple2p", "apple2jp",
 	"apple3",
-	"apple2e", "apple2ees", "apple2euk", "apple2ep",
-	"apple2ee", "apple2eeuk", "apple2eefr",
-	"apple2gs", "apple2gsr0", "apple2gsr1",
+
+	"apple2e", "apple2ede", "apple2efr", "apple2ese", "apple2euk",
+	"apple2ee", "apple2eede", "apple2eefr", "apple2ees", "apple2eese", "apple2eeuk",
+	"apple2ep", "apple2epde", "apple2epfr", "apple2epse", "apple2epuk",
+
+	"apple2gs", "apple2gsr0", "apple2gsr1", "apple2gsmt",
 	"apple2c", "apple2c0", "apple2c3", "apple2c4", "apple2cp",
 
 	# laser family
