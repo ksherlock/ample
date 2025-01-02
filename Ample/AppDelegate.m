@@ -89,6 +89,10 @@
     if (![newDate isKindOfClass: [NSDate class]])
         newDate = nil;
   
+    /* oops, I accidentally called 2024-12-07 2025-12-07.  So let's ignore future dates... */
+    NSDate *now = [NSDate dateWithTimeIntervalSinceNow: 0];
+    if (oldDate && [oldDate compare: now] >= 0)
+        oldDate = nil;
 
 
     if (!newDate) return YES; //????
