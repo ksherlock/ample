@@ -1024,6 +1024,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mcx128</string>
+      <key>description</key>
+      <string>Darren Atkinson's MCX-128 Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>c64_z80videopak</string>
       <key>description</key>
       <string>Data20 Z80 Video Pak</string>
@@ -1279,6 +1285,12 @@
       <string>hp9122c</string>
       <key>description</key>
       <string>HP9122C Dual High Density Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>hp9133</string>
+      <key>description</key>
+      <string>HP9133 Floppy/Fixed Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1720,6 +1732,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macpb140</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 140</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpb160</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 160</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpb180c</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 180c</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macqd605</string>
       <key>description</key>
       <string>Macintosh Quadra 605</string>
@@ -1744,6 +1774,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macqd900</string>
+      <key>description</key>
+      <string>Macintosh Quadra 900</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd950</string>
+      <key>description</key>
+      <string>Macintosh Quadra 950</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macse</string>
       <key>description</key>
       <string>Macintosh SE</string>
@@ -1765,6 +1807,18 @@
       <string>rs3230</string>
       <key>description</key>
       <string>Magnum 3000</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_matchbox</string>
+      <key>description</key>
+      <string>Matchbox Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>qg640</string>
+      <key>description</key>
+      <string>Matrox QG-640 Color Display Processor Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1891,6 +1945,12 @@
       <string>nws3410</string>
       <key>description</key>
       <string>NWS-3410</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nss_tvinterface</string>
+      <key>description</key>
+      <string>Novag Super System TV Interface</string>
     </dict>
     <dict>
       <key>value</key>

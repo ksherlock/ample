@@ -484,6 +484,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mcx128</string>
+      <key>description</key>
+      <string>Darren Atkinson's MCX-128 Cartridge</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>coco_scii</string>
       <key>description</key>
       <string>Disto Super Controller II</string>
@@ -802,6 +808,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macpb180c</string>
+      <key>description</key>
+      <string>Macintosh PowerBook 180c</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macqd605</string>
       <key>description</key>
       <string>Macintosh Quadra 605</string>
@@ -823,6 +835,18 @@
       <string>macqd800</string>
       <key>description</key>
       <string>Macintosh Quadra 800</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd900</string>
+      <key>description</key>
+      <string>Macintosh Quadra 900</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macqd950</string>
+      <key>description</key>
+      <string>Macintosh Quadra 950</string>
     </dict>
     <dict>
       <key>value</key>
@@ -895,6 +919,12 @@
       <string>upd7220</string>
       <key>description</key>
       <string>NEC UPD7220</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nss_tvinterface</string>
+      <key>description</key>
+      <string>Novag Super System TV Interface</string>
     </dict>
     <dict>
       <key>value</key>
