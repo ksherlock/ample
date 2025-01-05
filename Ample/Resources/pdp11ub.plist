@@ -200,6 +200,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>by</string>
+            <key>description</key>
+            <string>BK0010 Floppy</string>
+            <key>devname</key>
+            <string>bk_kmd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pc11</string>
             <key>description</key>
             <string>DEC PC11 Controller</string>
@@ -272,6 +280,14 @@
             <string>—None—</string>
             <key>default</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>by</string>
+            <key>description</key>
+            <string>BK0010 Floppy</string>
+            <key>devname</key>
+            <string>bk_kmd</string>
           </dict>
           <dict>
             <key>value</key>
@@ -348,6 +364,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>by</string>
+            <key>description</key>
+            <string>BK0010 Floppy</string>
+            <key>devname</key>
+            <string>bk_kmd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pc11</string>
             <key>description</key>
             <string>DEC PC11 Controller</string>
@@ -421,6 +445,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>by</string>
+            <key>description</key>
+            <string>BK0010 Floppy</string>
+            <key>devname</key>
+            <string>bk_kmd</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>pc11</string>
             <key>description</key>
             <string>DEC PC11 Controller</string>
@@ -480,6 +512,104 @@
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>bk_kmd</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>253</string>
+                <key>description</key>
+                <string>mask 253</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>326</string>
+                <key>description</key>
+                <string>mask 326</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>327v12</string>
+                <key>description</key>
+                <string>327 v12</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fdc:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>525qd</string>
+                <key>description</key>
+                <string>5.25" quad density floppy drive</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>cdd2000</string>

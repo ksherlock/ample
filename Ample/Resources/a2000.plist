@@ -439,6 +439,46 @@
             <key>devname</key>
             <string>zorro_a2232</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>framemaster</string>
+            <key>description</key>
+            <string>FrameMaster Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_framemaster</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>picasso2p</string>
+            <key>description</key>
+            <string>Picasso II+ RTG</string>
+            <key>devname</key>
+            <string>zorro_picasso2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rainbow2</string>
+            <key>description</key>
+            <string>Rainbow II Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_rainbow2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ripple</string>
+            <key>description</key>
+            <string>RIPPLE IDE Interface</string>
+            <key>devname</key>
+            <string>zorro_ripple</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>toccata</string>
+            <key>description</key>
+            <string>Toccata SoundCard</string>
+            <key>devname</key>
+            <string>zorro_toccata</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -503,6 +543,46 @@
             <string>CBM A2232 Serial Card</string>
             <key>devname</key>
             <string>zorro_a2232</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>framemaster</string>
+            <key>description</key>
+            <string>FrameMaster Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_framemaster</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>picasso2p</string>
+            <key>description</key>
+            <string>Picasso II+ RTG</string>
+            <key>devname</key>
+            <string>zorro_picasso2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rainbow2</string>
+            <key>description</key>
+            <string>Rainbow II Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_rainbow2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ripple</string>
+            <key>description</key>
+            <string>RIPPLE IDE Interface</string>
+            <key>devname</key>
+            <string>zorro_ripple</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>toccata</string>
+            <key>description</key>
+            <string>Toccata SoundCard</string>
+            <key>devname</key>
+            <string>zorro_toccata</string>
           </dict>
         </array>
       </dict>
@@ -569,6 +649,46 @@
             <key>devname</key>
             <string>zorro_a2232</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>framemaster</string>
+            <key>description</key>
+            <string>FrameMaster Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_framemaster</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>picasso2p</string>
+            <key>description</key>
+            <string>Picasso II+ RTG</string>
+            <key>devname</key>
+            <string>zorro_picasso2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rainbow2</string>
+            <key>description</key>
+            <string>Rainbow II Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_rainbow2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ripple</string>
+            <key>description</key>
+            <string>RIPPLE IDE Interface</string>
+            <key>devname</key>
+            <string>zorro_ripple</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>toccata</string>
+            <key>description</key>
+            <string>Toccata SoundCard</string>
+            <key>devname</key>
+            <string>zorro_toccata</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -634,6 +754,46 @@
             <key>devname</key>
             <string>zorro_a2232</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>framemaster</string>
+            <key>description</key>
+            <string>FrameMaster Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_framemaster</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>picasso2p</string>
+            <key>description</key>
+            <string>Picasso II+ RTG</string>
+            <key>devname</key>
+            <string>zorro_picasso2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rainbow2</string>
+            <key>description</key>
+            <string>Rainbow II Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_rainbow2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ripple</string>
+            <key>description</key>
+            <string>RIPPLE IDE Interface</string>
+            <key>devname</key>
+            <string>zorro_ripple</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>toccata</string>
+            <key>description</key>
+            <string>Toccata SoundCard</string>
+            <key>devname</key>
+            <string>zorro_toccata</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -698,6 +858,46 @@
             <string>CBM A2232 Serial Card</string>
             <key>devname</key>
             <string>zorro_a2232</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>framemaster</string>
+            <key>description</key>
+            <string>FrameMaster Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_framemaster</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>picasso2p</string>
+            <key>description</key>
+            <string>Picasso II+ RTG</string>
+            <key>devname</key>
+            <string>zorro_picasso2p</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rainbow2</string>
+            <key>description</key>
+            <string>Rainbow II Framebuffer</string>
+            <key>devname</key>
+            <string>zorro_rainbow2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ripple</string>
+            <key>description</key>
+            <string>RIPPLE IDE Interface</string>
+            <key>devname</key>
+            <string>zorro_ripple</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>toccata</string>
+            <key>description</key>
+            <string>Toccata SoundCard</string>
+            <key>devname</key>
+            <string>zorro_toccata</string>
           </dict>
         </array>
       </dict>
@@ -3143,6 +3343,296 @@
                 <string>v103-17</string>
                 <key>description</key>
                 <string>Version 103.17</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:ata_0:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:ata_0:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:ata_1:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:ata_1:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>zorro_ripple</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>40.8</string>
+                <key>description</key>
+                <string>Release 40.8</string>
               </dict>
             </array>
           </dict>
