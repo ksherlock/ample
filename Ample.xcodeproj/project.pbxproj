@@ -27,6 +27,17 @@
 		B61DB2DB2CBD89C4004B9C64 /* c128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61DB2D52CBD89C4004B9C64 /* c128.plist */; };
 		B63005332666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
 		B63005342666D6940014C381 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63005322666D6940014C381 /* BookmarkManager.m */; };
+		B634804A2D2DF24400C7408E /* bbca.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C52B1168C00063F9D8 /* bbca.plist */; };
+		B634804B2D2DF24700C7408E /* bbcb_de.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C32B1168C00063F9D8 /* bbcb_de.plist */; };
+		B634804C2D2DF24F00C7408E /* bbcb_no.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C22B1168C00063F9D8 /* bbcb_no.plist */; };
+		B634804D2D2DF25200C7408E /* bbcb_us.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5BE2B1168BF0063F9D8 /* bbcb_us.plist */; };
+		B634804E2D2DF25400C7408E /* bbcb.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5BF2B1168BF0063F9D8 /* bbcb.plist */; };
+		B634804F2D2DF25900C7408E /* bbcbp.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C12B1168C00063F9D8 /* bbcbp.plist */; };
+		B63480502D2DF25900C7408E /* bbcbp128.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5BC2B1168BF0063F9D8 /* bbcbp128.plist */; };
+		B63480512D2DF25900C7408E /* bbcm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C42B1168C00063F9D8 /* bbcm.plist */; };
+		B63480522D2DF25900C7408E /* bbcmc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5BD2B1168BF0063F9D8 /* bbcmc.plist */; };
+		B63480532D2DF25900C7408E /* bbcmt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C02B1168BF0063F9D8 /* bbcmt.plist */; };
+		B63480542D2DF27400C7408E /* electron.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C62B1168C00063F9D8 /* electron.plist */; };
 		B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; };
 		B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09C26784A4800B23BFD /* Sparkle.framework */; };
@@ -1768,6 +1779,7 @@
 				B678786A2B01732700CFACF2 /* ace1000.plist in Resources */,
 				B6EEFACC2B9ABCAE0068B47C /* dragon200.plist in Resources */,
 				B67878FB2B01732700CFACF2 /* prav82.plist in Resources */,
+				B634804D2D2DF25200C7408E /* bbcb_us.plist in Resources */,
 				B67878D92B01732700CFACF2 /* apple2euk.plist in Resources */,
 				B67878F72B01732700CFACF2 /* macsefd.plist in Resources */,
 				B67879252B0195DB00CFACF2 /* sun4_65.plist in Resources */,
@@ -1815,6 +1827,7 @@
 				B67878FA2B01732700CFACF2 /* prav8c.plist in Resources */,
 				B67878D42B01732700CFACF2 /* apple1.plist in Resources */,
 				B67878BF2B01732700CFACF2 /* roms~extra.plist in Resources */,
+				B63480522D2DF25900C7408E /* bbcmc.plist in Resources */,
 				B6DE323B26044DB800418375 /* caution@3x.png in Resources */,
 				B678788F2B01732700CFACF2 /* indy_5015.plist in Resources */,
 				B67878E32B01732700CFACF2 /* las128ex.plist in Resources */,
@@ -1834,6 +1847,7 @@
 				B67878D72B01732700CFACF2 /* apple2eefr.plist in Resources */,
 				B67878EB2B01732700CFACF2 /* maciicx.plist in Resources */,
 				B67878FD2B01732700CFACF2 /* st.plist in Resources */,
+				B63480542D2DF27400C7408E /* electron.plist in Resources */,
 				B67878CD2B01732700CFACF2 /* vt102.plist in Resources */,
 				B65771622D25D1BB00B1B10A /* apple2epse.plist in Resources */,
 				B67878B32B01732700CFACF2 /* nws3410.plist in Resources */,
@@ -1846,6 +1860,7 @@
 				B678791F2B0195DB00CFACF2 /* sun3_e.plist in Resources */,
 				B6D6DE3E24FADF8B00661A5F /* LaunchWindow.xib in Resources */,
 				B678792D2B0195DB00CFACF2 /* sun3_260.plist in Resources */,
+				B634804C2D2DF24F00C7408E /* bbcb_no.plist in Resources */,
 				B6004DF124FB05D600D38596 /* LogWindow.xib in Resources */,
 				B67878932B01732700CFACF2 /* ip2700.plist in Resources */,
 				B67878ED2B01732700CFACF2 /* maciivx.plist in Resources */,
@@ -1856,6 +1871,7 @@
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
 				B67878CB2B01732700CFACF2 /* vt100.plist in Resources */,
 				B6F9F8B02C5E6814007D5A3B /* macqd950.plist in Resources */,
+				B634804A2D2DF24400C7408E /* bbca.plist in Resources */,
 				B6EEFAC22B9ABCAE0068B47C /* dragon200e.plist in Resources */,
 				B67878C02B01732700CFACF2 /* rs2030.plist in Resources */,
 				B67878C22B01732700CFACF2 /* rtpc010.plist in Resources */,
@@ -1866,12 +1882,14 @@
 				B67878E02B01732700CFACF2 /* craft2p.plist in Resources */,
 				B6665C1C265C639A00254939 /* Autocomplete.xib in Resources */,
 				B67878BC2B01732700CFACF2 /* rc2030.plist in Resources */,
+				B634804E2D2DF25400C7408E /* bbcb.plist in Resources */,
 				B65771892D25DEE400B1B10A /* macpb160.plist in Resources */,
 				B65D1B962BB7B1AC00C15287 /* mc10.plist in Resources */,
 				B67879312B0195DB00CFACF2 /* sun2_120.plist in Resources */,
 				B67878FE2B01732700CFACF2 /* uniap2en.plist in Resources */,
 				B67879192B0195DB00CFACF2 /* sun2_50.plist in Resources */,
 				B64AF1EE250EC35B00A09B9B /* DiskImages.xib in Resources */,
+				B634804F2D2DF25900C7408E /* bbcbp.plist in Resources */,
 				B67878A02B01732700CFACF2 /* macct650.plist in Resources */,
 				B67879042B0195C200CFACF2 /* nws5000x.plist in Resources */,
 				B67878A72B01732700CFACF2 /* maclc520.plist in Resources */,
@@ -1899,6 +1917,7 @@
 				B67878B72B01732700CFACF2 /* pi4d20.plist in Resources */,
 				B67878752B01732700CFACF2 /* apple2p.plist in Resources */,
 				B6EEFAB62B9ABCAE0068B47C /* dragon64.plist in Resources */,
+				B634804B2D2DF24700C7408E /* bbcb_de.plist in Resources */,
 				B67878EE2B01732700CFACF2 /* maclc.plist in Resources */,
 				B6F9F8AC2C5E6814007D5A3B /* macprtb.plist in Resources */,
 				B6EEFAC62B9ABCAE0068B47C /* d64plus.plist in Resources */,
@@ -1912,6 +1931,7 @@
 				B6EEFABA2B9ABCAE0068B47C /* trs80.plist in Resources */,
 				B6D6DE3924FAC8B500661A5F /* Preferences.xib in Resources */,
 				B6EEFACA2B9ABCAE0068B47C /* coco3p.plist in Resources */,
+				B63480502D2DF25900C7408E /* bbcbp128.plist in Resources */,
 				B63C1F0B25B143C50016A611 /* CheatSheet.xib in Resources */,
 				B61DB2DA2CBD89C4004B9C64 /* c128.plist in Resources */,
 				B67878B12B01732700CFACF2 /* mprof3.plist in Resources */,
@@ -1922,6 +1942,7 @@
 				B61DB2D62CBD89C4004B9C64 /* c64c.plist in Resources */,
 				B65771662D25D1BB00B1B10A /* apple2eese.plist in Resources */,
 				B6EEFAC42B9ABCAE0068B47C /* dragon32.plist in Resources */,
+				B63480532D2DF25900C7408E /* bbcmt.plist in Resources */,
 				B67879172B0195DB00CFACF2 /* sun1.plist in Resources */,
 				B67878962B01732700CFACF2 /* ip6400.plist in Resources */,
 				B67878EA2B01732700CFACF2 /* macii.plist in Resources */,
@@ -1940,6 +1961,7 @@
 				B67878B62B01732700CFACF2 /* pdp11ub2.plist in Resources */,
 				B6E6DCF727B0873200E0A76E /* BookmarkWindow.xib in Resources */,
 				B657718B2D25DEE400B1B10A /* macpb180.plist in Resources */,
+				B63480512D2DF25900C7408E /* bbcm.plist in Resources */,
 				B67878C92B01732700CFACF2 /* uniap2pt.plist in Resources */,
 				B678786F2B01732700CFACF2 /* apple2cp.plist in Resources */,
 				B6F7B538266FDA5B00624C6B /* MachineView.xib in Resources */,

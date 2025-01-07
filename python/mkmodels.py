@@ -109,12 +109,12 @@ TREE = [
 	("Macintosh (Portable)", None, mac_portable_children),
 	("Macintosh (PowerBook)", None, mac_powerbook_children),
 	("Atari ST", "st", atari_st_children),
+	("Acorn", None, acorn_children),
 	("Oric", None, oric_children),
 	("Tandy", None, tandy_children),
 ]
 
 TREE_EXTRA = TREE + [
-	("Acorn", None, acorn_children),
 	("Amiga", None, amiga_children),
 	("Commodore", "c64", commodore_children),
 	("DEC VT", None, dec_vt_children),

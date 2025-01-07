@@ -873,6 +873,79 @@
     </dict>
     <dict>
       <key>description</key>
+      <string>Acorn</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B</string>
+          <key>value</key>
+          <string>bbcb</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model A</string>
+          <key>value</key>
+          <string>bbca</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B (German)</string>
+          <key>value</key>
+          <string>bbcb_de</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B (US)</string>
+          <key>value</key>
+          <string>bbcb_us</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B (Norway)</string>
+          <key>value</key>
+          <string>bbcb_no</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B+ 64K</string>
+          <key>value</key>
+          <string>bbcbp</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Micro Model B+ 128K</string>
+          <key>value</key>
+          <string>bbcbp128</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Master 128</string>
+          <key>value</key>
+          <string>bbcm</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Master Turbo</string>
+          <key>value</key>
+          <string>bbcmt</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>BBC Master Compact</string>
+          <key>value</key>
+          <string>bbcmc</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Acorn Electron</string>
+          <key>value</key>
+          <string>electron</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
       <string>Oric</string>
       <key>children</key>
       <array>

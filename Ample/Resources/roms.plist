@@ -10,6 +10,168 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_ams3</string>
+      <key>description</key>
+      <string>AMS 3" Microdrive Disc System</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_arm</string>
+      <key>description</key>
+      <string>ARM Evaluation System</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_autoprom</string>
+      <key>description</key>
+      <string>ATPL AutoPrommer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_16032</string>
+      <key>description</key>
+      <string>Acorn 16032 2nd Processor (Prototype)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_acorn1770</string>
+      <key>description</key>
+      <string>Acorn 1770 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_32016</string>
+      <key>description</key>
+      <string>Acorn 32016 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_6502</string>
+      <key>description</key>
+      <string>Acorn 6502 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_6502p</string>
+      <key>description</key>
+      <string>Acorn 6502 2nd Processor (Pre-production)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_65c102</string>
+      <key>description</key>
+      <string>Acorn 65C102 Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_80186</string>
+      <key>description</key>
+      <string>Acorn 80186 Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_80286</string>
+      <key>description</key>
+      <string>Acorn 80286 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_acorn8271</string>
+      <key>description</key>
+      <string>Acorn 8721 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_a500d</string>
+      <key>description</key>
+      <string>Acorn A500 (Dual MEMC) 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_a500</string>
+      <key>description</key>
+      <string>Acorn A500 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>archimedes_keyboard</string>
+      <key>description</key>
+      <string>Acorn Archimedes Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_bitstik1</string>
+      <key>description</key>
+      <string>Acorn Bitstik</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron</string>
+      <key>description</key>
+      <string>Acorn Electron</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_6502e</string>
+      <key>description</key>
+      <string>Acorn Extended 6502 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>econet_e01</string>
+      <key>description</key>
+      <string>Acorn FileStore E01</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>econet_e01s</string>
+      <key>description</key>
+      <string>Acorn FileStore E01S</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_ieee488</string>
+      <key>description</key>
+      <string>Acorn IEEE-488 Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_32016l</string>
+      <key>description</key>
+      <string>Acorn Large 32016 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_m2105</string>
+      <key>description</key>
+      <string>Acorn M2105 Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_plus1</string>
+      <key>description</key>
+      <string>Acorn Plus 1 Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_plus3</string>
+      <key>description</key>
+      <string>Acorn Plus 3 Disc Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_z80</string>
+      <key>description</key>
+      <string>Acorn Z80 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_z80w</string>
+      <key>description</key>
+      <string>Acorn Z80 2nd Processor (Winchester)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>agat840k_hle</string>
       <key>description</key>
       <string>Agat 840K Floppy Card</string>
@@ -286,6 +448,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_ariesb20</string>
+      <key>description</key>
+      <string>Aries-B20 RAM Expansion (W/ Aries-B12)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_ariesb32</string>
+      <key>description</key>
+      <string>Aries-B32 RAM Expansion (W/ Aries-B12)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nb_amc3b</string>
       <key>description</key>
       <string>Asante MC3NB Ethernet Card</string>
@@ -307,6 +481,36 @@
       <string>st_kbd</string>
       <key>description</key>
       <string>Atari ST Keyboard/Mouse/Joystick</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbcm</string>
+      <key>description</key>
+      <string>BBC Master 128</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbcmc</string>
+      <key>description</key>
+      <string>BBC Master Compact</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbcb</string>
+      <key>description</key>
+      <string>BBC Micro Model B</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbcbp</string>
+      <key>description</key>
+      <string>BBC Micro Model B+ 64K</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_beebspch</string>
+      <key>description</key>
+      <string>Beeb Speech Synthesiser</string>
     </dict>
     <dict>
       <key>value</key>
@@ -346,6 +550,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_tube_cms6809</string>
+      <key>description</key>
+      <string>CMS 6809 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cmsscsi</string>
       <key>description</key>
       <string>CMS SCSI II Card</string>
@@ -358,9 +568,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_cc500</string>
+      <key>description</key>
+      <string>CTS Colour Card 500</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cdrn820s</string>
       <key>description</key>
       <string>Caravelle CDR-N820s</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_casper</string>
+      <key>description</key>
+      <string>Casper 68000 2nd Processor</string>
     </dict>
     <dict>
       <key>value</key>
@@ -391,6 +613,12 @@
       <string>cecm</string>
       <key>description</key>
       <string>China Education Computer M</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_cisco</string>
+      <key>description</key>
+      <string>Cisco Terminal Data Board</string>
     </dict>
     <dict>
       <key>value</key>
@@ -460,6 +688,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_integrab</string>
+      <key>description</key>
+      <string>Computech Integra-β</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_cv1797</string>
+      <key>description</key>
+      <string>Computer Village 1797 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cfp1080s</string>
       <key>description</key>
       <string>Conner CFP1080S</string>
@@ -481,6 +721,24 @@
       <string>cdr4210</string>
       <key>description</key>
       <string>Creative Technology Blaster CD-R 4210</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_cumana68k</string>
+      <key>description</key>
+      <string>Cumana 68008 Upgrade Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_cumana1</string>
+      <key>description</key>
+      <string>Cumana QFS 8877A FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_cumana2</string>
+      <key>description</key>
+      <string>Cumana QFS Issue 2 8877A FDC</string>
     </dict>
     <dict>
       <key>value</key>
@@ -538,6 +796,30 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_tube_x25</string>
+      <key>description</key>
+      <string>Econet X25 Gateway Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_mc68k</string>
+      <key>description</key>
+      <string>Electron 68000 Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_elksd128</string>
+      <key>description</key>
+      <string>ElkSD128 Electron SD Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_elksd64</string>
+      <key>description</key>
+      <string>ElkSD64 Electron SD Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ap2000</string>
       <key>description</key>
       <string>Epson ActionPrinter 2000</string>
@@ -592,6 +874,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>hd44780</string>
+      <key>description</key>
+      <string>Hitachi HD44780 LCD Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2swyft</string>
       <key>description</key>
       <string>IAI SwyftCard</string>
@@ -640,9 +928,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>electron_mode7</string>
+      <key>description</key>
+      <string>JAFA Mode 7 Display Unit</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>oric_jasmin</string>
       <key>description</key>
       <string>Jasmin Floppy Drive Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_kenda</string>
+      <key>description</key>
+      <string>Kenda Professional DMFS</string>
     </dict>
     <dict>
       <key>value</key>
@@ -868,6 +1168,36 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_tube_matchbox</string>
+      <key>description</key>
+      <string>Matchbox Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_memexb20</string>
+      <key>description</key>
+      <string>Memex-B20 RAM Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_mertec</string>
+      <key>description</key>
+      <string>Mertec Compact Companion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_chameleon</string>
+      <key>description</key>
+      <string>Micro User Chameleon (DIY)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_pdram</string>
+      <key>description</key>
+      <string>Micro User Pull Down RAM (DIY)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>scorpion_ic</string>
       <key>description</key>
       <string>Micro-Robotics Scorpion Intelligent Controller</string>
@@ -898,9 +1228,27 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>electron_voxbox</string>
+      <key>description</key>
+      <string>Millsgrade Voxbox Speech Synthesiser</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nb_vikbw</string>
       <key>description</key>
       <string>Moniterm MacViking II Video Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_morleyaa</string>
+      <key>description</key>
+      <string>Morley Electronics 'AA' Master ROM Expansion Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_ramdisc</string>
+      <key>description</key>
+      <string>Morley Electronics RAM Disc</string>
     </dict>
     <dict>
       <key>value</key>
@@ -934,6 +1282,42 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_opus2791</string>
+      <key>description</key>
+      <string>Opus 2791 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_opus2793</string>
+      <key>description</key>
+      <string>Opus 2793 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_opus8272</string>
+      <key>description</key>
+      <string>Opus 8272 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_opus3</string>
+      <key>description</key>
+      <string>Opus Challenger 3-in-1</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_opusa</string>
+      <key>description</key>
+      <string>Opus Challenger ADFS</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_opus1770</string>
+      <key>description</key>
+      <string>Opus D-DOS(B) 1770 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2bufgrapplerplus</string>
       <key>description</key>
       <string>Orange Micro Buffered Grappler+ Printer Interface</string>
@@ -958,9 +1342,33 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>electron_ap1</string>
+      <key>description</key>
+      <string>P.R.E.S. Advanced Plus 1</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_ap6</string>
+      <key>description</key>
+      <string>P.R.E.S. Advanced Plus 6</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2aplcrd</string>
       <key>description</key>
       <string>PCPI Applicard</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_multiform</string>
+      <key>description</key>
+      <string>PEDL Multiform Z80</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_pms64k</string>
+      <key>description</key>
+      <string>PMS 64K Non-Volatile Ram Module</string>
     </dict>
     <dict>
       <key>value</key>
@@ -985,6 +1393,12 @@
       <string>px320a</string>
       <key>description</key>
       <string>PleXCombo PX-320A CD-RW/DVD-ROM Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_pwrjoy</string>
+      <key>description</key>
+      <string>Power Software Joystick Interface</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1048,6 +1462,48 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_raven20</string>
+      <key>description</key>
+      <string>Raven-20 RAM Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_rc65816</string>
+      <key>description</key>
+      <string>ReCo6502 (65C816)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_rc6502</string>
+      <key>description</key>
+      <string>ReCo6502 (65c02)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_datacentre</string>
+      <key>description</key>
+      <string>RetroClinic DataCentre</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_voicebox</string>
+      <key>description</key>
+      <string>Robin Voice Box</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_bitstik2</string>
+      <key>description</key>
+      <string>Robo Bitstik 2</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>saa5050</string>
+      <key>description</key>
+      <string>SAA5050 Teletext Character Generator</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>sdtandy_fdc</string>
       <key>description</key>
       <string>SDTANDY FDC</string>
@@ -1090,6 +1546,72 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>electron_romboxp</string>
+      <key>description</key>
+      <string>Slogger Rombox+</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stl1770_1</string>
+      <key>description</key>
+      <string>Solidisk 1770 DDFS Issue 1 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stl1770_2</string>
+      <key>description</key>
+      <string>Solidisk 1770 DDFS Issue 2 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stldfdc_1</string>
+      <key>description</key>
+      <string>Solidisk 8271/1770 DFDC Issue 1 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stl4m32</string>
+      <key>description</key>
+      <string>Solidisk Fourmeg 32K RAM/ROM Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_pcplus</string>
+      <key>description</key>
+      <string>Solidisk PC-Plus Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stlswr128</string>
+      <key>description</key>
+      <string>Solidisk SWR128 - 128K Sideways RAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stlswr16</string>
+      <key>description</key>
+      <string>Solidisk SWR16 - 16K Sideways RAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stlswr32</string>
+      <key>description</key>
+      <string>Solidisk SWR32 - 32K Sideways RAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stlswr64</string>
+      <key>description</key>
+      <string>Solidisk SWR64 - 64K Sideways RAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_stl2m128</string>
+      <key>description</key>
+      <string>Solidisk Twomeg 128K RAM/ROM Expansion</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>cdu415</string>
       <key>description</key>
       <string>Sony CDU415 CD-R</string>
@@ -1111,6 +1633,24 @@
       <string>cdu75s</string>
       <key>description</key>
       <string>Sony/Apple CDU75S CD-R</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_24bbc</string>
+      <key>description</key>
+      <string>Sprow 24bBC/RAM Disc Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_2ndserial</string>
+      <key>description</key>
+      <string>Sprow 2nd Serial Port</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_arm7</string>
+      <key>description</key>
+      <string>Sprow ARM7TDMI Co-Processor</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1162,6 +1702,36 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_tube_zep100</string>
+      <key>description</key>
+      <string>Torch Z80 Communicator</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_zep100m</string>
+      <key>description</key>
+      <string>Torch Z80 Communicator (Master)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_zep100l</string>
+      <key>description</key>
+      <string>Torch Z80 Communicator (Model B)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_tube_zep100w</string>
+      <key>description</key>
+      <string>Torch Z80 Communicator (Model B+)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_udm</string>
+      <key>description</key>
+      <string>United Disk Memories DDFS FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2vtc1</string>
       <key>description</key>
       <string>Unknown Videoterm Clone</string>
@@ -1201,6 +1771,30 @@
       <string>votrsc01a</string>
       <key>description</key>
       <string>Votrax SC-01-A</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_we32kram</string>
+      <key>description</key>
+      <string>Watford Electronics 32K Shadow RAM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_weddb2</string>
+      <key>description</key>
+      <string>Watford Electronics DDB2 1772 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_weddb3</string>
+      <key>description</key>
+      <string>Watford Electronics DDB3 1770 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>electron_sidewndr</string>
+      <key>description</key>
+      <string>Wizard Sidewinder Rom Expansion Board</string>
     </dict>
     <dict>
       <key>value</key>

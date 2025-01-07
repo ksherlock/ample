@@ -64,15 +64,17 @@ MACHINES = (
 	"oric1", "orica", "prav8d", "telstrat",
 	# mt65, micron, mt6809 -- need tanbus support...
 
+
+
+	# acorn
+	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
+
 )
 
 
 MACHINES_EXTRA = MACHINES + (
 
 	# other (for Ample-lite...)
-
-	# acorn
-	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
 
 	# commodore
 	"c64", "c64c", "c128",
