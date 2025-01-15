@@ -691,13 +691,29 @@ def find_machine_resolution(machine):
 	hscale = 1
 	wscale = 1
 
-	# mame height is often garbage.
 
-	# raster screens have a default aspect ratio of 4 : 3
-	# pre-calc something like that, but integer-based.
+	# bbc...
 
-	#hscale = round((width * 3 / 4 ) / height)
-	#if hscale < 1 : hscale = 1
+	# mode    us            euro
+	# (xml)   640x200       640x256
+	# 0       640x220 (200) 640x282 (256)
+	# 1       320x220       320x282
+	# 2       160x220       160x282
+	# 3       640x218 (198) 640x275 (250)
+	# 4       320x220       320x282
+	# 5       160x220       160x282
+	# 6       320x218       320x275
+	# 7       480x440 (400) 480x550 (500)
+	#
+	# mode 3/6/7 are strictly text modes so pixel values aren't comparable
+	# + 10% for layout UI?
+
+	#
+	# if name == "electron" or name[:3] == "bbc":
+	# 	if width == 640: width = 480
+	# 	if height == 200: height = 400 # us
+	# 	if height == 256: height = 500 # euro
+
 
 	return [width, height * hscale]
 

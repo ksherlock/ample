@@ -852,27 +852,6 @@
     </dict>
     <dict>
       <key>description</key>
-      <string>Atari ST</string>
-      <key>value</key>
-      <string>st</string>
-      <key>children</key>
-      <array>
-        <dict>
-          <key>description</key>
-          <string>ST (USA)</string>
-          <key>value</key>
-          <string>st</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>MEGA ST (USA)</string>
-          <key>value</key>
-          <string>megast</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>description</key>
       <string>Acorn</string>
       <key>children</key>
       <array>
@@ -941,6 +920,48 @@
           <string>Acorn Electron</string>
           <key>value</key>
           <string>electron</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Atari ST</string>
+      <key>value</key>
+      <string>st</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>ST (USA)</string>
+          <key>value</key>
+          <string>st</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MEGA ST (USA)</string>
+          <key>value</key>
+          <string>megast</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Commodore</string>
+      <key>value</key>
+      <string>c64</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64 (NTSC)</string>
+          <key>value</key>
+          <string>c64</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64C (NTSC)</string>
+          <key>value</key>
+          <string>c64c</string>
         </dict>
       </array>
     </dict>

@@ -51,8 +51,21 @@ MACHINES = (
 	# 128k clones
 	# "unitron", "utrn1024",
 
+
+	# acorn
+	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
+
 	#atari
 	"st", "megast",
+
+
+	# commodore
+	"c64", "c64c",
+
+	# oric
+	"oric1", "orica", "prav8d", "telstrat",
+	# mt65, micron, mt6809 -- need tanbus support...
+
 
 	# trs
 	"coco", "coco2b", "coco3", "coco3p", "mc10",
@@ -60,14 +73,9 @@ MACHINES = (
 	"trs80", "trs80l2",
 	"dragon32", "dragon64", "d64plus", "dragon200", "dragon200e", "tanodr64",
 
-	# oric
-	"oric1", "orica", "prav8d", "telstrat",
-	# mt65, micron, mt6809 -- need tanbus support...
 
 
 
-	# acorn
-	"bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron",
 
 )
 
@@ -77,8 +85,7 @@ MACHINES_EXTRA = MACHINES + (
 	# other (for Ample-lite...)
 
 	# commodore
-	"c64", "c64c", "c128",
-
+	"c128",
 
 	# amiga
 	"a500", "a500n", "a1000", "a1000n", "a2000", "a2000n",

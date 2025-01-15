@@ -72,7 +72,8 @@ oric_children = [
 amiga_children = ["a500", "a500n", "a1000", "a1000n", "a2000", "a2000n" ]
 
 acorn_children = [ "bbcb", "bbca", "bbcb_de", "bbcb_us", "bbcb_no", "bbcbp", "bbcbp128", "bbcm", "bbcmt", "bbcmc", "electron" ]
-commodore_children = ["c64", "c64c", "c128"]
+commodore_children = ["c64", "c64c"]
+commodore_children_extra = ["c64", "c64c", "c128"]
 
 dec_vt_children = ["vt52", "vt100", "vt101", "vt102", "vt240"]
 dec_children = ["ds2100", "ds3100", "ds5k133", "pdp11qb", "pdp11ub", "pdp11ub2"]
@@ -108,15 +109,15 @@ TREE = [
 	("Macintosh (LC)", None, mac_lc_children),
 	("Macintosh (Portable)", None, mac_portable_children),
 	("Macintosh (PowerBook)", None, mac_powerbook_children),
-	("Atari ST", "st", atari_st_children),
 	("Acorn", None, acorn_children),
+	("Atari ST", "st", atari_st_children),
+	("Commodore", "c64", commodore_children),
 	("Oric", None, oric_children),
 	("Tandy", None, tandy_children),
 ]
 
 TREE_EXTRA = TREE + [
 	("Amiga", None, amiga_children),
-	("Commodore", "c64", commodore_children),
 	("DEC VT", None, dec_vt_children),
 	("DEC", None, dec_children),
 	("HP 9000", None, hp_9000_children),
