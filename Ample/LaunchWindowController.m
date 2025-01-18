@@ -42,6 +42,36 @@ static NSString *NeedsAspectRatio(NSString *machine) {
     return [dict objectForKey: machine];
 }
 
+static BOOL NeedsNatural(NSString *machine) {
+
+    static NSSet *set = nil;
+    
+    /* these all have really strange keyboards */
+    if (!set) {
+        NSArray *machines = @[
+            @"bbcb", @"bbca", @"bbcb_de", @"bbcb_us", @"bbcb_no", @"bbcbp", @"bbcbp128", @"bbcm", @"bbcmt", @"bbcmc", @"electron",
+            @"c64", @"c64c", @"c128"
+        ];
+        set = [NSSet setWithArray: machines];
+    }
+    return [set containsObject: machine];
+}
+
+static BOOL HasLayout(NSString *machine) {
+
+    static NSSet *set = nil;
+    
+    /* these have a layout which adds 10% to the height. */
+    if (!set) {
+        NSArray *machines = @[
+            @"bbcb", @"bbca", @"bbcb_de", @"bbcb_us", @"bbcb_no", @"bbcbp", @"bbcbp128", @"bbcm", @"bbcmt", @"bbcmc", @"electron",
+            @"vt100", @"vt101", @"vt102", @"vt105", @"vt131", @"vt180"
+        ];
+        set = [NSSet setWithArray: machines];
+    }
+    return [set containsObject: machine];
+}
+
 @interface LaunchWindowController () {
     BOOL _loadingBookmark;
     NSString *_machine;
@@ -483,6 +513,9 @@ static NSString *ShellQuote(NSString *s) {
     // -confirm_quit?
     [argv addObject: @"-skip_gameinfo"];
 
+    // natural keyboard on by default.
+    if (NeedsNatural(_machine))
+        [argv addObject: @"-natural"];
     
     if (_mameMouse)
         [argv addObject: @"-mouse"]; // capture the mouse cursor when over the window.
@@ -531,6 +564,10 @@ static NSString *ShellQuote(NSString *s) {
 
             } else {
                 screen.height = round(screen.width * 3 / 4);
+            }
+            
+            if (HasLayout(_machine)) {
+                screen.height = round(screen.height * 1.1);
             }
             
             [argv addObject: @"-window"];
