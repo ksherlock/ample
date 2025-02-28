@@ -4788,6 +4788,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -4823,6 +4831,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4922,6 +4938,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -4957,6 +4981,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5056,6 +5088,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -5091,6 +5131,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5832,6 +5880,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -5867,6 +5923,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5995,6 +6059,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -6030,6 +6102,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6633,6 +6713,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -6668,6 +6756,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6767,6 +6863,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -6802,6 +6906,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8624,6 +8736,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -8659,6 +8779,14 @@
                 <string>smartboard</string>
                 <key>description</key>
                 <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9106,6 +9234,187 @@
                 <string>xm3301</string>
                 <key>description</key>
                 <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>adaptator_multitap</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:joy_p1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:joy_p2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
                 <key>default</key>
                 <false/>
               </dict>

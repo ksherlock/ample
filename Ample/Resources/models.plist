@@ -848,6 +848,42 @@
           <key>value</key>
           <string>macpb180c</string>
         </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 210</string>
+          <key>value</key>
+          <string>macpd210</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 230</string>
+          <key>value</key>
+          <string>macpd230</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 250</string>
+          <key>value</key>
+          <string>macpd250</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 270c</string>
+          <key>value</key>
+          <string>macpd270c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 280</string>
+          <key>value</key>
+          <string>macpd280</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 280c</string>
+          <key>value</key>
+          <string>macpd280c</string>
+        </dict>
       </array>
     </dict>
     <dict>

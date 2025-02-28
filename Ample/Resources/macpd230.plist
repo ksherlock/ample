@@ -3,9 +3,9 @@
 <plist version="1.0">
   <dict>
     <key>value</key>
-    <string>macpb160</string>
+    <string>macpd230</string>
     <key>description</key>
-    <string>Macintosh PowerBook 160</string>
+    <string>Macintosh PowerBook Duo 230</string>
     <key>media</key>
     <dict>
       <key>cdrom</key>
@@ -27,33 +27,13 @@
         <array>
           <dict>
             <key>intValue</key>
-            <integer>2097152</integer>
-            <key>description</key>
-            <string>2M</string>
-            <key>value</key>
-            <string>2M</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>intValue</key>
             <integer>4194304</integer>
             <key>description</key>
             <string>4M</string>
             <key>value</key>
             <string>4M</string>
             <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>intValue</key>
-            <integer>6291456</integer>
-            <key>description</key>
-            <string>6M</string>
-            <key>value</key>
-            <string>6M</string>
-            <key>default</key>
-            <false/>
+            <true/>
           </dict>
           <dict>
             <key>intValue</key>
@@ -77,11 +57,21 @@
           </dict>
           <dict>
             <key>intValue</key>
-            <integer>14680064</integer>
+            <integer>16777216</integer>
             <key>description</key>
-            <string>14M</string>
+            <string>16M</string>
             <key>value</key>
-            <string>14M</string>
+            <string>16M</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>intValue</key>
+            <integer>25165824</integer>
+            <key>description</key>
+            <string>24M</string>
+            <key>value</key>
+            <string>24M</string>
             <key>default</key>
             <false/>
           </dict>
@@ -114,114 +104,6 @@
         <string>smartport</string>
         <key>slots</key>
         <array>
-          <dict>
-            <key>name</key>
-            <string>fdc:0</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35dd</string>
-                <key>description</key>
-                <string>3.5" DD</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35hd</string>
-                <key>description</key>
-                <string>3.5" HD</string>
-                <key>default</key>
-                <true/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35sd</string>
-                <key>description</key>
-                <string>3.5" SD</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>fdc:1</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35dd</string>
-                <key>description</key>
-                <string>3.5" DD</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35hd</string>
-                <key>description</key>
-                <string>3.5" HD</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>35sd</string>
-                <key>description</key>
-                <string>3.5" SD</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>floppy_3_5</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-            </array>
-          </dict>
           <dict>
             <key>name</key>
             <string>scsi:0</string>
@@ -684,10 +566,6 @@
         <key>filter</key>
         <string>MC68030,MC68030_32</string>
       </dict>
-      <string>mac_flop_orig.xml</string>
-      <string>mac_flop_clcracked.xml</string>
-      <string>mac_flop.xml</string>
-      <string>mac_hdflop.xml</string>
     </array>
   </dict>
 </plist>

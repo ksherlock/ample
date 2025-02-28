@@ -213,7 +213,7 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <true/>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -247,7 +247,7 @@
                 <key>description</key>
                 <string>Hard Disk</string>
                 <key>default</key>
-                <false/>
+                <true/>
                 <key>media</key>
                 <dict>
                   <key>hard</key>
@@ -523,7 +523,7 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <false/>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
@@ -557,7 +557,7 @@
                 <key>description</key>
                 <string>Hard Disk</string>
                 <key>default</key>
-                <true/>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>hard</key>

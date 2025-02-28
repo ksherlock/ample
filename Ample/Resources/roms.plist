@@ -1318,6 +1318,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macpd210</string>
+      <key>description</key>
+      <string>Macintosh PowerBook Duo 210</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpd270c</string>
+      <key>description</key>
+      <string>Macintosh PowerBook Duo 270c</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macpd280c</string>
+      <key>description</key>
+      <string>Macintosh PowerBook Duo 280c</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macqd605</string>
       <key>description</key>
       <string>Macintosh Quadra 605</string>
@@ -1453,6 +1471,12 @@
       <string>bbc_ramdisc</string>
       <key>description</key>
       <string>Morley Electronics RAM Disc</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>m68hc05pge</string>
+      <key>description</key>
+      <string>Motorola M68HC05PGE</string>
     </dict>
     <dict>
       <key>value</key>

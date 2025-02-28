@@ -47,6 +47,8 @@ MACHINES = (
 	"macprtb", "macpb100",
 	# powerbook
 	"macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c",
+	"macpd210", "macpd230", "macpd250", "macpd270c", "macpd280", "macpd280c",
+
 
 	# 128k clones
 	# "unitron", "utrn1024",

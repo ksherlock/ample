@@ -51,7 +51,10 @@ mac_128k_children = ["mac128k", "mac512k", "mac512ke", "macplus",
 
 
 mac_portable_children = ["macprtb", "macpb100"]
-mac_powerbook_children = ["macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c"]
+mac_powerbook_children = [
+	"macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c",
+	"macpd210", "macpd230", "macpd250", "macpd270c", "macpd280", "macpd280c"
+]
 
 atari_st_children = ["st", "megast"]
 

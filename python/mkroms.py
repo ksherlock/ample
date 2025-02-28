@@ -140,7 +140,7 @@ def fix_machine_description(x, devname):
 
 def build_known_roms_list():
 	# https://archive.org/download/mame-merged/mame-merged/
-	infile = "mame-0.264-merged.html"
+	infile = "mame-0.273-merged.html"
 	# infile = "mame-0233-full.html"
 	# infile = "mame-0.231-merged.html"
 	rv = set()
@@ -175,6 +175,13 @@ mnames = {}
 rnames = set()
 
 known = build_known_roms_list()
+
+known.add('macpb180c')
+known.add('macpd210')
+known.add('macpd270c')
+known.add('macpd280c')
+known.add('m68hc05pge')
+
 
 for m in machines:
 
