@@ -341,6 +341,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>fx80</string>
+            <key>description</key>
+            <string>Epson FX-80</string>
+            <key>devname</key>
+            <string>epson_fx80</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>jx80</string>
+            <key>description</key>
+            <string>Epson JX-80</string>
+            <key>devname</key>
+            <string>epson_jx80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>lx800</string>
             <key>description</key>
             <string>Epson LX-800</string>

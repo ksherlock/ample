@@ -3569,6 +3569,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>lx800</string>
                 <key>description</key>
                 <string>Epson LX-800</string>
@@ -3719,6 +3735,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>lx800</string>
                 <key>description</key>
                 <string>Epson LX-800</string>
@@ -3864,6 +3896,22 @@
                 <string>ex800</string>
                 <key>description</key>
                 <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4661,6 +4709,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>lx800</string>
                 <key>description</key>
                 <string>Epson LX-800</string>
@@ -4835,6 +4899,22 @@
                 <string>ex800</string>
                 <key>description</key>
                 <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5557,6 +5637,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>lx800</string>
                 <key>description</key>
                 <string>Epson LX-800</string>
@@ -5764,6 +5860,22 @@
                 <string>ex800</string>
                 <key>description</key>
                 <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7700,6 +7812,22 @@
                 <string>ex800</string>
                 <key>description</key>
                 <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
                 <key>default</key>
                 <false/>
               </dict>

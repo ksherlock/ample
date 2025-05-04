@@ -595,11 +595,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -753,11 +769,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -911,11 +943,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1069,11 +1117,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1227,11 +1291,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1385,11 +1465,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2560,17 +2656,42 @@
     </array>
     <key>software</key>
     <array>
-      <string>mac_hdd.xml</string>
+      <dict>
+        <key>name</key>
+        <string>mac_hdd.xml</string>
+        <key>filter</key>
+        <string>MC68020</string>
+      </dict>
       <dict>
         <key>name</key>
         <string>mac_cdrom.xml</string>
         <key>filter</key>
         <string>MC68020</string>
       </dict>
-      <string>mac_flop_orig.xml</string>
-      <string>mac_flop_clcracked.xml</string>
-      <string>mac_flop.xml</string>
-      <string>mac_hdflop.xml</string>
+      <dict>
+        <key>name</key>
+        <string>mac_flop_orig.xml</string>
+        <key>filter</key>
+        <string>MC68020</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_flop_clcracked.xml</string>
+        <key>filter</key>
+        <string>MC68020</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_flop.xml</string>
+        <key>filter</key>
+        <string>MC68020</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_hdflop.xml</string>
+        <key>filter</key>
+        <string>MC68020</string>
+      </dict>
     </array>
   </dict>
 </plist>

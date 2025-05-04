@@ -672,17 +672,42 @@
     </array>
     <key>software</key>
     <array>
-      <string>mac_flop_orig.xml</string>
-      <string>mac_flop_clcracked.xml</string>
-      <string>mac_flop.xml</string>
-      <string>mac_hdd.xml</string>
+      <dict>
+        <key>name</key>
+        <string>mac_flop_orig.xml</string>
+        <key>filter</key>
+        <string>MC68000,macclasc</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_flop_clcracked.xml</string>
+        <key>filter</key>
+        <string>MC68000,macclasc</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_flop.xml</string>
+        <key>filter</key>
+        <string>MC68000,macclasc</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mac_hdd.xml</string>
+        <key>filter</key>
+        <string>MC68000,macclasc</string>
+      </dict>
       <dict>
         <key>name</key>
         <string>mac_cdrom.xml</string>
         <key>filter</key>
-        <string>MC68000</string>
+        <string>MC68000,macclasc</string>
       </dict>
-      <string>mac_hdflop.xml</string>
+      <dict>
+        <key>name</key>
+        <string>mac_hdflop.xml</string>
+        <key>filter</key>
+        <string>MC68000,macclasc</string>
+      </dict>
     </array>
   </dict>
 </plist>

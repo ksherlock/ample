@@ -523,11 +523,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -681,11 +697,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -839,11 +871,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -997,11 +1045,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1155,11 +1219,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1313,11 +1393,27 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>pc8</string>
+            <key>description</key>
+            <string>Lapis ProColor Server 8</string>
+            <key>devname</key>
+            <string>nb_pcs8</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>portrait</string>
             <key>description</key>
             <string>Macintosh II Portrait Video Card</string>
             <key>devname</key>
             <string>nb_wspt</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>workstation</string>
+            <key>description</key>
+            <string>Macintosh II Workstation Video Card</string>
+            <key>devname</key>
+            <string>nb_wkstn</string>
           </dict>
           <dict>
             <key>value</key>

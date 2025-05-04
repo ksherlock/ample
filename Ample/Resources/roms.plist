@@ -10,6 +10,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>acb2072</string>
+      <key>description</key>
+      <string>ACB-2072 RLL Drive Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_aga</string>
+      <key>description</key>
+      <string>AGA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_aga_pc200</string>
+      <key>description</key>
+      <string>AGA PC200</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_ams3</string>
       <key>description</key>
       <string>AMS 3" Microdrive Disc System</string>
@@ -22,9 +40,33 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>asc88</string>
+      <key>description</key>
+      <string>ASC-88 SCSI Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_autoprom</string>
       <key>description</key>
       <string>ATPL AutoPrommer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>stereo_fx</string>
+      <key>description</key>
+      <string>ATi Stereo F/X Audio Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>fdc344</string>
+      <key>description</key>
+      <string>Ably-Tech FDC-344</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>side116</string>
+      <key>description</key>
+      <string>Acculogic SIDE-1/16 IDE Disk Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -814,9 +856,81 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>c2031</string>
+      <key>description</key>
+      <string>Commodore 2031</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c2040</string>
+      <key>description</key>
+      <string>Commodore 2040</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c2040_fdc</string>
+      <key>description</key>
+      <string>Commodore 2040 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c3040</string>
+      <key>description</key>
+      <string>Commodore 3040</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c4023</string>
+      <key>description</key>
+      <string>Commodore 4023 Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c4040</string>
+      <key>description</key>
+      <string>Commodore 4040</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>c64</string>
       <key>description</key>
       <string>Commodore 64 (NTSC)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c8050</string>
+      <key>description</key>
+      <string>Commodore 8050</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c8050fdc</string>
+      <key>description</key>
+      <string>Commodore 8050 FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c8250</string>
+      <key>description</key>
+      <string>Commodore 8250</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c8280</string>
+      <key>description</key>
+      <string>Commodore 8280</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>d9060</string>
+      <key>description</key>
+      <string>Commodore D9060</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>d9090</string>
+      <key>description</key>
+      <string>Commodore D9090</string>
     </dict>
     <dict>
       <key>value</key>
@@ -829,6 +943,12 @@
       <string>mps1250</string>
       <key>description</key>
       <string>Commodore MPS-1250 Dot Matrix Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>sfd1001</string>
+      <key>description</key>
+      <string>Commodore SFD-1001</string>
     </dict>
     <dict>
       <key>value</key>
@@ -886,6 +1006,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>dectalk_isa</string>
+      <key>description</key>
+      <string>DECTalk-PC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>mcx128</string>
       <key>description</key>
       <string>Darren Atkinson's MCX-128 Cartridge</string>
@@ -940,6 +1066,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ec1841_0002</string>
+      <key>description</key>
+      <string>EC 1841.0002 (CGA)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>kb_ec1841</string>
       <key>description</key>
       <string>EC-1841 Keyboard</string>
@@ -970,6 +1102,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>3xtwin</string>
+      <key>description</key>
+      <string>Emerald Technology 3XTwin Twinax Emulation Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>enh2000</string>
       <key>description</key>
       <string>Enhancer 2000 Disk Drive</string>
@@ -997,6 +1135,12 @@
       <string>lx810l</string>
       <key>description</key>
       <string>Epson LX-810L</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_epc_mda</string>
+      <key>description</key>
+      <string>Ericsson PC Monochrome HR Graphics Board 1070</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1042,6 +1186,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>isa_hdc</string>
+      <key>description</key>
+      <string>Fixed Disk Controller Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>4dparprn</string>
       <key>description</key>
       <string>Fourth Dimension Parallel Printer Interface</string>
@@ -1051,6 +1201,12 @@
       <string>pds_hyper</string>
       <key>description</key>
       <string>GCC HyperDrive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_hercules</string>
+      <key>description</key>
+      <string>Hercules Graphics Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1072,9 +1228,39 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ega</string>
+      <key>description</key>
+      <string>IBM Enhanced Graphics Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_ibm_mda</string>
+      <key>description</key>
+      <string>IBM Monochrome Display And Printer Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>ibm_mfc</string>
+      <key>description</key>
+      <string>IBM PC Music Feature Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>kb_pcxt83</string>
       <key>description</key>
       <string>IBM PC/XT Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>isa_ibm_pgc</string>
+      <key>description</key>
+      <string>IBM Professional Graphics Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>ibm_vga</string>
+      <key>description</key>
+      <string>IBM VGA Graphics Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1099,6 +1285,12 @@
       <string>ie15_device</string>
       <key>description</key>
       <string>IE15</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cga_poisk2</string>
+      <key>description</key>
+      <string>ISA8_CGA_POISK2</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1165,6 +1357,12 @@
       <string>mc10</string>
       <key>description</key>
       <string>MC-10</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cga_mc1502</string>
+      <key>description</key>
+      <string>MC1502 CGA</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1390,9 +1588,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>fdcmag</string>
+      <key>description</key>
+      <string>Magitronic Multi Floppy Controller Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_tube_matchbox</string>
       <key>description</key>
       <string>Matchbox Co-Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>mshark</string>
+      <key>description</key>
+      <string>Mator SHARK</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1486,6 +1696,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>isa_pcmidi</string>
+      <key>description</key>
+      <string>Music Quest PC MIDI Card (IHQMQ9)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>p72</string>
       <key>description</key>
       <string>NEC PinWriter P72</string>
@@ -1507,6 +1723,12 @@
       <string>nb_image</string>
       <key>description</key>
       <string>NuBus Disk Image Pseudo-Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>cga_m24</string>
+      <key>description</key>
+      <string>Olivetti M24 CGA</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1738,6 +1960,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mpu401</string>
+      <key>description</key>
+      <string>Roland MPU-401 I/O Box</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>saa5050</string>
       <key>description</key>
       <string>SAA5050 Teletext Character Generator</string>
@@ -1747,6 +1975,18 @@
       <string>sdtandy_fdc</string>
       <key>description</key>
       <string>SDTANDY FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>hardbox</string>
+      <key>description</key>
+      <string>SSE HardBox</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pet_softbox</string>
+      <key>description</key>
+      <string>SSE SoftBox</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1948,6 +2188,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>isa_finalchs</string>
+      <key>description</key>
+      <string>The Final ChessCard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2thunpl</string>
       <key>description</key>
       <string>ThunderWare ThunderClock Plus</string>
@@ -2002,6 +2248,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>lba_enhancer</string>
+      <key>description</key>
+      <string>VS Systems LBA Enhancer BIOS 1995</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2ultrme</string>
       <key>description</key>
       <string>Videx UltraTerm (Enhanced //e)</string>
@@ -2038,6 +2290,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>wd1002a_wx1</string>
+      <key>description</key>
+      <string>WD1002A-WX1</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_we32kram</string>
       <key>description</key>
       <string>Watford Electronics 32K Shadow RAM</string>
@@ -2056,6 +2314,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>wd90c90_jk</string>
+      <key>description</key>
+      <string>Western Digital WD90C90-JK Graphics Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>wdxt_gen</string>
+      <key>description</key>
+      <string>Western Digital WDXT-GEN (Amstrad PC1512/1640)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>technica</string>
       <key>description</key>
       <string>Westfalia Technica Disk Drive</string>
@@ -2065,6 +2335,12 @@
       <string>electron_sidewndr</string>
       <key>description</key>
       <string>Wizard Sidewinder Rom Expansion Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>xtide</string>
+      <key>description</key>
+      <string>XT-IDE Fixed Drive Adapter</string>
     </dict>
     <dict>
       <key>value</key>
