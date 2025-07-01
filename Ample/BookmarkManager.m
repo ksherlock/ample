@@ -602,7 +602,7 @@ static NSString *kMenuContext = @"";
         if ([b automatic]) {
             
             [item setOnStateImage: [NSImage imageNamed: NSImageNameStatusAvailable]];
-            [item setState: NSOnState];
+            [item setState: NSControlStateValueOn];
         }
         //if ([b automatic]) [item setAttributedTitle: ItalicMenuString([b name])];
         //[item setState: [b automatic] ? NSMixedState : NSOffState];
