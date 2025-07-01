@@ -694,6 +694,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -1119,6 +1127,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -1440,6 +1456,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1810,6 +1834,201 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bbc_beebex</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:slot1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_beebide</string>
         <key>slots</key>
         <array>
@@ -1993,6 +2212,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2376,6 +2603,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3197,6 +3432,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -3573,6 +3816,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -3832,6 +4083,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4101,6 +4360,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -4365,6 +4632,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -4624,6 +4899,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5062,6 +5345,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5523,6 +5814,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6037,6 +6336,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -6296,6 +6603,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6904,6 +7219,172 @@
                 <string>17w</string>
                 <key>description</key>
                 <string>apl1.7w</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cu_teletext</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

@@ -221,6 +221,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>memexp</string>
             <key>description</key>
             <string>Apple II Memory Expansion Card</string>
@@ -792,6 +800,14 @@
             <string>Apple II High-Speed SCSI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1369,6 +1385,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>memexp</string>
             <key>description</key>
             <string>Apple II Memory Expansion Card</string>
@@ -1940,6 +1964,14 @@
             <string>Apple II High-Speed SCSI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2517,6 +2549,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>memexp</string>
             <key>description</key>
             <string>Apple II Memory Expansion Card</string>
@@ -3091,6 +3131,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>memexp</string>
             <key>description</key>
             <string>Apple II Memory Expansion Card</string>
@@ -3662,6 +3710,14 @@
             <string>Apple II High-Speed SCSI Card</string>
             <key>disabled</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ieee488</string>
+            <key>description</key>
+            <string>Apple II IEEE-488 Interface</string>
+            <key>devname</key>
+            <string>a2ieee488</string>
           </dict>
           <dict>
             <key>value</key>
@@ -6631,6 +6687,52 @@
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2ieee488</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:ieee_dev</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9122c</string>
+                <key>description</key>
+                <string>HP9122C Dual High density disk drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9133</string>
+                <key>description</key>
+                <string>HP9133 Floppy/Fixed disk drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hp9895</string>
+                <key>description</key>
+                <string>HP9895</string>
                 <key>default</key>
                 <false/>
               </dict>

@@ -903,6 +903,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>beebex</string>
+            <key>description</key>
+            <string>BEEBEX Extender For BBC Micro</string>
+            <key>devname</key>
+            <string>bbc_beebex</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>beebopl</string>
             <key>description</key>
             <string>BeebOPL FM Synthesiser</string>
@@ -1310,6 +1318,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1740,6 +1756,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -2061,6 +2085,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2431,6 +2463,201 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bbc_beebex</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:slot1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:slot4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cubio_r</string>
+                <key>description</key>
+                <string>Control Universal CUBIO w/ Race Controllers</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphc</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (colour)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cugraphm</string>
+                <key>description</key>
+                <string>Control Universal High Resolution Graphics card (monochrome)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>teletext</string>
+                <key>description</key>
+                <string>Control Universal Teletext Video Interface card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_beebide</string>
         <key>slots</key>
         <array>
@@ -2614,6 +2841,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2997,6 +3232,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3999,6 +4242,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -4375,6 +4626,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -4634,6 +4893,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4903,6 +5170,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -5167,6 +5442,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -5426,6 +5709,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5887,6 +6178,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6446,6 +6745,325 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bbc_tube_cms6809</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:bus1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:bus2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:bus3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:bus4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:bus5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:bus6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>4080term</string>
+                <key>description</key>
+                <string>CMS 40/80 Video Terminal Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fdc</string>
+                <key>description</key>
+                <string>CMS Floppy Disc Controller Board</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hires</string>
+                <key>description</key>
+                <string>CMS High Resolution Colour Graphics Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ieee</string>
+                <key>description</key>
+                <string>CMS IEEE Controller Board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_tube_rc6502</string>
         <key>slots</key>
         <array>
@@ -6989,6 +7607,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>beebopl</string>
                 <key>description</key>
                 <string>BeebOPL FM Synthesiser</string>
@@ -7248,6 +7874,14 @@
                 <string>autoprom</string>
                 <key>description</key>
                 <string>ATPL AutoPrommer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>beebex</string>
+                <key>description</key>
+                <string>BEEBEX Extender for BBC Micro</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7856,6 +8490,749 @@
                 <string>17w</string>
                 <key>description</key>
                 <string>apl1.7w</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cms_4080term</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cms_fdc</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:wd1770:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:wd1770:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:wd1770:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>35dd</string>
+                <key>description</key>
+                <string>3.5" DD</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_3_5</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cms_ieee</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:ieee_dev</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c2031</string>
+                <key>description</key>
+                <string>Commodore 2031</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c2040</string>
+                <key>description</key>
+                <string>Commodore 2040</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c3040</string>
+                <key>description</key>
+                <string>Commodore 3040</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c4023</string>
+                <key>description</key>
+                <string>Commodore 4023 Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c4040</string>
+                <key>description</key>
+                <string>Commodore 4040</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c8050</string>
+                <key>description</key>
+                <string>Commodore 8050</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c8250</string>
+                <key>description</key>
+                <string>Commodore 8250</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>c8280</string>
+                <key>description</key>
+                <string>Commodore 8280</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_8</key>
+                  <integer>2</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>d9060</string>
+                <key>description</key>
+                <string>Commodore D9060</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>d9090</string>
+                <key>description</key>
+                <string>Commodore D9090</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sfd1001</string>
+                <key>description</key>
+                <string>Commodore SFD-1001</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>floppy_5_25</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>shark</string>
+                <key>description</key>
+                <string>Mator SHARK</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hardbox</string>
+                <key>description</key>
+                <string>SSE HardBox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>softbox</string>
+                <key>description</key>
+                <string>SSE SoftBox</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cu_teletext</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:centronics</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Centronics Printer</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pl80</string>
+                <key>description</key>
+                <string>COMX PL-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox_stereo</string>
+                <key>description</key>
+                <string>Covox (Stereo-in-1)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>covox</string>
+                <key>description</key>
+                <string>Covox Speech Thing</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>digiblst</string>
+                <key>description</key>
+                <string>Digiblaster (DIY)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ap2000</string>
+                <key>description</key>
+                <string>Epson ActionPrinter 2000</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ex800</string>
+                <key>description</key>
+                <string>Epson EX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx800</string>
+                <key>description</key>
+                <string>Epson LX-800</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lx810l</string>
+                <key>description</key>
+                <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>p72</string>
+                <key>description</key>
+                <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>samdac</string>
+                <key>description</key>
+                <string>SAMDAC</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nlq401</string>
+                <key>description</key>
+                <string>Schneider NLQ 401 Matrix Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>chessmec</string>
+                <key>description</key>
+                <string>Tasc ChessMachine EC Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>smartboard</string>
+                <key>description</key>
+                <string>Tasc SmartBoard SB30 Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
