@@ -640,6 +640,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>cms_4080term</string>
+      <key>description</key>
+      <string>CMS 40/80 Video Terminal Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_tube_cms6809</string>
       <key>description</key>
       <string>CMS 6809 2nd Processor</string>
@@ -1201,6 +1207,24 @@
       <string>pds_hyper</string>
       <key>description</key>
       <string>GCC HyperDrive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>hp9122c</string>
+      <key>description</key>
+      <string>HP9122C Dual High Density Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>hp9133</string>
+      <key>description</key>
+      <string>HP9133 Floppy/Fixed Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>hp9895</string>
+      <key>description</key>
+      <string>HP9895</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2191,6 +2215,12 @@
       <string>isa_finalchs</string>
       <key>description</key>
       <string>The Final ChessCard</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>ef9365</string>
+      <key>description</key>
+      <string>Thomson EF9365</string>
     </dict>
     <dict>
       <key>value</key>
