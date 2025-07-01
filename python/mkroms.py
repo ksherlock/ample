@@ -181,6 +181,7 @@ known.add('macpd210')
 known.add('macpd270c')
 known.add('macpd280c')
 known.add('m68hc05pge')
+known.add('a2ieee488')
 
 
 for m in machines:

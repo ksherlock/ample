@@ -328,6 +328,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a2ieee488</string>
+      <key>description</key>
+      <string>Apple II IEEE-488 Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2memexp</string>
       <key>description</key>
       <string>Apple II Memory Expansion Card</string>
