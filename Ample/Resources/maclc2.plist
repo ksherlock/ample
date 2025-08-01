@@ -247,6 +247,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -410,6 +418,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -426,6 +442,22 @@
             <string>—None—</string>
             <key>default</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetlc</string>
+            <key>description</key>
+            <string>Apple Ethernet LC Card</string>
+            <key>devname</key>
+            <string>enetlc</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetlctp</string>
+            <key>description</key>
+            <string>Apple Ethernet LC Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetlctp</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1007,6 +1039,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>enetlc</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ver11</string>
+                <key>description</key>
+                <string>Ver. 1.1 (1992)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ver10</string>
+                <key>description</key>
+                <string>Ver. 1.0 (1990)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -1166,6 +1234,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>

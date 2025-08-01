@@ -720,6 +720,14 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -878,6 +886,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1440,6 +1456,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>enetnbtp</string>
+                <key>description</key>
+                <string>Apple Ethernet NB Twisted-Pair Card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>mdc48</string>
                 <key>description</key>
                 <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
@@ -1552,6 +1576,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>thunder4gx16</string>
+                <key>description</key>
+                <string>Radius Thunder IV GX video card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>radiustpd</string>
                 <key>description</key>
                 <string>Radius Two Page Display video card</string>
@@ -1604,6 +1636,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>enetnbtp</string>
+                <key>description</key>
+                <string>Apple Ethernet NB Twisted-Pair Card</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1712,6 +1752,14 @@
               <dict>
                 <key>value</key>
                 <string>thunder4gx</string>
+                <key>description</key>
+                <string>Radius Thunder IV GX video card</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>thunder4gx16</string>
                 <key>description</key>
                 <string>Radius Thunder IV GX video card</string>
                 <key>default</key>
@@ -2296,6 +2344,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>

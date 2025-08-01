@@ -347,6 +347,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -510,6 +518,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -526,6 +542,14 @@
             <string>—None—</string>
             <key>default</key>
             <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
           </dict>
           <dict>
             <key>value</key>
@@ -641,6 +665,14 @@
           <dict>
             <key>value</key>
             <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx16</string>
             <key>description</key>
             <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
@@ -705,6 +737,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mdc48</string>
             <key>description</key>
             <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
@@ -815,6 +855,14 @@
           <dict>
             <key>value</key>
             <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx16</string>
             <key>description</key>
             <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
@@ -879,6 +927,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mdc48</string>
             <key>description</key>
             <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
@@ -989,6 +1045,14 @@
           <dict>
             <key>value</key>
             <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx16</string>
             <key>description</key>
             <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
@@ -1053,6 +1117,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mdc48</string>
             <key>description</key>
             <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
@@ -1163,6 +1235,14 @@
           <dict>
             <key>value</key>
             <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx16</string>
             <key>description</key>
             <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
@@ -1227,6 +1307,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mdc48</string>
             <key>description</key>
             <string>Apple Macintosh Display Card 4/8 (MDC 1.0.1)</string>
@@ -1344,6 +1432,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>thunder4gx16</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>radiustpd</string>
             <key>description</key>
             <string>Radius Two Page Display Video Card</string>
@@ -1398,6 +1494,14 @@
             <string>—None—</string>
             <key>default</key>
             <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>enetnbtp</string>
+            <key>description</key>
+            <string>Apple Ethernet NB Twisted-Pair Card</string>
+            <key>devname</key>
+            <string>enetnbtp</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1511,6 +1615,14 @@
           <dict>
             <key>value</key>
             <string>thunder4gx</string>
+            <key>description</key>
+            <string>Radius Thunder IV GX Video Card</string>
+            <key>devname</key>
+            <string>nb_thungx</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>thunder4gx16</string>
             <key>description</key>
             <string>Radius Thunder IV GX Video Card</string>
             <key>devname</key>
@@ -2546,6 +2658,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
