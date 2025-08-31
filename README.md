@@ -1,11 +1,11 @@
 # Ample
 
-A slightly more user-friendly front-end for using MAME as an Apple II emulator. Requires Mac OS X 10.11+
+A slightly more user-friendly front-end for using MAME as an Apple II emulator. Requires Mac OS X 10.14+
 
 ![](screenshots/2021-07-01.png)
 
 
-A custom version of MAME is included.  (Only Apple 1/2/3 and Macintosh emulators are included in the custom version).
+A custom version of MAME is included.  The custom MAME build focuses on Apple II/Macintosh emulators but also includes a handful of other 8/16-bit home computers (BBC, Tandy, etc). There are also a handful of UI tweaks (such as menu items) and, for the Apple II, Uthernet II support.
 
 A note for Macintosh emulation:
 
