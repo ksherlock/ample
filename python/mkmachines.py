@@ -65,6 +65,7 @@ DISABLED = set((
 	('apple2gs', 'cffa202'),
 	('apple2gsr0', 'cffa202'),
 	('apple2gsr1', 'cffa202'),
+
 ))
 
 
@@ -390,6 +391,8 @@ DEVICE_EXCLUDE = set([
 	'cfp1080s',
 	'cf', # ATA compact flash
 	'cp2024', # Conner Peripherals CP-2024 hard disk
+
+	'mz1p16',
 ])
 
 def default_device_media(machine):
@@ -638,6 +641,8 @@ def make_slot(m, slotname, nodes):
 		desc = machine_cache[devname].find("description").text
 		default = x.get("default") == "yes"
 		disabled = name in DISABLED or (m, name) in DISABLED
+
+		if name in DEVICE_EXCLUDE: continue
 
 		d = { "value": name, "description": fix_machine_description(desc, devname) } # "devname": devname or ''}
 		if default: d["default"] = True

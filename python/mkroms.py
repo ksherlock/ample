@@ -126,6 +126,9 @@ EXCLUDE = set([
 	"a500n",
 	"a1000n",
 	"a2000n",
+
+	# skeletons, unavailable rom, etc.
+	'mz1p16',
 ])
 
 def fix_machine_description(x, devname):
