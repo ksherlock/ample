@@ -54,15 +54,15 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>mos510</string>
+            <string>510</string>
             <key>description</key>
-            <string>Enhanced MOS 5.10</string>
+            <string>MOS 5.10</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>mos500</string>
+            <string>500</string>
             <key>description</key>
-            <string>Original MOS 5.00</string>
+            <string>MOS 5.00</string>
           </dict>
         </array>
       </dict>
@@ -422,39 +422,6 @@
             <string>Votrax Type 'N Talk (Serial Port)</string>
             <key>devname</key>
             <string>serial_votraxtnt</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>econet254</string>
-        <key>description</key>
-        <string>Econet</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>e01</string>
-            <key>description</key>
-            <string>Acorn FileStore E01</string>
-            <key>devname</key>
-            <string>econet_e01</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>e01s</string>
-            <key>description</key>
-            <string>Acorn FileStore E01S</string>
-            <key>devname</key>
-            <string>econet_e01s</string>
           </dict>
         </array>
       </dict>
@@ -8843,6 +8810,8 @@
     </array>
     <key>software</key>
     <array>
+      <string>bbcmc_flop.xml</string>
+      <string>pro128s_flop.xml</string>
       <string>bbcm_flop.xml</string>
       <string>bbcb_flop.xml</string>
       <string>bbcb_flop_orig.xml</string>
@@ -8852,14 +8821,6 @@
         <key>filter</key>
         <string>M</string>
       </dict>
-      <dict>
-        <key>name</key>
-        <string>bbc_hdd.xml</string>
-        <key>filter</key>
-        <string>M</string>
-      </dict>
-      <string>bbcmc_flop.xml</string>
-      <string>pro128s_flop.xml</string>
     </array>
   </dict>
 </plist>

@@ -66,25 +66,25 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>os12</string>
+            <string>120</string>
             <key>description</key>
             <string>OS 1.20</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>os10</string>
+            <string>100</string>
             <key>description</key>
             <string>OS 1.00</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>os09</string>
+            <string>092</string>
             <key>description</key>
             <string>OS 0.92</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>os01</string>
+            <string>010</string>
             <key>description</key>
             <string>OS 0.10</string>
           </dict>

@@ -1282,6 +1282,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>isa_ibm_speech</string>
+      <key>description</key>
+      <string>IBM PS/2 Speech Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>isa_ibm_pgc</string>
       <key>description</key>
       <string>IBM Professional Graphics Controller</string>
@@ -2371,6 +2377,12 @@
       <string>electron_sidewndr</string>
       <key>description</key>
       <string>Wizard Sidewinder Rom Expansion Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>wyse700</string>
+      <key>description</key>
+      <string>Wyse 700</string>
     </dict>
     <dict>
       <key>value</key>

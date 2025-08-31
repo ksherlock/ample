@@ -8,15 +8,15 @@
     <string>BBC Master Turbo</string>
     <key>media</key>
     <dict>
-      <key>cass</key>
-      <integer>1</integer>
       <key>rom</key>
       <integer>3</integer>
+      <key>cass</key>
+      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
       <integer>640</integer>
-      <integer>256</integer>
+      <integer>512</integer>
     </array>
     <key>slots</key>
     <array>
@@ -56,21 +56,21 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>mos320</string>
+            <string>320</string>
             <key>description</key>
-            <string>Original MOS 3.20</string>
+            <string>MOS 3.20</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>mos350</string>
+            <string>350</string>
             <key>description</key>
-            <string>Enhanced MOS 3.50</string>
+            <string>MOS 3.50</string>
           </dict>
           <dict>
             <key>value</key>
-            <string>mos329</string>
+            <string>329</string>
             <key>description</key>
-            <string>FinMOS 3.29</string>
+            <string>MOS 3.29</string>
           </dict>
         </array>
       </dict>
@@ -438,39 +438,6 @@
             <string>Votrax Type 'N Talk (Serial Port)</string>
             <key>devname</key>
             <string>serial_votraxtnt</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>econet254</string>
-        <key>description</key>
-        <string>Econet</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>e01</string>
-            <key>description</key>
-            <string>Acorn FileStore E01</string>
-            <key>devname</key>
-            <string>econet_e01</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>e01s</string>
-            <key>description</key>
-            <string>Acorn FileStore E01S</string>
-            <key>devname</key>
-            <string>econet_e01s</string>
           </dict>
         </array>
       </dict>
@@ -5714,6 +5681,289 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>bbc_morleyaa</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:romslot0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot7</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot8</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot9</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot10</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot11</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>bbc_opus3</string>
         <key>slots</key>
         <array>
@@ -5891,6 +6141,82 @@
                   <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bbc_overlay</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:romslot0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:romslot2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ram</string>
+                <key>description</key>
+                <string>BBC Micro Sideways RAM</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
