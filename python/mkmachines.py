@@ -593,6 +593,12 @@ def make_smartport(machine):
 	slots = []
 	SLOTS = [
 		*['fdc:' + str(x) for x in range(0,4)],
+		*['v8:fdc:' + str(x) for x in range(0,4)], # mac color class
+		*['primetime:fdc:' + str(x) for x in range(0,4)], # quadra
+		*['sonora:fdc:' + str(x) for x in range(0,4)], # mac lc 3
+		*['iosb:fdc:' + str(x) for x in range(0,4)], # macqd610
+		# *[':fdc:' + str(x) for x in range(0,4)], # mac pb duo
+
 		*['scsi:' + str(x) for x in range(0,7)],
 		*['scsi0:' + str(x) for x in range(0,7)],
 		*['scsi1:' + str(x) for x in range(0,7)],
