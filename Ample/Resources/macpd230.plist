@@ -96,6 +96,47 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>dock</string>
+        <key>description</key>
+        <string>Dock</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>duodock</string>
+            <key>description</key>
+            <string>Duo Dock</string>
+            <key>devname</key>
+            <string>duodock</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>floppydock</string>
+            <key>description</key>
+            <string>Floppy Dock</string>
+            <key>devname</key>
+            <string>floppydock</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>etherudock</string>
+            <key>description</key>
+            <string>Newer Technology Ethernet MicroDock</string>
+            <key>devname</key>
+            <string>ethudock</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>

@@ -131,6 +131,8 @@ SLOTS = (
 
 	"pds", "pds030", "lcpds",
 
+	"dock", # pb duo
+
 	# st
 	"centronics", "mdin", "mdout",
 
@@ -183,6 +185,7 @@ SLOT_NAMES = {
 	"pds":        "PDS",
 	"pds030":     "PDS",
 	"lcpds":      "PDS",
+	"dock":       "Dock",
 
 	"centronics": "Printer",
 	"mdin":       "MIDI In",
