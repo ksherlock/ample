@@ -1750,6 +1750,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>zxbus_neogs</string>
+      <key>description</key>
+      <string>NeoGS / General Sound</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nss_tvinterface</string>
       <key>description</key>
       <string>Novag Super System TV Interface</string>

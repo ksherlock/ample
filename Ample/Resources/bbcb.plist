@@ -819,6 +819,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>datapen</string>
+            <key>description</key>
+            <string>Datapen Light Pen (BBC Micro)</string>
+            <key>devname</key>
+            <string>datapen</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>micromike</string>
+            <key>description</key>
+            <string>Micro Mike</string>
+            <key>devname</key>
+            <string>micromike</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>quinkey</string>
             <key>description</key>
             <string>Microwriter Quinkey Interface</string>
@@ -832,6 +848,30 @@
             <string>Robo Bitstik 2</string>
             <key>devname</key>
             <string>bbc_bitstik2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>stacklp</string>
+            <key>description</key>
+            <string>Stack Light Pen (BBC Micro)</string>
+            <key>devname</key>
+            <string>stacklp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>stacklr</string>
+            <key>description</key>
+            <string>Stack Light Rifle (BBC Micro)</string>
+            <key>devname</key>
+            <string>stacklr</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>robinlp</string>
+            <key>description</key>
+            <string>The Robin Educational Light Pen</string>
+            <key>devname</key>
+            <string>robinlp</string>
           </dict>
           <dict>
             <key>value</key>

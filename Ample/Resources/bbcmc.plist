@@ -83,6 +83,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>jafacart</string>
+            <key>description</key>
+            <string>JAFA Systems Master Compact Cartridge Adaptor</string>
+            <key>devname</key>
+            <string>bbc_jafacart</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>magazzino</string>
+            <key>description</key>
+            <string>Magazzino Parametrico</string>
+            <key>devname</key>
+            <string>bbc_magazzino</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mertec</string>
             <key>description</key>
             <string>Mertec Compact Companion</string>
@@ -5135,6 +5151,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>datapen</string>
+                <key>description</key>
+                <string>Datapen Light Pen (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>micromike</string>
+                <key>description</key>
+                <string>Micro Mike</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>quinkey</string>
                 <key>description</key>
                 <string>Microwriter Quinkey Interface</string>
@@ -5146,6 +5178,30 @@
                 <string>bitstik2</string>
                 <key>description</key>
                 <string>Robo Bitstik 2</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>stacklp</string>
+                <key>description</key>
+                <string>Stack Light Pen (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>stacklr</string>
+                <key>description</key>
+                <string>Stack Light Rifle (BBC Micro)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>robinlp</string>
+                <key>description</key>
+                <string>The Robin Educational Light Pen</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8815,6 +8871,7 @@
       <string>bbcm_flop.xml</string>
       <string>bbcb_flop.xml</string>
       <string>bbcb_flop_orig.xml</string>
+      <string>bbcm_cart.xml</string>
       <dict>
         <key>name</key>
         <string>bbc_rom.xml</string>

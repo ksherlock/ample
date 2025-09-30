@@ -960,6 +960,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>micromike</string>
+                <key>description</key>
+                <string>Micro Mike</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>quinkey</string>
                 <key>description</key>
                 <string>Microwriter Quinkey Interface</string>
@@ -1205,6 +1213,14 @@
                 <string>bitstik1</string>
                 <key>description</key>
                 <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>micromike</string>
+                <key>description</key>
+                <string>Micro Mike</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2534,6 +2550,14 @@
                 <string>bitstik1</string>
                 <key>description</key>
                 <string>Acorn Bitstik</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>micromike</string>
+                <key>description</key>
+                <string>Micro Mike</string>
                 <key>default</key>
                 <false/>
               </dict>
