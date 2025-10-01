@@ -38,7 +38,6 @@
 		B63480522D2DF25900C7408E /* bbcmc.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5BD2B1168BF0063F9D8 /* bbcmc.plist */; };
 		B63480532D2DF25900C7408E /* bbcmt.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C02B1168BF0063F9D8 /* bbcmt.plist */; };
 		B63480542D2DF27400C7408E /* electron.plist in Resources */ = {isa = PBXBuildFile; fileRef = B636F5C62B1168C00063F9D8 /* electron.plist */; };
-		B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; };
 		B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09926784A1200B23BFD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C09C26784A4800B23BFD /* Sparkle.framework */; };
 		B635C09F26784D4700B23BFD /* AmpleLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B635C09E26784D4700B23BFD /* AmpleLite.m */; };
@@ -428,7 +427,6 @@
 		B67878F62B01732700CFACF2 /* macse.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32432605482500418375 /* macse.plist */; };
 		B67878F72B01732700CFACF2 /* macsefd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE32402605482500418375 /* macsefd.plist */; };
 		B67878F82B01732700CFACF2 /* megast.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66116872A2535F50038A3E2 /* megast.plist */; };
-		B67878F92B01732700CFACF2 /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F524F5F36F005CB652 /* models.plist */; };
 		B67878FA2B01732700CFACF2 /* prav8c.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0C24F5F374005CB652 /* prav8c.plist */; };
 		B67878FB2B01732700CFACF2 /* prav82.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6109A0D24F5F374005CB652 /* prav82.plist */; };
 		B67878FC2B01732700CFACF2 /* space84.plist in Resources */ = {isa = PBXBuildFile; fileRef = B61099F024F5F36E005CB652 /* space84.plist */; };
@@ -585,7 +583,6 @@
 		B6EEFAC62B9ABCAE0068B47C /* d64plus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB02B9ABCAE0068B47C /* d64plus.plist */; };
 		B6EEFAC72B9ABCAE0068B47C /* d64plus.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB02B9ABCAE0068B47C /* d64plus.plist */; };
 		B6EEFAC82B9ABCAE0068B47C /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB12B9ABCAE0068B47C /* models.plist */; };
-		B6EEFAC92B9ABCAE0068B47C /* models.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB12B9ABCAE0068B47C /* models.plist */; };
 		B6EEFACA2B9ABCAE0068B47C /* coco3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB22B9ABCAE0068B47C /* coco3p.plist */; };
 		B6EEFACB2B9ABCAE0068B47C /* coco3p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB22B9ABCAE0068B47C /* coco3p.plist */; };
 		B6EEFACC2B9ABCAE0068B47C /* dragon200.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EEFAB32B9ABCAE0068B47C /* dragon200.plist */; };
@@ -1116,7 +1113,6 @@
 				B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */,
 				B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */,
 				B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */,
-				B635C09A26784A1200B23BFD /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1719,7 +1715,7 @@
 		B6BA257324E99BE9005FB8FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = "Kelvin Sherlock";
 				TargetAttributes = {
 					B6374ABC260EBBC90045CA16 = {
@@ -2017,7 +2013,6 @@
 				B67879232B0195DB00CFACF2 /* sun4_50.plist in Resources */,
 				B67878992B01732700CFACF2 /* las128e2.plist in Resources */,
 				B6D6DE3B24FACF4F00661A5F /* Defaults.plist in Resources */,
-				B67878F92B01732700CFACF2 /* models.plist in Resources */,
 				B67878952B01732700CFACF2 /* ip6000.plist in Resources */,
 				B6FECDD62BA8AA080025B402 /* oric1.plist in Resources */,
 				B67878A62B01732700CFACF2 /* maclc3p.plist in Resources */,
@@ -2132,7 +2127,6 @@
 				B67877FC2B01732600CFACF2 /* ip2700.plist in Resources */,
 				B65771632D25D1BB00B1B10A /* apple2epse.plist in Resources */,
 				B67879322B0195DB00CFACF2 /* sun2_120.plist in Resources */,
-				B6EEFAC92B9ABCAE0068B47C /* models.plist in Resources */,
 				B67878492B01732600CFACF2 /* craft2p.plist in Resources */,
 				B678780F2B01732600CFACF2 /* maclc3p.plist in Resources */,
 				B67877D22B01732600CFACF2 /* ace100.plist in Resources */,
@@ -2702,7 +2696,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72;
+				CURRENT_PROJECT_VERSION = 73;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2715,7 +2709,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = "0.280-u2";
+				MARKETING_VERSION = "0.281-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2728,7 +2722,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72;
+				CURRENT_PROJECT_VERSION = 73;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2741,7 +2735,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = "0.280-u2";
+				MARKETING_VERSION = "0.281-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2754,7 +2748,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72;
+				CURRENT_PROJECT_VERSION = 73;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2767,7 +2761,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.280;
+				MARKETING_VERSION = 0.281;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2780,7 +2774,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72;
+				CURRENT_PROJECT_VERSION = 73;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "AMPLE_LITE=1";
 				INFOPLIST_FILE = Ample/Info.plist;
@@ -2789,7 +2783,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.280;
+				MARKETING_VERSION = 0.281;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
