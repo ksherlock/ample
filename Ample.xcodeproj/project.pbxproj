@@ -2696,7 +2696,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 74;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2709,7 +2709,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = "0.281-u2";
+				MARKETING_VERSION = "0.282-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2722,7 +2722,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 74;
 				DEVELOPMENT_TEAM = 583V9CR5RE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2735,7 +2735,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = "0.281-u2";
+				MARKETING_VERSION = "0.282-u2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksherlock.ample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2748,7 +2748,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 74;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2761,7 +2761,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.281;
+				MARKETING_VERSION = 0.282;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2774,7 +2774,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ample/Ample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 74;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "AMPLE_LITE=1";
 				INFOPLIST_FILE = Ample/Info.plist;
@@ -2783,7 +2783,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 0.281;
+				MARKETING_VERSION = 0.282;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ksherlock.ample-lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
