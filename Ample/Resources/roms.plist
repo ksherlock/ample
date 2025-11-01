@@ -1234,6 +1234,48 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>heath_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_imaginator_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board Plus Cleveland Codonics Imaginator I-100</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_gp19_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board Plus Northwest Digital Systems GP-19</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_super19_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board W/Super19 ROM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_superset_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board W/Superset ROM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_ultra_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board W/Ultra ROM</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>heath_watz_tlb</string>
+      <key>description</key>
+      <string>Heath Terminal Logic Board W/Watzman ROM</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>isa_hercules</string>
       <key>description</key>
       <string>Hercules Graphics Card</string>
@@ -1399,6 +1441,12 @@
       <string>cga_mc1502</string>
       <key>description</key>
       <string>MC1502 CGA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>mm5740</string>
+      <key>description</key>
+      <string>MM5740 Keyboard Encoder</string>
     </dict>
     <dict>
       <key>value</key>
