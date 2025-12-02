@@ -244,6 +244,35 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>scsi</string>
             <key>description</key>
             <string>Apple II SCSI Card</string>
@@ -908,6 +937,35 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>scsi</string>
             <key>description</key>
             <string>Apple II SCSI Card</string>
@@ -1569,6 +1627,35 @@
             <string>Apple II Parallel Printer Interface Card</string>
             <key>devname</key>
             <string>a2parprn</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2238,6 +2325,35 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>scsi</string>
             <key>description</key>
             <string>Apple II SCSI Card</string>
@@ -2899,6 +3015,35 @@
             <string>Apple II Parallel Printer Interface Card</string>
             <key>devname</key>
             <string>a2parprn</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardfp</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Applesoft BASIC)</string>
+            <key>devname</key>
+            <string>a2romfp</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcard</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Custom)</string>
+            <key>devname</key>
+            <string>a2romusr</string>
+            <key>media</key>
+            <dict>
+              <key>rom</key>
+              <integer>1</integer>
+            </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>romcardint</string>
+            <key>description</key>
+            <string>Apple II ROM Card (Integer BASIC)</string>
+            <key>devname</key>
+            <string>a2romint</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5096,6 +5241,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -5155,6 +5308,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -5220,6 +5381,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -5279,6 +5448,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -5344,6 +5521,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -5406,6 +5591,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -5465,6 +5658,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6059,6 +6260,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>a2romint</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aid1</string>
+                <key>description</key>
+                <string>Programmer's Aid #1</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watson</string>
+                <key>description</key>
+                <string>The Inspector and Watson (Omega MicroWare)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>a2scsi</string>
         <key>slots</key>
         <array>
@@ -6100,6 +6337,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6165,6 +6410,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6224,6 +6477,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6289,6 +6550,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6351,6 +6620,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6410,6 +6687,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6482,6 +6767,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6541,6 +6834,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6606,6 +6907,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6665,6 +6974,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6730,6 +7047,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6792,6 +7117,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6851,6 +7184,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -6923,6 +7264,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -6982,6 +7331,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -7047,6 +7404,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -7106,6 +7471,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -7171,6 +7544,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -7233,6 +7614,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -7292,6 +7681,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -9347,6 +9744,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -9406,6 +9811,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -9471,6 +9884,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -9530,6 +9951,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -9595,6 +10024,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -9657,6 +10094,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -9716,6 +10161,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
