@@ -848,26 +848,41 @@
           <key>value</key>
           <string>macpb180c</string>
         </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>description</key>
-      <string>Atari ST</string>
-      <key>value</key>
-      <string>st</string>
-      <key>children</key>
-      <array>
         <dict>
           <key>description</key>
-          <string>ST (USA)</string>
+          <string>Macintosh PowerBook Duo 210</string>
           <key>value</key>
-          <string>st</string>
+          <string>macpd210</string>
         </dict>
         <dict>
           <key>description</key>
-          <string>MEGA ST (USA)</string>
+          <string>Macintosh PowerBook Duo 230</string>
           <key>value</key>
-          <string>megast</string>
+          <string>macpd230</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 250</string>
+          <key>value</key>
+          <string>macpd250</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 270c</string>
+          <key>value</key>
+          <string>macpd270c</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 280</string>
+          <key>value</key>
+          <string>macpd280</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh PowerBook Duo 280c</string>
+          <key>value</key>
+          <string>macpd280c</string>
         </dict>
       </array>
     </dict>
@@ -941,6 +956,48 @@
           <string>Acorn Electron</string>
           <key>value</key>
           <string>electron</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Atari ST</string>
+      <key>value</key>
+      <string>st</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>ST (USA)</string>
+          <key>value</key>
+          <string>st</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>MEGA ST (USA)</string>
+          <key>value</key>
+          <string>megast</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Commodore</string>
+      <key>value</key>
+      <string>c64</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64 (NTSC)</string>
+          <key>value</key>
+          <string>c64</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Commodore 64C (NTSC)</string>
+          <key>value</key>
+          <string>c64c</string>
         </dict>
       </array>
     </dict>
@@ -1118,33 +1175,6 @@
           <string>Amiga 2000 (NTSC)</string>
           <key>value</key>
           <string>a2000n</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>description</key>
-      <string>Commodore</string>
-      <key>value</key>
-      <string>c64</string>
-      <key>children</key>
-      <array>
-        <dict>
-          <key>description</key>
-          <string>Commodore 64 (NTSC)</string>
-          <key>value</key>
-          <string>c64</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Commodore 64C (NTSC)</string>
-          <key>value</key>
-          <string>c64c</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Commodore 128 (NTSC)</string>
-          <key>value</key>
-          <string>c128</string>
         </dict>
       </array>
     </dict>

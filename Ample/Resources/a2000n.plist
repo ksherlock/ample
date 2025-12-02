@@ -99,6 +99,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>h19</string>
+            <key>description</key>
+            <string>Heath H19 Terminal (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_heath_h19</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ie15</string>
             <key>description</key>
             <string>IE15 Terminal</string>
@@ -243,6 +251,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -320,6 +336,22 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>fx80</string>
+            <key>description</key>
+            <string>Epson FX-80</string>
+            <key>devname</key>
+            <string>epson_fx80</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>jx80</string>
+            <key>description</key>
+            <string>Epson JX-80</string>
+            <key>devname</key>
+            <string>epson_jx80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>lx800</string>
             <key>description</key>
             <string>Epson LX-800</string>
@@ -333,6 +365,14 @@
             <string>Epson LX-810L</string>
             <key>devname</key>
             <string>lx810l</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rx80</string>
+            <key>description</key>
+            <string>Epson RX-80</string>
+            <key>devname</key>
+            <string>epson_rx80</string>
           </dict>
           <dict>
             <key>value</key>
@@ -374,530 +414,13 @@
             <key>devname</key>
             <string>centronics_smartboard</string>
           </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro1</string>
-        <key>description</key>
-        <string>Zorro 1</string>
-        <key>options</key>
-        <array>
           <dict>
             <key>value</key>
-            <string></string>
+            <string>adaptator</string>
             <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>buddha</string>
-            <key>description</key>
-            <string>Buddha IDE Controller</string>
+            <string>The Adaptator 2x DE-9 Multitap</string>
             <key>devname</key>
-            <string>zorro_buddha</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2052</string>
-            <key>description</key>
-            <string>CBM A2052 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2052</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2058</string>
-            <key>description</key>
-            <string>CBM A2058 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2058</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2065</string>
-            <key>description</key>
-            <string>CBM A2065 Ethernet Card</string>
-            <key>devname</key>
-            <string>zorro_a2065</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2091</string>
-            <key>description</key>
-            <string>CBM A2091 HD Controller</string>
-            <key>devname</key>
-            <string>zorro_a2091</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2232</string>
-            <key>description</key>
-            <string>CBM A2232 Serial Card</string>
-            <key>devname</key>
-            <string>zorro_a2232</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>framemaster</string>
-            <key>description</key>
-            <string>FrameMaster Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_framemaster</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>picasso2p</string>
-            <key>description</key>
-            <string>Picasso II+ RTG</string>
-            <key>devname</key>
-            <string>zorro_picasso2p</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rainbow2</string>
-            <key>description</key>
-            <string>Rainbow II Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_rainbow2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ripple</string>
-            <key>description</key>
-            <string>RIPPLE IDE Interface</string>
-            <key>devname</key>
-            <string>zorro_ripple</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>toccata</string>
-            <key>description</key>
-            <string>Toccata SoundCard</string>
-            <key>devname</key>
-            <string>zorro_toccata</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro2</string>
-        <key>description</key>
-        <string>Zorro 2</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>buddha</string>
-            <key>description</key>
-            <string>Buddha IDE Controller</string>
-            <key>devname</key>
-            <string>zorro_buddha</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2052</string>
-            <key>description</key>
-            <string>CBM A2052 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2052</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2058</string>
-            <key>description</key>
-            <string>CBM A2058 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2058</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2065</string>
-            <key>description</key>
-            <string>CBM A2065 Ethernet Card</string>
-            <key>devname</key>
-            <string>zorro_a2065</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2091</string>
-            <key>description</key>
-            <string>CBM A2091 HD Controller</string>
-            <key>devname</key>
-            <string>zorro_a2091</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2232</string>
-            <key>description</key>
-            <string>CBM A2232 Serial Card</string>
-            <key>devname</key>
-            <string>zorro_a2232</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>framemaster</string>
-            <key>description</key>
-            <string>FrameMaster Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_framemaster</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>picasso2p</string>
-            <key>description</key>
-            <string>Picasso II+ RTG</string>
-            <key>devname</key>
-            <string>zorro_picasso2p</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rainbow2</string>
-            <key>description</key>
-            <string>Rainbow II Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_rainbow2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ripple</string>
-            <key>description</key>
-            <string>RIPPLE IDE Interface</string>
-            <key>devname</key>
-            <string>zorro_ripple</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>toccata</string>
-            <key>description</key>
-            <string>Toccata SoundCard</string>
-            <key>devname</key>
-            <string>zorro_toccata</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro3</string>
-        <key>description</key>
-        <string>Zorro 3</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>buddha</string>
-            <key>description</key>
-            <string>Buddha IDE Controller</string>
-            <key>devname</key>
-            <string>zorro_buddha</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2052</string>
-            <key>description</key>
-            <string>CBM A2052 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2052</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2058</string>
-            <key>description</key>
-            <string>CBM A2058 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2058</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2065</string>
-            <key>description</key>
-            <string>CBM A2065 Ethernet Card</string>
-            <key>devname</key>
-            <string>zorro_a2065</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2091</string>
-            <key>description</key>
-            <string>CBM A2091 HD Controller</string>
-            <key>devname</key>
-            <string>zorro_a2091</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2232</string>
-            <key>description</key>
-            <string>CBM A2232 Serial Card</string>
-            <key>devname</key>
-            <string>zorro_a2232</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>framemaster</string>
-            <key>description</key>
-            <string>FrameMaster Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_framemaster</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>picasso2p</string>
-            <key>description</key>
-            <string>Picasso II+ RTG</string>
-            <key>devname</key>
-            <string>zorro_picasso2p</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rainbow2</string>
-            <key>description</key>
-            <string>Rainbow II Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_rainbow2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ripple</string>
-            <key>description</key>
-            <string>RIPPLE IDE Interface</string>
-            <key>devname</key>
-            <string>zorro_ripple</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>toccata</string>
-            <key>description</key>
-            <string>Toccata SoundCard</string>
-            <key>devname</key>
-            <string>zorro_toccata</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro4</string>
-        <key>description</key>
-        <string>Zorro 4</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>buddha</string>
-            <key>description</key>
-            <string>Buddha IDE Controller</string>
-            <key>devname</key>
-            <string>zorro_buddha</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2052</string>
-            <key>description</key>
-            <string>CBM A2052 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2052</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2058</string>
-            <key>description</key>
-            <string>CBM A2058 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2058</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2065</string>
-            <key>description</key>
-            <string>CBM A2065 Ethernet Card</string>
-            <key>devname</key>
-            <string>zorro_a2065</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2091</string>
-            <key>description</key>
-            <string>CBM A2091 HD Controller</string>
-            <key>devname</key>
-            <string>zorro_a2091</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2232</string>
-            <key>description</key>
-            <string>CBM A2232 Serial Card</string>
-            <key>devname</key>
-            <string>zorro_a2232</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>framemaster</string>
-            <key>description</key>
-            <string>FrameMaster Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_framemaster</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>picasso2p</string>
-            <key>description</key>
-            <string>Picasso II+ RTG</string>
-            <key>devname</key>
-            <string>zorro_picasso2p</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rainbow2</string>
-            <key>description</key>
-            <string>Rainbow II Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_rainbow2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ripple</string>
-            <key>description</key>
-            <string>RIPPLE IDE Interface</string>
-            <key>devname</key>
-            <string>zorro_ripple</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>toccata</string>
-            <key>description</key>
-            <string>Toccata SoundCard</string>
-            <key>devname</key>
-            <string>zorro_toccata</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro5</string>
-        <key>description</key>
-        <string>Zorro 5</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <true/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>buddha</string>
-            <key>description</key>
-            <string>Buddha IDE Controller</string>
-            <key>devname</key>
-            <string>zorro_buddha</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2052</string>
-            <key>description</key>
-            <string>CBM A2052 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2052</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2058</string>
-            <key>description</key>
-            <string>CBM A2058 Fast Memory</string>
-            <key>devname</key>
-            <string>zorro_a2058</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2065</string>
-            <key>description</key>
-            <string>CBM A2065 Ethernet Card</string>
-            <key>devname</key>
-            <string>zorro_a2065</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2091</string>
-            <key>description</key>
-            <string>CBM A2091 HD Controller</string>
-            <key>devname</key>
-            <string>zorro_a2091</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>a2232</string>
-            <key>description</key>
-            <string>CBM A2232 Serial Card</string>
-            <key>devname</key>
-            <string>zorro_a2232</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>framemaster</string>
-            <key>description</key>
-            <string>FrameMaster Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_framemaster</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>picasso2p</string>
-            <key>description</key>
-            <string>Picasso II+ RTG</string>
-            <key>devname</key>
-            <string>zorro_picasso2p</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>rainbow2</string>
-            <key>description</key>
-            <string>Rainbow II Framebuffer</string>
-            <key>devname</key>
-            <string>zorro_rainbow2</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>ripple</string>
-            <key>description</key>
-            <string>RIPPLE IDE Interface</string>
-            <key>devname</key>
-            <string>zorro_ripple</string>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>toccata</string>
-            <key>description</key>
-            <string>Toccata SoundCard</string>
-            <key>devname</key>
-            <string>zorro_toccata</string>
+            <string>adaptator_multitap</string>
           </dict>
         </array>
       </dict>
@@ -1228,144 +751,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>cdd2000</string>
+        <string>adaptator_multitap</string>
         <key>slots</key>
         <array>
           <dict>
             <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v126</string>
-                <key>description</key>
-                <string>Firmware v1.26</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v125</string>
-                <key>description</key>
-                <string>Firmware v1.25</string>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>cdu561_25</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>19a</string>
-                <key>description</key>
-                <string>apl1.9a</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>18f</string>
-                <key>description</key>
-                <string>apl1.8F</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>17w</string>
-                <key>description</key>
-                <string>apl1.7w</string>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>px320a</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v106</string>
-                <key>description</key>
-                <string>Firmware v1.06</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v105</string>
-                <key>description</key>
-                <string>Firmware v1.05</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v104</string>
-                <key>description</key>
-                <string>Firmware v1.04a</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v103</string>
-                <key>description</key>
-                <string>Firmware v1.03</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v102</string>
-                <key>description</key>
-                <string>Firmware v1.02</string>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>rs232_patch_box</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:dce</string>
+            <string>:joy_p1</string>
             <key>options</key>
             <array>
               <dict>
@@ -1374,196 +765,85 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>scorpion</string>
+                <string>joy</string>
                 <key>description</key>
-                <string>Micro-Robotics Scorpion Intelligent Controller</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>msystems_mouse</string>
-                <key>description</key>
-                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>nss_tvi</string>
-                <key>description</key>
-                <string>Novag Super System TV Interface</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS-232 Null Modem</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS-232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>mockingboard</string>
-                <key>description</key>
-                <string>Sweet Micro Systems Mockingboard D</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>scorpion_ic</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
+                <string>Atari / CBM Digital joystick</string>
                 <key>default</key>
                 <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>61203</string>
+                <string>wheel</string>
                 <key>description</key>
-                <string>Version 61203 (3rd Dec 1986)</string>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>sunkbd_adaptor</string>
-        <key>slots</key>
-        <array>
           <dict>
             <key>name</key>
-            <string>:keyboard</string>
+            <string>:joy_p2</string>
             <key>options</key>
             <array>
               <dict>
@@ -1572,53 +852,77 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
                 <true/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type3hle</string>
+                <string>wheel</string>
                 <key>description</key>
-                <string>Sun Type 3 Keyboard (HLE)</string>
+                <string>Atari / CBM Driving Wheel</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type4hle</string>
+                <string>pad</string>
                 <key>description</key>
-                <string>Sun Type 4 Keyboard (HLE)</string>
+                <string>Atari / CBM Dual paddles</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5gbhle</string>
+                <string>keypad</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <string>Atari / CBM Keypad</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5jphle</string>
+                <string>lp</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <string>Atari / CBM Light Pen</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5sehle</string>
+                <string>mouse</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <string>Atari / CBM Mouse</string>
                 <key>default</key>
                 <false/>
               </dict>
               <dict>
                 <key>value</key>
-                <string>type5hle</string>
+                <string>trakball</string>
                 <key>description</key>
-                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1628,7 +932,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>zorro_a2091</string>
+        <string>amiga_a2091</string>
         <key>slots</key>
         <array>
           <dict>
@@ -1645,24 +949,12 @@
                 <string>—Default—</string>
                 <key>default</key>
                 <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v46</string>
-                <key>description</key>
-                <string>Version 4.6</string>
               </dict>
               <dict>
                 <key>value</key>
                 <string>v592</string>
                 <key>description</key>
                 <string>Version 5.92</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v60</string>
-                <key>description</key>
-                <string>Version 6.0</string>
               </dict>
               <dict>
                 <key>value</key>
@@ -1731,6 +1023,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -1763,7 +1063,7 @@
                 <key>description</key>
                 <string>—None—</string>
                 <key>default</key>
-                <false/>
+                <true/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1793,11 +1093,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
                 <key>default</key>
-                <true/>
+                <false/>
                 <key>media</key>
                 <dict>
                   <key>hard</key>
@@ -1852,6 +1160,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1917,6 +1233,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -1976,6 +1300,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -2041,6 +1373,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>harddisk</string>
                 <key>description</key>
                 <string>Hard Disk</string>
@@ -2066,7 +1406,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>zorro_a2232</string>
+        <string>amiga_a2232</string>
         <key>slots</key>
         <array>
           <dict>
@@ -2081,6 +1421,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -2225,6 +1573,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2245,6 +1601,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -2386,6 +1750,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2406,6 +1778,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -2547,6 +1927,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2567,6 +1955,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -2708,6 +2104,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2728,6 +2132,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -2869,6 +2281,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -2889,6 +2309,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -3030,6 +2458,14 @@
                 <string>swtpc8212</string>
                 <key>description</key>
                 <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3050,6 +2486,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>ie15</string>
                 <key>description</key>
                 <string>IE15 Terminal</string>
@@ -3194,41 +2638,13 @@
                 <key>default</key>
                 <false/>
               </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro_ar1</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
               <dict>
                 <key>value</key>
-                <string></string>
+                <string>votraxtnt</string>
                 <key>description</key>
-                <string>—Default—</string>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v100</string>
-                <key>description</key>
-                <string>Version 1.00</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v150</string>
-                <key>description</key>
-                <string>Version 1.50</string>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -3236,85 +2652,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>zorro_ar2</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v205</string>
-                <key>description</key>
-                <string>Version 2.05</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v212</string>
-                <key>description</key>
-                <string>Version 2.12</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v214</string>
-                <key>description</key>
-                <string>Version 2.14</string>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro_ar3</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>bios</string>
-            <key>description</key>
-            <string>ROM</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—Default—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v309</string>
-                <key>description</key>
-                <string>Version 3.09</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>v317</string>
-                <key>description</key>
-                <string>Version 3.17</string>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>zorro_buddha</string>
+        <string>amiga_buddha</string>
         <key>slots</key>
         <array>
           <dict>
@@ -3610,7 +2948,504 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>zorro_ripple</string>
+        <string>amiga_oktagon2008</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:scsi:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>amiga_ripple</string>
         <key>slots</key>
         <array>
           <dict>
@@ -3898,6 +3733,536 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>cdd2000</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v126</string>
+                <key>description</key>
+                <string>Firmware v1.26</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v125</string>
+                <key>description</key>
+                <string>Firmware v1.25</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>cdu561_25</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19a</string>
+                <key>description</key>
+                <string>apl1.9a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>18f</string>
+                <key>description</key>
+                <string>apl1.8F</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>17w</string>
+                <key>description</key>
+                <string>apl1.7w</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_watz_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Watzman</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman-a</string>
+                <key>description</key>
+                <string>Watzman w/clock persists after reset</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>px320a</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v106</string>
+                <key>description</key>
+                <string>Firmware v1.06</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v105</string>
+                <key>description</key>
+                <string>Firmware v1.05</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v104</string>
+                <key>description</key>
+                <string>Firmware v1.04a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v103</string>
+                <key>description</key>
+                <string>Firmware v1.03</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v102</string>
+                <key>description</key>
+                <string>Firmware v1.02</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232_patch_box</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:dce</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>serial_heath_h19</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:tlbc</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>heath</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>imaginator</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Cleveland Codonics Imaginator I-100</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>gp19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Northwest Digital Systems GP-19</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>super19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Super19 ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>superset</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Superset ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ultrarom</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Ultra ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Watzman ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>sunkbd_adaptor</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:keyboard</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type3hle</string>
+                <key>description</key>
+                <string>Sun Type 3 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type4hle</string>
+                <key>description</key>
+                <string>Sun Type 4 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5gbhle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Great Britain - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5jphle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Japan - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5sehle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (Sweden - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type5hle</string>
+                <key>description</key>
+                <string>Sun Type 5 Keyboard (U.S.A. - HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>software</key>
     <array>
@@ -3907,6 +4272,8 @@
       <string>amiga_flop.xml</string>
       <string>amigaocs_flop.xml</string>
       <string>amiga_demos.xml</string>
+      <string>amiga_cd.xml</string>
+      <string>photo_cd.xml</string>
     </array>
   </dict>
 </plist>

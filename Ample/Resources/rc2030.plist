@@ -84,13 +84,13 @@
             <key>value</key>
             <string>v4.32</string>
             <key>description</key>
-            <string>Rx2030 v4.32, Jan 1991</string>
+            <string>I2000 v4.32, Jan 1991</string>
           </dict>
           <dict>
             <key>value</key>
             <string>v4.30</string>
             <key>description</key>
-            <string>Rx2030 v4.30, Jul 1989</string>
+            <string>I2000 v4.30, Jul 1989</string>
           </dict>
         </array>
       </dict>
@@ -130,6 +130,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>h19</string>
+            <key>description</key>
+            <string>Heath H19 Terminal (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_heath_h19</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ie15</string>
             <key>description</key>
             <string>IE15 Terminal</string>
@@ -282,6 +290,14 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -298,6 +314,14 @@
             <string>—None—</string>
             <key>default</key>
             <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>h19</string>
+            <key>description</key>
+            <string>Heath H19 Terminal (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_heath_h19</string>
           </dict>
           <dict>
             <key>value</key>
@@ -454,6 +478,14 @@
             <string>SWTPC8212 Terminal</string>
             <key>devname</key>
             <string>swtpc8212_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
           </dict>
         </array>
       </dict>
@@ -597,6 +629,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -637,6 +677,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -679,6 +727,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -719,6 +775,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -761,6 +825,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -801,6 +873,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -843,6 +923,50 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_watz_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Watzman</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman-a</string>
+                <key>description</key>
+                <string>Watzman w/clock persists after reset</string>
+              </dict>
             </array>
           </dict>
         </array>
@@ -864,6 +988,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1011,6 +1143,14 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
         </array>
@@ -1040,6 +1180,84 @@
                 <string>61203</string>
                 <key>description</key>
                 <string>Version 61203 (3rd Dec 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>serial_heath_h19</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:tlbc</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>heath</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>imaginator</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Cleveland Codonics Imaginator I-100</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>gp19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Northwest Digital Systems GP-19</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>super19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Super19 ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>superset</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Superset ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ultrarom</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Ultra ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Watzman ROM</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>

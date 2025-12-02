@@ -56,6 +56,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>h19</string>
+            <key>description</key>
+            <string>Heath H19 Terminal (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_heath_h19</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ie15</string>
             <key>description</key>
             <string>IE15 Terminal</string>
@@ -199,6 +207,14 @@
             <string>SWTPC8212 Terminal</string>
             <key>devname</key>
             <string>swtpc8212_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>votraxtnt</string>
+            <key>description</key>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_votraxtnt</string>
           </dict>
         </array>
       </dict>
@@ -219,6 +235,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>h19</string>
+            <key>description</key>
+            <string>Heath H19 Terminal (Serial Port)</string>
+            <key>devname</key>
+            <string>serial_heath_h19</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>ie15</string>
             <key>description</key>
             <string>IE15 Terminal</string>
@@ -363,32 +387,13 @@
             <key>devname</key>
             <string>swtpc8212_terminal</string>
           </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>kbd_con</string>
-        <key>description</key>
-        <string>Keyboard</string>
-        <key>options</key>
-        <array>
           <dict>
             <key>value</key>
-            <string></string>
+            <string>votraxtnt</string>
             <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>kbd</string>
-            <key>description</key>
-            <string>IBM RT PC Keyboard</string>
-            <key>default</key>
-            <true/>
+            <string>Votrax Type 'N Talk (Serial Port)</string>
             <key>devname</key>
-            <string>rtpc_kbd</string>
+            <string>serial_votraxtnt</string>
           </dict>
         </array>
       </dict>
@@ -409,6 +414,46 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
@@ -416,6 +461,14 @@
             <true/>
             <key>devname</key>
             <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -436,11 +489,59 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -461,6 +562,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>mda</string>
             <key>description</key>
             <string>IBM Monochrome Display And Printer Adapter</string>
@@ -468,6 +577,22 @@
             <true/>
             <key>devname</key>
             <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC Hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -488,11 +613,59 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -513,11 +686,59 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -534,7 +755,15 @@
             <key>description</key>
             <string>—None—</string>
             <key>default</key>
-            <true/>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
           </dict>
           <dict>
             <key>value</key>
@@ -543,6 +772,24 @@
             <string>IBM Monochrome Display And Printer Adapter</string>
             <key>devname</key>
             <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>fdc</string>
+            <key>description</key>
+            <string>ISA 8bits AT FDC Hookup</string>
+            <key>devname</key>
+            <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -563,11 +810,59 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
           </dict>
         </array>
       </dict>
@@ -588,17 +883,318 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>5080pa</string>
+            <key>description</key>
+            <string>IBM 5080 Peripheral Adapter</string>
+            <key>devname</key>
+            <string>5080pa</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>amgda</string>
+            <key>description</key>
+            <string>IBM Advanced Monochrome Graphics Display Adapter</string>
+            <key>devname</key>
+            <string>amgda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ega</string>
+            <key>description</key>
+            <string>IBM Enhanced Graphics Adapter</string>
+            <key>devname</key>
+            <string>ega</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mda</string>
+            <key>description</key>
+            <string>IBM Monochrome Display And Printer Adapter</string>
+            <key>devname</key>
+            <string>isa_ibm_mda</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>ide</string>
+            <key>description</key>
+            <string>IDE Fixed Drive Adapter</string>
+            <key>devname</key>
+            <string>isa_ide</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>fdc</string>
             <key>description</key>
             <string>ISA 8bits AT FDC Hookup</string>
             <key>devname</key>
             <string>isa8_fdc_at</string>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>baseband</string>
+            <key>description</key>
+            <string>Ungermann-Bass Personal NIC</string>
+            <key>devname</key>
+            <string>ubpnic</string>
+          </dict>
         </array>
       </dict>
     </array>
     <key>devices</key>
     <array>
+      <dict>
+        <key>name</key>
+        <string>adaptator_multitap</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:joy_p1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:joy_p2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>ega</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ega</string>
+                <key>description</key>
+                <string>IBM EGA BIOS</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>iskr3104</string>
+                <key>description</key>
+                <string>Iskra-3104 EGA BIOS</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_watz_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Watzman</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman-a</string>
+                <key>description</key>
+                <string>Watzman w/clock persists after reset</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <dict>
         <key>name</key>
         <string>isa8_fdc_at</string>
@@ -816,6 +1412,22 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>fx80</string>
+                <key>description</key>
+                <string>Epson FX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>jx80</string>
+                <key>description</key>
+                <string>Epson JX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>lx800</string>
                 <key>description</key>
                 <string>Epson LX-800</string>
@@ -827,6 +1439,14 @@
                 <string>lx810l</string>
                 <key>description</key>
                 <string>Epson LX-810L</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rx80</string>
+                <key>description</key>
+                <string>Epson RX-80</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -870,6 +1490,205 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>adaptator</string>
+                <key>description</key>
+                <string>The Adaptator 2x DE-9 Multitap</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>isa_ide</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:ide:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <true/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:ide:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>hdd</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>zip100</string>
+                <key>description</key>
+                <string>Iomega Zip 100MB IDE Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cr589</string>
+                <key>description</key>
+                <string>Matsushita CR589 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>xm3301</string>
+                <key>description</key>
+                <string>Toshiba XM-3301 CD-ROM Drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>px320a</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v106</string>
+                <key>description</key>
+                <string>Firmware v1.06</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v105</string>
+                <key>description</key>
+                <string>Firmware v1.05</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v104</string>
+                <key>description</key>
+                <string>Firmware v1.04a</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v103</string>
+                <key>description</key>
+                <string>Firmware v1.03</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>v102</string>
+                <key>description</key>
+                <string>Firmware v1.02</string>
+              </dict>
             </array>
           </dict>
         </array>
@@ -891,6 +1710,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1038,6 +1865,14 @@
                 <key>default</key>
                 <false/>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
         </array>
@@ -1067,6 +1902,84 @@
                 <string>61203</string>
                 <key>description</key>
                 <string>Version 61203 (3rd Dec 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>serial_heath_h19</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:tlbc</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>heath</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>imaginator</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Cleveland Codonics Imaginator I-100</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>gp19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Northwest Digital Systems GP-19</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>super19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Super19 ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>superset</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Superset ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ultrarom</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Ultra ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Watzman ROM</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
