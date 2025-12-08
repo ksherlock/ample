@@ -112,6 +112,11 @@ MACHINES_EXTRA = MACHINES + (
 	"sun1", "sun2_50", "sun2_120", "sun3_50", "sun3_60", "sun3_110", "sun3_150", "sun3_260", "sun3_e", "sun3_80", "sun4_40", "sun4_50", "sun4_20", "sun4_25", "sun4_65",
 # "sun3_460", "sun4_400", "sun4_110", "sun4_300",  "sun4_60", "sun4_75", "sun_s10", "sun_s20"
 
+	# ibm pc, etc.
+	"att6300p", "t1000", "t1000hx", "t1000sx",
+	"ibm5150", "ibm5155", "ibm5160",
+
+
 	)
 
 
@@ -155,6 +160,13 @@ SLOTS = (
 
 	# commodore
 	"user", "iec4", "iec8", "iec9", "iec10", "iec11", "tape"
+
+	# ibm pc, etc
+	"pc_joy",
+	"mb3:lpt:lpt:centronics", "mb4:com:serport0", "mb4:com:serport1",
+	"lpt:centronics"
+
+
 )
 
 SLOT_NAMES = {
@@ -261,6 +273,14 @@ SLOT_NAMES = {
 	"iec10":      "IEC 10",
 	"iec11":      "IEC 11",
 	"iec12":      "IEC 12",
+
+
+	# ibm pc
+	"pc_joy":     "Joystick",
+	"mb3:lpt:lpt:centronics": "Printer",
+	"mb4:com:serport0": "Serial 0",
+	"mb4:com:serport1": "Serial 1",
+	"lpt:centronics": "Printer",
 }
 
 

@@ -482,6 +482,20 @@
 		B68A899526BF12A600B2C8C6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A899326BF124B00B2C8C6 /* CoreMIDI.framework */; };
 		B6A1A1942528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
 		B6A1A1952528EB1700DB0FD7 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A1A1932528EB1700DB0FD7 /* Menu.m */; };
+		B6A8071D2EE654DE0069F4AA /* t1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071A2EE654DE0069F4AA /* t1000.plist */; };
+		B6A8071E2EE654DE0069F4AA /* t1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071A2EE654DE0069F4AA /* t1000.plist */; };
+		B6A8071F2EE654DE0069F4AA /* t1000sx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071B2EE654DE0069F4AA /* t1000sx.plist */; };
+		B6A807202EE654DE0069F4AA /* t1000sx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071B2EE654DE0069F4AA /* t1000sx.plist */; };
+		B6A807212EE654DE0069F4AA /* t1000hx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071C2EE654DE0069F4AA /* t1000hx.plist */; };
+		B6A807222EE654DE0069F4AA /* t1000hx.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A8071C2EE654DE0069F4AA /* t1000hx.plist */; };
+		B6A807272EE654F90069F4AA /* ibm5155.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807232EE654F90069F4AA /* ibm5155.plist */; };
+		B6A807282EE654F90069F4AA /* ibm5155.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807232EE654F90069F4AA /* ibm5155.plist */; };
+		B6A807292EE654F90069F4AA /* att6300p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807242EE654F90069F4AA /* att6300p.plist */; };
+		B6A8072A2EE654F90069F4AA /* att6300p.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807242EE654F90069F4AA /* att6300p.plist */; };
+		B6A8072B2EE654F90069F4AA /* ibm5150.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807252EE654F90069F4AA /* ibm5150.plist */; };
+		B6A8072C2EE654F90069F4AA /* ibm5150.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807252EE654F90069F4AA /* ibm5150.plist */; };
+		B6A8072D2EE654F90069F4AA /* ibm5160.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807262EE654F90069F4AA /* ibm5160.plist */; };
+		B6A8072E2EE654F90069F4AA /* ibm5160.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A807262EE654F90069F4AA /* ibm5160.plist */; };
 		B6B9EA662506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6B9EA672506A5550080E70D /* EjectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9EA642506A5550080E70D /* EjectButton.m */; };
 		B6BA258024E99BE9005FB8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA257F24E99BE9005FB8FF /* AppDelegate.m */; };
@@ -996,6 +1010,13 @@
 		B6939C292A747BBE0025D891 /* macct610.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macct610.plist; sourceTree = "<group>"; };
 		B6A1A1932528EB1700DB0FD7 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B6A1A1962528EB4600DB0FD7 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		B6A8071A2EE654DE0069F4AA /* t1000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = t1000.plist; sourceTree = "<group>"; };
+		B6A8071B2EE654DE0069F4AA /* t1000sx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = t1000sx.plist; sourceTree = "<group>"; };
+		B6A8071C2EE654DE0069F4AA /* t1000hx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = t1000hx.plist; sourceTree = "<group>"; };
+		B6A807232EE654F90069F4AA /* ibm5155.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ibm5155.plist; sourceTree = "<group>"; };
+		B6A807242EE654F90069F4AA /* att6300p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = att6300p.plist; sourceTree = "<group>"; };
+		B6A807252EE654F90069F4AA /* ibm5150.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ibm5150.plist; sourceTree = "<group>"; };
+		B6A807262EE654F90069F4AA /* ibm5160.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ibm5160.plist; sourceTree = "<group>"; };
 		B6ABF47B275986EA00DC3D48 /* ace2200.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ace2200.plist; sourceTree = "<group>"; };
 		B6B9EA642506A5550080E70D /* EjectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectButton.m; sourceTree = "<group>"; };
 		B6B9EA652506A5550080E70D /* EjectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectButton.h; sourceTree = "<group>"; };
@@ -1147,6 +1168,13 @@
 		B64E15AF24EA365E00E8AD3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6A807242EE654F90069F4AA /* att6300p.plist */,
+				B6A807252EE654F90069F4AA /* ibm5150.plist */,
+				B6A807232EE654F90069F4AA /* ibm5155.plist */,
+				B6A807262EE654F90069F4AA /* ibm5160.plist */,
+				B6A8071A2EE654DE0069F4AA /* t1000.plist */,
+				B6A8071C2EE654DE0069F4AA /* t1000hx.plist */,
+				B6A8071B2EE654DE0069F4AA /* t1000sx.plist */,
 				B6D05CE22D717264000CBFA5 /* macpd210.plist */,
 				B6D05CDF2D717264000CBFA5 /* macpd230.plist */,
 				B6D05CE02D717264000CBFA5 /* macpd250.plist */,
@@ -1813,6 +1841,7 @@
 				B67878772B01732700CFACF2 /* cece.plist in Resources */,
 				B67878702B01732700CFACF2 /* apple2ee.plist in Resources */,
 				B657715E2D25D1BB00B1B10A /* apple2gsmt.plist in Resources */,
+				B6A807212EE654DE0069F4AA /* t1000hx.plist in Resources */,
 				B6F9F8BB2C62E0D0007D5A3B /* apple2c3.plist in Resources */,
 				B67878DF2B01732700CFACF2 /* cecm.plist in Resources */,
 				B65771702D25D1BB00B1B10A /* apple2epde.plist in Resources */,
@@ -1832,6 +1861,7 @@
 				B67878882B01732700CFACF2 /* hp9k382.plist in Resources */,
 				B65771682D25D1BB00B1B10A /* apple2ede.plist in Resources */,
 				B6F9F8AA2C5E6814007D5A3B /* macpb100.plist in Resources */,
+				B6A807292EE654F90069F4AA /* att6300p.plist in Resources */,
 				B67878DA2B01732700CFACF2 /* apple2gsr0.plist in Resources */,
 				B65771872D25DEE400B1B10A /* macpb145b.plist in Resources */,
 				B67878A52B01732700CFACF2 /* maclc2.plist in Resources */,
@@ -1868,6 +1898,7 @@
 				B67878742B01732700CFACF2 /* apple2gsr1.plist in Resources */,
 				B67878D72B01732700CFACF2 /* apple2eefr.plist in Resources */,
 				B67878EB2B01732700CFACF2 /* maciicx.plist in Resources */,
+				B6A8071F2EE654DE0069F4AA /* t1000sx.plist in Resources */,
 				B67878FD2B01732700CFACF2 /* st.plist in Resources */,
 				B63480542D2DF27400C7408E /* electron.plist in Resources */,
 				B6D05CEF2D717264000CBFA5 /* macpd280c.plist in Resources */,
@@ -1893,6 +1924,7 @@
 				B67878E52B01732700CFACF2 /* laser128o.plist in Resources */,
 				B6BA258524E99BEB005FB8FF /* MainMenu.xib in Resources */,
 				B67878CB2B01732700CFACF2 /* vt100.plist in Resources */,
+				B6A8071D2EE654DE0069F4AA /* t1000.plist in Resources */,
 				B6F9F8B02C5E6814007D5A3B /* macqd950.plist in Resources */,
 				B634804A2D2DF24400C7408E /* bbca.plist in Resources */,
 				B6EEFAC22B9ABCAE0068B47C /* dragon200e.plist in Resources */,
@@ -1974,6 +2006,7 @@
 				B67878B22B01732700CFACF2 /* nws3260.plist in Resources */,
 				B67878CA2B01732700CFACF2 /* vt52.plist in Resources */,
 				B67878FC2B01732700CFACF2 /* space84.plist in Resources */,
+				B6A8072D2EE654F90069F4AA /* ibm5160.plist in Resources */,
 				B657717D2D25DEE400B1B10A /* macpb165.plist in Resources */,
 				B67878872B01732700CFACF2 /* hp9k380.plist in Resources */,
 				B678788E2B01732700CFACF2 /* indy_4613.plist in Resources */,
@@ -2000,6 +2033,8 @@
 				B67878FF2B01732700CFACF2 /* uniap2ti.plist in Resources */,
 				B67878CF2B01732700CFACF2 /* zijini.plist in Resources */,
 				B65771812D25DEE400B1B10A /* macpb170.plist in Resources */,
+				B6A8072B2EE654F90069F4AA /* ibm5150.plist in Resources */,
+				B6A807272EE654F90069F4AA /* ibm5155.plist in Resources */,
 				B6FECDD22BA8AA080025B402 /* telstrat.plist in Resources */,
 				B67878A92B01732700CFACF2 /* macplus.plist in Resources */,
 				B6EEFABC2B9ABCAE0068B47C /* trs80l2.plist in Resources */,
@@ -2104,6 +2139,7 @@
 				B67878172B01732600CFACF2 /* maxxi.plist in Resources */,
 				B65771822D25DEE400B1B10A /* macpb170.plist in Resources */,
 				B67878032B01732600CFACF2 /* las3000.plist in Resources */,
+				B6A8072E2EE654F90069F4AA /* ibm5160.plist in Resources */,
 				B67877F32B01732600CFACF2 /* indigo_r4400.plist in Resources */,
 				B67878612B01732600CFACF2 /* megast.plist in Resources */,
 				B67877F02B01732600CFACF2 /* hp9k380.plist in Resources */,
@@ -2125,6 +2161,7 @@
 				B67879282B0195DB00CFACF2 /* sun3_150.plist in Resources */,
 				B657716F2D25D1BB00B1B10A /* apple2eede.plist in Resources */,
 				B67877FC2B01732600CFACF2 /* ip2700.plist in Resources */,
+				B6A8072A2EE654F90069F4AA /* att6300p.plist in Resources */,
 				B65771632D25D1BB00B1B10A /* apple2epse.plist in Resources */,
 				B67879322B0195DB00CFACF2 /* sun2_120.plist in Resources */,
 				B67878492B01732600CFACF2 /* craft2p.plist in Resources */,
@@ -2181,6 +2218,7 @@
 				B6DDECC525057A550093587A /* drag-handle-4x10@3x.png in Resources */,
 				B6EEFAC52B9ABCAE0068B47C /* dragon32.plist in Resources */,
 				B65771862D25DEE400B1B10A /* macpb180c.plist in Resources */,
+				B6A807222EE654DE0069F4AA /* t1000hx.plist in Resources */,
 				B67878212B01732600CFACF2 /* pi4d25.plist in Resources */,
 				B67878582B01732600CFACF2 /* maclc3.plist in Resources */,
 				B6FECDD32BA8AA080025B402 /* telstrat.plist in Resources */,
@@ -2199,6 +2237,7 @@
 				B6E4B5C424FDE2670094A35C /* LogWindow.xib in Resources */,
 				B67879032B0195C200CFACF2 /* nws1580.plist in Resources */,
 				B67877E22B01732600CFACF2 /* CheatSheet.html in Resources */,
+				B6A807202EE654DE0069F4AA /* t1000sx.plist in Resources */,
 				B67877E42B01732600CFACF2 /* dodo.plist in Resources */,
 				B67877E62B01732600CFACF2 /* ds2100.plist in Resources */,
 				B6E4B5C524FDE2670094A35C /* Assets.xcassets in Resources */,
@@ -2265,6 +2304,7 @@
 				B6EEFAB72B9ABCAE0068B47C /* dragon64.plist in Resources */,
 				B67878182B01732600CFACF2 /* microeng.plist in Resources */,
 				B678784E2B01732600CFACF2 /* laser128o.plist in Resources */,
+				B6A8071E2EE654DE0069F4AA /* t1000.plist in Resources */,
 				B67878092B01732600CFACF2 /* macct650.plist in Resources */,
 				B67878662B01732600CFACF2 /* st.plist in Resources */,
 				B67878552B01732600CFACF2 /* maciisi.plist in Resources */,
@@ -2275,6 +2315,7 @@
 				B678785A2B01732600CFACF2 /* maclc550.plist in Resources */,
 				B678784A2B01732600CFACF2 /* elppa.plist in Resources */,
 				B65D1B9B2BB7B1AC00C15287 /* coco3h.plist in Resources */,
+				B6A8072C2EE654F90069F4AA /* ibm5150.plist in Resources */,
 				B6E4B5E324FDE2670094A35C /* Defaults.plist in Resources */,
 				B6F7B539266FDA5B00624C6B /* MachineView.xib in Resources */,
 				B678783B2B01732600CFACF2 /* agat9.plist in Resources */,
@@ -2294,6 +2335,7 @@
 				B67878302B01732600CFACF2 /* spectred.plist in Resources */,
 				B67877E82B01732600CFACF2 /* hkc8800a.plist in Resources */,
 				B636F5CB2B1168C00063F9D8 /* bbcmt.plist in Resources */,
+				B6A807282EE654F90069F4AA /* ibm5155.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

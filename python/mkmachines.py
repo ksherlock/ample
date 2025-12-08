@@ -605,7 +605,10 @@ def make_smartport(machine):
 		*['scsibus:' + str(x) for x in range(0,7)],
 		*['wd1772:' + str(x) for x in range(0,4)],
 
-		"sl6:0", "sl6:1", "0", "1", "2", "3"
+		"sl6:0", "sl6:1", "0", "1", "2", "3",
+
+		*['mb2:fdc_xt:fdc:' + str(x) for x in range(0,2)], # ibm pc
+		*["isa_fdc:fdc_xt:fdc:" + str(x) for x in range(0,2)],
 	]
 
 

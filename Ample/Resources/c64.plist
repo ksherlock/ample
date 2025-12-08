@@ -2561,51 +2561,6 @@
           </dict>
         </array>
       </dict>
-      <dict>
-        <key>name</key>
-        <string>tape</string>
-        <key>description</key>
-        <string>Tape</string>
-        <key>options</key>
-        <array>
-          <dict>
-            <key>value</key>
-            <string></string>
-            <key>description</key>
-            <string>—None—</string>
-            <key>default</key>
-            <false/>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>c1530</string>
-            <key>description</key>
-            <string>Commodore 1530 Datassette</string>
-            <key>default</key>
-            <true/>
-            <key>devname</key>
-            <string>c1530</string>
-            <key>media</key>
-            <dict>
-              <key>cass</key>
-              <integer>1</integer>
-            </dict>
-          </dict>
-          <dict>
-            <key>value</key>
-            <string>c2n</string>
-            <key>description</key>
-            <string>Commodore C2N Datassette</string>
-            <key>devname</key>
-            <string>c2n</string>
-            <key>media</key>
-            <dict>
-              <key>cass</key>
-              <integer>1</integer>
-            </dict>
-          </dict>
-        </array>
-      </dict>
     </array>
     <key>devices</key>
     <array>

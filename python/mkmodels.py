@@ -81,6 +81,8 @@ commodore_children_extra = ["c64", "c64c", "c128"]
 dec_vt_children = ["vt52", "vt100", "vt101", "vt102", "vt240"]
 dec_children = ["ds2100", "ds3100", "ds5k133", "pdp11qb", "pdp11ub", "pdp11ub2"]
 ibm_rt_children = ["rtpc010", "rtpc015", "rtpc020", "rtpc025", "rtpca25"]
+ibm_pc_children = ["ibm5150", "ibm5155", "ibm5160", "att6300p", "t1000", "t1000hx", "t1000sx"]
+
 hp_9000_children = ["hp9k310", "hp9k320", "hp9k330", "hp9k332", "hp9k340", "hp9k360", "hp9k370", "hp9k380", "hp9k382"]
 intergraph_children = ["ip2000", "ip2400", "ip2500", "ip2700", "ip2800", "ip6000", "ip6400", "ip6700", "ip6800"]
 mips_children = ["rc2030", "rs2030", "rc3230", "rs3230"]
@@ -124,6 +126,7 @@ TREE_EXTRA = TREE + [
 	("DEC VT", None, dec_vt_children),
 	("DEC", None, dec_children),
 	("HP 9000", None, hp_9000_children),
+	("IBM PC", None, ibm_pc_children),
 	("IBM RT", None, ibm_rt_children),
 	("Intergraph", None, intergraph_children),
 	("MIPS", None, mips_children),

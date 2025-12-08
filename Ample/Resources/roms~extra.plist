@@ -1546,6 +1546,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ibm5150</string>
+      <key>description</key>
+      <string>IBM PC 5150</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ibm_mfc</string>
       <key>description</key>
       <string>IBM PC Music Feature Card</string>
@@ -2233,6 +2239,12 @@
       <string>cga_m24</string>
       <key>description</key>
       <string>Olivetti M24 CGA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>m24_kbd</string>
+      <key>description</key>
+      <string>Olivetti M24 Keyboard And Mouse</string>
     </dict>
     <dict>
       <key>value</key>
