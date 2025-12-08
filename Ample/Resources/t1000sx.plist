@@ -2561,6 +2561,49 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>pc_joy</string>
+        <key>description</key>
+        <string>Joystick</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>magnum6_pad</string>
+            <key>description</key>
+            <string>Interact Magnum 6 Game Controller</string>
+            <key>devname</key>
+            <string>magnum6_pad</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>mssw_pad</string>
+            <key>description</key>
+            <string>Microsoft Sidewinder Pad</string>
+            <key>devname</key>
+            <string>mssw_pad</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>basic_joy</string>
+            <key>description</key>
+            <string>PC Basic Joystick</string>
+            <key>default</key>
+            <true/>
+            <key>devname</key>
+            <string>pc_basic_joy</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>lpt:centronics</string>
         <key>description</key>
         <string>Printer</string>

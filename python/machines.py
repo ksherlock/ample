@@ -159,7 +159,7 @@ SLOTS = (
 	"ext", "floppy0", "floppy1", "floppy2", "floppy3",
 
 	# commodore
-	"user", "iec4", "iec8", "iec9", "iec10", "iec11", "tape"
+	"user", "iec4", "iec8", "iec9", "iec10", "iec11", "tape",
 
 	# ibm pc, etc
 	"pc_joy",
