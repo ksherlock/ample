@@ -87,7 +87,6 @@ xEXCLUDE = [
 	'spectred',
 	'uniap2en',
 	'uniap2pt',
-	'uniap2ti',
 ]
 
 # non-existent or included elsewhere.
@@ -185,6 +184,9 @@ known.add('macpd270c')
 known.add('macpd280c')
 known.add('m68hc05pge')
 known.add('a2ieee488')
+known.add('ibsap2')
+known.add('a2retronet')
+known.add('laser3k')
 
 
 for m in machines:

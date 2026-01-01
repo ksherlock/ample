@@ -18,13 +18,13 @@ apple2ep_children = ["apple2ep", "apple2epuk", "apple2epde", "apple2epse", "appl
 
 apple2c_children = ["apple2c", "apple2c0", "apple2c3", "apple2c4", "apple2cp"]
 apple2gs_children = ["apple2gsr0", "apple2gsr1", "apple2gs"]
-laser_children = ["las3000", "laser2c", "laser128", "laser128o", "las128ex", "las128e2"]
+laser_children = ["laser3k", "laser2c", "laser128", "laser128o", "las128ex", "las128e2"]
 franklin_children = ["ace100", "ace500", "ace1000", "ace2200"]
 ii_clones_children = ["albert",
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
-	"space84", "uniap2en", "uniap2pt", "uniap2ti"]
+	"space84", "uniap2en", "uniap2pt"]
 iie_clones_children = ["mprof3", "prav8c", "spectred", "tk3000", "zijini"]
 cec_children = ["cec2000", "cece", "cecg", "ceci", "cecm"]
 agat_children = ["agat7", "agat9"]

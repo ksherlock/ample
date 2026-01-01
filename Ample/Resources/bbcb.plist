@@ -4135,6 +4135,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -6113,6 +6121,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

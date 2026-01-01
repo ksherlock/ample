@@ -23,11 +23,11 @@ MACHINES = (
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
-	"space84", "uniap2en", "uniap2pt", "uniap2ti",
+	"space84", "uniap2en",
 	"zijini",
 	# China Education Computer
 	"cec2000", "cece", "cecg", "ceci", "cecm",
-	"las3000",
+	"laser3k",
 
 
 	# macintosh...
