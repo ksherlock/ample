@@ -1354,6 +1354,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ibsap2</string>
+      <key>description</key>
+      <string>IBS Computertechnik AP 2 Serial Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>minichif</string>
       <key>description</key>
       <string>ICT Mini Chief Disk Drive</string>
@@ -1420,7 +1426,7 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>las3000</string>
+      <string>laser3k</string>
       <key>description</key>
       <string>Laser 3000</string>
     </dict>
