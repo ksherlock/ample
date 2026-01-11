@@ -13,6 +13,7 @@
                 <outlet property="downloadField" destination="sJz-So-jbA" id="WjK-48-FcE"/>
                 <outlet property="formatButton" destination="2Rg-eX-DUq" id="oYo-MG-Sc6"/>
                 <outlet property="missingFilterButton" destination="6c7-tU-3F3" id="89Y-wQ-9pB"/>
+                <outlet property="searchFilter" destination="EuH-NO-RLR" id="ZtY-CC-pgz"/>
                 <outlet property="tableView" destination="FLX-Wt-y53" id="a4O-pk-EAt"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -251,7 +252,6 @@
             <toolbar key="toolbar" implicitIdentifier="B60021E6-BFBC-44E6-97DC-120AA9FD3269" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="kpz-W4-xgh">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="tbY-ts-Irb"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="3Kc-zG-IdN"/>
                     <toolbarItem implicitItemIdentifier="BD743A15-0B61-48FF-9EED-FD8D57EF8459" label="All" paletteLabel="All" tag="1" sizingBehavior="auto" id="Jj0-n8-I5a">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" tag="1" id="Kgj-LP-FsF">
@@ -280,10 +280,28 @@
                             </connections>
                         </button>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="3Kc-zG-IdN"/>
+                    <toolbarItem implicitItemIdentifier="5FAD9453-A303-4057-A122-37BF870A4D81" label="Search" paletteLabel="Search" tag="3" sizingBehavior="auto" id="kT0-k4-f7d">
+                        <nil key="toolTip"/>
+                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" tag="3" textCompletion="NO" id="EuH-NO-RLR">
+                            <rect key="frame" x="0.0" y="14" width="96" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="6vV-pw-9Ej">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                            <connections>
+                                <action selector="search:" target="-2" id="JsE-wh-qQV"/>
+                            </connections>
+                        </searchField>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="Jj0-n8-I5a"/>
                     <toolbarItem reference="GV4-aX-5Ox"/>
+                    <toolbarItem reference="3Kc-zG-IdN"/>
+                    <toolbarItem reference="kT0-k4-f7d"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>

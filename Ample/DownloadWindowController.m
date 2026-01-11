@@ -133,6 +133,7 @@ enum {
 /* filter buttons */
 @property (weak) IBOutlet NSButton *allFilterButton;
 @property (weak) IBOutlet NSButton *missingFilterButton;
+@property (weak) IBOutlet NSSearchField *searchFilter;
 
 @property (strong) IBOutlet NSArrayController *arrayController;
 
@@ -152,6 +153,11 @@ enum {
     NSUserDefaults *_defaults;
 
     NSArray<NSButton *> *_filterButtons;
+
+    NSPredicate *_missingPredicate;
+    NSPredicate *_searchPredicate;
+
+
 }
 
 +(instancetype)sharedInstance {
@@ -519,12 +525,27 @@ enum {
 }
 
 
+-(void)updatePredicate {
+    if (!_missingPredicate && !_searchPredicate) {
+        [_arrayController setFilterPredicate: nil];
+        return;
+    }
+    if (_missingPredicate && !_searchPredicate) {
+        [_arrayController setFilterPredicate: _missingPredicate];
+        return;
+    }
+    if (_searchPredicate && !_missingPredicate) {
+        [_arrayController setFilterPredicate: _searchPredicate];
+        return;
+    }
+    NSCompoundPredicate *p = [NSCompoundPredicate andPredicateWithSubpredicates: @[ _missingPredicate, _searchPredicate]];
+    [_arrayController setFilterPredicate: p];
+}
+
 - (IBAction)filterButton:(id)sender {
 
-    NSPredicate *p = nil;
     NSUInteger tag = [sender tag];
     [sender setState: NSControlStateValueOn];
-
 
     for (NSButton *b in _filterButtons) {
         if (b != sender) [b setState: NSControlStateValueOff];
@@ -532,17 +553,37 @@ enum {
     switch (tag) {
         case 1: // all
         default:
-            [_arrayController setFilterPredicate: nil];
+            _missingPredicate = nil;
             break;
         case 2: // missing.
-            p = [NSPredicate predicateWithBlock: ^BOOL(DownloadItem *item, NSDictionary *bindings){
+            _missingPredicate = [NSPredicate predicateWithBlock: ^BOOL(DownloadItem *item, NSDictionary *bindings){
                 NSURL *localURL = [item localURL];
                 return localURL == nil;
             }];
 
-            [_arrayController setFilterPredicate: p];
-            break;
     }
+
+    [self updatePredicate];
+}
+- (IBAction)search:(id)sender {
+    NSString *text = [sender stringValue];
+    if (![text length]) {
+        _searchPredicate = nil;
+    } else {
+        
+        text = [text lowercaseString];
+        NSPredicate *p = [NSPredicate predicateWithBlock: ^(DownloadItem *item, NSDictionary *bindings){
+            
+            NSString *value = [[item value] lowercaseString];
+            NSString *name = [[item name] lowercaseString];
+            
+            BOOL ok = [name containsString: text] || [value containsString: text];
+            return ok;
+        }];
+        _searchPredicate = p;
+        
+    }
+    [self updatePredicate];
 }
 
 
