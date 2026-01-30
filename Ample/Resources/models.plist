@@ -882,37 +882,6 @@
     </dict>
     <dict>
       <key>description</key>
-      <string>Lisa</string>
-      <key>children</key>
-      <array>
-        <dict>
-          <key>description</key>
-          <string>Lisa</string>
-          <key>value</key>
-          <string>lisa</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Lisa2</string>
-          <key>value</key>
-          <string>lisa2</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Lisa2/10</string>
-          <key>value</key>
-          <string>lisa210</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh XL</string>
-          <key>value</key>
-          <string>macxl</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>description</key>
       <string>Acorn</string>
       <key>children</key>
       <array>
