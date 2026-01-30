@@ -8,8 +8,6 @@
     <string>Macintosh LC</string>
     <key>media</key>
     <dict>
-      <key>cdrom</key>
-      <integer>1</integer>
     </dict>
     <key>resolution</key>
     <array>
@@ -642,6 +640,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -728,6 +731,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -814,6 +822,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -900,6 +913,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -986,6 +1004,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
@@ -1072,6 +1095,11 @@
                 <string>Apple SCSI CD-ROM (external)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
