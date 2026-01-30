@@ -250,6 +250,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -325,6 +333,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -406,6 +422,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -481,6 +505,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -562,6 +594,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -637,6 +677,14 @@
                   <key>cdrom</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

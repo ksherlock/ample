@@ -10,6 +10,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a2retronet</string>
+      <key>description</key>
+      <string>A2retroNET SmartPort Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>acb2072</string>
       <key>description</key>
       <string>ACB-2072 RLL Drive Controller</string>

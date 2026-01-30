@@ -753,6 +753,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -1164,6 +1172,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -1572,6 +1588,14 @@
               <key>floppy_5_25</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
           </dict>
         </array>
       </dict>
@@ -1982,6 +2006,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -2390,6 +2422,14 @@
               <key>floppy_5_25</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
           </dict>
         </array>
       </dict>
@@ -3119,6 +3159,42 @@
                 <string>jiffydos</string>
                 <key>description</key>
                 <string>JiffyDOS v6.01</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>c2040</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos10</string>
+                <key>description</key>
+                <string>DOS 1.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos12</string>
+                <key>description</key>
+                <string>DOS 1.2</string>
               </dict>
             </array>
           </dict>
@@ -8492,27 +8568,51 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r1</string>
+                <string>dos25m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 1</string>
+                <string>DOS 2.5 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r2</string>
+                <string>dos25r2m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 2</string>
+                <string>DOS 2.5 rev 2 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r3</string>
+                <string>dos25r3m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 3</string>
+                <string>DOS 2.5 rev 3 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos27</string>
+                <string>dos25t</string>
                 <key>description</key>
-                <string>DOS 2.7</string>
+                <string>DOS 2.5 rev 3 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27t</string>
+                <key>description</key>
+                <string>DOS 2.7 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mo</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis, older)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27m</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mpi</string>
+                <key>description</key>
+                <string>DOS 2.7 (MPI)</string>
               </dict>
             </array>
           </dict>
@@ -8586,27 +8686,51 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r1</string>
+                <string>dos25m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 1</string>
+                <string>DOS 2.5 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r2</string>
+                <string>dos25r2m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 2</string>
+                <string>DOS 2.5 rev 2 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r3</string>
+                <string>dos25r3m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 3</string>
+                <string>DOS 2.5 rev 3 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos27</string>
+                <string>dos25t</string>
                 <key>description</key>
-                <string>DOS 2.7</string>
+                <string>DOS 2.5 rev 3 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27t</string>
+                <key>description</key>
+                <string>DOS 2.7 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mo</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis, older)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27m</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mpi</string>
+                <key>description</key>
+                <string>DOS 2.7 (MPI)</string>
               </dict>
             </array>
           </dict>
@@ -11813,6 +11937,57 @@
                 <string>r03</string>
                 <key>description</key>
                 <string>325340-03</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>xetec_c5181</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:serial</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <true/>
               </dict>
             </array>
           </dict>
