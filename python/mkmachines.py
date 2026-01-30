@@ -375,6 +375,9 @@ DEVICE_MEDIA = {
 
 	"3ssdd": "floppy_3_5", # single sided, single density
 
+	# lisa
+	'tw': 'floppy_5_25',
+
 }
 
 DEVICE_EXCLUDE = set([
@@ -612,6 +615,10 @@ def make_smartport(machine):
 
 		*['mb2:fdc_xt:fdc:' + str(x) for x in range(0,2)], # ibm pc
 		*["isa_fdc:fdc_xt:fdc:" + str(x) for x in range(0,2)],
+
+		# lisa
+		#*['fdc:' + str(x) + ":tw" for x in range(0,4)],
+
 	]
 
 
