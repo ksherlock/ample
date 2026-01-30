@@ -23,7 +23,7 @@ MACHINES = (
 	"am100", "am64", "basis108", "craft2p",
 	"dodo", "elppa", "hkc8800a", "ivelultr",
 	"maxxi", "microeng", "prav82", "prav8m",
-	"space84", "uniap2en",
+	"space84", "uniap2en", "uniap2pt",
 	"zijini",
 	# China Education Computer
 	"cec2000", "cece", "cecg", "ceci", "cecm",
@@ -49,6 +49,9 @@ MACHINES = (
 	"macpb140", "macpb145", "macpb145b", "macpb160", "macpb165", "macpb165c", "macpb170", "macpb180", "macpb180c",
 	"macpd210", "macpd230", "macpd250", "macpd270c", "macpd280", "macpd280c",
 
+
+	# lisa
+	"lisa", "lisa2", "lisa210", "macxl",
 
 	# 128k clones
 	# "unitron", "utrn1024",
@@ -164,9 +167,10 @@ SLOTS = (
 	# ibm pc, etc
 	"pc_joy",
 	"mb3:lpt:lpt:centronics", "mb4:com:serport0", "mb4:com:serport1",
-	"lpt:centronics"
+	"lpt:centronics",
 
-
+	# lisa
+	"pp",
 )
 
 SLOT_NAMES = {
@@ -281,6 +285,10 @@ SLOT_NAMES = {
 	"mb4:com:serport0": "Serial 0",
 	"mb4:com:serport1": "Serial 1",
 	"lpt:centronics": "Printer",
+
+	# lisa
+	"pp":         "Parallel",
+
 }
 
 
