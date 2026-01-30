@@ -1438,6 +1438,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>lisa</string>
+      <key>description</key>
+      <string>Lisa</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisa2</string>
+      <key>description</key>
+      <string>Lisa2</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2suprterm</string>
       <key>description</key>
       <string>M&amp;R Enterprises SUP'R'TERMINAL</string>
