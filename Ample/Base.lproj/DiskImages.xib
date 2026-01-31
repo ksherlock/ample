@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -41,12 +41,12 @@
             </connections>
             <point key="canvasLocation" x="-667" y="170"/>
         </menu>
-        <window title="Recent Disk Images" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="RecentDiskImagesWindow" animationBehavior="default" id="AtY-lA-KIp">
+        <window title="Disk Images" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="RecentDiskImagesWindow" animationBehavior="default" toolbarStyle="unified" id="AtY-lA-KIp">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="305" width="408" height="270"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
-            <view key="contentView" id="zHI-2R-bOe">
+            <view key="contentView" misplaced="YES" id="zHI-2R-bOe">
                 <rect key="frame" x="0.0" y="0.0" width="408" height="270"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="SFr-s6-6di">
                             <rect key="frame" x="1" y="1" width="408" height="270"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="iwP-JL-O3g" viewBased="YES" id="cqO-ig-A9t">
                                     <rect key="frame" x="0.0" y="0.0" width="408" height="245"/>
@@ -81,7 +81,7 @@
                                                     <rect key="frame" x="1" y="1" width="305" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkM-KB-x76">
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkM-KB-x76">
                                                             <rect key="frame" x="0.0" y="0.0" width="305" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="PitchDark.2mg" id="Wcg-zo-CeN">
@@ -101,7 +101,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn width="93" minWidth="40" maxWidth="1000" id="0aJ-xJ-YSS">
+                                        <tableColumn width="64" minWidth="40" maxWidth="1000" id="0aJ-xJ-YSS">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Size">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -115,11 +115,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView id="UW9-AF-U9F">
-                                                    <rect key="frame" x="309" y="1" width="97" height="17"/>
+                                                    <rect key="frame" x="309" y="1" width="68" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ry-Zn-euh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="97" height="17"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ry-Zn-euh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="68" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="32 MB" id="fXp-OZ-Qcu">
                                                                 <font key="font" metaFont="system"/>
@@ -161,19 +161,21 @@
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <tableHeaderView key="headerView" id="iwP-JL-O3g">
+                        <tableHeaderView key="headerView" wantsLayer="YES" id="iwP-JL-O3g">
                             <rect key="frame" x="0.0" y="0.0" width="408" height="25"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="D9701924-6955-47B8-A2FF-DBD466AAEB92" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="Gp6-Kl-lr2">
+            <toolbar key="toolbar" implicitIdentifier="D9701924-6955-47B8-A2FF-DBD466AAEB92" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="Gp6-Kl-lr2">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="lBE-ee-rCy"/>
-                    <toolbarItem implicitItemIdentifier="C346E56F-4480-4D8A-8485-33A3A51D7B78" label="" paletteLabel="Filter" sizingBehavior="auto" id="DsU-uu-UmZ">
+                    <toolbarItem implicitItemIdentifier="C346E56F-4480-4D8A-8485-33A3A51D7B78" label="" paletteLabel="Filter" id="DsU-uu-UmZ">
                         <nil key="toolTip"/>
-                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" id="qHV-IA-ysc">
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="200" height="22"/>
+                        <searchField key="view" wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" id="qHV-IA-ysc">
                             <rect key="frame" x="0.0" y="14" width="96" height="22"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" borderStyle="bezel" placeholderString="Filter" usesSingleLineMode="YES" bezelStyle="round" id="BWo-eC-ahz">
@@ -188,7 +190,6 @@
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="lBE-ee-rCy"/>
                     <toolbarItem reference="lBE-ee-rCy"/>
                     <toolbarItem reference="DsU-uu-UmZ"/>
                 </defaultToolbarItems>
