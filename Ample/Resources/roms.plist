@@ -1636,6 +1636,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>macpd280</string>
+      <key>description</key>
+      <string>Macintosh PowerBook Duo 280</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>macpd280c</string>
       <key>description</key>
       <string>Macintosh PowerBook Duo 280c</string>
@@ -2479,6 +2485,36 @@
       <string>ym2608</string>
       <key>description</key>
       <string>YM2608 OPNA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>prav8c</string>
+      <key>description</key>
+      <string>Pravetz 8C</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>tk3000</string>
+      <key>description</key>
+      <string>TK3000 //e</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>prav82</string>
+      <key>description</key>
+      <string>Pravetz 82</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>prav8m</string>
+      <key>description</key>
+      <string>Pravetz 8M</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>prav8ckb</string>
+      <key>description</key>
+      <string>Pravetz 8C Keyboard</string>
     </dict>
     <dict>
       <key>value</key>
