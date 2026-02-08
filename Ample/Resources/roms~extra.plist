@@ -40,6 +40,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>att6300p</string>
+      <key>description</key>
+      <string>6300 Plus</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2retronet</string>
+      <key>description</key>
+      <string>A2retroNET SmartPort Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>acb2072</string>
       <key>description</key>
       <string>ACB-2072 RLL Drive Controller</string>
@@ -55,6 +67,12 @@
       <string>isa_aga_pc200</string>
       <key>description</key>
       <string>AGA PC200</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>am100kbd</string>
+      <key>description</key>
+      <string>AM 100 Keyboard (MAK-II)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -244,6 +262,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>amiga_ar1</string>
+      <key>description</key>
+      <string>Action Replay</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_ar2</string>
+      <key>description</key>
+      <string>Action Replay MK II</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_ar3</string>
+      <key>description</key>
+      <string>Action Replay MK III</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>agat840k_hle</string>
       <key>description</key>
       <string>Agat 840K Floppy Card</string>
@@ -373,6 +409,24 @@
       <string>egret</string>
       <key>description</key>
       <string>Apple Egret ADB/I2C</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>enetlc</string>
+      <key>description</key>
+      <string>Apple Ethernet LC Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>enetlctp</string>
+      <key>description</key>
+      <string>Apple Ethernet LC Twisted-Pair Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>enetnbtp</string>
+      <key>description</key>
+      <string>Apple Ethernet NB Twisted-Pair Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -640,6 +694,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bk_altpro</string>
+      <key>description</key>
+      <string>BK Altpro Floppy/ATA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bk_samara</string>
+      <key>description</key>
+      <string>BK Samara Floppy/ATA</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bk_kmd</string>
+      <key>description</key>
+      <string>BK0010 Floppy</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_beebspch</string>
       <key>description</key>
       <string>Beeb Speech Synthesiser</string>
@@ -655,6 +727,12 @@
       <string>nb_btbug</string>
       <key>description</key>
       <string>Brigent BootBug Debugger Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_buddha</string>
+      <key>description</key>
+      <string>Buddha IDE Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -730,6 +808,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_cms6502</string>
+      <key>description</key>
+      <string>CMS 6502 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_tube_cms6809</string>
       <key>description</key>
       <string>CMS 6809 2nd Processor</string>
@@ -769,6 +853,12 @@
       <string>bbc_tube_casper</string>
       <key>description</key>
       <string>Casper 68000 2nd Processor</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_sweetalker</string>
+      <key>description</key>
+      <string>Cheetah Sweet Talker (BBC)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1024,6 +1114,24 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>amiga_a2091</string>
+      <key>description</key>
+      <string>Commodore A2091 Hard Disk/SCSI Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_a570</string>
+      <key>description</key>
+      <string>Commodore A570</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_a590</string>
+      <key>description</key>
+      <string>Commodore A590</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>d9060</string>
       <key>description</key>
       <string>Commodore D9060</string>
@@ -1108,6 +1216,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>bbc_detalker</string>
+      <key>description</key>
+      <string>D.E.Talker Speech Synthesizer</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>lk201</string>
       <key>description</key>
       <string>DEC LK201 Keyboard</string>
@@ -1141,6 +1255,12 @@
       <string>dsd4432</string>
       <key>description</key>
       <string>DSD A4432 Floppy Disk Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>dvk_kmd</string>
+      <key>description</key>
+      <string>DVK KMD Floppy Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1195,6 +1315,12 @@
       <string>dragon_sprites</string>
       <key>description</key>
       <string>Dragon Sprites</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>duodock</string>
+      <key>description</key>
+      <string>Duo Dock</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1276,6 +1402,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>epson_fx80</string>
+      <key>description</key>
+      <string>Epson FX-80</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>epson_jx80</string>
+      <key>description</key>
+      <string>Epson JX-80</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>lx800</string>
       <key>description</key>
       <string>Epson LX-800</string>
@@ -1285,6 +1423,12 @@
       <string>lx810l</string>
       <key>description</key>
       <string>Epson LX-810L</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>epson_rx80</string>
+      <key>description</key>
+      <string>Epson RX-80</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1588,6 +1732,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>rtpc_kls</string>
+      <key>description</key>
+      <string>IBM RT PC Keyboard, Locator, Speaker Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>rtpc010</string>
       <key>description</key>
       <string>IBM RT PC Model 010</string>
@@ -1633,6 +1783,12 @@
       <string>a2ap16a</string>
       <key>description</key>
       <string>IBS AP-16 80 Column Card (Alt. Version)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>ibsap2</string>
+      <key>description</key>
+      <string>IBS Computertechnik AP 2 Serial Interface</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1762,6 +1918,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ivelultrkb</string>
+      <key>description</key>
+      <string>Ivel Ultra Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>electron_mode7</string>
       <key>description</key>
       <string>JAFA Mode 7 Display Unit</string>
@@ -1780,6 +1942,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>a2kb200</string>
+      <key>description</key>
+      <string>Key Tronic KB200 Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>keytronic_pc3270</string>
       <key>description</key>
       <string>Keytronic PC3270</string>
@@ -1792,15 +1960,57 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>nb_pcs8</string>
+      <key>description</key>
+      <string>Lapis ProColor Server 8</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pd3_pcs8</string>
+      <key>description</key>
+      <string>Lapis ProColor Server 8 (PDS)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_pc16</string>
       <key>description</key>
       <string>Lapis ProColor Server 8*16</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>las3000</string>
+      <string>laser3k</string>
       <key>description</key>
       <string>Laser 3000</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisa</string>
+      <key>description</key>
+      <string>Lisa</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisafdc</string>
+      <key>description</key>
+      <string>Lisa 1 FDC Subsystem</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisa2fdc</string>
+      <key>description</key>
+      <string>Lisa 2 FDC Subsystem</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisavideo</string>
+      <key>description</key>
+      <string>Lisa Video Device</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>lisa2</string>
+      <key>description</key>
+      <string>Lisa2</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1837,6 +2047,18 @@
       <string>msdsd2</string>
       <key>description</key>
       <string>MSD SD-2 Disk Drive</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macxlfdc</string>
+      <key>description</key>
+      <string>Mac XL/Lisa 210 FDC Subsystem</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>macxlvideo</string>
+      <key>description</key>
+      <string>MacXL Screen Kit Video Device</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1879,6 +2101,12 @@
       <string>nb_wspt</string>
       <key>description</key>
       <string>Macintosh II Portrait Video Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>nb_wkstn</string>
+      <key>description</key>
+      <string>Macintosh II Workstation Video Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1990,9 +2218,9 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>macpd280c</string>
+      <string>macpd280</string>
       <key>description</key>
-      <string>Macintosh PowerBook Duo 280c</string>
+      <string>Macintosh PowerBook Duo 280</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2047,6 +2275,12 @@
       <string>mactv</string>
       <key>description</key>
       <string>Macintosh TV</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>bbc_magazzino</string>
+      <key>description</key>
+      <string>Magazzino Parametrico</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2224,6 +2458,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ethudock</string>
+      <key>description</key>
+      <string>Newer Technology Ethernet MicroDock</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>nss_tvinterface</string>
       <key>description</key>
       <string>Novag Super System TV Interface</string>
@@ -2233,6 +2473,12 @@
       <string>nb_image</string>
       <key>description</key>
       <string>NuBus Disk Image Pseudo-Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_oktagon2008</string>
+      <key>description</key>
+      <string>Oktagon 2008 SCSI Controller</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2410,6 +2656,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>prav8ckb</string>
+      <key>description</key>
+      <string>Pravetz 8C Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>premier_fdc</string>
       <key>description</key>
       <string>Premier FDC</string>
@@ -2443,6 +2695,12 @@
       <string>rc3230</string>
       <key>description</key>
       <string>RC3230</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>amiga_ripple</string>
+      <key>description</key>
+      <string>RIPPLE IDE Interface</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2602,6 +2860,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>mz1p16</string>
+      <key>description</key>
+      <string>Sharp MZ-1P16 Plotter Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_lviw</string>
       <key>description</key>
       <string>Sigma Designs L-View</string>
@@ -2704,6 +2968,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>isa_prose4001</string>
+      <key>description</key>
+      <string>Speech Plus Prose 4001 (IBM PC Mode)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_24bbc</string>
       <key>description</key>
       <string>Sprow 24bBC/RAM Disc Board</string>
@@ -2794,6 +3064,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>sun4_300</string>
+      <key>description</key>
+      <string>Sun 4/3x0</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bwtwo</string>
       <key>description</key>
       <string>Sun Bwtwo SBus Video</string>
@@ -2803,6 +3079,12 @@
       <string>cgthree</string>
       <key>description</key>
       <string>Sun Cgthree SBus Video</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>sun1_cpu</string>
+      <key>description</key>
+      <string>Sun Microsystems Sun-1 CPU Board</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2842,6 +3124,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>tdl12</string>
+      <key>description</key>
+      <string>TDL-12 SCSI Host Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2tk10</string>
+      <key>description</key>
+      <string>TK-10 Apple II Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>trs80</string>
       <key>description</key>
       <string>TRS-80 Model I (Level I Basic)</string>
@@ -2860,13 +3154,19 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>tandy_1000_graphics</string>
+      <key>description</key>
+      <string>Tandy 1000 Built-in Video (VIDEO-ARRAY)</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>chessmachine</string>
       <key>description</key>
       <string>Tasc ChessMachine</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>tms32030</string>
+      <string>tms320c30</string>
       <key>description</key>
       <string>Texas Instruments TMS320C30</string>
     </dict>
@@ -2914,9 +3214,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ubpnic</string>
+      <key>description</key>
+      <string>Ungermann-Bass Personal NIC</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>bbc_udm</string>
       <key>description</key>
       <string>United Disk Memories DDFS FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>uniap2ti</string>
+      <key>description</key>
+      <string>Unitron AP II+ Teclado Inteligente</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2968,6 +3280,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>videnh2</string>
+      <key>description</key>
+      <string>Videx Keyboard Enhancer ][</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>a2ultrme</string>
       <key>description</key>
       <string>Videx UltraTerm (Enhanced //e)</string>
@@ -3001,6 +3319,12 @@
       <string>votrsc01a</string>
       <key>description</key>
       <string>Votrax SC-01-A</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>votraxtnt</string>
+      <key>description</key>
+      <string>Votrax Type 'N Talk</string>
     </dict>
     <dict>
       <key>value</key>
@@ -3061,6 +3385,12 @@
       <string>xtide</string>
       <key>description</key>
       <string>XT-IDE Fixed Drive Adapter</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>xetec_c5181</string>
+      <key>description</key>
+      <string>Xetec C-5181 Serial Printer Interface</string>
     </dict>
     <dict>
       <key>value</key>
