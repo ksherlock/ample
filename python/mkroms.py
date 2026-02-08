@@ -16,11 +16,8 @@ from plist import to_plist
 
 
 
-
-# standalone vgmplay????
 EXTRA_MACHINES = [
-	"vgmplay",
-	"a2pcxport"
+	"vgmplay"
 ]
 
 EXCLUDE = set()
@@ -54,34 +51,28 @@ def fix_machine_description(x, devname):
 	return x
 
 
-p = argparse.ArgumentParser()
-p.add_argument('--full', action='store_true')
-p.add_argument('--extra', action='store_true')
-p.add_argument('machine', nargs="*")
-args = p.parse_args()
-
-extra = args.extra
-machines = args.machine
-if not machines:
-	if extra:
-		machines = [ *MACHINES_EXTRA, *EXTRA_MACHINES]
-	else:
-		machines = [ *MACHINES, *EXTRA_MACHINES]
 
 romdata = {  }
 parents = set()
 processed = set()
 
-for mname in machines:
+def process_machine(mname):
+
+	global romdata
+	global parents
+	global processed
+	global EXCLUDE
 
 	print(mname)
+
+
 
 	xml = mame.run(mname, "-listxml")
 	root = ET.fromstring(xml)
 
 	# todo -- if child in included and has roms, mark them with the parent.
 
-	first = True
+	# first = True
 	# included = set()
 	for m in root.findall('./machine'):
 
@@ -111,15 +102,36 @@ for mname in machines:
 		# 	continue
 
 
-ROMS =  [{ 'value': k, 'description': fix_machine_description(v, k)} for k, v in romdata.items()];
-ROMS.sort(key=lambda x: x.get('description'))
-# print(ROMS)
+
+p = argparse.ArgumentParser()
+p.add_argument('--full', action='store_true')
+p.add_argument('--extra', action='store_true')
+p.add_argument('machine', nargs="*")
+args = p.parse_args()
+
+extra = args.extra
+machines = args.machine
+if not machines:
+	if extra:
+		machines = [ *MACHINES_EXTRA, *EXTRA_MACHINES]
+	else:
+		machines = [ *MACHINES, *EXTRA_MACHINES]
+
+
+
+for mname in machines:
+	process_machine(mname)
+
 
 missing = parents - processed
 if len(missing):
 	print('Missing parents:')
-	for x in missing: print(x)
+	for x in missing: process_machine(x)
 
+
+ROMS =  [{ 'value': k, 'description': fix_machine_description(v, k)} for k, v in romdata.items()];
+ROMS.sort(key=lambda x: x.get('description'))
+# print(ROMS)
 
 if extra:
 	path = "../Ample/Resources/roms~extra.plist"
