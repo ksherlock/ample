@@ -2,6 +2,8 @@
 
 A slightly more user-friendly front-end for using MAME as an Apple II emulator. Requires Mac OS X 10.14+
 
+> Windows users might want to check out [AmpleWin](https://github.com/anomixer/ample/tree/master/AmpleWin)
+
 ![](screenshots/2021-07-01.png)
 
 
