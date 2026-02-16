@@ -2592,8 +2592,32 @@ class AmpleMainWindow(QMainWindow):
             }}
         """)
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 if __name__ == "__main__":
+    # OS X: separate process for GUI; unnecessary on Linux but good practice
+    # multiprocessing.freeze_support() 
+    
     app = QApplication(sys.argv)
+    
+    # Linux: Set explicit app name for Wayland/GNOME grouping
+    app.setDesktopFileName("AmpleLinux")
+    
+    # Set Window Icon (Linux requires this even if PyInstaller has --icon)
+    icon_path = resource_path("ample.png")
+    if os.path.exists(icon_path):
+        app.setWindowIcon(QIcon(icon_path))
+    else:
+        print(f"Warning: Icon not found at {icon_path}")
+
     window = AmpleMainWindow()
     window.show()
     sys.exit(app.exec())

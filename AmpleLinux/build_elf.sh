@@ -57,7 +57,12 @@ if [ -f "$ICON_PATH" ]; then
     ICON_ARG="--icon $ICON_PATH"
 fi
 
-pyinstaller --noconfirm --onedir --clean --name "AmpleLinux" $ICON_ARG main.py
+pyinstaller --noconfirm --onedir --clean \
+    --name "AmpleLinux" \
+    --add-data "ample.png:." \
+    $ICON_ARG \
+    main.py
+
 
 if [ $? -ne 0 ]; then
     echo "[ERROR] Build failed!"
@@ -80,9 +85,46 @@ mkdir -p "$DIST_MAME/cfg"
 echo "Created mame directory structure."
 
 cp requirements.txt dist/AmpleLinux/
+cp ample.png dist/AmpleLinux/
+
+# --- Step 6: Create .desktop file for integration ---
+echo "Creating .desktop file..."
+cat > dist/AmpleLinux/AmpleLinux.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Name=AmpleLinux
+Comment=Apple II Frontend for MAME
+Exec=$(pwd)/dist/AmpleLinux/AmpleLinux
+Icon=$(pwd)/dist/AmpleLinux/ample.png
+Terminal=false
+Categories=Game;Emulator;
+StartupWMClass=AmpleLinux
+EOF
 
 echo ""
 echo "[SUCCESS] Build complete!"
+
+# --- Step 7: Interactive Install ---
+if [ -t 0 ]; then
+    echo ""
+    read -p "Do you want to install the .desktop shortcut to ~/.local/share/applications/? (y/N) " -n 1 -r
+    echo ""
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        mkdir -p ~/.local/share/applications/
+        cp dist/AmpleLinux/AmpleLinux.desktop ~/.local/share/applications/
+        echo "✅ Installed! You can now search for 'AmpleLinux' in your applications menu."
+        # Update icon cache just in case
+        if command -v gtk-update-icon-cache &> /dev/null; then
+            gtk-update-icon-cache ~/.local/share/icons &> /dev/null || true
+        fi
+    else
+        echo "Skipped installation."
+        echo "You can manually copy it later:"
+        echo "  cp dist/AmpleLinux/AmpleLinux.desktop ~/.local/share/applications/"
+    fi
+fi
+
+echo ""
 echo "The standalone application is located in: dist/AmpleLinux/AmpleLinux"
 echo ""
 

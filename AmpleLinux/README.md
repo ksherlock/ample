@@ -79,7 +79,18 @@ chmod +x build_elf.sh
 ./build_elf.sh
 ```
 
-This script uses `PyInstaller` within a temporary venv to build a portable binary in `dist/AmpleLinux/`.
+This script uses `PyInstaller` within a temporary venv to build a portable binary.
+
+### 4. Desktop Integration (Icon Fix)
+
+To see the correct icon in your Dock/Taskbar, copy the generated `.desktop` file:
+
+```bash
+mkdir -p ~/.local/share/applications/
+cp dist/AmpleLinux/AmpleLinux.desktop ~/.local/share/applications/
+```
+
+Then search for "**AmpleLinux**" in your applications menu.
 
 ## 📂 Project Structure
 
