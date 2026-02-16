@@ -8,9 +8,12 @@ build
 embedded/mame-data.tgz
 __pycache__
 
-# Windows Port MAME binaries and runtime data
-mame/
-ample_win/mame/
+# Windows Port
+AmpleWin/mame/
+AmpleWin/dist/
+AmpleWin/build/
+AmpleWin/*.spec
+
 nvram/
 cfg/
 diff/
@@ -19,3 +22,12 @@ comments/
 sta/
 *.ini
 *.ico
+
+# Linux Port
+AmpleLinux/.venv
+AmpleLinux/.build_venv
+AmpleLinux/icons/
+AmpleLinux/Ample.spec
+AmpleLinux/mame/
+!AmpleLinux/mame/.gitkeep
+

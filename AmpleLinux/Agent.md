@@ -1,6 +1,40 @@
 # Agent Task Audit Log - Ample Linux Port
 
 
+## 📅 Session: 2026-02-17 (Session 2)
+
+### 🎯 Objective: Real-World Testing & Deployment Fix
+Deployed the Linux Port to an actual Linux machine for testing. Identified and fixed a critical dependency installation issue.
+
+### ✅ Key Achievements:
+
+1.  **Launcher Script Fix (`AmpleLinux.sh`)**:
+    *   **Bug**: Original script used `pip3` / `pip` commands directly, which don't exist on many modern Linux distros (Debian 12+, Ubuntu 23+, Fedora 38+ enforce PEP 668).
+    *   **Fix v1**: Changed to `python3 -m pip` (the universally reliable pip invocation).
+    *   **Fix v2**: Added automatic `--break-system-packages` fallback for PEP 668-compliant systems.
+    *   **Error Messages**: Added distro-specific guidance (apt/dnf/pacman) and venv instructions in error output.
+
+2.  **Git Workflow**:
+    *   Created `linux` branch from `master`.
+    *   Pushed to `origin/linux` for cross-machine testing.
+
+### 🔍 Testing Observations (Real Linux Machine):
+*   `pip3` command was not in PATH → first fallback triggered.
+*   `python3 -m pip` also failed (PEP 668 system Python restriction) → second fallback triggered with `--break-system-packages`.
+*   **Conclusion**: Many modern Linux distros require either system packages (`sudo apt install python3-pyside6 python3-requests`) or a venv approach. The launcher script now documents both paths clearly.
+
+### ⚠️ Known Issue - Pending Resolution:
+*   Systems without any pip module need manual package installation first. The script provides clear guidance but cannot auto-resolve this without `sudo`.
+*   **Recommended solutions** (in priority order):
+    1.  System packages: `sudo apt install python3-pyside6 python3-requests`
+    2.  Install pip: `sudo apt install python3-pip`, then re-run script
+    3.  Use venv: `python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 main.py`
+
+### 🚀 Current Project Status
+Codebase is ported and pushed to `linux` branch. Launcher script has been hardened for modern Linux distros. Awaiting successful end-to-end test with dependencies installed.
+
+---
+
 ## 📅 Session: 2026-02-16 (Session 1)
 
 ### 🎯 Objective: Linux Port Creation
@@ -53,6 +87,43 @@ The Linux Port is functionally complete. All Windows-specific code has been adap
 *   **`shlex.split(posix=True)`**: Linux uses POSIX-mode shell parsing (no special Windows path handling).
 *   **MAME detection**: Checks `PATH` via `which`, plus standard Linux paths (`/usr/bin`, `/usr/games`, `/usr/local/bin`).
 
-### 2. Known Mantras (inherited from AmpleWin)
+### 2. Deployment (CRITICAL)
+*   **PEP 668 Era**: Modern Linux distros (Debian 12+, Ubuntu 23.04+, Fedora 38+) block global pip installs. The launcher script handles this with `--break-system-packages` fallback.
+*   **Recommended Install Methods** (in priority order):
+    1.  System packages: `sudo apt install python3-pyside6 python3-requests mame`
+    2.  venv: `python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt`
+    3.  pip with override: `python3 -m pip install -r requirements.txt --break-system-packages`
+*   **Never use `pip3` or `pip` directly** in scripts — always use `python3 -m pip` for reliability.
+
+### 3. Known Mantras (inherited from AmpleWin)
 *   **Visual Parity is King**: Every margin, font size, and color was cross-referenced with macOS.
 *   **Authorship**: This Linux Port is based on the AmpleWin collaboration between **anomixer** and **Antigravity**.
+
+---
+
+## 📅 Session: 2026-02-17 (Session 2)
+
+### 🎯 Objective: First-Run Experience, Build System & Polish
+
+### ✅ Key Changes:
+
+1.  **Launcher Architecture (`AmpleLinux.sh`)**:
+    *   **Refactored to venv**: Switched from system-level `apt` dependencies to a strictly isolated `python3 -m venv` approach.
+    *   **Automated Setup**: Script now auto-creates `.venv`, installs `python3-venv` (if missing), and pip installs `requirements.txt`.
+    *   **Distro Agnostic**: Only depends on `python3-full` and `libxcb-cursor*` (apt) for the base interpreter; all libraries (PySide6) are pulled via pip.
+    *   **ALSA Fix**: Added auto-detection of `/proc/asound` and `usermod -a -G audio` fix for permission issues.
+
+2.  **User Experience Enhancements (`main.py`)**:
+    *   **Ubuntu Snap Integration**: If MAME is missing on Ubuntu, offers `sudo snap install mame` with a non-blocking `QProgressDialog`.
+    *   **Configuration Fix**: `ensure_mame_ini` now runs `mame -cc` inside `AmpleLinux/mame` to keep config portable.
+    *   **Path Precision**: `update_command_line` now resolves absolute paths for `-inipath` and `-rompath` (e.g., `/home/user/...`).
+    *   **BGFX Cleanup**: Removed Windows-only Direct3D options.
+    *   **UI Polish**: "Generate VGM" now shows a "Feature not implemented" popup.
+
+3.  **Build System (New)**:
+    *   **`make_icon.py`**: Created Linux-specific icon generator (produces standard PNG sizes: 16x16 to 512x512).
+    *   **`build_elf.sh`**: Created PyInstaller build script that uses a temporary venv to bypass PEP 668 restrictions and produce a standalone ELF binary in `dist/`.
+
+### 🔍 Technical Decisions:
+*   **PySide6 via pip**: Moved away from `python3-pyside2` (apt) because the codebase is written for PySide6. Using venv + pip ensures version consistency and avoids the "externally-managed-environment" error on modern distros.
+*   **MAME Snap**: For Ubuntu users, Snap is the most reliable way to get a recent MAME version without PPA complexity.

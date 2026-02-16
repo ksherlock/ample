@@ -4,6 +4,8 @@
 
 This is a port of the macOS native [Ample](https://github.com/ksherlock/ample) project to the Linux platform, based on the [AmpleWin](../AmpleWin/) Windows Port.
 
+![](screenshot-v0.285.png)
+
 > [!IMPORTANT]
 > **Current Version Support**: Updated to stay in sync with Ample (macOS) **v0.285** resources and **MAME 0.285**.
 
@@ -35,29 +37,23 @@ This is a port of the macOS native [Ample](https://github.com/ksherlock/ample) p
 *   **Native File Management**: Uses `xdg-open` for file/folder/URL opening.
 *   **No External Dependencies**: MAME is installed via your distribution's package manager.
 
+### ⚠️ Known Limitations
+*   **VGM Mod**: The "Generate VGM" feature is currently disabled on Linux because the required MAME VGM Mod binary is only available for Windows.
+
+
 ## 🛠️ Quick Start
 
 ### Prerequisites
--   **Python 3.9+** with pip
+-   **Python 3.9+**
 -   **MAME** installed via your package manager
--   **PySide6** (installed automatically)
+-   **PySide6** and **requests** (installed via system packages or pip)
 
 ### Installation
 
-1.  **Install MAME** (if not already installed):
-    ```bash
-    # Ubuntu / Debian
-    sudo apt install mame
-
-    # Fedora
-    sudo dnf install mame
-
-    # Arch Linux
-    sudo pacman -S mame
-
-    # Flatpak (any distro)
-    flatpak install flathub org.mamedev.MAME
-    ```
+1.  **Install System Dependencies**:
+    *   **MAME**: Install via your package manager (e.g., `sudo apt install mame`).
+    *   **Python 3**: Ensure Python 3.9+ is installed (`sudo apt install python3-full`).
+    *   **X11 Support**: Required for GUI (`sudo apt install libxcb-cursor0`).
 
 2.  **Launch Ample**:
     ```bash
@@ -65,18 +61,33 @@ This is a port of the macOS native [Ample](https://github.com/ksherlock/ample) p
     chmod +x AmpleLinux.sh
     ./AmpleLinux.sh
     ```
-    The script will check Python, install dependencies, and start the app.
+    The script will **automatically** create a virtual environment (`.venv`), install `PySide6` and other dependencies via pip, and launch the app. **No manual pip install required.**
 
 3.  **Fast Deployment**:
+    *   **Ubuntu Users**: If MAME is not found, the app will offer to install it via `snap`.
     *   Click **🎮 ROMs** to download system firmware.
     *   Go to **⚙️ Settings** to verify MAME is detected.
     *   Select a machine and **Launch MAME**!
+
+## 📦 Building for Release
+
+To create a standalone Linux binary (ELF) that requires no dependencies:
+
+```bash
+cd AmpleLinux
+chmod +x build_elf.sh
+./build_elf.sh
+```
+
+This script uses `PyInstaller` within a temporary venv to build a portable binary in `dist/AmpleLinux/`.
 
 ## 📂 Project Structure
 
 | File/Directory | Description |
 | :--- | :--- |
-| **`AmpleLinux.sh`** | **Start Here**. Auto-setup script (installs Python deps & runs app). |
+| **`AmpleLinux.sh`** | **Start Here**. Auto-setup script (uses venv + pip). |
+| **`build_elf.sh`** | **Build Script**. Creates standalone binary via PyInstaller. |
+| `make_icon.py` | Helper to generate Linux PNG icons from source. |
 | `main.py` | Application entry point, UI rendering, and event loop. |
 | `data_manager.py` | Parser for `.plist` machine definitions and MAME `.xml` software lists. |
 | `mame_launcher.py` | Command-line builder and process manager. |
@@ -85,19 +96,12 @@ This is a port of the macOS native [Ample](https://github.com/ksherlock/ample) p
 
 ## 🔧 Troubleshooting
 
-### PySide6 Installation Issues
-If `pip install PySide6` fails, try:
-```bash
-# Ubuntu/Debian: install system Qt dependencies first
-sudo apt install python3-pyside6 
-# Or install from pip with --break-system-packages (if using system python)
-pip3 install PySide6 --break-system-packages
-```
-
 ### MAME Not Detected
 If the app can't find MAME:
-1.  Go to **⚙️ Settings** and click **Select MAME...** to manually browse to the binary.
-2.  Or verify MAME is in your PATH: `which mame`
+1.  **Ubuntu**: The app will offer to run `sudo snap install mame`.
+2.  **Manual**: Go to **⚙️ Settings** > **Select MAME...** to browse to the binary.
+3.  **PATH**: Verify `which mame` returns a path.
+4.  Common paths: `/usr/bin/mame`, `/usr/games/mame`, `/var/lib/snapd/snap/bin/mame`
 
 ### Theme Detection
 The app auto-detects GNOME and KDE dark/light themes. If your desktop environment isn't supported, the app defaults to the Qt palette for theme detection.

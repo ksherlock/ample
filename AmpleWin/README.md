@@ -4,6 +4,10 @@
 
 This is a precision port of the macOS native [Ample](https://github.com/ksherlock/ample) project to the Windows platform.
 
+> [!TIP]
+> **Linux User?** Check out the [AmpleLinux](../AmpleLinux/) Port.
+
+
 ![](screenshot-v0.285.png)
 
 > [!IMPORTANT]

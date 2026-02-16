@@ -1,7 +1,24 @@
 # Agent Task Audit Log - Ample Windows Port
 
 
+## 📅 Session: 2026-02-16 (Session 12)
+
+### 🎯 Objective: Linux Port Spinoff
+AmpleWin has successfully served as the foundation for a new Linux port. 
+
+### ✅ Key Achievements:
+1.  **Port Creation**:
+    *   **AmpleLinux**: Created `AmpleLinux/` directory based on the AmpleWin codebase.
+    *   **Shared DNA**: `data_manager.py` and `rom_manager.py` remain identical, while `main.py` was adapted for Linux (xdg-open, paths, dependencies).
+    *   **Cross-Reference**: Added links to AmpleLinux in the README.
+
+### 🚀 Current Project Status
+The project now supports both Windows (AmpleWin) and Linux (AmpleLinux) natively.
+
+---
+
 ## 📅 Session: 2026-02-09 (Session 11)
+
 
 ### 🎯 Objective: Upstream Synchronization & Codebase Hygiene
 Focused on synchronizing the project with the latest upstream changes from `ksherlock/ample`, ensuring the `roms.plist` database is compliant with the official repository, and cleaning up diverging local branches.

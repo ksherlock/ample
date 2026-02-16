@@ -4,6 +4,8 @@
 
 這是一個將 macOS 原生 [Ample](https://github.com/ksherlock/ample) 專案移植至 Linux 平台的版本，基於 [AmpleWin](../AmpleWin/) Windows 移植版改編。
 
+![](screenshot-v0.285.png)
+
 > [!IMPORTANT]
 > **版本支援說明**：目前已同步支援至 Ample (macOS) **v0.285** 資源定義以及 **MAME 0.285** 核心。
 
@@ -35,29 +37,23 @@
 *   **原生檔案管理**：使用 `xdg-open` 開啟檔案、資料夾和 URL。
 *   **無額外依賴**：MAME 直接透過發行版的套件管理器安裝。
 
+### ⚠️ 已知限制
+*   **VGM Mod**：「Generate VGM」功能目前在 Linux 暫停使用，因為 MAME VGM Mod 功能所需的執行檔目前僅有 Windows 版本。
+
+
 ## 🛠️ 快速開始
 
 ### 前置需求
--   **Python 3.9+** 含 pip
+-   **Python 3.9+**
 -   **MAME**（透過套件管理器安裝）
--   **PySide6**（啟動腳本會自動安裝）
+-   **PySide6** 和 **requests**（透過系統套件或 pip 安裝）
 
 ### 安裝步驟
 
-1.  **安裝 MAME**（若尚未安裝）：
-    ```bash
-    # Ubuntu / Debian
-    sudo apt install mame
-
-    # Fedora
-    sudo dnf install mame
-
-    # Arch Linux
-    sudo pacman -S mame
-
-    # Flatpak (任何發行版)
-    flatpak install flathub org.mamedev.MAME
-    ```
+1.  **安裝系統依賴套件**：
+    *   **MAME**：透過您的套件管理器安裝（例如 `sudo apt install mame`）。
+    *   **Python 3**：確認已安裝 Python 3.9+（`sudo apt install python3-full`）。
+    *   **X11 支援**：GUI 介面所需（`sudo apt install libxcb-cursor0`）。
 
 2.  **啟動 Ample**：
     ```bash
@@ -65,18 +61,33 @@
     chmod +x AmpleLinux.sh
     ./AmpleLinux.sh
     ```
-    腳本會自動檢查 Python 環境、安裝依賴套件並啟動程式。
+    腳本會**自動**建立虛擬環境 (`.venv`)，透過 pip 安裝 `PySide6` 與其他依賴套件，最後啟動程式。**您不需要手動執行 pip install。**
 
 3.  **快速部署**：
+    *   **Ubuntu 使用者**：如果找不到 MAME，程式會詢問是否透過 `snap` 安裝。
     *   點擊主介面的 **🎮 ROMs** 以補齊系統韌體。
     *   前往 **⚙️ Settings** 確認 MAME 已偵測到。
     *   選擇機器，然後 **Launch MAME**！
+
+## 📦 封裝發佈 (Build for Release)
+
+若要產生不需要依賴環境的獨立 Linux 執行檔 (ELF)：
+
+```bash
+cd AmpleLinux
+chmod +x build_elf.sh
+./build_elf.sh
+```
+
+此腳本會在暫存的 venv 中使用 `PyInstaller` 進行打包，產出的可攜式執行檔位於 `dist/AmpleLinux/`。
 
 ## 📂 專案結構
 
 | 檔案/目錄 | 說明 |
 | :--- | :--- |
-| **`AmpleLinux.sh`** | **啟動腳本**。自動安裝依賴套件並執行主程式。 |
+| **`AmpleLinux.sh`** | **由此開始**。自動設定腳本 (使用 venv + pip)。 |
+| **`build_elf.sh`** | **封裝腳本**。透過 PyInstaller 產生獨立執行檔。 |
+| `make_icon.py` | 用於從來源圖片產生 Linux PNG 圖示的工具。 |
 | `main.py` | 應用程式入口，處理 UI 渲染與主要邏輯。 |
 | `data_manager.py` | 負責解析 `.plist` 機器定義檔與 MAME `.xml` 軟體列表。 |
 | `mame_launcher.py` | MAME 指令建構器與執行序管理器。 |
@@ -85,19 +96,12 @@
 
 ## 🔧 疑難排解
 
-### PySide6 安裝問題
-如果 `pip install PySide6` 失敗，請嘗試：
-```bash
-# Ubuntu/Debian: 直接安裝系統套件
-sudo apt install python3-pyside6
-# 或使用 pip 強制安裝（系統 Python 環境）
-pip3 install PySide6 --break-system-packages
-```
-
 ### MAME 未偵測到
 如果程式無法找到 MAME：
-1.  前往 **⚙️ Settings** 並點擊 **Select MAME...** 手動選擇執行檔位置。
-2.  或確認 MAME 已在 PATH 中：`which mame`
+1.  **Ubuntu**：程式會提供 `sudo snap install mame` 的安裝選項。
+2.  **手動設定**：前往 **⚙️ Settings** > **Select MAME...** 手動瀏覽並選擇執行檔。
+3.  **PATH**：確認 `which mame` 能回傳路徑。
+4.  常見路徑：`/usr/bin/mame`、`/usr/games/mame`、`/var/lib/snapd/snap/bin/mame`
 
 ### 主題偵測
 程式會自動偵測 GNOME 和 KDE 的深色/淺色主題。如果你的桌面環境不受支援，程式會使用 Qt 調色盤作為主題偵測的後備方案。

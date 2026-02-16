@@ -4,6 +4,10 @@
 
 這是一個將 macOS 原生 [Ample](https://github.com/ksherlock/ample) 專案精準移植至 Windows 平台的版本。
 
+> [!TIP]
+> **Linux 使用者？** 請參考 [AmpleLinux](../AmpleLinux/) Linux 移植版。
+
+
 ![](screenshot-v0.285.png)
 
 > [!IMPORTANT]

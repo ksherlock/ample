@@ -764,20 +764,81 @@ class AmpleMainWindow(QMainWindow):
                 self.active_popup.apply_theme()
                 self.active_popup.update() # Force repaint for triangle
 
+    def _is_ubuntu(self):
+        """Check if the current OS is Ubuntu."""
+        try:
+            with open('/etc/os-release', 'r') as f:
+                content = f.read().lower()
+                return 'ubuntu' in content
+        except Exception:
+            return False
+
     def run_startup_checks(self):
         """Sequential startup validation: MAME first, then ROMs."""
         if not self.check_for_mame():
             # If MAME is missing, focus on that first
             from PySide6.QtWidgets import QMessageBox
-            reply = QMessageBox.question(self, "MAME Not Found", 
-                                      "MAME executable was not found.\n\nWould you like to open settings to set MAME path or download it?",
-                                      QMessageBox.Yes | QMessageBox.No)
-            if reply == QMessageBox.Yes:
-                self.show_settings()
+            if self._is_ubuntu():
+                reply = QMessageBox.question(self, "MAME Not Found",
+                    "MAME executable was not found.\n\n"
+                    "Would you like to install MAME via snap?\n"
+                    "  Command: sudo snap install mame",
+                    QMessageBox.Yes | QMessageBox.No)
+                if reply == QMessageBox.Yes:
+                    self._snap_install_mame()
+            else:
+                reply = QMessageBox.question(self, "MAME Not Found", 
+                                          "MAME executable was not found.\n\nWould you like to open settings to set MAME path or download it?",
+                                          QMessageBox.Yes | QMessageBox.No)
+                if reply == QMessageBox.Yes:
+                    self.show_settings()
             return
 
         # Only if MAME is found, we check for ROMs
         self.check_and_auto_roms()
+
+    def _snap_install_mame(self):
+        """Install MAME via snap with a progress dialog."""
+        from PySide6.QtWidgets import QProgressDialog
+
+        progress = QProgressDialog("Installing MAME via snap...", None, 0, 0, self)
+        progress.setWindowTitle("Installing MAME")
+        progress.setMinimumWidth(350)
+        progress.setMinimumDuration(0)
+        progress.setCancelButton(None)  # Not cancellable
+        progress.show()
+        QApplication.processEvents()
+
+        class SnapInstallThread(QThread):
+            result_signal = Signal(int, str, str)  # returncode, stdout, stderr
+
+            def run(self):
+                try:
+                    result = subprocess.run(
+                        ['sudo', 'snap', 'install', 'mame'],
+                        capture_output=True, text=True, timeout=300
+                    )
+                    self.result_signal.emit(result.returncode, result.stdout, result.stderr)
+                except Exception as e:
+                    self.result_signal.emit(-1, "", str(e))
+
+        def on_install_finished(returncode, stdout, stderr):
+            progress.close()
+            if returncode == 0:
+                QMessageBox.information(self, "Success", "MAME installed successfully via snap!")
+                if self.check_for_mame():
+                    self.check_and_auto_roms()
+            elif returncode == -1:
+                QMessageBox.warning(self, "Install Error", f"Failed to run snap install:\n{stderr}")
+                self.show_settings()
+            else:
+                QMessageBox.warning(self, "Install Failed",
+                    f"snap install failed:\n{stderr}\n\nYou can try manually: sudo snap install mame")
+                self.show_settings()
+
+        self._snap_thread = SnapInstallThread()
+        self._snap_thread.result_signal.connect(on_install_finished)
+        self._snap_thread.start()
 
     def check_and_auto_roms(self):
         statuses = self.rom_manager.get_rom_status()
@@ -963,7 +1024,7 @@ class AmpleMainWindow(QMainWindow):
         self.use_bgfx = QCheckBox("BGFX")
         self.use_bgfx.setChecked(True)
         self.bgfx_backend = QComboBox()
-        self.bgfx_backend.addItems(["Default", "OpenGL", "Vulkan", "Direct3D 11", "Direct3D 12"])
+        self.bgfx_backend.addItems(["Default", "OpenGL", "Vulkan"])
         
         row1.addWidget(self.use_bgfx)
         row1.addWidget(QLabel("Backend:"))
@@ -1076,9 +1137,18 @@ class AmpleMainWindow(QMainWindow):
         add_av_row("Generate AVI", "avi")
         add_av_row("Generate WAV", "wav")
         add_av_row("Generate VGM", "vgm")
-        # Override connection for VGM to handle Mod check
+        # VGM: Feature not implemented on Linux
         self.vgm_check.stateChanged.disconnect()
-        self.vgm_check.stateChanged.connect(self.on_vgm_check_changed)
+        def _vgm_not_implemented(state=None):
+            if state is None or state == Qt.Checked.value:
+                self.vgm_check.blockSignals(True)
+                self.vgm_check.setChecked(False)
+                self.vgm_check.blockSignals(False)
+                QMessageBox.information(self, "VGM", "Feature not implemented.")
+        self.vgm_check.stateChanged.connect(_vgm_not_implemented)
+        def _vgm_path_click(event):
+            QMessageBox.information(self, "VGM", "Feature not implemented.")
+        self.vgm_path.mousePressEvent = _vgm_path_click
         
         av_layout.addStretch()
         self.tabs.addTab(av_tab, "A/V")
@@ -1909,7 +1979,12 @@ class AmpleMainWindow(QMainWindow):
         if hasattr(self, 'share_dir_check') and self.share_dir_check.isChecked() and self.share_dir_path.text():
             args.extend(["-share_directory", os.path.normpath(self.share_dir_path.text())])
 
-        # Path Setup (Minimalist: redundant paths are now in mame.ini)
+        # Path Setup: Always specify -inipath and -rompath with full absolute paths
+        # to ensure MAME loads the correct config and ROMs regardless of install location
+        mame_ini_dir = os.path.join(self.app_dir, "mame")
+        mame_roms_dir = os.path.join(self.app_dir, "mame", "roms")
+        args.extend(["-inipath", mame_ini_dir, "-rompath", mame_roms_dir])
+
         # Determine display executable
         exe_display = "mame"
         if hasattr(self, 'vgm_check') and self.vgm_check.isChecked():
@@ -2040,14 +2115,22 @@ class AmpleMainWindow(QMainWindow):
         return False
 
     def ensure_mame_ini(self, mame_path):
-        """Generate mame.ini in the background if it doesn't exist."""
-        mame_dir = os.path.dirname(mame_path)
-        ini_path = os.path.join(mame_dir, "mame.ini")
+        """Generate mame.ini in the AmpleLinux/mame directory if it doesn't exist.
+        Always uses self.app_dir/mame as the working directory, regardless of
+        where the MAME binary is installed (e.g. /snap/bin/mame, /usr/bin/mame).
+        This also serves as a sanity check that MAME runs correctly."""
+        mame_ini_dir = os.path.join(self.app_dir, "mame")
+        os.makedirs(mame_ini_dir, exist_ok=True)
+        ini_path = os.path.join(mame_ini_dir, "mame.ini")
         if not os.path.exists(ini_path):
-            print(f"Generating mame.ini in {mame_dir}...")
+            print(f"Generating mame.ini in {mame_ini_dir} (mame -cc)...")
             try:
-                # Run mame -cc in the mame directory
-                subprocess.run([mame_path, "-cc"], cwd=mame_dir, check=True, capture_output=True)
+                # Run mame -cc in the AmpleLinux/mame directory
+                result = subprocess.run([mame_path, "-cc"], cwd=mame_ini_dir, capture_output=True, text=True)
+                if result.returncode == 0:
+                    print(f"mame.ini created successfully in {mame_ini_dir}")
+                else:
+                    print(f"mame -cc returned code {result.returncode}: {result.stderr}")
             except Exception as e:
                 print(f"Failed to generate mame.ini: {e}")
 
