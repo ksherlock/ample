@@ -92,7 +92,7 @@ chmod +x build_elf.sh
 | `data_manager.py` | 負責解析 `.plist` 機器定義檔與 MAME `.xml` 軟體列表。 |
 | `mame_launcher.py` | MAME 指令建構器與執行序管理器。 |
 | `rom_manager.py` | 系統 ROM 的管理與多執行緒下載引擎。 |
-| `mame_downloader.py` | VGM Mod 下載解壓工具。 |
+| `mame_downloader.py` | VGM Mod 下載工具 (僅限 Windows; Linux 未使用)。 |
 
 ## 🔧 疑難排解
 

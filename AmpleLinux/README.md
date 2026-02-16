@@ -103,7 +103,7 @@ Then search for "**AmpleLinux**" in your applications menu.
 | `data_manager.py` | Parser for `.plist` machine definitions and MAME `.xml` software lists. |
 | `mame_launcher.py` | Command-line builder and process manager. |
 | `rom_manager.py` | Management and multi-threaded downloading of system ROMs. |
-| `mame_downloader.py` | VGM Mod downloader and extractor. |
+| `mame_downloader.py` | VGM Mod downloader (Windows only; unused on Linux). |
 
 ## 🔧 Troubleshooting
 
