@@ -18,14 +18,20 @@ cd "$SCRIPT_DIR"
 
 # Install/Update dependencies
 echo "[1/2] Checking dependencies..."
-pip3 install -r requirements.txt --quiet 2>/dev/null || pip install -r requirements.txt --quiet
+python3 -m pip install -r requirements.txt --quiet 2>/dev/null
 
 if [ $? -ne 0 ]; then
-    echo "[ERROR] Failed to install requirements."
-    echo "  You may need to install pip first:"
-    echo "    Ubuntu/Debian: sudo apt install python3-pip"
-    echo "    Or use: python3 -m pip install -r requirements.txt"
-    exit 1
+    echo "[WARN] pip module not found or install failed. Trying with --break-system-packages..."
+    python3 -m pip install -r requirements.txt --quiet --break-system-packages 2>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "[ERROR] Failed to install requirements."
+        echo "  Please install pip and try again:"
+        echo "    Ubuntu/Debian: sudo apt install python3-pip python3-pyside6"
+        echo "    Fedora: sudo dnf install python3-pip python3-pyside6"
+        echo "    Arch: sudo pacman -S python-pip python-pyside6"
+        echo "    Or use a venv: python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt"
+        exit 1
+    fi
 fi
 
 # Run the application
