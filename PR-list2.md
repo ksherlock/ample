@@ -22,6 +22,7 @@ You can freely modify these links to point to your own repository structure if y
 *   **Smart Detection**:
     *   Auto-detects system dark/light mode (GNOME/KDE).
     *   Detects if MAME is missing and offers `snap install mame` on Ubuntu.
+    *   Checks for and installs missing build tools (`binutils`/`objcopy`) required by PyInstaller.
     *   Fixes common audio permission issues (ALSA group check).
 
 ### 📝 Documentation

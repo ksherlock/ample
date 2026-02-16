@@ -23,6 +23,18 @@ if ! python3 -m venv --help &> /dev/null; then
     fi
 fi
 
+# --- Step 0.1: Ensure binutils is available ---
+if ! command -v objcopy &> /dev/null; then
+    echo "[INFO] binutils (objcopy) is required but not installed."
+    if command -v apt &> /dev/null; then
+        echo "[INFO] Installing binutils..."
+        sudo apt install -y binutils
+    else
+        echo "[ERROR] Please install binutils (objcopy) for your distro."
+        exit 1
+    fi
+fi
+
 # --- Step 1: Create/Activate virtual environment ---
 VENV_DIR=".build_venv"
 # Recreate if venv is broken (missing activate script)
