@@ -9347,6 +9347,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>heath_imaginator_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rev12</string>
+                <key>description</key>
+                <string>GPC Rev. 1.2 P/N 9000-0002</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>unknown</string>
+                <key>description</key>
+                <string>GPC Unknown revision</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>heath_watz_tlb</string>
         <key>slots</key>
         <array>
