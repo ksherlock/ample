@@ -124,7 +124,6 @@
 		B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B65D718725E70BE5008C5F87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65D718525E70BD5008C5F87 /* WebKit.framework */; };
 		B66236A924FD9A34006CABD7 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66236A824FD9A34006CABD7 /* PreferencesWindowController.m */; };
-		B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66236B224FDA522006CABD7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B66236C124FDB7A6006CABD7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B66236BF24FDB7A6006CABD7 /* Credits.rtf */; };
 		B6665C14265A0E3E00254939 /* AutocompleteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C13265A0E3E00254939 /* AutocompleteControl.m */; };
 		B6665C15265A0E3E00254939 /* AutocompleteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C13265A0E3E00254939 /* AutocompleteControl.m */; };
@@ -132,6 +131,8 @@
 		B6665C1D265C639A00254939 /* Autocomplete.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6665C1A265C639900254939 /* Autocomplete.xib */; };
 		B66D0FE72611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
 		B66D0FE82611386C000902F1 /* SoftwareList.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D0FE62611386B000902F1 /* SoftwareList.m */; };
+		B66FA06B2F53BED800669A60 /* SDL3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66FA0692F53BA8A00669A60 /* SDL3.framework */; };
+		B66FA06C2F53BED800669A60 /* SDL3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66FA0692F53BA8A00669A60 /* SDL3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B67877D22B01732600CFACF2 /* ace100.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896DEC2B016CD800251FA4 /* ace100.plist */; };
 		B67877D32B01732600CFACF2 /* ace1000.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E322B016CEA00251FA4 /* ace1000.plist */; };
 		B67877D42B01732600CFACF2 /* agat7.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6896E1B2B016CE500251FA4 /* agat7.plist */; };
@@ -654,7 +655,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B66236B524FDA527006CABD7 /* SDL2.framework in Embed Frameworks */,
+				B66FA06C2F53BED800669A60 /* SDL3.framework in Embed Frameworks */,
 				B635C09B26784A1200B23BFD /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -873,6 +874,7 @@
 		B6665C1B265C639900254939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Autocomplete.xib; sourceTree = "<group>"; };
 		B66D0FE62611386B000902F1 /* SoftwareList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareList.m; sourceTree = "<group>"; };
 		B66D0FE926113AA8000902F1 /* SoftwareList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftwareList.h; sourceTree = "<group>"; };
+		B66FA0692F53BA8A00669A60 /* SDL3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL3.framework; path = embedded/SDL3.framework; sourceTree = "<group>"; };
 		B67879002B0195C100CFACF2 /* nws1580.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws1580.plist; sourceTree = "<group>"; };
 		B67879012B0195C100CFACF2 /* nws5000x.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nws5000x.plist; sourceTree = "<group>"; };
 		B67879062B0195D800CFACF2 /* sun3_50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sun3_50.plist; sourceTree = "<group>"; };
@@ -1140,6 +1142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66FA06B2F53BED800669A60 /* SDL3.framework in Frameworks */,
 				B65D718625E70BD5008C5F87 /* WebKit.framework in Frameworks */,
 				B635C09D26784A4800B23BFD /* Sparkle.framework in Frameworks */,
 				B68A899426BF124B00B2C8C6 /* CoreMIDI.framework in Frameworks */,
@@ -1503,6 +1506,7 @@
 				B66236B824FDA698006CABD7 /* mame64 */,
 				B635C09C26784A4800B23BFD /* Sparkle.framework */,
 				B66236B224FDA522006CABD7 /* SDL2.framework */,
+				B66FA0692F53BA8A00669A60 /* SDL3.framework */,
 			);
 			name = "Embedded Content";
 			sourceTree = "<group>";
