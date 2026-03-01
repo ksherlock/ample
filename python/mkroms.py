@@ -20,7 +20,8 @@ EXTRA_MACHINES = [
 	"vgmplay"
 ]
 
-EXCLUDE = set()
+EXCLUDE = set([
+])
 
 # EXCLUDE = set([
 # 	"a2lancegs",

@@ -4,6 +4,12 @@
   <array>
     <dict>
       <key>value</key>
+      <string>rt1000b</string>
+      <key>description</key>
+      <string> Rancho Technology RT1000B SCSI Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>ie15kbd</string>
       <key>description</key>
       <string>15WWW-97-006 Keyboard</string>
@@ -238,9 +244,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>agat7</string>
+      <key>description</key>
+      <string>Agat-7</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>agat7_flop</string>
       <key>description</key>
       <string>Agat-7 140K Floppy Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>agat9</string>
+      <key>description</key>
+      <string>Agat-9</string>
     </dict>
     <dict>
       <key>value</key>

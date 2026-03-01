@@ -405,6 +405,39 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>gameio</string>
+        <key>description</key>
+        <string>Game I/O</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string></string>
+            <key>description</key>
+            <string>—None—</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>joy</string>
+            <key>description</key>
+            <string>Apple II Analog Joysticks</string>
+            <key>devname</key>
+            <string>a2joy</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>paddles</string>
+            <key>description</key>
+            <string>Apple II Paddles</string>
+            <key>devname</key>
+            <string>a2pdls</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
