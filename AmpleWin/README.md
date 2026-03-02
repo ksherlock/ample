@@ -8,10 +8,10 @@ This is a precision port of the macOS native [Ample](https://github.com/ksherloc
 > **Linux User?** Check out the [AmpleLinux](../AmpleLinux/) Port.
 
 
-![](screenshot-v0.285.png)
+![](screenshot.png)
 
 > [!IMPORTANT]
-> **Current Version Support**: Updated to stay in sync with Ample (macOS) **v0.285** resources and **MAME 0.285**.
+> **Current Version Support**: Updated to stay in sync with the latest version of Ample (macOS) resources and also MAME latest binary.
 
 ## 🍎 Ample (macOS) vs. AmpleWin (Windows) Comparison
 

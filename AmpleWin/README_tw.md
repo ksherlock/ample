@@ -8,10 +8,10 @@
 > **Linux 使用者？** 請參考 [AmpleLinux](../AmpleLinux/) Linux 移植版。
 
 
-![](screenshot-v0.285.png)
+![](screenshot.png)
 
 > [!IMPORTANT]
-> **版本支援說明**：目前已同步支援至 Ample (macOS) **v0.285** 資源定義以及 **MAME 0.285** 核心。
+> **版本支援說明**：目前已同步支援至 Ample (macOS) 最新版本之資源定義以及 MAME 最新版本之核心。
 
 ## 🍎 Ample (macOS) vs. AmpleWin (Windows) 完整對照表
 

@@ -4,10 +4,10 @@
 
 這是一個將 macOS 原生 [Ample](https://github.com/ksherlock/ample) 專案移植至 Linux 平台的版本，基於 [AmpleWin](../AmpleWin/) Windows 移植版改編。
 
-![](screenshot-v0.285.png)
+![](screenshot.png)
 
 > [!IMPORTANT]
-> **版本支援說明**：目前已同步支援至 Ample (macOS) **v0.285** 資源定義以及 **MAME 0.285** 核心。
+> **版本支援說明**：目前已同步支援至 Ample (macOS) 最新版本之資源定義以及 MAME 最新版本之核心。
 
 ## 🍎 Ample (macOS) vs. AmpleLinux (Linux) 完整對照表
 

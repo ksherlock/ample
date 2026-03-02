@@ -1,6 +1,21 @@
 # Agent Task Audit Log - Ample Linux Port
 
 
+## 📅 Session: 2026-03-02 (Session 3)
+
+### 🎯 Objective: Upstream Version Tracking & Documentation Maintenance
+Focused on updating the Linux port documentation to track MAME 0.286 and simplifying maintainability.
+
+### ✅ Key Achievements:
+1.  **Documentation Refactoring**:
+    *   Renamed version-specific screenshot files (e.g. `screenshot-v0.28x.png` to `screenshot.png`).
+    *   Updated `README.md` and `README_tw.md` to use generic "latest version" terminology to prevent the need for manual text updates upon future Ample/MAME releases.
+
+### 🚀 Current Project Status
+The Linux Port documentation is updated for MAME 0.286 and future-proofed against minor version increments.
+
+---
+
 ## 📅 Session: 2026-02-17 (Session 2)
 
 ### 🎯 Objective: Real-World Testing & Deployment Fix

@@ -4,10 +4,10 @@
 
 This is a port of the macOS native [Ample](https://github.com/ksherlock/ample) project to the Linux platform, based on the [AmpleWin](../AmpleWin/) Windows Port.
 
-![](screenshot-v0.285.png)
+![](screenshot.png)
 
 > [!IMPORTANT]
-> **Current Version Support**: Updated to stay in sync with Ample (macOS) **v0.285** resources and **MAME 0.285**.
+> **Current Version Support**: Updated to stay in sync with the latest version of Ample (macOS) resources and also MAME latest binary.
 
 ## 🍎 Ample (macOS) vs. AmpleLinux (Linux) Comparison
 

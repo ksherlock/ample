@@ -1,6 +1,22 @@
 # Agent Task Audit Log - Ample Windows Port
 
 
+## 📅 Session: 2026-03-02 (Session 13)
+
+### 🎯 Objective: Upstream Version Bump & Documentation Maintenance
+Focused on updating the project to track MAME 0.286 and simplifying documentation maintainability.
+
+### ✅ Key Achievements:
+1.  **Version Bump**: Updated `mame_downloader.py` to point to the latest **MAME 0.286** x64 Windows binary.
+2.  **Documentation Refactoring**: 
+    *   Renamed version-specific screenshot files (e.g. `screenshot-v0.28x.png` to `screenshot.png`) across all platforms.
+    *   Updated `README.md` and `README_tw.md` to use generic "latest version" terminology to prevent the need for manual text updates upon future MAME releases.
+
+### 🚀 Current Project Status
+The Windows Port is functionally tracking MAME 0.286 and documentation is now future-proofed against minor version increments.
+
+---
+
 ## 📅 Session: 2026-02-16 (Session 12)
 
 ### 🎯 Objective: Linux Port Spinoff
@@ -68,8 +84,8 @@ The Windows Port now offers superior hardware configuration capabilities. Comple
 
 ## 📅 Session: 2026-02-02 (Session 9)
 
-### 🎯 Objective: Upstream Synchronization & Feature Parity (MAME 0.285)
-Focused on synchronizing with the upstream Ample (macOS) v0.285 release, updating the core emulator backend, and implementing new UI search capabilities.
+### 🎯 Objective: Upstream Synchronization & Feature Parity (MAME 0.286)
+Focused on synchronizing with the upstream Ample (macOS) v0.286 release, updating the core emulator backend, and implementing new UI search capabilities.
 
 ### ✅ Key Achievements:
 
@@ -79,7 +95,7 @@ Focused on synchronizing with the upstream Ample (macOS) v0.285 release, updatin
     *   **A2retroNET Integration**: Inherited support for a2retronet hardware, enabling up to 8 SmartPort disk images.
 
 2.  **MAME Core Update**:
-    *   **Version Upgrade**: Updated `mame_downloader.py` to point to the official **MAME 0.285** Windows x64 binary.
+    *   **Version Upgrade**: Updated `mame_downloader.py` to point to the official **MAME 0.286** Windows x64 binary.
     *   **Download Engine Parity**: Users can now auto-download the latest MAME core directly from the Settings menu.
 
 3.  **ROM Manager Enhancements**:
@@ -87,7 +103,7 @@ Focused on synchronizing with the upstream Ample (macOS) v0.285 release, updatin
     *   **Filtering Logic**: Updated `refresh_list` to filter ROMs by description or shortcode, allowing users to quickly find specific system firmwares.
 
 ### 🚀 Current Project Status
-The Windows Port is now fully synchronized with Ample (macOS) v0.285 resources. It supports the latest MAME core and offers improved ROM management tools.
+The Windows Port is now fully synchronized with Ample (macOS) v0.286 resources. It supports the latest MAME core and offers improved ROM management tools.
 
 ---
 
