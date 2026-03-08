@@ -754,7 +754,7 @@ class AmpleMainWindow(QMainWindow):
         os.startfile(self.app_dir)
 
     def open_help_url(self):
-        os.startfile("https://github.com/anomixer/ample/tree/master/AmpleWin")
+        os.startfile("https://github.com/ksherlock/ample/tree/master/AmpleWin")
 
     def init_ui(self):
         container = QWidget()

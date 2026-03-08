@@ -852,7 +852,7 @@ class AmpleMainWindow(QMainWindow):
         _xdg_open(self.app_dir)
 
     def open_help_url(self):
-        _xdg_open("https://github.com/anomixer/ample/tree/master/AmpleLinux")
+        _xdg_open("https://github.com/ksherlock/ample/tree/master/AmpleLinux")
 
     def init_ui(self):
         container = QWidget()
