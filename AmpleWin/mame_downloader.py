@@ -11,8 +11,8 @@ class MameDownloadWorker(QThread):
     def __init__(self, dest_dir):
         super().__init__()
         self.dest_dir = dest_dir
-        # MAME official self-extracting EXE - Updated to 0.286
-        self.url = "https://github.com/mamedev/mame/releases/download/mame0286/mame0286b_x64.exe"
+        # MAME official self-extracting EXE - Updated to 0.287
+        self.url = "https://github.com/mamedev/mame/releases/download/mame0287/mame0287b_x64.exe"
 
     def run(self):
         try:
