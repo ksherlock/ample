@@ -203,6 +203,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>neomania</string>
+            <key>description</key>
+            <string>Neo Mania Adapter JAMMA Board</string>
+            <key>devname</key>
+            <string>neomania_adapter</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>samdac</string>
             <key>description</key>
             <string>SAMDAC</string>
@@ -8621,6 +8629,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -8983,6 +8999,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -9228,6 +9252,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>

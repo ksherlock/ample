@@ -4,12 +4,6 @@
   <array>
     <dict>
       <key>value</key>
-      <string>rt1000b</string>
-      <key>description</key>
-      <string> Rancho Technology RT1000B SCSI Controller</string>
-    </dict>
-    <dict>
-      <key>value</key>
       <string>ie15kbd</string>
       <key>description</key>
       <string>15WWW-97-006 Keyboard</string>
@@ -427,6 +421,12 @@
       <string>a2sd</string>
       <key>description</key>
       <string>Apple II SD Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2sic</string>
+      <key>description</key>
+      <string>Apple II Serial Interface Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2173,6 +2173,12 @@
       <string>nb_rtpd</string>
       <key>description</key>
       <string>Radius Two Page Display Video Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>rt1000b</string>
+      <key>description</key>
+      <string>Rancho Technology RT1000B SCSI Controller</string>
     </dict>
     <dict>
       <key>value</key>

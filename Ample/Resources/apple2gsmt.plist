@@ -514,6 +514,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard</string>
             <key>description</key>
             <string>Microsoft SoftCard</string>
@@ -1101,6 +1109,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1694,6 +1710,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard</string>
             <key>description</key>
             <string>Microsoft SoftCard</string>
@@ -2281,6 +2305,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2874,6 +2906,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard</string>
             <key>description</key>
             <string>Microsoft SoftCard</string>
@@ -3464,6 +3504,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>softcard</string>
             <key>description</key>
             <string>Microsoft SoftCard</string>
@@ -4051,6 +4099,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -4964,6 +5020,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -5130,6 +5194,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -5291,6 +5363,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6120,6 +6200,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -6310,6 +6398,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7234,6 +7330,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -7395,6 +7499,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10155,6 +10267,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>

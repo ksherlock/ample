@@ -251,6 +251,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -517,6 +525,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -960,6 +976,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -1226,6 +1250,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1669,6 +1701,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -1935,6 +1975,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2378,6 +2426,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -2644,6 +2700,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -3089,6 +3153,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -3355,6 +3427,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -3800,6 +3880,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -4066,6 +4154,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -4509,6 +4605,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>sic</string>
+            <key>description</key>
+            <string>Apple II Serial Interface Card</string>
+            <key>devname</key>
+            <string>a2sic</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>wicotrackball</string>
             <key>description</key>
             <string>Apple II Wico Trackball Card</string>
@@ -4775,6 +4879,14 @@
             <string>IBS Computertechnik AP 2 Serial Interface</string>
             <key>devname</key>
             <string>ibsap2</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>sweetalk</string>
+            <key>description</key>
+            <string>Micromint Sweet Talker Phonetic Speech Synthesizer Interface</string>
+            <key>devname</key>
+            <string>sweetalk</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5226,6 +5338,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -5392,6 +5512,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -5553,6 +5681,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6382,6 +6518,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -6572,6 +6716,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7559,6 +7711,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>samdac</string>
                 <key>description</key>
                 <string>SAMDAC</string>
@@ -7782,6 +7942,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8686,6 +8854,219 @@
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>a2sic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r4</string>
+                <key>description</key>
+                <string>Revision 4</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>r3</string>
+                <key>description</key>
+                <string>Revision 3</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10641,6 +11022,14 @@
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
