@@ -1249,7 +1249,7 @@ class AmpleMainWindow(QMainWindow):
                 if not slot_name: continue
                 
                 # Default selection
-                if not self.current_slots.get(slot_name):
+                if slot_name not in self.current_slots:
                     best_val = None
                     for opt in slot.get('options', []):
                         if opt.get('default'):

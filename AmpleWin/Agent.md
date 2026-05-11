@@ -1,6 +1,19 @@
 # Agent Task Audit Log - Ample Windows Port
 
 
+## 📅 Session: 2026-05-11 (Session 14)
+
+### 🎯 Objective: Slot Configuration Consistency Fix
+Resolved an issue where slots with defaults could not be set to "None" because UI refreshes would revert them.
+
+### ✅ Key Achievements:
+1.  **"None-Aware" Slot Initialization**:
+    *   Modified `initialize_default_slots` to use `slot_name not in self.current_slots`.
+    *   Ensured manual "None" selections are preserved while maintaining automated defaults for new card insertion.
+2.  **Upstream Compatibility**: Prepared codebase for PR back to original source, ensuring robust slot behavior.
+
+---
+
 ## 📅 Session: 2026-03-02 (Session 13)
 
 ### 🎯 Objective: Upstream Version Bump & Documentation Maintenance

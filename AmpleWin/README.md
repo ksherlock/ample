@@ -40,7 +40,9 @@ This is a precision port of the macOS native [Ample](https://github.com/ksherloc
     *   **Smart Filtering**: Automatically identifies supported media types (flop1, flop2, cass...) to match machine capabilities.
     *   **Search Overlay**: Integrated Mac-style search with auto-completion and full descriptive names.
     *   **Compatibility Check**: Options marked as `disabled` in property lists (e.g. incompatible SCSI cards) are now correctly grayed out and unselectable, matching Mac behavior.
-*   **Advanced Slot Emulation**: Full support for nested sub-slots (e.g. SCSI cards). Automatically initializes default devices (CD-ROM/Hard Disk) upon card selection.
+*   **Advanced Slot Emulation**: Full support for nested sub-slots (e.g. SCSI cards). 
+    *   **Automated Defaults**: Automatically initializes default devices (CD-ROM/Hard Disk) upon card selection.
+    *   **Slot Consistency**: Improved logic to respect "None" (empty) selections across UI refreshes, matching the high standards of the native macOS port.
 *   **ROM Management**:
     *   **Search Filter**: Real-time searching in the ROM manager window to quickly find system firmwares.
     *   **Download Failover**: Automatic multi-server acquisition (callapple + mdk.cab) with transparent failover for maximum stability.

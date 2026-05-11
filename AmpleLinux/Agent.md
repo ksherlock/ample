@@ -1,6 +1,18 @@
 # Agent Task Audit Log - Ample Linux Port
 
 
+## 📅 Session: 2026-05-11 (Session 4)
+
+### 🎯 Objective: Slot Configuration Consistency Fix
+Synchronized slot initialization logic with AmpleWin to fix "None" persistence issue.
+
+### ✅ Key Achievements:
+1.  **"None-Aware" Slot Initialization**:
+    *   Applied the `slot_name not in self.current_slots` fix to `main.py`.
+2.  **Cross-Platform Consistency**: Ensured Linux port shares the improved slot behavior.
+
+---
+
 ## 📅 Session: 2026-03-02 (Session 3)
 
 ### 🎯 Objective: Upstream Version Tracking & Documentation Maintenance
