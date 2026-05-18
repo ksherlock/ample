@@ -80,7 +80,7 @@ class MameLauncher:
         
         if slots:
             for slot_name, option in slots.items():
-                if option and not slot_name.startswith(':'):
+                if option is not None and not slot_name.startswith(':'):
                     # Pass the slot argument regardless of base machine validation
                     args.extend([f"-{slot_name}", option])
         

@@ -1,6 +1,19 @@
 # Agent Task Audit Log - Ample Windows Port
 
 
+## 📅 Session: 2026-05-19 (Session 15)
+
+### 🎯 Objective: Complete Slot Configuration Persistence (MAME Command Line)
+Resolved the issue where selecting "None" for a slot in the UI didn't actually disable the device in MAME because empty slot arguments were being omitted from the command line.
+
+### ✅ Key Achievements:
+1.  **Command-Line Slot Persistence**:
+    *   Modified `build_args` in `mame_launcher.py` to allow empty string values (e.g. `option is not None` instead of `if option:`).
+    *   This ensures that `-[slot_name] ""` is explicitly passed on the command line, preventing MAME from falling back to its internal defaults.
+2.  **Parity**: Checked and verified this behavior across both `AmpleWin` and `AmpleLinux` ports, ensuring slots explicitly set to "None" are truly disabled when the emulator launches.
+
+---
+
 ## 📅 Session: 2026-05-11 (Session 14)
 
 ### 🎯 Objective: Slot Configuration Consistency Fix

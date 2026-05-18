@@ -1,6 +1,19 @@
 # Agent Task Audit Log - Ample Linux Port
 
 
+## 📅 Session: 2026-05-19 (Session 5)
+
+### 🎯 Objective: Complete Slot Configuration Persistence (MAME Command Line)
+Synchronized command line argument logic with AmpleWin to ensure "None" slots are explicitly disabled in MAME.
+
+### ✅ Key Achievements:
+1.  **Command-Line Slot Persistence**:
+    *   Modified `build_args` in `mame_launcher.py` to allow empty string values (e.g. `option is not None` instead of `if option:`).
+    *   This ensures that `-[slot_name] ""` is explicitly passed on the command line, preventing MAME from falling back to its internal defaults.
+2.  **Cross-Platform Parity**: Ensured consistent behavior with Windows and Web ports.
+
+---
+
 ## 📅 Session: 2026-05-11 (Session 4)
 
 ### 🎯 Objective: Slot Configuration Consistency Fix
