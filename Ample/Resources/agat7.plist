@@ -557,6 +557,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
