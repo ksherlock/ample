@@ -682,6 +682,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -768,6 +776,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -864,6 +880,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -950,6 +974,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1046,6 +1078,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -1132,6 +1172,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1328,6 +1376,42 @@
                 <string>watzman-a</string>
                 <key>description</key>
                 <string>Watzman w/clock persists after reset</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>nss_tvinterface</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>de</string>
+                <key>description</key>
+                <string>German</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fr</string>
+                <key>description</key>
+                <string>French</string>
               </dict>
             </array>
           </dict>
@@ -1642,6 +1726,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

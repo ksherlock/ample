@@ -5012,6 +5012,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -5186,6 +5194,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -5355,6 +5371,14 @@
                 <string>rx80</string>
                 <key>description</key>
                 <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6192,6 +6216,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -6395,6 +6427,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -6541,6 +6581,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -6627,6 +6675,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6723,6 +6779,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -6809,6 +6873,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6905,6 +6977,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -6991,6 +7071,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7087,6 +7175,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -7135,7 +7231,7 @@
                 <key>value</key>
                 <string>hp9895</string>
                 <key>description</key>
-                <string>HP9895</string>
+                <string>HP9895 floppy drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7322,6 +7418,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
@@ -7491,6 +7595,14 @@
                 <string>rx80</string>
                 <key>description</key>
                 <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7826,6 +7938,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -7912,6 +8032,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8008,6 +8136,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8094,6 +8230,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8190,6 +8334,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8281,6 +8433,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8367,6 +8527,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8470,6 +8638,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8556,6 +8732,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8652,6 +8836,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8738,6 +8930,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8834,6 +9034,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -8925,6 +9133,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -9011,6 +9227,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9114,6 +9338,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -9200,6 +9432,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9296,6 +9536,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -9382,6 +9630,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9478,6 +9734,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -9569,6 +9833,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -9655,6 +9927,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10259,6 +10539,14 @@
                 <string>rx80</string>
                 <key>description</key>
                 <string>Epson RX-80</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11548,6 +11836,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -11634,6 +11930,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11730,6 +12034,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -11816,6 +12128,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11912,6 +12232,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -12003,6 +12331,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
@@ -12089,6 +12425,14 @@
                 <string>pc98_hd</string>
                 <key>description</key>
                 <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12355,6 +12699,42 @@
                 <string>Votrax Type 'N Talk (Serial Port)</string>
                 <key>default</key>
                 <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>nss_tvinterface</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>de</string>
+                <key>description</key>
+                <string>German</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fr</string>
+                <key>description</key>
+                <string>French</string>
               </dict>
             </array>
           </dict>
@@ -12917,6 +13297,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
