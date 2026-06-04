@@ -336,6 +336,7 @@ DEVICE_REMAP = {
 }
 DEVICE_MEDIA = {
 	'cdrom': 'cdrom',
+	'cdrom_2x': 'cdrom',
 	'hdd': 'hard',
 	'harddisk': 'hard',
 	'525': 'floppy_5_25',

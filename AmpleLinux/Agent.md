@@ -1,5 +1,21 @@
 # Agent Task Audit Log - Ample Linux Port
 
+## 📅 Session: 2026-06-05 (Session 6)
+
+### 🎯 Objective: PowerBook Compatibility Fallback & Downloader Parity
+Addressed upstream MAME 0.288 C++ late-binding bug causing crashes on EASC audio chip Macs, and aligned the fallback interface with AmpleWin.
+
+### ✅ Key Achievements:
+1.  **Simplified Fallback Redirection**:
+    *   Aligned the crash warning interface with AmpleWin for affected PowerBooks (`macpb160` etc.).
+    *   Added a "Download Fallback (v0.287)" button that redirects users to the official MAME SDL Supported Platforms Wiki to download older MAME releases for their specific Linux distribution.
+    *   Maintains seamless redirection to `mame_0287` or `mame-vgm` if already configured in the local directory.
+2.  **ROM Manager Priority Update**:
+    *   Reordered ROM download servers to prioritize `mdk.cab`, solving missing ROM zip structure bugs (such as `dragon32`) when running on modern MAME 0.288+.
+3.  **Downloader Optimization**:
+    *   Added `mirror.ghproxy.com` proxy support to VGM Mod mirrors for accelerated downloads on Linux systems.
+
+---
 
 ## 📅 Session: 2026-05-19 (Session 5)
 

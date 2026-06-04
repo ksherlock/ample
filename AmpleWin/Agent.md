@@ -1,5 +1,21 @@
 # Agent Task Audit Log - Ample Windows Port
 
+## 📅 Session: 2026-06-05 (Session 16)
+
+### 🎯 Objective: PowerBook Compatibility Fallback & Downloader Acceleration
+Addressed upstream MAME 0.288 C++ late-binding bug causing crashes on EASC audio chip Macs, and accelerated the VGM Mod download.
+
+### ✅ Key Achievements:
+1.  **EASC Crash Fallback Mechanism**:
+    *   Added automatic detection for affected PowerBook models (`macpb160`, `macpb180`, `macpb165`, `macpb165c`, `macpb180c`).
+    *   Implements seamless redirect to `mame_0287.exe` or `mame-vgm.exe` (v0.280) if present in the executable folder.
+    *   Provides user warning with options to auto-download MAME v0.280 (VGM Mod) fallback, force launch under 0.288, or cancel.
+2.  **Downloader Optimization**:
+    *   Switched VGM Mod download mirror to prioritize `mirror.ghproxy.com` GitHub proxy for faster global asset retrieval.
+3.  **ROM Manager Priority Check**:
+    *   Reordered ROM base URLs to prioritize `mdk.cab` over `callapple.org`. This guarantees the latest split set ROMs (like `dragon32` with split files) are downloaded correctly, solving the missing files crash on MAME 0.288+.
+
+---
 
 ## 📅 Session: 2026-05-19 (Session 15)
 

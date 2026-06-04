@@ -47,6 +47,7 @@ This is a precision port of the macOS native [Ample](https://github.com/ksherloc
     *   **Search Filter**: Real-time searching in the ROM manager window to quickly find system firmwares.
     *   **Download Failover**: Automatic multi-server acquisition (callapple + mdk.cab) with transparent failover for maximum stability.
     *   **Extended Library**: Expanded support for PowerBook Duo 280, Pravetz 8C, TK3000, and more.
+    *   **Compatibility Fallback**: Automatically detects affected Macintosh PowerBook models (`macpb160` etc.) that suffer from the MAME 0.288 EASC crash bug. Seamlessly switches to a local MAME 0.287 (`mame_0287.exe`) or VGM Mod (`mame-vgm.exe`), or offers to download the v0.280 fallback copy.
 *   **Shared Directory**: Full parity with the Mac version, allowing direct host-to-emulator file sharing via the `-share_directory` argument. (Includes click-to-browse support).
 *   **VGM Support (Advanced)**: Since modern MAME removed VGM support, AmpleWin implements a robust background workflow to download and configure the **MAME-VGM Mod (v0.280)**. It uses a non-destructive extraction process (`mame-vgm.exe`) to preserve your main MAME core while restoring high-fidelity music recording.
 
