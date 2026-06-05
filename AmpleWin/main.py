@@ -1142,7 +1142,7 @@ class AmpleMainWindow(QMainWindow):
                 if not slot_name: continue
                 
                 # Default selection
-                if not self.current_slots.get(slot_name):
+                if slot_name not in self.current_slots:
                     best_val = None
                     for opt in slot.get('options', []):
                         if opt.get('default'):
@@ -1451,6 +1451,9 @@ class AmpleMainWindow(QMainWindow):
                     key = k
                     if k == 'cass': key = 'cassette'
                     total_media[key] = total_media.get(key, 0) + v
+            elif 'value' in data and data.get('value') == 'cdrom_2x':
+                # Compatibility fallback for SCSI CD-ROM (2X speed) which lacks explicit media tag in plist
+                total_media['cdrom'] = total_media.get('cdrom', 0) + 1
             
             # 2. Recurse into slots
             if 'slots' in data:
@@ -2026,6 +2029,40 @@ class AmpleMainWindow(QMainWindow):
         cmd_str = self.cmd_preview.toPlainText().strip()
         if not cmd_str: return
         
+        # EASC PowerBook 0.288 Crash Fallback Check
+        affected_macs = ["macpb160", "macpb180", "macpb165", "macpb165c", "macpb180c"]
+        if self.selected_machine in affected_macs:
+            mame_bin_dir = os.path.dirname(self.launcher.mame_path)
+            alt_mac_exe = os.path.join(mame_bin_dir, "mame_0287.exe")
+            vgm_mac_exe = os.path.join(mame_bin_dir, "mame-vgm.exe")
+            
+            # Check if any fallback is already present
+            has_fallback = os.path.exists(alt_mac_exe) or os.path.exists(vgm_mac_exe)
+            
+            if not has_fallback:
+                msg_box = QMessageBox(self)
+                msg_box.setIcon(QMessageBox.Warning)
+                msg_box.setWindowTitle("EASC Audio Chip Bug (MAME v0.288)")
+                msg_box.setText(f"The machine '{self.selected_machine}' will crash on MAME v0.288 due to an upstream C++ type mismatch bug.")
+                msg_box.setInformativeText(
+                    "To run this model, you can automatically download MAME v0.280 (VGM Mod) as a fallback, "
+                    "or run a compatible sibling model instead (e.g. 'macpb170' or 'macpb140')."
+                )
+                
+                dl_btn = msg_box.addButton("Download Fallback (v0.280)", QMessageBox.YesRole)
+                force_btn = msg_box.addButton("Force Launch (v0.288)", QMessageBox.NoRole)
+                cancel_btn = msg_box.addButton("Cancel", QMessageBox.RejectRole)
+                
+                msg_box.exec()
+                
+                if msg_box.clickedButton() == dl_btn:
+                    self.download_vgm_mod(mame_bin_dir)
+                    return
+                elif msg_box.clickedButton() == force_btn:
+                    pass
+                else:
+                    return
+
         print(f"Launching custom command: {cmd_str}")
         
         # Determine the MAME binary directory
@@ -2060,7 +2097,21 @@ class AmpleMainWindow(QMainWindow):
             target_exe_path = args[0]
             
             if exe_cmd in ["mame", "mame.exe"]:
-                target_exe_path = self.launcher.mame_path
+                affected_macs = ["macpb160", "macpb180", "macpb165", "macpb165c", "macpb180c"]
+                alt_mac_exe = os.path.join(mame_bin_dir, "mame_0287.exe")
+                vgm_mac_exe = os.path.join(mame_bin_dir, "mame-vgm.exe")
+                
+                if self.selected_machine in affected_macs:
+                    if os.path.exists(alt_mac_exe):
+                        target_exe_path = alt_mac_exe
+                        print(f"Applying compatibility fallback: using mame_0287.exe for {self.selected_machine}")
+                    elif os.path.exists(vgm_mac_exe):
+                        target_exe_path = vgm_mac_exe
+                        print(f"Applying compatibility fallback: using mame-vgm.exe for {self.selected_machine}")
+                    else:
+                        target_exe_path = self.launcher.mame_path
+                else:
+                    target_exe_path = self.launcher.mame_path
             elif exe_cmd in ["mame-vgm", "mame-vgm.exe"]:
                  path_vgm = os.path.join(mame_bin_dir, "mame-vgm.exe")
                  if os.path.exists(path_vgm):

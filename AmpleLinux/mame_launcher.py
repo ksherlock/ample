@@ -79,9 +79,15 @@ class MameLauncher:
         
         
         if slots:
+            valid_slots = self.get_valid_slots(machine)
             for slot_name, option in slots.items():
-                if option and not slot_name.startswith(':'):
-                    # Pass the slot argument regardless of base machine validation
+                if option is not None and not slot_name.startswith(':'):
+                    # If it's an empty option (None/disabled in UI)
+                    if option == "":
+                        # Only pass if MAME actually supports this slot
+                        if valid_slots and slot_name not in valid_slots:
+                            continue
+                    # Pass the slot argument regardless of base machine validation (unless empty and unsupported)
                     args.extend([f"-{slot_name}", option])
         
         if media:

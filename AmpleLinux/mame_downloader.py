@@ -17,9 +17,9 @@ class VgmModDownloadWorker(QThread):
     def run(self):
         # Try multiple URLs for VGM support
         urls = [
-            "https://vgmrips.net/programs/creators/MAME0280_bin64_2025-11-16.7z",
+            "https://mirror.ghproxy.com/https://github.com/anomixer/ample/raw/mame-vgm/MAME0280_bin64_2025-11-16.7z",
             "https://github.com/anomixer/ample/raw/mame-vgm/MAME0280_bin64_2025-11-16.7z",
-            "https://github.com/anomixer/ample/blob/mame-vgm/MAME0280_bin64_2025-11-16.7z?raw=true"
+            "https://vgmrips.net/programs/creators/MAME0280_bin64_2025-11-16.7z"
         ]
         
         last_error = ""

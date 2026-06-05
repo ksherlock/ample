@@ -59,17 +59,32 @@ class RomManager(QObject):
         self.resources_path = resources_path
         self.roms_dir = roms_dir
         self.base_urls = [
-            "https://www.callapple.org/roms/",
-            "https://mdk.cab/download/split/"
+            "https://mdk.cab/download/split/",
+            "https://www.callapple.org/roms/"
         ]
         self.rom_list = self.load_rom_list()
 
     def load_rom_list(self):
         path = os.path.join(self.resources_path, "roms.plist")
         if not os.path.exists(path):
-            return []
-        with open(path, 'rb') as f:
-            return plistlib.load(f)
+            roms = []
+        else:
+            with open(path, 'rb') as f:
+                roms = plistlib.load(f)
+        
+        # Compatibility fallback: Add back ROMs removed by upstream but still supported by mdk.cab
+        custom_roms = [
+            {'value': 'tk3000', 'description': 'TK3000 //e'},
+            {'value': 'prav8c', 'description': 'Pravetz 8C'},
+            {'value': 'prav82', 'description': 'Pravetz 82'},
+            {'value': 'prav8m', 'description': 'Pravetz 8M'},
+            {'value': 'prav8d', 'description': 'Pravetz 8D'}
+        ]
+        existing_values = {r.get('value') for r in roms if 'value' in r}
+        for cr in custom_roms:
+            if cr['value'] not in existing_values:
+                roms.append(cr)
+        return roms
 
     def get_rom_status(self):
         status_list = []

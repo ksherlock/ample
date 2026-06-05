@@ -40,11 +40,14 @@ This is a precision port of the macOS native [Ample](https://github.com/ksherloc
     *   **Smart Filtering**: Automatically identifies supported media types (flop1, flop2, cass...) to match machine capabilities.
     *   **Search Overlay**: Integrated Mac-style search with auto-completion and full descriptive names.
     *   **Compatibility Check**: Options marked as `disabled` in property lists (e.g. incompatible SCSI cards) are now correctly grayed out and unselectable, matching Mac behavior.
-*   **Advanced Slot Emulation**: Full support for nested sub-slots (e.g. SCSI cards). Automatically initializes default devices (CD-ROM/Hard Disk) upon card selection.
+*   **Advanced Slot Emulation**: Full support for nested sub-slots (e.g. SCSI cards). 
+    *   **Automated Defaults**: Automatically initializes default devices (CD-ROM/Hard Disk) upon card selection.
+    *   **Slot Consistency**: Improved logic to respect "None" (empty) selections across UI refreshes, matching the high standards of the native macOS port.
 *   **ROM Management**:
     *   **Search Filter**: Real-time searching in the ROM manager window to quickly find system firmwares.
     *   **Download Failover**: Automatic multi-server acquisition (callapple + mdk.cab) with transparent failover for maximum stability.
     *   **Extended Library**: Expanded support for PowerBook Duo 280, Pravetz 8C, TK3000, and more.
+    *   **Compatibility Fallback**: Automatically detects affected Macintosh PowerBook models (`macpb160` etc.) that suffer from the MAME 0.288 EASC crash bug. Seamlessly switches to a local MAME 0.287 (`mame_0287.exe`) or VGM Mod (`mame-vgm.exe`), or offers to download the v0.280 fallback copy.
 *   **Shared Directory**: Full parity with the Mac version, allowing direct host-to-emulator file sharing via the `-share_directory` argument. (Includes click-to-browse support).
 *   **VGM Support (Advanced)**: Since modern MAME removed VGM support, AmpleWin implements a robust background workflow to download and configure the **MAME-VGM Mod (v0.280)**. It uses a non-destructive extraction process (`mame-vgm.exe`) to preserve your main MAME core while restoring high-fidelity music recording.
 
