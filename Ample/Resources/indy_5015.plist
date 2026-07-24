@@ -58,6 +58,29 @@
           </dict>
         </array>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>gio64_gfx</string>
+        <key>description</key>
+        <string>GIO32 Graphics</string>
+        <key>options</key>
+        <array>
+          <dict>
+            <key>value</key>
+            <string>xl24</string>
+            <key>description</key>
+            <string>SGI 24-bit XL board</string>
+            <key>default</key>
+            <true/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>xl8</string>
+            <key>description</key>
+            <string>SGI 8-bit XL board</string>
+          </dict>
+        </array>
+      </dict>
     </array>
     <key>devices</key>
     <array>
