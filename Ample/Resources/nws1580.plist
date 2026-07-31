@@ -31,7 +31,7 @@
             <key>value</key>
             <string>4M</string>
             <key>default</key>
-            <false/>
+            <true/>
           </dict>
           <dict>
             <key>intValue</key>
@@ -41,7 +41,7 @@
             <key>value</key>
             <string>8M</string>
             <key>default</key>
-            <true/>
+            <false/>
           </dict>
           <dict>
             <key>intValue</key>
@@ -84,7 +84,7 @@
             <key>value</key>
             <string>nws1580</string>
             <key>description</key>
-            <string>NWS-1580 v1.3</string>
+            <string>SONY NET WORK STATION MC68030 Monitor Release 1.3</string>
           </dict>
         </array>
       </dict>
@@ -121,6 +121,14 @@
             <string>—None—</string>
             <key>default</key>
             <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -253,6 +261,14 @@
             <true/>
             <key>devname</key>
             <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -305,6 +321,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>h19</string>
             <key>description</key>
             <string>Heath H19 Terminal (Serial Port)</string>
@@ -432,6 +456,14 @@
             <string>Serial Terminal</string>
             <key>devname</key>
             <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -542,6 +574,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -582,6 +622,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -624,6 +672,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -664,6 +720,14 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -706,6 +770,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -747,6 +819,14 @@
                   <integer>1</integer>
                 </dict>
               </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
+              </dict>
             </array>
           </dict>
           <dict>
@@ -787,6 +867,231 @@
                   <key>hard</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape NEWS</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>adaptator_multitap</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:joy_p1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:joy_p2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joy</string>
+                <key>description</key>
+                <string>Atari / CBM Digital joystick</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>wheel</string>
+                <key>description</key>
+                <string>Atari / CBM Driving Wheel</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pad</string>
+                <key>description</key>
+                <string>Atari / CBM Dual paddles</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keypad</string>
+                <key>description</key>
+                <string>Atari / CBM Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>lp</string>
+                <key>description</key>
+                <string>Atari / CBM Light Pen</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mouse</string>
+                <key>description</key>
+                <string>Atari / CBM Mouse</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>trakball</string>
+                <key>description</key>
+                <string>Atari CX22/CX80 Trak-Ball</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cx85</string>
+                <key>description</key>
+                <string>Atari CX85 Numeric Keypad</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>joybstr</string>
+                <key>description</key>
+                <string>CBS Electronics Booster-Grip Joystick Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_imaginator_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rev12</string>
+                <key>description</key>
+                <string>GPC Rev. 1.2 P/N 9000-0002</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>unknown</string>
+                <key>description</key>
+                <string>GPC Unknown revision</string>
               </dict>
             </array>
           </dict>
@@ -830,6 +1135,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>nss_tvinterface</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>de</string>
+                <key>description</key>
+                <string>German</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fr</string>
+                <key>description</key>
+                <string>French</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -845,6 +1186,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -973,6 +1322,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1137,6 +1494,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

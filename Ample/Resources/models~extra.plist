@@ -261,7 +261,7 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Craft II+</string>
+          <string>Craft ][+</string>
           <key>value</key>
           <string>craft2p</string>
         </dict>
@@ -331,12 +331,6 @@
           <key>value</key>
           <string>uniap2pt</string>
         </dict>
-        <dict>
-          <key>description</key>
-          <string>Unitron AP II+ (Teclado Inteligente)</string>
-          <key>value</key>
-          <string>uniap2ti</string>
-        </dict>
       </array>
     </dict>
     <dict>
@@ -364,7 +358,7 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>TK3000//e</string>
+          <string>TK3000 //e</string>
           <key>value</key>
           <string>tk3000</string>
         </dict>
@@ -418,7 +412,7 @@
           <key>description</key>
           <string>Laser 3000</string>
           <key>value</key>
-          <string>las3000</string>
+          <string>laser3k</string>
         </dict>
         <dict>
           <key>description</key>
@@ -440,13 +434,13 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Laser 128ex (version 4.5)</string>
+          <string>Laser 128EX</string>
           <key>value</key>
           <string>las128ex</string>
         </dict>
         <dict>
           <key>description</key>
-          <string>Laser 128ex2 (version 6.1)</string>
+          <string>Laser 128EX/2</string>
           <key>value</key>
           <string>las128e2</string>
         </dict>
@@ -888,37 +882,6 @@
     </dict>
     <dict>
       <key>description</key>
-      <string>Lisa</string>
-      <key>children</key>
-      <array>
-        <dict>
-          <key>description</key>
-          <string>Lisa</string>
-          <key>value</key>
-          <string>lisa</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Lisa2</string>
-          <key>value</key>
-          <string>lisa2</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Lisa2/10</string>
-          <key>value</key>
-          <string>lisa210</string>
-        </dict>
-        <dict>
-          <key>description</key>
-          <string>Macintosh XL</string>
-          <key>value</key>
-          <string>macxl</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>description</key>
       <string>Acorn</string>
       <key>children</key>
       <array>
@@ -1163,6 +1126,37 @@
           <string>Tano Dragon 64 (NTSC)</string>
           <key>value</key>
           <string>tanodr64</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>description</key>
+      <string>Lisa</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string>Lisa</string>
+          <key>value</key>
+          <string>lisa</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Lisa2</string>
+          <key>value</key>
+          <string>lisa2</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Lisa2/10</string>
+          <key>value</key>
+          <string>lisa210</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string>Macintosh XL</string>
+          <key>value</key>
+          <string>macxl</string>
         </dict>
       </array>
     </dict>

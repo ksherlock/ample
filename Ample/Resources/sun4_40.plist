@@ -151,6 +151,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>h19</string>
             <key>description</key>
             <string>Heath H19 Terminal (Serial Port)</string>
@@ -278,6 +286,14 @@
             <string>Serial Terminal</string>
             <key>devname</key>
             <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -330,6 +346,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>h19</string>
             <key>description</key>
             <string>Heath H19 Terminal (Serial Port)</string>
@@ -460,6 +484,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>sunkbd</string>
             <key>description</key>
             <string>Sun Keyboard Adaptor</string>
@@ -506,6 +538,14 @@
             <string>—None—</string>
             <key>default</key>
             <false/>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>type2hle</string>
+            <key>description</key>
+            <string>Sun Type 2 Keyboard (HLE)</string>
+            <key>devname</key>
+            <string>kbd_type2_hle</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1013,6 +1053,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>heath_imaginator_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rev12</string>
+                <key>description</key>
+                <string>GPC Rev. 1.2 P/N 9000-0002</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>unknown</string>
+                <key>description</key>
+                <string>GPC Unknown revision</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>heath_watz_tlb</string>
         <key>slots</key>
         <array>
@@ -1049,6 +1125,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>nss_tvinterface</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>de</string>
+                <key>description</key>
+                <string>German</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fr</string>
+                <key>description</key>
+                <string>French</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>rs232_patch_box</string>
         <key>slots</key>
         <array>
@@ -1064,6 +1176,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -1192,6 +1312,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -1356,6 +1484,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

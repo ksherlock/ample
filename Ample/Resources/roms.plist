@@ -628,6 +628,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>c64_ar4x</string>
+      <key>description</key>
+      <string>C64 Action Replay</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>c64_buscard</string>
       <key>description</key>
       <string>C64 BusCard Cartridge</string>
@@ -1297,6 +1303,12 @@
       <string>4dparprn</string>
       <key>description</key>
       <string>Fourth Dimension Parallel Printer Interface</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>ace80</string>
+      <key>description</key>
+      <string>Franklin ACE 80 CPU Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2088,7 +2100,13 @@
       <key>value</key>
       <string>a2aplcrd</string>
       <key>description</key>
-      <string>PCPI Applicard</string>
+      <string>PCPI Appli-Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pd32</string>
+      <key>description</key>
+      <string>PD32 Coprocessor (Rand/Scolaro)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2314,6 +2332,18 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>s97801_kbd</string>
+      <key>description</key>
+      <string>Siemens 97801 Keyboard (International V1)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>s97801_device</string>
+      <key>description</key>
+      <string>Siemens 97801 Terminal</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pd3_lviw</string>
       <key>description</key>
       <string>Sigma Designs L-View</string>
@@ -2413,6 +2443,12 @@
       <string>cdu75s</string>
       <key>description</key>
       <string>Sony/Apple CDU75S CD-R</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>spectred_kbd</string>
+      <key>description</key>
+      <string>Spectrum ED Keyboard</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2551,6 +2587,12 @@
       <string>uniap2ti</string>
       <key>description</key>
       <string>Unitron AP II+ Teclado Inteligente</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2autokbd</string>
+      <key>description</key>
+      <string>Unknown Apple II Clone Keyboard With AUTO</string>
     </dict>
     <dict>
       <key>value</key>
