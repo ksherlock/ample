@@ -765,6 +765,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -1176,6 +1184,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -1584,6 +1600,14 @@
               <key>floppy_5_25</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
           </dict>
         </array>
       </dict>
@@ -1994,6 +2018,14 @@
               <integer>1</integer>
             </dict>
           </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
+          </dict>
         </array>
       </dict>
       <dict>
@@ -2402,6 +2434,14 @@
               <key>floppy_5_25</key>
               <integer>1</integer>
             </dict>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>c5181</string>
+            <key>description</key>
+            <string>Xetec C-5181 Serial Printer Interface</string>
+            <key>devname</key>
+            <string>xetec_c5181</string>
           </dict>
         </array>
       </dict>
@@ -2996,9 +3036,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3138,6 +3194,42 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>c2040</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos10</string>
+                <key>description</key>
+                <string>DOS 1.0</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos12</string>
+                <key>description</key>
+                <string>DOS 1.2</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>c4040</string>
         <key>slots</key>
         <array>
@@ -3194,7 +3286,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3202,7 +3294,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3210,7 +3302,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3226,7 +3318,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3234,7 +3326,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3242,7 +3334,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3255,7 +3347,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3268,7 +3360,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3281,7 +3373,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3294,7 +3386,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3346,7 +3438,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3354,7 +3446,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3362,7 +3454,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3378,7 +3470,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3386,7 +3478,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3394,7 +3486,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3407,7 +3499,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3420,7 +3512,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3433,7 +3525,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3446,7 +3538,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3498,7 +3590,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3506,7 +3598,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3514,7 +3606,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3530,7 +3622,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3538,7 +3630,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3546,7 +3638,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3559,7 +3651,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3572,7 +3664,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3585,7 +3677,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3598,7 +3690,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3650,7 +3742,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3658,7 +3750,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3666,7 +3758,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3682,7 +3774,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3690,7 +3782,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3698,7 +3790,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3711,7 +3803,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3724,7 +3816,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3737,7 +3829,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3750,7 +3842,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3802,7 +3894,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3810,7 +3902,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3818,7 +3910,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3834,7 +3926,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3842,7 +3934,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3850,7 +3942,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3863,7 +3955,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3876,7 +3968,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3889,7 +3981,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3902,7 +3994,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -3954,7 +4046,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3962,7 +4054,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3970,7 +4062,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3986,7 +4078,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3994,7 +4086,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4002,7 +4094,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4015,7 +4107,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4028,7 +4120,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4041,7 +4133,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4054,7 +4146,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4106,7 +4198,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4114,7 +4206,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4122,7 +4214,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4138,7 +4230,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4146,7 +4238,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4154,7 +4246,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4167,7 +4259,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4180,7 +4272,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4193,7 +4285,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4206,7 +4298,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4258,7 +4350,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4266,7 +4358,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4274,7 +4366,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4290,7 +4382,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4298,7 +4390,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4306,7 +4398,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4319,7 +4411,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4332,7 +4424,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4345,7 +4437,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4358,7 +4450,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4410,7 +4502,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4418,7 +4510,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4426,7 +4518,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4442,7 +4534,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4450,7 +4542,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4458,7 +4550,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4471,7 +4563,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4484,7 +4576,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4497,7 +4589,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4510,7 +4602,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -4656,9 +4748,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4975,7 +5083,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4983,7 +5091,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -4991,7 +5099,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5007,7 +5115,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5015,7 +5123,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5023,7 +5131,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5036,7 +5144,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5049,7 +5157,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5062,7 +5170,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5075,7 +5183,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5127,7 +5235,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5135,7 +5243,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5143,7 +5251,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5159,7 +5267,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5167,7 +5275,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5175,7 +5283,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5188,7 +5296,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5201,7 +5309,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5214,7 +5322,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5227,7 +5335,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5279,7 +5387,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5287,7 +5395,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5295,7 +5403,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5311,7 +5419,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5319,7 +5427,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5327,7 +5435,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5340,7 +5448,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5353,7 +5461,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5366,7 +5474,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5379,7 +5487,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5431,7 +5539,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5439,7 +5547,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5447,7 +5555,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5463,7 +5571,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5471,7 +5579,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5479,7 +5587,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5492,7 +5600,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5505,7 +5613,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5518,7 +5626,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5531,7 +5639,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5583,7 +5691,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5591,7 +5699,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5599,7 +5707,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5615,7 +5723,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5623,7 +5731,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5631,7 +5739,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5644,7 +5752,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5657,7 +5765,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5670,7 +5778,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5683,7 +5791,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5735,7 +5843,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5743,7 +5851,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5751,7 +5859,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5767,7 +5875,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5775,7 +5883,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5783,7 +5891,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5796,7 +5904,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5809,7 +5917,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5822,7 +5930,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5835,7 +5943,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5887,7 +5995,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5895,7 +6003,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5903,7 +6011,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5919,7 +6027,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5927,7 +6035,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5935,7 +6043,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5948,7 +6056,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5961,7 +6069,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5974,7 +6082,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -5987,7 +6095,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6039,7 +6147,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6047,7 +6155,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6055,7 +6163,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6071,7 +6179,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6079,7 +6187,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6087,7 +6195,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6100,7 +6208,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6113,7 +6221,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6126,7 +6234,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6139,7 +6247,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6191,7 +6299,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6199,7 +6307,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6207,7 +6315,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6223,7 +6331,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6231,7 +6339,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6239,7 +6347,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6252,7 +6360,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6265,7 +6373,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6278,7 +6386,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6291,7 +6399,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -6437,9 +6545,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6850,9 +6974,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8134,6 +8274,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -8259,6 +8407,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8318,6 +8474,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -8443,6 +8607,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8504,27 +8676,51 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r1</string>
+                <string>dos25m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 1</string>
+                <string>DOS 2.5 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r2</string>
+                <string>dos25r2m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 2</string>
+                <string>DOS 2.5 rev 2 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r3</string>
+                <string>dos25r3m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 3</string>
+                <string>DOS 2.5 rev 3 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos27</string>
+                <string>dos25t</string>
                 <key>description</key>
-                <string>DOS 2.7</string>
+                <string>DOS 2.5 rev 3 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27t</string>
+                <key>description</key>
+                <string>DOS 2.7 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mo</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis, older)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27m</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mpi</string>
+                <key>description</key>
+                <string>DOS 2.7 (MPI)</string>
               </dict>
             </array>
           </dict>
@@ -8598,27 +8794,51 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r1</string>
+                <string>dos25m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 1</string>
+                <string>DOS 2.5 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r2</string>
+                <string>dos25r2m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 2</string>
+                <string>DOS 2.5 rev 2 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos25r3</string>
+                <string>dos25r3m</string>
                 <key>description</key>
-                <string>DOS 2.5 Revision 3</string>
+                <string>DOS 2.5 rev 3 (Micropolis)</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>dos27</string>
+                <string>dos25t</string>
                 <key>description</key>
-                <string>DOS 2.7</string>
+                <string>DOS 2.5 rev 3 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27t</string>
+                <key>description</key>
+                <string>DOS 2.7 (Tandon)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mo</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis, older)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27m</string>
+                <key>description</key>
+                <string>DOS 2.7 (Micropolis)</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dos27mpi</string>
+                <key>description</key>
+                <string>DOS 2.7 (MPI)</string>
               </dict>
             </array>
           </dict>
@@ -8823,7 +9043,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8831,7 +9051,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8839,7 +9059,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8855,7 +9075,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8863,7 +9083,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8871,7 +9091,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8884,7 +9104,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8897,7 +9117,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8910,7 +9130,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8923,7 +9143,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -8975,7 +9195,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8983,7 +9203,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8991,7 +9211,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9007,7 +9227,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9015,7 +9235,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9023,7 +9243,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9036,7 +9256,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9049,7 +9269,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9062,7 +9282,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9075,7 +9295,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9127,7 +9347,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9135,7 +9355,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9143,7 +9363,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9159,7 +9379,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9167,7 +9387,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9175,7 +9395,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9188,7 +9408,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9201,7 +9421,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9214,7 +9434,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9227,7 +9447,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9279,7 +9499,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9287,7 +9507,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9295,7 +9515,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9311,7 +9531,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9319,7 +9539,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9327,7 +9547,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9340,7 +9560,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9353,7 +9573,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9366,7 +9586,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9379,7 +9599,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9431,7 +9651,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9439,7 +9659,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9447,7 +9667,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9463,7 +9683,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9471,7 +9691,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9479,7 +9699,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9492,7 +9712,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9505,7 +9725,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9518,7 +9738,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9531,7 +9751,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9583,7 +9803,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9591,7 +9811,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9599,7 +9819,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9615,7 +9835,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9623,7 +9843,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9631,7 +9851,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9644,7 +9864,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9657,7 +9877,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9670,7 +9890,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9683,7 +9903,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9735,7 +9955,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9743,7 +9963,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9751,7 +9971,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9767,7 +9987,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9775,7 +9995,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9783,7 +10003,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9796,7 +10016,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9809,7 +10029,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9822,7 +10042,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9835,7 +10055,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9887,7 +10107,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9895,7 +10115,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9903,7 +10123,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9919,7 +10139,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9927,7 +10147,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9935,7 +10155,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9948,7 +10168,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9961,7 +10181,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9974,7 +10194,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -9987,7 +10207,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10039,7 +10259,7 @@
                 <key>value</key>
                 <string>c2031</string>
                 <key>description</key>
-                <string>Commodore 2031</string>
+                <string>Commodore 2031 single disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10047,7 +10267,7 @@
                 <key>value</key>
                 <string>c2040</string>
                 <key>description</key>
-                <string>Commodore 2040</string>
+                <string>Commodore 2040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10055,7 +10275,7 @@
                 <key>value</key>
                 <string>c3040</string>
                 <key>description</key>
-                <string>Commodore 3040</string>
+                <string>Commodore 3040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10071,7 +10291,7 @@
                 <key>value</key>
                 <string>c4040</string>
                 <key>description</key>
-                <string>Commodore 4040</string>
+                <string>Commodore 4040 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10079,7 +10299,7 @@
                 <key>value</key>
                 <string>c8050</string>
                 <key>description</key>
-                <string>Commodore 8050</string>
+                <string>Commodore 8050 disk drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10087,7 +10307,7 @@
                 <key>value</key>
                 <string>c8250</string>
                 <key>description</key>
-                <string>Commodore 8250</string>
+                <string>Commodore 8250 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10100,7 +10320,7 @@
                 <key>value</key>
                 <string>c8280</string>
                 <key>description</key>
-                <string>Commodore 8280</string>
+                <string>Commodore 8280 dual 8" disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10113,7 +10333,7 @@
                 <key>value</key>
                 <string>d9060</string>
                 <key>description</key>
-                <string>Commodore D9060</string>
+                <string>Commodore D9060 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10126,7 +10346,7 @@
                 <key>value</key>
                 <string>d9090</string>
                 <key>description</key>
-                <string>Commodore D9090</string>
+                <string>Commodore D9090 hard disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10139,7 +10359,7 @@
                 <key>value</key>
                 <string>sfd1001</string>
                 <key>description</key>
-                <string>Commodore SFD-1001</string>
+                <string>Commodore SFD-1001 disk drive</string>
                 <key>default</key>
                 <false/>
                 <key>media</key>
@@ -10186,6 +10406,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -10314,6 +10542,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10650,7 +10886,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>hardbox</string>
+        <string>gpib_hardbox</string>
         <key>slots</key>
         <array>
           <dict>
@@ -10685,6 +10921,477 @@
                 <string>v3.1</string>
                 <key>description</key>
                 <string>Version 3.1 (Sunol)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>gpib_mshark</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>gpib_softbox</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19810908</string>
+                <key>description</key>
+                <string>8/9/81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19811027</string>
+                <key>description</key>
+                <string>27-Oct-81</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>19830609</string>
+                <key>description</key>
+                <string>09-June-1983</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:rs232</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_imaginator_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rev12</string>
+                <key>description</key>
+                <string>GPC Rev. 1.2 P/N 9000-0002</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>unknown</string>
+                <key>description</key>
+                <string>GPC Unknown revision</string>
               </dict>
             </array>
           </dict>
@@ -10758,191 +11465,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>mshark</string>
-        <key>slots</key>
-        <array>
-          <dict>
-            <key>name</key>
-            <string>:rs232</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>h19</string>
-                <key>description</key>
-                <string>Heath H19 Terminal (Serial Port)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>scorpion</string>
-                <key>description</key>
-                <string>Micro-Robotics Scorpion Intelligent Controller</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>msystems_mouse</string>
-                <key>description</key>
-                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>nss_tvi</string>
-                <key>description</key>
-                <string>Novag Super System TV Interface</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS-232 Null Modem</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS-232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>mockingboard</string>
-                <key>description</key>
-                <string>Sweet Micro Systems Mockingboard D</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>votraxtnt</string>
-                <key>description</key>
-                <string>Votrax Type 'N Talk (Serial Port)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-            </array>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>pet_softbox</string>
+        <string>nss_tvinterface</string>
         <key>slots</key>
         <array>
           <dict>
@@ -10962,198 +11485,15 @@
               </dict>
               <dict>
                 <key>value</key>
-                <string>19810908</string>
+                <string>de</string>
                 <key>description</key>
-                <string>8/9/81</string>
+                <string>German</string>
               </dict>
               <dict>
                 <key>value</key>
-                <string>19811027</string>
+                <string>fr</string>
                 <key>description</key>
-                <string>27-Oct-81</string>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>19830609</string>
-                <key>description</key>
-                <string>09-June-1983</string>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>name</key>
-            <string>:rs232</string>
-            <key>options</key>
-            <array>
-              <dict>
-                <key>value</key>
-                <string></string>
-                <key>description</key>
-                <string>—None—</string>
-                <key>default</key>
-                <true/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>h19</string>
-                <key>description</key>
-                <string>Heath H19 Terminal (Serial Port)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>ie15</string>
-                <key>description</key>
-                <string>IE15 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>scorpion</string>
-                <key>description</key>
-                <string>Micro-Robotics Scorpion Intelligent Controller</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>msystems_mouse</string>
-                <key>description</key>
-                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>nss_tvi</string>
-                <key>description</key>
-                <string>Novag Super System TV Interface</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>pty</string>
-                <key>description</key>
-                <string>Pseudo Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs_printer</string>
-                <key>description</key>
-                <string>Radio Shack Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>dec_loopback</string>
-                <key>description</key>
-                <string>RS-232 Loopback (DEC 12-15336-00)</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>null_modem</string>
-                <key>description</key>
-                <string>RS-232 Null Modem</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>patch</string>
-                <key>description</key>
-                <string>RS-232 Patch Box</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>rs232_sync_io</string>
-                <key>description</key>
-                <string>RS-232 Synchronous I/O</string>
-                <key>default</key>
-                <false/>
-                <key>media</key>
-                <dict>
-                  <key>bitbanger</key>
-                  <integer>1</integer>
-                </dict>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>keyboard</string>
-                <key>description</key>
-                <string>Serial Keyboard</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>printer</string>
-                <key>description</key>
-                <string>Serial Printer</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>terminal</string>
-                <key>description</key>
-                <string>Serial Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>sunkbd</string>
-                <key>description</key>
-                <string>Sun Keyboard Adaptor</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>mockingboard</string>
-                <key>description</key>
-                <string>Sweet Micro Systems Mockingboard D</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>swtpc8212</string>
-                <key>description</key>
-                <string>SWTPC8212 Terminal</string>
-                <key>default</key>
-                <false/>
-              </dict>
-              <dict>
-                <key>value</key>
-                <string>votraxtnt</string>
-                <key>description</key>
-                <string>Votrax Type 'N Talk (Serial Port)</string>
-                <key>default</key>
-                <false/>
+                <string>French</string>
               </dict>
             </array>
           </dict>
@@ -11233,6 +11573,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -11358,6 +11706,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11560,6 +11916,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>type3hle</string>
                 <key>description</key>
                 <string>Sun Type 3 Keyboard (HLE)</string>
@@ -11627,6 +11991,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -11760,6 +12132,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>sunkbd</string>
                 <key>description</key>
                 <string>Sun Keyboard Adaptor</string>
@@ -11825,6 +12205,57 @@
                 <string>r03</string>
                 <key>description</key>
                 <string>325340-03</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>xetec_c5181</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:serial</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <true/>
               </dict>
             </array>
           </dict>

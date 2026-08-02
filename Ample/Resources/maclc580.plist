@@ -326,6 +326,154 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>nscsi_sa1403d</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fd0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>nss_tvinterface</string>
         <key>slots</key>
         <array>
@@ -431,6 +579,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -559,6 +715,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>

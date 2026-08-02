@@ -522,6 +522,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -628,7 +636,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -1120,6 +1128,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -1226,7 +1242,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -1718,6 +1734,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -1824,7 +1848,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -2316,6 +2340,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -2422,7 +2454,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -2914,6 +2946,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -3020,7 +3060,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -3512,6 +3552,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -3618,7 +3666,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -4110,6 +4158,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>ace80</string>
+            <key>description</key>
+            <string>Franklin ACE 80 CPU Card</string>
+            <key>devname</key>
+            <string>ace80</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>grafex</string>
             <key>description</key>
             <string>Grafex-32</string>
@@ -4216,7 +4272,7 @@
             <key>value</key>
             <string>applicard</string>
             <key>description</key>
-            <string>PCPI Applicard</string>
+            <string>PCPI Appli-Card</string>
             <key>devname</key>
             <string>a2aplcrd</string>
           </dict>
@@ -4421,6 +4477,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>h19</string>
             <key>description</key>
             <string>Heath H19 Terminal (Serial Port)</string>
@@ -4548,6 +4612,14 @@
             <string>Serial Terminal</string>
             <key>devname</key>
             <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -4600,6 +4672,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>auto3a</string>
+            <key>description</key>
+            <string>Auto-baud ADM-3A Terminal</string>
+            <key>devname</key>
+            <string>auto3a_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>h19</string>
             <key>description</key>
             <string>Heath H19 Terminal (Serial Port)</string>
@@ -4727,6 +4807,14 @@
             <string>Serial Terminal</string>
             <key>devname</key>
             <string>serial_terminal</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>s97801</string>
+            <key>description</key>
+            <string>Siemens 97801 Terminal (RS-232)</string>
+            <key>devname</key>
+            <string>s97801_terminal</string>
           </dict>
           <dict>
             <key>value</key>
@@ -5502,6 +5590,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -5627,6 +5723,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6626,12 +6730,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6725,12 +6842,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6824,12 +6954,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6923,12 +7066,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7022,12 +7178,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7121,12 +7290,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7220,12 +7402,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7726,6 +7921,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -7851,6 +8054,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -7983,12 +8194,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8082,12 +8306,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8181,12 +8418,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8280,12 +8530,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8379,12 +8642,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8478,12 +8754,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8577,12 +8866,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8683,12 +8985,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8782,12 +9097,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8881,12 +9209,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -8980,12 +9321,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9079,12 +9433,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9178,12 +9545,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9277,12 +9657,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9383,12 +9776,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9482,12 +9888,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9581,12 +10000,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9680,12 +10112,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9779,12 +10224,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9878,12 +10336,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -9977,12 +10448,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -10189,6 +10673,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -10314,6 +10806,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11298,6 +11798,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -11423,6 +11931,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11517,6 +12033,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -11642,6 +12166,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11881,12 +12413,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -11980,12 +12525,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12079,12 +12637,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12178,12 +12749,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12277,12 +12861,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12376,12 +12973,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12475,12 +13085,25 @@
                 <string>SCSI CD-ROM (2X speed)</string>
                 <key>default</key>
                 <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
               </dict>
               <dict>
                 <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12577,6 +13200,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>
@@ -12710,6 +13341,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>sunkbd</string>
                 <key>description</key>
                 <string>Sun Keyboard Adaptor</string>
@@ -12737,6 +13376,154 @@
                 <string>votraxtnt</string>
                 <key>description</key>
                 <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>nscsi_sa1403d</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fd0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -12854,6 +13641,14 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>h19</string>
                 <key>description</key>
                 <string>Heath H19 Terminal (Serial Port)</string>
@@ -12979,6 +13774,14 @@
                 <string>terminal</string>
                 <key>description</key>
                 <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
                 <key>default</key>
                 <false/>
               </dict>

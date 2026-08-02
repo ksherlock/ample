@@ -292,9 +292,21 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>agat7</string>
+      <key>description</key>
+      <string>Agat-7</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>agat7_flop</string>
       <key>description</key>
       <string>Agat-7 140K Floppy Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>agat9</string>
+      <key>description</key>
+      <string>Agat-9</string>
     </dict>
     <dict>
       <key>value</key>
@@ -505,6 +517,12 @@
       <string>a2sd</string>
       <key>description</key>
       <string>Apple II SD Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2sic</string>
+      <key>description</key>
+      <string>Apple II Serial Interface Card</string>
     </dict>
     <dict>
       <key>value</key>
@@ -733,6 +751,12 @@
       <string>amiga_buddha</string>
       <key>description</key>
       <string>Buddha IDE Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>c64_ar4x</string>
+      <key>description</key>
+      <string>C64 Action Replay</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1050,13 +1074,13 @@
       <key>value</key>
       <string>c2031</string>
       <key>description</key>
-      <string>Commodore 2031</string>
+      <string>Commodore 2031 Single Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
       <string>c2040</string>
       <key>description</key>
-      <string>Commodore 2040</string>
+      <string>Commodore 2040 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1068,7 +1092,7 @@
       <key>value</key>
       <string>c3040</string>
       <key>description</key>
-      <string>Commodore 3040</string>
+      <string>Commodore 3040 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1080,7 +1104,7 @@
       <key>value</key>
       <string>c4040</string>
       <key>description</key>
-      <string>Commodore 4040</string>
+      <string>Commodore 4040 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1092,7 +1116,7 @@
       <key>value</key>
       <string>c8050</string>
       <key>description</key>
-      <string>Commodore 8050</string>
+      <string>Commodore 8050 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1104,13 +1128,13 @@
       <key>value</key>
       <string>c8250</string>
       <key>description</key>
-      <string>Commodore 8250</string>
+      <string>Commodore 8250 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
       <string>c8280</string>
       <key>description</key>
-      <string>Commodore 8280</string>
+      <string>Commodore 8280 Dual 8" Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1134,13 +1158,13 @@
       <key>value</key>
       <string>d9060</string>
       <key>description</key>
-      <string>Commodore D9060</string>
+      <string>Commodore D9060 Hard Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
       <string>d9090</string>
       <key>description</key>
-      <string>Commodore D9090</string>
+      <string>Commodore D9090 Hard Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1158,7 +1182,7 @@
       <key>value</key>
       <string>sfd1001</string>
       <key>description</key>
-      <string>Commodore SFD-1001</string>
+      <string>Commodore SFD-1001 Disk Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -1492,6 +1516,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ace80</string>
+      <key>description</key>
+      <string>Franklin ACE 80 CPU Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>pds_hyper</string>
       <key>description</key>
       <string>GCC HyperDrive</string>
@@ -1596,7 +1626,7 @@
       <key>value</key>
       <string>hp9895</string>
       <key>description</key>
-      <string>HP9895</string>
+      <string>HP9895 Floppy Drive</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2302,7 +2332,7 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>mshark</string>
+      <string>gpib_mshark</string>
       <key>description</key>
       <string>Mator SHARK</string>
     </dict>
@@ -2413,6 +2443,12 @@
       <string>isa_pcmidi</string>
       <key>description</key>
       <string>Music Quest PC MIDI Card (IHQMQ9)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pc6022</string>
+      <key>description</key>
+      <string>NEC PC-6022 Color Plotter Printer</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2580,7 +2616,13 @@
       <key>value</key>
       <string>a2aplcrd</string>
       <key>description</key>
-      <string>PCPI Applicard</string>
+      <string>PCPI Appli-Card</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>pd32</string>
+      <key>description</key>
+      <string>PD32 Coprocessor (Rand/Scolaro)</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2734,6 +2776,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>rt1000b</string>
+      <key>description</key>
+      <string>Rancho Technology RT1000B SCSI Controller</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>fd148</string>
       <key>description</key>
       <string>Rapid Access FD-148 Disk Drive</string>
@@ -2818,13 +2866,13 @@
     </dict>
     <dict>
       <key>value</key>
-      <string>hardbox</string>
+      <string>gpib_hardbox</string>
       <key>description</key>
       <string>SSE HardBox</string>
     </dict>
     <dict>
       <key>value</key>
-      <string>pet_softbox</string>
+      <string>gpib_softbox</string>
       <key>description</key>
       <string>SSE SoftBox</string>
     </dict>
@@ -2863,6 +2911,18 @@
       <string>mz1p16</string>
       <key>description</key>
       <string>Sharp MZ-1P16 Plotter Printer</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>s97801_kbd</string>
+      <key>description</key>
+      <string>Siemens 97801 Keyboard (International V1)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>s97801_device</string>
+      <key>description</key>
+      <string>Siemens 97801 Terminal</string>
     </dict>
     <dict>
       <key>value</key>
@@ -2965,6 +3025,12 @@
       <string>cdu75s</string>
       <key>description</key>
       <string>Sony/Apple CDU75S CD-R</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>spectred_kbd</string>
+      <key>description</key>
+      <string>Spectrum ED Keyboard</string>
     </dict>
     <dict>
       <key>value</key>
@@ -3229,6 +3295,12 @@
       <string>uniap2ti</string>
       <key>description</key>
       <string>Unitron AP II+ Teclado Inteligente</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>a2autokbd</string>
+      <key>description</key>
+      <string>Unknown Apple II Clone Keyboard With AUTO</string>
     </dict>
     <dict>
       <key>value</key>

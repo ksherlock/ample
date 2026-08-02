@@ -315,6 +315,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>dsi32</string>
+            <key>description</key>
+            <string>Definicon DSI-32 Coprocessor</string>
+            <key>devname</key>
+            <string>dsi32</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>cga_ec1841</string>
             <key>description</key>
             <string>EC 1841.0002 (CGA)</string>
@@ -554,11 +562,27 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
             <key>description</key>
-            <string>Opus 108PM</string>
+            <string>Opus Systems PM-100 Coprocessor (NS32016)</string>
             <key>devname</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>opus_pm110</string>
+            <key>description</key>
+            <string>Opus Systems PM-110 Coprocessor (NS32032)</string>
+            <key>devname</key>
+            <string>opus_pm110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pd32</string>
+            <key>description</key>
+            <string>PD32 Coprocessor (Rand/Scolaro)</string>
+            <key>devname</key>
+            <string>pd32</string>
           </dict>
           <dict>
             <key>value</key>
@@ -575,6 +599,14 @@
             <string>Programmers Development System (Host)</string>
             <key>devname</key>
             <string>isa_pds</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rt1000b</string>
+            <key>description</key>
+            <string>Rancho Technology RT1000B SCSI Controller</string>
+            <key>devname</key>
+            <string>rt1000b</string>
           </dict>
           <dict>
             <key>value</key>
@@ -818,6 +850,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>dsi32</string>
+            <key>description</key>
+            <string>Definicon DSI-32 Coprocessor</string>
+            <key>devname</key>
+            <string>dsi32</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>cga_ec1841</string>
             <key>description</key>
             <string>EC 1841.0002 (CGA)</string>
@@ -1055,11 +1095,27 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
             <key>description</key>
-            <string>Opus 108PM</string>
+            <string>Opus Systems PM-100 Coprocessor (NS32016)</string>
             <key>devname</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>opus_pm110</string>
+            <key>description</key>
+            <string>Opus Systems PM-110 Coprocessor (NS32032)</string>
+            <key>devname</key>
+            <string>opus_pm110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pd32</string>
+            <key>description</key>
+            <string>PD32 Coprocessor (Rand/Scolaro)</string>
+            <key>devname</key>
+            <string>pd32</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1076,6 +1132,14 @@
             <string>Programmers Development System (Host)</string>
             <key>devname</key>
             <string>isa_pds</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rt1000b</string>
+            <key>description</key>
+            <string>Rancho Technology RT1000B SCSI Controller</string>
+            <key>devname</key>
+            <string>rt1000b</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1317,6 +1381,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>dsi32</string>
+            <key>description</key>
+            <string>Definicon DSI-32 Coprocessor</string>
+            <key>devname</key>
+            <string>dsi32</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>cga_ec1841</string>
             <key>description</key>
             <string>EC 1841.0002 (CGA)</string>
@@ -1556,11 +1628,27 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
             <key>description</key>
-            <string>Opus 108PM</string>
+            <string>Opus Systems PM-100 Coprocessor (NS32016)</string>
             <key>devname</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>opus_pm110</string>
+            <key>description</key>
+            <string>Opus Systems PM-110 Coprocessor (NS32032)</string>
+            <key>devname</key>
+            <string>opus_pm110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pd32</string>
+            <key>description</key>
+            <string>PD32 Coprocessor (Rand/Scolaro)</string>
+            <key>devname</key>
+            <string>pd32</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1577,6 +1665,14 @@
             <string>Programmers Development System (Host)</string>
             <key>devname</key>
             <string>isa_pds</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rt1000b</string>
+            <key>description</key>
+            <string>Rancho Technology RT1000B SCSI Controller</string>
+            <key>devname</key>
+            <string>rt1000b</string>
           </dict>
           <dict>
             <key>value</key>
@@ -1818,6 +1914,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>dsi32</string>
+            <key>description</key>
+            <string>Definicon DSI-32 Coprocessor</string>
+            <key>devname</key>
+            <string>dsi32</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>cga_ec1841</string>
             <key>description</key>
             <string>EC 1841.0002 (CGA)</string>
@@ -2057,11 +2161,27 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
             <key>description</key>
-            <string>Opus 108PM</string>
+            <string>Opus Systems PM-100 Coprocessor (NS32016)</string>
             <key>devname</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>opus_pm110</string>
+            <key>description</key>
+            <string>Opus Systems PM-110 Coprocessor (NS32032)</string>
+            <key>devname</key>
+            <string>opus_pm110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pd32</string>
+            <key>description</key>
+            <string>PD32 Coprocessor (Rand/Scolaro)</string>
+            <key>devname</key>
+            <string>pd32</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2078,6 +2198,14 @@
             <string>Programmers Development System (Host)</string>
             <key>devname</key>
             <string>isa_pds</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rt1000b</string>
+            <key>description</key>
+            <string>Rancho Technology RT1000B SCSI Controller</string>
+            <key>devname</key>
+            <string>rt1000b</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2319,6 +2447,14 @@
           </dict>
           <dict>
             <key>value</key>
+            <string>dsi32</string>
+            <key>description</key>
+            <string>Definicon DSI-32 Coprocessor</string>
+            <key>devname</key>
+            <string>dsi32</string>
+          </dict>
+          <dict>
+            <key>value</key>
             <string>cga_ec1841</string>
             <key>description</key>
             <string>EC 1841.0002 (CGA)</string>
@@ -2556,11 +2692,27 @@
           </dict>
           <dict>
             <key>value</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
             <key>description</key>
-            <string>Opus 108PM</string>
+            <string>Opus Systems PM-100 Coprocessor (NS32016)</string>
             <key>devname</key>
-            <string>opus108pm</string>
+            <string>opus_pm100</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>opus_pm110</string>
+            <key>description</key>
+            <string>Opus Systems PM-110 Coprocessor (NS32032)</string>
+            <key>devname</key>
+            <string>opus_pm110</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>pd32</string>
+            <key>description</key>
+            <string>PD32 Coprocessor (Rand/Scolaro)</string>
+            <key>devname</key>
+            <string>pd32</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2577,6 +2729,14 @@
             <string>Programmers Development System (Host)</string>
             <key>devname</key>
             <string>isa_pds</string>
+          </dict>
+          <dict>
+            <key>value</key>
+            <string>rt1000b</string>
+            <key>description</key>
+            <string>Rancho Technology RT1000B SCSI Controller</string>
+            <key>devname</key>
+            <string>rt1000b</string>
           </dict>
           <dict>
             <key>value</key>
@@ -2950,6 +3110,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -2984,9 +3157,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3020,6 +3222,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3054,9 +3269,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3090,6 +3334,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3124,9 +3381,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3160,6 +3446,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3194,9 +3493,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3230,6 +3558,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3264,9 +3605,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3300,6 +3670,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3334,9 +3717,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3370,6 +3782,19 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>cdrom</string>
                 <key>description</key>
                 <string>CD-ROM</string>
@@ -3404,9 +3829,38 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>tape</string>
                 <key>description</key>
                 <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -3487,6 +3941,399 @@
                 <string>17w</string>
                 <key>description</key>
                 <string>apl1.7w</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>dsi32</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:serial1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:serial2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -4073,6 +4920,78 @@
                   <key>floppy_5_25</key>
                   <integer>1</integer>
                 </dict>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_imaginator_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rev12</string>
+                <key>description</key>
+                <string>GPC Rev. 1.2 P/N 9000-0002</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>unknown</string>
+                <key>description</key>
+                <string>GPC Unknown revision</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>heath_watz_tlb</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Watzman</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman-a</string>
+                <key>description</key>
+                <string>Watzman w/clock persists after reset</string>
               </dict>
             </array>
           </dict>
@@ -4919,9 +5838,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5500,9 +6435,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5666,9 +6617,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -5868,9 +6835,25 @@
               </dict>
               <dict>
                 <key>value</key>
+                <string>pc6022</string>
+                <key>description</key>
+                <string>NEC PC-6022 Color Plotter Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
                 <string>p72</string>
                 <key>description</key>
                 <string>NEC PinWriter P72</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>neomania</string>
+                <key>description</key>
+                <string>Neo Mania Adapter JAMMA board</string>
                 <key>default</key>
                 <false/>
               </dict>
@@ -6250,6 +7233,190 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>nscsi_sa1403d</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:fd0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:fd2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa450</string>
+                <key>description</key>
+                <string>5.25" double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa400</string>
+                <key>description</key>
+                <string>5.25" single-sided single density 35-track floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa850</string>
+                <key>description</key>
+                <string>8" double-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa800</string>
+                <key>description</key>
+                <string>8" single-sided double density floppy drive</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>nss_tvinterface</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>de</string>
+                <key>description</key>
+                <string>German</string>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>fr</string>
+                <key>description</key>
+                <string>French</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>px320a</string>
         <key>slots</key>
         <array>
@@ -6297,6 +7464,1105 @@
                 <string>v102</string>
                 <key>description</key>
                 <string>Firmware v1.02</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rs232_patch_box</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:dce</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>auto3a</string>
+                <key>description</key>
+                <string>Auto-baud ADM-3A Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>h19</string>
+                <key>description</key>
+                <string>Heath H19 Terminal (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ie15</string>
+                <key>description</key>
+                <string>IE15 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>scorpion</string>
+                <key>description</key>
+                <string>Micro-Robotics Scorpion Intelligent Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>msystems_mouse</string>
+                <key>description</key>
+                <string>Mouse Systems Non-rotatable Mouse (HLE)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>nss_tvi</string>
+                <key>description</key>
+                <string>Novag Super System TV Interface</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pty</string>
+                <key>description</key>
+                <string>Pseudo Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs_printer</string>
+                <key>description</key>
+                <string>Radio Shack Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dec_loopback</string>
+                <key>description</key>
+                <string>RS-232 Loopback (DEC 12-15336-00)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>null_modem</string>
+                <key>description</key>
+                <string>RS-232 Null Modem</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>patch</string>
+                <key>description</key>
+                <string>RS-232 Patch Box</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>rs232_sync_io</string>
+                <key>description</key>
+                <string>RS-232 Synchronous I/O</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>bitbanger</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>keyboard</string>
+                <key>description</key>
+                <string>Serial Keyboard</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>printer</string>
+                <key>description</key>
+                <string>Serial Printer</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>terminal</string>
+                <key>description</key>
+                <string>Serial Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>s97801</string>
+                <key>description</key>
+                <string>Siemens 97801 Terminal (RS-232)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sunkbd</string>
+                <key>description</key>
+                <string>Sun Keyboard Adaptor</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>mockingboard</string>
+                <key>description</key>
+                <string>Sweet Micro Systems Mockingboard D</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>swtpc8212</string>
+                <key>description</key>
+                <string>SWTPC8212 Terminal</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>votraxtnt</string>
+                <key>description</key>
+                <string>Votrax Type 'N Talk (Serial Port)</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>rt1000b</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:scsi:0</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:1</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:2</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:3</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:4</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:5</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>:scsi:6</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>aplcdsc_ext</string>
+                <key>description</key>
+                <string>Apple SCSI CD-ROM (external)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom</string>
+                <key>description</key>
+                <string>CD-ROM</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>dtc510</string>
+                <key>description</key>
+                <string>Data Technology DTC-510 5.25 Inch Winchester Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>harddisk</string>
+                <key>description</key>
+                <string>Hard Disk</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>hard</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>pc98_hd</string>
+                <key>description</key>
+                <string>NEC PC-98 SCSI Hard Disk</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>cdrom_2x</string>
+                <key>description</key>
+                <string>SCSI CD-ROM (2X speed)</string>
+                <key>default</key>
+                <false/>
+                <key>media</key>
+                <dict>
+                  <key>cdrom</key>
+                  <integer>1</integer>
+                </dict>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>tape</string>
+                <key>description</key>
+                <string>SCSI tape</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>sa1403d</string>
+                <key>description</key>
+                <string>Shugart SA1403D Winchester/Floppy Disk Controller</string>
+                <key>default</key>
+                <false/>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>scorpion_ic</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>bios</string>
+            <key>description</key>
+            <string>ROM</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—Default—</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>61203</string>
+                <key>description</key>
+                <string>Version 61203 (3rd Dec 1986)</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>serial_heath_h19</string>
+        <key>slots</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>:tlbc</string>
+            <key>options</key>
+            <array>
+              <dict>
+                <key>value</key>
+                <string></string>
+                <key>description</key>
+                <string>—None—</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>heath</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board</string>
+                <key>default</key>
+                <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>imaginator</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Cleveland Codonics Imaginator I-100</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>gp19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board plus Northwest Digital Systems GP-19</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>super19</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Super19 ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>superset</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Superset ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>ultrarom</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Ultra ROM</string>
+                <key>default</key>
+                <false/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>watzman</string>
+                <key>description</key>
+                <string>Heath Terminal Logic Board w/Watzman ROM</string>
+                <key>default</key>
+                <false/>
               </dict>
             </array>
           </dict>
@@ -6548,6 +8814,14 @@
                 <string>—None—</string>
                 <key>default</key>
                 <true/>
+              </dict>
+              <dict>
+                <key>value</key>
+                <string>type2hle</string>
+                <key>description</key>
+                <string>Sun Type 2 Keyboard (HLE)</string>
+                <key>default</key>
+                <false/>
               </dict>
               <dict>
                 <key>value</key>

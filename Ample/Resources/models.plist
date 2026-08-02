@@ -434,13 +434,13 @@
         </dict>
         <dict>
           <key>description</key>
-          <string>Laser 128ex (version 4.5)</string>
+          <string>Laser 128EX</string>
           <key>value</key>
           <string>las128ex</string>
         </dict>
         <dict>
           <key>description</key>
-          <string>Laser 128ex2 (version 6.1)</string>
+          <string>Laser 128EX/2</string>
           <key>value</key>
           <string>las128e2</string>
         </dict>
