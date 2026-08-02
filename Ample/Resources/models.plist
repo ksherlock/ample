@@ -1129,5 +1129,36 @@
         </dict>
       </array>
     </dict>
+    <dict>
+      <key>description</key>
+      <string>Silicon Graphics</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>description</key>
+          <string> Indigo2 (R4400, 150MHz)</string>
+          <key>value</key>
+          <string>indigo2_4415</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string> Indy (R4600, 100MHz)</string>
+          <key>value</key>
+          <string>indy_4610</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string> Indy (R4600, 133MHz)</string>
+          <key>value</key>
+          <string>indy_4613</string>
+        </dict>
+        <dict>
+          <key>description</key>
+          <string> Indy (R5000, 150MHz)</string>
+          <key>value</key>
+          <string>indy_5015</string>
+        </dict>
+      </array>
+    </dict>
   </array>
 </plist>

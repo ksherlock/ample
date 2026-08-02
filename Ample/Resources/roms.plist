@@ -1922,6 +1922,12 @@
       <key>description</key>
       <string>Micron/XCEED Technology MacroColor 30</string>
     </dict>
+     <dict>
+      <key>value</key>
+      <string>kb_ms_natural</string>
+      <key>description</key>
+      <string>Microsoft Natural Keyboard</string>
+    </dict>
     <dict>
       <key>value</key>
       <string>softcard3</string>
@@ -2176,6 +2182,12 @@
     </dict>
     <dict>
       <key>value</key>
+      <string>ps2_keybc</string>
+      <key>description</key>
+      <string>PS/2 Keyboard</string>
+    </dict>
+    <dict>
+      <key>value</key>
       <string>qsound</string>
       <key>description</key>
       <string>QSound</string>
@@ -2281,6 +2293,18 @@
       <string>sdtandy_fdc</string>
       <key>description</key>
       <string>SDTANDY FDC</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>indigo2_4415</string>
+      <key>description</key>
+      <string>SGI Indigo2 (R4400, 150MHz)</string>
+    </dict>
+    <dict>
+      <key>value</key>
+      <string>indy_4610</string>
+      <key>description</key>
+      <string>SGI Indy (R4600, 100MHz)</string>
     </dict>
     <dict>
       <key>value</key>
