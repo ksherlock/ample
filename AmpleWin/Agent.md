@@ -1,19 +1,44 @@
 # Agent Task Audit Log - Ample Windows Port
 
-## 📅 Session: 2026-06-05 (Session 16)
+## 📅 Session: 2026-08-02 (Session 17)
 
-### 🎯 Objective: PowerBook Compatibility Fallback & Downloader Acceleration
-Addressed upstream MAME 0.288 C++ late-binding bug causing crashes on EASC audio chip Macs, and accelerated the VGM Mod download.
+### 🎯 Objective: Upstream MAME v0.289 Synchronization
+Synchronized AmpleWin with upstream `ksherlock/ample` v0.289 release, updated official MAME download binary URL, and updated machine `.plist` configuration definitions.
 
 ### ✅ Key Achievements:
-1.  **EASC Crash Fallback Mechanism**:
-    *   Added automatic detection for affected PowerBook models (`macpb160`, `macpb180`, `macpb165`, `macpb165c`, `macpb180c`).
-    *   Implements seamless redirect to `mame_0287.exe` or `mame-vgm.exe` (v0.280) if present in the executable folder.
-    *   Provides user warning with options to auto-download MAME v0.280 (VGM Mod) fallback, force launch under 0.288, or cancel.
-2.  **Downloader Optimization**:
-    *   Switched VGM Mod download mirror to prioritize `mirror.ghproxy.com` GitHub proxy for faster global asset retrieval.
-3.  **ROM Manager Priority Check**:
-    *   Reordered ROM base URLs to prioritize `mdk.cab` over `callapple.org`. This guarantees the latest split set ROMs (like `dragon32` with split files) are downloaded correctly, solving the missing files crash on MAME 0.288+.
+1.  **MAME 0.289 Downloader Upgrade**:
+    *   Updated `mame_downloader.py` download target to official MAME v0.289 64-bit binary release (`mame0289b_x64.exe`).
+2.  **PowerBook Native Launch (EASC Bug Fixed)**:
+    *   Removed `macpb160`, `macpb165`, `macpb165c`, `macpb180`, `macpb180c` fallback prompt mechanism in `main.py`, as MAME 0.289 officially resolved the EASC audio chip crash bug. All PowerBook models now launch directly using the main MAME 0.289 binary.
+3.  **ROM Manager Priority & Dragon32/Laser Series Fixes**:
+    *   Reordered download servers in `rom_manager.py` to prioritize CallApple (`https://www.callapple.org/roms/`) with MDK (`https://mdk.cab/download/split/`) as backup failover.
+    *   Integrated `patch_dragon32()` in `DownloadWorker` to auto-merge missing modern MAME 0.289 split ROM files (`dragon_data_ltd_1-0.ic18`, `dragon_data_ltd_1-1.ic17`) when downloading `dragon32.zip`.
+    *   Expanded `custom_roms` fallback array to include Laser 128 series (`las128ex`, `las128e2`, `laser128`, `laser128o`, `laser2c`), ensuring seamless auto-download even if omitted from upstream `roms.plist`.
+4.  **Machine Profile & ROM Parity**:
+    *   Verified `.plist` machine profile definitions (251 files) updated to MAME 0.289.
+    *   Synchronized all updated `.plist` configurations across monorepo to `AmpleWeb/public/resources/`.
+
+---
+
+## 📅 Session: 2026-06-05 (Session 16)
+
+### 🎯 Objective: MAME v0.288 Upgrade, PowerBook Fallbacks & AmpleWeb Synchronization
+Addressed upstream MAME 0.288 EASC crash bugs, compiled the v0.288-patched Wasm core, and synchronized all 0.288 machine plists and ROM mapping to AmpleWeb frontend.
+
+### ✅ Key Achievements:
+1.  **MAME v0.288 Wasm Compile & Deploy**:
+    *   Integrated memory export and EASC patch in `c:\dev\MameWasm` and compiled production Wasm core (`mameample.js` / `mameample.wasm`).
+    *   Compressed and deployed `mame.js` / `mame.wasm.gz` to both `AmpleWeb` and `ampleweb-ai`.
+2.  **0.288 Machine Configuration Sync**:
+    *   Copied 251 updated `.plist` machine profiles from Core to both web projects.
+    *   Expanded `DRIVER_ROM_MAP` in both `App.tsx` from 158 to 248 entries to fully support new 0.288 models (Amiga A1000/A2000/A500, Atari ST, Lisa, etc.).
+3.  **EASC Crash Fallback (Core)**:
+    *   Added automatic detection and v0.280/v0.287 fallback launcher mechanism for EASC audio chip Macs in AmpleWin/Linux.
+4.  **UI Slots Layout Ordering Parity (Core)**:
+    *   Reordered rendering in `AmpleWin` and `AmpleLinux` slots panel. Now, ROM slots (`rom` or `romsize` or description `ROM`/`ROM/RAM`) are rendered directly after the RAM slot, positioning `Disk Drives` properly in the 3rd slot when ROM configuration exists.
+5.  **Downloader Optimization & SCSI Fix**:
+    *   Prioritized `mdk.cab` split server in `rom_manager.py` and `rom_manager_cli.py` to prevent missing file errors on 0.288+.
+    *   Verified SCSI CD-ROM 2x speed fallback `cdrom_2x` mappings on both frontends to resolve media mount bugs.
 
 ---
 
@@ -40,6 +65,26 @@ Resolved an issue where slots with defaults could not be set to "None" because U
     *   Modified `initialize_default_slots` to use `slot_name not in self.current_slots`.
     *   Ensured manual "None" selections are preserved while maintaining automated defaults for new card insertion.
 2.  **Upstream Compatibility**: Prepared codebase for PR back to original source, ensuring robust slot behavior.
+
+---
+
+## 📅 Session: 2026-05-11 (Session 14)
+
+### 🎯 Objective: Slot Configuration Parity & "None" Persistence
+Resolved a long-standing issue where slots with default equipment could not be set to "None" because UI refreshes would force-revert them to defaults.
+
+### ✅ Key Achievements:
+1.  **"None-Aware" Slot Initialization**: 
+    *   Modified `initialize_default_slots` in `main.py` to use key existence checks (`if slot_name not in self.current_slots`) instead of truthiness checks.
+    *   This ensures that an empty string selection (`""` or "None") is respected as a deliberate user choice and not overwritten by defaults.
+2.  **Cross-Platform Alignment**:
+    *   Coordinated this fix across **AmpleWin** and **AmpleLinux**.
+    *   Verified that **AmpleWeb** already correctly handled this logic due to its Object-based option finding mechanism.
+3.  **Nested Slot Preservation**:
+    *   Ensured that newly appeared sub-slots (e.g., when plugging in a SCSI or CFFA2 card) still automatically load their default devices, maintaining high usability.
+
+### 🚀 Current Project Status
+Slot configuration behavior is now fully consistent across Windows, Linux, and Web ports, accurately respecting "None" selections while preserving automated nested configurations.
 
 ---
 

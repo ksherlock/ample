@@ -40,6 +40,10 @@ class DownloadWorker(QRunnable):
                 with open(self.dest_path, 'wb') as f:
                     f.write(response.content)
                 
+                # Special patch for dragon32 to merge MDK split files if missing
+                if self.value == 'dragon32':
+                    self.patch_dragon32()
+                
                 self.signals.finished.emit(self.value, True)
                 return # Success!
             except Exception as e:
@@ -53,14 +57,41 @@ class DownloadWorker(QRunnable):
         self.signals.status.emit(f"Error: {last_error}")
         self.signals.finished.emit(self.value, False)
 
+    def patch_dragon32(self):
+        try:
+            mdk_url = "https://mdk.cab/download/split/dragon32.zip"
+            resp = requests.get(mdk_url, headers=self.headers, timeout=20)
+            if resp.status_code == 200 and len(resp.content) > 100:
+                import zipfile, io
+                existing_data = open(self.dest_path, 'rb').read()
+                z_existing = zipfile.ZipFile(io.BytesIO(existing_data))
+                z_mdk = zipfile.ZipFile(io.BytesIO(resp.content))
+                
+                existing_names = set(z_existing.namelist())
+                mdk_names = set(z_mdk.namelist())
+                
+                missing = mdk_names - existing_names
+                if missing:
+                    out_buf = io.BytesIO()
+                    with zipfile.ZipFile(out_buf, 'w', zipfile.ZIP_DEFLATED) as zout:
+                        for item in z_existing.infolist():
+                            zout.writestr(item, z_existing.read(item.filename))
+                        for item in z_mdk.infolist():
+                            if item.filename in missing:
+                                zout.writestr(item, z_mdk.read(item.filename))
+                    with open(self.dest_path, 'wb') as f:
+                        f.write(out_buf.getvalue())
+        except Exception as e:
+            print(f"Warning: dragon32 patch failed: {e}")
+
 class RomManager(QObject):
     def __init__(self, resources_path, roms_dir):
         super().__init__()
         self.resources_path = resources_path
         self.roms_dir = roms_dir
         self.base_urls = [
-            "https://mdk.cab/download/split/",
-            "https://www.callapple.org/roms/"
+            "https://www.callapple.org/roms/",
+            "https://mdk.cab/download/split/"
         ]
         self.rom_list = self.load_rom_list()
 
@@ -78,7 +109,12 @@ class RomManager(QObject):
             {'value': 'prav8c', 'description': 'Pravetz 8C'},
             {'value': 'prav82', 'description': 'Pravetz 82'},
             {'value': 'prav8m', 'description': 'Pravetz 8M'},
-            {'value': 'prav8d', 'description': 'Pravetz 8D'}
+            {'value': 'prav8d', 'description': 'Pravetz 8D'},
+            {'value': 'las128ex', 'description': 'Laser 128EX'},
+            {'value': 'las128e2', 'description': 'Laser 128EX/2'},
+            {'value': 'laser128', 'description': 'Laser 128'},
+            {'value': 'laser128o', 'description': 'Laser 128 (Original)'},
+            {'value': 'laser2c', 'description': 'Laser 2c'}
         ]
         existing_values = {r.get('value') for r in roms if 'value' in r}
         for cr in custom_roms:

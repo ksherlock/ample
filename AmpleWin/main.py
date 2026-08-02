@@ -1121,6 +1121,16 @@ class AmpleMainWindow(QMainWindow):
             # 不再於切換時立即填充軟體清單 (延遲加載以優化效能)
             if hasattr(self, 'sw_list'): self.sw_list.clear()
 
+    def get_default_slots(self):
+        if not self.current_machine_data:
+            return {}
+        old_slots = self.current_slots
+        self.current_slots = {}
+        self.initialize_default_slots(self.current_machine_data)
+        defaults = self.current_slots
+        self.current_slots = old_slots
+        return defaults
+
     def initialize_default_slots(self, data, depth=0):
         if depth > 20: return
         
@@ -1205,6 +1215,12 @@ class AmpleMainWindow(QMainWindow):
                 self.add_slot_row(self.slots_layout, ram_slot)
                 self.slots_layout.addSpacing(5)
 
+            # 1.5 ROM Group
+            rom_slot = next((s for s in self.current_machine_data['slots'] if s['name'] in ('rom', 'romsize') or s.get('description') in ('ROM', 'ROM/RAM')), None)
+            if rom_slot:
+                self.add_slot_row(self.slots_layout, rom_slot)
+                self.slots_layout.addSpacing(5)
+
             # 2. Disk Drives - EXACTLY same structure as add_slot_row
             # Mac hides popup button but it still takes up space. Hamburger at far right.
             dd_slot = next((s for s in self.current_machine_data['slots'] if s.get('description') == 'Disk Drives'), None)
@@ -1243,19 +1259,12 @@ class AmpleMainWindow(QMainWindow):
                 
                 self.slots_layout.addLayout(row)
 
-
-
-
-
-
-
-
-
-
-
             # 3. All other slots
+            excluded_names = {'ramsize'}
+            if rom_slot:
+                excluded_names.add(rom_slot['name'])
             for slot in self.current_machine_data['slots']:
-                if slot['name'] != 'ramsize' and slot.get('description') != 'Disk Drives':
+                if slot['name'] not in excluded_names and slot.get('description') != 'Disk Drives':
                     self.add_slot_row(self.slots_layout, slot)
             
         self.slots_layout.addStretch()
@@ -1772,8 +1781,20 @@ class AmpleMainWindow(QMainWindow):
             # Positional arguments allow MAME's Software List manager to resolve them.
             soft_list_args.append(self.selected_software)
             
+        # Get defaults recursively
+        defaults = self.get_default_slots()
+        
+        # Filter slots: if a slot is set to empty "", only pass it to MAME if its default value was NOT empty
+        active_slots = {}
+        for slot_name, option in self.current_slots.items():
+            if option == "":
+                default_val = defaults.get(slot_name, "")
+                if default_val == "":
+                    continue
+            active_slots[slot_name] = option
+
         # Build base args
-        args = self.launcher.build_args(self.selected_machine, self.current_slots, filtered_media, soft_list_args)
+        args = self.launcher.build_args(self.selected_machine, active_slots, filtered_media, soft_list_args)
         
         # Add UI Video options for preview
         win_mode = self.win_mode.currentText()
@@ -2028,40 +2049,6 @@ class AmpleMainWindow(QMainWindow):
         # Get command from preview console (User Input is Source of Truth)
         cmd_str = self.cmd_preview.toPlainText().strip()
         if not cmd_str: return
-        
-        # EASC PowerBook 0.288 Crash Fallback Check
-        affected_macs = ["macpb160", "macpb180", "macpb165", "macpb165c", "macpb180c"]
-        if self.selected_machine in affected_macs:
-            mame_bin_dir = os.path.dirname(self.launcher.mame_path)
-            alt_mac_exe = os.path.join(mame_bin_dir, "mame_0287.exe")
-            vgm_mac_exe = os.path.join(mame_bin_dir, "mame-vgm.exe")
-            
-            # Check if any fallback is already present
-            has_fallback = os.path.exists(alt_mac_exe) or os.path.exists(vgm_mac_exe)
-            
-            if not has_fallback:
-                msg_box = QMessageBox(self)
-                msg_box.setIcon(QMessageBox.Warning)
-                msg_box.setWindowTitle("EASC Audio Chip Bug (MAME v0.288)")
-                msg_box.setText(f"The machine '{self.selected_machine}' will crash on MAME v0.288 due to an upstream C++ type mismatch bug.")
-                msg_box.setInformativeText(
-                    "To run this model, you can automatically download MAME v0.280 (VGM Mod) as a fallback, "
-                    "or run a compatible sibling model instead (e.g. 'macpb170' or 'macpb140')."
-                )
-                
-                dl_btn = msg_box.addButton("Download Fallback (v0.280)", QMessageBox.YesRole)
-                force_btn = msg_box.addButton("Force Launch (v0.288)", QMessageBox.NoRole)
-                cancel_btn = msg_box.addButton("Cancel", QMessageBox.RejectRole)
-                
-                msg_box.exec()
-                
-                if msg_box.clickedButton() == dl_btn:
-                    self.download_vgm_mod(mame_bin_dir)
-                    return
-                elif msg_box.clickedButton() == force_btn:
-                    pass
-                else:
-                    return
 
         print(f"Launching custom command: {cmd_str}")
         
@@ -2097,21 +2084,7 @@ class AmpleMainWindow(QMainWindow):
             target_exe_path = args[0]
             
             if exe_cmd in ["mame", "mame.exe"]:
-                affected_macs = ["macpb160", "macpb180", "macpb165", "macpb165c", "macpb180c"]
-                alt_mac_exe = os.path.join(mame_bin_dir, "mame_0287.exe")
-                vgm_mac_exe = os.path.join(mame_bin_dir, "mame-vgm.exe")
-                
-                if self.selected_machine in affected_macs:
-                    if os.path.exists(alt_mac_exe):
-                        target_exe_path = alt_mac_exe
-                        print(f"Applying compatibility fallback: using mame_0287.exe for {self.selected_machine}")
-                    elif os.path.exists(vgm_mac_exe):
-                        target_exe_path = vgm_mac_exe
-                        print(f"Applying compatibility fallback: using mame-vgm.exe for {self.selected_machine}")
-                    else:
-                        target_exe_path = self.launcher.mame_path
-                else:
-                    target_exe_path = self.launcher.mame_path
+                target_exe_path = self.launcher.mame_path
             elif exe_cmd in ["mame-vgm", "mame-vgm.exe"]:
                  path_vgm = os.path.join(mame_bin_dir, "mame-vgm.exe")
                  if os.path.exists(path_vgm):

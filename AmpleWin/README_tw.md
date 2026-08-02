@@ -45,9 +45,9 @@
     *   **配置持久性**：優化插槽初始化邏輯，確保在 UI 重新整理時能正確保留「空」(None) 的選取狀態，與 Mac 原生行為一致。
 *   **ROM 管理**：
     *   **搜尋過濾**：ROM 管理器視窗中新增即時搜尋功能，方便快速查詢系統韌體。
-    *   **下載 Failover**：多伺服器自動獲取 (callapple + mdk.cab)，主伺服器失敗時自動切換，確保最高穩定性。
+    *   **下載 Failover**：CallApple 伺服器優先獲取，MDK 伺服器備用 failover 支援，並具備 `dragon32` 缺檔自動補丁與 Laser 128 全系列韌體相容性保障。
     *   **擴展支援**：新增 Macintosh PowerBook Duo 280, Pravetz 8C, TK3000 //e 等機型。
-    *   **相容性降級 (Compatibility Fallback)**：自動偵測受 MAME 0.288 EASC 晶片崩潰 Bug 影響的 PowerBook 機型（如 `macpb160` 等），無縫切換至本地的 `mame_0287.exe` 或 `mame-vgm.exe` (v0.280)，或提示一鍵下載備用版本，防範啟動崩潰。
+    *   **全面相容性**：MAME 0.289 官方已修正 PowerBook 機型（如 `macpb160`, `macpb180` 等）的 EASC 晶片崩潰 Bug，所有 PowerBook 機型現可使用最新 MAME 核心直接原生啟動。
 *   **共享目錄 (Shared Directory)**：與 Mac 版功能完全對齊，支援透過 `-share_directory` 直接在主機與模擬器間共享檔案 (支援點擊輸入框瀏覽)。
 *   **VGM 錄音支援 (進階)**：由於現代 MAME 已移除 VGM 支援，AmpleWin 實作了強韌的自動化工作流，可下載並平行配置 **MAME-VGM Mod (v0.280)**。透過非破壞性的解壓技術（保留原本的 `mame.exe` 並另存為 `mame-vgm.exe`），在不影響主核心的情況下完美還原錄音功能。
 
@@ -106,3 +106,6 @@
 
 *   原始 macOS 版本開發者: [Kelvin Sherlock](https://github.com/ksherlock)
 *   **Windows Port 開發者: anomixer + Antigravity**：致力於在 Windows 生態系中提供最極致的 Apple II / Macintosh 模擬體驗。
+
+---
+*免責聲明：AmpleWin 是一個獨立的開源專案，與 Apple Inc. 或本專案提及之任何其他公司均無任何隸屬、授權、維護或背書關係。所有產品及公司名稱均為其各自持有人的商標™或註冊®商標。*
